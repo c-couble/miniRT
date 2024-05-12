@@ -1,28 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   object.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/12 20:39:29 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/12 20:06:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <unistd.h>
+#ifndef OBJECT_H
+# define OBJECT_H
 
-int	main(int argc, char *argv[])
+typedef enum e_object_type
 {
-	t_engine	engine;
+	CYLINDER,
+	LIGHT,
+	PLANE,
+	SPHERE
+}	t_object_type;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		write(STDERR_FILENO, "Parsing error\n", 15);
-	return (0);
-}
+typedef struct s_object
+{
+	t_object_type	type;
+}	t_object;
+
+#endif
