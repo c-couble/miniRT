@@ -1,0 +1,11 @@
+compile_commands.json
+*.a
+*.o
+*.d
+*.out
+.cache/
+cache/
+.build/
+vgcore.*
+miniRT
+miniRT_debug
