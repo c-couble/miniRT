@@ -1,35 +1,36 @@
 #include "ft_string.h"
 #include "object/rgb.h"
-#include <errno.h>
 #include <stdint.h>
 #include <stdio.h>
 
-static int	parse_uint8(uint8_t *n);
+static int	parse_uint8(uint8_t *n, char *nptr);
 
 int	parse_rgb(t_rgb *rgb)
 {
-	if (parse_uint8(&rgb->r) == -1)
+	char	*arg;
+	char	*save;
+
+	arg = ft_strtok(NULL, " \t");
+	if (arg == NULL)
 		return (-1);
-	if (parse_uint8(&rgb->g) == -1)
+	save = NULL;
+	if (parse_uint8(&rgb->r, ft_strtok_r(arg, " \t,", &save)) == -1)
 		return (-1);
-	if (parse_uint8(&rgb->b) == -1)
+	if (parse_uint8(&rgb->g, ft_strtok_r(NULL, " \t,", &save)) == -1)
+		return (-1);
+	if (parse_uint8(&rgb->b, ft_strtok_r(NULL, " \t,", &save)) == -1)
 		return (-1);
 	return (0);
 }
 
-static int	parse_uint8(uint8_t *data)
+static int	parse_uint8(uint8_t *data, char *nptr)
 {
-	char	*arg;
 	int		n;
 
-	arg = ft_strtok(NULL, " \t,");
-	if (arg == NULL)
+	if (ft_atoi_ptr(&n, nptr) == -1)
 		return (-1);
-	n = ft_atoi(arg);
 	if (n < 0 || n > 255)
 		return (-1);
 	*data = n;
-	if (errno)
-		return (-1);
 	return (0);
 }

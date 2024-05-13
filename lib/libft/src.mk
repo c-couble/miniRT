@@ -39,7 +39,9 @@ SRC = \
 	  \
 	  string/ft_atoi.c \
 	  string/ft_atoi_base.c \
+	  string/ft_atoi_ptr.c \
 	  string/ft_atof.c \
+	  string/ft_atof_ptr.c \
 	  string/ft_count_words.c \
 	  string/ft_itoa.c \
 	  string/ft_strchr.c \
@@ -57,6 +59,7 @@ SRC = \
 	  string/ft_strnstr.c \
 	  string/ft_strrchr.c \
 	  string/ft_strtok.c \
+	  string/ft_strtok_r.c \
 	  string/ft_strtrim.c \
 	  string/ft_substr.c \
 	  \
