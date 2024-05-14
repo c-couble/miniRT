@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   parse_camera.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 02:52:43 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/14 01:37:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "object.h"
 
-int	main(int argc, char *argv[])
+int	parse_camera(t_object_data *data)
 {
-	t_engine	engine;
-
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		write(STDERR_FILENO, "Parsing error\n", 15);
-	perror("err: ");
+	(void)data;
 	return (0);
 }

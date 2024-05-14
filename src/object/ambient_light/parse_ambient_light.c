@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   parse_ambient_light.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 02:52:43 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/14 02:46:21 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <stdio.h>
+#include "object.h"
+#include "object/rgb.h"
+#include "object/parse_util.h"
 #include <unistd.h>
 
-int	main(int argc, char *argv[])
+int	parse_ambient_light(t_object_data *data)
 {
-	t_engine	engine;
-
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		write(STDERR_FILENO, "Parsing error\n", 15);
-	perror("err: ");
+	if (parse_double(&data->ambient_light.ratio, 0, 1) == -1)
+		return (-1);
+	if (parse_rgb(&data->ambient_light.color) == -1)
+		return (-1);
 	return (0);
 }

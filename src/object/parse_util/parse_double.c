@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   parse_double.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 02:52:43 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 02:30:27 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/14 02:47:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "ft_string.h"
+#include <errno.h>
 
-int	main(int argc, char *argv[])
+int	parse_double(double *data, double min, double max)
 {
-	t_engine	engine;
+	char	*arg;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		write(STDERR_FILENO, "Parsing error\n", 15);
-	perror("err: ");
+	arg = ft_strtok(NULL, " \t");
+	if (arg == NULL)
+		return (-1);
+	*data = ft_atof(arg);
+	if (*data > max || *data < min)
+		return (-1);
+	if (errno)
+		return (-1);
 	return (0);
 }
