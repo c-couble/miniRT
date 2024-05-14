@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ambient_light.h                                    :+:      :+:    :+:   */
+/*   vector3d.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 08:20:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 08:20:32 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 07:35:46 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/14 08:02:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef AMBIENT_LIGHT_H
-# define AMBIENT_LIGHT_H
+#ifndef VECTOR3D_H
+# define VECTOR3D_H
 
-# include "object/rgb.h"
-
-typedef struct s_ambient_light
+typedef struct s_vector3d
 {
-	double	ratio;
-	t_rgb	color;
-}	t_ambient_light;
+	double	x;
+	double	y;
+	double	z;
+}	t_vector3d;
 
-union	u_object_data;
-
-int	parse_ambient_light(union u_object_data *data);
+int	parse_vector3d(t_vector3d *vector, double min, double max);
 
 #endif

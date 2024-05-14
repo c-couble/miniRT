@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ambient_light.h                                    :+:      :+:    :+:   */
+/*   camera.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 08:20:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 08:20:32 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/14 08:21:26 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef AMBIENT_LIGHT_H
-# define AMBIENT_LIGHT_H
+#ifndef CAMERA_H
+# define CAMERA_H
 
-# include "object/rgb.h"
+# include "vector3d.h"
 
-typedef struct s_ambient_light
+typedef struct s_camera
 {
-	double	ratio;
-	t_rgb	color;
-}	t_ambient_light;
+	t_vector3d	coordinates;
+	t_vector3d	orientation;
+	double		fov;
+}	t_camera;
 
 union	u_object_data;
-
-int	parse_ambient_light(union u_object_data *data);
+int	parse_camera(union u_object_data *data);
 
 #endif

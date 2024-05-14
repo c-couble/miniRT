@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 01:16:11 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/14 08:19:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define OBJECT_H
 
 # include "object/ambient_light.h"
+# include "object/camera.h"
 
 typedef enum e_object_type
 {
@@ -30,6 +31,7 @@ typedef enum e_object_type
 typedef union u_object_data
 {
 	t_ambient_light	ambient_light;
+	t_camera		camera;
 }	t_object_data;
 
 typedef struct s_object

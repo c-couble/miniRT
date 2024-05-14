@@ -9,6 +9,8 @@ SRC = \
 	  \
 	  object/parse_util/parse_double.c \
 	  \
+	  object/parse_util/parse_vector3d.c \
+	  \
 	  object/plane/parse_plane.c \
 	  \
 	  object/rgb/parse_rgb.c \

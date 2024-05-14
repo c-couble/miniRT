@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 01:37:53 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/14 08:19:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static t_object_type	get_object_type(char *type)
 
 static int	parse_object(t_object *object)
 {
-	static int (*values[])(t_object_data *data) = {
+	static int	(*values[])(t_object_data *data) = {
 	[AMBIENT_LIGHT] = parse_ambient_light,
 	[CAMERA] = parse_camera,
 	[LIGHT] = parse_light,
