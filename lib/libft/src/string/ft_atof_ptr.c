@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 20:49:28 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/13 20:53:15 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/14 16:36:49 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ static int	get_fractional_part(double *nbptr, const char *nptr)
 		return (0);
 	}
 	++nptr;
-	*nbptr = 0;
 	fraction = 0.1;
 	while (*nptr >= '0' && *nptr <= '9')
 	{

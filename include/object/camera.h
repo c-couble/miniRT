@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 08:21:26 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/14 18:16:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct s_camera
 }	t_camera;
 
 union	u_object_data;
+
 int	parse_camera(union u_object_data *data);
 
 #endif

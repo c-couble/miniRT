@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 08:19:54 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/14 18:17:07 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 # include "object/ambient_light.h"
 # include "object/camera.h"
+#include "object/cylinder.h"
+# include "object/light.h"
+#include "object/plane.h"
+# include "object/sphere.h"
 
 typedef enum e_object_type
 {
@@ -32,6 +36,10 @@ typedef union u_object_data
 {
 	t_ambient_light	ambient_light;
 	t_camera		camera;
+	t_cylinder		cylinder;
+	t_light			light;
+	t_plane			plane;
+	t_sphere		sphere;
 }	t_object_data;
 
 typedef struct s_object
@@ -41,10 +49,5 @@ typedef struct s_object
 }	t_object;
 
 int	init_object(t_object *object, char *line);
-int	parse_camera(union u_object_data *object);
-int	parse_cylinder(union u_object_data *object);
-int	parse_light(union u_object_data *object);
-int	parse_plane(union u_object_data *object);
-int	parse_sphere(union u_object_data *object);
 
 #endif
