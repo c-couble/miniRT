@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 16:35:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ int	main(int argc, char *argv[])
 	if (argc == 1)
 		return (0);
 	if (init_scene(&engine.scene, argv[1]) == -1)
-		write(STDERR_FILENO, "Parsing error\n", 15);
+		return (1);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 18:17:07 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/15 17:42:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 # include "object/ambient_light.h"
 # include "object/camera.h"
-#include "object/cylinder.h"
+# include "object/cylinder.h"
 # include "object/light.h"
-#include "object/plane.h"
+# include "object/plane.h"
 # include "object/sphere.h"
 
 typedef enum e_object_type

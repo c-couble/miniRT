@@ -8,7 +8,7 @@ SRC = \
 	  object/light/parse_light.c \
 	  \
 	  object/parse_util/parse_double.c \
-	  \
+	  object/parse_util/parse_normalized_vector3d.c \
 	  object/parse_util/parse_vector3d.c \
 	  \
 	  object/plane/parse_plane.c \
@@ -20,5 +20,7 @@ SRC = \
 	  object/init_object.c \
 	  \
 	  scene/init_scene.c \
+	  \
+	  util/print_error.c \
 	  \
 	  main.c \

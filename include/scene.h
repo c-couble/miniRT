@@ -6,19 +6,24 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 20:28:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/13 22:42:35 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/15 15:31:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCENE_H
 # define SCENE_H
 
+# include "object/ambient_light.h"
+# include "object/camera.h"
 # include "vector.h"
 
 typedef struct s_scene
 {
-	t_vector	objects;
-	char		*scene_name;
+	t_ambient_light	ambient_light;
+	t_camera		camera;
+	t_vector		objects;
+	t_ambient_light	light;
+	char			*scene_name;
 }	t_scene;
 
 int	init_scene(t_scene *scene, char *file);

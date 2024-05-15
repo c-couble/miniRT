@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 08:19:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/15 17:20:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int	init_object(t_object *object, char *line)
 	object->type = get_object_type(word);
 	if (object->type == UNKNOWN_OBJ)
 		return (-1);
+	if (object->type == COMMENT)
+		return (0);
 	if (parse_object(object) == -1)
 		return (-1);
 	return (0);

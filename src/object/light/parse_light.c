@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 17:35:58 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/15 18:23:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 #include "object.h"
 #include "object/parse_util.h"
 #include "vector3d.h"
-#include <float.h>
-#include <stdio.h>
+#include "float.h"
 
 int	parse_light(t_object_data *data)
 {
@@ -25,9 +24,5 @@ int	parse_light(t_object_data *data)
 		return (-1);
 	if (parse_rgb(&data->light.color) == -1)
 		return (-1);
-	printf("L coord x=%lf y=%lf z=%lf ratio %lf r=%d g=%d b=%d\n",
-		data->light.coordinates.x, data->light.coordinates.y,
-		data->light.coordinates.z, data->light.ratio, data->light.color.r,
-		data->light.color.g, data->light.color.b);
 	return (0);
 }

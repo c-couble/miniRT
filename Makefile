@@ -17,7 +17,7 @@ CFLAGS = -Wall -Wextra -Werror \
 		 -I $(INCLUDES_DIR) \
 		 -I $(LIBFT_DIR)/$(INCLUDES_DIR)
 
-LDFLAGS = 
+LDFLAGS =  -lm
 
 OPTIMIZE_FLAGS = -O3
 
