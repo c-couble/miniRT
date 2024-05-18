@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/18 04:29:06 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/18 04:33:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,10 @@ static int	read_file(t_scene *scene, int fd)
 		++i;
 	}
 	if (errno)
+	{
+		print_error("Error reading file");
 		return (-1);
+	}
 	return (0);
 }
 
