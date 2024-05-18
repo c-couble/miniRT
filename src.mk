@@ -1,23 +1,15 @@
 SRC = \
-	  object/ambient_light/parse_ambient_light.c \
-	  \
-	  object/camera/parse_camera.c \
-	  \
-	  object/cylinder/parse_cylinder.c \
-	  \
-	  object/light/parse_light.c \
-	  \
-	  object/parse_util/parse_double.c \
-	  object/parse_util/parse_normalized_vector3d.c \
-	  object/parse_util/parse_vector3d.c \
-	  \
-	  object/plane/parse_plane.c \
-	  \
-	  object/rgb/parse_rgb.c \
-	  \
-	  object/sphere/parse_sphere.c \
-	  \
-	  object/init_object.c \
+	  parsing/parse_ambient_light.c \
+	  parsing/parse_camera.c \
+	  parsing/parse_cylinder.c \
+	  parsing/parse_light.c \
+	  parsing/parse_double.c \
+	  parsing/parse_normalized_vector3d.c \
+	  parsing/parse_vector3d.c \
+	  parsing/parse_plane.c \
+	  parsing/parse_rgb.c \
+	  parsing/parse_sphere.c \
+	  parsing/init_object.c \
 	  \
 	  scene/init_scene.c \
 	  \
