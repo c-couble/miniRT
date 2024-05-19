@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   print_error.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/15 19:31:22 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/15 19:32:00 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <unistd.h>
+#include <stdio.h>
 
-int	main(int argc, char *argv[])
+void	print_error(char *err)
 {
-	t_engine	engine;
-
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		return (1);
-	return (0);
+	dprintf(2, "Error\n%s\n", err);
 }

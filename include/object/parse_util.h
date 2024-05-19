@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   parse_util.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 08:20:07 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/15 17:26:50 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <unistd.h>
+#ifndef PARSE_UTIL_H
+# define PARSE_UTIL_H
 
-int	main(int argc, char *argv[])
-{
-	t_engine	engine;
+int	parse_double(double *data, const char *nptr, double min, double max);
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		return (1);
-	return (0);
-}
+#endif

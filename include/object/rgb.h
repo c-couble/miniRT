@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   rgb.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 08:19:59 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/14 08:19:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <unistd.h>
+#ifndef RGB_H
+# define RGB_H
 
-int	main(int argc, char *argv[])
+# include <stdint.h>
+
+typedef struct s_rgb
 {
-	t_engine	engine;
+	uint8_t	r;
+	uint8_t	g;
+	uint8_t	b;
+}	t_rgb;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		return (1);
-	return (0);
-}
+int	parse_rgb(t_rgb *rgb);
+
+#endif

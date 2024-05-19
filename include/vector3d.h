@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   vector3d.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 07:35:46 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/15 17:26:58 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <unistd.h>
+#ifndef VECTOR3D_H
+# define VECTOR3D_H
 
-int	main(int argc, char *argv[])
+typedef struct s_vector3d
 {
-	t_engine	engine;
+	double	x;
+	double	y;
+	double	z;
+}	t_vector3d;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		return (1);
-	return (0);
-}
+int	parse_vector3d(t_vector3d *vector, double min, double max);
+int	parse_normalized_vector3d(t_vector3d *vector);
+
+#endif

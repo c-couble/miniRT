@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   sphere.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 17:38:55 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/15 17:42:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <unistd.h>
+#ifndef SPHERE_H
+# define SPHERE_H
 
-int	main(int argc, char *argv[])
+# include "vector3d.h"
+# include "object/rgb.h"
+
+typedef struct s_sphere
 {
-	t_engine	engine;
+	t_vector3d	coordinates;
+	double		diameter;
+	t_rgb		color;
+}	t_sphere;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		return (1);
-	return (0);
-}
+union	u_object_data;
+
+int	parse_sphere(union u_object_data *object);
+
+#endif

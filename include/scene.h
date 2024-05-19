@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   scene.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/12 20:28:38 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/18 02:38:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <unistd.h>
+#ifndef SCENE_H
+# define SCENE_H
 
-int	main(int argc, char *argv[])
+# include "object/ambient_light.h"
+# include "object/camera.h"
+# include "vector.h"
+
+typedef struct s_scene
 {
-	t_engine	engine;
+	t_ambient_light	ambient_light;
+	int				has_ambient_light;
+	t_camera		camera;
+	int				has_camera;
+	t_vector		objects;
+	char			*scene_name;
+}	t_scene;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		return (1);
-	return (0);
-}
+int	init_scene(t_scene *scene, char *file);
+
+#endif

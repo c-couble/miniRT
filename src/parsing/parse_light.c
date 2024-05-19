@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   parse_light.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/15 18:23:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
-#include <unistd.h>
+#include "ft_string.h"
+#include "object.h"
+#include "object/parse_util.h"
+#include "vector3d.h"
+#include "float.h"
 
-int	main(int argc, char *argv[])
+int	parse_light(t_object_data *data)
 {
-	t_engine	engine;
-
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_scene(&engine.scene, argv[1]) == -1)
-		return (1);
+	if (parse_vector3d(&data->light.coordinates, -DBL_MAX, DBL_MAX) == -1)
+		return (-1);
+	if (parse_double(&data->light.ratio, ft_strtok(NULL, " \t"), 0, 1) == -1)
+		return (-1);
+	if (parse_rgb(&data->light.color) == -1)
+		return (-1);
 	return (0);
 }
