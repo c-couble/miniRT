@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:36:56 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/20 05:53:27 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 int	main(int argc, char *argv[])
 {
 	t_engine	engine;
+	t_mlx		mlx;
 
 	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
 		return (1);
@@ -24,5 +25,8 @@ int	main(int argc, char *argv[])
 		return (0);
 	if (init_scene(&engine.scene, argv[1]) == -1)
 		return (1);
+	if (init_mlx(&mlx) == -1)
+		return (1);
+	clear_mlx(&mlx);
 	return (0);
 }

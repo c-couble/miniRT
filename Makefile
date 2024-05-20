@@ -12,10 +12,17 @@ LIBFT = libft.a
 
 LIBFT_DEBUG = libft_debug.a
 
-CFLAGS = -Wall -Wextra -Werror \
+MLX_DIR = $(LIBS_DIR)/minilibx-linux
+
+MLX = libmlx.a
+
+MLXFLAGS = -lX11 -lm -lz -lXext
+
+CFLAGS = -Wall -Wextra -Werror $(MLXFLAGS) \
 		 -MD -MP \
 		 -I $(INCLUDES_DIR) \
-		 -I $(LIBFT_DIR)/$(INCLUDES_DIR)
+		 -I $(LIBFT_DIR)/$(INCLUDES_DIR) \
+		 -I $(MLX_DIR) \
 
 LDFLAGS =  -lm
 
@@ -45,16 +52,19 @@ re: fclean
 	$(MAKE) all
 
 $(NAME): $(OBJ)
-	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(LIBFT_DIR)/$(LIBFT)
+	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(LIBFT_DIR)/$(LIBFT) $(MLX_DIR)/$(MLX) $(MLXFLAGS)
 
 -include $(DEPS)
-$(BUILD_DIR)/%.o: $(SRC_DIR)/%.c $(LIBFT_DIR)/$(LIBFT)
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.c $(LIBFT_DIR)/$(LIBFT) $(MLX_DIR)/$(MLX)
 	@mkdir -p $(shell dirname $@)
 	$(CC) $(CFLAGS) $(OPTIMIZE_FLAGS) -c $< -o $@
 
 
 $(LIBFT_DIR)/$(LIBFT): FORCE
 	$(MAKE) -C $(LIBFT_DIR) $(LIBFT)
+
+$(MLX_DIR)/$(MLX): FORCE
+	$(MAKE) -C $(MLX_DIR)
 
 .PHONY: debug
 debug: $(NAME_DEBUG)
@@ -77,6 +87,7 @@ fclean: clean
 .PHONY: clean
 clean:
 	$(MAKE) -C $(LIBFT_DIR) fclean
+	$(MAKE) -C $(MLX_DIR) clean
 	$(RM) -r $(BUILD_DIR)
 
 .PHONY: bonus

@@ -1,4 +1,8 @@
 SRC = \
+	  clear/clear_mlx.c \
+	  \
+	  init/init_mlx.c \
+	  \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
 	  parsing/parse_cylinder.c \
