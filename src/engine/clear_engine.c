@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_mlx.c                                        :+:      :+:    :+:   */
+/*   clear_engine.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/20 05:25:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/05/20 05:27:22 by lespenel         ###   ########.fr       */
+/*   Created: 2024/05/21 04:47:22 by lespenel          #+#    #+#             */
+/*   Updated: 2024/05/21 04:49:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mlx.h"
 #include "engine.h"
-#include <stdlib.h>
+#include "scene.h"
 
-void	clear_mlx(t_mlx *mlx)
+void	clear_engine(t_engine *engine)
 {
-	if (mlx->img)
-		mlx_destroy_image(mlx->mlx, mlx->img);
-	if (mlx->mlx_window)
-		mlx_destroy_window(mlx->mlx, mlx->mlx_window);
-	if (mlx->mlx)
-	{
-		mlx_destroy_display(mlx->mlx);
-		free(mlx->mlx);
-	}
+	clear_scene(&engine->scene);
+	clear_mlx_struct(&engine->mlx);
 }

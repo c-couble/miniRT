@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.h                                           :+:      :+:    :+:   */
+/*   defines.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/21 04:57:52 by lespenel         ###   ########.fr       */
+/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
+/*   Updated: 2024/05/21 04:27:55 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENGINE_H
-# define ENGINE_H
+#ifndef DEFINES_H
+# define DEFINES_H
 
-# include "mlx_wrapper.h"
-# include "scene.h"
-
-typedef struct s_engine
-{
-	t_scene	scene;
-	t_mlx	mlx;
-}	t_engine;
-
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
+# define SCREEN_WIDTH	1920
+# define SCREEN_HEIGHT	1080
+# define WINDOW_NAME	"miniRT ccouble lespenel"
 
 #endif

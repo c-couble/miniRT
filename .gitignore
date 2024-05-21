@@ -9,3 +9,5 @@ cache/
 vgcore.*
 miniRT
 miniRT_debug
+Makefile.gen
+mlx-test

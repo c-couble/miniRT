@@ -22,7 +22,7 @@ CFLAGS = -Wall -Wextra -Werror \
 		 -I $(LIBFT_DIR)/$(INCLUDES_DIR) \
 		 -I $(MLX_DIR) \
 
-LDFLAGS =  -lm -lX11 -lm -lz -lXext
+LDFLAGS = -lX11 -lm -lz -lXext
 
 OPTIMIZE_FLAGS = -O3
 
@@ -45,12 +45,8 @@ DEPS_DEBUG = $(OBJ_DEBUG:.o=.d)
 .PHONY: all
 all: $(NAME)
 
-.PHONY: re
-re: fclean
-	$(MAKE) all
-
 $(NAME): $(OBJ)
-	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(LIBFT_DIR)/$(LIBFT) $(MLX_DIR)/$(MLX) $(MLXFLAGS)
+	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(LIBFT_DIR)/$(LIBFT) $(MLX_DIR)/$(MLX)
 
 -include $(DEPS)
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c $(LIBFT_DIR)/$(LIBFT) $(MLX_DIR)/$(MLX)
@@ -68,10 +64,10 @@ $(MLX_DIR)/$(MLX): FORCE
 debug: $(NAME_DEBUG)
 
 $(NAME_DEBUG): $(OBJ_DEBUG)
-	$(CC) -o $(NAME_DEBUG) $(OBJ_DEBUG) $(LDFLAGS) $(LIBFT_DIR)/$(LIBFT_DEBUG)
+	$(CC) -o $(NAME_DEBUG) $(OBJ_DEBUG) $(LDFLAGS) $(LIBFT_DIR)/$(LIBFT_DEBUG) $(MLX_DIR)/$(MLX)
 
 -include $(DEPS_DEBUG)
-$(BUILD_DIR)/%_debug.o: $(SRC_DIR)/%.c $(LIBFT_DIR)/$(LIBFT_DEBUG)
+$(BUILD_DIR)/%_debug.o: $(SRC_DIR)/%.c $(LIBFT_DIR)/$(LIBFT_DEBUG) $(MLX_DIR)/$(MLX)
 	@mkdir -p $(shell dirname $@)
 	$(CC) $(CFLAGS) $(DEBUG_FLAGS) -c $< -o $@
 
@@ -87,6 +83,10 @@ clean:
 	$(MAKE) -C $(LIBFT_DIR) fclean
 	$(MAKE) -C $(MLX_DIR) clean
 	$(RM) -r $(BUILD_DIR)
+
+.PHONY: re
+re: fclean
+	$(MAKE) all
 
 .PHONY: bonus
 bonus: $(NAME)

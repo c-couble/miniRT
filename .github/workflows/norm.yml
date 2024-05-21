@@ -20,5 +20,11 @@ jobs:
       - name: Install norminette
         run: pip install norminette
 
-      - name: Execute norminette
-        run: norminette
+      - name: Execute norminette on src
+        run: norminette src
+
+      - name: Execute norminette on include
+        run: norminette include
+
+      - name: Execute norminette on libft
+        run: norminette lib/libft
