@@ -16,15 +16,13 @@ MLX_DIR = $(LIBS_DIR)/minilibx-linux
 
 MLX = libmlx.a
 
-MLXFLAGS = -lX11 -lm -lz -lXext
-
-CFLAGS = -Wall -Wextra -Werror $(MLXFLAGS) \
+CFLAGS = -Wall -Wextra -Werror \
 		 -MD -MP \
 		 -I $(INCLUDES_DIR) \
 		 -I $(LIBFT_DIR)/$(INCLUDES_DIR) \
 		 -I $(MLX_DIR) \
 
-LDFLAGS =  -lm
+LDFLAGS =  -lm -lX11 -lm -lz -lXext
 
 OPTIMIZE_FLAGS = -O3
 
