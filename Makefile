@@ -46,7 +46,7 @@ DEPS_DEBUG = $(OBJ_DEBUG:.o=.d)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) -o $(NAME) $(OBJ) $(LDFLAGS) $(LIBFT_DIR)/$(LIBFT) $(MLX_DIR)/$(MLX)
+	$(CC) -o $(NAME) $(OBJ) $(LIBFT_DIR)/$(LIBFT) $(MLX_DIR)/$(MLX) $(LDFLAGS)
 
 -include $(DEPS)
 $(BUILD_DIR)/%.o: $(SRC_DIR)/%.c $(LIBFT_DIR)/$(LIBFT) $(MLX_DIR)/$(MLX)
@@ -64,7 +64,7 @@ $(MLX_DIR)/$(MLX): FORCE
 debug: $(NAME_DEBUG)
 
 $(NAME_DEBUG): $(OBJ_DEBUG)
-	$(CC) -o $(NAME_DEBUG) $(OBJ_DEBUG) $(LDFLAGS) $(LIBFT_DIR)/$(LIBFT_DEBUG) $(MLX_DIR)/$(MLX)
+	$(CC) -o $(NAME_DEBUG) $(OBJ_DEBUG) $(LIBFT_DIR)/$(LIBFT_DEBUG) $(MLX_DIR)/$(MLX) $(LDFLAGS)
 
 -include $(DEPS_DEBUG)
 $(BUILD_DIR)/%_debug.o: $(SRC_DIR)/%.c $(LIBFT_DIR)/$(LIBFT_DEBUG) $(MLX_DIR)/$(MLX)
