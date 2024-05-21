@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.h                                           :+:      :+:    :+:   */
+/*   init_engine.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/21 04:57:52 by lespenel         ###   ########.fr       */
+/*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
+/*   Updated: 2024/05/21 04:40:19 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENGINE_H
-# define ENGINE_H
+#include "engine.h"
+#include "mlx_wrapper.h"
+#include "scene.h"
 
-# include "mlx_wrapper.h"
-# include "scene.h"
-
-typedef struct s_engine
+int	init_engine(t_engine *engine, char *scene)
 {
-	t_scene	scene;
-	t_mlx	mlx;
-}	t_engine;
-
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
-
-#endif
+	if (init_scene(&engine->scene, scene) == -1)
+		return (-1);
+	if (init_mlx_struct(&engine->mlx) == -1)
+		return (-1);
+	return (0);
+}

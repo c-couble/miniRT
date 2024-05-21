@@ -1,28 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.h                                           :+:      :+:    :+:   */
+/*   clear_engine.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/21 04:57:52 by lespenel         ###   ########.fr       */
+/*   Created: 2024/05/21 04:47:22 by lespenel          #+#    #+#             */
+/*   Updated: 2024/05/21 04:49:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENGINE_H
-# define ENGINE_H
+#include "engine.h"
+#include "scene.h"
 
-# include "mlx_wrapper.h"
-# include "scene.h"
-
-typedef struct s_engine
+void	clear_engine(t_engine *engine)
 {
-	t_scene	scene;
-	t_mlx	mlx;
-}	t_engine;
-
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
-
-#endif
+	clear_scene(&engine->scene);
+	clear_mlx_struct(&engine->mlx);
+}

@@ -1,4 +1,10 @@
 SRC = \
+	  engine/init_engine.c \
+	  engine/clear_engine.c \
+	  \
+	  mlx_wrapper/clear_mlx_struct.c \
+	  mlx_wrapper/init_mlx_struct.c \
+	  \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
 	  parsing/parse_cylinder.c \
@@ -12,6 +18,7 @@ SRC = \
 	  parsing/init_object.c \
 	  \
 	  scene/init_scene.c \
+	  scene/clear_scene.c \
 	  \
 	  util/print_error.c \
 	  \
