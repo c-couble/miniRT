@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/18 02:34:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/22 05:48:53 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ typedef struct s_camera
 	t_vector3d	coordinates;
 	t_vector3d	orientation;
 	double		fov;
+	double		pitch;
+	double		yaw;
 }	t_camera;
 
 union	u_object_data;

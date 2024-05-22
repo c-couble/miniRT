@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 18:24:31 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/22 03:09:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 #include "object.h"
-#include "object/rgb.h"
+#include "color.h"
 #include "object/parse_util.h"
 
 int	parse_ambient_light(t_object_data *data)
@@ -22,7 +22,7 @@ int	parse_ambient_light(t_object_data *data)
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->ambient_light.ratio, arg, 0, 1) == -1)
 		return (-1);
-	if (parse_rgb(&data->ambient_light.color) == -1)
+	if (parse_color(&data->ambient_light.color) == -1)
 		return (-1);
 	return (0);
 }

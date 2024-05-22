@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rgb.h                                              :+:      :+:    :+:   */
+/*   render_frame.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 08:19:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 08:19:59 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/22 04:56:13 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RGB_H
-# define RGB_H
+#include "engine.h"
+#include <math.h>
 
-# include <stdint.h>
-
-typedef struct s_rgb
+void	render_frame(t_engine *engine)
 {
-	uint8_t	r;
-	uint8_t	g;
-	uint8_t	b;
-}	t_rgb;
+	size_t	i;
+	size_t	j;
 
-int	parse_rgb(t_rgb *rgb);
-
-#endif
+	i = 0;
+	while (i < engine->mlx.height)
+	{
+		j = 0;
+		while (j < engine->mlx.width)
+		{
+			if (sqrt(powl((long)j - 1000, 2) + powl((long)i - 500, 2)) < 100)
+				engine->mlx.addr[(i * engine->mlx.width) + j].color = 0xff0000;
+			++j;
+		}
+		++i;
+	}
+}

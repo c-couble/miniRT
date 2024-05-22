@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 18:23:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/22 03:10:20 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	parse_light(t_object_data *data)
 		return (-1);
 	if (parse_double(&data->light.ratio, ft_strtok(NULL, " \t"), 0, 1) == -1)
 		return (-1);
-	if (parse_rgb(&data->light.color) == -1)
+	if (parse_color(&data->light.color) == -1)
 		return (-1);
 	return (0);
 }

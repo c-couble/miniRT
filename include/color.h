@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.h                                           :+:      :+:    :+:   */
+/*   color.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/22 04:56:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 08:19:59 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/22 03:07:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENGINE_H
-# define ENGINE_H
+#ifndef COLOR_H
+# define COLOR_H
 
-# include "mlx_wrapper.h"
-# include "scene.h"
+# include <stdint.h>
 
-typedef struct s_engine
+typedef union u_color
 {
-	t_scene	scene;
-	t_mlx	mlx;
-}	t_engine;
+	struct s_rgb
+	{
+		uint8_t	r;
+		uint8_t	g;
+		uint8_t	b;
+	}	rgb;
+	uint32_t	color;
+}	t_color;
 
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
-void	render_frame(t_engine *engine);
-void	run_loop(t_engine *engine);
+int	parse_color(t_color *color);
 
 #endif

@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   run_loop.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/22 04:53:48 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/22 04:51:53 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/22 04:56:23 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "mlx.h"
-#include "mlx_wrapper.h"
-#include <unistd.h>
+#include "ft_mem.h"
 
+static int	loop_hook(t_engine *engine);
 
-int	main(int argc, char *argv[])
+void	run_loop(t_engine *engine)
 {
-	t_engine	engine;
+	mlx_loop_hook(engine->mlx.mlx, loop_hook, engine);
+	mlx_loop(engine->mlx.mlx);
+}
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	run_loop(&engine);
-	clear_engine(&engine);
+
+static int	loop_hook(t_engine *engine)
+{
+	ft_memset(engine->mlx.addr, 0, engine->mlx.width * engine->mlx.height * sizeof(t_color));
+	render_frame(engine);
+	mlx_put_image_to_window(engine->mlx.mlx, engine->mlx.mlx_window,
+						 engine->mlx.img, 0, 0);
 	return (0);
 }
