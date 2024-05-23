@@ -24,4 +24,6 @@ SRC = \
 	  \
 	  util/print_error.c \
 	  \
+	  vector/yaw_pitch_to_vector.c \
+	  \
 	  main.c \

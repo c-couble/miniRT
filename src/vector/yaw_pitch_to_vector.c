@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vector3d.h                                         :+:      :+:    :+:   */
+/*   yaw_pitch_to_vector.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 07:35:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/23 05:29:44 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/23 05:27:44 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/23 06:25:16 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef VECTOR3D_H
-# define VECTOR3D_H
+#include "vector3d.h"
+#include <stdio.h>
+#include <math.h>
 
-typedef struct s_vector3d
+void	yaw_pitch_to_vector(t_vector3d *vector, double yaw, double pitch)
 {
-	double	x;
-	double	y;
-	double	z;
-}	t_vector3d;
+	const double	cos_pitch = cos(pitch);
 
-int		parse_vector3d(t_vector3d *vector, double min, double max);
-int		parse_normalized_vector3d(t_vector3d *vector);
-void	yaw_pitch_to_vector(t_vector3d *vector, double yaw, double pitch);
-
-#endif
+	vector->x = cos(yaw) * cos_pitch;
+	vector->y = sin(yaw) * cos_pitch;
+	vector->z = sin(pitch);
+	//printf("reverted %lf;%lf to %lf %lf %lf\n", yaw, pitch, vector->x,
+//		vector->y, vector->z);
+}
