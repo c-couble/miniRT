@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   vector_addition.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/05/30 00:11:48 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/30 04:06:07 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/30 04:07:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#include "vector3d.h"
 
-# define SCREEN_WIDTH	1920
-# define SCREEN_HEIGHT	1080
-# define WINDOW_NAME	"miniRT ccouble lespenel"
-
-#endif
+void	vector_addition(t_vector3d *vec1, t_vector3d *vec2)
+{
+	vec1->x += vec2->x;
+	vec1->y += vec2->y;
+	vec1->z += vec2->z;
+}

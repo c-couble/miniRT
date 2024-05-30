@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/24 06:15:55 by ccouble          ###   ########.fr       */
+/* j Updated: 2024/05/30 04:52:43 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,13 @@ void	render_frame(t_engine *engine)
 
 static uint32_t	trace_ray(t_engine *engine, t_vector3d *ray)
 {
-	for (size_t j = 0; j < engine->scene.objects.size; ++j)
+	size_t		i;
+	t_object	*obj;
+
+	i = 0;
+	while (i < engine->scene.objects.size)
 	{
-		t_object	*obj = at_vector(&engine->scene.objects, j);
+		obj = at_vector(&engine->scene.objects, i);
 		if (obj->type == SPHERE)
 		{
 			t_vector3d	p;
@@ -65,9 +69,29 @@ static uint32_t	trace_ray(t_engine *engine, t_vector3d *ray)
 			double a = powl(ray->x, 2) + powl(ray->y, 2) + powl(ray->z, 2);
 			double b = 2 * (p.x * ray->x + p.y * ray->y + p.z * ray->z);
 			double c = (powl(p.x, 2) + powl(p.y, 2) + powl(p.z, 2)) - powl(obj->data.sphere.diameter / 2, 2);
-			if (powl(b, 2) - (4 * a * c) >= 0)
+			double d = powl(b, 2) - (4 * a * c);
+			if (d >= 0)
+			{
+				double r1 = (-b - sqrt(d)) / (2 * a);
+				double r2 = (-b + sqrt(d)) / (2 * a);
+				double r;
+				if (r1 < 0)
+					r = r2;
+				else if (r2 < 0)
+					r = r1;
+				else
+				{
+					if (r1 > r2)
+						r = r2;
+					else
+						r = r1;
+				}
+				if (r < 0)
+					continue;
 				return (obj->data.sphere.color.color);
+			}
 		}
+		++i;
 	}
-	return (0x00000000);
+	return (0);
 }

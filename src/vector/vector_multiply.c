@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   vector_multiply.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/05/30 00:11:48 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/30 04:00:50 by ccouble           #+#    #+#             */
+/*   Updated: 2024/05/30 04:02:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#include "vector3d.h"
 
-# define SCREEN_WIDTH	1920
-# define SCREEN_HEIGHT	1080
-# define WINDOW_NAME	"miniRT ccouble lespenel"
-
-#endif
+void	vector_multiply(t_vector3d *vec, double x)
+{
+	vec->x *= x;
+	vec->y *= x;
+	vec->z *= x;
+}
