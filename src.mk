@@ -22,6 +22,8 @@ SRC = \
 	  scene/init_scene.c \
 	  scene/clear_scene.c \
 	  \
+	  ray/trace_ray.c \
+	  \
 	  util/print_error.c \
 	  \
 	  vector/vector_addition.c \
