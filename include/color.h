@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 08:19:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/22 03:07:59 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/02 02:39:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ typedef union u_color
 {
 	struct s_rgb
 	{
-		uint8_t	r;
-		uint8_t	g;
 		uint8_t	b;
+		uint8_t	g;
+		uint8_t	r;
 	}	rgb;
 	uint32_t	color;
 }	t_color;

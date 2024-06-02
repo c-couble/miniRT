@@ -6,13 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/23 06:27:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/02 02:37:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
-#include "mlx.h"
-#include "mlx_wrapper.h"
 #include <stdio.h>
 #include <unistd.h>
 

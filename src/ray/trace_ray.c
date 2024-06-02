@@ -6,15 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/01 04:20:00 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/02 02:37:00 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "engine.h"
 #include "vector3d.h"
 #include "ray.h"
 #include "object.h"
 #include "math.h"
+#include <stdio.h>
 
 int	trace_ray(t_engine *engine, t_ray *ray)
 {
@@ -35,14 +37,14 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 			double b = 2 * (p.x * ray->ray.x + p.y * ray->ray.y + p.z * ray->ray.z);
 			double c = (powl(p.x, 2) + powl(p.y, 2) + powl(p.z, 2)) - powl(obj->data.sphere.diameter / 2, 2);
 			double d = powl(b, 2) - (4 * a * c);
-			if (d >= 0)
+			if (d > 0)
 			{
 				double r1 = (-b - sqrt(d)) / (2 * a);
 				double r2 = (-b + sqrt(d)) / (2 * a);
 				double r;
-				if (r1 < 0)
+				if (r1 <= INACCURATE_ZERO || r1 > ray->maxlen)
 					r = r2;
-				else if (r2 < 0)
+				else if (r2 <= INACCURATE_ZERO || r2 > ray->maxlen)
 					r = r1;
 				else
 				{
@@ -51,8 +53,11 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 					else
 						r = r1;
 				}
-				if (r < 0)
+				if (r <= INACCURATE_ZERO || r > ray->maxlen)
+				{
+					++i;
 					continue;
+				}
 				vector_multiply(&ray->ray, r);
 				ray->hitpos = ray->startpos;
 				vector_addition(&ray->hitpos, &ray->ray);
