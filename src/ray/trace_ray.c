@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/03 12:35:15 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/06/03 17:32:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ double	dot_product(t_vector3d a, t_vector3d b)
 static	int	plane(t_object *obj, t_ray *ray)
 {
 	double dot_ray_n = dot_product(ray->ray, obj->data.plane.orientation);
-	if (dot_ray_n == INACCURATE_ZERO)
+	if (dot_ray_n == 0)
 		return (1);
 	double ax = obj->data.plane.orientation.x * obj->data.plane.coordinates.x;
 	double by = obj->data.plane.orientation.y * obj->data.plane.coordinates.y;
@@ -40,8 +40,8 @@ static	int	plane(t_object *obj, t_ray *ray)
 	ax = obj->data.plane.orientation.x * ray->startpos.x;
 	by = obj->data.plane.orientation.y * ray->startpos.y;
 	cz = obj->data.plane.orientation.z * ray->startpos.z;
-	double t = (-(ax + by + cz +d)) / dot_ray_n;
-	if (t <= INACCURATE_ZERO || t >= ray->maxlen)
+	double t = (-(ax + by + cz + d)) / dot_ray_n;
+	if (t <= INACCURATE_ZERO || t >= ray->maxlen - 1)
 		return (1);
 	ray->hitpos.x = ray->startpos.x + ray->ray.x * t;
 	ray->hitpos.y = ray->startpos.y + ray->ray.y * t;
@@ -71,12 +71,12 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 			if (sphere(obj, ray) == 0)
 				return (0);
 		}
-		if (obj->type == CYLINDER)
+		else if (obj->type == CYLINDER)
 		{
 			if (cylinder(obj, ray)== 0)
 				return (0);
 		}
-		if (obj->type == PLANE)
+		else if (obj->type == PLANE)
 		{
 			if (plane(obj, ray) == 0)
 				return (0);
