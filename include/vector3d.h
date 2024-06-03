@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:35:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/30 04:08:00 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/03 01:21:51 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,9 @@ int		parse_normalized_vector3d(t_vector3d *vector);
 void	yaw_pitch_to_vector(t_vector3d *vector, double yaw, double pitch);
 void	vector_addition(t_vector3d *vec1, t_vector3d *vec2);
 void	vector_multiply(t_vector3d *vec, double x);
+void	vector_divide(t_vector3d *vec, double x);
+double	vector_normalize(t_vector3d *vec);
+double	vector_get_norm(t_vector3d *vec);
+double	vector_dot_product(t_vector3d *vec1, t_vector3d *vec2);
 
 #endif

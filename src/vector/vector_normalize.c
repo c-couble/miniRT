@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   vector_normalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/03 01:10:50 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/03 01:05:11 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/03 01:06:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#include "vector3d.h"
 
-# define SCREEN_WIDTH		1920
-# define SCREEN_HEIGHT		1080
-# define WINDOW_NAME		"miniRT ccouble lespenel"
-# define MAX_RAY_LEN		1000
-# define INACCURATE_ZERO	10e-8
+double	vector_normalize(t_vector3d *vec)
+{
+	const double norm = vector_get_norm(vec);
 
-#endif
+	vector_divide(vec, norm);
+	return (norm);
+}

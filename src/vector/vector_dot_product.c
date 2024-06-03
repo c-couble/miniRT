@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   vector_dot_product.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/03 01:10:50 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/03 01:13:57 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/03 01:18:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#include "vector3d.h"
 
-# define SCREEN_WIDTH		1920
-# define SCREEN_HEIGHT		1080
-# define WINDOW_NAME		"miniRT ccouble lespenel"
-# define MAX_RAY_LEN		1000
-# define INACCURATE_ZERO	10e-8
-
-#endif
+double	vector_dot_product(t_vector3d *vec1, t_vector3d *vec2)
+{
+	return (vec1->x * vec2->x + vec1->y * vec2->y + vec1->z * vec2->z);
+}

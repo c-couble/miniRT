@@ -76,11 +76,7 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 				ray.ray.x = obj->data.light.coordinates.x - ray.startpos.x;
 				ray.ray.y = obj->data.light.coordinates.y - ray.startpos.y;
 				ray.ray.z = obj->data.light.coordinates.z - ray.startpos.z;
-				double vlen = powl(ray.ray.x, 2) + powl(ray.ray.y, 2) + powl(ray.ray.z, 2);
-				ray.ray.x /= vlen;
-				ray.ray.y /= vlen;
-				ray.ray.z /= vlen;
-				ray.maxlen = vlen;
+				ray.maxlen = vector_normalize(&ray.ray);
 				double ratio;
 				ratio = 1;
 				// We need to implement light correctly here
