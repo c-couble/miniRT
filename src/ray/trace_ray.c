@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/02 21:02:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/06/03 12:35:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,25 @@ double	dot_product(t_vector3d a, t_vector3d b)
 
 static	int	plane(t_object *obj, t_ray *ray)
 {
-	if (dot_product(ray->ray, obj->data.plane.orientation) > INACCURATE_ZERO)
-	{
-		ray->hitpos = ray->startpos;
-		vector_addition(&ray->hitpos, &ray->ray);
-		ray->color = obj->data.plane.color;
-		return (0);
-	}
-	return (1);
+	double dot_ray_n = dot_product(ray->ray, obj->data.plane.orientation);
+	if (dot_ray_n == INACCURATE_ZERO)
+		return (1);
+	double ax = obj->data.plane.orientation.x * obj->data.plane.coordinates.x;
+	double by = obj->data.plane.orientation.y * obj->data.plane.coordinates.y;
+	double cz = obj->data.plane.orientation.z * obj->data.plane.coordinates.z;
+	double d = -(ax + by + cz);
+
+	ax = obj->data.plane.orientation.x * ray->startpos.x;
+	by = obj->data.plane.orientation.y * ray->startpos.y;
+	cz = obj->data.plane.orientation.z * ray->startpos.z;
+	double t = (-(ax + by + cz +d)) / dot_ray_n;
+	if (t <= INACCURATE_ZERO || t >= ray->maxlen)
+		return (1);
+	ray->hitpos.x = ray->startpos.x + ray->ray.x * t;
+	ray->hitpos.y = ray->startpos.y + ray->ray.y * t;
+	ray->hitpos.z = ray->startpos.z + ray->ray.z * t;
+	ray->color = obj->data.plane.color;
+	return (0);
 }
 
 static	int	cylinder(t_object *obj, t_ray *ray)
