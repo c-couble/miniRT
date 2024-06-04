@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   intersect.c                                        :+:      :+:    :+:   */
+/*   intersect_plane.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 22:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/04 02:49:58 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/04 02:45:13 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/04 02:52:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "object.h"
+#include "defines.h"
+#include "vector3d.h"
 #include "ray.h"
-#include <stdio.h>
+#include "object.h"
 
-double	intersect(t_object *obj, t_ray *ray)
+double	intersect_plane(t_object *obj, t_ray *ray)
 {
-	static double	(*f[])(t_object *obj, t_ray *ray) = {
-	[AMBIENT_LIGHT] = NULL,
-	[CAMERA] = NULL,
-	[LIGHT] = NULL,
-	[SPHERE] = intersect_sphere,
-	[PLANE] = intersect_plane,
-	[CYLINDER] = intersect_cylinder,
-	};
-
-	if (f[obj->type] != NULL)
+	ray->color = obj->data.plane.color;
+	if (vector_dot_product(&ray->ray, &obj->data.plane.orientation) > INACCURATE_ZERO)
 	{
-		return (f[obj->type](obj, ray));
+		ray->color = obj->data.plane.color;
+		// ?? where is t
+		return (2);
 	}
 	return (-1);
 }

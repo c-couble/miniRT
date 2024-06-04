@@ -9,6 +9,7 @@ SRC = \
 	  \
 	  object/intersect.c \
 	  object/intersect_cylinder.c \
+	  object/intersect_plane.c \
 	  object/intersect_sphere.c \
 	  \
 	  parsing/parse_ambient_light.c \

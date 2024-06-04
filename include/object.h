@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/03 23:00:28 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/04 02:50:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,6 @@ int		init_object(t_object *object, char *line);
 double	intersect(t_object *obj, t_ray *ray);
 double	intersect_sphere(t_object *obj, t_ray *ray);
 double	intersect_cylinder(t_object *obj, t_ray *ray);
+double	intersect_plane(t_object *obj, t_ray *ray);
 
 #endif
