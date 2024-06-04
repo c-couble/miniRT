@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 17:42:38 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/03 23:00:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include "object/light.h"
 # include "object/plane.h"
 # include "object/sphere.h"
+# include "ray.h"
 
 typedef enum e_object_type
 {
@@ -48,6 +49,9 @@ typedef struct s_object
 	t_object_data	data;
 }	t_object;
 
-int	init_object(t_object *object, char *line);
+int		init_object(t_object *object, char *line);
+double	intersect(t_object *obj, t_ray *ray);
+double	intersect_sphere(t_object *obj, t_ray *ray);
+double	intersect_cylinder(t_object *obj, t_ray *ray);
 
 #endif

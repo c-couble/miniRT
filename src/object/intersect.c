@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   intersect.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/04 01:36:53 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/03 22:32:04 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/03 23:26:46 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
+#include "object.h"
+#include "ray.h"
 #include <stdio.h>
-#include <unistd.h>
 
-int	main(int argc, char *argv[])
+double	intersect(t_object *obj, t_ray *ray)
 {
-	t_engine	engine;
+	static double	(*f[])(t_object *obj, t_ray *ray) = {
+	[AMBIENT_LIGHT] = NULL,
+	[CAMERA] = NULL,
+	[LIGHT] = NULL,
+	[SPHERE] = intersect_sphere,
+	[PLANE] = NULL,
+	[CYLINDER] = intersect_cylinder,
+	};
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
+	if (f[obj->type] != NULL)
+	{
+		return (f[obj->type](obj, ray));
+	}
+	return (-1);
 }

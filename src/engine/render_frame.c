@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/* j Updated: 2024/05/30 04:52:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/04 01:39:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ void	render_frame(t_engine *engine)
 		j = 0;
 		while (j < engine->mlx.width)
 		{
-			engine->mlx.addr[(i * engine->mlx.width) + j].color = get_pixel_color(engine, j, i);
+			engine->mlx.addr[(i * engine->mlx.width) + j].color
+				= get_pixel_color(engine, j, i);
 			++j;
 		}
 		++i;

@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   math_util.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/04 01:36:53 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/04 02:15:12 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/04 02:17:44 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
+#ifndef MATH_UTIL_H
+# define MATH_UTIL_H
 
-int	main(int argc, char *argv[])
+typedef struct s_quadratic
 {
-	t_engine	engine;
+	double	a;
+	double	b;
+	double	c;
+	double	delta;
+	double	r1;
+	double	r2;
+}	t_quadratic;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
-}
+void	solve_quadratic_equation(t_quadratic *q);
+
+#endif
