@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/04 02:50:15 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/05 01:11:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include "object/cylinder.h"
 # include "object/light.h"
 # include "object/plane.h"
+# include "object/paraboloid.h"
 # include "object/sphere.h"
 # include "ray.h"
 
@@ -29,6 +30,7 @@ typedef enum e_object_type
 	SPHERE,
 	PLANE,
 	CYLINDER,
+	PARABOLOID,
 	UNKNOWN_OBJ,
 	COMMENT
 }	t_object_type;
@@ -41,6 +43,7 @@ typedef union u_object_data
 	t_light			light;
 	t_plane			plane;
 	t_sphere		sphere;
+	t_paraboloid	paraboloid;
 }	t_object_data;
 
 typedef struct s_object
@@ -54,5 +57,6 @@ double	intersect(t_object *obj, t_ray *ray);
 double	intersect_sphere(t_object *obj, t_ray *ray);
 double	intersect_cylinder(t_object *obj, t_ray *ray);
 double	intersect_plane(t_object *obj, t_ray *ray);
+double	intersect_paraboloide(t_object *obj, t_ray *ray);
 
 #endif
