@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/05 00:19:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/05 01:28:51 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	}
 	if (r != -1)
 	{
-		vector_multiply(&ray->ray, r);
+		vector_multiply_coeff(&ray->ray, r);
 		ray->hitpos = ray->startpos;
 		vector_addition(&ray->hitpos, &ray->ray);
 		ray->color = c;

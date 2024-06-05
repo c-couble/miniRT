@@ -33,10 +33,12 @@ SRC = \
 	  util/solve_quadratic_equation.c \
 	  \
 	  vector/vector_addition.c \
+	  vector/vector_cross_product.c \
 	  vector/vector_divide.c \
 	  vector/vector_dot_product.c \
 	  vector/vector_get_norm.c \
 	  vector/vector_multiply.c \
+	  vector/vector_multiply_coeff.c \
 	  vector/vector_normalize.c \
 	  vector/vector_subtract.c \
 	  vector/yaw_pitch_to_vector.c \
