@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/05 06:08:31 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/06 19:27:18 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,89 @@
 #include "vector3d.h"
 #include <math.h>
 
+static double	hit_cyl(t_object *obj, t_ray *ray);
+static double	check_disk(t_object *obj, t_ray *ray, t_vector3d *p);
+
 double	intersect_cylinder(t_object *obj, t_ray *ray)
+{
+	double	cyl_t = hit_cyl(obj, ray);
+
+	t_vector3d	a = obj->data.cylinder.axis;
+	vector_multiply_coeff(&a, obj->data.cylinder.height / 2);
+	t_vector3d	r2;
+	r2 = obj->data.cylinder.coordinates;
+	vector_addition(&r2, &a);
+
+	t_vector3d	r1;
+	vector_subtract(&obj->data.cylinder.coordinates, &a, &r1);
+	double t = check_disk(obj, ray, &r1);
+	double t2 = check_disk(obj, ray, &r2);
+
+	if (cyl_t == -1 && t == -1)
+		return (t2);
+	if (cyl_t == -1 && t2 == -1)
+		return (t);
+	if (t == -1 && t2 == -1)
+		return (cyl_t);
+	if (cyl_t == -1)
+	{
+		if (t > t2)
+			return (t2);
+		return (t);
+	}
+	if (t == -1)
+	{
+		if (cyl_t > t2)
+			return (t2);
+		return (cyl_t);
+	}
+	if (t2 == -1)
+	{
+		if (cyl_t > t)
+			return (t);
+		return (cyl_t);
+	}
+	if (cyl_t < t && cyl_t < t2)
+		return (cyl_t);
+	if (t < cyl_t && t < t2)
+		return (t);
+	if (t2 < t && t2 < cyl_t)
+		return (t2);
+	return (-1);
+}
+
+static double	check_disk(t_object *obj, t_ray *ray, t_vector3d *p)
+{
+	double dot_ray_n = vector_dot_product(&ray->ray, &obj->data.plane.orientation);
+	if (dot_ray_n == 0)
+		return (-1);
+	double ax = obj->data.cylinder.axis.x * p->x;
+	double by = obj->data.cylinder.axis.y * p->y;
+	double cz = obj->data.cylinder.axis.z * p->z;
+	double d = -(ax + by + cz);
+
+	ax = obj->data.cylinder.axis.x * ray->startpos.x;
+	by = obj->data.cylinder.axis.y * ray->startpos.y;
+	cz = obj->data.cylinder.axis.z * ray->startpos.z;
+	double t = (-(ax + by + cz + d)) / dot_ray_n;
+	if (t <= INACCURATE_ZERO || t >= ray->maxlen - 1)
+		return (-1);
+	t_vector3d bolide;
+	t_vector3d bolide2;
+	bolide = ray->ray;
+	vector_multiply_coeff(&bolide, t);
+	bolide2.x = ray->startpos.x + bolide.x;
+	bolide2.y = ray->startpos.y + bolide.y;
+	bolide2.z = ray->startpos.z + bolide.z;
+	bolide2.x = p->x - bolide2.x;
+	bolide2.y = p->y - bolide2.y;
+	bolide2.z = p->z - bolide2.z;
+	if (vector_get_norm(&bolide2) < powl(obj->data.cylinder.diameter / 2, 2))
+		return (t);
+	return (-1);
+}
+
+static double	hit_cyl(t_object *obj, t_ray *ray)
 {
 	t_quadratic	q;
 	ray->color = obj->data.cylinder.color;
