@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/06 19:27:18 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/07 16:43:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,40 +32,14 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 
 	t_vector3d	r1;
 	vector_subtract(&obj->data.cylinder.coordinates, &a, &r1);
-	double t = check_disk(obj, ray, &r1);
-	double t2 = check_disk(obj, ray, &r2);
+	double tmp = check_disk(obj, ray, &r1);
+	if (tmp != -1 && (tmp < cyl_t || cyl_t == -1))
+		cyl_t = tmp;
+	tmp = check_disk(obj, ray, &r2);
+	if (tmp != -1 && (tmp < cyl_t || cyl_t == -1))
+		cyl_t = tmp;
 
-	if (cyl_t == -1 && t == -1)
-		return (t2);
-	if (cyl_t == -1 && t2 == -1)
-		return (t);
-	if (t == -1 && t2 == -1)
-		return (cyl_t);
-	if (cyl_t == -1)
-	{
-		if (t > t2)
-			return (t2);
-		return (t);
-	}
-	if (t == -1)
-	{
-		if (cyl_t > t2)
-			return (t2);
-		return (cyl_t);
-	}
-	if (t2 == -1)
-	{
-		if (cyl_t > t)
-			return (t);
-		return (cyl_t);
-	}
-	if (cyl_t < t && cyl_t < t2)
-		return (cyl_t);
-	if (t < cyl_t && t < t2)
-		return (t);
-	if (t2 < t && t2 < cyl_t)
-		return (t2);
-	return (-1);
+	return (cyl_t);
 }
 
 static double	check_disk(t_object *obj, t_ray *ray, t_vector3d *p)
@@ -94,7 +68,7 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vector3d *p)
 	bolide2.x = p->x - bolide2.x;
 	bolide2.y = p->y - bolide2.y;
 	bolide2.z = p->z - bolide2.z;
-	if (vector_get_norm(&bolide2) < powl(obj->data.cylinder.diameter / 2, 2))
+	if (powl(bolide2.x, 2) + powl(bolide2.y, 2) + powl(bolide2.z, 2) < powl(obj->data.cylinder.diameter / 2, 2))
 		return (t);
 	return (-1);
 }
@@ -123,7 +97,7 @@ static double	hit_cyl(t_object *obj, t_ray *ray)
 	vector_cross_product(&obj->data.cylinder.axis, &ray->ray, &va);
 	vector_cross_product(&va, &obj->data.cylinder.axis, &va);
 	q.a = vector_dot_product(&va, &va);
-	q.c = (vector_dot_product(&a0, &a0) - powl(obj->data.cylinder.height / 2, 2));
+	q.c = (vector_dot_product(&a0, &a0) - powl(obj->data.cylinder.diameter / 2, 2));
 	vector_multiply_coeff(&a0, 2);
 	q.b = vector_dot_product(&a0, &va);
 
