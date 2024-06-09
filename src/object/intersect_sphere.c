@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/08 19:34:54 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/09 14:01:00 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "object.h"
 #include "ray.h"
 #include "vector3d.h"
+#include "util.h"
 #include <math.h>
 
 double	intersect_sphere(t_object *obj, t_ray *ray)
@@ -30,14 +31,5 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 	solve_quadratic_equation(&q);
 	if (q.delta < 0)
 		return (-1);
-	if ((q.r1 <= INACCURATE_ZERO || q.r1 > ray->maxlen)
-		&& (q.r2 <= INACCURATE_ZERO || q.r2 > ray->maxlen))
-		return (-1);
-	if (q.r1 <= INACCURATE_ZERO || q.r1 > ray->maxlen)
-		return (q.r2);
-	if (q.r2 <= INACCURATE_ZERO || q.r2 > ray->maxlen)
-		return (q.r1);
-	if (q.r1 < q.r2)
-		return (q.r1);
-	return (q.r2);
+	return (get_closest_distance(q.r1, q.r2, ray->maxlen));
 }

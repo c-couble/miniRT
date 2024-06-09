@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ray.h                                              :+:      :+:    :+:   */
+/*   get_closest_distance.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 14:22:47 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/09 13:56:40 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/09 14:00:21 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RAY_H
-# define RAY_H
+#include "defines.h"
 
-# include "engine.h"
-# include "color.h"
-# include "vector3d.h"
-
-typedef struct s_ray
+double	get_closest_distance(double a, double b, double max)
 {
-	t_vector3d	startpos;
-	t_vector3d	ray;
-	t_vector3d	hitpos;
-	t_vector3d	normal;
-	t_color		color;
-	double		maxlen;
-}	t_ray;
-
-int	trace_ray(t_engine *engine, t_ray *ray);
-
-#endif
+	if ((a <= INACCURATE_ZERO || a > max) && (b <= INACCURATE_ZERO || b > max))
+		return (-1);
+	if (a <= INACCURATE_ZERO || a > max)
+		return (b);
+	if (b <= INACCURATE_ZERO || b > max)
+		return (a);
+	if (a < b)
+		return (a);
+	return (b);
+}

@@ -6,15 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/07 16:43:40 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/09 14:38:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
 #include "math_util.h"
 #include "object.h"
+#include "object/plane.h"
 #include "ray.h"
 #include "vector3d.h"
+#include "util.h"
 #include <math.h>
 
 static double	hit_cyl(t_object *obj, t_ray *ray);
@@ -22,7 +24,7 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vector3d *p);
 
 double	intersect_cylinder(t_object *obj, t_ray *ray)
 {
-	double	cyl_t = hit_cyl(obj, ray);
+	double	t = hit_cyl(obj, ray);
 
 	t_vector3d	a = obj->data.cylinder.axis;
 	vector_multiply_coeff(&a, obj->data.cylinder.height / 2);
@@ -32,42 +34,24 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 
 	t_vector3d	r1;
 	vector_subtract(&obj->data.cylinder.coordinates, &a, &r1);
-	double tmp = check_disk(obj, ray, &r1);
-	if (tmp != -1 && (tmp < cyl_t || cyl_t == -1))
-		cyl_t = tmp;
-	tmp = check_disk(obj, ray, &r2);
-	if (tmp != -1 && (tmp < cyl_t || cyl_t == -1))
-		cyl_t = tmp;
-
-	return (cyl_t);
+	t = get_closest_distance(t, check_disk(obj, ray, &r1), ray->maxlen);
+	t = get_closest_distance(t, check_disk(obj, ray, &r2), ray->maxlen);
+	return (t);
 }
 
 static double	check_disk(t_object *obj, t_ray *ray, t_vector3d *p)
 {
-	double dot_ray_n = vector_dot_product(&ray->ray, &obj->data.plane.orientation);
-	if (dot_ray_n == 0)
-		return (-1);
-	double ax = obj->data.cylinder.axis.x * p->x;
-	double by = obj->data.cylinder.axis.y * p->y;
-	double cz = obj->data.cylinder.axis.z * p->z;
-	double d = -(ax + by + cz);
-
-	ax = obj->data.cylinder.axis.x * ray->startpos.x;
-	by = obj->data.cylinder.axis.y * ray->startpos.y;
-	cz = obj->data.cylinder.axis.z * ray->startpos.z;
-	double t = (-(ax + by + cz + d)) / dot_ray_n;
-	if (t <= INACCURATE_ZERO || t >= ray->maxlen - 1)
-		return (-1);
+	t_plane	plane;
+	plane.orientation = obj->data.cylinder.axis;
+	plane.coordinates = *p;
+	double t = solve_plane_equation(&plane, ray);
 	t_vector3d bolide;
 	t_vector3d bolide2;
 	bolide = ray->ray;
 	vector_multiply_coeff(&bolide, t);
-	bolide2.x = ray->startpos.x + bolide.x;
-	bolide2.y = ray->startpos.y + bolide.y;
-	bolide2.z = ray->startpos.z + bolide.z;
-	bolide2.x = p->x - bolide2.x;
-	bolide2.y = p->y - bolide2.y;
-	bolide2.z = p->z - bolide2.z;
+	bolide2.x = p->x - (ray->startpos.x + bolide.x);
+	bolide2.y = p->y - (ray->startpos.y + bolide.y);
+	bolide2.z = p->z - (ray->startpos.z + bolide.z);
 	if (powl(bolide2.x, 2) + powl(bolide2.y, 2) + powl(bolide2.z, 2) < powl(obj->data.cylinder.diameter / 2, 2))
 		return (t);
 	return (-1);
@@ -111,54 +95,23 @@ static double	hit_cyl(t_object *obj, t_ray *ray)
 		vector_multiply_coeff(&rayt, q.r1);
 		vector_addition(&rray, &rayt);
 		t_vector3d	cmp;
-		int	r1ok = 1;
 		vector_subtract(&rray, &r1, &cmp);
 		if (vector_dot_product(&cmp, &obj->data.cylinder.axis) <= 0)
-			r1ok = 0;
+			q.r1 = -1;
 		vector_subtract(&rray, &r2, &cmp);
 		if (vector_dot_product(&cmp, &obj->data.cylinder.axis) >= 0)
-			r1ok = 0;
+			q.r1 = -1;
 		rray = ray->startpos;
 		rayt = ray->ray;
 		vector_multiply_coeff(&rayt, q.r2);
 		vector_addition(&rray, &rayt);
-		int	r2ok = 1;
 		vector_subtract(&rray, &r1, &cmp);
 		if (vector_dot_product(&cmp, &obj->data.cylinder.axis) <= 0)
-			r2ok = 0;
+			q.r2 = -1;
 		vector_subtract(&rray, &r2, &cmp);
 		if (vector_dot_product(&cmp, &obj->data.cylinder.axis) >= 0)
-			r2ok = 0;
-		if (r1ok && r2ok)
-		{
-			double	t;
-			if (q.r1 <= INACCURATE_ZERO || q.r1 > ray->maxlen)
-				t = q.r2;
-			else if (q.r2 <= INACCURATE_ZERO || q.r2 > ray->maxlen)
-				t = q.r1;
-			else
-			{
-				if (q.r1 > q.r2)
-					t = q.r2;
-				else
-					t = q.r1;
-			}
-			if (t <= INACCURATE_ZERO || t > ray->maxlen)
-				return (-1);
-			return (t);
-		}
-		else if (r1ok)
-		{
-			if (q.r1 <= INACCURATE_ZERO || q.r1 > ray->maxlen)
-				return (-1);
-			return (q.r1);
-		}
-		else if (r2ok)
-		{
-			if (q.r2 <= INACCURATE_ZERO || q.r2 > ray->maxlen)
-				return (-1);
-			return (q.r2);
-		}
+			q.r2 = -1;
+		return (get_closest_distance(q.r1, q.r2, ray->maxlen));
 	}
 	return (-1);
 }
