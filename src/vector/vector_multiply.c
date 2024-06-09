@@ -6,15 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 04:00:50 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/30 04:02:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/05 01:22:08 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vector3d.h"
 
-void	vector_multiply(t_vector3d *vec, double x)
+void	vector_multiply(t_vector3d *vec1, t_vector3d *vec2, t_vector3d *out)
 {
-	vec->x *= x;
-	vec->y *= x;
-	vec->z *= x;
+	out->x = vec1->x * vec2->x;
+	out->y = vec1->y * vec2->y;
+	out->z = vec1->z * vec2->z;
 }

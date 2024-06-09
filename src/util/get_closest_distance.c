@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   get_closest_distance.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/05 05:41:08 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/09 13:56:40 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/09 19:10:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "defines.h"
 
-int	main(int argc, char *argv[])
+double	get_closest_distance(double a, double b)
 {
-	t_engine	engine;
-
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
+	if (a <= INACCURATE_ZERO && b <= INACCURATE_ZERO)
+		return (-1);
+	if (a <= INACCURATE_ZERO)
+		return (b);
+	if (b <= INACCURATE_ZERO)
+		return (a);
+	if (a < b)
+		return (a);
+	return (b);
 }

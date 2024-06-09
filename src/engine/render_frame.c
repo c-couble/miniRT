@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/04 01:39:15 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/09 19:15:20 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,7 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 
 	yaw_pitch_to_vector(&ray.ray, yaw, pitch);
 	ray.startpos = engine->scene.camera.coordinates;
-	ray.maxlen = MAX_RAY_LEN;
-	if (trace_ray(engine, &ray) == 0)
+	if (trace_ray(engine, &ray) > 0)
 	{
 		t_color	color;
 		color = ray.color;
@@ -77,11 +76,12 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 				ray.ray.x = obj->data.light.coordinates.x - ray.startpos.x;
 				ray.ray.y = obj->data.light.coordinates.y - ray.startpos.y;
 				ray.ray.z = obj->data.light.coordinates.z - ray.startpos.z;
-				ray.maxlen = vector_normalize(&ray.ray);
+				double norm = vector_normalize(&ray.ray);
 				double ratio;
 				ratio = 1;
 				// We need to implement light correctly here
-				if (trace_ray(engine, &ray) == -1)
+				double d = trace_ray(engine, &ray);
+				if (d < 0 || d > norm)
 				{
 					ratio = ratio  * obj->data.light.ratio;
 					light.rgb.r = ft_max(light.rgb.r, obj->data.light.color.rgb.r * ratio);
