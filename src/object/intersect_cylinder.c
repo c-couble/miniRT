@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 14:38:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/09 19:13:02 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 
 	t_vector3d	r1;
 	vector_subtract(&obj->data.cylinder.coordinates, &a, &r1);
-	t = get_closest_distance(t, check_disk(obj, ray, &r1), ray->maxlen);
-	t = get_closest_distance(t, check_disk(obj, ray, &r2), ray->maxlen);
+	t = get_closest_distance(t, check_disk(obj, ray, &r1));
+	t = get_closest_distance(t, check_disk(obj, ray, &r2));
 	return (t);
 }
 
@@ -111,7 +111,7 @@ static double	hit_cyl(t_object *obj, t_ray *ray)
 		vector_subtract(&rray, &r2, &cmp);
 		if (vector_dot_product(&cmp, &obj->data.cylinder.axis) >= 0)
 			q.r2 = -1;
-		return (get_closest_distance(q.r1, q.r2, ray->maxlen));
+		return (get_closest_distance(q.r1, q.r2));
 	}
 	return (-1);
 }

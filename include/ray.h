@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 14:22:47 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/09 19:10:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ typedef struct s_ray
 	t_vector3d	hitpos;
 	t_vector3d	normal;
 	t_color		color;
-	double		maxlen;
 }	t_ray;
 
 int	trace_ray(t_engine *engine, t_ray *ray);

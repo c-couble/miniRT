@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:14:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 14:29:08 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/09 19:13:43 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ double	solve_plane_equation(t_plane *plane, t_ray *ray)
 	by = plane->orientation.y * ray->startpos.y;
 	cz = plane->orientation.z * ray->startpos.z;
 	double t = (-(ax + by + cz + d)) / dot_ray_n;
-	if (t <= INACCURATE_ZERO || t >= ray->maxlen - 1)
+	if (t <= INACCURATE_ZERO)
 		return (-1);
 	return (t);
 }

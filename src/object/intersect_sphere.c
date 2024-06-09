@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 14:01:00 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/09 19:13:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 	solve_quadratic_equation(&q);
 	if (q.delta < 0)
 		return (-1);
-	return (get_closest_distance(q.r1, q.r2, ray->maxlen));
+	return (get_closest_distance(q.r1, q.r2));
 }
