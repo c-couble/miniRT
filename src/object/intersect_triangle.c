@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/10 14:21:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/06/10 14:38:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,8 @@ static int	bsp(t_vector3d *a, t_vector3d *b, t_vector3d *c, t_vector3d *point)
 	base_bc_area = triangle_area(b, c, point);
 	abc_area = triangle_area(a, b, c);
 	sum_area = base_ab_area + base_ac_area + base_bc_area;
-	if (sum_area < abc_area + INACCURATE_ZERO
-		&& sum_area > abc_area - INACCURATE_ZERO)
+	if (sum_area <= abc_area + INACCURATE_ZERO
+		&& sum_area >= abc_area - INACCURATE_ZERO)
 		return (1);
 	return (0);
 }
