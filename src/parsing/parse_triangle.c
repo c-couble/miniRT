@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_paraboloid.c                                 :+:      :+:    :+:   */
+/*   parse_triangle.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/09 23:20:43 by lespenel         ###   ########.fr       */
+/*   Created: 2024/06/09 23:02:33 by lespenel          #+#    #+#             */
+/*   Updated: 2024/06/10 12:21:16 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,15 @@
 #include "float.h"
 #include <stdio.h>
 
-int	parse_paraboloid(t_object_data *data)
+int	parse_triangle(t_object_data *data)
 {
-	char	*arg;
-
-	if (parse_vector3d(&data->paraboloid.coordinates, -DBL_MAX, DBL_MAX) == -1)
+	if (parse_vector3d(&data->triangle.p0, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_normalized_vector3d(&data->paraboloid.axis) == -1)
+	if (parse_vector3d(&data->triangle.p1, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	arg = ft_strtok(NULL, " \t");
-	if (parse_double(&data->paraboloid.ray_coef, arg, 0, DBL_MAX) == -1)
+	if (parse_vector3d(&data->triangle.p2, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	arg = ft_strtok(NULL, " \t");
-	if (parse_double(&data->paraboloid.height, arg, 0, DBL_MAX) == -1)
-		return (-1);
-	if (parse_color(&data->paraboloid.color) == -1)
+	if (parse_color(&data->triangle.color) == -1)
 		return (-1);
 	return (0);
 }
