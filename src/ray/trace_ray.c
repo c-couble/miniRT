@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 19:13:29 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/11 20:26:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 #include "engine.h"
-#include "vector3d.h"
+#include "vec3.h"
 #include "ray.h"
 #include "object.h"
 
@@ -42,9 +42,9 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	}
 	if (r != -1)
 	{
-		vector_multiply_coeff(&ray->ray, r);
+		vec3_scale(&ray->ray, r);
 		ray->hitpos = ray->startpos;
-		vector_addition(&ray->hitpos, &ray->ray);
+		vec3_add(&ray->hitpos, &ray->ray, &ray->hitpos);
 		ray->color = c;
 		return (r);
 	}

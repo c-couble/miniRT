@@ -34,15 +34,13 @@ SRC = \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
 	  \
-	  vector/vector_addition.c \
-	  vector/vector_cross_product.c \
-	  vector/vector_divide.c \
-	  vector/vector_dot_product.c \
-	  vector/vector_get_norm.c \
-	  vector/vector_multiply.c \
-	  vector/vector_multiply_coeff.c \
-	  vector/vector_normalize.c \
-	  vector/vector_subtract.c \
-	  vector/yaw_pitch_to_vector.c \
+	  vec3/vec3_add.c \
+	  vec3/vec3_cross_product.c \
+	  vec3/vec3_dot_product.c \
+	  vec3/vec3_get_norm.c \
+	  vec3/vec3_normalize.c \
+	  vec3/vec3_scale.c \
+	  vec3/vec3_subtract.c \
+	  vec3/yaw_pitch_to_vector.c \
 	  \
 	  main.c \

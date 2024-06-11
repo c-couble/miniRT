@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/22 03:10:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/11 20:26:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "object.h"
 #include "color.h"
-#include "vector3d.h"
+#include "vec3.h"
 #include "float.h"
 
 int	parse_plane(t_object_data *data)

@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vector_cross_product.c                             :+:      :+:    :+:   */
+/*   yaw_pitch_to_vector.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 01:22:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/05 05:42:40 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/23 05:27:44 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/11 20:43:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vector3d.h"
+#include "vec3.h"
+#include <math.h>
 
-void	vector_cross_product(t_vector3d *a, t_vector3d *b, t_vector3d *out)
+void	yaw_pitch_to_vector(t_vec3 *vector, double yaw, double pitch)
 {
-	const double	x = a->y * b->z - a->z * b->y;
-	const double	y = a->z * b->x - a->x * b->z;
-	const double	z = a->x * b->y - a->y * b->x;
+	const double	cos_pitch = cos(pitch);
 
-	out->x = x;
-	out->y = y;
-	out->z = z;
+	vector->x = cos(yaw) * cos_pitch;
+	vector->y = sin(yaw) * cos_pitch;
+	vector->z = sin(pitch);
 }

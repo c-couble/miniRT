@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/07 15:12:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/11 20:24:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "object.h"
 #include "object/parse_util.h"
 #include "color.h"
-#include "vector3d.h"
+#include "vec3.h"
 #include "float.h"
 #include <stdio.h>
 
@@ -34,10 +34,5 @@ int	parse_cylinder(t_object_data *data)
 		return (-1);
 	if (parse_color(&data->cylinder.color) == -1)
 		return (-1);
-	printf("Cylinder %lf;%lf;%lf axis %lf;%lf;%lf diameter %lf height %lf\n",
-		data->cylinder.coordinates.x, data->cylinder.coordinates.y,
-		data->cylinder.coordinates.z, data->cylinder.axis.x,
-		data->cylinder.axis.y, data->cylinder.axis.z, data->cylinder.diameter,
-		data->cylinder.height);
 	return (0);
 }

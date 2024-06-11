@@ -6,18 +6,18 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:14:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 19:13:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/11 20:30:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
 #include "object/plane.h"
-#include "vector3d.h"
+#include "vec3.h"
 #include "ray.h"
 
 double	solve_plane_equation(t_plane *plane, t_ray *ray)
 {
-	const double	dot_ray_n = vector_dot_product(&ray->ray, &plane->orientation);
+	const double	dot_ray_n = vec3_dot_product(&ray->ray, &plane->orientation);
 	if (dot_ray_n == 0)
 		return (1);
 	double ax = plane->orientation.x * plane->coordinates.x;

@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   yaw_pitch_to_vector.c                              :+:      :+:    :+:   */
+/*   vec3_cross_product.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/23 05:27:44 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/23 06:25:16 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/03 01:22:01 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/11 20:44:33 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vector3d.h"
-#include <stdio.h>
-#include <math.h>
+#include "vec3.h"
 
-void	yaw_pitch_to_vector(t_vector3d *vector, double yaw, double pitch)
+t_vec3	*vec3_cross_product(t_vec3 *a, t_vec3 *b, t_vec3 *out)
 {
-	const double	cos_pitch = cos(pitch);
+	const double	x = a->y * b->z - a->z * b->y;
+	const double	y = a->z * b->x - a->x * b->z;
+	const double	z = a->x * b->y - a->y * b->x;
 
-	vector->x = cos(yaw) * cos_pitch;
-	vector->y = sin(yaw) * cos_pitch;
-	vector->z = sin(pitch);
-	//printf("reverted %lf;%lf to %lf %lf %lf\n", yaw, pitch, vector->x,
-//		vector->y, vector->z);
+	out->x = x;
+	out->y = y;
+	out->z = z;
+	return (out);
 }

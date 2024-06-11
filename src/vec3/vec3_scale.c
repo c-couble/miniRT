@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vector_addition.c                                  :+:      :+:    :+:   */
+/*   vec3_scale.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/30 04:06:07 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/30 04:07:55 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/30 04:00:50 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/11 20:44:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vector3d.h"
+#include "vec3.h"
 
-void	vector_addition(t_vector3d *vec1, t_vector3d *vec2)
+t_vec3	*vec3_scale(t_vec3 *vec, double x)
 {
-	vec1->x += vec2->x;
-	vec1->y += vec2->y;
-	vec1->z += vec2->z;
+	vec->x *= x;
+	vec->y *= x;
+	vec->z *= x;
+	return (vec);
 }

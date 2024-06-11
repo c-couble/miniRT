@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vector_normalize.c                                 :+:      :+:    :+:   */
+/*   vec3_normalize.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 01:05:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/03 01:06:40 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/11 20:41:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vector3d.h"
+#include "vec3.h"
 
-double	vector_normalize(t_vector3d *vec)
+double	vec3_normalize(t_vec3 *vec)
 {
-	const double norm = vector_get_norm(vec);
+	const double norm = vec3_get_norm(vec);
 
-	vector_divide(vec, norm);
+	vec3_scale(vec, 1 / norm);
 	return (norm);
 }

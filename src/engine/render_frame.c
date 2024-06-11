@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 19:15:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/11 20:29:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "object.h"
 #include "ray.h"
 #include "vector.h"
-#include "vector3d.h"
+#include "vec3.h"
 #include "ft_math.h"
 #include <math.h>
 #include <stdint.h>
@@ -76,7 +76,7 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 				ray.ray.x = obj->data.light.coordinates.x - ray.startpos.x;
 				ray.ray.y = obj->data.light.coordinates.y - ray.startpos.y;
 				ray.ray.z = obj->data.light.coordinates.z - ray.startpos.z;
-				double norm = vector_normalize(&ray.ray);
+				double norm = vec3_normalize(&ray.ray);
 				double ratio;
 				ratio = 1;
 				// We need to implement light correctly here

@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vector_substract.c                                 :+:      :+:    :+:   */
+/*   vec3_get_norm.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/04 02:25:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/04 02:26:12 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/03 01:04:29 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/11 20:37:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vector3d.h"
+#include "vec3.h"
+#include <math.h>
 
-void	vector_subtract(t_vector3d *vec1, t_vector3d *vec2, t_vector3d *out)
+double	vec3_get_norm(t_vec3 *vec)
 {
-	out->x = vec1->x - vec2->x;
-	out->y = vec1->y - vec2->y;
-	out->z = vec1->z - vec2->z;
+	return (sqrt(powl(vec->x, 2) + powl(vec->y, 2) + powl(vec->z, 2)));
 }

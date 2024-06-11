@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/04 01:36:39 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/11 20:24:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
-#include "vector3d.h"
+#include "vec3.h"
 #include "object.h"
 #include "object/parse_util.h"
 #include "float.h"
