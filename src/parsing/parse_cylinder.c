@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:24:54 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/12 00:55:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int	parse_cylinder(t_object_data *data)
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->cylinder.diameter, arg, 0, DBL_MAX) == -1)
 		return (-1);
+	data->cylinder.radius = data->cylinder.diameter / 2;
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->cylinder.height, arg, 0, DBL_MAX) == -1)
 		return (-1);

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 18:15:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:19:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/12 00:54:52 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,10 @@ typedef struct s_cylinder
 {
 	t_vec3	coordinates;
 	t_vec3	axis;
-	double		diameter;
-	double		height;
-	t_color		color;
+	double	diameter;
+	double	radius;
+	double	height;
+	t_color	color;
 }	t_cylinder;
 
 union	u_object_data;

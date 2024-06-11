@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:19:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/12 01:03:50 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 typedef struct s_light
 {
 	t_vec3	coordinates;
-	double		ratio;
-	t_color		color;
+	double	ratio;
+	t_color	color;
 }	t_light;
 
 union	u_object_data;

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:14:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:30:56 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/12 01:14:25 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,17 @@
 
 double	solve_plane_equation(t_plane *plane, t_ray *ray)
 {
-	const double	dot_ray_n = vec3_dot_product(&ray->ray, &plane->orientation);
-	if (dot_ray_n == 0)
-		return (1);
-	double ax = plane->orientation.x * plane->coordinates.x;
-	double by = plane->orientation.y * plane->coordinates.y;
-	double cz = plane->orientation.z * plane->coordinates.z;
-	double d = -(ax + by + cz);
+	const double	dot = vec3_dot_product(&ray->ray, &plane->orientation);
+	const double	d = -(plane->orientation.x * plane->coordinates.x
+			+ plane->orientation.y * plane->coordinates.y
+			+ plane->orientation.z * plane->coordinates.z);
+	double			t;
 
-	ax = plane->orientation.x * ray->startpos.x;
-	by = plane->orientation.y * ray->startpos.y;
-	cz = plane->orientation.z * ray->startpos.z;
-	double t = (-(ax + by + cz + d)) / dot_ray_n;
+	if (dot == 0)
+		return (1);
+	t = (-(plane->orientation.x * ray->startpos.x
+				+ plane->orientation.y * ray->startpos.y
+				+ plane->orientation.z * ray->startpos.z + d)) / dot;
 	if (t <= INACCURATE_ZERO)
 		return (-1);
 	return (t);
