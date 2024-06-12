@@ -11,6 +11,8 @@ SRC = \
 	  object/intersect_cylinder.c \
 	  object/intersect_plane.c \
 	  object/intersect_sphere.c \
+	  object/intersect_paraboloid.c \
+	  object/intersect_triangle.c \
 	  \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
@@ -20,6 +22,8 @@ SRC = \
 	  parsing/parse_double.c \
 	  parsing/parse_normalized_vector3d.c \
 	  parsing/parse_vector3d.c \
+	  parsing/parse_paraboloid.c \
+	  parsing/parse_triangle.c \
 	  parsing/parse_plane.c \
 	  parsing/parse_sphere.c \
 	  parsing/init_object.c \
