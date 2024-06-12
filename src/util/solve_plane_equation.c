@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:14:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:14:25 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/12 01:25:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ double	solve_plane_equation(t_plane *plane, t_ray *ray)
 	double			t;
 
 	if (dot == 0)
-		return (1);
+		return (-1);
 	t = (-(plane->orientation.x * ray->startpos.x
 				+ plane->orientation.y * ray->startpos.y
 				+ plane->orientation.z * ray->startpos.z + d)) / dot;

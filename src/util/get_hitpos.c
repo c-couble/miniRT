@@ -1,36 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ray.h                                              :+:      :+:    :+:   */
+/*   get_hitpos.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:42:36 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/12 01:21:24 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/12 01:44:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RAY_H
-# define RAY_H
+#include "ray.h"
+#include "vec3.h"
 
-# include "engine.h"
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_hit_data
+void	get_hitpos(t_ray *ray, double t)
 {
-	t_vec3	hitpos;
-	t_vec3	normal;
-	t_color	color;
-}	t_hit_data;
+	t_vec3	fullray;
 
-typedef struct s_ray
-{
-	t_vec3		startpos;
-	t_vec3		ray;
-	t_hit_data	data;
-}	t_ray;
-
-int	trace_ray(t_engine *engine, t_ray *ray);
-
-#endif
+	fullray = ray->ray;
+	vec3_scale(&fullray, t);
+	vec3_add(&ray->startpos, &fullray, &ray->data.hitpos);
+}

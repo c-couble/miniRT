@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:00:40 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/12 01:43:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,11 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 	t = hit_cyl(obj, ray, &r1, &r2);
 	t = get_closest_distance(t, check_disk(obj, ray, &r1));
 	t = get_closest_distance(t, check_disk(obj, ray, &r2));
+	get_hitpos(ray, t);
+	if (t == -1)
+		return (-1);
+	ray->data.color = obj->data.cylinder.color;
+	get_hitpos(ray, t);
 	return (t);
 }
 
@@ -93,7 +98,6 @@ static double	hit_cyl(t_object *obj, t_ray *ray, t_vec3 *r1, t_vec3 *r2)
 	t_vec3		rray;
 	t_vec3		rayt;
 
-	ray->color = obj->data.cylinder.color;
 	solve_cylinder_quadratic(obj, ray, &q);
 	if (q.delta >= 0)
 	{

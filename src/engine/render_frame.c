@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:29:59 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/12 01:43:45 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 	if (trace_ray(engine, &ray) > 0)
 	{
 		t_color	color;
-		color = ray.color;
+		color = ray.data.color;
 		t_color	light;
 		light.color = 0;
 		size_t	i = 0;
@@ -72,7 +72,7 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 			t_object	*obj = at_vector(&engine->scene.objects, i);
 			if (obj->type == LIGHT)
 			{
-				ray.startpos = ray.hitpos;
+				ray.startpos = ray.data.hitpos;
 				ray.ray.x = obj->data.light.coordinates.x - ray.startpos.x;
 				ray.ray.y = obj->data.light.coordinates.y - ray.startpos.y;
 				ray.ray.z = obj->data.light.coordinates.z - ray.startpos.z;
