@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 00:55:17 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:00:02 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	parse_cylinder(t_object_data *data)
 {
 	char	*arg;
 
-	if (parse_vector3d(&data->cylinder.coordinates, -DBL_MAX, DBL_MAX) == -1)
+	if (parse_vector3d(&data->cylinder.pos, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_normalized_vector3d(&data->cylinder.axis) == -1)
 		return (-1);

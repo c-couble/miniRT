@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 18:06:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:04:01 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 01:59:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 
 typedef struct s_plane
 {
-	t_vec3	coordinates;
-	t_vec3	orientation;
+	t_vec3	pos;
+	t_vec3	normal;
 	t_color	color;
 }	t_plane;
 

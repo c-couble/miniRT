@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 17:38:55 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:02:02 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:00:20 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 typedef struct s_sphere
 {
-	t_vec3	coordinates;
+	t_vec3	pos;
 	double	diameter;
 	double	radius;
 	t_color	color;

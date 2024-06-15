@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/12 20:02:16 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:01:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 	double		z0;
 	double		a;
 
-	x0 = ray->startpos.x - obj->data.paraboloid.coordinates.x;
-	y0 = ray->startpos.y - obj->data.paraboloid.coordinates.y;
-	z0 = ray->startpos.z - obj->data.paraboloid.coordinates.z;
+	x0 = ray->startpos.x - obj->data.paraboloid.pos.x;
+	y0 = ray->startpos.y - obj->data.paraboloid.pos.y;
+	z0 = ray->startpos.z - obj->data.paraboloid.pos.z;
 	a = obj->data.paraboloid.ray_coef;
 	q.a = a * (ray->ray.x * ray->ray.x + ray->ray.y * ray->ray.y);
 	q.b = 2 * a * (x0 * ray->ray.x + y0 * ray->ray.y) - ray->ray.z;

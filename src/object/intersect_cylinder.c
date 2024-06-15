@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:43:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:01:07 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 
 	a = obj->data.cylinder.axis;
 	vec3_scale(&a, obj->data.cylinder.height / 2);
-	vec3_add(&obj->data.cylinder.coordinates, &a, &r2);
-	vec3_subtract(&obj->data.cylinder.coordinates, &a, &r1);
+	vec3_add(&obj->data.cylinder.pos, &a, &r2);
+	vec3_subtract(&obj->data.cylinder.pos, &a, &r1);
 	t = hit_cyl(obj, ray, &r1, &r2);
 	t = get_closest_distance(t, check_disk(obj, ray, &r1));
 	t = get_closest_distance(t, check_disk(obj, ray, &r2));
@@ -50,8 +50,8 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p)
 	t_vec3	hitpoint;
 	double	t;
 
-	plane.orientation = obj->data.cylinder.axis;
-	plane.coordinates = *p;
+	plane.normal = obj->data.cylinder.axis;
+	plane.pos = *p;
 	t = solve_plane_equation(&plane, ray);
 	fullray = ray->ray;
 	vec3_scale(&fullray, t);
@@ -67,7 +67,7 @@ static void	solve_cylinder_quadratic(t_object *obj, t_ray *ray, t_quadratic *q)
 	t_vec3	va;
 	t_vec3	diff;
 
-	vec3_subtract(&ray->startpos, &obj->data.cylinder.coordinates, &diff);
+	vec3_subtract(&ray->startpos, &obj->data.cylinder.pos, &diff);
 	vec3_cross_product(&obj->data.cylinder.axis, &diff, &ra0);
 	vec3_cross_product(&ra0, &obj->data.cylinder.axis, &ra0);
 	vec3_cross_product(&obj->data.cylinder.axis, &ray->ray, &va);

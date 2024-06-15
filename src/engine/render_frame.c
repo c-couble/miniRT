@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:43:45 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:12:43 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 #include <stdio.h>
 
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y);
+static void		setup_ray(t_engine *engine, t_ray *ray, int x, int y);
 
 void	render_frame(t_engine *engine)
 {
@@ -45,56 +46,33 @@ void	render_frame(t_engine *engine)
 	printf("END FRAME\n\n");
 }
 
+static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y)
+{
+	const double	hinc = (engine->scene.camera.fov / engine->mlx.width)
+		* (M_PI / 180);
+	const double	vfov = (engine->scene.camera.fov * engine->mlx.height)
+		/ engine->mlx.width;
+	const double	vinc = (vfov / engine->mlx.height) * (M_PI / 180);
+	const double	pitch = engine->scene.camera.pitch
+		+ (vfov / 2) * (M_PI / 180) - vinc * y;
+	const double	yaw = engine->scene.camera.yaw
+		+ (engine->scene.camera.fov / 2) * (M_PI / 180) - hinc * x;
+
+	yaw_pitch_to_vector(&ray->ray, yaw, pitch);
+	ray->startpos = engine->scene.camera.coordinates;
+}
+
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 {
-	double	hinc = (engine->scene.camera.fov / engine->mlx.width) * (M_PI / 180);
-	double	vfov = (engine->scene.camera.fov * engine->mlx.height) / engine->mlx.width;
-	double	vinc = (vfov / engine->mlx.height) * (M_PI / 180);
-	double pitch = engine->scene.camera.pitch
-		+ (vfov / 2) * (M_PI / 180)
-	- vinc * y;
-	double yaw = engine->scene.camera.yaw
-				+ (engine->scene.camera.fov / 2) * (M_PI / 180)
-				- hinc * x;
 	t_ray	ray;
+	t_color	color;
+	t_color	light;
 
-	yaw_pitch_to_vector(&ray.ray, yaw, pitch);
-	ray.startpos = engine->scene.camera.coordinates;
+	setup_ray(engine, &ray, x, y);
 	if (trace_ray(engine, &ray) > 0)
 	{
-		t_color	color;
 		color = ray.data.color;
-		t_color	light;
-		light.color = 0;
-		size_t	i = 0;
-		while (i < engine->scene.objects.size)
-		{
-			t_object	*obj = at_vector(&engine->scene.objects, i);
-			if (obj->type == LIGHT)
-			{
-				ray.startpos = ray.data.hitpos;
-				ray.ray.x = obj->data.light.coordinates.x - ray.startpos.x;
-				ray.ray.y = obj->data.light.coordinates.y - ray.startpos.y;
-				ray.ray.z = obj->data.light.coordinates.z - ray.startpos.z;
-				double norm = vec3_normalize(&ray.ray);
-				double ratio;
-				ratio = 1;
-				// We need to implement light correctly here
-				double d = trace_ray(engine, &ray);
-				if (d < 0 || d > norm)
-				{
-					ratio = ratio  * obj->data.light.ratio;
-					light.rgb.r = ft_max(light.rgb.r, obj->data.light.color.rgb.r * ratio);
-					light.rgb.g = ft_max(light.rgb.g, obj->data.light.color.rgb.g * ratio);
-					light.rgb.b = ft_max(light.rgb.b, obj->data.light.color.rgb.b * ratio);
-					light = obj->data.light.color;
-				}
-			}
-			light.rgb.r = ft_max(light.rgb.r, engine->scene.ambient_light.color.rgb.r * engine->scene.ambient_light.ratio);
-			light.rgb.g = ft_max(light.rgb.g, engine->scene.ambient_light.color.rgb.g * engine->scene.ambient_light.ratio);
-			light.rgb.b = ft_max(light.rgb.b, engine->scene.ambient_light.color.rgb.b * engine->scene.ambient_light.ratio);
-			++i;
-		}
+		light = get_light(engine, &ray);
 		return (color.color & light.color);
 	}
 	return (0);

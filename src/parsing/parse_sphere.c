@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:02:15 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:00:20 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	parse_sphere(t_object_data *data)
 {
 	char	*arg;
 
-	if (parse_vector3d(&data->sphere.coordinates, -DBL_MAX, DBL_MAX) == -1)
+	if (parse_vector3d(&data->sphere.pos, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->sphere.diameter, arg, 0, DBL_MAX) == -1)

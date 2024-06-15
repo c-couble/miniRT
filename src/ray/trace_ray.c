@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 02:03:53 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:15:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,5 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 		++i;
 	}
 	ray->data = data;
-	if (r != -1)
-		return (r);
-	return (-1);
+	return (r);
 }

@@ -1,6 +1,7 @@
 SRC = \
 	  engine/init_engine.c \
 	  engine/clear_engine.c \
+	  engine/get_light.c \
 	  engine/render_frame.c \
 	  engine/run_loop.c \
 	  \

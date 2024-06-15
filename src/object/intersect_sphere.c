@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/12 01:48:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:01:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 	t_vec3		p;
 	double		t;
 
-	vec3_subtract(&ray->startpos, &obj->data.sphere.coordinates, &p);
+	vec3_subtract(&ray->startpos, &obj->data.sphere.pos, &p);
 	q.a = powl(ray->ray.x, 2) + powl(ray->ray.y, 2) + powl(ray->ray.z, 2);
 	q.b = 2 * vec3_dot_product(&p, &ray->ray);
 	q.c = powl(p.x, 2) + powl(p.y, 2) + powl(p.z, 2)
@@ -34,7 +34,7 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 	t = get_closest_distance(q.r1, q.r2);
 	ray->data.color = obj->data.sphere.color;
 	get_hitpos(ray, t);
-	vec3_subtract(&ray->data.hitpos, &obj->data.sphere.coordinates,
+	vec3_subtract(&ray->data.hitpos, &obj->data.sphere.pos,
 		&ray->data.normal);
 	vec3_normalize(&ray->data.normal);
 	return (t);

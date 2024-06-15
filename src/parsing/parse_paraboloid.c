@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/12 20:04:53 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:02:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	parse_paraboloid(t_object_data *data)
 {
 	char	*arg;
 
-	if (parse_vector3d(&data->paraboloid.coordinates, -DBL_MAX, DBL_MAX) == -1)
+	if (parse_vector3d(&data->paraboloid.pos, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_normalized_vector3d(&data->paraboloid.axis) == -1)
 		return (-1);
