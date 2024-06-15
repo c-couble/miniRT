@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rgb.h                                              :+:      :+:    :+:   */
+/*   triangle.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 08:19:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 08:19:59 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/09 23:00:08 by lespenel          #+#    #+#             */
+/*   Updated: 2024/06/12 20:02:00 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RGB_H
-# define RGB_H
+#ifndef TRIANGLE_H
+# define TRIANGLE_H
 
-# include <stdint.h>
+# include "vec3.h"
+# include "color.h"
 
-typedef struct s_rgb
+typedef struct s_triangle
 {
-	uint8_t	r;
-	uint8_t	g;
-	uint8_t	b;
-}	t_rgb;
+	t_vec3	p0;
+	t_vec3	p1;
+	t_vec3	p2;
+	t_color	color;
+}	t_triangle;
 
-int	parse_rgb(t_rgb *rgb);
+union	u_object_data;
+
+int	parse_triangle(union u_object_data *object);
 
 #endif

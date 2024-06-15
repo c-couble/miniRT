@@ -1,24 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_normalized_vector3d.c                        :+:      :+:    :+:   */
+/*   color.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:25:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/14 08:19:59 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/02 02:39:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vec3.h"
-#include <math.h>
-#include <stdio.h>
+#ifndef COLOR_H
+# define COLOR_H
 
-int	parse_normalized_vector3d(t_vec3 *vector)
+# include <stdint.h>
+
+typedef union u_color
 {
-	if (parse_vector3d(vector, -1, 1) == -1)
-		return (-1);
-	if (sqrt(powl(vector->x, 2) + powl(vector->y, 2) + powl(vector->z, 2)) != 1)
-		return (-1);
-	return (0);
-}
+	struct s_rgb
+	{
+		uint8_t	b;
+		uint8_t	g;
+		uint8_t	r;
+	}	rgb;
+	uint32_t	color;
+}	t_color;
+
+int	parse_color(t_color *color);
+
+#endif

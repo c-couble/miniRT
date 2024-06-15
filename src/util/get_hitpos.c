@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_normalized_vector3d.c                        :+:      :+:    :+:   */
+/*   get_hitpos.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:25:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/12 01:21:24 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/12 01:44:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ray.h"
 #include "vec3.h"
-#include <math.h>
-#include <stdio.h>
 
-int	parse_normalized_vector3d(t_vec3 *vector)
+void	get_hitpos(t_ray *ray, double t)
 {
-	if (parse_vector3d(vector, -1, 1) == -1)
-		return (-1);
-	if (sqrt(powl(vector->x, 2) + powl(vector->y, 2) + powl(vector->z, 2)) != 1)
-		return (-1);
-	return (0);
+	t_vec3	fullray;
+
+	fullray = ray->ray;
+	vec3_scale(&fullray, t);
+	vec3_add(&ray->startpos, &fullray, &ray->data.hitpos);
 }

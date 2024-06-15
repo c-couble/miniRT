@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_normalized_vector3d.c                        :+:      :+:    :+:   */
+/*   intersect_plane.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:25:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/04 02:45:13 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/15 02:01:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vec3.h"
-#include <math.h>
-#include <stdio.h>
+#include "ray.h"
+#include "object.h"
+#include "util.h"
 
-int	parse_normalized_vector3d(t_vec3 *vector)
+double	intersect_plane(t_object *obj, t_ray *ray)
 {
-	if (parse_vector3d(vector, -1, 1) == -1)
+	double	t;
+
+	t = solve_plane_equation(&obj->data.plane, ray);
+	if (t == -1)
 		return (-1);
-	if (sqrt(powl(vector->x, 2) + powl(vector->y, 2) + powl(vector->z, 2)) != 1)
-		return (-1);
-	return (0);
+	ray->data.color = obj->data.plane.color;
+	ray->data.normal = obj->data.plane.normal;
+	get_hitpos(ray, t);
+	return (t);
 }

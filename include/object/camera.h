@@ -6,20 +6,22 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/18 02:34:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/12 01:03:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAMERA_H
 # define CAMERA_H
 
-# include "vector3d.h"
+# include "vec3.h"
 
 typedef struct s_camera
 {
-	t_vector3d	coordinates;
-	t_vector3d	orientation;
-	double		fov;
+	t_vec3	coordinates;
+	t_vec3	orientation;
+	double	fov;
+	double	pitch;
+	double	yaw;
 }	t_camera;
 
 union	u_object_data;

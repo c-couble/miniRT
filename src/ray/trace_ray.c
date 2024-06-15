@@ -1,31 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   trace_ray.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/05 05:41:08 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/15 02:15:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "ray.h"
+#include "object.h"
 
-int	main(int argc, char *argv[])
+int	trace_ray(t_engine *engine, t_ray *ray)
 {
-	t_engine	engine;
+	size_t		i;
+	t_object	*obj;
+	double		r;
+	t_hit_data	data;
+	double		tmp;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
+	i = 0;
+	r = -1;
+	while (i < engine->scene.objects.size)
+	{
+		obj = at_vector(&engine->scene.objects, i);
+		tmp = intersect(obj, ray);
+		if (tmp > 0)
+		{
+			if (r == -1 || tmp < r)
+			{
+				r = tmp;
+				data = ray->data;
+			}
+		}
+		++i;
+	}
+	ray->data = data;
+	return (r);
 }

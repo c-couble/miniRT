@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_normalized_vector3d.c                        :+:      :+:    :+:   */
+/*   vec3_subtract.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:25:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/04 02:25:03 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/11 20:43:23 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vec3.h"
-#include <math.h>
-#include <stdio.h>
 
-int	parse_normalized_vector3d(t_vec3 *vector)
+t_vec3	*vec3_subtract(t_vec3 *vec1, t_vec3 *vec2, t_vec3 *out)
 {
-	if (parse_vector3d(vector, -1, 1) == -1)
-		return (-1);
-	if (sqrt(powl(vector->x, 2) + powl(vector->y, 2) + powl(vector->z, 2)) != 1)
-		return (-1);
-	return (0);
+	out->x = vec1->x - vec2->x;
+	out->y = vec1->y - vec2->y;
+	out->z = vec1->z - vec2->z;
+	return (out);
 }

@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_normalized_vector3d.c                        :+:      :+:    :+:   */
+/*   get_closest_distance.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:25:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/09 13:56:40 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/09 19:10:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vec3.h"
-#include <math.h>
-#include <stdio.h>
+#include "defines.h"
 
-int	parse_normalized_vector3d(t_vec3 *vector)
+double	get_closest_distance(double a, double b)
 {
-	if (parse_vector3d(vector, -1, 1) == -1)
+	if (a <= INACCURATE_ZERO && b <= INACCURATE_ZERO)
 		return (-1);
-	if (sqrt(powl(vector->x, 2) + powl(vector->y, 2) + powl(vector->z, 2)) != 1)
-		return (-1);
-	return (0);
+	if (a <= INACCURATE_ZERO)
+		return (b);
+	if (b <= INACCURATE_ZERO)
+		return (a);
+	if (a < b)
+		return (a);
+	return (b);
 }

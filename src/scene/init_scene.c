@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/18 04:33:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/23 06:30:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,7 +140,7 @@ static int	add_created_object(t_scene *scene, t_object *obj)
 		}
 		scene->ambient_light = obj->data.ambient_light;
 	}
-	else if (add_vector(&scene->objects, &obj, 1) == -1)
+	else if (add_vector(&scene->objects, obj, 1) == -1)
 	{
 		print_error("Memory allocation failure");
 		return (-1);

@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_normalized_vector3d.c                        :+:      :+:    :+:   */
+/*   vec3_cross_product.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:25:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/03 01:22:01 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/11 20:44:33 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vec3.h"
-#include <math.h>
-#include <stdio.h>
 
-int	parse_normalized_vector3d(t_vec3 *vector)
+t_vec3	*vec3_cross_product(t_vec3 *a, t_vec3 *b, t_vec3 *out)
 {
-	if (parse_vector3d(vector, -1, 1) == -1)
-		return (-1);
-	if (sqrt(powl(vector->x, 2) + powl(vector->y, 2) + powl(vector->z, 2)) != 1)
-		return (-1);
-	return (0);
+	const double	x = a->y * b->z - a->z * b->y;
+	const double	y = a->z * b->x - a->x * b->z;
+	const double	z = a->x * b->y - a->y * b->x;
+
+	out->x = x;
+	out->y = y;
+	out->z = z;
+	return (out);
 }

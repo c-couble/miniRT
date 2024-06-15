@@ -6,23 +6,24 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 18:15:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/14 18:17:21 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:00:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CYLINDER_H
 # define CYLINDER_H
 
-# include "vector3d.h"
-# include "object/rgb.h"
+# include "vec3.h"
+# include "color.h"
 
 typedef struct s_cylinder
 {
-	t_vector3d	coordinates;
-	t_vector3d	axis;
-	double		diameter;
-	double		height;
-	t_rgb		color;
+	t_vec3	pos;
+	t_vec3	axis;
+	double	diameter;
+	double	radius;
+	double	height;
+	t_color	color;
 }	t_cylinder;
 
 union	u_object_data;

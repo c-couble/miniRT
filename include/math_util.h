@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_normalized_vector3d.c                        :+:      :+:    :+:   */
+/*   math_util.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:25:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/04 02:15:12 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/08 19:33:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vec3.h"
-#include <math.h>
-#include <stdio.h>
+#ifndef MATH_UTIL_H
+# define MATH_UTIL_H
 
-int	parse_normalized_vector3d(t_vec3 *vector)
+typedef struct s_quadratic
 {
-	if (parse_vector3d(vector, -1, 1) == -1)
-		return (-1);
-	if (sqrt(powl(vector->x, 2) + powl(vector->y, 2) + powl(vector->z, 2)) != 1)
-		return (-1);
-	return (0);
-}
+	double	a;
+	double	b;
+	double	c;
+	double	delta;
+	double	r1;
+	double	r2;
+}	t_quadratic;
+
+void	solve_quadratic_equation(t_quadratic *q);
+
+#endif
