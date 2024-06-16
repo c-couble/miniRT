@@ -6,18 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/15 02:12:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/16 12:51:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
-#include "defines.h"
 #include "engine.h"
-#include "object.h"
 #include "ray.h"
-#include "vector.h"
 #include "vec3.h"
-#include "ft_math.h"
 #include <math.h>
 #include <stdint.h>
 #include <stdio.h>
