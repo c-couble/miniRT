@@ -27,6 +27,7 @@ SRC = \
 	  io/ft_putstr_fd.c \
 	  io/get_next_line.c \
 	  \
+	  math/ft_double_abs.c \
 	  math/ft_abs.c \
 	  math/ft_max.c \
 	  \
