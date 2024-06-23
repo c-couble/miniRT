@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/15 02:12:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/23 07:33:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,17 +48,13 @@ void	render_frame(t_engine *engine)
 
 static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y)
 {
-	const double	hinc = (engine->scene.camera.fov / engine->mlx.width)
-		* (M_PI / 180);
-	const double	vfov = (engine->scene.camera.fov * engine->mlx.height)
-		/ engine->mlx.width;
-	const double	vinc = (vfov / engine->mlx.height) * (M_PI / 180);
-	const double	pitch = engine->scene.camera.pitch
-		+ (vfov / 2) * (M_PI / 180) - vinc * y;
-	const double	yaw = engine->scene.camera.yaw
-		+ (engine->scene.camera.fov / 2) * (M_PI / 180) - hinc * x;
-
-	yaw_pitch_to_vector(&ray->ray, yaw, pitch);
+	double	ratio = engine->mlx.width / (double) engine->mlx.height;
+	double	px = (2 * ((x + 0.5) / engine->mlx.width) - 1) * tan(engine->scene.camera.fov / 2 * M_PI / 180) * ratio;
+	double	py = (1 - 2 * (y + 0.5) / engine->mlx.height) * tan(engine->scene.camera.fov / 2 * M_PI / 180);
+	ray->ray.x = px;
+	ray->ray.y = 1;
+	ray->ray.z = py;
+	vec3_normalize(&ray->ray);
 	ray->startpos = engine->scene.camera.coordinates;
 }
 
