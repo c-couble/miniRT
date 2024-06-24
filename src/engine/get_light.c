@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/16 14:11:33 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/06/24 03:32:31 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,18 @@
 #include "object.h"
 #include "ft_math.h"
 #include "vec3.h"
+#include <math.h>
+#include <stdio.h>
 
 static void	mix_lights(t_color *c1, t_color *c2, double ratio);
 static int	hits_light(t_engine *engine, t_ray *ray, t_object *obj);
-static void	lambertian_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n);
+static void	difuse_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n);
+static void	specular_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n, t_ray *ray);
 
 t_color	get_light(t_engine *engine, t_ray *ray)
 {
 	t_color		light;
+	t_color		light2;
 	size_t		i;
 	t_object	*obj;
 	t_vec3		object_n;
@@ -37,8 +41,10 @@ t_color	get_light(t_engine *engine, t_ray *ray)
 		{
 			if (hits_light(engine, ray, obj))
 			{
-				light = obj->data.light.color;
-				lambertian_reflect(&light, &object_n, &ray->ray);
+				light2 = obj->data.light.color;
+				difuse_reflect(&light2, &object_n, &ray->ray);
+				specular_reflect(&light2, &object_n, &ray->ray, ray);
+				mix_lights(&light, &light2, 1);
 			}
 		}
 		mix_lights(&light, &engine->scene.ambient_light.color,
@@ -48,7 +54,32 @@ t_color	get_light(t_engine *engine, t_ray *ray)
 	return (light);
 }
 
-static void	lambertian_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n)
+static void	specular_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n, t_ray *ray)
+{
+	double	specular_ratio;
+
+	t_vec3	reflection_ray;
+	double	dot_l_n;
+
+	dot_l_n = vec3_dot_product(obj_n, light_n);
+	light_n = vec3_scale(obj_n, 2 *  dot_l_n);
+	vec3_subtract(obj_n, light_n, &reflection_ray);
+	specular_ratio = vec3_dot_product(&reflection_ray, &ray->ray);
+	double shine = 2;
+
+	specular_ratio = pow(dot_l_n, shine);
+	printf("specular ratio = %lf", specular_ratio);
+	light->rgb.r *= specular_ratio;
+	light->rgb.g *= specular_ratio;
+	light->rgb.b *= specular_ratio;
+	(void)specular_ratio;
+	(void)light;
+	(void)obj_n;
+	(void)light_n;
+	(void)ray;
+}
+
+static void	difuse_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n)
 {
 	double	ratio;
 
@@ -57,6 +88,8 @@ static void	lambertian_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n)
 	light->rgb.r *= ratio;
 	light->rgb.g *= ratio;
 	light->rgb.b *= ratio;
+	if (light < 0)
+		light = 0;
 }
 
 static void	mix_lights(t_color *c1, t_color *c2, double ratio)
