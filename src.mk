@@ -15,6 +15,8 @@ SRC = \
 	  object/intersect_paraboloid.c \
 	  object/intersect_triangle.c \
 	  \
+	  mat4/mat4_print.c \
+	  \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
 	  parsing/parse_color.c \
@@ -41,6 +43,7 @@ SRC = \
 	  util/solve_quadratic_equation.c \
 	  \
 	  vec3/vec3_add.c \
+	  vec3/vec3_create.c \
 	  vec3/vec3_cross_product.c \
 	  vec3/vec3_dot_product.c \
 	  vec3/vec3_get_norm.c \

@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   vec3_create.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/24 09:55:26 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/24 07:27:54 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/24 07:28:22 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#include "vec3.h"
 
-# define SCREEN_WIDTH		1920
-# define SCREEN_HEIGHT		1080
-# define WINDOW_NAME		"miniRT ccouble lespenel"
-# define MAX_RAY_LEN		10000
-# define INACCURATE_ZERO	10e-8
-
-#endif
+t_vec3	*vec3_create(double x, double y, double z, t_vec3 *out)
+{
+	out->x = x;
+	out->y = y;
+	out->z = z;
+	return (out);
+}

@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   mat4.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/24 09:55:26 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/24 07:44:22 by ccouble           #+#    #+#             */
+/*   Updated: 2024/06/24 07:53:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#ifndef MAT4_H
+# define MAT4_H
 
-# define SCREEN_WIDTH		1920
-# define SCREEN_HEIGHT		1080
-# define WINDOW_NAME		"miniRT ccouble lespenel"
-# define MAX_RAY_LEN		10000
-# define INACCURATE_ZERO	10e-8
+typedef struct s_mat4
+{
+	double	matrix[16];
+}	t_mat4;
+
+void	mat4_print(t_mat4 *mat);
 
 #endif
