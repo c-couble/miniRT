@@ -6,17 +6,26 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/05 05:41:08 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/30 02:11:53 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
+#include "mat4.h"
 #include <stdio.h>
 #include <unistd.h>
 
 int	main(int argc, char *argv[])
 {
 	t_engine	engine;
+	t_mat4		mat = {
+		1, 1, 1, -1,
+		1, 1, -1, 1,
+		1, -1, 1, 1,
+		-1, 1, 1, 1
+	};
+	mat4_print(&mat);
+	mat4_inverse(&mat, &mat);
 
 	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
 		return (1);

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/24 08:24:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/28 01:26:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ void	render_frame(t_engine *engine)
 	forward = target;
 	vec3_scale(&forward, -1);
 	vec3_cross_product(&up, &forward, &right);
-	printf("norms f %lf r %lf u %lf\n", vec3_get_norm(&forward), vec3_get_norm(&right), vec3_get_norm(&up));
 	i = 0;
 	printf("START FRAME\n\n");
 	t_mat4	mat;

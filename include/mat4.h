@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/24 07:44:22 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/24 07:53:12 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/30 02:11:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@ typedef struct s_mat4
 }	t_mat4;
 
 void	mat4_print(t_mat4 *mat);
+t_mat4	*mat4_inverse(t_mat4 *mat, t_mat4 *out);
 
 #endif

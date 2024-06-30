@@ -15,6 +15,7 @@ SRC = \
 	  object/intersect_paraboloid.c \
 	  object/intersect_triangle.c \
 	  \
+	  mat4/mat4_inverse.c \
 	  mat4/mat4_print.c \
 	  \
 	  parsing/parse_ambient_light.c \
