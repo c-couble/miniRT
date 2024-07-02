@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/02 05:04:33 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/02 09:23:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include "ft_math.h"
 #include "vec3.h"
 #include <math.h>
+#include <stdio.h>
 
 void	mix_lights(t_color *c1, t_color *c2, double ratio);
 int	hits_light(t_engine *engine, t_ray *light_ray, t_ray *ray, t_object *obj);
@@ -46,10 +47,13 @@ t_color	get_light(t_engine *engine, t_ray *ray)
 			if (hits_light(engine, &light_ray, ray, obj))
 			{
 				scene_light = obj->data.light.color;
+				scene_light.rgb.r *= obj->data.light.ratio;
+				scene_light.rgb.g *= obj->data.light.ratio;
+				scene_light.rgb.b *= obj->data.light.ratio;
 				difuse_reflect(&scene_light, &object_n, &light_ray.ray);
-				mix_lights(&light, &scene_light, DIFFUSE_RATIO);
+				mix_lights(&light, &scene_light, DIFFUSE_RATIO * obj->data.light.ratio);
 				specular_reflect(&scene_light, &object_n, &light_ray.ray, ray);
-				mix_lights(&light, &scene_light, SPECULAR_RATIO);
+				mix_lights(&light, &scene_light, SPECULAR_RATIO * obj->data.light.ratio);
 			}
 		}
 				++i;
@@ -74,9 +78,11 @@ void	specular_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_ray, t_ray *r
 	vec3_subtract(temp_N, light_ray, &reflection_ray);
 	
 	specular_ratio = vec3_dot_product(&reflection_ray, &ray->ray);
+	if (specular_ratio > 0)
+		specular_ratio = 0;
 	specular_ratio = ft_dabs(specular_ratio);
 	specular_ratio = pow(specular_ratio, shine);
-	//printf("specular ratio = %lf", specular_ratio);
+
 	light->rgb.r *= specular_ratio;
 	light->rgb.g *= specular_ratio;
 	light->rgb.b *= specular_ratio;
