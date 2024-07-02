@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_double_abs.c                                    :+:      :+:    :+:   */
+/*   ft_dmin.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/16 13:07:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/16 13:07:50 by lespenel         ###   ########.fr       */
+/*   Created: 2024/07/02 04:11:27 by lespenel          #+#    #+#             */
+/*   Updated: 2024/07/02 04:13:16 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double	ft_double_abs(double a)
+double	ft_dmin(double a, double b)
 {
-	if (a < 0)
-		return (-a);
-	return (a);
+	if (a < b)
+		return (a);
+	return (b);
 }

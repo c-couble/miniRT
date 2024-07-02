@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   ft_dabs.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/02 04:40:53 by lespenel         ###   ########.fr       */
+/*   Created: 2024/06/16 13:07:26 by lespenel          #+#    #+#             */
+/*   Updated: 2024/07/02 04:10:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
-
-# define SCREEN_WIDTH		960//1920
-# define SCREEN_HEIGHT		540//1080
-# define WINDOW_NAME		"miniRT ccouble lespenel"
-# define MAX_RAY_LEN		10000
-# define INACCURATE_ZERO	10e-8
-# define DIFFUSE_RATIO		0.65
-# define SPECULAR_RATIO		1.0
-
-#endif
+double	ft_dabs(double a)
+{
+	if (a < 0)
+		return (-a);
+	return (a);
+}
