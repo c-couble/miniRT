@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/03 04:43:07 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/03 05:18:17 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	print_t_color(t_color *color)
 	printf("r = %hhu, g = %hhu, b = %hhu, uint = %u\n",
 		color->rgb.r, color->rgb.g, color->rgb.b, color->color);
 }
-
 
 void	render_frame(t_engine *engine)
 {
@@ -76,9 +75,6 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 	{
 		color = camera_ray.data.color;
 		light = get_light(engine, &camera_ray);
-		t_color c3;
-		c3.color = multiply_color(&light, &color);
-		print_t_color(&c3);
 		return (multiply_color(&light, &color));
 	}
 	return (0);

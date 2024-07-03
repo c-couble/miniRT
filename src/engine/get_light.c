@@ -6,106 +6,92 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/03 04:42:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/03 07:59:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
 #include "color_util.h"
 #include "defines.h"
-#include "engine.h"
-#include "ray.h"
 #include "object.h"
 #include "ft_math.h"
-#include "vec3.h"
 #include <math.h>
-#include <stdio.h>
 
-void	print_t_color(t_color *color)
-{
-	printf("r = %hhu, g = %hhu, b = %hhu, uint = %u\n",
-		color->rgb.r, color->rgb.g, color->rgb.b, color->color);
-}
-
-
-void	mix_lights(t_color *c1, t_color *c2, double ratio);
-int	hits_light(t_engine *engine, t_ray *light_ray, t_ray *ray, t_object *obj);
-void	difuse_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n);
-void	specular_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n, t_ray *ray);
+int		hits_light(t_engine *engine, t_ray *l_ray, t_ray *c_ray, t_object *obj);
+void	add_ambiant_light(t_color *light, t_engine *engine);
+void	difuse_reflect(t_color *light, t_vec3 *light_n, t_ray *ray);
+void	specular_reflect(t_color *light, t_vec3 *light_ray, t_ray *camera_ray);
+void	add_phong(t_object *obj, t_color *light, t_ray *c_ray, t_ray *l_ray);
 
 t_color	get_light(t_engine *engine, t_ray *ray)
 {
 	t_color		light;
 	t_object	*obj;
 	t_ray		light_ray;
-	t_color		scene_light;
-	t_vec3		object_n;
 	size_t		i;
 
-	light.color = 0;
 	i = 0;
-	mix_lights(&light, &engine->scene.ambient_light.color,
-			engine->scene.ambient_light.ratio);
-	object_n = ray->data.normal;
+	add_ambiant_light(&light, engine);
 	while (i < engine->scene.objects.size)
 	{
 		obj = at_vector(&engine->scene.objects, i);
-		if (obj->type == LIGHT)
-		{
-			if (hits_light(engine, &light_ray, ray, obj))
-			{
-				scene_light = obj->data.light.color;
-				scene_light.rgb.r *= obj->data.light.ratio;
-				scene_light.rgb.g *= obj->data.light.ratio;
-				scene_light.rgb.b *= obj->data.light.ratio;
-				difuse_reflect(&scene_light, &object_n, &light_ray.ray);
-				mix_lights(&light, &scene_light, DIFFUSE_RATIO * obj->data.light.ratio);
-				specular_reflect(&scene_light, &object_n, &light_ray.ray, ray);
-				mix_lights(&light, &scene_light, SPECULAR_RATIO * obj->data.light.ratio);
-			}
-		}
-				++i;
+		if (obj->type == LIGHT && hits_light(engine, &light_ray, ray, obj))
+				add_phong(obj, &light, ray, &light_ray);
+		++i;
 	}
 	return (light);
 }
 
-// R = 2(N.L)N - L
-//
-void	specular_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_ray, t_ray *ray)
+void	add_ambiant_light(t_color *light, t_engine *engine)
 {
-	double	specular_ratio;
-	t_vec3	reflection_ray;
-	double	dot_N_L;
-	double	shine = 8;
+	light->color = scale_color(&engine->scene.ambient_light.color,
+			engine->scene.ambient_light.ratio);
+}
 
+void	add_phong(t_object *obj, t_color *light, t_ray *c_ray, t_ray *l_ray)
+{
+	t_color		scene_light;
 
-	t_vec3 *temp_N = vec3_scale(obj_n, 1);
-	dot_N_L = vec3_dot_product(temp_N, light_ray) * 2;
-	vec3_scale(temp_N, dot_N_L);
-	vec3_subtract(temp_N, light_ray, &reflection_ray);
-	
-	specular_ratio = vec3_dot_product(&reflection_ray, &ray->ray);
-	if (specular_ratio > 0)
-		specular_ratio = 0;
+	scene_light = obj->data.light.color;
+	scene_light.color = scale_color(&scene_light, obj->data.light.ratio);
+	difuse_reflect(&scene_light, &l_ray->ray, c_ray);
+	light->color = add_scale_color(light, &scene_light, DIFFUSE_RATIO);
+	specular_reflect(&scene_light, &l_ray->ray, c_ray);
+	light->color = add_scale_color(light, &scene_light, SPECULAR_RATIO);
+}
+
+// R = 2(N.L)N - L
+void	specular_reflect(t_color *light, t_vec3 *light_ray, t_ray *camera_ray)
+{
+	double		specular_ratio;
+	double		dot_nl;
+	double		shine;
+	t_vec3		reflection_ray;
+	t_vec3		object_n;
+
+	shine = 8;
+	object_n.x = camera_ray->data.normal.x;
+	object_n.y = camera_ray->data.normal.y;
+	object_n.z = camera_ray->data.normal.z;
+	dot_nl = vec3_dot_product(&object_n, light_ray) * 2;
+	vec3_scale(&object_n, dot_nl);
+	vec3_subtract(&object_n, light_ray, &reflection_ray);
+	specular_ratio = vec3_dot_product(&reflection_ray, &camera_ray->ray);
 	specular_ratio = ft_dabs(specular_ratio);
 	specular_ratio = pow(specular_ratio, shine);
 	light->color = scale_color(light, specular_ratio);
 }
 
-void	difuse_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n)
+void	difuse_reflect(t_color *light, t_vec3 *light_n, t_ray *camera_ray)
 {
 	double	ratio;
+	t_vec3	object_n;
 
-	ratio = vec3_dot_product(light_n, obj_n);
+	object_n.x = camera_ray->data.normal.x;
+	object_n.y = camera_ray->data.normal.y;
+	object_n.z = camera_ray->data.normal.z;
+	ratio = vec3_dot_product(light_n, &object_n);
 	ratio = ft_dabs(ratio);
 	light->color = scale_color(light, ratio);
-}
-
-void	mix_lights(t_color *c1, t_color *c2, double ratio)
-{
-	c1->rgb.r = ft_dmin(255, c1->rgb.r + c2->rgb.r * ratio);
-	c1->rgb.g = ft_dmin(255, c1->rgb.g + c2->rgb.g * ratio);
-	c1->rgb.b = ft_dmin(255, c1->rgb.b + c2->rgb.b * ratio);
 }
 
 int	hits_light(t_engine *engine, t_ray *light_ray, t_ray *ray, t_object *obj)

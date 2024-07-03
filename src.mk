@@ -35,11 +35,12 @@ SRC = \
 	  ray/trace_ray.c \
 	  \
 	  util/add_color.c \
-	  util/scale_color.c \
-	  util/multiply_color.c \
+	  util/add_scale_color.c \
 	  util/get_closest_distance.c \
 	  util/get_hitpos.c \
+	  util/multiply_color.c \
 	  util/print_error.c \
+	  util/scale_color.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
 	  \
