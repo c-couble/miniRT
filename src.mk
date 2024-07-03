@@ -34,6 +34,9 @@ SRC = \
 	  \
 	  ray/trace_ray.c \
 	  \
+	  util/add_color.c \
+	  util/scale_color.c \
+	  util/multiply_color.c \
 	  util/get_closest_distance.c \
 	  util/get_hitpos.c \
 	  util/print_error.c \

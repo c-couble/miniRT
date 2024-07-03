@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/02 09:23:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/03 04:42:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
+#include "color_util.h"
 #include "defines.h"
 #include "engine.h"
 #include "ray.h"
@@ -19,6 +20,13 @@
 #include "vec3.h"
 #include <math.h>
 #include <stdio.h>
+
+void	print_t_color(t_color *color)
+{
+	printf("r = %hhu, g = %hhu, b = %hhu, uint = %u\n",
+		color->rgb.r, color->rgb.g, color->rgb.b, color->color);
+}
+
 
 void	mix_lights(t_color *c1, t_color *c2, double ratio);
 int	hits_light(t_engine *engine, t_ray *light_ray, t_ray *ray, t_object *obj);
@@ -63,7 +71,6 @@ t_color	get_light(t_engine *engine, t_ray *ray)
 
 // R = 2(N.L)N - L
 //
-
 void	specular_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_ray, t_ray *ray)
 {
 	double	specular_ratio;
@@ -82,10 +89,7 @@ void	specular_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_ray, t_ray *r
 		specular_ratio = 0;
 	specular_ratio = ft_dabs(specular_ratio);
 	specular_ratio = pow(specular_ratio, shine);
-
-	light->rgb.r *= specular_ratio;
-	light->rgb.g *= specular_ratio;
-	light->rgb.b *= specular_ratio;
+	light->color = scale_color(light, specular_ratio);
 }
 
 void	difuse_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n)
@@ -94,9 +98,7 @@ void	difuse_reflect(t_color *light, t_vec3 *obj_n, t_vec3 *light_n)
 
 	ratio = vec3_dot_product(light_n, obj_n);
 	ratio = ft_dabs(ratio);
-	light->rgb.r *= ratio;
-	light->rgb.g *= ratio;
-	light->rgb.b *= ratio;
+	light->color = scale_color(light, ratio);
 }
 
 void	mix_lights(t_color *c1, t_color *c2, double ratio)

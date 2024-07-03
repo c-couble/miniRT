@@ -6,11 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/16 12:51:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/03 04:43:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
+#include "color_util.h"
 #include "engine.h"
 #include "ray.h"
 #include "vec3.h"
@@ -20,6 +20,13 @@
 
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y);
 static void		setup_ray(t_engine *engine, t_ray *ray, int x, int y);
+
+void	print_t_color(t_color *color)
+{
+	printf("r = %hhu, g = %hhu, b = %hhu, uint = %u\n",
+		color->rgb.r, color->rgb.g, color->rgb.b, color->color);
+}
+
 
 void	render_frame(t_engine *engine)
 {
@@ -60,16 +67,19 @@ static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y)
 
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 {
-	t_ray	ray;
+	t_ray	camera_ray;
 	t_color	color;
 	t_color	light;
 
-	setup_ray(engine, &ray, x, y);
-	if (trace_ray(engine, &ray) > 0)
+	setup_ray(engine, &camera_ray, x, y);
+	if (trace_ray(engine, &camera_ray) > 0)
 	{
-		color = ray.data.color;
-		light = get_light(engine, &ray);
-		return (color.color & light.color);
+		color = camera_ray.data.color;
+		light = get_light(engine, &camera_ray);
+		t_color c3;
+		c3.color = multiply_color(&light, &color);
+		print_t_color(&c3);
+		return (multiply_color(&light, &color));
 	}
 	return (0);
 }
