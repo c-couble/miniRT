@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/15 02:02:24 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/03 09:27:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,17 +24,15 @@ double	intersect_triangle(t_object *obj, t_ray *ray)
 {
 	t_plane		plane;
 	t_triangle	tr;
-	t_vec3		point;
 	double		t;
 
 	get_plane_from_triangle(&obj->data.triangle, &plane);
 	tr = obj->data.triangle;
 	ray->data.color = tr.color;
 	t = solve_plane_equation(&plane, ray);
-	point.x = ray->startpos.x + t * ray->ray.x;
-	point.y = ray->startpos.y + t * ray->ray.y;
-	point.z = ray->startpos.z + t * ray->ray.z;
-	if (bsp(&tr.p0, &tr.p1, &tr.p2, &point))
+	get_hitpos(ray, t);
+	ray->data.normal = plane.normal;
+	if (bsp(&tr.p0, &tr.p1, &tr.p2, &ray->data.hitpos))
 		return (t);
 	return (-1);
 }
@@ -46,11 +44,13 @@ static void	get_plane_from_triangle(t_triangle *tr, t_plane *p)
 	t_vec3	normal;
 
 	vec3_subtract(&tr->p1, &tr->p0, &s1);
-	vec3_subtract(&tr->p2, &tr->p0, &s2);
+	vec3_subtract(&tr->p2, &tr->p1, &s2);
 	vec3_cross_product(&s1, &s2, &normal);
 	vec3_normalize(&normal);
 	p->pos = tr->p0;
-	p->normal = normal;
+	p->normal.x = normal.x;
+	p->normal.y = normal.y;
+	p->normal.z = normal.z;
 }
 
 static int	bsp(t_vec3 *a, t_vec3 *b, t_vec3 *c, t_vec3 *point)
