@@ -2,6 +2,7 @@ SRC = \
 	  engine/init_engine.c \
 	  engine/clear_engine.c \
 	  engine/get_light.c \
+	  engine/phong_model.c \
 	  engine/render_frame.c \
 	  engine/run_loop.c \
 	  \
@@ -36,6 +37,7 @@ SRC = \
 	  \
 	  util/add_color.c \
 	  util/add_scale_color.c \
+	  util/get_reflection_ray.c \
 	  util/get_closest_distance.c \
 	  util/get_hitpos.c \
 	  util/multiply_color.c \

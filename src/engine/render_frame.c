@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/03 05:18:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/06 02:02:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,15 +67,9 @@ static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y)
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 {
 	t_ray	camera_ray;
-	t_color	color;
-	t_color	light;
 
 	setup_ray(engine, &camera_ray, x, y);
 	if (trace_ray(engine, &camera_ray) > 0)
-	{
-		color = camera_ray.data.color;
-		light = get_light(engine, &camera_ray);
-		return (multiply_color(&light, &color));
-	}
+		return (get_light(engine, &camera_ray));
 	return (0);
 }
