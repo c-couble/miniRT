@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/06 02:01:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/11 06:06:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void	clear_engine(t_engine *engine);
 void	render_frame(t_engine *engine);
 struct	s_ray;
 uint32_t	get_light(t_engine *engine, struct s_ray *ray);
+uint32_t	get_ambiant_light(t_engine *engine);
 void	run_loop(t_engine *engine);
 
 #endif

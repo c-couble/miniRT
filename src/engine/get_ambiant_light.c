@@ -1,29 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   get_ambiant_light.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/11 04:51:28 by lespenel         ###   ########.fr       */
+/*   Created: 2024/07/11 06:05:01 by lespenel          #+#    #+#             */
+/*   Updated: 2024/07/11 06:06:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#include "engine.h"
+#include "color_util.h"
 
-# define SCREEN_WIDTH		1920
-# define SCREEN_HEIGHT		1080
-# define WINDOW_NAME		"miniRT ccouble lespenel"
-# define MAX_RAY_LEN		10000
-# define INACCURATE_ZERO	10e-8
-
-# define DIFFUSE_RATIO		0.65
-# define SPECULAR_RATIO		1
-# define SPECULAR_SHINE		64
-# define REFLECT_RATIO		1
-# define REFRACT_RATIO		1
-# define DEPTH				3
-
-#endif
+uint32_t	get_ambiant_light(t_engine *engine)
+{
+	return (scale_color(&engine->scene.ambient_light.color
+					 , engine->scene.ambient_light.ratio));
+}

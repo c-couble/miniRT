@@ -6,11 +6,10 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/06 02:02:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/11 04:45:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
 #include "engine.h"
 #include "ray.h"
 #include "vec3.h"
@@ -20,12 +19,6 @@
 
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y);
 static void		setup_ray(t_engine *engine, t_ray *ray, int x, int y);
-
-void	print_t_color(t_color *color)
-{
-	printf("r = %hhu, g = %hhu, b = %hhu, uint = %u\n",
-		color->rgb.r, color->rgb.g, color->rgb.b, color->color);
-}
 
 void	render_frame(t_engine *engine)
 {
@@ -62,6 +55,7 @@ static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y)
 
 	yaw_pitch_to_vector(&ray->ray, yaw, pitch);
 	ray->startpos = engine->scene.camera.coordinates;
+	ray->data.color.color = 0;
 }
 
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
