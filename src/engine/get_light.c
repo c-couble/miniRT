@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/11 07:32:07 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/11 07:38:23 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@
 #include "engine.h"
 #include "object.h"
 #include "ray.h"
+
+static inline int hit(double d, double norm)
+{
+	return (d < 0 || d > norm);
+}
 
 int	kaboul(t_engine *engine, t_ray *light_ray, t_ray *ray, t_object *obj, int depth)
 {
@@ -26,7 +31,7 @@ int	kaboul(t_engine *engine, t_ray *light_ray, t_ray *ray, t_object *obj, int de
 	norm = vec3_normalize(&light_ray->ray);
 	d = trace_ray(engine, light_ray);
 	(void)depth;
-	return (d < 0 || d > norm);
+	return (hit(d, norm));
 }
 
 uint32_t	get_light(t_engine *engine, t_ray *ray)
@@ -44,7 +49,9 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 		if (obj->type == LIGHT)
 		{ 
 			if (kaboul(engine, &light_ray, ray, obj, DEPTH))
+			{
 				phong_model(obj, &light, ray, &light_ray);
+			}
 		}
 		++i;
 	}
