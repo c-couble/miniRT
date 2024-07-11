@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/11 06:07:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/11 07:32:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,11 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 	while (i < engine->scene.objects.size)
 	{
 		obj = at_vector(&engine->scene.objects, i);
-		if (obj->type == LIGHT && kaboul(engine, &light_ray, ray, obj, DEPTH))
+		if (obj->type == LIGHT)
+		{ 
+			if (kaboul(engine, &light_ray, ray, obj, DEPTH))
 				phong_model(obj, &light, ray, &light_ray);
+		}
 		++i;
 	}
 	return (multiply_color(&light, &ray->data.color));
