@@ -6,16 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/11 04:45:51 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/12 04:21:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "ray.h"
-#include "vec3.h"
 #include <math.h>
 #include <stdint.h>
 #include <stdio.h>
+#include "defines.h"
+#include "engine.h"
+#include "ray.h"
+#include "vec3.h"
 
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y);
 static void		setup_ray(t_engine *engine, t_ray *ray, int x, int y);
@@ -55,7 +56,7 @@ static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y)
 
 	yaw_pitch_to_vector(&ray->ray, yaw, pitch);
 	ray->startpos = engine->scene.camera.coordinates;
-	ray->data.color.color = 0;
+	ray->data.color.color = BACKGROUND_COLOR;
 }
 
 static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
@@ -65,5 +66,5 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 	setup_ray(engine, &camera_ray, x, y);
 	if (trace_ray(engine, &camera_ray) > 0)
 		return (get_light(engine, &camera_ray));
-	return (0);
+	return (BACKGROUND_COLOR);
 }

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/11 04:51:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/12 04:24:36 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # define WINDOW_NAME		"miniRT ccouble lespenel"
 # define MAX_RAY_LEN		10000
 # define INACCURATE_ZERO	10e-8
+# define BACKGROUND_COLOR	50
 
 # define DIFFUSE_RATIO		0.65
 # define SPECULAR_RATIO		1
