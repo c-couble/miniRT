@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/12 05:22:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/12 08:37:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@
 # define SPECULAR_SHINE		64
 # define REFLECT_RATIO		1
 # define REFRACT_RATIO		1
-# define DEPTH				3
+# define DEPTH				1
 
 #endif
