@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/11 04:32:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/12 05:57:47 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ typedef struct s_ray
 {
 	t_vec3		startpos;
 	t_vec3		ray;
+	t_vec3		r_ray;
 	t_hit_data	data;
 }	t_ray;
 

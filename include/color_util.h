@@ -6,23 +6,21 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 02:29:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/03 19:02:32 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/12 07:47:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef COLOR_UTIL_H
 # define COLOR_UTIL_H
 
-#include "color.h"
-#include "object.h"
+# include "color.h"
+# include "object.h"
 
 uint32_t	add_color(t_color *c1, t_color *c2);
-uint32_t	multiply_color(t_color *c1, t_color *c2); 
+uint32_t	multiply_color(t_color *c1, t_color *c2);
 uint32_t	add_scale_color(t_color *c1, t_color *c2, double ratio);
 uint32_t	scale_color(t_color *c1, double ratio);
-
-t_vec3	get_reflection_ray(t_ray *light_ray, t_ray *camera_ray);
-void	phong_model(t_object *obj, t_color *light, t_ray *c_ray, t_ray *l_ray);
-
+t_vec3		get_reflection_ray(t_ray *light_ray, t_ray *camera_ray);
+void		phong_model(t_object *obj, t_color *l, t_ray *c_ray, t_ray *l_ray);
 
 #endif

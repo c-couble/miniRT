@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/11 06:06:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/12 07:46:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,14 @@ typedef struct s_engine
 	t_mlx	mlx;
 }	t_engine;
 
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
-void	render_frame(t_engine *engine);
 struct	s_ray;
+
+int			init_engine(t_engine *engine, char *scene);
+void		clear_engine(t_engine *engine);
+void		render_frame(t_engine *engine);
 uint32_t	get_light(t_engine *engine, struct s_ray *ray);
 uint32_t	get_ambiant_light(t_engine *engine);
-void	run_loop(t_engine *engine);
+uint32_t	get_pixel_color(t_engine *engine, int x, int y);
+void		run_loop(t_engine *engine);
 
 #endif
