@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/12 08:54:39 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/13 17:24:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 
 static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y);
 
-void	refract(t_engine *engine, t_ray *c_ray, int depth)
+void	reflect(t_engine *engine, t_ray *c_ray, int depth)
 {
 	t_ray	r_ray;
 	double	d;
@@ -32,6 +32,7 @@ void	refract(t_engine *engine, t_ray *c_ray, int depth)
 		return ;
 	r_ray.startpos = c_ray->data.hitpos;
 	r_ray.ray = get_reflection_ray(c_ray, c_ray);
+	vec3_scale(&r_ray.ray, -1);
 	vec3_normalize(&r_ray.ray);
 	d = trace_ray(engine, &r_ray);
 	if (d > 0)
@@ -56,7 +57,7 @@ uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 	{
 		camera_ray.data.color.color = get_light(engine, &camera_ray);
 		if (camera_ray.data.obj_t == SPHERE)
-			refract(engine, &camera_ray, DEPTH);
+			reflect(engine, &camera_ray, DEPTH);
 		return (camera_ray.data.color.color);
 	}
 	return (BACKGROUND_COLOR);
