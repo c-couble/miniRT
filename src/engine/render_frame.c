@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/15 09:11:11 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/15 10:13:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static void		setup_camera(t_camera *camera)
 	const double far = 100;
 	const double fov_rad = 1 / tan((camera->fov * (M_PI / 180)) / 2);
 
-	camera->projection.matrix[0] = (double) SCREEN_HEIGHT / SCREEN_WIDTH * fov_rad;
+	camera->projection.matrix[0] = (double) SCREEN_WIDTH / SCREEN_HEIGHT * fov_rad;
 	camera->projection.matrix[1] = 0;
 	camera->projection.matrix[2] = 0;
 	camera->projection.matrix[3] = 0;
@@ -133,10 +133,10 @@ static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y)
 	//double	ratio = engine->mlx.width / (double) engine->mlx.height;
 	double	px = 2 * ((x + 0.5) / engine->mlx.width) - 1;
 	double	py = 1 - 2 * (y + 0.5) / engine->mlx.height;
+	printf("%lf ; %lf\n", px, py);
 	ray->ray.x = px;
 	ray->ray.y = -1;
 	ray->ray.z = py;
-	vec3_normalize(&ray->ray);
 	ray->startpos = engine->scene.camera.coordinates;
 }
 
@@ -147,32 +147,24 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y, t_mat4 *inv_proj
 	t_color	light;
 
 	setup_ray(engine, &ray, x, y);
-	if (x == SCREEN_WIDTH / 2 && y == SCREEN_HEIGHT / 2)
-		printf("x=%lf y=%lf z=%lf\n", ray.ray.x, ray.ray.y, ray.ray.z);
 	t_vec3 a;
 	t_vec4	final;
-	vec4_create(&ray.ray, 1, &final);
-	vec4_mat4_mult(&final, &engine->scene.camera.inverse_projection, &final);
-	final.x /= final.w;
-	final.y /= final.w;
-	final.z /= final.w;
-	final.w = 0;
-	vec3_normalize(&a);
-	ray.ray = a;
-	(void)inv_proj;
-
-	a.x = ray.ray.x * inv_view->matrix[0]
-		+ ray.ray.y * inv_view->matrix[1]
-		+ ray.ray.z * inv_view->matrix[2];
-	a.y = ray.ray.x * inv_view->matrix[4]
-		+ ray.ray.y * inv_view->matrix[5]
-		+ ray.ray.z * inv_view->matrix[6];
-	a.z = ray.ray.x * inv_view->matrix[8]
-		+ ray.ray.y * inv_view->matrix[9]
-		+ ray.ray.z * inv_view->matrix[10];
-	ray.ray = a;
+	double tmp;
 	vec3_normalize(&ray.ray);
-		printf("x=%lf y=%lf z=%lf\n", ray.ray.x, ray.ray.y, ray.ray.z);
+	tmp = ray.ray.y;
+	ray.ray.y = ray.ray.z;
+	ray.ray.z = tmp;
+	vec4_create(&ray.ray, 1, &final);
+	vec4_mat4_mult(&final, inv_proj, &final);
+	a.y = final.z;
+	a.z = final.y / final.w;
+	vec3_normalize(&a);
+	vec4_create(&a, 0, &final);
+	vec4_mat4_mult(&final, inv_view, &final);
+	ray.ray.x = final.x;
+	ray.ray.y = final.y;
+	ray.ray.z = final.z;
+	vec3_normalize(&ray.ray);
 	if (trace_ray(engine, &ray) > 0)
 	{
 		color = ray.data.color;

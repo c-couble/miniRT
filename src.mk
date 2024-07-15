@@ -53,4 +53,7 @@ SRC = \
 	  vec3/vec3_subtract.c \
 	  vec3/yaw_pitch_to_vector.c \
 	  \
+	  vec4/vec4_create.c \
+	  vec4/vec4_mat4_mult.c \
+	  \
 	  main.c \
