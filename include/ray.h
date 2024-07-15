@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/12 05:57:47 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/15 11:43:25 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,14 @@
 # include "color.h"
 # include "vec3.h"
 
+struct	s_object;
+
 typedef struct s_hit_data
 {
 	t_vec3	hitpos;
 	t_vec3	normal;
 	t_color	color;
-	int		obj_t;
+	struct s_object *ptr;
 }	t_hit_data;
 
 typedef struct s_ray
