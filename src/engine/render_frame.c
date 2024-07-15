@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/12 08:54:57 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/15 09:11:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "object.h"
 #include "object/camera.h"
 #include "ray.h"
+#include "vec4.h"
 #include "vector.h"
 #include "vec3.h"
 #include "ft_math.h"
@@ -149,31 +150,15 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y, t_mat4 *inv_proj
 	if (x == SCREEN_WIDTH / 2 && y == SCREEN_HEIGHT / 2)
 		printf("x=%lf y=%lf z=%lf\n", ray.ray.x, ray.ray.y, ray.ray.z);
 	t_vec3 a;
-	/*
-	double w = ray.ray.x * inv_proj->matrix[12]
-		+ ray.ray.y * inv_proj->matrix[13]
-		+ ray.ray.z * inv_proj->matrix[14]
-		+ 1 * inv_proj->matrix[15];
-	(void)w;
-	a.x = ray.ray.x * inv_proj->matrix[0]
-		+ ray.ray.y * inv_proj->matrix[1]
-		+ ray.ray.z * inv_proj->matrix[2]
-		+ 1 * inv_proj->matrix[3];
-	a.y = ray.ray.x * inv_proj->matrix[4]
-		+ ray.ray.y * inv_proj->matrix[5]
-		+ ray.ray.z * inv_proj->matrix[6]
-		+ 1 * inv_proj->matrix[7];
-	a.z = ray.ray.x * inv_proj->matrix[8]
-		+ ray.ray.y * inv_proj->matrix[9]
-		+ ray.ray.z * inv_proj->matrix[10]
-		+ 1 * inv_proj->matrix[11];
-	a.x = a.x / w;
-	a.y = a.y / w;
-	a.z = a.z/ w;
-	//vec3_scale(&a, 1 / w);
+	t_vec4	final;
+	vec4_create(&ray.ray, 1, &final);
+	vec4_mat4_mult(&final, &engine->scene.camera.inverse_projection, &final);
+	final.x /= final.w;
+	final.y /= final.w;
+	final.z /= final.w;
+	final.w = 0;
 	vec3_normalize(&a);
 	ray.ray = a;
-	*/
 	(void)inv_proj;
 
 	a.x = ray.ray.x * inv_view->matrix[0]
@@ -186,7 +171,7 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y, t_mat4 *inv_proj
 		+ ray.ray.y * inv_view->matrix[9]
 		+ ray.ray.z * inv_view->matrix[10];
 	ray.ray = a;
-	if (x == SCREEN_WIDTH / 2 && y == SCREEN_HEIGHT / 2)
+	vec3_normalize(&ray.ray);
 		printf("x=%lf y=%lf z=%lf\n", ray.ray.x, ray.ray.y, ray.ray.z);
 	if (trace_ray(engine, &ray) > 0)
 	{
