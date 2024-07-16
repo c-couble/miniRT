@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/16 01:40:04 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/16 03:04:19 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@
 # define MAX_RAY_LEN		10000
 # define INACCURATE_ZERO	10e-8
 # define SKY				7591935
-# define BACKGROUND_COLOR	7591935
+# define BACKGROUND_COLOR	0
 
 # define DIFFUSE_RATIO		0.65
 # define SPECULAR_RATIO		1
 # define SPECULAR_SHINE		64
-# define REFLECT_RATIO		0.5
+# define REFLECT_RATIO		1.0
 # define ATTENUATION_FACTOR	5
 # define REFRACT_RATIO		1
 # define DEPTH				10

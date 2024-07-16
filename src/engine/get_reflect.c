@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 00:05:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/16 01:39:02 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/16 02:51:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,10 @@ void	get_reflect(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth)
 	vec3_scale(&r_ray.ray, -1);
 	vec3_normalize(&r_ray.ray);
 	d = trace_ray(engine, &r_ray);
-	if (d > 0)
+	if (d > -INACCURATE_ZERO)
 	{
 		r_color.color = get_light(engine, &r_ray);
-		if (depth == DEPTH)
-			c_ray->data.color.color = scale_color(&c_ray->data.color, 1 - REFLECT_RATIO);
+		c_ray->data.color.color = scale_color(&c_ray->data.color, 1 - REFLECT_RATIO);
 		r_color.color = scale_color(&r_color, REFLECT_RATIO);
 		c_ray->data.color.color = add_color(&r_color, &c_ray->data.color);
 		if (r_ray.data.ptr->type == SPHERE)
@@ -44,12 +43,10 @@ void	get_reflect(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth)
 	else
 	{
 		r_color.color = BACKGROUND_COLOR;
+		c_ray->data.color.color = scale_color(&c_ray->data.color, 1 - REFLECT_RATIO);
 		c_ray->data.color.color = get_light(engine, c_ray);
-		if (depth == DEPTH)
-			c_ray->data.color.color = scale_color(&c_ray->data.color, 1 - REFLECT_RATIO);
 		r_color.color = scale_color(&r_color, REFLECT_RATIO);
 		c_ray->data.color.color = add_color(&r_color, &c_ray->data.color);
-
 	}
 	return ;
 }
