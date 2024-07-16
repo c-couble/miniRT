@@ -1,4 +1,6 @@
 SRC = \
+	  camera/setup_camera.c \
+	  \
 	  engine/init_engine.c \
 	  engine/clear_engine.c \
 	  engine/get_light.c \
@@ -16,6 +18,7 @@ SRC = \
 	  object/intersect_triangle.c \
 	  \
 	  mat4/mat4_inverse.c \
+	  mat4/mat4_multiply.c \
 	  mat4/mat4_print.c \
 	  \
 	  parsing/parse_ambient_light.c \

@@ -1,38 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   camera.h                                           :+:      :+:    :+:   */
+/*   mat4_multiply.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/16 20:25:01 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/16 18:01:15 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/16 18:18:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAMERA_H
-# define CAMERA_H
-
 #include "mat4.h"
-# include "vec3.h"
+#include <stddef.h>
 
-typedef struct s_camera
+void	mat4_multiply(t_mat4 *a, t_mat4 *b, t_mat4 *out)
 {
-	t_vec3	coordinates;
-	t_vec3	orientation;
-	t_mat4	projection;
-	t_mat4	inverse_projection;
-	t_mat4	view;
-	t_mat4	inverse_view;
-	t_mat4	final;
-	double	fov;
-	double	pitch;
-	double	yaw;
-}	t_camera;
+	size_t	i;
+	size_t	j;
+	size_t	k;
+	double	value;
+	t_mat4	tmp;
 
-union	u_object_data;
-
-int		parse_camera(union u_object_data *data);
-void	setup_camera(t_camera *camera);
-
-#endif
+	i = 0;
+	while (i < 4)
+	{
+		j = 0;
+		while (j < 4)
+		{
+			k = 0;
+			value = 0;
+			while (k < 4)
+			{
+				value += a->matrix[i * 4 + k] * b->matrix[k * 4 + j];
+				++k;
+			}
+			tmp.matrix[i * 4 + j] = value;
+			++j;
+		}
+		++i;
+	}
+	*out = tmp;
+}
