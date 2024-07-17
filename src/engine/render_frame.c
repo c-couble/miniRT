@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/16 20:25:22 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/17 01:31:49 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,10 @@ void	render_frame(t_engine *engine)
 {
 	size_t	i;
 	size_t	j;
-	
 
 	i = 0;
 	printf("START FRAME\n\n");
-	setup_camera(&engine->scene.camera);
+	setup_camera(engine);
 	while (i < engine->mlx.height)
 	{
 		j = 0;
@@ -50,11 +49,9 @@ void	render_frame(t_engine *engine)
 
 static void	setup_ray(t_engine *engine, t_ray *ray, int x, int y)
 {
-	double	px = (2 * ((x + 0.5) / engine->mlx.width) - 1);
-	double	py = (1 - 2 * (y + 0.5) / engine->mlx.height);
-	//double	ratio = engine->mlx.width / (double) engine->mlx.height;
-	//px *= tan(engine->scene.camera.fov / 2 * M_PI / 180) * ratio;
-	//py *= tan(engine->scene.camera.fov / 2 * M_PI / 180);
+	const double	px = (2 * ((x + 0.5) / engine->mlx.width) - 1);
+	const double	py = (1 - 2 * (y + 0.5) / engine->mlx.height);
+
 	ray->ray.x = px;
 	ray->ray.y = -1;
 	ray->ray.z = py;
@@ -66,9 +63,9 @@ static uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 	t_ray	ray;
 	t_color	color;
 	t_color	light;
+	t_vec4	final;
 
 	setup_ray(engine, &ray, x, y);
-	t_vec4	final;
 	vec4_create(&ray.ray, 1, &final);
 	vec4_mat4_mult(&final, &engine->scene.camera.final, &final);
 	ray.ray.x = final.x;

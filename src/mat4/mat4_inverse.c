@@ -6,21 +6,21 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/30 01:41:26 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/16 18:09:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/17 02:00:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mat4.h"
 #include <stdio.h>
+#include <unistd.h>
 
 static inline double	get_determinant(t_mat4 *mat);
 
 t_mat4	*mat4_inverse(t_mat4 *mat, t_mat4 *out)
 {
-	//t_mat4	result;
 	t_mat4	adjudant;
-
 	const	double	determinant = get_determinant(mat);
+
 	if (determinant == 0)
 		return (NULL);
 	adjudant.matrix[0] = 

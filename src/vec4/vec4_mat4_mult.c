@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 04:01:53 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/15 09:03:45 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/17 00:33:57 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 t_vec4	*vec4_mat4_mult(t_vec4 *vec, t_mat4 *mat, t_vec4 *out)
 {
 	t_vec4	tmp;
-	
+
 	tmp.x = vec->x * mat->matrix[0]
 		+ vec->y * mat->matrix[4]
 		+ vec->z * mat->matrix[8]
