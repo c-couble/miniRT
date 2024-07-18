@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/17 03:53:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/18 15:56:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DEFINES_H
 # define DEFINES_H
 
-# define SCREEN_WIDTH		1920
-# define SCREEN_HEIGHT		1080
+# define SCREEN_WIDTH		1920 / 2
+# define SCREEN_HEIGHT		1080 / 2
 # define WINDOW_NAME		"miniRT ccouble lespenel"
 # define MAX_RAY_LEN		10000
 # define INACCURATE_ZERO	10e-8
@@ -25,8 +25,7 @@
 # define SPECULAR_RATIO		1
 # define SPECULAR_SHINE		64
 # define AIR_RATIO			1.0
-# define GLASS_RATIO		1.33
-# define ATTENUATION_FACTOR	5
+# define GLASS_RATIO		1.3
 # define REFLECT_RATIO		1
 # define DEPTH				10
 

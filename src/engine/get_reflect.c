@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 00:05:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/16 02:51:15 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/18 15:29:17 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	get_reflect(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth)
 		return ;
 	r_ray.startpos = to_ref->data.hitpos;
 	r_ray.ray = get_reflection_ray(to_ref, to_ref);
-	vec3_scale(&r_ray.ray, -1);
+//	vec3_scale(&r_ray.ray, -1);
 	vec3_normalize(&r_ray.ray);
 	d = trace_ray(engine, &r_ray);
 	if (d > -INACCURATE_ZERO)
