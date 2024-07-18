@@ -1,11 +1,11 @@
 SRC = \
-	  engine/init_engine.c \
 	  engine/clear_engine.c \
-	  engine/get_light.c \
 	  engine/get_ambiant_light.c \
+	  engine/get_light.c \
 	  engine/get_pixel_color.c \
 	  engine/get_reflect.c \
 	  engine/get_refract.c \
+	  engine/init_engine.c \
 	  engine/phong_model.c \
 	  engine/render_frame.c \
 	  engine/run_loop.c \
@@ -15,35 +15,36 @@ SRC = \
 	  \
 	  object/intersect.c \
 	  object/intersect_cylinder.c \
+	  object/intersect_paraboloid.c \
 	  object/intersect_plane.c \
 	  object/intersect_sphere.c \
-	  object/intersect_paraboloid.c \
 	  object/intersect_triangle.c \
 	  \
+	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \
-	  parsing/parse_light.c \
 	  parsing/parse_double.c \
+	  parsing/parse_light.c \
 	  parsing/parse_normalized_vector3d.c \
-	  parsing/parse_vector3d.c \
 	  parsing/parse_paraboloid.c \
-	  parsing/parse_triangle.c \
 	  parsing/parse_plane.c \
 	  parsing/parse_sphere.c \
-	  parsing/init_object.c \
+	  parsing/parse_triangle.c \
+	  parsing/parse_vector3d.c \
 	  \
-	  scene/init_scene.c \
 	  scene/clear_scene.c \
+	  scene/init_scene.c \
 	  \
 	  ray/trace_ray.c \
 	  \
 	  util/add_color.c \
 	  util/add_scale_color.c \
-	  util/get_reflection_ray.c \
 	  util/get_closest_distance.c \
 	  util/get_hitpos.c \
+	  util/get_normal_color.c \
+	  util/get_reflection_ray.c \
 	  util/multiply_color.c \
 	  util/print_error.c \
 	  util/scale_color.c \
