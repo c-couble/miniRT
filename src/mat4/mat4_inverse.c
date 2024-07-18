@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 05:02:15 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/18 05:47:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/18 06:01:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,22 +52,18 @@ static void		gauss_reduction(t_mat4 *left, t_mat4 *right)
 	int rows = 4;
 	for (int j = 0; j < cols; ++j)
 	{
-		mat4_print(left);
-		printf("SEP\n");
-		mat4_print(right);
 		double max = -1;
-		int	k = 0;
+		int	k = -1;
 		for (int i = r + 1; i < rows; ++i)
 		{
 			if (ft_abs(*access_gauss(left, right, i, j)) > max)
 			{
 				max = *access_gauss(left, right, i, j);
 				k = i;
-				printf("%d\n", i);
 			}
 		}
-
-		printf("k=%d r=%d j=%d\n", k, r, j);
+		if (k == -1)
+			return ;
 		if (*access_gauss(left, right, k, j) != 0)
 		{
 			++r;
