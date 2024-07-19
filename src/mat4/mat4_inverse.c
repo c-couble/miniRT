@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 05:02:15 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 03:24:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/19 03:31:44 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,52 +29,6 @@ t_mat4	*mat4_inverse(t_mat4 *mat, t_mat4 *out)
 	gauss_reduction(&left, &right);
 	*out = right;
 	return (out);
-}
-
-static int	get_pivot(t_mat4 *left, t_mat4 *right, int r, int j)
-{
-	int		i;
-	int		k;
-	double	max;
-
-	k = -1;
-	max = -1;
-	i = r + 1;
-	while (i < 4)
-	{
-		if (ft_dabs(*access_gauss(left, right, i, j)) > max)
-		{
-			max = ft_dabs(*access_gauss(left, right, i, j));
-			k = i;
-		}
-		++i;
-	}
-	return (k);
-}
-
-static void	subtract_line(t_mat4 *left, t_mat4 *right, int r, int j)
-{
-	int		i;
-	int		l;
-	double	a;
-	double	b;
-
-	i = 0;
-	while (i < 4)
-	{
-		if (i != r)
-		{
-			a = *access_gauss(left, right, i, j);
-			l = 0;
-			while (l < 8)
-			{
-				b = *access_gauss(left, right, r, l) * a;
-				*access_gauss(left, right, i, l) -= b;
-				++l;
-			}
-		}
-		++i;
-	}
 }
 
 static void	gauss_reduction(t_mat4 *left, t_mat4 *right)
@@ -105,9 +59,55 @@ static void	gauss_reduction(t_mat4 *left, t_mat4 *right)
 	}
 }
 
+static int	get_pivot(t_mat4 *left, t_mat4 *right, int r, int j)
+{
+	int		i;
+	int		k;
+	double	max;
+
+	k = -1;
+	max = -1;
+	i = r + 1;
+	while (i < 4)
+	{
+		if (ft_dabs(*access_gauss(left, right, i, j)) > max)
+		{
+			max = ft_dabs(*access_gauss(left, right, i, j));
+			k = i;
+		}
+		++i;
+	}
+	return (k);
+}
+
 static double	*access_gauss(t_mat4 *left, t_mat4 *right, int i, int j)
 {
 	if (j > 3)
 		return (right->matrix + i * 4 + (j - 4));
 	return (left->matrix + i * 4 + j);
+}
+
+static void	subtract_line(t_mat4 *left, t_mat4 *right, int r, int j)
+{
+	int		i;
+	int		l;
+	double	a;
+	double	b;
+
+	i = 0;
+	while (i < 4)
+	{
+		if (i != r)
+		{
+			a = *access_gauss(left, right, i, j);
+			l = 0;
+			while (l < 8)
+			{
+				b = *access_gauss(left, right, r, l) * a;
+				*access_gauss(left, right, i, l) -= b;
+				++l;
+			}
+		}
+		++i;
+	}
 }
