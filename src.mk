@@ -17,10 +17,12 @@ SRC = \
 	  object/intersect_paraboloid.c \
 	  object/intersect_triangle.c \
 	  \
+	  mat4/divide_line.c \
 	  mat4/mat4_identity.c \
 	  mat4/mat4_inverse.c \
 	  mat4/mat4_multiply.c \
 	  mat4/mat4_print.c \
+	  mat4/swap_lines.c \
 	  \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
