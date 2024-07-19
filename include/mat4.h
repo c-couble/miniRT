@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   mat4.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 03:26:40 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/24 07:44:22 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/19 03:23:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
+#ifndef MAT4_H
+# define MAT4_H
 
-int	main(int argc, char *argv[])
+typedef struct s_mat4
 {
-	t_engine	engine;
+	double	matrix[16];
+}	t_mat4;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
-}
+void	mat4_print(t_mat4 *mat);
+void	mat4_multiply(t_mat4 *a, t_mat4 *b, t_mat4 *out);
+t_mat4	*mat4_identity(t_mat4 *out);
+
+t_mat4	*mat4_inverse(t_mat4 *mat, t_mat4 *out);
+void	divide_line(t_mat4 *mat, int k, double value);
+void	swap_lines(t_mat4 *mat, int r, int k);
+
+#endif

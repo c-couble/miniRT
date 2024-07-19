@@ -1,31 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   mat4_multiply.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 03:26:40 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/16 18:01:15 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/16 18:18:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "mat4.h"
+#include <stddef.h>
 
-int	main(int argc, char *argv[])
+void	mat4_multiply(t_mat4 *a, t_mat4 *b, t_mat4 *out)
 {
-	t_engine	engine;
+	size_t	i;
+	size_t	j;
+	size_t	k;
+	double	value;
+	t_mat4	tmp;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
+	i = 0;
+	while (i < 4)
+	{
+		j = 0;
+		while (j < 4)
+		{
+			k = 0;
+			value = 0;
+			while (k < 4)
+			{
+				value += a->matrix[i * 4 + k] * b->matrix[k * 4 + j];
+				++k;
+			}
+			tmp.matrix[i * 4 + j] = value;
+			++j;
+		}
+		++i;
+	}
+	*out = tmp;
 }

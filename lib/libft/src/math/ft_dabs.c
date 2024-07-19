@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_dabs.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 03:26:40 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/19 01:52:50 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/19 01:56:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
-
-int	main(int argc, char *argv[])
+double	ft_dabs(double a)
 {
-	t_engine	engine;
-
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
+	if (a < 0)
+		return (-a);
+	return (a);
 }

@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   divide_line.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 03:26:40 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/19 03:22:54 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/19 03:24:02 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "mat4.h"
 
-int	main(int argc, char *argv[])
+void	divide_line(t_mat4 *mat, int k, double value)
 {
-	t_engine	engine;
+	int		i;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
+	i = 0;
+	while (i < 4)
+	{
+		mat->matrix[k * 4 + i] /= value;
+		++i;
+	}
 }

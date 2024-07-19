@@ -28,6 +28,7 @@ SRC = \
 	  io/get_next_line.c \
 	  \
 	  math/ft_abs.c \
+	  math/ft_dabs.c \
 	  math/ft_max.c \
 	  \
 	  mem/ft_calloc.c \
