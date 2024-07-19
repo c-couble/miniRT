@@ -6,11 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/12 06:14:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/19 11:38:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
+#include "color.h"
+#include "engine.h"
+#include "object/camera.h"
 #include <stdio.h>
 #include "engine.h"
 
@@ -21,6 +23,7 @@ void	render_frame(t_engine *engine)
 
 	i = 0;
 	printf("START FRAME\n\n");
+	setup_camera(engine);
 	while (i < engine->mlx.height)
 	{
 		j = 0;
@@ -34,3 +37,4 @@ void	render_frame(t_engine *engine)
 	}
 	printf("END FRAME\n\n");
 }
+

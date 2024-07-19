@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   swap_lines.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 03:26:40 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/19 03:22:04 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/19 03:24:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "mat4.h"
 
-int	main(int argc, char *argv[])
+void	swap_lines(t_mat4 *mat, int r, int k)
 {
-	t_engine	engine;
+	int		i;
+	double	tmp;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
+	if (k != r)
+	{
+		i = 0;
+		while (i < 4)
+		{
+			tmp = mat->matrix[k * 4 + i];
+			mat->matrix[k * 4 + i] = mat->matrix[r * 4 + i];
+			mat->matrix[r * 4 + i] = tmp;
+			++i;
+		}
+	}
 }

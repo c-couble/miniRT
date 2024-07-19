@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   mat4_identity.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 03:26:40 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/18 04:54:03 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/18 04:55:29 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "mat4.h"
 
-int	main(int argc, char *argv[])
+t_mat4	*mat4_identity(t_mat4 *out)
 {
-	t_engine	engine;
-
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
-	clear_engine(&engine);
-	return (0);
+	out->matrix[0] = 1;
+	out->matrix[1] = 0;
+	out->matrix[2] = 0;
+	out->matrix[3] = 0;
+	out->matrix[4] = 0;
+	out->matrix[5] = 1;
+	out->matrix[6] = 0;
+	out->matrix[7] = 0;
+	out->matrix[8] = 0;
+	out->matrix[9] = 0;
+	out->matrix[10] = 1;
+	out->matrix[11] = 0;
+	out->matrix[12] = 0;
+	out->matrix[13] = 0;
+	out->matrix[14] = 0;
+	out->matrix[15] = 1;
+	return (out);
 }

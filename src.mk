@@ -1,4 +1,6 @@
 SRC = \
+	  camera/setup_camera.c \
+	  \
 	  engine/clear_engine.c \
 	  engine/get_ambiant_light.c \
 	  engine/get_light.c \
@@ -19,6 +21,13 @@ SRC = \
 	  object/intersect_plane.c \
 	  object/intersect_sphere.c \
 	  object/intersect_triangle.c \
+	  \
+	  mat4/divide_line.c \
+	  mat4/mat4_identity.c \
+	  mat4/mat4_inverse.c \
+	  mat4/mat4_multiply.c \
+	  mat4/mat4_print.c \
+	  mat4/swap_lines.c \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
@@ -52,12 +61,15 @@ SRC = \
 	  util/solve_quadratic_equation.c \
 	  \
 	  vec3/vec3_add.c \
+	  vec3/vec3_create.c \
 	  vec3/vec3_cross_product.c \
 	  vec3/vec3_dot_product.c \
 	  vec3/vec3_get_norm.c \
 	  vec3/vec3_normalize.c \
 	  vec3/vec3_scale.c \
 	  vec3/vec3_subtract.c \
-	  vec3/yaw_pitch_to_vector.c \
+	  \
+	  vec4/vec4_create.c \
+	  vec4/vec4_mat4_mult.c \
 	  \
 	  main.c \
