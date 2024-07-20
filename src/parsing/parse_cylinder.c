@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/15 02:00:02 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 02:24:45 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ int	parse_cylinder(t_object_data *data)
 	if (parse_double(&data->cylinder.height, arg, 0, DBL_MAX) == -1)
 		return (-1);
 	if (parse_color(&data->cylinder.color) == -1)
+		return (-1);
+	if (parse_material(&data->cylinder.material) == -1)
 		return (-1);
 	return (0);
 }
