@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 23:26:53 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/20 03:29:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,12 @@ int	init_object(t_object *object, char *line)
 		return (0);
 	if (parse_object(object) == -1)
 		return (-1);
+	if (object->type != LIGHT
+		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
+	{
+		if (parse_material(&object->material) == -1)
+			return (-1);
+	}
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 18:15:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 02:21:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 03:22:30 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define CYLINDER_H
 
 # include "color.h"
-# include "material.h"
 # include "vec3.h"
 
 typedef struct s_cylinder
@@ -25,7 +24,6 @@ typedef struct s_cylinder
 	double			radius;
 	double			height;
 	t_color			color;
-	t_material_data	material;
 }	t_cylinder;
 
 union	u_object_data;

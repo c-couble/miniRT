@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 17:38:55 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 02:21:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 03:22:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define SPHERE_H
 
 # include "color.h"
-# include "material.h"
 # include "vec3.h"
 
 typedef struct s_sphere
@@ -23,7 +22,6 @@ typedef struct s_sphere
 	double			diameter;
 	double			radius;
 	t_color			color;
-	t_material_data	material;
 }	t_sphere;
 
 union	u_object_data;
