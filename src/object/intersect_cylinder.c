@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/15 02:01:07 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 22:42:23 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ static void	solve_cylinder_quadratic(t_object *obj, t_ray *ray, t_quadratic *q)
 	t_vec3	ra0;
 	t_vec3	va;
 	t_vec3	diff;
+	double	closest;
 
 	vec3_subtract(&ray->startpos, &obj->data.cylinder.pos, &diff);
 	vec3_cross_product(&obj->data.cylinder.axis, &diff, &ra0);
@@ -77,6 +78,10 @@ static void	solve_cylinder_quadratic(t_object *obj, t_ray *ray, t_quadratic *q)
 	vec3_scale(&ra0, 2);
 	q->b = vec3_dot_product(&ra0, &va);
 	solve_quadratic_equation(q);
+	closest = get_closest_distance(q->r1, q->r2);
+	if (closest == -1)
+		return ;
+	vec3_add(&ra0, vec3_scale(&va, closest), &ray->data.normal);
 }
 
 static double	point_far(t_object *obj, t_vec3 *rray, t_vec3 *r1, t_vec3 *r2)
