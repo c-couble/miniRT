@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 01:36:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/20 00:52:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/20 02:32:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,22 +18,20 @@
 #include "engine.h"
 #include "ray.h"
 #include "vec3.h"
-#include "ft_mem.h"
 
-t_vec3	get_refraction_ray(t_ray *to_ref, double n1, double n2)
+/*
+int	get_refraction_ray(t_ray *to_ref, t_vec3 *out_ref, double n1, double n2)
 {
 	double		n;
 	t_vec3		e = to_ref->ray;
 	double		dot_E_N;
 	t_vec3		object_n;
-	t_vec3		refraction;
 	double 		to_sqrt;
 
 	vec3_scale(&e, -1);
 	object_n = to_ref->data.normal;
 	vec3_normalize(&e);
 	dot_E_N = vec3_dot_product(&e, &object_n);
-	ft_memset(&refraction, 0, sizeof(t_vec3));
 	// outside of the surface
 	if (dot_E_N < 0)
 	{
@@ -47,13 +45,53 @@ t_vec3	get_refraction_ray(t_ray *to_ref, double n1, double n2)
 	n = n1 / n2;
 	to_sqrt = 1 - n * n * (1 - dot_E_N * dot_E_N);
 	if (to_sqrt < -INACCURATE_ZERO)
-		return (refraction);
+		return (-1);
 	double res = n * dot_E_N - sqrt(to_sqrt);
 	vec3_scale(&e, n);
 	vec3_scale(&object_n, res);
-	vec3_add(&object_n, &e, &refraction);
-	vec3_scale(&refraction , -1);
-	return (refraction);
+	vec3_add(&object_n, &e, out_ref);
+	vec3_scale(out_ref , -1);
+	return (0);
+}*/
+
+
+int	get_refraction_ray(t_ray *to_ref, t_vec3 *out_ref, double n1)
+{
+	double		n;
+	t_vec3		e = to_ref->ray;
+	double		dot_E_N;
+	t_vec3		object_n;
+	double 		to_sqrt;
+	double 		n0 = AIR_RATIO;
+	double 		n3 = n1;
+
+//	vec3_scale(&e, -1);
+	object_n = to_ref->data.normal;
+//	vec3_normalize(&e);
+	dot_E_N = vec3_dot_product(&e, &object_n);
+	// outside of the surface
+	if (dot_E_N < 0)
+	{
+		dot_E_N = -dot_E_N;
+	}
+	// inside of the surface
+	else 
+	{
+		vec3_scale(&object_n, -1);
+		double tmp = n0;
+		n0 = n3;
+		n3 = tmp;
+	}
+	n = n0 / n3;
+	to_sqrt = 1 - n * n * (1 - dot_E_N * dot_E_N);
+	if (to_sqrt < -INACCURATE_ZERO)
+		return (-1);
+	double res = n * dot_E_N - sqrt(to_sqrt);
+	vec3_scale(&e, n);
+	vec3_scale(&object_n, res);
+	vec3_add(&object_n, &e, out_ref);
+	//vec3_scale(out_ref , -1);
+	return (0);
 }
 
 void	get_refract(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth, double n1, double n2)
@@ -64,17 +102,17 @@ void	get_refract(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth, doubl
 	if (depth <= 0)
 		return ;
 	r_ray.startpos = to_ref->data.hitpos;
-	r_ray.ray = get_refraction_ray(to_ref, n1, n2);
-	if (vec3_normalize(&r_ray.ray) == 0)
+	if (get_refraction_ray(to_ref, &r_ray.ray, n2) == -1)
 	{
 		printf("singe\n");
 		r_ray.ray = get_reflection_ray(to_ref, to_ref);
 	//	vec3_scale(&r_ray.ray, -1);
 	}
+	vec3_normalize(&r_ray.ray);
 	d = trace_ray(engine, &r_ray);
 	if (d > -INACCURATE_ZERO && r_ray.data.ptr->type == SPHERE)
 	{
-		get_refract(engine, c_ray, &r_ray, depth - 1, n2, n1);
+			get_refract(engine, c_ray, &r_ray, depth - 1, n2, n1);
 		/*
 		r_ray2.ray = get_refraction_ray(&r_ray, n2, n1);
 		if (vec3_normalize(&r_ray2.ray) == 0)

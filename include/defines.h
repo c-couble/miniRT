@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/20 00:27:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/20 02:35:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 # define SPECULAR_RATIO		1
 # define SPECULAR_SHINE		64
 # define AIR_RATIO			1.0
-# define GLASS_RATIO		1.5
+# define GLASS_RATIO		1.3
 # define REFLECT_RATIO		1
 # define DEPTH				10
 
