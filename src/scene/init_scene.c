@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/23 06:30:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 02:32:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,7 +131,7 @@ static int	add_created_object(t_scene *scene, t_object *obj)
 		}
 		scene->camera = obj->data.camera;
 	}
-	if (obj->type == AMBIENT_LIGHT)
+	else if (obj->type == AMBIENT_LIGHT)
 	{
 		if (scene->has_ambient_light)
 		{

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/15 02:02:36 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 02:25:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int	parse_paraboloid(t_object_data *data)
 	if (parse_double(&data->paraboloid.height, arg, 0, DBL_MAX) == -1)
 		return (-1);
 	if (parse_color(&data->paraboloid.color) == -1)
+		return (-1);
+	if (parse_material(&data->paraboloid.material) == -1)
 		return (-1);
 	return (0);
 }
