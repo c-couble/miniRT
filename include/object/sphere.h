@@ -6,22 +6,24 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 17:38:55 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/15 02:00:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 02:21:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SPHERE_H
 # define SPHERE_H
 
-# include "vec3.h"
 # include "color.h"
+# include "material.h"
+# include "vec3.h"
 
 typedef struct s_sphere
 {
-	t_vec3	pos;
-	double	diameter;
-	double	radius;
-	t_color	color;
+	t_vec3			pos;
+	double			diameter;
+	double			radius;
+	t_color			color;
+	t_material_data	material;
 }	t_sphere;
 
 union	u_object_data;

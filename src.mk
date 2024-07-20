@@ -36,6 +36,7 @@ SRC = \
 	  parsing/parse_cylinder.c \
 	  parsing/parse_double.c \
 	  parsing/parse_light.c \
+	  parsing/parse_material.c \
 	  parsing/parse_normalized_vector3d.c \
 	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \
