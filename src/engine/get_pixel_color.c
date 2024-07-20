@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/20 01:33:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/20 03:02:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 		camera_ray.data.color.color = get_light(engine, &camera_ray);
 		if (camera_ray.data.ptr->type == SPHERE)
 		{
-			get_refract(engine, &camera_ray,&camera_ray,DEPTH,AIR_RATIO,GLASS_RATIO);
+			get_refract(engine, &camera_ray,&camera_ray,DEPTH, REFRACTION_RATIO);
 		//	get_reflect(engine, &camera_ray, &camera_ray, DEPTH);
 		}
 		return (camera_ray.data.color.color);

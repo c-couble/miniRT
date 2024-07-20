@@ -66,6 +66,7 @@ SRC = \
 	  string/ft_substr.c \
 	  \
 	  util/ft_swap.c \
+	  util/ft_dswap.c \
 	  \
 	  vector/add_vector.c \
 	  vector/add_vector_at.c \
