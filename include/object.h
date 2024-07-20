@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:18:13 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 03:44:16 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include "object/cylinder.h"
 # include "object/light.h"
 # include "object/material.h"
+# include "object/mesh.h"
 # include "object/plane.h"
 # include "object/paraboloid.h"
 # include "object/triangle.h"
@@ -44,6 +45,7 @@ typedef union u_object_data
 	t_camera		camera;
 	t_cylinder		cylinder;
 	t_light			light;
+	t_mesh			mesh;
 	t_plane			plane;
 	t_sphere		sphere;
 	t_paraboloid	paraboloid;
