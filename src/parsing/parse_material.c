@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 01:50:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:28:29 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 03:43:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	parse_material(t_material_data *material)
 		material->diffuse_ratio = DIFFUSE_RATIO;
 		material->specular_ratio = SPECULAR_RATIO;
 		material->specular_shine = SPECULAR_SHINE;
-		material->reflect_ratio = REFLECT_RATIO;
-		material->refraction_ratio = REFRACTION_RATIO;
+		material->reflect_ratio = 0;
+		material->refraction_ratio = 0;
 		return (0);
 	}
 	return (fill_data(material, arg));

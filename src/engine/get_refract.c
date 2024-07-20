@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 01:36:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/20 03:26:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/20 03:42:52 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,9 @@ void	get_refract(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth, doubl
 	}
 	vec3_normalize(&r_ray.ray);
 	d = trace_ray(engine, &r_ray);
-	if (d > -INACCURATE_ZERO && r_ray.data.ptr->type == SPHERE)
+	if (d > -INACCURATE_ZERO && r_ray.data.obj_material.refraction_ratio > AIR_RATIO)
 	{
-		get_refract(engine, c_ray, &r_ray, depth - 1, n1);
+		get_refract(engine, c_ray, &r_ray, depth - 1, r_ray.data.obj_material.refraction_ratio);
 		/*
 		r_ray2.ray = get_refraction_ray(&r_ray, n2, n1);
 		if (vec3_normalize(&r_ray2.ray) == 0)
