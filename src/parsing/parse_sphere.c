@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 02:31:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 03:12:44 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,6 @@ int	parse_sphere(t_object_data *data)
 		return (-1);
 	data->sphere.radius = data->sphere.diameter / 2;
 	if (parse_color(&data->sphere.color) == -1)
-		return (-1);
-	if (parse_material(&data->sphere.material) == -1)
 		return (-1);
 	return (0);
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_material_data.c                              :+:      :+:    :+:   */
+/*   parse_material.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 01:50:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 02:23:33 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 03:28:29 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	parse_material(t_material_data *material)
 	{
 		material->diffuse_ratio = DIFFUSE_RATIO;
 		material->specular_ratio = SPECULAR_RATIO;
+		material->specular_shine = SPECULAR_SHINE;
 		material->reflect_ratio = REFLECT_RATIO;
 		material->refraction_ratio = REFRACTION_RATIO;
-		material->specular_shine = SPECULAR_SHINE;
 		return (0);
 	}
 	return (fill_data(material, arg));
@@ -48,13 +48,13 @@ static int	fill_data(t_material_data *material, char *str)
 	if (parse_double(&material->specular_ratio, data, 0, 1) == -1)
 		return (-1);
 	data = ft_strtok_r(NULL, ",", &save);
+	if (parse_double(&material->specular_shine, data, 0, DBL_MAX) == -1)
+		return (-1);
+	data = ft_strtok_r(NULL, ",", &save);
 	if (parse_double(&material->reflect_ratio, data, 0, 1) == -1)
 		return (-1);
 	data = ft_strtok_r(NULL, ",", &save);
 	if (parse_double(&material->refraction_ratio, data, 1, 5) == -1)
-		return (-1);
-	data = ft_strtok_r(NULL, ",", &save);
-	if (parse_double(&material->specular_shine, data, 0, DBL_MAX) == -1)
 		return (-1);
 	return (0);
 }
