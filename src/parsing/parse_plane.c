@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 02:25:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 03:21:08 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ int	parse_plane(t_object_data *data)
 	if (parse_normalized_vector3d(&data->plane.normal) == -1)
 		return (-1);
 	if (parse_color(&data->plane.color) == -1)
-		return (-1);
-	if (parse_material(&data->plane.material) == -1)
 		return (-1);
 	return (0);
 }
