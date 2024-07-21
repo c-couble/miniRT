@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 00:05:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/21 02:07:49 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/21 04:13:56 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,10 @@ void	get_reflect(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth)
 	double	d;
 
 	if (depth <= 0)
+	{
+		c_ray->data.color.color = 0;
 		return ;
+	}
 	r_ray.startpos = to_ref->data.hitpos;
 	r_ray.ray = get_reflection_ray(to_ref, to_ref);
 //	vec3_scale(&r_ray.ray, -1);
@@ -40,7 +43,7 @@ void	get_reflect(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth)
 		if (r_ray.data.obj_material.reflect_ratio > 0)
 			get_reflect(engine, c_ray, &r_ray, depth - 1);
 		else if (r_ray.data.obj_material.refraction_ratio >= 1)
-			get_refract(engine, c_ray, &r_ray, depth - 1, r_ray.data.obj_material.refraction_ratio);
+			get_refract(engine, c_ray, &r_ray, DEPTH, r_ray.data.obj_material.refraction_ratio);
 	}
 	else
 	{
