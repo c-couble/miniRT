@@ -6,17 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 01:36:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/20 03:42:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/21 01:49:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include <stdio.h>
-#include "color.h"
 #include "color_util.h"
 #include "defines.h"
-#include "engine.h"
-#include "ray.h"
 #include "vec3.h"
 #include "util.h"
 
@@ -68,9 +65,10 @@ void	get_refract(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth, doubl
 	}
 	vec3_normalize(&r_ray.ray);
 	d = trace_ray(engine, &r_ray);
-	if (d > -INACCURATE_ZERO && r_ray.data.obj_material.refraction_ratio > AIR_RATIO)
+	if (d > -INACCURATE_ZERO && r_ray.data.obj_material.refraction_ratio)
 	{
-		get_refract(engine, c_ray, &r_ray, depth - 1, r_ray.data.obj_material.refraction_ratio);
+		get_refract(engine, c_ray, &r_ray, depth - 1,
+			  r_ray.data.obj_material.refraction_ratio);
 		/*
 		r_ray2.ray = get_refraction_ray(&r_ray, n2, n1);
 		if (vec3_normalize(&r_ray2.ray) == 0)
@@ -87,7 +85,12 @@ void	get_refract(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth, doubl
 		*/
 	}
 	else if (d > -INACCURATE_ZERO)
-		c_ray->data.color.color = get_light(engine, &r_ray);
+	{
+		if (r_ray.data.obj_material.reflect_ratio)
+			get_reflect(engine, c_ray, &r_ray, DEPTH);
+		else
+			c_ray->data.color.color = get_light(engine, &r_ray);
+	}
 	return ;
 }
 

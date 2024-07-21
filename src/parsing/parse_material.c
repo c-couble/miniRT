@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 01:50:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:43:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/21 01:56:47 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,9 @@ static int	fill_data(t_material_data *material, char *str)
 	if (parse_double(&material->reflect_ratio, data, 0, 1) == -1)
 		return (-1);
 	data = ft_strtok_r(NULL, ",", &save);
-	if (parse_double(&material->refraction_ratio, data, 1, 5) == -1)
+	if (parse_double(&material->refraction_ratio, data, 0, 5) == -1)
+		return (-1);
+	if (material->refraction_ratio > 0 && material->refraction_ratio < 1)
 		return (-1);
 	return (0);
 }

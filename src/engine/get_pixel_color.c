@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/20 03:39:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/21 01:46:49 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,10 @@ uint32_t	get_pixel_color(t_engine *engine, int x, int y)
 		{
 			get_reflect(engine, &camera_ray, &camera_ray, DEPTH);
 		}
-		if (camera_ray.data.obj_material.refraction_ratio > 1)
+		if (camera_ray.data.obj_material.refraction_ratio)
 		{
-			get_refract(engine, &camera_ray, &camera_ray, DEPTH, REFRACTION_RATIO);
+			get_refract(engine, &camera_ray, &camera_ray, DEPTH,
+			   camera_ray.data.obj_material.refraction_ratio);
 		}
 		return (camera_ray.data.color.color);
 	}
