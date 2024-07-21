@@ -52,6 +52,7 @@ SRC = \
 	  util/add_color.c \
 	  util/add_scale_color.c \
 	  util/get_closest_distance.c \
+	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
 	  util/get_normal_color.c \
 	  util/get_reflection_ray.c \

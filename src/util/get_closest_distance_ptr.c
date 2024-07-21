@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   util.h                                             :+:      :+:    :+:   */
+/*   get_closest_distance_ptr.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 19:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/21 02:42:49 by lespenel         ###   ########.fr       */
+/*   Created: 2024/07/20 23:23:40 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/20 23:23:50 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef UTIL_H
-# define UTIL_H
+#include "defines.h"
 
-# include "object/plane.h"
-# include "ray.h"
-
-void	print_error(char *err);
-double	get_closest_distance(double a, double b);
-int		get_closest_distance_ptr(double a, double b, double *out);
-double	solve_plane_equation(t_plane *plane, t_ray *ray);
-void	get_hitpos(t_ray *ray, double t);
-void	ft_dswap(double *a, double *b);
-
-#endif
+int	get_closest_distance_ptr(double a, double b, double *out)
+{
+	if (a <= INACCURATE_ZERO && b <= INACCURATE_ZERO)
+	{
+		*out = -1;
+		return (0);
+	}
+	if (a <= INACCURATE_ZERO)
+	{
+		*out = b;
+		return (0);
+	}
+	if (b <= INACCURATE_ZERO)
+	{
+		*out = a;
+		return (1);
+	}
+	if (a < b)
+	{
+		*out = a;
+		return (1);
+	}
+	*out = b;
+	return (0);
+}
