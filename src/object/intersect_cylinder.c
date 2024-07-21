@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/21 02:25:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/21 04:22:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,8 @@ static void	solve_cylinder_quadratic(t_object *obj, t_ray *ray, t_quadratic *q)
 	vec3_scale(&ra0, 2);
 	q->b = vec3_dot_product(&ra0, &va);
 	solve_quadratic_equation(q);
+	if (q->delta < 0)
+		return ;
 	closest = get_closest_distance(q->r1, q->r2);
 	if (closest == -1)
 		return ;
