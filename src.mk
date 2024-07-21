@@ -44,6 +44,7 @@ SRC = \
 	  ray/trace_ray.c \
 	  \
 	  util/get_closest_distance.c \
+	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
 	  util/print_error.c \
 	  util/solve_plane_equation.c \
