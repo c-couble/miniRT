@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 00:05:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/21 19:55:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/22 04:30:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	get_reflect(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth)
 		return ;
 	}
 	r_ray.startpos = to_ref->data.hitpos;
-	r_ray.ray = get_reflection_ray(to_ref, to_ref);
+	get_reflection_ray(to_ref, to_ref, &r_ray.ray);
 //	vec3_scale(&r_ray.ray, -1);
 	vec3_normalize(&r_ray.ray);
 	d = trace_ray(engine, &r_ray);

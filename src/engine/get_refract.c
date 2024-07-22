@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 01:36:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/21 17:18:55 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/22 04:30:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	get_refract(t_engine *engine, t_ray *c_ray, t_ray *to_ref, int depth, doubl
 	if (get_refraction_ray(to_ref, &r_ray.ray, n1) == -1)
 	{
 		printf("singe\n");
-		r_ray.ray = get_reflection_ray(to_ref, to_ref);
+		get_reflection_ray(to_ref, to_ref, &r_ray.ray);
 	}
 	vec3_normalize(&r_ray.ray);
 	d = trace_ray(engine, &r_ray);

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 18:57:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/21 20:08:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/22 04:31:00 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static void	specular_reflect(t_color *light, t_ray *light_r, t_ray *camera_r)
 	t_vec3		reflection_ray;
 
 	shine = camera_r->data.obj_material.specular_shine;
-	reflection_ray = get_reflection_ray(light_r, camera_r);
+	get_reflection_ray(light_r, camera_r, &reflection_ray);
 	specular_ratio = vec3_dot_product(&reflection_ray, &camera_r->ray);
 	specular_ratio = pow(specular_ratio, shine);
 	if (specular_ratio < 0)
