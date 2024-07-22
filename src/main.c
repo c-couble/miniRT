@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/22 08:11:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/22 23:33:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	main(int argc, char *argv[])
 	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
 		return (1);
 	t_obj_3d	obj;
-	if (parse_obj_file(&obj, "./assets/objects/chess_king.obj") == -1)
+	if (parse_obj_file(&obj, "./chirac.obj") == -1)
 	{
 		write(2, "Error obj\n", 10);
 		return (2);
