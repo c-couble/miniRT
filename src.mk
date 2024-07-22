@@ -56,6 +56,7 @@ SRC = \
 	  util/get_hitpos.c \
 	  util/get_normal_color.c \
 	  util/get_reflection_ray.c \
+	  util/get_refraction_ray.c \
 	  util/multiply_color.c \
 	  util/print_error.c \
 	  util/scale_color.c \

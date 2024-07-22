@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 18:57:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/22 04:31:00 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/22 09:49:47 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ void	phong_model(t_object *obj, t_color *light, t_ray *c_ray, t_ray *l_ray)
 	scene_light = obj->data.light.color;
 	scene_light.color = scale_color(&scene_light, obj->data.light.ratio);
 	difuse_reflect(&scene_light, &l_ray->ray, c_ray);
-	light->color = add_scale_color(light, &scene_light, 
-								c_ray->data.obj_material.diffuse_ratio);
+	light->color = add_scale_color(light, &scene_light,
+			c_ray->data.materials.diffuse_ratio);
 	specular_reflect(&scene_light, l_ray, c_ray);
-	light->color = add_scale_color(light, &scene_light, 
-		c_ray->data.obj_material.specular_ratio);
+	light->color = add_scale_color(light, &scene_light,
+			c_ray->data.materials.specular_ratio);
 }
 
 static void	specular_reflect(t_color *light, t_ray *light_r, t_ray *camera_r)
@@ -37,7 +37,7 @@ static void	specular_reflect(t_color *light, t_ray *light_r, t_ray *camera_r)
 	double		shine;
 	t_vec3		reflection_ray;
 
-	shine = camera_r->data.obj_material.specular_shine;
+	shine = camera_r->data.materials.specular_shine;
 	get_reflection_ray(light_r, camera_r, &reflection_ray);
 	specular_ratio = vec3_dot_product(&reflection_ray, &camera_r->ray);
 	specular_ratio = pow(specular_ratio, shine);
