@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:29:55 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/22 05:10:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ static t_object_type	get_object_type(char *type)
 	[CYLINDER] = "cy",
 	[PARABOLOID] = "pa",
 	[TRIANGLE] = "tr",
+	[MESH] = "mesh",
 	};
 	size_t		i;
 
@@ -80,6 +81,7 @@ static int	parse_object(t_object *object)
 	[CYLINDER] = parse_cylinder,
 	[PARABOLOID] = parse_paraboloid,
 	[TRIANGLE] = parse_triangle,
+	[MESH] = parse_mesh,
 	};
 
 	return (values[object->type](&object->data));

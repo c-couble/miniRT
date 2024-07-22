@@ -12,10 +12,13 @@ SRC = \
 	  \
 	  object/intersect.c \
 	  object/intersect_cylinder.c \
+	  object/intersect_mesh.c \
 	  object/intersect_plane.c \
 	  object/intersect_sphere.c \
 	  object/intersect_paraboloid.c \
 	  object/intersect_triangle.c \
+	  \
+	  obj_3d/parse_obj_file.c \
 	  \
 	  mat4/divide_line.c \
 	  mat4/mat4_identity.c \
@@ -32,6 +35,7 @@ SRC = \
 	  parsing/parse_double.c \
 	  parsing/parse_light.c \
 	  parsing/parse_material.c \
+	  parsing/parse_mesh.c \
 	  parsing/parse_normalized_vector3d.c \
 	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \

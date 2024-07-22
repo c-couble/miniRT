@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/15 02:02:24 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/22 08:07:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "vec3.h"
 #include "ray.h"
 #include "object.h"
+#include <stdio.h>
 
 static void		get_plane_from_triangle(t_triangle *tr, t_plane *p);
 static int		bsp(t_vec3 *a, t_vec3 *b, t_vec3 *c, t_vec3 *p);
@@ -30,12 +31,15 @@ double	intersect_triangle(t_object *obj, t_ray *ray)
 	get_plane_from_triangle(&obj->data.triangle, &plane);
 	tr = obj->data.triangle;
 	ray->data.color = tr.color;
+	ray->data.normal = plane.normal;
 	t = solve_plane_equation(&plane, ray);
 	point.x = ray->startpos.x + t * ray->ray.x;
 	point.y = ray->startpos.y + t * ray->ray.y;
 	point.z = ray->startpos.z + t * ray->ray.z;
 	if (bsp(&tr.p0, &tr.p1, &tr.p2, &point))
+	{
 		return (t);
+	}
 	return (-1);
 }
 
@@ -74,18 +78,12 @@ static int	bsp(t_vec3 *a, t_vec3 *b, t_vec3 *c, t_vec3 *point)
 
 static double	triangle_area(t_vec3 *a, t_vec3 *b, t_vec3 *c)
 {
-	double	abx;
-	double	aby;
-	double	acx;
-	double	acy;
-	double	area;
+	t_vec3	ab;
+	t_vec3	ac;
+	t_vec3	cross;
 
-	abx = a->x - b->x;
-	aby = a->y - b->y;
-	acx = a->x - c->x;
-	acy = a->y - c->y;
-	area = (abx * acy - aby * acx) / 2.0f;
-	if (area < 0)
-		area = area * -1;
-	return (area);
+	vec3_subtract(b, a, &ab);
+	vec3_subtract(c, a, &ac);
+	vec3_cross_product(&ab, &ac, &cross);
+	return (vec3_get_norm(&cross) / 2);
 }

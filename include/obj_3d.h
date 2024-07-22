@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 04:01:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/21 05:15:45 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/22 06:04:24 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,39 @@
 # define OBJ_3D
 
 # include "vector.h"
+# include <stddef.h>
 
 typedef struct s_obj_3d
 {
 	char		*file_name;
 	t_vector	vertices;
+	t_vector	texture_coordinates;
+	t_vector	vertex_normals;
+	t_vector	space_vertices;
+	t_vector	faces;
 }	t_obj_3d;
+
+typedef struct s_face_point
+{
+	size_t	vertice_id;
+	size_t	texture_id;
+	size_t	normal_id;
+}	t_polygon_point;
+
+typedef struct s_polygon
+{
+	t_polygon_point	points[3];
+}	t_polygon;
+
+typedef enum e_obj_line_type
+{
+	VERTICE,
+	VERTEX_NORMAL,
+	TEXTURE_COORD,
+	SPACE_VERTICE,
+	POLYGON
+}	t_obj_line_type;
+
+int	parse_obj_file(t_obj_3d *obj, const char *file);
 
 #endif

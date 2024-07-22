@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:44:16 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/22 07:09:24 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ typedef enum e_object_type
 	CYLINDER,
 	PARABOLOID,
 	TRIANGLE,
+	MESH,
 	UNKNOWN_OBJ,
 	COMMENT
 }	t_object_type;
@@ -66,5 +67,6 @@ double	intersect_cylinder(t_object *obj, t_ray *ray);
 double	intersect_plane(t_object *obj, t_ray *ray);
 double	intersect_paraboloid(t_object *obj, t_ray *ray);
 double	intersect_triangle(t_object *obj, t_ray *ray);
+double	intersect_mesh(t_object *obj, t_ray *ray);
 
 #endif
