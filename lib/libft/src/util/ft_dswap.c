@@ -6,11 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 03:20:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/20 03:20:48 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/24 14:12:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_dswap(double *a, double *b)
+void	ft_dswap(double *a, double *b)
 {
 	double	tmp;
 	tmp = *a;
