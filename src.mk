@@ -1,20 +1,28 @@
 SRC = \
 	  camera/setup_camera.c \
 	  \
-	  engine/init_engine.c \
 	  engine/clear_engine.c \
-	  engine/get_light.c \
+	  engine/init_engine.c \
 	  engine/render_frame.c \
 	  engine/run_loop.c \
+	  engine/shading/get_ambiant_light.c \
+	  engine/shading/get_fresnel.c \
+	  engine/shading/get_light.c \
+	  engine/shading/get_pixel_color.c \
+	  engine/shading/get_reflect.c \
+	  engine/shading/get_reflection_ray.c \
+	  engine/shading/get_refraction_ray.c \
+	  engine/shading/get_refract.c \
+	  engine/shading/phong_model.c \
 	  \
 	  mlx_wrapper/clear_mlx_struct.c \
 	  mlx_wrapper/init_mlx_struct.c \
 	  \
 	  object/intersect.c \
 	  object/intersect_cylinder.c \
+	  object/intersect_paraboloid.c \
 	  object/intersect_plane.c \
 	  object/intersect_sphere.c \
-	  object/intersect_paraboloid.c \
 	  object/intersect_triangle.c \
 	  \
 	  mat4/divide_line.c \
@@ -39,15 +47,20 @@ SRC = \
 	  parsing/parse_triangle.c \
 	  parsing/parse_vector3d.c \
 	  \
-	  scene/init_scene.c \
 	  scene/clear_scene.c \
+	  scene/init_scene.c \
 	  \
 	  ray/trace_ray.c \
 	  \
+	  util/add_color.c \
+	  util/add_scale_color.c \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
+	  util/get_normal_color.c \
+	  util/multiply_color.c \
 	  util/print_error.c \
+	  util/scale_color.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
 	  \

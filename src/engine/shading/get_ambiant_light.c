@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_dabs.c                                          :+:      :+:    :+:   */
+/*   get_ambiant_light.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/19 01:52:50 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 11:35:16 by lespenel         ###   ########.fr       */
+/*   Created: 2024/07/11 06:05:01 by lespenel          #+#    #+#             */
+/*   Updated: 2024/07/12 07:44:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-double	ft_dabs(double a)
+#include "engine.h"
+#include "color_util.h"
+
+uint32_t	get_ambiant_light(t_engine *engine)
 {
-	if (a < 0)
-		return (-a);
-	return (a);
+	return (scale_color(&engine->scene.ambient_light.color
+			, engine->scene.ambient_light.ratio));
 }

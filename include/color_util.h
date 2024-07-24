@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   defines.h                                          :+:      :+:    :+:   */
+/*   color_util.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/24 01:39:03 by lespenel         ###   ########.fr       */
+/*   Created: 2024/07/03 02:29:32 by lespenel          #+#    #+#             */
+/*   Updated: 2024/07/24 00:57:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DEFINES_H
-# define DEFINES_H
+#ifndef COLOR_UTIL_H
+# define COLOR_UTIL_H
 
-# define SCREEN_WIDTH		1920 
-# define SCREEN_HEIGHT		1080 
-# define WINDOW_NAME		"miniRT ccouble lespenel"
-# define MAX_RAY_LEN		10000
-# define INACCURATE_ZERO	10e-8
-# define SKY				7591935
-# define BACKGROUND_COLOR	0
+# include "ray.h"
+# include "color.h"
 
-# define AIR_RATIO			1.0
-# define DEPTH				10
-
-# define DIFFUSE_RATIO		0.65
-# define SPECULAR_RATIO		1
-# define SPECULAR_SHINE		64
-# define REFLECT_RATIO		0
+uint32_t	add_color(t_color *c1, t_color *c2);
+uint32_t	multiply_color(t_color *c1, t_color *c2);
+uint32_t	add_scale_color(t_color *c1, t_color *c2, double ratio);
+uint32_t	scale_color(t_color *c1, double ratio);
+uint32_t	get_normal_color(t_ray *camera_ray);
 
 #endif
