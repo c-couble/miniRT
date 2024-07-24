@@ -6,12 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 18:57:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/22 09:49:47 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/24 01:02:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color_util.h"
 #include "ft_math.h"
+#include "shading.h"
 #include <math.h>
 
 static void	difuse_reflect(t_color *light, t_vec3 *light_n, t_ray *ray);

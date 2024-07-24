@@ -6,15 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/22 11:01:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/24 00:55:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "shading.h"
 #include "color_util.h"
-#include "engine.h"
-#include "object.h"
-#include "ray.h"
-#include "vec3.h"
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 
@@ -33,9 +30,7 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 		if (obj->type == LIGHT)
 		{
 			if (trace_light(engine, &light_ray, ray, &obj->data.light))
-			{
 				phong_model(obj, &light, ray, &light_ray);
-			}
 		}
 		++i;
 	}
@@ -52,15 +47,6 @@ static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l)
 	norm = vec3_normalize(&l_ray->ray);
 	d = trace_ray(eng, l_ray);
 	if (d < norm && d > 0 && l_ray->data.materials.refraction_ratio)
-	{
-		t_ray r_ray;
-		r_ray.ray = l_ray->data.hitpos;
-		get_refraction_ray(l_ray , &r_ray.ray, l_ray->data.materials.refraction_ratio);
-		r_ray.startpos = l_ray->data.hitpos;
-		d = trace_ray(eng, &r_ray);
-		if (d > 0 && r_ray.data.type == LIGHT)
-			return (0);
 		return (1);
-	}
 	return (d < 0 || d > norm);
 }

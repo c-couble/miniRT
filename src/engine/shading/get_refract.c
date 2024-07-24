@@ -6,11 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 01:36:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/22 09:45:50 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/24 01:00:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
+#include "shading.h"
 
 uint32_t	get_refract(t_engine *eng, t_ray *c_ray, t_color color, int depth)
 {

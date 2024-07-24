@@ -6,18 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/22 07:27:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/24 02:19:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
-#include "defines.h"
-#include "engine.h"
-#include "object/camera.h"
 #include <stdio.h>
-#include "engine.h"
-#include "ray.h"
-#include "vec3.h"
+#include "shading.h"
+#include "defines.h"
 #include "vec4.h"
 
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y);

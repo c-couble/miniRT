@@ -2,15 +2,18 @@ SRC = \
 	  camera/setup_camera.c \
 	  \
 	  engine/clear_engine.c \
-	  engine/get_ambiant_light.c \
-	  engine/get_light.c \
-	  engine/get_pixel_color.c \
-	  engine/get_reflect.c \
-	  engine/get_refract.c \
 	  engine/init_engine.c \
-	  engine/phong_model.c \
 	  engine/render_frame.c \
 	  engine/run_loop.c \
+	  engine/shading/get_ambiant_light.c \
+	  engine/shading/get_fresnel.c \
+	  engine/shading/get_light.c \
+	  engine/shading/get_pixel_color.c \
+	  engine/shading/get_reflect.c \
+	  engine/shading/get_reflection_ray.c \
+	  engine/shading/get_refraction_ray.c \
+	  engine/shading/get_refract.c \
+	  engine/shading/phong_model.c \
 	  \
 	  mlx_wrapper/clear_mlx_struct.c \
 	  mlx_wrapper/init_mlx_struct.c \
@@ -55,8 +58,6 @@ SRC = \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
 	  util/get_normal_color.c \
-	  util/get_reflection_ray.c \
-	  util/get_refraction_ray.c \
 	  util/multiply_color.c \
 	  util/print_error.c \
 	  util/scale_color.c \
