@@ -6,11 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 19:02:07 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/23 22:38:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/24 02:31:59 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
+#include "ray.h"
 
 // R = I - 2(N.I)N
 void	get_reflection_ray(t_ray *to_ref, t_ray *camera_ray, t_vec3 *out)
