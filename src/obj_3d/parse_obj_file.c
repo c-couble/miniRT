@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/23 00:53:07 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/25 06:10:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 	line = get_next_line(fd);
 	while (line)
 	{
+		line = ft_strtok(line, "\r");
 		if (parse_line(obj, line) == -1)
 		{
 			close(fd);

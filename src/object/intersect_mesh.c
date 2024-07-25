@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 07:00:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/25 03:32:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/25 05:58:46 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,6 @@ double	intersect_mesh(t_object *obj, t_ray *ray)
 		triangle.p1 = *vec;
 		vec = at_vector(&obj->data.mesh.obj_3d->vertices, face->points[2].vertice_id - 1);
 		triangle.p2 = *vec;
-		vec3_scale(&triangle.p0, 8);
-		vec3_scale(&triangle.p1, 8);
-		vec3_scale(&triangle.p2, 8);
 		triangle.color.rgb.r = 0;
 		triangle.color.rgb.g = 255;
 		triangle.color.rgb.b = 0;
