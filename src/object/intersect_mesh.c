@@ -6,13 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 07:00:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/22 07:18:01 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/25 03:04:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "obj_3d.h"
 #include "object.h"
 #include "object/triangle.h"
+#include "ray.h"
 #include "util.h"
 #include "vec3.h"
 #include "vector.h"
@@ -22,6 +23,7 @@ double	intersect_mesh(t_object *obj, t_ray *ray)
 	size_t	i;
 	double	t = -1;
 
+	t_hit_data	data;
 	i = 0;
 	while (i < obj->data.mesh.obj_3d->faces.size)
 	{
@@ -34,12 +36,18 @@ double	intersect_mesh(t_object *obj, t_ray *ray)
 		triangle.p1 = *vec;
 		vec = at_vector(&obj->data.mesh.obj_3d->vertices, face->points[2].vertice_id - 1);
 		triangle.p2 = *vec;
+		vec3_scale(&triangle.p0, 8);
+		vec3_scale(&triangle.p1, 8);
+		vec3_scale(&triangle.p2, 8);
 		triangle.color.rgb.r = 0;
 		triangle.color.rgb.g = 255;
 		triangle.color.rgb.b = 0;
 		t_object	o;
 		o.data.triangle = triangle;
-		t = get_closest_distance(t, intersect_triangle(&o, ray));
+		if (get_closest_distance(t, intersect_triangle(&o, ray)))
+		{
+			data = ray->data;
+		}
 		++i;
 	}
 	if (t == -1)

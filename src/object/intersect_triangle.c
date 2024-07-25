@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/22 23:08:21 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/25 03:30:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,48 @@
 #include "vec3.h"
 #include "ray.h"
 #include "object.h"
+#include "defines.h"
+#include <stdio.h>
+#include <unistd.h>
+
+double	intersect_triangle2(t_object *obj, t_ray *ray);
+
+double	intersect_triangle(t_object *obj, t_ray *ray)
+{
+	t_vec3	O = ray->startpos;
+	t_vec3	D = ray->ray;
+	t_vec3	T;
+	t_vec3	E1;
+	t_vec3	E2;
+	t_vec3	P;
+	t_vec3	Q;
+
+	vec3_subtract(&O, &obj->data.triangle.p0, &T);
+	vec3_subtract(&obj->data.triangle.p1, &obj->data.triangle.p0, &E1);
+	vec3_subtract(&obj->data.triangle.p2, &obj->data.triangle.p0, &E2);
+	vec3_cross_product(&D, &E2, &P);
+	vec3_cross_product(&T, &E1, &Q);
+	double inv_det = 1 / vec3_dot_product(&P, &E1);
+	double u = inv_det * vec3_dot_product(&P, &T);
+	if (u < 0 || u > 1)
+		return (-1);
+	double v = inv_det * vec3_dot_product(&Q, &D);
+	if (v < 0 || u + v > 1)
+		return (-1);
+	double t = inv_det * vec3_dot_product(&Q, &E2);
+	if (t < INACCURATE_ZERO)
+		return (-1);
+	//double t2 = intersect_triangle2(obj, ray);
+	//printf("%lf %lf\n", t, t2);
+	ray->data.color = obj->data.triangle.color;
+	vec3_cross_product(&E1, &E2, &ray->data.normal);
+	//vec3_normalize(&normal);
+	return (t);
+}
 
 static void		get_plane_from_triangle(t_triangle *tr, t_plane *p);
 
-double	intersect_triangle(t_object *obj, t_ray *ray)
+double	intersect_triangle2(t_object *obj, t_ray *ray)
 {
 	t_plane		plane;
 	t_triangle	tr;
