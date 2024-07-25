@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 07:00:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/25 03:04:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/25 03:32:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ double	intersect_mesh(t_object *obj, t_ray *ray)
 {
 	size_t	i;
 	double	t = -1;
-
 	t_hit_data	data;
+
 	i = 0;
 	while (i < obj->data.mesh.obj_3d->faces.size)
 	{
@@ -44,7 +44,7 @@ double	intersect_mesh(t_object *obj, t_ray *ray)
 		triangle.color.rgb.b = 0;
 		t_object	o;
 		o.data.triangle = triangle;
-		if (get_closest_distance(t, intersect_triangle(&o, ray)))
+		if (get_closest_distance_ptr(intersect_triangle(&o, ray), t, &t))
 		{
 			data = ray->data;
 		}
@@ -52,6 +52,7 @@ double	intersect_mesh(t_object *obj, t_ray *ray)
 	}
 	if (t == -1)
 		return (-1);
+	ray->data = data;
 	get_hitpos(ray, t);
 	return (t);
 }

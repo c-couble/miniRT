@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/25 03:30:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/25 03:36:45 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,11 @@ double	intersect_triangle(t_object *obj, t_ray *ray)
 		return (-1);
 	//double t2 = intersect_triangle2(obj, ray);
 	//printf("%lf %lf\n", t, t2);
-	ray->data.color = obj->data.triangle.color;
+	//ray->data.color = obj->data.triangle.color;
+
+	ray->data.color.rgb.r = u * 255;
+	ray->data.color.rgb.g = v * 255;
+	ray->data.color.rgb.b = (1 - u - v) * 255;
 	vec3_cross_product(&E1, &E2, &ray->data.normal);
 	//vec3_normalize(&normal);
 	return (t);
