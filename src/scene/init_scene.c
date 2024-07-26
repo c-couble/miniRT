@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 02:32:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/26 04:46:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@
 #include <stdlib.h>
 
 static int	get_file(char *file);
-static int	read_file(t_scene *scene, int fd);
-static int	add_object(t_scene *scene, char *line, size_t i);
+static int	read_file(t_engine *engine, t_scene *scene, int fd);
+static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i);
 static int	add_created_object(t_scene *scene, t_object *obj);
 
-int	init_scene(t_scene *scene, char *file)
+int	init_scene(t_engine *engine, t_scene *scene, char *file)
 {
 	int			fd;
 
@@ -40,7 +40,7 @@ int	init_scene(t_scene *scene, char *file)
 	if (fd == -1)
 		return (-1);
 	init_vector(&scene->objects, sizeof(t_object));
-	if (read_file(scene, fd) == -1)
+	if (read_file(engine, scene, fd) == -1)
 	{
 		clear_vector(&scene->objects);
 		close(fd);
@@ -73,7 +73,7 @@ static int	get_file(char *file)
 	return (open(file, O_RDONLY));
 }
 
-static int	read_file(t_scene *scene, int fd)
+static int	read_file(t_engine *engine, t_scene *scene, int fd)
 {
 	char		*line;
 	size_t		i;
@@ -82,7 +82,8 @@ static int	read_file(t_scene *scene, int fd)
 	line = get_next_line(fd);
 	while (line)
 	{
-		if (add_object(scene, line, i) == -1)
+		printf("Handle line %s\n", line);
+		if (add_object(engine, scene, line, i) == -1)
 		{
 			free(line);
 			return (-1);
@@ -99,11 +100,11 @@ static int	read_file(t_scene *scene, int fd)
 	return (0);
 }
 
-static int	add_object(t_scene *scene, char *line, size_t i)
+static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i)
 {
 	t_object	obj;
 
-	if (init_object(&obj, line) == -1)
+	if (init_object(engine, &obj, line) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error\nParsing error on line %ld\n", i);
 		return (-1);

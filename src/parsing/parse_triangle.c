@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:02:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/20 03:22:11 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/26 04:16:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,9 @@
 #include "vec3.h"
 #include "float.h"
 
-int	parse_triangle(t_object_data *data)
+int	parse_triangle(t_engine *engine, t_object_data *data)
 {
+	(void) engine;
 	if (parse_vector3d(&data->triangle.p0, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_vector3d(&data->triangle.p1, -DBL_MAX, DBL_MAX) == -1)

@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/25 06:10:55 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/26 06:00:13 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "get_next_line_utils.h"
 #include "obj_3d.h"
 #include "ft_io.h"
 #include "ft_string.h"
@@ -18,6 +19,8 @@
 #include "float.h"
 #include "vec4.h"
 #include "vector.h"
+#include "ft_mem.h"
+#include <stdlib.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <unistd.h>
@@ -35,6 +38,7 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 	int		fd;
 	char	*line;
 
+	obj->file_name = file;
 	fd = open(file, O_RDONLY);
 	if (fd == -1)
 		return (-1);
@@ -43,7 +47,11 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 	init_vector(&obj->vertex_normals, sizeof(t_vec3));
 	init_vector(&obj->space_vertices, sizeof(t_vec3));
 	init_vector(&obj->faces, sizeof(t_polygon));
-	line = get_next_line(fd);
+	t_buffer *buf = malloc(sizeof(t_buffer));
+	if (buf == NULL)
+		return (-1);
+	ft_memset(buf, 0, sizeof(t_buffer));
+	line = get_next_line_ptr(fd, buf);
 	while (line)
 	{
 		line = ft_strtok(line, "\r");
@@ -52,8 +60,9 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 			close(fd);
 			return (-1);
 		}
-		line = get_next_line(fd);
+		line = get_next_line_ptr(fd, buf);
 	}
+	free(line);
 	if (errno)
 	{
 		close(fd);

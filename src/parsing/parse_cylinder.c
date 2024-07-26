@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:22:00 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/26 04:15:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,11 @@
 #include "float.h"
 #include <stdio.h>
 
-int	parse_cylinder(t_object_data *data)
+int	parse_cylinder(t_engine *engine, t_object_data *data)
 {
 	char	*arg;
 
+	(void) engine;
 	if (parse_vector3d(&data->cylinder.pos, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_normalized_vector3d(&data->cylinder.axis) == -1)

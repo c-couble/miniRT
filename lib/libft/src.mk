@@ -26,6 +26,7 @@ SRC = \
 	  io/ft_putnbr_fd.c \
 	  io/ft_putstr_fd.c \
 	  io/get_next_line.c \
+	  io/get_next_line_ptr.c \
 	  \
 	  math/ft_abs.c \
 	  math/ft_dabs.c \

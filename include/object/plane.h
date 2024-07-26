@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 18:06:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:25:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/26 04:13:52 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ typedef struct s_plane
 }	t_plane;
 
 union	u_object_data;
+struct	s_engine;
 
-int	parse_plane(union u_object_data *object);
+int	parse_plane(struct s_engine *engine, union u_object_data *object);
 
 #endif

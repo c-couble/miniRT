@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 04:01:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/22 06:04:24 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/26 04:31:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 typedef struct s_obj_3d
 {
-	char		*file_name;
+	const char	*file_name;
 	t_vector	vertices;
 	t_vector	texture_coordinates;
 	t_vector	vertex_normals;
@@ -47,6 +47,9 @@ typedef enum e_obj_line_type
 	POLYGON
 }	t_obj_line_type;
 
-int	parse_obj_file(t_obj_3d *obj, const char *file);
+struct	s_engine;
+
+t_obj_3d	*parse_obj_if_needed(struct s_engine *engine, const char *file);
+int			parse_obj_file(t_obj_3d *obj, const char *file);
 
 #endif

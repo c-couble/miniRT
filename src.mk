@@ -19,6 +19,7 @@ SRC = \
 	  object/intersect_triangle.c \
 	  \
 	  obj_3d/parse_obj_file.c \
+	  obj_3d/parse_obj_if_needed.c \
 	  \
 	  mat4/divide_line.c \
 	  mat4/mat4_identity.c \
