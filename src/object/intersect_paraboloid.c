@@ -6,15 +6,19 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/06/15 02:01:47 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/27 19:18:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "vec3.h"
 #include "ray.h"
 #include "math_util.h"
 #include "object.h"
 #include "util.h"
+#include "ft_math.h"
+
+static void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid);
 
 double	intersect_paraboloid(t_object *obj, t_ray *ray)
 {
@@ -23,6 +27,7 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 	double		y0;
 	double		z0;
 	double		a;
+	double		t;
 
 	x0 = ray->startpos.x - obj->data.paraboloid.pos.x;
 	y0 = ray->startpos.y - obj->data.paraboloid.pos.y;
@@ -35,5 +40,19 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 	if (q.delta < 0)
 		return (-1);
 	ray->data.color = obj->data.paraboloid.color;
-	return (get_closest_distance(q.r1, q.r2));
+	t = get_closest_distance(q.r1, q.r2);
+	get_hitpos(ray, t);
+	if (ft_dabs(ray->data.hitpos.z -obj->data.paraboloid.pos.z) 
+		> obj->data.paraboloid.height)
+		return (-1);
+	get_paraboloid_normal(ray, &obj->data.paraboloid);
+	return (t);
+}
+
+static void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid)
+{
+	ray->data.normal.x = -2 * (ray->data.hitpos.x - paraboloid->pos.x);
+	ray->data.normal.y = -2 * (ray->data.hitpos.y - paraboloid->pos.y);
+	ray->data.normal.z = 1;
+	vec3_normalize(&ray->data.normal);
 }
