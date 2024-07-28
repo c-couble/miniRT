@@ -11,8 +11,8 @@ L 0,10,0 1 255,255,255
 
 #sp 0,0,0 5 255,0,0
 
-mesh cube.obj 0,0,0 1,0,0 5
+mesh cube.obj 0,0,0 1,0,0 2
 
 
-mesh bear.obj 0,0,0 1,0,0 5
+mesh bear.obj 10,0,0 1,0,0 5
 

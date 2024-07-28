@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 06:00:13 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/28 00:46:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -186,6 +186,7 @@ static int	parse_polygon_point(t_polygon_point *point)
 	point->normal_id = ft_atoi(arg);
 	return (0);
 }
+
 static int	parse_obj_polygon(t_obj_3d *obj)
 {
 	t_polygon	poly;

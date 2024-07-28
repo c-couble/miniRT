@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:46:17 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/28 01:00:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,6 @@ static int	read_file(t_engine *engine, t_scene *scene, int fd)
 	line = get_next_line(fd);
 	while (line)
 	{
-		printf("Handle line %s\n", line);
 		if (add_object(engine, scene, line, i) == -1)
 		{
 			free(line);
