@@ -1,4 +1,5 @@
 SRC = \
+	  camera/color_pixels.c \
 	  camera/setup_camera.c \
 	  \
 	  engine/clear_engine.c \

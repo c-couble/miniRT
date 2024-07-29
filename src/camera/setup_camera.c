@@ -6,13 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/17 01:30:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/29 03:00:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "object/camera.h"
-#include "defines.h"
 #include <math.h>
 
 static void	setup_projection(t_camera *camera, double ratio);
@@ -27,6 +26,9 @@ void	setup_camera(t_engine *engine)
 	setup_projection(cam, ratio);
 	setup_view(cam);
 	mat4_multiply(&cam->inverse_projection, &cam->inverse_view, &cam->final);
+	cam->pixel_square_size = 2;
+	cam->frame_width = engine->mlx.width / cam->pixel_square_size;
+	cam->frame_height = engine->mlx.height / cam->pixel_square_size;
 }
 
 static void	setup_projection(t_camera *cam, double ratio)
