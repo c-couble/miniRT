@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lock_camera.c                                      :+:      :+:    :+:   */
+/*   roll_left.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 06:01:49 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 07:55:58 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:57:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
 #include "engine.h"
+#include "object/camera.h"
+#include "quaternion.h"
 
-void	lock_camera(t_engine *engine)
+void	roll_left(t_engine *engine)
 {
-	if (engine->scene.camera.locked)
-	{
-		engine->scene.camera.locked = 0;
-		engine->scene.camera.pixel_square_size = DEFAULT_RAY_SIZE;
-	}
-	else
-	{
-		engine->scene.camera.locked = 1;
-		engine->scene.camera.should_render = 1;
-		engine->scene.camera.pixel_square_size = 1;
-	}
+	t_camera	*cam;
+
+	cam = &engine->scene.camera;
+	if (cam->locked)
+		return ;
+	quaternion_rotate(&cam->up, &cam->front, -ROLL_ANGLE, &cam->up);
+	quaternion_rotate(&cam->right, &cam->front, -ROLL_ANGLE, &cam->right);
+	engine->scene.camera.should_render = 1;
 }

@@ -10,6 +10,8 @@ SRC = \
 	  camera/hooks/move_left.c \
 	  camera/hooks/move_right.c \
 	  camera/hooks/move_up.c \
+	  camera/hooks/roll_left.c \
+	  camera/hooks/roll_right.c \
 	  \
 	  engine/clear_engine.c \
 	  engine/init_engine.c \
@@ -68,6 +70,10 @@ SRC = \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
+	  \
+	  quaternion/quaternion_inv.c \
+	  quaternion/quaternion_mult.c \
+	  quaternion/quaternion_rotate.c \
 	  \
 	  ray/trace_ray.c \
 	  \

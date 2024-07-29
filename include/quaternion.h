@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lock_camera.c                                      :+:      :+:    :+:   */
+/*   quaternion.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 06:01:49 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 07:55:58 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:22:07 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:12:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
-#include "engine.h"
+#ifndef QUATERNION_H
+# define QUATERNION_H
 
-void	lock_camera(t_engine *engine)
+# include "vec3.h"
+
+typedef struct s_quaternion
 {
-	if (engine->scene.camera.locked)
-	{
-		engine->scene.camera.locked = 0;
-		engine->scene.camera.pixel_square_size = DEFAULT_RAY_SIZE;
-	}
-	else
-	{
-		engine->scene.camera.locked = 1;
-		engine->scene.camera.should_render = 1;
-		engine->scene.camera.pixel_square_size = 1;
-	}
-}
+	double	a;
+	t_vec3	vec;
+}	t_quaternion;
+
+void	quaternion_mult(t_quaternion *a, t_quaternion *b, t_quaternion *out);
+void	quaternion_inv(t_quaternion *q, t_quaternion *out);
+void	quaternion_rotate(t_vec3 *p, t_vec3 *axis, double angle, t_vec3 *out);
+
+#endif

@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lock_camera.c                                      :+:      :+:    :+:   */
+/*   quaternion_inv.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 06:01:49 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 07:55:58 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:48:20 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:34:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
-#include "engine.h"
+#include "quaternion.h"
+#include "vec3.h"
 
-void	lock_camera(t_engine *engine)
+void	quaternion_inv(t_quaternion *q, t_quaternion *out)
 {
-	if (engine->scene.camera.locked)
-	{
-		engine->scene.camera.locked = 0;
-		engine->scene.camera.pixel_square_size = DEFAULT_RAY_SIZE;
-	}
-	else
-	{
-		engine->scene.camera.locked = 1;
-		engine->scene.camera.should_render = 1;
-		engine->scene.camera.pixel_square_size = 1;
-	}
+	double	denom;
+
+	denom = (q->a * q->a + vec3_dot_product(&q->vec, &q->vec));
+	out->a = q->a / denom;
+	out->vec = q->vec;
+	vec3_scale(&out->vec, -1);
+	vec3_scale(&out->vec, 1 / denom);
 }

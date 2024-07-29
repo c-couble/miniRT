@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:12:57 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/29 07:29:16 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,23 +56,21 @@ static void	setup_projection(t_camera *cam, double ratio)
 
 static void	setup_view(t_camera *camera)
 {
-	t_vec3	up;
 	t_vec3	forward;
 
-	vec3_create(0, 0, 1, &up);
 	forward = camera->front;
 	vec3_scale(&forward, -1);
 	camera->view.matrix[0] = camera->right.x;
 	camera->view.matrix[1] = forward.x;
-	camera->view.matrix[2] = up.x;
+	camera->view.matrix[2] = camera->up.x;
 	camera->view.matrix[3] = camera->coordinates.x;
 	camera->view.matrix[4] = camera->right.y;
 	camera->view.matrix[5] = forward.y;
-	camera->view.matrix[6] = up.y;
+	camera->view.matrix[6] = camera->up.y;
 	camera->view.matrix[7] = camera->coordinates.y;
 	camera->view.matrix[8] = camera->right.z;
 	camera->view.matrix[9] = forward.z;
-	camera->view.matrix[10] = up.z;
+	camera->view.matrix[10] = camera->up.z;
 	camera->view.matrix[11] = camera->coordinates.z;
 	camera->view.matrix[12] = 0;
 	camera->view.matrix[13] = 0;

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:14:55 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/29 07:56:08 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ int	parse_camera(t_object_data *data)
 	vec3_scale(&forward, -1);
 	vec3_cross_product(&data->camera.up, &forward, &data->camera.right);
 	data->camera.locked = 0;
-	data->camera.pixel_square_size = DEFAULT_RAY_SQUARE_SIZE;
+	data->camera.pixel_square_size = DEFAULT_RAY_SIZE;
 	return (0);
 }

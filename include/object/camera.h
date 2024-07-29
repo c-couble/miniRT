@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:18:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/29 07:14:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ void	move_forward(struct s_engine *engine);
 void	move_left(struct s_engine *engine);
 void	move_right(struct s_engine *engine);
 void	move_up(struct s_engine *engine);
+void	roll_left(struct s_engine *engine);
+void	roll_right(struct s_engine *engine);
 void	lock_camera(struct s_engine *engine);
 
 #endif
