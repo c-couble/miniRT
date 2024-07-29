@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 04:56:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/05/22 03:20:29 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/29 05:29:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 #include "defines.h"
 #include "mlx.h"
 #include "mlx_wrapper.h"
+#include <stdio.h>
 #include <stdlib.h>
+
+static void	init_intern_hooks(t_mlx *mlx);
 
 int	init_mlx_struct(t_mlx *mlx)
 {
@@ -41,5 +44,17 @@ int	init_mlx_struct(t_mlx *mlx)
 	}
 	mlx->addr = (t_color *) mlx_get_data_addr(mlx->img, &mlx->bits_per_pixel,
 			&mlx->line_length, &mlx->endian);
+	init_intern_hooks(mlx);
 	return (0);
+}
+
+static void	init_intern_hooks(t_mlx *mlx)
+{
+	init_vector(&mlx->hooks, sizeof(t_hook));
+	mlx_hook(mlx->mlx_window, 2, 1L << 0, key_down_hook, mlx);
+	mlx_hook(mlx->mlx_window, 3, 1L << 1, key_up_hook, mlx);
+	mlx_hook(mlx->mlx_window, 4, 1L << 2, mouse_down_hook, mlx);
+	mlx_hook(mlx->mlx_window, 5, 1L << 3, mouse_up_hook, mlx);
+	mlx_hook(mlx->mlx_window, 17, 1L << 0, destroy_hook, mlx);
+	mlx_loop_hook(mlx->mlx, loop_hook, mlx);
 }

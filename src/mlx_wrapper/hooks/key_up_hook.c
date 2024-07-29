@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   color_pixels.c                                     :+:      :+:    :+:   */
+/*   key_up_hook.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 02:53:41 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:18:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 04:11:29 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 04:13:07 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
-#include "engine.h"
-#include <stdint.h>
+#include "mlx_wrapper.h"
 
-void	color_pixels(t_engine *engine, size_t i, size_t j, uint32_t c)
+int	key_up_hook(int key, t_mlx *mlx)
 {
-	size_t	i2;
-	size_t	j2;
-	size_t	square;
+	t_hook		*hook;
+	size_t		i;
 
-	i2 = 0;
-	square = engine->scene.camera.pixel_square_size;
-	while (i2 < square)
+	i = 0;
+	while (i < mlx->hooks.size)
 	{
-		j2 = 0;
-		while (j2 < square)
-		{
-			engine->mlx.addr[((i * square + i2) * engine->mlx.width)
-				+ j * square + j2].color = c;
-			++j2;
-		}
-		++i2;
+		hook = at_vector(&mlx->hooks, i);
+		if (hook->type == HOLD && key == (int) hook->key)
+			hook->is_down = 0;
+		++i;
 	}
+	return (0);
 }

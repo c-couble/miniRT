@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   color_pixels.c                                     :+:      :+:    :+:   */
+/*   create_mlx_hook.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 02:53:41 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:18:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 04:22:35 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 04:24:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
-#include "engine.h"
-#include <stdint.h>
+#include "mlx_wrapper.h"
 
-void	color_pixels(t_engine *engine, size_t i, size_t j, uint32_t c)
+t_hook	create_mlx_hook(void (*f)(), void *param, t_key key, t_hooktype type)
 {
-	size_t	i2;
-	size_t	j2;
-	size_t	square;
+	t_hook	hook;
 
-	i2 = 0;
-	square = engine->scene.camera.pixel_square_size;
-	while (i2 < square)
-	{
-		j2 = 0;
-		while (j2 < square)
-		{
-			engine->mlx.addr[((i * square + i2) * engine->mlx.width)
-				+ j * square + j2].color = c;
-			++j2;
-		}
-		++i2;
-	}
+	hook.func = f;
+	hook.param = param;
+	hook.key = key;
+	hook.type = type;
+	hook.is_down = 0;
+	return (hook);
 }

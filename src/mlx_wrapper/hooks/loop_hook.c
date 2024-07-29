@@ -1,36 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   color_pixels.c                                     :+:      :+:    :+:   */
+/*   loop_hook.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 02:53:41 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:18:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 04:12:21 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 05:01:18 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
-#include "engine.h"
-#include <stdint.h>
+#include "mlx_wrapper.h"
+#include "mlx.h"
+#include <stdio.h>
 
-void	color_pixels(t_engine *engine, size_t i, size_t j, uint32_t c)
+int	loop_hook(t_mlx *mlx)
 {
-	size_t	i2;
-	size_t	j2;
-	size_t	square;
+	t_hook		*hook;
+	size_t		i;
 
-	i2 = 0;
-	square = engine->scene.camera.pixel_square_size;
-	while (i2 < square)
+	i = 0;
+	mlx_mouse_get_pos(mlx->mlx, mlx->mlx_window, &mlx->x, &mlx->y);
+	while (i < mlx->hooks.size)
 	{
-		j2 = 0;
-		while (j2 < square)
-		{
-			engine->mlx.addr[((i * square + i2) * engine->mlx.width)
-				+ j * square + j2].color = c;
-			++j2;
-		}
-		++i2;
+		hook = at_vector(&mlx->hooks, i);
+		if (hook->type == LOOP || hook->is_down)
+			hook->func(hook->param);
+		++i;
 	}
+	mlx->old_x = mlx->x;
+	mlx->old_y = mlx->y;
+	return (0);
 }

@@ -6,13 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/24 01:39:03 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/29 06:14:18 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DEFINES_H
 # define DEFINES_H
 
+# define DEFAULT_RAY_SQUARE_SIZE 10
 # define SCREEN_WIDTH		1920 
 # define SCREEN_HEIGHT		1080 
 # define WINDOW_NAME		"miniRT ccouble lespenel"

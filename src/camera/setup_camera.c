@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 03:00:17 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/29 06:12:57 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	setup_camera(t_engine *engine)
 	setup_projection(cam, ratio);
 	setup_view(cam);
 	mat4_multiply(&cam->inverse_projection, &cam->inverse_view, &cam->final);
-	cam->pixel_square_size = 2;
 	cam->frame_width = engine->mlx.width / cam->pixel_square_size;
 	cam->frame_height = engine->mlx.height / cam->pixel_square_size;
 }
@@ -59,21 +58,19 @@ static void	setup_view(t_camera *camera)
 {
 	t_vec3	up;
 	t_vec3	forward;
-	t_vec3	right;
 
 	vec3_create(0, 0, 1, &up);
-	forward = camera->orientation;
+	forward = camera->front;
 	vec3_scale(&forward, -1);
-	vec3_cross_product(&up, &forward, &right);
-	camera->view.matrix[0] = right.x;
+	camera->view.matrix[0] = camera->right.x;
 	camera->view.matrix[1] = forward.x;
 	camera->view.matrix[2] = up.x;
 	camera->view.matrix[3] = camera->coordinates.x;
-	camera->view.matrix[4] = right.y;
+	camera->view.matrix[4] = camera->right.y;
 	camera->view.matrix[5] = forward.y;
 	camera->view.matrix[6] = up.y;
 	camera->view.matrix[7] = camera->coordinates.y;
-	camera->view.matrix[8] = right.z;
+	camera->view.matrix[8] = camera->right.z;
 	camera->view.matrix[9] = forward.z;
 	camera->view.matrix[10] = up.z;
 	camera->view.matrix[11] = camera->coordinates.z;
