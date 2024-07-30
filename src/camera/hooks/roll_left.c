@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   roll_left.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 04:56:04 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:57:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "engine.h"
-#include "mlx.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "object/camera.h"
+#include "quaternion.h"
 
-int	main(int argc, char *argv[])
+void	roll_left(t_engine *engine)
 {
-	t_engine	engine;
+	t_camera	*cam;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	mlx_loop(engine.mlx.mlx);
-	clear_engine(&engine);
-	return (0);
+	cam = &engine->scene.camera;
+	if (cam->locked)
+		return ;
+	quaternion_rotate(&cam->up, &cam->front, -ROLL_ANGLE, &cam->up);
+	quaternion_rotate(&cam->right, &cam->front, -ROLL_ANGLE, &cam->right);
+	engine->scene.camera.should_render = 1;
 }

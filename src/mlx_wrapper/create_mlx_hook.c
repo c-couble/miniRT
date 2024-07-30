@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   create_mlx_hook.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 04:56:04 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 04:22:35 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 04:24:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "mlx.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "mlx_wrapper.h"
 
-int	main(int argc, char *argv[])
+t_hook	create_mlx_hook(void (*f)(), void *param, t_key key, t_hooktype type)
 {
-	t_engine	engine;
+	t_hook	hook;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	mlx_loop(engine.mlx.mlx);
-	clear_engine(&engine);
-	return (0);
+	hook.func = f;
+	hook.param = param;
+	hook.key = key;
+	hook.type = type;
+	hook.is_down = 0;
+	return (hook);
 }

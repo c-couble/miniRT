@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/30 00:43:38 by lespenel         ###   ########.fr       */
+/*   Created: 2024/07/30 06:54:55 by lespenel          #+#    #+#             */
+/*   Updated: 2024/07/31 01:42:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # define SCREEN_WIDTH		1920 / 1.8
 # define SCREEN_HEIGHT		1080 / 1.8
 # define WINDOW_NAME		"miniRT ccouble lespenel"
+# define DEFAULT_RAY_SIZE	10
+# define ROLL_ANGLE			0.05
 # define MAX_RAY_LEN		10000
 # define INACCURATE_ZERO	10e-8
 # define SKY				7591935

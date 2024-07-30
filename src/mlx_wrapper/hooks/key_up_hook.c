@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   key_up_hook.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 04:56:04 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 04:11:29 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 04:13:07 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "mlx.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "mlx_wrapper.h"
 
-int	main(int argc, char *argv[])
+int	key_up_hook(int key, t_mlx *mlx)
 {
-	t_engine	engine;
+	t_hook		*hook;
+	size_t		i;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	mlx_loop(engine.mlx.mlx);
-	clear_engine(&engine);
+	i = 0;
+	while (i < mlx->hooks.size)
+	{
+		hook = at_vector(&mlx->hooks, i);
+		if (hook->type == HOLD && key == (int) hook->key)
+			hook->is_down = 0;
+		++i;
+	}
 	return (0);
 }

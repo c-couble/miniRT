@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 19:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/21 02:42:49 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/31 01:45:50 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include "ray.h"
 
 void	print_error(char *err);
+double	get_bigest_distance(double a, double b);
 double	get_closest_distance(double a, double b);
 int		get_closest_distance_ptr(double a, double b, double *out);
 double	solve_plane_equation(t_plane *plane, t_ray *ray);

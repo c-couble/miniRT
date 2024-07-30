@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/30 06:49:02 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/31 01:56:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,10 @@
 #include "math_util.h"
 #include "object.h"
 #include "util.h"
-#include "ft_math.h"
 #include <math.h>
-#include <stdio.h>
 
-void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid);
+ void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid, int i);
 static int	check_height(t_ray *ray, t_vec3 *axis, t_paraboloid *para);
-#define PI 3.14
 double	intersect_paraboloid(t_object *obj, t_ray *ray)
 {
 	t_vec3		origin;
@@ -45,7 +42,7 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 	vec3_subtract(&ray->startpos, &obj->data.paraboloid.pos, &origin);
 	quaternion_rotate(&origin, &v, theta, &origin2);
 	quaternion_rotate(&ray->ray, &v, theta, &dir2);
-	printf("theta = %lf\n", theta);
+	//printf("theta = %lf\n", theta);
 	a = obj->data.paraboloid.ray_coef;
 	q.a = a * (dir2.x * dir2.x + dir2.y * dir2.y);
 	q.b = a * 2 * (origin2.x * dir2.x + origin2.y * dir2.y) - dir2.z;
@@ -60,17 +57,26 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 	lol.startpos = origin2;
 	get_hitpos(&lol, t);
 	if (check_height(ray, &obj->data.paraboloid.axis, &obj->data.paraboloid))
-		return (-1);
-	get_paraboloid_normal(ray, &obj->data.paraboloid);
+	{
+		t = get_bigest_distance(q.r1, q.r2);
+		if (t == -1)
+			return (t);
+		get_hitpos(ray, t);
+		if (check_height(ray, &obj->data.paraboloid.axis, &obj->data.paraboloid))
+			return (-1);
+		get_paraboloid_normal(ray, &obj->data.paraboloid, -1);
+	}
+	else
+		get_paraboloid_normal(ray, &obj->data.paraboloid, -1);
 	ray->data.color = obj->data.paraboloid.color;
 	return (t);
 }
 
- void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid)
+ void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid, int i)
 {
 	ray->data.normal.x = 2 * (ray->data.hitpos.x - paraboloid->pos.x);
 	ray->data.normal.y = 2 * (ray->data.hitpos.y - paraboloid->pos.y);
-	ray->data.normal.z = 1;
+	ray->data.normal.z = i;
 	vec3_normalize(&ray->data.normal);
 }
 

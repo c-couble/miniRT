@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   move_forward.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 04:56:04 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 06:09:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
-#include "mlx.h"
-#include <stdio.h>
-#include <unistd.h>
+#include "object/camera.h"
+#include "vec3.h"
 
-int	main(int argc, char *argv[])
+void	move_forward(t_engine *engine)
 {
-	t_engine	engine;
+	t_camera	*cam;
 
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	mlx_loop(engine.mlx.mlx);
-	clear_engine(&engine);
-	return (0);
+	cam = &engine->scene.camera;
+	if (cam->locked)
+		return ;
+	vec3_add(&cam->coordinates, &cam->front, &cam->coordinates);
+	engine->scene.camera.should_render = 1;
 }

@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   lock_camera.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 04:56:04 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:01:49 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:55:58 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "engine.h"
-#include "mlx.h"
-#include <stdio.h>
-#include <unistd.h>
 
-int	main(int argc, char *argv[])
+void	lock_camera(t_engine *engine)
 {
-	t_engine	engine;
-
-	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
-		return (1);
-	if (argc == 1)
-		return (0);
-	if (init_engine(&engine, argv[1]) == -1)
-		return (1);
-	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	mlx_loop(engine.mlx.mlx);
-	clear_engine(&engine);
-	return (0);
+	if (engine->scene.camera.locked)
+	{
+		engine->scene.camera.locked = 0;
+		engine->scene.camera.pixel_square_size = DEFAULT_RAY_SIZE;
+	}
+	else
+	{
+		engine->scene.camera.locked = 1;
+		engine->scene.camera.should_render = 1;
+		engine->scene.camera.pixel_square_size = 1;
+	}
 }
