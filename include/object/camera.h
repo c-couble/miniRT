@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 07:14:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/30 04:02:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void	setup_camera(struct s_engine *engine);
 void	color_pixels(struct s_engine *engine, size_t i, size_t j, uint32_t c);
 
 int		init_camera_hooks(struct s_engine *engine);
+void	camera_mouse_hook(struct s_engine *engine);
 void	move_backwards(struct s_engine *engine);
 void	move_down(struct s_engine *engine);
 void	move_forward(struct s_engine *engine);
