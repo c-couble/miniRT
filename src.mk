@@ -50,6 +50,10 @@ SRC = \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
 	  \
+	  quaternion/quaternion_mult.c \
+	  quaternion/quaternion_rotate.c \
+	  quaternion/quaternion_inv.c \
+	  \
 	  ray/trace_ray.c \
 	  \
 	  util/add_color.c \
