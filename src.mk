@@ -3,6 +3,7 @@ SRC = \
 	  camera/setup_camera.c \
 	  \
 	  camera/init_camera_hooks.c \
+	  camera/hooks/camera_mouse_hook.c \
 	  camera/hooks/lock_camera.c \
 	  camera/hooks/move_backwards.c \
 	  camera/hooks/move_down.c \
