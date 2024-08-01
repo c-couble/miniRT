@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 04:56:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/29 05:29:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/31 01:17:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,5 @@ static void	init_intern_hooks(t_mlx *mlx)
 	mlx_hook(mlx->mlx_window, 5, 1L << 3, mouse_up_hook, mlx);
 	mlx_hook(mlx->mlx_window, 17, 1L << 0, destroy_hook, mlx);
 	mlx_loop_hook(mlx->mlx, loop_hook, mlx);
+	mlx_mouse_get_pos(mlx->mlx, mlx->mlx_window, &mlx->old_x, &mlx->old_y);
 }
