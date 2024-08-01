@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/01 04:56:46 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/01 06:48:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@
 #include <math.h>
 
 void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid);
-static int	check_height(t_ray *ray, t_paraboloid *para);
+int		check_height(t_ray *ray, t_paraboloid *para);
 
 double	solve_paraboloid_equation(t_vec3 *origin, t_vec3 *dir, t_ray *ray, t_object *obj)
 {
 	t_quadratic	q;
-	double		a;
 	double		t;
+	double		a;
 
 	a = obj->data.paraboloid.ray_coef;
 	q.a = a * (dir->x * dir->x + dir->y * dir->y);
@@ -35,6 +35,8 @@ double	solve_paraboloid_equation(t_vec3 *origin, t_vec3 *dir, t_ray *ray, t_obje
 	if (q.delta < 0)
 		return (-1);
 	t = get_closest_distance(q.r1, q.r2);
+	if (t == -1)
+		return (-1);
 	get_hitpos(ray, t);
 	if (check_height(ray, &obj->data.paraboloid))
 	{
@@ -44,7 +46,15 @@ double	solve_paraboloid_equation(t_vec3 *origin, t_vec3 *dir, t_ray *ray, t_obje
 		get_hitpos(ray, t);
 		if (check_height(ray, &obj->data.paraboloid))
 			return (-1);
+		get_paraboloid_normal(ray, &obj->data.paraboloid);
+		vec3_scale(&ray->data.normal, -1);
 	}
+	else
+	{
+		get_paraboloid_normal(ray, &obj->data.paraboloid);
+		vec3_scale(&ray->data.normal, -1);
+	}
+	ray->data.color = obj->data.paraboloid.color;
 	return (t);
 }
 
@@ -56,7 +66,7 @@ double	get_theta_axis(t_object *obj, t_vec3 *axis)
 
 	z.x = 0;
 	z.y = 0;
-	z.z = -1;
+	z.z = 1;
 	u = &obj->data.paraboloid.axis;
 	vec3_cross_product(u, &z, axis);
 	vec3_normalize(&z);
@@ -70,42 +80,35 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 {
 	t_vec3			origin;
 	double			t;
-	t_vec3			v;
-	const double	theta = get_theta_axis(obj, &v); //same evrytimes
+//	t_vec3			v;
+//	const double	theta = get_theta_axis(obj, &v); //same evrytimes
 	t_vec3			origin2;
 	t_vec3			dir2;
 
 	vec3_subtract(&ray->startpos, &obj->data.paraboloid.pos, &origin);
-	quaternion_rotate(&origin, &v, theta, &origin2);
-	quaternion_rotate(&ray->ray, &v, theta, &dir2);
-	t_ray	transformed_ray;
-	transformed_ray.ray = dir2;
-	transformed_ray.startpos = origin2;
+//	quaternion_rotate(&origin, &v, theta, &origin2);
+//	quaternion_rotate(&ray->ray, &v, theta, &dir2);
+	origin2 = origin;
+	dir2 = ray->ray;
 	t = solve_paraboloid_equation(&origin2, &dir2, ray, obj);
-	if (t == -1)
-		return (-1);
-	get_hitpos(ray, t);
-	get_hitpos(&transformed_ray, t);
-	get_paraboloid_normal(ray, &obj->data.paraboloid);
-	//ray->data.normal = transformed_ray.data.normal;
-	ray->data.color = obj->data.paraboloid.color;
-	vec3_normalize(&ray->data.normal);
 	return (t);
 }
 
- void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid)
+void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid)
 {
-	ray->data.normal.x = 2 * -(paraboloid->pos.x - ray->data.hitpos.x);
-	ray->data.normal.y = 2 * -(paraboloid->pos.y - ray->data.hitpos.y);
+	ray->data.normal.x = 2 * paraboloid->ray_coef * (paraboloid->pos.x - ray->data.hitpos.x);
+	ray->data.normal.y = 2 * paraboloid->ray_coef * (paraboloid->pos.y - ray->data.hitpos.y);
 	ray->data.normal.z = -1;
+	vec3_normalize(&ray->data.normal);
 }
 
-static int	check_height(t_ray *ray, t_paraboloid *para)
+int	check_height(t_ray *ray, t_paraboloid *para)
 {
 	t_vec3		origin_hit;
+	t_vec3		z = {0,0,1};
 
 	vec3_subtract(&ray->data.hitpos, &para->pos, &origin_hit);
-	if (vec3_dot_product(&para->axis, &origin_hit) > para->height)
+	if (vec3_dot_product(&z, &origin_hit) > para->height)
 		return (-1);
 	return (0);
 }
