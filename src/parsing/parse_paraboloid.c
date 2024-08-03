@@ -6,10 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/03 03:14:33 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/03 08:48:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/parse_util.h"
@@ -42,6 +43,13 @@ int	parse_paraboloid(t_object_data *data)
 	return (0);
 }
 
+int lol(double a)
+{
+	if (a > -INACCURATE_ZERO && a < INACCURATE_ZERO)
+		return (1);
+	return (0);
+}
+
 static double	get_theta_axis(t_vec3 *axis, t_vec3 *rot_axis)
 {
 	t_vec3	z;
@@ -55,6 +63,11 @@ static double	get_theta_axis(t_vec3 *axis, t_vec3 *rot_axis)
 	theta = vec3_dot_product(axis, &z) 
 		/ (vec3_get_norm(axis) * vec3_get_norm(&z));
 	theta = acos(theta);
-	//printf("theta = %lf\n", theta);
+	if (rot_axis->x == 0 && rot_axis->y == 0 && rot_axis->z == 0)
+	{
+		rot_axis->x = 1;
+		rot_axis->y = 0;
+		rot_axis->z = 0;
+	}
 	return (theta);
 }
