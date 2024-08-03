@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/01 06:48:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/03 02:51:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,14 +46,8 @@ double	solve_paraboloid_equation(t_vec3 *origin, t_vec3 *dir, t_ray *ray, t_obje
 		get_hitpos(ray, t);
 		if (check_height(ray, &obj->data.paraboloid))
 			return (-1);
-		get_paraboloid_normal(ray, &obj->data.paraboloid);
-		vec3_scale(&ray->data.normal, -1);
 	}
-	else
-	{
-		get_paraboloid_normal(ray, &obj->data.paraboloid);
-		vec3_scale(&ray->data.normal, -1);
-	}
+	get_paraboloid_normal(ray, &obj->data.paraboloid);
 	ray->data.color = obj->data.paraboloid.color;
 	return (t);
 }
@@ -96,8 +90,8 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 
 void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid)
 {
-	ray->data.normal.x = 2 * paraboloid->ray_coef * (paraboloid->pos.x - ray->data.hitpos.x);
-	ray->data.normal.y = 2 * paraboloid->ray_coef * (paraboloid->pos.y - ray->data.hitpos.y);
+	ray->data.normal.x = -2 * paraboloid->ray_coef * (paraboloid->pos.x - ray->data.hitpos.x);
+	ray->data.normal.y = -2 * paraboloid->ray_coef * (paraboloid->pos.y - ray->data.hitpos.y);
 	ray->data.normal.z = -1;
 	vec3_normalize(&ray->data.normal);
 }
