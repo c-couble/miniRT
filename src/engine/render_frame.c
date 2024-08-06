@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:20:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/06 22:01:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include "defines.h"
 #include "vec4.h"
 
+static void	change_ray_size(t_engine *engine, size_t fps);
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y);
 
 void	render_frame(t_engine *engine)
@@ -24,7 +25,6 @@ void	render_frame(t_engine *engine)
 	size_t	j;
 	t_ray	camera_ray;
 	size_t	start;
-	size_t	end;
 
 	start = clock();
 	i = 0;
@@ -42,8 +42,8 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	end = clock();
-	printf("END FRAME time: %ldms\n\n", (end - start) / 1000);
+	printf("END FRAME\n\n");
+	change_ray_size(engine, 1000000 / (clock() - start));
 }
 
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
@@ -64,4 +64,12 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	ray->ray.y = final.y;
 	ray->ray.z = final.z;
 	vec3_normalize(&ray->ray);
+}
+
+static void	change_ray_size(t_engine *engine, size_t fps)
+{
+	if (fps < MINIMUM_FPS)
+		++engine->scene.camera.pixel_square_size;
+	if (fps > MAXIMUM_FPS)
+		--engine->scene.camera.pixel_square_size;
 }
