@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/07 00:08:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/07 01:39:50 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@
 #include "util.h"
 #include "ft_math.h"
 
-static int	check_height(t_ray *ray, t_paraboloid *para);
+int	check_height(t_ray *ray, t_paraboloid *para);
 static void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid);
 
 static void	get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid)
 {
-	ray->data.normal.x = -2 * paraboloid->ray_coef
-		* (paraboloid->pos.x - ray->data.hitpos.x);
-	ray->data.normal.y = -2 * paraboloid->ray_coef
-		* (paraboloid->pos.y - ray->data.hitpos.y);
+	ray->data.normal.x = 2 * paraboloid->ray_coef
+		* (ray->data.hitpos.x);
+	ray->data.normal.y = 2 * paraboloid->ray_coef
+		* (ray->data.hitpos.y);
 	ray->data.normal.z = -1;
 	vec3_normalize(&ray->data.normal);
 }
@@ -55,8 +55,10 @@ double	solve_paraboloid(t_vec3 *origin, t_vec3 *dir, t_ray *ray, t_object *obj)
 		if (check_height(ray, &obj->data.paraboloid))
 			return (-1);
 	}
+	get_hitpos(ray, t);
 	get_paraboloid_normal(ray, &obj->data.paraboloid);
-	ray->data.color = obj->data.paraboloid.color;
+	if (vec3_dot_product(&ray->data.normal, &ray->ray) > 0)
+		vec3_scale(&ray->data.normal, -1);
 	return (t);
 }
 
@@ -72,18 +74,22 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 		(t_vec3 *)&para.rot_axis, para.theta, &offset_ray.startpos);
 	quaternion_rotate(&ray->ray, (t_vec3 *)&para.rot_axis,
 		para.theta, &offset_ray.ray);
-	t = solve_paraboloid(&offset_ray.startpos, &offset_ray.ray, ray, obj);
-	quaternion_rotate(&ray->data.normal, (t_vec3 *)
+	t = solve_paraboloid(&offset_ray.startpos, &offset_ray.ray, &offset_ray, obj);
+	quaternion_rotate(&offset_ray.data.normal, (t_vec3 *)
 		&para.rot_axis, -para.theta, &ray->data.normal);
+	get_hitpos(ray, t);
+	ray->data.color = obj->data.paraboloid.color;
 	return (t);
 }
 
-static int	check_height(t_ray *ray, t_paraboloid *para)
+int	check_height(t_ray *ray, t_paraboloid *para)
 {
 	t_vec3		origin_hit;
+	t_vec3		axis = {0,0,1};
+	t_vec3		pos = {0,0,0};
 
-	vec3_subtract(&ray->data.hitpos, &para->pos, &origin_hit);
-	if (ft_dabs(vec3_dot_product(&para->axis, &origin_hit)) > para->height)
+	vec3_subtract(&ray->data.hitpos, &pos, &origin_hit);
+	if (ft_dabs(vec3_dot_product(&axis, &origin_hit)) > para->height)
 		return (-1);
 	return (0);
 }
