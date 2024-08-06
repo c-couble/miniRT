@@ -6,19 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/03 08:48:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/07 00:05:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/parse_util.h"
-#include "color.h"
-#include "vec3.h"
 #include "float.h"
 #include <math.h>
-#include <stdio.h>
 
 static double	get_theta_axis(t_vec3 *axis, t_vec3 *rot_axis);
 
@@ -38,15 +34,8 @@ int	parse_paraboloid(t_object_data *data)
 		return (-1);
 	if (parse_color(&data->paraboloid.color) == -1)
 		return (-1);
-	data->paraboloid.theta = 
-		get_theta_axis(&data->paraboloid.axis, &data->paraboloid.rot_axis);
-	return (0);
-}
-
-int lol(double a)
-{
-	if (a > -INACCURATE_ZERO && a < INACCURATE_ZERO)
-		return (1);
+	data->paraboloid.theta = get_theta_axis(&data->paraboloid.axis,
+			&data->paraboloid.rot_axis);
 	return (0);
 }
 
@@ -60,7 +49,7 @@ static double	get_theta_axis(t_vec3 *axis, t_vec3 *rot_axis)
 	z.z = 1;
 	vec3_cross_product(axis, &z, rot_axis);
 	vec3_normalize(&z);
-	theta = vec3_dot_product(axis, &z) 
+	theta = vec3_dot_product(axis, &z)
 		/ (vec3_get_norm(axis) * vec3_get_norm(&z));
 	theta = acos(theta);
 	if (rot_axis->x == 0 && rot_axis->y == 0 && rot_axis->z == 0)

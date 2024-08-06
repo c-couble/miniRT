@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/31 05:04:23 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/07 00:09:16 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ void	camera_mouse_hook(t_engine *engine)
 		return ;
 	quaternion_rotate(&cam->front, &cam->right, -y_diff, &cam->front);
 	quaternion_rotate(&cam->up, &cam->right, -y_diff, &cam->up);
-
 	vec3_create(0, 0, 1, &up);
 	quaternion_rotate(&cam->front, &up, -x_diff, &cam->front);
 	quaternion_rotate(&cam->right, &up, -x_diff, &cam->right);
