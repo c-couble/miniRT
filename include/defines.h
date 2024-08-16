@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 06:54:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/07 03:34:51 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/16 21:49:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@
 # define SCREEN_WIDTH		1920
 # define SCREEN_HEIGHT		1080
 # define WINDOW_NAME		"miniRT ccouble lespenel"
-# define DEFAULT_RAY_SIZE	10
+# define DEFAULT_RAY_SIZE	25
+# define MINIMUM_FPS		80
+# define MAXIMUM_FPS		100
 # define ROLL_ANGLE			0.05
 # define MAX_RAY_LEN		10000
 # define INACCURATE_ZERO	10e-8
@@ -24,7 +26,7 @@
 # define BACKGROUND_COLOR	0
 
 # define AIR_RATIO			1.0
-# define DEPTH				10
+# define DEPTH				15
 
 # define DIFFUSE_RATIO		0.65
 # define SPECULAR_RATIO		1
