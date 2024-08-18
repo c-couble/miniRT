@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/18 16:04:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 16:18:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,10 @@ double	get_closest_photon(t_engine *engine, t_ray *ray)
 		tmp = vec3_get_norm(&d);
 		ft_dabs(tmp);
 		if (tmp < norm)
+		{
+			ray->data.color.color = curr->color.color;
 			norm = tmp;
+		}
 		++i;
 	}
 	return (norm);
@@ -81,8 +84,8 @@ void	render_frame(t_engine *engine)
 			t_color	final_color;
 			setup_camera_ray(engine, &camera_ray, j, i);
 			final_color.color = get_pixel_color(engine, &camera_ray, DEPTH);
-			if (get_closest_photon(engine, &camera_ray)	 < 10)
-				final_color.color = SKY;
+			if (get_closest_photon(engine, &camera_ray)	 < 20)
+				final_color.color = camera_ray.data.color.color;
 			color_pixels(engine, i, j, final_color.color);
 			++j;
 		}

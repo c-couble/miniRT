@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/18 15:30:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 16:19:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "shading.h"
 #include <stdio.h>
 
-int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth)
+int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph)
 {
 	t_ray	refract_ray;
 
@@ -31,9 +31,11 @@ int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth)
 			get_refraction_ray(ph_ray, &refract_ray.ray,
 			ph_ray->data.materials.refraction_ratio);
 			refract_ray.startpos = ph_ray->data.hitpos;
-			return (trace_photon(engine, &refract_ray, depth -1));
+			return (trace_photon(engine, &refract_ray, depth -1, ph));
+			
 		}
-		return (1);
+		ph->pos = ph_ray->data.hitpos;
+		return (DEPTH - depth + 1);
 	}
 	return (0);
 }

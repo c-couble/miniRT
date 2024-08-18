@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/18 16:04:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 16:21:04 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,9 @@ int	get_photon(t_engine *eng, t_light *light)
 			p_ray.startpos = light->pos;
 			vec3_subtract(&curr->data.sphere.pos, &p_ray.startpos, &p_ray.ray);
 			vec3_normalize(&p_ray.ray);
-			if (trace_photon(eng, &p_ray, DEPTH))
+			if (trace_photon(eng, &p_ray, DEPTH, &photon))
 			{
-				photon.pos = p_ray.data.hitpos;
+				photon.color.color = light->color.color;
 				dprintf(2, "Added photon, obj type == %d\n", curr->type);
 				(void)light;
 				if (add_vector(&eng->photon_map, &photon, 1) == -1)
