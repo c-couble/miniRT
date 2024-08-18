@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 06:54:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/16 21:49:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 13:52:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 # define BACKGROUND_COLOR	0
 
 # define AIR_RATIO			1.0
-# define DEPTH				15
+# define DEPTH				8
 
 # define DIFFUSE_RATIO		0.65
 # define SPECULAR_RATIO		1
