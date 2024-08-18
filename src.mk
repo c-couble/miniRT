@@ -69,6 +69,8 @@ SRC = \
 	  parsing/parse_triangle.c \
 	  parsing/parse_vector3d.c \
 	  \
+	  photon/init_photon_map.c \
+	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
 	  \
@@ -87,6 +89,7 @@ SRC = \
 	  util/get_normal_color.c \
 	  util/multiply_color.c \
 	  util/print_error.c \
+	  util/print_vec3.c \
 	  util/scale_color.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \

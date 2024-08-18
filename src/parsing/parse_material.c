@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 01:50:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/17 03:57:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 14:09:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ static int	fill_data(t_material_data *material, char *str)
 		return (-1);
 	if (data == NULL)
 		material->checker = 0;
-	printf("%lf\n", material->checker);
+//	printf("%lf\n", material->checker);
 	if (material->refraction_ratio > 0 && material->refraction_ratio < 1)
 		return (-1);
 	return (0);
