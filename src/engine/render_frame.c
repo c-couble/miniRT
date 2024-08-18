@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/18 15:08:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 16:04:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ double	get_closest_photon(t_engine *engine, t_ray *ray)
 	tmp = MAX_RAY_LEN;
 	norm = MAX_RAY_LEN;
 	i = 0;
-	while (i < engine->photon_map->size)
+	while (i < engine->photon_map.size)
 	{
-		curr = at_vector(engine->photon_map, i);
+		curr = at_vector(&engine->photon_map, i);
 		vec3_subtract(&curr->pos, &ray->data.hitpos, &d);
 		tmp = vec3_get_norm(&d);
 		ft_dabs(tmp);
@@ -72,6 +72,7 @@ void	render_frame(t_engine *engine)
 	i = 0;
 	printf("START FRAME\n\n");
 	setup_camera(engine);
+	print_photon_map(engine);
 	while (i < engine->scene.camera.frame_height)
 	{
 		j = 0;

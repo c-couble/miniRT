@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/18 14:01:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 15:48:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ typedef struct s_engine
 {
 	t_scene		scene;
 	t_mlx		mlx;
-	t_vector	*photon_map;
+	t_vector	photon_map;
 }	t_engine;
 
 int		init_engine(t_engine *engine, char *scene);

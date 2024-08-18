@@ -70,6 +70,7 @@ SRC = \
 	  parsing/parse_vector3d.c \
 	  \
 	  photon/init_photon_map.c \
+	  photon/trace_photon.c \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
