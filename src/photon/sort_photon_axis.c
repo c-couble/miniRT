@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 14:50:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/19 15:26:16 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/19 15:33:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stddef.h>
 #include <unistd.h>
 
-static size_t	array_partition(t_vector *phs, ssize_t start, ssize_t end, int axis);
+static	size_t	array_partition(t_vector *phs, ssize_t start, ssize_t end, int a);
 static	int		compare_photon(t_photon *p1, t_photon *p2, int axis);
 static	void	swap_photons(t_photon *p1, t_photon *p2);
 
@@ -31,22 +31,7 @@ void	sort_photons_axis(t_vector *point, ssize_t start, ssize_t end, int axis)
 	}
 }
 
-static	int compare_photon(t_photon *p1, t_photon *p2, int axis)
-{
-	const double	x = p1->pos.x;
-	const double	y = p1->pos.y;
-	const double	z = p1->pos.z;
-
-	if (axis == 1)
-		return (x - p2->pos.x);
-	if (axis == 2)
-		return (y - p2->pos.y);
-	if (axis == 3)
-		return (z - p2->pos.z);
-	return (0);
-}
-
-static size_t	array_partition(t_vector *phs, ssize_t start, ssize_t end, int axis)
+static size_t	array_partition(t_vector *phs, ssize_t start, ssize_t end, int a)
 {
 	t_photon	*pivot;
 	ssize_t		i;
@@ -60,7 +45,7 @@ static size_t	array_partition(t_vector *phs, ssize_t start, ssize_t end, int axi
 	while (i < end)
 	{
 		photon = at_vector(phs, i);
-		if (compare_photon(photon, pivot, axis) <= 0)
+		if (compare_photon(photon, pivot, a) <= 0)
 		{
 			swap_photons(at_vector(phs, j), photon);
 			++j;
@@ -69,6 +54,17 @@ static size_t	array_partition(t_vector *phs, ssize_t start, ssize_t end, int axi
 	}
 	swap_photons(at_vector(phs, j), at_vector(phs, end));
 	return (j);
+}
+
+static	int compare_photon(t_photon *p1, t_photon *p2, int axis)
+{
+	if (axis == 1)
+		return (p1->pos.x - p2->pos.x);
+	if (axis == 2)
+		return (p1->pos.y - p2->pos.y);
+	if (axis == 3)
+		return (p1->pos.z - p2->pos.z);
+	return (0);
 }
 
 static	void	swap_photons(t_photon *p1, t_photon *p2)

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 04:56:04 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/19 14:03:00 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 #include "mlx.h"
 #include <stdio.h>
 #include <unistd.h>
-
+#include "stdlib.h"
+#include <time.h>
 int	main(int argc, char *argv[])
 {
 	t_engine	engine;
 
+	srand(time(NULL));
 	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
 		return (1);
 	if (argc == 1)
