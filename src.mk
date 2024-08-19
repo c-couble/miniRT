@@ -71,6 +71,8 @@ SRC = \
 	  \
 	  photon/init_photon_map.c \
 	  photon/trace_photon.c \
+	  photon/print_photon_map.c \
+	  photon/get_closest_photon.c \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \

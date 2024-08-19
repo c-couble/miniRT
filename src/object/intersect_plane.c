@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 02:45:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/17 00:36:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 21:16:23 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ double	intersect_plane(t_object *obj, t_ray *ray)
 			ray->data.color.rgb.b = 255;
 		}
 		else {
-			ray->data.color.rgb.r = 000;
-			ray->data.color.rgb.g = 000;
-			ray->data.color.rgb.b = 000;
+			ray->data.color.rgb.r = 010;
+			ray->data.color.rgb.g = 010;
+			ray->data.color.rgb.b = 010;
 		}
 	}
 	else

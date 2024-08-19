@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 13:56:52 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/18 16:15:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/18 21:47:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@ typedef struct s_photon
 typedef struct s_engine t_engine;
 typedef struct s_ray t_ray;
 
-int	init_photon_map(t_engine *eng);
+int		init_photon_map(t_engine *eng);
 void	print_photon_map(t_engine *engine);
-int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph);
+int		trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph);
+void	print_photon_map(t_engine *engine);
+double	get_closest_photon(t_engine *engine, t_ray *ray, t_ray *p_ray);
 
 #endif
