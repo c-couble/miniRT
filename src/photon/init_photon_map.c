@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/18 21:45:47 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/19 15:27:26 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,11 @@ int	init_photon_map(t_engine *eng)
 		}
 		++i;
 	}
+	printf("non sorted\n");
+	print_photon_map(eng);
+	printf("sorted\n");
+	sort_photons_axis(&eng->photon_map, 0, eng->photon_map.size - 1, 1);
+	print_photon_map(eng);
 	return (0);
 }
 
@@ -58,15 +63,21 @@ static int	get_photon(t_engine *eng, t_light *light)
 		curr = at_vector(&eng->scene.objects, i);
 		if (curr->type == SPHERE && curr->material.refraction_ratio)
 		{
+			int i = 0;
+			while (i < PHONTON_PER_OBJ)
+			{
 			p_ray.startpos = light->pos;
 			vec3_subtract(&curr->data.sphere.pos, &p_ray.startpos, &p_ray.ray);
 			vec3_normalize(&p_ray.ray);
+			vec3_random(&p_ray.ray, 1.0, 1.20);
 			if (trace_photon(eng, &p_ray, DEPTH, &photon))
 			{
 				photon.color.color = light->color.color;
 				dprintf(2, "Added photon, obj type == %d\n", curr->type);
 				if (add_vector(&eng->photon_map, &photon, 1) == -1)
 					return (-1);
+			}
+				++i;
 			}
 		}
 		++i;
