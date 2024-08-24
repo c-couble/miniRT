@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:20:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/29 04:24:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/24 05:36:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef enum e_hooktype
 	DESTROY,
 	HOLD,
 	MOUSE,
+	MOUSE_MOTION,
 	PRESS,
 	LOOP
 }	t_hooktype;
@@ -52,6 +53,7 @@ typedef struct s_mlx
 	int			y;
 	int			old_x;
 	int			old_y;
+	int			focused;
 }	t_mlx;
 
 int		init_mlx_struct(t_mlx *mlx);
@@ -63,6 +65,9 @@ int		key_up_hook(int key, t_mlx *mlx);
 int		loop_hook(t_mlx *mlx);
 int		mouse_down_hook(int key, int x, int y, t_mlx *mlx);
 int		mouse_up_hook(int key, int x, int y, t_mlx *mlx);
+int		mouse_motion_hook(int x, int y, t_mlx *mlx);
+int		focus_in_hook(t_mlx *mlx);
+int		focus_out_hook(t_mlx *mlx);
 int		destroy_hook(t_mlx *mlx);
 
 #endif

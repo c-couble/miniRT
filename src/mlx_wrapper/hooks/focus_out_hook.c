@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   loop_hook.c                                        :+:      :+:    :+:   */
+/*   focus_out_hook.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 04:12:21 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/24 04:05:31 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/24 05:06:56 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/24 05:34:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mlx_wrapper.h"
 #include "mlx.h"
-#include <stdio.h>
+#include "mlx_wrapper.h"
 
-int	loop_hook(t_mlx *mlx)
+int	focus_out_hook(t_mlx *mlx)
 {
-	t_hook		*hook;
-	size_t		i;
-
-	i = 0;
-	while (i < mlx->hooks.size)
-	{
-		hook = at_vector(&mlx->hooks, i);
-		if (hook->type == LOOP || hook->is_down)
-			hook->func(hook->param);
-		++i;
-	}
+	mlx->focused = 0;
+	mlx_mouse_show(mlx->mlx, mlx->mlx_window);
 	return (0);
 }

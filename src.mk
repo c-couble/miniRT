@@ -30,11 +30,14 @@ SRC = \
 	  engine/shading/phong_model.c \
 	  \
 	  mlx_wrapper/hooks/destroy_hook.c \
+	  mlx_wrapper/hooks/focus_in_hook.c \
+	  mlx_wrapper/hooks/focus_out_hook.c \
 	  mlx_wrapper/hooks/key_down_hook.c \
 	  mlx_wrapper/hooks/key_up_hook.c \
 	  mlx_wrapper/hooks/loop_hook.c \
 	  mlx_wrapper/hooks/mouse_down_hook.c \
 	  mlx_wrapper/hooks/mouse_up_hook.c \
+	  mlx_wrapper/hooks/mouse_motion_hook.c \
 	  \
 	  mlx_wrapper/clear_mlx_struct.c \
 	  mlx_wrapper/create_mlx_hook.c \

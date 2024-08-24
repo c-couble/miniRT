@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/06 22:01:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/24 05:35:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <X11/X.h>
 #include <stdio.h>
 #include <time.h>
 #include "shading.h"
@@ -28,7 +29,7 @@ void	render_frame(t_engine *engine)
 
 	start = clock();
 	i = 0;
-	printf("START FRAME\n\n");
+	//printf("START FRAME\n\n");
 	setup_camera(engine);
 	while (i < engine->scene.camera.frame_height)
 	{
@@ -42,7 +43,7 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	printf("END FRAME\n\n");
+	//printf("END FRAME\n\n");
 	change_ray_size(engine, 1000000 / (clock() - start));
 }
 
