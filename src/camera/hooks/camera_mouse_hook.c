@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/24 05:35:08 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/25 02:06:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "engine.h"
 #include "mlx.h"
 #include "object/camera.h"
@@ -24,17 +25,17 @@ void	camera_mouse_hook(t_engine *engine)
 	double		y_diff;
 
 	cam = &engine->scene.camera;
-	x_diff = (engine->mlx.x - engine->mlx.old_x) / 100.;
-	y_diff = (engine->mlx.y - engine->mlx.old_y) / 100.;
+	x_diff = SENSITIVITY * (engine->mlx.x - engine->mlx.old_x) / 2500.;
+	y_diff = SENSITIVITY * (engine->mlx.y - engine->mlx.old_y) / 2500.;
 	if (engine->mlx.focused == 0 || cam->locked || (x_diff == 0 && y_diff == 0))
 		return ;
-	mlx_mouse_hide(engine->mlx.mlx, engine->mlx.mlx_window);
 	quaternion_rotate(&cam->front, &cam->right, -y_diff, &cam->front);
 	vec3_create(0, 0, 1, &up);
 	quaternion_rotate(&cam->front, &up, -x_diff, &cam->front);
 	quaternion_rotate(&cam->right, &up, -x_diff, &cam->right);
 	vec3_cross_product(&cam->right, &cam->front, &cam->up);
-	mlx_mouse_move(engine->mlx.mlx, engine->mlx.mlx_window, engine->mlx.width / 2, engine->mlx.height / 2);
+	mlx_mouse_move(engine->mlx.mlx, engine->mlx.mlx_window,
+		engine->mlx.width / 2, engine->mlx.height / 2);
 	engine->mlx.x = engine->mlx.width / 2;
 	engine->mlx.y = engine->mlx.height / 2;
 	engine->scene.camera.should_render = 1;

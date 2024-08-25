@@ -15,9 +15,10 @@ SRC = \
 	  camera/hooks/roll_right.c \
 	  \
 	  engine/clear_engine.c \
+	  engine/engine_focus_in.c \
+	  engine/engine_loop_hook.c \
 	  engine/init_engine.c \
 	  engine/render_frame.c \
-	  engine/engine_loop_hook.c \
 	  \
 	  engine/shading/get_ambiant_light.c \
 	  engine/shading/get_fresnel.c \

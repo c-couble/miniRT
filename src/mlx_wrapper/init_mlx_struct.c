@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 04:56:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/24 05:34:00 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/25 01:54:25 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+static void	init_values(t_mlx *mlx);
 static void	init_intern_hooks(t_mlx *mlx);
 
 int	init_mlx_struct(t_mlx *mlx)
 {
-	mlx->height = SCREEN_HEIGHT;
-	mlx->width = SCREEN_WIDTH;
+	init_values(mlx);
 	mlx->mlx = mlx_init();
 	if (mlx->mlx == NULL)
 		return (-1);
@@ -46,8 +46,14 @@ int	init_mlx_struct(t_mlx *mlx)
 	mlx->addr = (t_color *) mlx_get_data_addr(mlx->img, &mlx->bits_per_pixel,
 			&mlx->line_length, &mlx->endian);
 	init_intern_hooks(mlx);
-	mlx->focused = 1;
 	return (0);
+}
+
+static void	init_values(t_mlx *mlx)
+{
+	mlx->width = SCREEN_WIDTH;
+	mlx->height = SCREEN_HEIGHT;
+	mlx->focused = 1;
 }
 
 static void	init_intern_hooks(t_mlx *mlx)

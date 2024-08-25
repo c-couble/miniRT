@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/24 05:35:35 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/25 01:51:29 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ void	render_frame(t_engine *engine)
 
 	start = clock();
 	i = 0;
-	//printf("START FRAME\n\n");
 	setup_camera(engine);
 	while (i < engine->scene.camera.frame_height)
 	{
@@ -43,7 +42,6 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	//printf("END FRAME\n\n");
 	change_ray_size(engine, 1000000 / (clock() - start));
 }
 

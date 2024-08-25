@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:20:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/24 05:36:35 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/24 23:41:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef enum e_hooktype
 {
 	DESTROY,
 	HOLD,
+	FOCUS_IN,
 	MOUSE,
 	MOUSE_MOTION,
 	PRESS,
