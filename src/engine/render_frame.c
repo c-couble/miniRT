@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/19 11:03:14 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/25 17:55:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ void	render_frame(t_engine *engine)
 	i = 0;
 	printf("START FRAME\n\n");
 	setup_camera(engine);
-	print_photon_map(engine);
 	while (i < engine->scene.camera.frame_height)
 	{
 		j = 0;

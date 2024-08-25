@@ -29,6 +29,10 @@ SRC = \
 	  engine/shading/get_refract.c \
 	  engine/shading/phong_model.c \
 	  \
+	  kdtree/create_kdnode.c \
+	  kdtree/init_kdtree.c \
+	  kdtree/print_kdtree.c \
+	  \
 	  mlx_wrapper/hooks/destroy_hook.c \
 	  mlx_wrapper/hooks/key_down_hook.c \
 	  mlx_wrapper/hooks/key_up_hook.c \

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 13:56:52 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/19 15:26:35 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/25 17:53:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct s_photon
 	t_vec3	pos;
 	t_color	color;
 }	t_photon;
+
 
 typedef struct s_engine t_engine;
 typedef struct s_ray t_ray;

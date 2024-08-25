@@ -6,11 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/19 15:51:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/25 19:05:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
+#include "kdtree.h"
 #include "object.h"
 #include "photon.h"
 #include "vec3.h"
@@ -23,6 +24,7 @@ int	init_photon_map(t_engine *eng)
 {
 	size_t		i;
 	t_object	*curr;
+	t_kdtree	*node;
 
 	dprintf(2, "Init photon map\n");
 	init_vector(&eng->photon_map, sizeof(t_photon));
@@ -37,11 +39,8 @@ int	init_photon_map(t_engine *eng)
 		}
 		++i;
 	}
-	printf("non sorted\n");
-	print_photon_map(eng);
-	printf("sorted\n");
-	sort_photons_axis(&eng->photon_map, 0, eng->photon_map.size - 1, 2);
-	print_photon_map(eng);
+	node = init_kdtree(&eng->photon_map, 0);
+	print_kdtree(node, 0);
 	return (0);
 }
 

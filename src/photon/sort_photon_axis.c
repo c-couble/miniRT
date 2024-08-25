@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 14:50:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/19 15:33:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/25 19:10:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,11 @@ static size_t	array_partition(t_vector *phs, ssize_t start, ssize_t end, int a)
 
 static	int compare_photon(t_photon *p1, t_photon *p2, int axis)
 {
-	if (axis == 1)
+	if (axis == 0)
 		return (p1->pos.x - p2->pos.x);
-	if (axis == 2)
+	if (axis == 1)
 		return (p1->pos.y - p2->pos.y);
-	if (axis == 3)
+	if (axis == 2)
 		return (p1->pos.z - p2->pos.z);
 	return (0);
 }
