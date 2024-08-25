@@ -1,32 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   key_down_hook.c                                    :+:      :+:    :+:   */
+/*   engine_escape.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 04:11:09 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/25 04:53:46 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/25 04:51:07 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/25 04:51:33 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mlx_wrapper.h"
-#include <stddef.h>
+#include "engine.h"
+#include "mlx.h"
 
-int	key_down_hook(int key, t_mlx *mlx)
+void	engine_escape(t_engine *engine)
 {
-	t_hook		*hook;
-	size_t		i;
-
-	i = 0;
-	while (i < mlx->hooks.size)
-	{
-		hook = at_vector(&mlx->hooks, i);
-		if (hook->type == PRESS && key == (int) hook->key)
-			hook->func(hook->param);
-		if (hook->type == HOLD && key == (int) hook->key)
-			hook->is_down = 1;
-		++i;
-	}
-	return (0);
+	mlx_loop_end(engine->mlx.mlx);
 }
