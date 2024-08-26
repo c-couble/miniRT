@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   move_down.c                                        :+:      :+:    :+:   */
+/*   reset_roll_angle.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 01:26:00 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/26 04:07:52 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/26 05:39:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "object/camera.h"
 
-void	move_down(t_engine *engine)
+void	reset_roll_angle(t_engine *engine)
 {
-	t_camera	*cam;
-
-	cam = &engine->scene.camera;
-	if (cam->locked)
-		return ;
-	move_camera(cam, &cam->up, 1);
+	create_camera_vectors(&engine->scene.camera);
+	engine->scene.camera.should_render = 1;
 }

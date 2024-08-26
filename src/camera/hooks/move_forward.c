@@ -6,13 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:09:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 01:26:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "object/camera.h"
-#include "vec3.h"
 
 void	move_forward(t_engine *engine)
 {
@@ -21,6 +20,5 @@ void	move_forward(t_engine *engine)
 	cam = &engine->scene.camera;
 	if (cam->locked)
 		return ;
-	vec3_add(&cam->coordinates, &cam->front, &cam->coordinates);
-	engine->scene.camera.should_render = 1;
+	move_camera(cam, &cam->front, 0);
 }

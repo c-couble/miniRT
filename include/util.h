@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 19:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/31 01:45:50 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 06:07:27 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include "object/plane.h"
 # include "ray.h"
 
+int		double_equals(double a, double b);
 void	print_error(char *err);
 double	get_bigest_distance(double a, double b);
 double	get_closest_distance(double a, double b);

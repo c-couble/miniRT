@@ -1,5 +1,7 @@
 SRC = \
 	  camera/color_pixels.c \
+	  camera/create_camera_vectors.c \
+	  camera/move_camera.c \
 	  camera/setup_camera.c \
 	  \
 	  camera/init_camera_hooks.c \
@@ -11,13 +13,18 @@ SRC = \
 	  camera/hooks/move_left.c \
 	  camera/hooks/move_right.c \
 	  camera/hooks/move_up.c \
+	  camera/hooks/reset_roll_angle.c \
 	  camera/hooks/roll_left.c \
 	  camera/hooks/roll_right.c \
+	  camera/hooks/speed_down.c \
+	  camera/hooks/speed_up.c \
 	  \
 	  engine/clear_engine.c \
-	  engine/init_engine.c \
-	  engine/render_frame.c \
+	  engine/engine_focus_in.c \
 	  engine/engine_loop_hook.c \
+	  engine/init_engine.c \
+	  engine/quit_engine.c \
+	  engine/render_frame.c \
 	  \
 	  engine/shading/get_ambiant_light.c \
 	  engine/shading/get_fresnel.c \
@@ -30,11 +37,14 @@ SRC = \
 	  engine/shading/phong_model.c \
 	  \
 	  mlx_wrapper/hooks/destroy_hook.c \
+	  mlx_wrapper/hooks/focus_in_hook.c \
+	  mlx_wrapper/hooks/focus_out_hook.c \
 	  mlx_wrapper/hooks/key_down_hook.c \
 	  mlx_wrapper/hooks/key_up_hook.c \
 	  mlx_wrapper/hooks/loop_hook.c \
 	  mlx_wrapper/hooks/mouse_down_hook.c \
 	  mlx_wrapper/hooks/mouse_up_hook.c \
+	  mlx_wrapper/hooks/mouse_motion_hook.c \
 	  \
 	  mlx_wrapper/clear_mlx_struct.c \
 	  mlx_wrapper/create_mlx_hook.c \
@@ -81,6 +91,7 @@ SRC = \
 	  util/add_color.c \
 	  util/add_scale_color.c \
 	  util/get_bigest_distance.c \
+	  util/double_equals.c \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \

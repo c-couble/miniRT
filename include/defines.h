@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 06:54:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/16 21:49:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 06:07:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 # define MINIMUM_FPS		80
 # define MAXIMUM_FPS		100
 # define ROLL_ANGLE			0.05
+# define SENSITIVITY		2
+# define SPEED				50
 # define MAX_RAY_LEN		10000
 # define INACCURATE_ZERO	10e-8
 # define SKY				7591935

@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   move_down.c                                        :+:      :+:    :+:   */
+/*   create_camera_vectors.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 01:26:00 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/26 04:11:14 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/26 05:37:06 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
 #include "object/camera.h"
+#include "util.h"
+#include "vec3.h"
 
-void	move_down(t_engine *engine)
+void	create_camera_vectors(t_camera *cam)
 {
-	t_camera	*cam;
-
-	cam = &engine->scene.camera;
-	if (cam->locked)
-		return ;
-	move_camera(cam, &cam->up, 1);
+	if (double_equals(cam->front.z, 1) || double_equals(cam->front.z, -1))
+		vec3_create(0, -1, 0, &cam->front);
+	vec3_create(0, 0, 1, &cam->up);
+	vec3_cross_product(&cam->front, &cam->up, &cam->right);
+	vec3_normalize(&cam->right);
+	vec3_cross_product(&cam->right, &cam->front, &cam->up);
 }

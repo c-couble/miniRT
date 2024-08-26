@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   move_down.c                                        :+:      :+:    :+:   */
+/*   mouse_motion_hook.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 01:26:00 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/24 03:57:48 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/24 04:57:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "object/camera.h"
+#include "mlx_wrapper.h"
 
-void	move_down(t_engine *engine)
+int	mouse_motion_hook(int x, int y, t_mlx *mlx)
 {
-	t_camera	*cam;
+	t_hook		*hook;
+	size_t		i;
 
-	cam = &engine->scene.camera;
-	if (cam->locked)
-		return ;
-	move_camera(cam, &cam->up, 1);
+	i = 0;
+	mlx->x = x;
+	mlx->y = y;
+	while (i < mlx->hooks.size)
+	{
+		hook = at_vector(&mlx->hooks, i);
+		if (hook->type == MOUSE_MOTION)
+			hook->func(hook->param);
+		++i;
+	}
+	mlx->old_x = mlx->x;
+	mlx->old_y = mlx->y;
+	return (0);
 }
