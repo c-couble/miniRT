@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/19 14:44:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 02:50:38 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph)
 
 	if (depth <= 0)
 		return (BACKGROUND_COLOR);
-	printf("trace_photon call %d\n", DEPTH - depth);
+//	printf("trace_photon call %d\n", DEPTH - depth);
 	if (trace_ray(engine, ph_ray) > -INACCURATE_ZERO)
 	{
 		if (ph_ray->data.materials.refraction_ratio)

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/25 19:05:43 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 02:50:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ static int	get_photon(t_engine *eng, t_light *light)
 				if (trace_photon(eng, &p_ray, DEPTH, &photon))
 				{
 					photon.color.color = light->color.color;
-					dprintf(2, "Added photon, obj type == %d\n", curr->type);
+//					dprintf(2, "Added photon, obj type == %d\n", curr->type);
 					if (add_vector(&eng->photon_map, &photon, 1) == -1)
 						return (-1);
 				}

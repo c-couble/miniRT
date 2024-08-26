@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/19 15:09:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 04:04:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,14 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 	}
 	t_ray	p_ray;
 	double d = get_closest_photon(engine, ray, &p_ray);
-	if (d < 3)
+	if (d < 0.1)
 	{
 		t_object obj;
 		obj.data.light.pos = p_ray.startpos;
 		obj.data.light.color = p_ray.data.color;
 		phong_model(&obj, &light, ray, &p_ray);
 //		final_color.color = scale_color(&final_color, 1;
-		light.color = scale_color(&light, (3 + 1 - d));
+		light.color = scale_color(&light, (1));
 	}
 	return (multiply_color(&light, &ray->data.color));
 }

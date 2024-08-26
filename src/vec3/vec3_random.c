@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 13:51:12 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/19 14:03:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 02:51:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ t_vec3	*vec3_random(t_vec3 *vec, double min, double max)
 {
 	t_vec3	v;
 
-	printf("randfrom%lf\n", randfrom(min, max));
 	v.x = randfrom(min, max);
 	v.y = randfrom(min, max);
 	v.z = randfrom(min, max);

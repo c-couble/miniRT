@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 14:50:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/25 19:10:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 04:09:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static size_t	array_partition(t_vector *phs, ssize_t start, ssize_t end, int a)
 	while (i < end)
 	{
 		photon = at_vector(phs, i);
-		if (compare_photon(photon, pivot, a) <= 0)
+		if (compare_photon(photon, pivot, a) < 0)
 		{
 			swap_photons(at_vector(phs, j), photon);
 			++j;
