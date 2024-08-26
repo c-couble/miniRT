@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   paraboloid.h                                       :+:      :+:    :+:   */
+/*   get_biggest_distance.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 01:06:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/03 03:09:54 by lespenel         ###   ########.fr       */
+/*   Created: 2024/07/31 01:45:12 by lespenel          #+#    #+#             */
+/*   Updated: 2024/08/26 06:13:56 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARABOLOID_H
-# define PARABOLOID_H
+#include "defines.h"
 
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_paraboloid
+double	get_biggest_distance(double a, double b)
 {
-	t_vec3			pos;
-	t_vec3			axis;
-	t_vec3			rot_axis;
-	double			theta;
-	double			ray_coef;
-	double			height;
-	t_color			color;
-}	t_paraboloid;
-
-union	u_object_data;
-
-int	parse_paraboloid(union u_object_data *object);
-
-#endif
+	if (a <= INACCURATE_ZERO && b <= INACCURATE_ZERO)
+		return (-1);
+	if (a <= INACCURATE_ZERO)
+		return (b);
+	if (b <= INACCURATE_ZERO)
+		return (a);
+	if (a < b)
+		return (b);
+	return (a);
+}

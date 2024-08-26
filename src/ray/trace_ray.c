@@ -6,11 +6,10 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/24 01:12:43 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/07/31 01:57:06 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
 #include "engine.h"
 #include "ray.h"
 #include "object.h"
@@ -29,7 +28,7 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	{
 		obj = at_vector(&engine->scene.objects, i);
 		tmp = intersect(obj, ray);
-		if (tmp > INACCURATE_ZERO)
+		if (tmp > 0)
 		{
 			if (r == -1 || tmp < r)
 			{
