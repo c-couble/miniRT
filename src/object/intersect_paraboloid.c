@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/26 06:14:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 06:25:26 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 	if (t == -1)
 		return (-1);
 	get_paraboloid_normal(&obj_ray, &obj->data.paraboloid);
-	if (vec3_dot_product(&obj_ray.data.normal, &obj_ray.ray) > 0)
-		vec3_scale(&obj_ray.data.normal, -1);
 	quaternion_rotate(&obj_ray.data.normal, (t_vec3 *)
 		&para.rot_axis, -para.theta, &ray->data.normal);
 	get_hitpos(ray, t);
