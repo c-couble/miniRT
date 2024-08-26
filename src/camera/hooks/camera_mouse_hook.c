@@ -6,11 +6,10 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/25 02:06:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 03:01:53 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
 #include "engine.h"
 #include "mlx.h"
 #include "object/camera.h"
@@ -25,8 +24,10 @@ void	camera_mouse_hook(t_engine *engine)
 	double		y_diff;
 
 	cam = &engine->scene.camera;
-	x_diff = SENSITIVITY * (engine->mlx.x - engine->mlx.old_x) / 2500.;
-	y_diff = SENSITIVITY * (engine->mlx.y - engine->mlx.old_y) / 2500.;
+	x_diff = engine->scene.camera.sensitivity
+		* (engine->mlx.x - engine->mlx.old_x) / 2500.;
+	y_diff = engine->scene.camera.sensitivity
+		* (engine->mlx.y - engine->mlx.old_y) / 2500.;
 	if (engine->mlx.focused == 0 || cam->locked || (x_diff == 0 && y_diff == 0))
 		return ;
 	quaternion_rotate(&cam->front, &cam->right, -y_diff, &cam->front);

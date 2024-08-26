@@ -6,17 +6,21 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/25 01:51:29 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 04:04:45 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <X11/X.h>
-#include <stdio.h>
+#include <stdint.h>
 #include <time.h>
+#include "color.h"
+#include "engine.h"
+#include "ray.h"
 #include "shading.h"
 #include "defines.h"
 #include "vec4.h"
 
+static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
 static void	change_ray_size(t_engine *engine, size_t fps);
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y);
 
@@ -24,7 +28,6 @@ void	render_frame(t_engine *engine)
 {
 	size_t	i;
 	size_t	j;
-	t_ray	camera_ray;
 	size_t	start;
 
 	start = clock();
@@ -35,14 +38,26 @@ void	render_frame(t_engine *engine)
 		j = 0;
 		while (j < engine->scene.camera.frame_width)
 		{
-			setup_camera_ray(engine, &camera_ray, j, i);
-			color_pixels(engine, i, j,
-				get_pixel_color(engine, &camera_ray, DEPTH));
+			handle_single_ray(engine, i, j);
 			++j;
 		}
 		++i;
 	}
-	change_ray_size(engine, 1000000 / (clock() - start));
+	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
+	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
+}
+
+static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
+{
+	t_ray	camera_ray;
+	t_color	color;
+
+	setup_camera_ray(engine, &camera_ray, j, i);
+	if (engine->scene.camera.locked)
+		color.color = get_pixel_color(engine, &camera_ray, DEPTH);
+	else
+		color.color = get_pixel_color(engine, &camera_ray, 1);
+	color_pixels(engine, i, j, color.color);
 }
 
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)

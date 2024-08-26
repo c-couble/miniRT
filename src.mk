@@ -1,5 +1,6 @@
 SRC = \
 	  camera/color_pixels.c \
+	  camera/move_camera.c \
 	  camera/setup_camera.c \
 	  \
 	  camera/init_camera_hooks.c \
@@ -13,6 +14,8 @@ SRC = \
 	  camera/hooks/move_up.c \
 	  camera/hooks/roll_left.c \
 	  camera/hooks/roll_right.c \
+	  camera/hooks/speed_down.c \
+	  camera/hooks/speed_up.c \
 	  \
 	  engine/clear_engine.c \
 	  engine/engine_escape.c \
