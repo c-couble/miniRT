@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_normalized_vector3d.c                        :+:      :+:    :+:   */
+/*   quaternion_rotate.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 05:38:12 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:53:06 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:58:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "quaternion.h"
 #include "vec3.h"
 #include <math.h>
 
-int	parse_normalized_vector3d(t_vec3 *vector)
+void	quaternion_rotate(t_vec3 *p, t_vec3 *axis, double angle, t_vec3 *out)
 {
-	if (parse_vector3d(vector, -1, 1) == -1)
-		return (-1);
-	if (sqrt(powl(vector->x, 2) + powl(vector->y, 2) + powl(vector->z, 2)) != 1)
-		return (-1);
-	vec3_normalize(vector);
-	return (0);
+	t_quaternion	q;
+	t_quaternion	point;
+	t_quaternion	inv_q;
+	double			half_angle;
+
+	half_angle = angle / 2;
+	q.a = cos(half_angle);
+	q.vec = *axis;
+	vec3_scale(&q.vec, sin(half_angle));
+	point.a = 0;
+	point.vec = *p;
+	quaternion_inv(&q, &inv_q);
+	quaternion_mult(&q, &point, &point);
+	quaternion_mult(&point, &inv_q, &point);
+	*out = point.vec;
 }

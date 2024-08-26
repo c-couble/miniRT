@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.h                                           :+:      :+:    :+:   */
+/*   create_mlx_hook.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 06:01:14 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 04:22:35 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 04:24:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENGINE_H
-# define ENGINE_H
+#include "mlx_wrapper.h"
 
-# include "mlx_wrapper.h"
-# include "scene.h"
-
-typedef struct s_engine
+t_hook	create_mlx_hook(void (*f)(), void *param, t_key key, t_hooktype type)
 {
-	t_scene	scene;
-	t_mlx	mlx;
-}	t_engine;
+	t_hook	hook;
 
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
-void	render_frame(t_engine *engine);
-void	engine_loop_hook(t_engine *engine);
-void	engine_focus_in(t_engine *engine);
-void	quit_engine(t_engine *engine);
-
-#endif
+	hook.func = f;
+	hook.param = param;
+	hook.key = key;
+	hook.type = type;
+	hook.is_down = 0;
+	return (hook);
+}

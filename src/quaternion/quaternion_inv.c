@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.h                                           :+:      :+:    :+:   */
+/*   quaternion_inv.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 06:01:14 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:48:20 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:34:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENGINE_H
-# define ENGINE_H
+#include "quaternion.h"
+#include "vec3.h"
 
-# include "mlx_wrapper.h"
-# include "scene.h"
-
-typedef struct s_engine
+void	quaternion_inv(t_quaternion *q, t_quaternion *out)
 {
-	t_scene	scene;
-	t_mlx	mlx;
-}	t_engine;
+	double	denom;
 
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
-void	render_frame(t_engine *engine);
-void	engine_loop_hook(t_engine *engine);
-void	engine_focus_in(t_engine *engine);
-void	quit_engine(t_engine *engine);
-
-#endif
+	denom = (q->a * q->a + vec3_dot_product(&q->vec, &q->vec));
+	out->a = q->a / denom;
+	out->vec = q->vec;
+	vec3_scale(&out->vec, -1);
+	vec3_scale(&out->vec, 1 / denom);
+}

@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.h                                           :+:      :+:    :+:   */
+/*   mouse_down_hook.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 06:01:14 by ccouble          ###   ########.fr       */
+/*   Created: 2024/02/04 07:06:46 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 04:56:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENGINE_H
-# define ENGINE_H
+#include "mlx_wrapper.h"
 
-# include "mlx_wrapper.h"
-# include "scene.h"
-
-typedef struct s_engine
+int	mouse_down_hook(int key, int x, int y, t_mlx *mlx)
 {
-	t_scene	scene;
-	t_mlx	mlx;
-}	t_engine;
+	t_hook		*hook;
+	size_t		i;
 
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
-void	render_frame(t_engine *engine);
-void	engine_loop_hook(t_engine *engine);
-void	engine_focus_in(t_engine *engine);
-void	quit_engine(t_engine *engine);
-
-#endif
+	(void)x;
+	(void)y;
+	i = 0;
+	while (i < mlx->hooks.size)
+	{
+		hook = at_vector(&mlx->hooks, i);
+		if (hook->type == MOUSE && key == (int) hook->key)
+		{
+			hook->is_down = 1;
+			if (hook->key == MOUSE_WHEELDOWN || hook->key == MOUSE_WHEELUP)
+				hook->func(hook->param);
+		}
+		++i;
+	}
+	return (0);
+}

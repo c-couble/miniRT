@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   engine.h                                           :+:      :+:    :+:   */
+/*   key_up_hook.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 06:01:14 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 04:11:29 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 04:13:07 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ENGINE_H
-# define ENGINE_H
+#include "mlx_wrapper.h"
 
-# include "mlx_wrapper.h"
-# include "scene.h"
-
-typedef struct s_engine
+int	key_up_hook(int key, t_mlx *mlx)
 {
-	t_scene	scene;
-	t_mlx	mlx;
-}	t_engine;
+	t_hook		*hook;
+	size_t		i;
 
-int		init_engine(t_engine *engine, char *scene);
-void	clear_engine(t_engine *engine);
-void	render_frame(t_engine *engine);
-void	engine_loop_hook(t_engine *engine);
-void	engine_focus_in(t_engine *engine);
-void	quit_engine(t_engine *engine);
-
-#endif
+	i = 0;
+	while (i < mlx->hooks.size)
+	{
+		hook = at_vector(&mlx->hooks, i);
+		if (hook->type == HOLD && key == (int) hook->key)
+			hook->is_down = 0;
+		++i;
+	}
+	return (0);
+}
