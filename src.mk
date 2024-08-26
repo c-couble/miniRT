@@ -1,5 +1,6 @@
 SRC = \
 	  camera/color_pixels.c \
+	  camera/create_camera_vectors.c \
 	  camera/move_camera.c \
 	  camera/setup_camera.c \
 	  \
@@ -12,6 +13,7 @@ SRC = \
 	  camera/hooks/move_left.c \
 	  camera/hooks/move_right.c \
 	  camera/hooks/move_up.c \
+	  camera/hooks/reset_roll_angle.c \
 	  camera/hooks/roll_left.c \
 	  camera/hooks/roll_right.c \
 	  camera/hooks/speed_down.c \
@@ -88,6 +90,7 @@ SRC = \
 	  \
 	  util/add_color.c \
 	  util/add_scale_color.c \
+	  util/double_equals.c \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \

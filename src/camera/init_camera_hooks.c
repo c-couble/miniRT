@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:59:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 01:47:48 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 04:14:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,9 @@ static int	init_rotation_hooks(t_engine *engine)
 {
 	t_hook	hook;
 
+	hook = create_mlx_hook(reset_roll_angle, engine, KEY_R, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
 	hook = create_mlx_hook(roll_left, engine, KEY_Q, HOLD);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);

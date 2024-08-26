@@ -6,13 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 17:22:06 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/17 01:31:37 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 05:38:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vec3.h"
 #include <math.h>
-#include <stdio.h>
 
 int	parse_normalized_vector3d(t_vec3 *vector)
 {
