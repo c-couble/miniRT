@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_bigest_distance.c                              :+:      :+:    :+:   */
+/*   get_biggest_distance.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 01:45:12 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/31 01:45:38 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 06:13:56 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
 
-double	get_bigest_distance(double a, double b)
+double	get_biggest_distance(double a, double b)
 {
 	if (a <= INACCURATE_ZERO && b <= INACCURATE_ZERO)
 		return (-1);

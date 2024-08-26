@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/24 02:13:56 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 06:14:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ static double	solve_para(t_vec3 *start, t_vec3 *dir, t_ray *ray, t_object *o)
 	get_hitpos(ray, t);
 	if (check_height(ray, &o->data.paraboloid))
 	{
-		t = get_bigest_distance(q.r1, q.r2);
+		t = get_biggest_distance(q.r1, q.r2);
 		get_hitpos(ray, t);
 		if (check_height(ray, &o->data.paraboloid))
 			return (-1);
