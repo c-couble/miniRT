@@ -31,6 +31,8 @@ SRC = \
 	  \
 	  kdtree/create_kdnode.c \
 	  kdtree/init_kdtree.c \
+	  kdtree/get_nearest_neighbour.c \
+	  kdtree/clear_kdtree.c \
 	  kdtree/print_kdtree.c \
 	  \
 	  mlx_wrapper/hooks/destroy_hook.c \
