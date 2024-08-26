@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:59:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/30 08:45:00 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 04:14:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,12 @@ int	init_camera_hooks(t_engine *engine)
 	if (init_rotation_hooks(engine) == -1)
 		return (-1);
 	hook = create_mlx_hook(lock_camera, engine, KEY_ENTER, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(speed_down, engine, MOUSE_WHEELDOWN, MOUSE);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(speed_up, engine, MOUSE_WHEELUP, MOUSE);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	return (0);
@@ -63,13 +69,16 @@ static int	init_rotation_hooks(t_engine *engine)
 {
 	t_hook	hook;
 
+	hook = create_mlx_hook(reset_roll_angle, engine, KEY_R, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
 	hook = create_mlx_hook(roll_left, engine, KEY_Q, HOLD);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	hook = create_mlx_hook(roll_right, engine, KEY_E, HOLD);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
-	hook = create_mlx_hook(camera_mouse_hook, engine, 0, LOOP);
+	hook = create_mlx_hook(camera_mouse_hook, engine, 0, MOUSE_MOTION);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	return (0);

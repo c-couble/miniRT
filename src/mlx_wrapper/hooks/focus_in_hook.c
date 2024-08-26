@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   move_down.c                                        :+:      :+:    :+:   */
+/*   focus_in_hook.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 05:02:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 01:26:00 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/24 05:05:44 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/24 23:41:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "object/camera.h"
+#include "mlx_wrapper.h"
 
-void	move_down(t_engine *engine)
+int	focus_in_hook(t_mlx *mlx)
 {
-	t_camera	*cam;
+	t_hook		*hook;
+	size_t		i;
 
-	cam = &engine->scene.camera;
-	if (cam->locked)
-		return ;
-	move_camera(cam, &cam->up, 1);
+	i = 0;
+	mlx->focused = 1;
+	while (i < mlx->hooks.size)
+	{
+		hook = at_vector(&mlx->hooks, i);
+		if (hook->type == FOCUS_IN)
+			hook->func(hook->param);
+		++i;
+	}
+	return (0);
 }

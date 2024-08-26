@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 21:47:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/19 11:21:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 00:21:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "engine.h"
 #include "ray.h"
 #include "ft_math.h"
+#include "defines.h"
 
 double	get_closest_photon(t_engine *engine, t_ray *ray, t_ray *p_ray)
 {

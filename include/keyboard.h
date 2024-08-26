@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 03:47:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 06:11:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/25 04:53:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ typedef enum e_key
 	KEY_Z = 122,
 	KEY_ENTER = 65293,
 	KEY_CONTROL = 65507,
-	ESCAPE = 65307,
+	KEY_ESCAPE = 65307,
 	KEY_LEFT = 65361,
 	KEY_UP = 65362,
 	KEY_RIGHT = 65363,

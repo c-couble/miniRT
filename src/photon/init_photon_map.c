@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/26 20:56:40 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 00:20:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include "photon.h"
 #include "vec3.h"
 #include "vector.h"
+#include "defines.h"
 #include <stdio.h>
 
 static int	get_photon(t_engine *eng, t_light *light);
