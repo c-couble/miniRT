@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/25 05:28:37 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 06:01:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,10 @@ static int	init_hooks(t_engine *engine)
 	hook = create_mlx_hook(engine_focus_in, engine, 0, FOCUS_IN);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
-	hook = create_mlx_hook(engine_escape, engine, KEY_ESCAPE, PRESS);
+	hook = create_mlx_hook(quit_engine, engine, KEY_ESCAPE, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(quit_engine, engine, KEY_ESCAPE, DESTROY);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	return (0);
