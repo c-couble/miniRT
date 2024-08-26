@@ -6,13 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/18 15:48:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 20:53:53 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ENGINE_H
 # define ENGINE_H
 
+#include "kdtree.h"
 # include "mlx_wrapper.h"
 # include "scene.h"
 #include "vector.h"
@@ -22,6 +23,7 @@ typedef struct s_engine
 	t_scene		scene;
 	t_mlx		mlx;
 	t_vector	photon_map;
+	t_kdtree	*node;
 }	t_engine;
 
 int		init_engine(t_engine *engine, char *scene);

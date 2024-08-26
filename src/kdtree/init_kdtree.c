@@ -6,14 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:31:40 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/25 19:14:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 20:56:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "kdtree.h"
 #include "vector.h"
 #include <stdio.h>
-
 
 t_kdtree *init_kdtree(t_vector *photons, int depth)
 {
@@ -48,7 +47,6 @@ t_kdtree *init_kdtree(t_vector *photons, int depth)
 		add_vector(&right, curr, 1);
 		++i;
 	}
-	//need to split the photons;
 	node->left = init_kdtree(&left, depth + 1);
 	node->right = init_kdtree(&right, depth + 1);
 	clear_vector(&left);

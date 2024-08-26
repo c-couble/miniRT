@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:52:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/26 20:44:26 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 20:54:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ void		print_kdtree(t_kdtree *node, int depth);
 t_kdtree	*init_kdtree(t_vector *photons, int depth);
 int			create_kdnode(t_kdtree **node, t_photon *photon);
 t_kdtree	*get_nearest_neighbour(t_kdtree *tree, t_vec3 *target);
+void		clear_kdtree(t_kdtree *tree);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/26 02:50:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/26 20:56:40 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int	init_photon_map(t_engine *eng)
 {
 	size_t		i;
 	t_object	*curr;
-	t_kdtree	*node;
 
 	dprintf(2, "Init photon map\n");
 	init_vector(&eng->photon_map, sizeof(t_photon));
@@ -39,8 +38,9 @@ int	init_photon_map(t_engine *eng)
 		}
 		++i;
 	}
-	node = init_kdtree(&eng->photon_map, 0);
-	print_kdtree(node, 0);
+	eng->node = init_kdtree(&eng->photon_map, 0);
+	print_kdtree(eng->node, 0);
+	clear_kdtree(eng->node);
 	return (0);
 }
 
