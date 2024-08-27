@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/26 20:42:02 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 04:43:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,21 +27,21 @@ double	distance_squared(t_vec3 *a, t_vec3 *b)
 	return (ret);
 }
 
-t_kdtree *get_nearest_neighbour(t_kdtree *tree, t_vec3 *target)
+t_kdtree *get_nearest_neighbour(t_kaboul *kaboul, t_kdtree *tree, t_vec3 *target)
 {
-	t_kaboul kaboul;
-	kaboul.node = NULL;
-	kaboul.best_dist = DBL_MAX;
-	nearest_neighbour(tree, &kaboul, target, 0);
-	return (kaboul.node);
+	kaboul->node = NULL;
+	kaboul->best_dist = DBL_MAX;
+	nearest_neighbour(tree, kaboul, target, 0);
+	return (kaboul->node);
 }
 
-void	nearest_neighbour(t_kdtree *node, t_kaboul *kaboul, t_vec3 *target,
-					   int depth)
+void	nearest_neighbour(t_kdtree *node, t_kaboul *kaboul, t_vec3 *target, int depth)
 {
 	int			axis;
 	double		dist;
 	t_kdtree	*next_branch;
+	t_kdtree	*other_branch;
+	double		axis_lenght;
 
 	if (node == NULL)
 		return ;
@@ -57,10 +57,30 @@ void	nearest_neighbour(t_kdtree *node, t_kaboul *kaboul, t_vec3 *target,
 	(axis == 2 && target->z < node->photon.pos.z))
 	{
 		next_branch = node->left;
+		other_branch = node->right;
 	}
 	else
 	{
 		next_branch = node->right;
+		other_branch = node->left;
 	}
 	nearest_neighbour(next_branch, kaboul, target, depth + 1);
+	axis_lenght = 0.0f;
+	if (axis == 0)
+	{
+		axis_lenght = target->x - node->photon.pos.y;
+	}
+	else if (axis == 1)
+	{
+		axis_lenght = target->y - node->photon.pos.y;
+	}
+	else 
+	{
+		axis_lenght = target->z - node->photon.pos.z;
+	}
+	axis_lenght = axis_lenght * axis_lenght;
+	if (axis_lenght < kaboul->best_dist)
+	{
+		nearest_neighbour(other_branch, kaboul, target, depth + 1);
+	}
 }
