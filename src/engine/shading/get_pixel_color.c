@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:35:38 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 06:06:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ uint32_t	get_pixel_color(t_engine *engine, t_ray *c_ray, int depth)
 			color.color = get_refract(engine, c_ray, color, depth -1);
 		if (engine->scene.camera.render_type == NORMAL)
 			return (get_normal_color(c_ray));
+		if (engine->scene.camera.render_type == UV_MAP)
+			return (get_uv_color(c_ray));
 		return (color.color);
 	}
 	return (BACKGROUND_COLOR);
