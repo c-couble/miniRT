@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 04:54:41 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:32:21 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 02:53:18 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
-#include "ft_mem.h"
 #include "mlx.h"
+#include "ft_mem.h"
 
 void	engine_loop_hook(t_engine *engine)
 {

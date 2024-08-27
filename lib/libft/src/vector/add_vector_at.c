@@ -6,12 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 01:47:35 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:30:22 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/03/12 09:26:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mem.h"
 #include "vector.h"
+#include "ft_mem.h"
 
 int	add_vector_at(t_vector *this, const void *new, size_t at)
 {

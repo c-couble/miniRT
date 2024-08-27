@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   quaternion_inv.c                                   :+:      :+:    :+:   */
+/*   quaternion_rotate.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 06:48:20 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 00:50:19 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:53:06 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:58:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "quaternion.h"
 #include "vec3.h"
+#include <math.h>
 
-void	quaternion_inv(t_quaternion *q, t_quaternion *out)
+void	quaternion_rotate(t_vec3 *p, t_vec3 *axis, double angle, t_vec3 *out)
 {
-	double	denom;
+	t_quaternion	q;
+	t_quaternion	point;
+	t_quaternion	inv_q;
+	double			half_angle;
 
-	denom = (q->a * q->a + vec3_dot(&q->vec, &q->vec));
-	out->a = q->a / denom;
-	out->vec = q->vec;
-	vec3_scale(&out->vec, -1);
-	vec3_scale(&out->vec, 1 / denom);
+	half_angle = angle / 2;
+	q.a = cos(half_angle);
+	q.vec = *axis;
+	vec3_scale(&q.vec, sin(half_angle));
+	point.a = 0;
+	point.vec = *p;
+	quaternion_inv(&q, &inv_q);
+	quaternion_mult(&q, &point, &point);
+	quaternion_mult(&point, &inv_q, &point);
+	*out = point.vec;
 }

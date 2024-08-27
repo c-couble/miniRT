@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 09:19:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:30:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/03/21 05:34:06 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mem.h"
 #include "vector.h"
+#include "ft_mem.h"
 
 int	add_vector(t_vector *this, const void *data, size_t count)
 {

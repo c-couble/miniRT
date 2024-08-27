@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 02:53:41 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:34:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/06 21:29:18 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "color.h"
 #include "engine.h"
+#include <stdint.h>
 
 void	color_pixels(t_engine *engine, size_t i, size_t j, uint32_t c)
 {

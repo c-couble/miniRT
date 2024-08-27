@@ -6,14 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:50:12 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:40:26 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/22 12:00:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "ft_string.h"
 #include "object/parse_util.h"
 #include "vec3.h"
+#include <stdio.h>
 
 int	parse_vector3d(t_vec3 *vector, double min, double max)
 {

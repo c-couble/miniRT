@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 05:32:39 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:27:22 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/03/04 09:24:24 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
 #include "hashmap.h"
 #include "vector.h"
+#include "ft_string.h"
 
 char	*getvalue_hashmap(t_hashmap *hashmap, const char *key)
 {

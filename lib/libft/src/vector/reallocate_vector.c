@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 07:30:36 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:30:55 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/03/24 22:58:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "ft_mem.h"
 #include "vector.h"
+#include "ft_mem.h"
+#include <stdlib.h>
 
 int	reallocate_vector(t_vector *this)
 {

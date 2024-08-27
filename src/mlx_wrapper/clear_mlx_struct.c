@@ -6,13 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 05:25:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:36:54 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/25 04:59:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "mlx.h"
 #include "mlx_wrapper.h"
+#include <stdlib.h>
 
 void	clear_mlx_struct(t_mlx *mlx)
 {

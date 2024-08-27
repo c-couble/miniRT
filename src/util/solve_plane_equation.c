@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 14:14:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 00:50:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/06/15 02:03:30 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 double	solve_plane_equation(t_plane *plane, t_ray *ray)
 {
-	const double	dot = vec3_dot(&ray->ray, &plane->normal);
+	const double	dot = vec3_dot_product(&ray->ray, &plane->normal);
 	const double	d = -(plane->normal.x * plane->pos.x
 			+ plane->normal.y * plane->pos.y
 			+ plane->normal.z * plane->pos.z);

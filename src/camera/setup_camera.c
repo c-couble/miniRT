@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:32:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 05:01:06 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <math.h>
 #include "engine.h"
 #include "object/camera.h"
+#include <math.h>
 
 static void	setup_projection(t_camera *camera, double ratio);
 static void	setup_view(t_camera *camera);

@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 16:40:12 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:30:40 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/03/13 07:29:52 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "ft_mem.h"
 #include "vector.h"
+#include "ft_mem.h"
+#include <unistd.h>
 
 int	merge_vector(t_vector *to, t_vector *from, size_t i)
 {

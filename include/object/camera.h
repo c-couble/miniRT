@@ -6,24 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:42:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 04:35:52 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAMERA_H
 # define CAMERA_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "mat4.h"
 # include "vec3.h"
-
-typedef enum e_rtype
-{
-	CLASSIC,
-	NORMAL,
-	UV_MAP
-}	t_rtype;
+# include <stddef.h>
+# include <stdint.h>
 
 typedef struct s_camera
 {
@@ -45,7 +38,6 @@ typedef struct s_camera
 	size_t	last_frame_time;
 	int		locked;
 	int		should_render;
-	t_rtype	render_type;
 }	t_camera;
 
 union	u_object_data;
@@ -73,6 +65,5 @@ void	roll_right(struct s_engine *engine);
 void	lock_camera(struct s_engine *engine);
 void	speed_down(struct s_engine *engine);
 void	speed_up(struct s_engine *engine);
-void	change_render_mode(struct s_engine *engine);
 
 #endif

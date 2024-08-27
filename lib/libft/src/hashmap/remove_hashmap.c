@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/06 08:02:53 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:27:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/04/06 08:04:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
 #include "hashmap.h"
 #include "vector.h"
+#include "ft_string.h"
 
 void	remove_hashmap(t_hashmap *hashmap, const char *key)
 {

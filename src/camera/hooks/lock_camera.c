@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 06:01:49 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 01:36:53 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 05:39:21 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void	lock_camera(t_engine *engine)
 		mlx_mouse_hide(engine->mlx.mlx, engine->mlx.mlx_window);
 		engine->scene.camera.locked = 0;
 		engine->scene.camera.pixel_square_size = DEFAULT_RAY_SIZE;
-		engine->scene.camera.last_frame_time = 0;
 	}
 	else
 	{

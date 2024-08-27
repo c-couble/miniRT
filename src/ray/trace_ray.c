@@ -6,40 +6,39 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 06:28:12 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/31 01:57:06 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
-#include "object.h"
 #include "ray.h"
-#include "util.h"
-#include "vec3.h"
+#include "object.h"
 
 int	trace_ray(t_engine *engine, t_ray *ray)
 {
 	size_t		i;
 	t_object	*obj;
-	double		t;
+	double		r;
 	t_hit_data	data;
 	double		tmp;
 
 	i = 0;
-	t = -1;
+	r = -1;
 	while (i < engine->scene.objects.size)
 	{
 		obj = at_vector(&engine->scene.objects, i);
 		tmp = intersect(obj, ray);
-		if (get_closest_distance_ptr(tmp, t, &t))
-			data = ray->data;
+		if (tmp > 0)
+		{
+			if (r == -1 || tmp < r)
+			{
+				r = tmp;
+				data = ray->data;
+				data.materials = obj->material;
+			}
+		}
 		++i;
 	}
-	if (t != -1)
-	{
-		ray->data = data;
-		ray->data.raw_normal = ray->data.normal;
-		if (vec3_dot(&ray->ray, &data.normal) < 0)
-			vec3_scale(&ray->data.normal, -1);
-	}
-	return (t);
+	ray->data = data;
+	return (r);
 }

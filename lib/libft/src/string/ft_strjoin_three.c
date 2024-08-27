@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 14:41:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:29:39 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/02/27 02:37:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "ft_mem.h"
 #include "ft_string.h"
+#include "ft_mem.h"
+#include <stdlib.h>
 
 char	*ft_strjoin_three(const char *s1, const char *s2, const char *s3)
 {

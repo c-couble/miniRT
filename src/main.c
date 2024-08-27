@@ -6,14 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:36:07 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 05:02:33 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
 #include "engine.h"
 #include "mlx.h"
+#include <stdio.h>
+#include <unistd.h>
 
 int	main(int argc, char *argv[])
 {

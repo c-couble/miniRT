@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:33:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:29:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/05/13 20:56:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <limits.h>
 #include "ft_char.h"
+#include <limits.h>
 
 int	ft_atoi(const char *nptr)
 {

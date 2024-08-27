@@ -6,17 +6,17 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 04:56:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:45:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/25 05:04:44 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <X11/X.h>
 #include "color.h"
 #include "defines.h"
 #include "mlx.h"
 #include "mlx_wrapper.h"
+#include <X11/X.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 static void	init_values(t_mlx *mlx);
 static void	init_intern_hooks(t_mlx *mlx);

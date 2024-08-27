@@ -6,14 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:02:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:40:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/20 03:22:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
-#include "float.h"
 #include "object.h"
+#include "color.h"
 #include "vec3.h"
+#include "float.h"
 
 int	parse_triangle(t_object_data *data)
 {

@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mat4_print.c                                       :+:      :+:    :+:   */
+/*   quaternion_inv.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/24 07:53:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:36:26 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:48:20 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/29 07:34:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
-#include "mat4.h"
+#include "quaternion.h"
+#include "vec3.h"
 
-void	mat4_print(t_mat4 *mat)
+void	quaternion_inv(t_quaternion *q, t_quaternion *out)
 {
-	size_t	i;
+	double	denom;
 
-	i = 0;
-	while (i < 16)
-	{
-		if (i % 4 == 0 && i != 0)
-			printf("\n");
-		printf("%lf ", mat->matrix[i]);
-		++i;
-	}
-	printf("\n");
+	denom = (q->a * q->a + vec3_dot_product(&q->vec, &q->vec));
+	out->a = q->a / denom;
+	out->vec = q->vec;
+	vec3_scale(&out->vec, -1);
+	vec3_scale(&out->vec, 1 / denom);
 }

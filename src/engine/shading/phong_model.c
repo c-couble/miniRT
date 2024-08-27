@@ -6,14 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 18:57:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:36:02 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/24 01:02:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <math.h>
 #include "color_util.h"
 #include "ft_math.h"
 #include "shading.h"
+#include <math.h>
 
 static void	difuse_reflect(t_color *light, t_vec3 *light_n, t_ray *ray);
 static void	specular_reflect(t_color *light, t_ray *light_r, t_ray *camera_r);
@@ -40,7 +40,7 @@ static void	specular_reflect(t_color *light, t_ray *light_r, t_ray *camera_r)
 
 	shine = camera_r->data.materials.specular_shine;
 	get_reflection_ray(light_r, camera_r, &reflection_ray);
-	specular_ratio = vec3_dot(&reflection_ray, &camera_r->ray);
+	specular_ratio = vec3_dot_product(&reflection_ray, &camera_r->ray);
 	specular_ratio = pow(specular_ratio, shine);
 	if (specular_ratio < 0)
 		return ;
@@ -53,7 +53,7 @@ static void	difuse_reflect(t_color *light, t_vec3 *light_n, t_ray *camera_r)
 	t_vec3	object_n;
 
 	object_n = camera_r->data.normal;
-	ratio = vec3_dot(light_n, &object_n);
+	ratio = vec3_dot_product(light_n, &object_n);
 	ratio = ft_dabs(ratio);
 	light->color = scale_color(light, ratio);
 }

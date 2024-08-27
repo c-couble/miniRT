@@ -6,14 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:59:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 04:51:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/26 04:14:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "keyboard.h"
 #include "mlx_wrapper.h"
-#include "object/camera.h"
 
 static int	init_movement_hooks(t_engine *engine);
 static int	init_rotation_hooks(t_engine *engine);
@@ -33,9 +32,6 @@ int	init_camera_hooks(t_engine *engine)
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	hook = create_mlx_hook(speed_up, engine, MOUSE_WHEELUP, MOUSE);
-	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
-		return (-1);
-	hook = create_mlx_hook(change_render_mode, engine, KEY_M, PRESS);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	return (0);

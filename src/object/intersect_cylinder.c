@@ -6,17 +6,18 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:37:54 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/21 04:22:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <math.h>
 #include "math_util.h"
 #include "object.h"
 #include "object/plane.h"
 #include "ray.h"
-#include "util.h"
 #include "vec3.h"
+#include "util.h"
+#include <math.h>
+#include <stdio.h>
 
 static double	hit_cyl(t_object *obj, t_ray *ray, t_vec3 *r1, t_vec3 *r2);
 static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p);
@@ -77,15 +78,15 @@ static void	solve_cylinder_quadratic(t_object *obj, t_ray *ray, t_quadratic *q)
 	double	closest;
 
 	vec3_subtract(&ray->startpos, &obj->data.cylinder.pos, &tmp);
-	vec3_cross(&obj->data.cylinder.axis, &tmp, &ra0);
-	vec3_cross(&ra0, &obj->data.cylinder.axis, &ra0);
-	vec3_cross(&obj->data.cylinder.axis, &ray->ray, &va);
-	vec3_cross(&va, &obj->data.cylinder.axis, &va);
-	q->a = vec3_dot(&va, &va);
-	q->c = vec3_dot(&ra0, &ra0) - powl(obj->data.cylinder.radius, 2);
+	vec3_cross_product(&obj->data.cylinder.axis, &tmp, &ra0);
+	vec3_cross_product(&ra0, &obj->data.cylinder.axis, &ra0);
+	vec3_cross_product(&obj->data.cylinder.axis, &ray->ray, &va);
+	vec3_cross_product(&va, &obj->data.cylinder.axis, &va);
+	q->a = vec3_dot_product(&va, &va);
+	q->c = vec3_dot_product(&ra0, &ra0) - powl(obj->data.cylinder.radius, 2);
 	tmp = ra0;
 	vec3_scale(&ra0, 2);
-	q->b = vec3_dot(&ra0, &va);
+	q->b = vec3_dot_product(&ra0, &va);
 	solve_quadratic_equation(q);
 	if (q->delta < 0)
 		return ;
@@ -101,10 +102,10 @@ static double	point_far(t_object *obj, t_vec3 *rray, t_vec3 *r1, t_vec3 *r2)
 	t_vec3	cmp;
 
 	vec3_subtract(rray, r1, &cmp);
-	if (vec3_dot(&cmp, &obj->data.cylinder.axis) <= 0)
+	if (vec3_dot_product(&cmp, &obj->data.cylinder.axis) <= 0)
 		return (1);
 	vec3_subtract(rray, r2, &cmp);
-	if (vec3_dot(&cmp, &obj->data.cylinder.axis) >= 0)
+	if (vec3_dot_product(&cmp, &obj->data.cylinder.axis) >= 0)
 		return (1);
 	return (0);
 }

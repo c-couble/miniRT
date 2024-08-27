@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:39:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/07 00:05:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "float.h"
-#include <math.h>
 #include "ft_string.h"
 #include "object.h"
 #include "object/parse_util.h"
+#include "float.h"
+#include <math.h>
 
 static double	get_theta_axis(t_vec3 *axis, t_vec3 *rot_axis);
 
@@ -47,9 +47,9 @@ static double	get_theta_axis(t_vec3 *axis, t_vec3 *rot_axis)
 	z.x = 0;
 	z.y = 0;
 	z.z = 1;
-	vec3_cross(axis, &z, rot_axis);
+	vec3_cross_product(axis, &z, rot_axis);
 	vec3_normalize(&z);
-	theta = vec3_dot(axis, &z)
+	theta = vec3_dot_product(axis, &z)
 		/ (vec3_get_norm(axis) * vec3_get_norm(&z));
 	theta = acos(theta);
 	if (rot_axis->x == 0 && rot_axis->y == 0 && rot_axis->z == 0)
