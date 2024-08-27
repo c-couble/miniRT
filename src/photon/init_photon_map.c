@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 03:50:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 06:07:40 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int	init_photon_map(t_engine *eng)
 		}
 		++i;
 	}
+	print_photon_map(&photon_map);
 	eng->node = init_kdtree(&photon_map, 0);
 	clear_vector(&photon_map);
 	print_kdtree(eng->node, 0);
@@ -55,7 +56,6 @@ static int	get_photon(t_vector *photons, t_engine *eng, t_light *light)
 	t_ray		p_ray;
 
 	i = 0;
-	photon.color.color = 15510;
 	while (i < eng->scene.objects.size)
 	{
 		curr = at_vector(&eng->scene.objects, i);
@@ -67,7 +67,7 @@ static int	get_photon(t_vector *photons, t_engine *eng, t_light *light)
 				p_ray.startpos = light->pos;
 				vec3_subtract(&curr->data.sphere.pos, &p_ray.startpos, &p_ray.ray);
 				vec3_normalize(&p_ray.ray);
-				vec3_random(&p_ray.ray, 1.0, 1.20);
+				vec3_random(&p_ray.ray, 1.0, 1.40);
 				if (trace_photon(eng, &p_ray, DEPTH, &photon))
 				{
 					photon.color.color = light->color.color;

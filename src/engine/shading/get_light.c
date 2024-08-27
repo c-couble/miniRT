@@ -6,17 +6,18 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 04:15:02 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 06:25:59 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "kdtree.h"
 #include "shading.h"
 #include "color_util.h"
 #include "photon.h"
 #include <float.h>
 #include <math.h>
-#include <stdio.h>
+#include "ft_math.h"
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 
@@ -41,21 +42,18 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 	}
 	t_kaboul	kaboul;
 	get_nearest_neighbour(&kaboul, engine->node, &ray->data.hitpos);
-	if (kaboul.node)
+	t_ray	p_ray;
+	double	d = sqrtf(kaboul.best_dist);
+	p_ray.startpos = ray->startpos;
+	p_ray.ray = kaboul.node->photon.pos;
+	p_ray.data.color.color = kaboul.node->photon.color.color;
+	if (ft_dabs(d) <= 1)
 	{
-		t_ray	p_ray;
-		double d = sqrtf(kaboul.best_dist);
-		p_ray.startpos = ray->startpos;
-		p_ray.ray = kaboul.node->photon.pos;
-		p_ray.data.color.color = kaboul.node->photon.color.color;
-		if (d < 0.1)
-		{
-			t_object obj;
-			obj.data.light.pos = p_ray.startpos;
-			obj.data.light.color = p_ray.data.color;
-			phong_model(&obj, &light, ray, &p_ray);
-			light.color = scale_color(&light, 5);
-		}
+		t_object obj;
+		obj.data.light.pos = p_ray.startpos;
+		obj.data.light.color = p_ray.data.color;
+		obj.data.light.ratio = 1;
+		phong_model(&obj, &light, ray, &p_ray);
 	}
 	return (multiply_color(&light, &ray->data.color));
 }

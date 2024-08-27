@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/24 01:09:02 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 05:18:19 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ uint32_t	get_pixel_color(t_engine *engine, t_ray *c_ray, int depth)
 
 	if (depth <= 0)
 		return (BACKGROUND_COLOR);
+	c_ray->depth = depth;
 	if (trace_ray(engine, c_ray) > -INACCURATE_ZERO)
 	{
 		color.color = get_light(engine, c_ray);
