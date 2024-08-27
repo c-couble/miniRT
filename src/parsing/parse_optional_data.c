@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:20:26 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 07:03:52 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,10 @@ int	parse_optional_data(t_object *object)
 		type = get_optional_type(name);
 		if (type == UNKNOWN_OPTION)
 			return (-1);
-		parse_option(object, type, ft_strtok_r(NULL, ":", &save));
+		arg = ft_strtok_r(NULL, ":", &save);
+		if (arg == NULL)
+			return (-1);
+		parse_option(object, type, arg);
 		arg = ft_strtok(NULL, " \t");
 	}
 	return (0);
