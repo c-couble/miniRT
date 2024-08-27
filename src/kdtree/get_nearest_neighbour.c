@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 20:06:43 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 20:36:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	nearest_neighbour(t_kdtree *node, t_kaboul *kaboul, t_vec3 *target, int dep
 	double		dist;
 	t_kdtree	*next_branch;
 	t_kdtree	*other_branch;
-	double		axis_lenght;
+	double		dist_from_plane;
 
 	if (node == NULL)
 		return ;
@@ -65,13 +65,13 @@ void	nearest_neighbour(t_kdtree *node, t_kaboul *kaboul, t_vec3 *target, int dep
 		other_branch = node->left;
 	}
 	nearest_neighbour(next_branch, kaboul, target, depth + 1);
-	axis_lenght = 0.0f;
+	dist_from_plane = 0.0f;
 	if (axis == 0)
-		axis_lenght = target->x - node->photon.pos.x;
+		dist_from_plane = target->x - node->photon.pos.x;
 	else if (axis == 1)
-		axis_lenght = target->y - node->photon.pos.y;
+		dist_from_plane = target->y - node->photon.pos.y;
 	else 
-		axis_lenght = target->z - node->photon.pos.z;
-	if (axis_lenght * axis_lenght < kaboul->best_dist)
+		dist_from_plane = target->z - node->photon.pos.z;
+	if (dist_from_plane * dist_from_plane < kaboul->best_dist)
 		nearest_neighbour(other_branch, kaboul, target, depth + 1);
 }
