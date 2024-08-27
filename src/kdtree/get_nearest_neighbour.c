@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 04:43:02 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 20:06:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,20 +67,11 @@ void	nearest_neighbour(t_kdtree *node, t_kaboul *kaboul, t_vec3 *target, int dep
 	nearest_neighbour(next_branch, kaboul, target, depth + 1);
 	axis_lenght = 0.0f;
 	if (axis == 0)
-	{
-		axis_lenght = target->x - node->photon.pos.y;
-	}
+		axis_lenght = target->x - node->photon.pos.x;
 	else if (axis == 1)
-	{
 		axis_lenght = target->y - node->photon.pos.y;
-	}
 	else 
-	{
 		axis_lenght = target->z - node->photon.pos.z;
-	}
-	axis_lenght = axis_lenght * axis_lenght;
-	if (axis_lenght < kaboul->best_dist)
-	{
+	if (axis_lenght * axis_lenght < kaboul->best_dist)
 		nearest_neighbour(other_branch, kaboul, target, depth + 1);
-	}
 }
