@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   light.h                                            :+:      :+:    :+:   */
+/*   change_render_mode.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:42:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/27 04:46:40 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/27 04:51:48 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIGHT_H
-# define LIGHT_H
+#include "engine.h"
+#include "object/camera.h"
 
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_light
+void	change_render_mode(t_engine *engine)
 {
-	t_vec3	pos;
-	double	ratio;
-	t_color	color;
-}	t_light;
-
-union	u_object_data;
-
-int	parse_light(union u_object_data *object);
-
-#endif
+	++engine->scene.camera.render_type;
+	if (engine->scene.camera.render_type > UV_MAP)
+		engine->scene.camera.render_type = CLASSIC;
+	engine->scene.camera.should_render = 1;
+}

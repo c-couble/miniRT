@@ -6,15 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/24 01:07:56 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 05:43:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef RAY_H
 # define RAY_H
 
-# include "engine.h"
 # include "color.h"
+# include "engine.h"
 # include "object/material.h"
 # include "vec3.h"
 
@@ -24,7 +24,11 @@ typedef struct s_hit_data
 {
 	t_vec3			hitpos;
 	t_vec3			normal;
+	t_vec3			raw_normal;
 	t_color			color;
+	double			u;
+	double			v;
+	struct s_object	*obj;
 	t_material_data	materials;
 }	t_hit_data;
 

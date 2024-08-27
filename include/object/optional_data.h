@@ -1,19 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vec3_get_norm.c                                    :+:      :+:    :+:   */
+/*   optional_data.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 01:04:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:37:56 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/27 02:18:02 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/27 05:20:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vec3.h"
-#include <math.h>
+#ifndef OPTIONAL_DATA_H
+# define OPTIONAL_DATA_H
 
-double	vec3_get_norm(t_vec3 *vec)
+# include "object/material.h"
+
+typedef enum e_option_t
 {
-	return (sqrt(powl(vec->x, 2) + powl(vec->y, 2) + powl(vec->z, 2)));
-}
+	MATERIAL,
+	UNKNOWN_OPTION,
+}	t_option_t;
+
+typedef struct s_optional_data
+{
+	t_material_data	material;
+	int				has_material;
+}	t_optional_data;
+
+struct	s_object;
+
+int	parse_optional_data(struct s_object *object);
+
+#endif

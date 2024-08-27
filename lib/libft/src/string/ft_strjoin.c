@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 20:37:19 by ccouble           #+#    #+#             */
-/*   Updated: 2024/02/27 02:52:12 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:29:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
-#include "ft_mem.h"
 #include <stdlib.h>
+#include "ft_mem.h"
+#include "ft_string.h"
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {

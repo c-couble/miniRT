@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:59:22 by ccouble           #+#    #+#             */
-/*   Updated: 2024/02/27 02:52:22 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:29:24 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
-#include "ft_mem.h"
 #include <stdlib.h>
+#include "ft_mem.h"
+#include "ft_string.h"
 
 char	*ft_strdup(const char *s)
 {

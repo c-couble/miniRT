@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 17:17:49 by ccouble           #+#    #+#             */
-/*   Updated: 2023/12/16 05:58:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:28:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_io.h"
 #include <limits.h>
+#include "ft_io.h"
 
 int	ft_putnbr_fd(int n, int fd)
 {

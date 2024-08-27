@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 04:11:09 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/25 04:53:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:37:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mlx_wrapper.h"
 #include <stddef.h>
+#include "mlx_wrapper.h"
 
 int	key_down_hook(int key, t_mlx *mlx)
 {

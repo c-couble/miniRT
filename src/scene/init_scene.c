@@ -6,22 +6,22 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 02:32:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:41:04 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "scene.h"
-#include "ft_mem.h"
-#include "ft_io.h"
-#include "vector.h"
-#include "object.h"
-#include "ft_string.h"
-#include "util.h"
 #include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>
-#include <unistd.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include "ft_io.h"
+#include "ft_mem.h"
+#include "ft_string.h"
+#include "object.h"
+#include "scene.h"
+#include "util.h"
+#include "vector.h"
 
 static int	get_file(char *file);
 static int	read_file(t_scene *scene, int fd);

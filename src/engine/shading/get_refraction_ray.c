@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 00:20:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/24 02:50:31 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 01:15:16 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ void	get_refraction_ray(t_ray *to_ref, t_vec3 *out_ref, double n1)
 	double	eta;
 
 	i = to_ref->ray;
-	n = to_ref->data.normal;
-	dot_n_i = vec3_dot_product(&n, &i);
+	n = to_ref->data.raw_normal;
+	dot_n_i = vec3_dot(&n, &i);
 	eta = get_eta(&dot_n_i, n1, &n);
 	k = 1 - eta * eta * (1 - dot_n_i * dot_n_i);
 	if (k < 0)

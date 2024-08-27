@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 19:41:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/02/27 02:45:33 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:30:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
-#include "ft_mem.h"
 #include <stdlib.h>
+#include "ft_mem.h"
+#include "ft_string.h"
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {

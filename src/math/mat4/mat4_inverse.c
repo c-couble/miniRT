@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 05:02:15 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/19 03:31:44 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:36:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mat4.h"
-#include "ft_math.h"
 #include <unistd.h>
+#include "ft_math.h"
+#include "mat4.h"
 
 static void		subtract_line(t_mat4 *left, t_mat4 *right, int r, int j);
 static int		get_pivot(t_mat4 *left, t_mat4 *right, int r, int j);

@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vec3_cross_product.c                               :+:      :+:    :+:   */
+/*   quaternion_mult.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 01:22:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/11 20:44:33 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:35:30 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/27 00:50:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "quaternion.h"
 #include "vec3.h"
 
-t_vec3	*vec3_cross_product(t_vec3 *a, t_vec3 *b, t_vec3 *out)
+void	quaternion_mult(t_quaternion *a, t_quaternion *b, t_quaternion *out)
 {
-	const double	x = a->y * b->z - a->z * b->y;
-	const double	y = a->z * b->x - a->x * b->z;
-	const double	z = a->x * b->y - a->y * b->x;
+	t_quaternion	tmp;
+	t_vec3			veca;
+	t_vec3			vecb;
 
-	out->x = x;
-	out->y = y;
-	out->z = z;
-	return (out);
+	tmp.a = a->a * b->a - vec3_dot(&a->vec, &b->vec);
+	veca = a->vec;
+	vecb = b->vec;
+	vec3_scale(&veca, b->a);
+	vec3_scale(&vecb, a->a);
+	vec3_cross(&a->vec, &b->vec, &tmp.vec);
+	vec3_add(&tmp.vec, &veca, &tmp.vec);
+	vec3_add(&tmp.vec, &vecb, &tmp.vec);
+	*out = tmp;
 }
