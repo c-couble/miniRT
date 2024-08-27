@@ -1,30 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mat4_print.c                                       :+:      :+:    :+:   */
+/*   vec3_get_norm.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/24 07:53:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/24 07:58:43 by ccouble          ###   ########.fr       */
+/*   Created: 2024/06/03 01:04:29 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/27 05:36:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mat4.h"
-#include <stddef.h>
-#include <stdio.h>
+#include <math.h>
+#include "vec3.h"
 
-void	mat4_print(t_mat4 *mat)
+double	vec3_get_norm(t_vec3 *vec)
 {
-	size_t	i;
-
-	i = 0;
-	while (i < 16)
-	{
-		if (i % 4 == 0 && i != 0)
-			printf("\n");
-		printf("%lf ", mat->matrix[i]);
-		++i;
-	}
-	printf("\n");
+	return (sqrt(powl(vec->x, 2) + powl(vec->y, 2) + powl(vec->z, 2)));
 }

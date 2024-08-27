@@ -6,14 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 17:38:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/12 21:31:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:28:24 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_utils.h"
 #include <stdlib.h>
 #include <unistd.h>
 #include "ft_mem.h"
+#include "get_next_line_utils.h"
 #include "vector.h"
 
 static int	read_lines(t_buffer *buf, t_vector *line, int fd);

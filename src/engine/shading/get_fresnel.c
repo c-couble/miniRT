@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 00:31:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/24 02:50:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 00:50:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	compute_fresnel(t_ray *ray, double n1, double *kr)
 	double	etat;
 	double	sint;
 
-	cosi = vec3_dot_product(&ray->ray, &ray->data.normal);
+	cosi = vec3_dot(&ray->ray, &ray->data.normal);
 	etai = AIR_RATIO;
 	etat = n1;
 	sint = etai / etat * sqrtf(cosi * cosi);

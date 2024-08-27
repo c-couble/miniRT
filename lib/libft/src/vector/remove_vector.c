@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 10:17:00 by ccouble           #+#    #+#             */
-/*   Updated: 2024/04/10 01:50:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:31:00 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vector.h"
 #include "ft_mem.h"
+#include "vector.h"
 
 void	remove_vector(t_vector *this, size_t i)
 {

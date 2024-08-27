@@ -6,6 +6,7 @@ SRC = \
 	  \
 	  camera/init_camera_hooks.c \
 	  camera/hooks/camera_mouse_hook.c \
+	  camera/hooks/change_render_mode.c \
 	  camera/hooks/lock_camera.c \
 	  camera/hooks/move_backwards.c \
 	  camera/hooks/move_down.c \
@@ -36,6 +37,29 @@ SRC = \
 	  engine/shading/get_refract.c \
 	  engine/shading/phong_model.c \
 	  \
+	  math/mat4/divide_line.c \
+	  math/mat4/mat4_identity.c \
+	  math/mat4/mat4_inverse.c \
+	  math/mat4/mat4_multiply.c \
+	  math/mat4/mat4_print.c \
+	  math/mat4/swap_lines.c \
+	  \
+	  math/vec3/vec3_add.c \
+	  math/vec3/vec3_create.c \
+	  math/vec3/vec3_cross.c \
+	  math/vec3/vec3_dot.c \
+	  math/vec3/vec3_get_norm.c \
+	  math/vec3/vec3_normalize.c \
+	  math/vec3/vec3_scale.c \
+	  math/vec3/vec3_subtract.c \
+	  \
+	  math/vec4/vec4_create.c \
+	  math/vec4/vec4_mat4_mult.c \
+	  \
+	  math/quaternion/quaternion_inv.c \
+	  math/quaternion/quaternion_mult.c \
+	  math/quaternion/quaternion_rotate.c \
+	  \
 	  mlx_wrapper/hooks/destroy_hook.c \
 	  mlx_wrapper/hooks/focus_in_hook.c \
 	  mlx_wrapper/hooks/focus_out_hook.c \
@@ -57,13 +81,6 @@ SRC = \
 	  object/intersect_sphere.c \
 	  object/intersect_triangle.c \
 	  \
-	  mat4/divide_line.c \
-	  mat4/mat4_identity.c \
-	  mat4/mat4_inverse.c \
-	  mat4/mat4_multiply.c \
-	  mat4/mat4_print.c \
-	  mat4/swap_lines.c \
-	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
@@ -73,6 +90,7 @@ SRC = \
 	  parsing/parse_light.c \
 	  parsing/parse_material.c \
 	  parsing/parse_normalized_vector3d.c \
+	  parsing/parse_optional_data.c \
 	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \
 	  parsing/parse_sphere.c \
@@ -81,10 +99,6 @@ SRC = \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
-	  \
-	  quaternion/quaternion_inv.c \
-	  quaternion/quaternion_mult.c \
-	  quaternion/quaternion_rotate.c \
 	  \
 	  ray/trace_ray.c \
 	  \
@@ -101,17 +115,5 @@ SRC = \
 	  util/scale_color.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
-	  \
-	  vec3/vec3_add.c \
-	  vec3/vec3_create.c \
-	  vec3/vec3_cross_product.c \
-	  vec3/vec3_dot_product.c \
-	  vec3/vec3_get_norm.c \
-	  vec3/vec3_normalize.c \
-	  vec3/vec3_scale.c \
-	  vec3/vec3_subtract.c \
-	  \
-	  vec4/vec4_create.c \
-	  vec4/vec4_mat4_mult.c \
 	  \
 	  main.c \

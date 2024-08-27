@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 02:29:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/24 00:57:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 05:42:23 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef COLOR_UTIL_H
 # define COLOR_UTIL_H
 
-# include "ray.h"
 # include "color.h"
+# include "ray.h"
 
 uint32_t	add_color(t_color *c1, t_color *c2);
 uint32_t	multiply_color(t_color *c1, t_color *c2);

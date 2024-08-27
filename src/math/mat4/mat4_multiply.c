@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 18:01:15 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/16 18:18:28 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:36:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mat4.h"
 #include <stddef.h>
+#include "mat4.h"
 
 void	mat4_multiply(t_mat4 *a, t_mat4 *b, t_mat4 *out)
 {

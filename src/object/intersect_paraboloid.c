@@ -6,17 +6,17 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/26 06:25:26 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 05:38:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "quaternion.h"
-#include "vec3.h"
-#include "ray.h"
+#include "ft_math.h"
 #include "math_util.h"
 #include "object.h"
+#include "quaternion.h"
+#include "ray.h"
 #include "util.h"
-#include "ft_math.h"
+#include "vec3.h"
 
 static int		check_height(t_ray *ray, t_paraboloid *para);
 static void		get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid);
@@ -77,7 +77,7 @@ static int	check_height(t_ray *ray, t_paraboloid *para)
 	const t_vec3	pos = {0, 0, 0};
 
 	vec3_subtract(&ray->data.hitpos, (t_vec3 *)&pos, &origin_hit);
-	if (ft_dabs(vec3_dot_product((t_vec3 *)&axis, &origin_hit)) > para->height)
+	if (ft_dabs(vec3_dot((t_vec3 *)&axis, &origin_hit)) > para->height)
 		return (-1);
 	return (0);
 }

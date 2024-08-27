@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:44:49 by ccouble           #+#    #+#             */
-/*   Updated: 2024/02/27 01:49:40 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:28:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_mem.h"
-#include <stdlib.h>
 #include <stdint.h>
+#include <stdlib.h>
+#include "ft_mem.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
