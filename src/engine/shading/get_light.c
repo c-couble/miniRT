@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 06:59:40 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 07:06:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "kdtree.h"
 #include "shading.h"
 #include "color_util.h"
@@ -23,19 +24,21 @@ static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *pixel_light)
 {
 	t_kaboul	kaboul;
+	t_object	obj;
+	t_ray		photon_ray;
+	double		norm;
+	
 	get_nearest_neighbour(&kaboul, photons, &c_ray->data.hitpos);
-	t_ray	p_ray;
-	double	d = sqrtf(kaboul.best_dist);
-	p_ray.startpos = c_ray->startpos;
-	p_ray.ray = kaboul.node->photon.pos;
-	p_ray.data.color.color = kaboul.node->photon.color.color;
-	if (ft_dabs(d) <= 1)
+	norm = sqrtf(kaboul.best_dist);
+	photon_ray.startpos = c_ray->startpos;
+	photon_ray.ray = kaboul.node->photon.pos;
+	photon_ray.data.color.color = kaboul.node->photon.color.color;
+	if (ft_dabs(norm) <= PHOTON_DISTANCE)
 	{
-		t_object obj;
-		obj.data.light.pos = p_ray.startpos;
-		obj.data.light.color = p_ray.data.color;
+		obj.data.light.pos = photon_ray.startpos;
+		obj.data.light.color = photon_ray.data.color;
 		obj.data.light.ratio = 1;
-		phong_model(&obj, pixel_light, c_ray, &p_ray);
+		phong_model(&obj, pixel_light, c_ray, &photon_ray);
 	}
 }
 
