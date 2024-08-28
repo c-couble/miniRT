@@ -6,10 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 06:23:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 06:57:16 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <errno.h>
+#include <stdio.h>
 #include "engine.h"
 #include "kdtree.h"
 #include "object.h"
@@ -17,7 +19,6 @@
 #include "vec3.h"
 #include "vector.h"
 #include "defines.h"
-#include <stdio.h>
 
 static int	get_photon(t_vector *photons, t_engine *eng, t_light *light);
 
@@ -43,8 +44,12 @@ int	init_photon_map(t_engine *eng)
 	print_photon_map(&photon_map);
 	eng->node = init_kdtree(&photon_map, 0);
 	clear_vector(&photon_map);
+	if (eng->node == NULL && errno)
+	{
+		clear_kdtree(eng->node);
+		return (-1);
+	}
 	print_kdtree(eng->node, 0);
-	//	clear_kdtree(eng->node);
 	return (0);
 }
 
