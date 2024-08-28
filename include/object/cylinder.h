@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 18:15:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:22:30 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/26 04:13:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ typedef struct s_cylinder
 }	t_cylinder;
 
 union	u_object_data;
+struct	s_engine;
 
-int	parse_cylinder(union u_object_data *object);
+int	parse_cylinder(struct s_engine *engine, union u_object_data *object);
 
 #endif

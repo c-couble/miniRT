@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_plane.c                                      :+:      :+:    :+:   */
+/*   mesh.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:11:30 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/20 03:43:40 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/26 04:12:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "float.h"
-#include "color.h"
-#include "object.h"
-#include "vec3.h"
+#ifndef MESH_H
+# define MESH_H
 
-int	parse_plane(t_engine *engine, t_object_data *data)
+# include "obj_3d.h"
+# include "vec3.h"
+
+typedef struct s_mesh
 {
-	(void) engine;
-	if (parse_vector3d(&data->plane.pos, -DBL_MAX, DBL_MAX) == -1)
-		return (-1);
-	if (parse_normalized_vector3d(&data->plane.normal) == -1)
-		return (-1);
-	if (parse_color(&data->plane.color) == -1)
-		return (-1);
-	return (0);
-}
+	char		*name;
+	t_vec3		pos;
+	t_vec3		orientation;
+	double		scale;
+
+	t_obj_3d	*obj_3d;
+}	t_mesh;
+
+union	u_object_data;
+struct	s_engine;
+
+int	parse_mesh(struct s_engine *engine, union u_object_data *object);
+
+#endif

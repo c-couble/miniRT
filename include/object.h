@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:20:49 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:06:53 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include "object/camera.h"
 # include "object/cylinder.h"
 # include "object/light.h"
+# include "object/mesh.h"
 # include "object/optional_data.h"
 # include "object/plane.h"
 # include "object/paraboloid.h"
@@ -34,6 +35,7 @@ typedef enum e_object_type
 	CYLINDER,
 	PARABOLOID,
 	TRIANGLE,
+	MESH,
 	UNKNOWN_OBJ,
 	COMMENT
 }	t_object_type;
@@ -44,6 +46,7 @@ typedef union u_object_data
 	t_camera		camera;
 	t_cylinder		cylinder;
 	t_light			light;
+	t_mesh			mesh;
 	t_plane			plane;
 	t_sphere		sphere;
 	t_paraboloid	paraboloid;
@@ -57,12 +60,13 @@ typedef struct s_object
 	t_optional_data	optional_data;
 }	t_object;
 
-int		init_object(t_object *object, char *line);
+int		init_object(t_engine *engine, t_object *object, char *line);
 double	intersect(t_object *obj, t_ray *ray);
 double	intersect_sphere(t_object *obj, t_ray *ray);
 double	intersect_cylinder(t_object *obj, t_ray *ray);
 double	intersect_plane(t_object *obj, t_ray *ray);
 double	intersect_paraboloid(t_object *obj, t_ray *ray);
 double	intersect_triangle(t_object *obj, t_ray *ray);
+double	intersect_mesh(t_object *obj, t_ray *ray);
 
 #endif

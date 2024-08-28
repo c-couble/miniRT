@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:38:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:10:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 #include "object/optional_data.h"
 
 static t_object_type	get_object_type(char *type);
-static int				parse_object(t_object *object);
+static int				parse_object(t_engine *engine, t_object *object);
 
-int	init_object(t_object *object, char *line)
+int	init_object(t_engine *engine, t_object *object, char *line)
 {
 	char	*word;
 
@@ -33,7 +33,7 @@ int	init_object(t_object *object, char *line)
 		return (-1);
 	if (object->type == COMMENT)
 		return (0);
-	if (parse_object(object) == -1)
+	if (parse_object(engine, object) == -1)
 		return (-1);
 	if (object->type != LIGHT
 		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
@@ -55,6 +55,7 @@ static t_object_type	get_object_type(char *type)
 	[CYLINDER] = "cy",
 	[PARABOLOID] = "pa",
 	[TRIANGLE] = "tr",
+	[MESH] = "mesh",
 	};
 	size_t		i;
 
@@ -70,9 +71,9 @@ static t_object_type	get_object_type(char *type)
 	return (UNKNOWN_OBJ);
 }
 
-static int	parse_object(t_object *object)
+static int	parse_object(t_engine *engine, t_object *object)
 {
-	static int	(*values[])(t_object_data *data) = {
+	static int	(*values[])(t_engine *engine, t_object_data *data) = {
 	[AMBIENT_LIGHT] = parse_ambient_light,
 	[CAMERA] = parse_camera,
 	[LIGHT] = parse_light,
@@ -81,7 +82,9 @@ static int	parse_object(t_object *object)
 	[CYLINDER] = parse_cylinder,
 	[PARABOLOID] = parse_paraboloid,
 	[TRIANGLE] = parse_triangle,
+	[MESH] = parse_mesh,
 	};
+	(void)engine;
 
-	return (values[object->type](&object->data));
+	return (values[object->type](engine, &object->data));
 }

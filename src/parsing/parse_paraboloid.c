@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:39:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:11:23 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,11 @@
 
 static double	get_theta_axis(t_vec3 *axis, t_vec3 *rot_axis);
 
-int	parse_paraboloid(t_object_data *data)
+int	parse_paraboloid(t_engine *engine, t_object_data *data)
 {
 	char	*arg;
 
+	(void) engine;
 	if (parse_vector3d(&data->paraboloid.pos, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_normalized_vector3d(&data->paraboloid.axis) == -1)

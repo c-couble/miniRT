@@ -6,86 +6,52 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:38:38 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:10:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
-#include "object.h"
-#include "ray.h"
-#include "util.h"
 #include "vec3.h"
-
-static void		get_plane_from_triangle(t_triangle *tr, t_plane *p);
-static int		bsp(t_vec3 *a, t_vec3 *b, t_vec3 *c, t_vec3 *p);
-static double	triangle_area(t_vec3 *a, t_vec3 *b, t_vec3 *c);
+#include "ray.h"
+#include "object.h"
+#include "defines.h"
+#include <unistd.h>
 
 double	intersect_triangle(t_object *obj, t_ray *ray)
 {
-	t_plane		plane;
-	t_triangle	tr;
-	double		t;
+	t_vec3	O = ray->startpos;
+	t_vec3	D = ray->ray;
+	t_vec3	T;
+	t_vec3	E1;
+	t_vec3	E2;
+	t_vec3	P;
+	t_vec3	Q;
 
-	get_plane_from_triangle(&obj->data.triangle, &plane);
-	tr = obj->data.triangle;
-	ray->data.color = tr.color;
-	t = solve_plane_equation(&plane, ray);
-	get_hitpos(ray, t);
-	ray->data.normal = plane.normal;
-	if (bsp(&tr.p0, &tr.p1, &tr.p2, &ray->data.hitpos))
-		return (t);
-	return (-1);
-}
+	vec3_subtract(&O, &obj->data.triangle.p0, &T);
+	vec3_subtract(&obj->data.triangle.p1, &obj->data.triangle.p0, &E1);
+	vec3_subtract(&obj->data.triangle.p2, &obj->data.triangle.p0, &E2);
+	vec3_cross(&D, &E2, &P);
+	vec3_cross(&T, &E1, &Q);
+	double inv_det = 1 / vec3_dot(&P, &E1);
+	double u = inv_det * vec3_dot(&P, &T);
+	if (u < 0 || u > 1)
+		return (-1);
+	double v = inv_det * vec3_dot(&Q, &D);
+	if (v < 0 || u + v > 1)
+		return (-1);
+	double t = inv_det * vec3_dot(&Q, &E2);
+	if (t < INACCURATE_ZERO)
+		return (-1);
 
-static void	get_plane_from_triangle(t_triangle *tr, t_plane *p)
-{
-	t_vec3	s1;
-	t_vec3	s2;
-	t_vec3	normal;
+	//ray->data.color = obj->data.triangle.color;
 
-	vec3_subtract(&tr->p1, &tr->p0, &s1);
-	vec3_subtract(&tr->p2, &tr->p1, &s2);
-	vec3_cross(&s1, &s2, &normal);
-	vec3_normalize(&normal);
-	p->pos = tr->p0;
-	p->normal.x = normal.x;
-	p->normal.y = normal.y;
-	p->normal.z = normal.z;
-}
-
-static int	bsp(t_vec3 *a, t_vec3 *b, t_vec3 *c, t_vec3 *point)
-{
-	double	base_ab_area;
-	double	base_ac_area;
-	double	base_bc_area;
-	double	abc_area;
-	double	sum_area;
-
-	base_ab_area = triangle_area(a, b, point);
-	base_ac_area = triangle_area(a, c, point);
-	base_bc_area = triangle_area(b, c, point);
-	abc_area = triangle_area(a, b, c);
-	sum_area = base_ab_area + base_ac_area + base_bc_area;
-	if (sum_area <= abc_area + INACCURATE_ZERO
-		&& sum_area >= abc_area - INACCURATE_ZERO)
-		return (1);
-	return (0);
-}
-
-static double	triangle_area(t_vec3 *a, t_vec3 *b, t_vec3 *c)
-{
-	double	abx;
-	double	aby;
-	double	acx;
-	double	acy;
-	double	area;
-
-	abx = a->x - b->x;
-	aby = a->y - b->y;
-	acx = a->x - c->x;
-	acy = a->y - c->y;
-	area = (abx * acy - aby * acx) / 2.0f;
-	if (area < 0)
-		area = area * -1;
-	return (area);
+	//ray->data.color.rgb.r = u * 255;
+	//ray->data.color.rgb.g = v * 255;
+	//ray->data.color.rgb.b = (1 - u - v) * 255;
+	vec3_cross(&E1, &E2, &ray->data.normal);
+	vec3_normalize(&ray->data.normal);
+	ray->data.color.rgb.r = (ray->data.normal.x + 1) * 0.5 * 255;
+	ray->data.color.rgb.g = (ray->data.normal.y + 1) * 0.5 * 255;
+	ray->data.color.rgb.b = (ray->data.normal.z + 1) * 0.5 * 255;
+	//vec3_normalize(&normal);
+	return (t);
 }
