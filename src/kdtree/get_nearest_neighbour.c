@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 04:12:15 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/29 01:36:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static void	get_nearest(t_kdtree *node, t_query *best, t_vec3 *aim, int depth)
 		other_branch = node->left;
 	}
 	get_nearest(next_branch, best, aim, depth + 1);
-	dist_from_plane = get_axis(aim, axis) - get_axis(aim, axis);
+	dist_from_plane = get_axis(aim, axis) - get_axis(&node->photon.pos, axis);
 	if (dist_from_plane * dist_from_plane < best->best_dist)
 		get_nearest(other_branch, best, aim, depth + 1);
 }
