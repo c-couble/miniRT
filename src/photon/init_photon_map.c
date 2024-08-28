@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 04:24:55 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 06:23:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ static int	get_photon(t_vector *photons, t_engine *eng, t_light *light)
 					if (add_vector(photons, &photon, 1) == -1)
 						return (-1);
 				}
-					++i;
+				++i;
 			}
 		}
 		++i;

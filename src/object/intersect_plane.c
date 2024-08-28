@@ -6,15 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 02:45:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/19 15:52:51 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 06:08:29 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ray.h"
 #include "object.h"
 #include "util.h"
-#include "ft_math.h"
-#include <math.h>
 
 double	intersect_plane(t_object *obj, t_ray *ray)
 {

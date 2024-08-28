@@ -6,42 +6,21 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 03:36:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 06:07:38 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
-#include "kdtree.h"
-#include "shading.h"
-#include "color_util.h"
-#include "photon.h"
-#include <float.h>
 #include <math.h>
+#include "color_util.h"
+#include "defines.h"
 #include "ft_math.h"
+#include "kdtree.h"
+#include "photon.h"
+#include "shading.h"
 #include "vec3.h"
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
-
-void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *pixel_light)
-{
-	t_query	kaboul;
-	t_object	obj;
-	t_ray		photon_ray;
-	double		norm;
-	
-	get_nearest_neighbour(&kaboul, photons, &c_ray->data.hitpos);
-	norm = sqrtf(kaboul.best_dist);
-	photon_ray.startpos = c_ray->startpos;
-	photon_ray.ray = kaboul.node->photon.pos;
-	photon_ray.data.color.color = kaboul.node->photon.color.color;
-	if (ft_dabs(norm) <= PHOTON_DISTANCE)
-	{
-		obj.data.light.pos = photon_ray.startpos;
-		obj.data.light.color = photon_ray.data.color;
-		obj.data.light.ratio = 1;
-		phong_model(&obj, pixel_light, c_ray, &photon_ray);
-	}
-}
+static void	apply_caustic_light(t_ray *ray, t_kdtree *photons, t_color *light);
 
 uint32_t	get_light(t_engine *engine, t_ray *ray)
 {
@@ -64,6 +43,27 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 	}
 	apply_caustic_light(ray, engine->node, &light);
 	return (multiply_color(&light, &ray->data.color));
+}
+
+static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
+{
+	t_query		target;
+	t_object	obj;
+	t_ray		photon_ray;
+	double		norm;
+
+	get_nearest_neighbour(&target, photons, &c_ray->data.hitpos);
+	norm = sqrtf(target.best_dist);
+	photon_ray.startpos = c_ray->startpos;
+	photon_ray.ray = target.node->photon.pos;
+	photon_ray.data.color.color = target.node->photon.color.color;
+	if (ft_dabs(norm) <= PHOTON_DISTANCE)
+	{
+		obj.data.light.pos = photon_ray.startpos;
+		obj.data.light.color = photon_ray.data.color;
+		obj.data.light.ratio = 1;
+		phong_model(&obj, light, c_ray, &photon_ray);
+	}
 }
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l)

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 06:54:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 07:06:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 06:29:05 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@
 # define SKY				7591935
 # define BACKGROUND_COLOR	0
 
-# define PHONTON_PER_OBJ	2
-# define PHOTON_DISTANCE	1
+# define PHONTON_PER_OBJ	10
+# define PHOTON_DISTANCE	0.1
 # define AIR_RATIO			1.0
 # define DEPTH				5
 
