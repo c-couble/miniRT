@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 02:43:06 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:38:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "ray.h"
 #include "util.h"
 #include "vec3.h"
+#include <stdio.h>
 
 int	trace_ray(t_engine *engine, t_ray *ray)
 {

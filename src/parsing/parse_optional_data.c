@@ -6,20 +6,21 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 07:03:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:45:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
+#include "engine.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/optional_data.h"
 
-static void			init_optional_data(t_optional_data *data);
+static void			init_optional_data(t_option *data);
 static t_option_t	get_optional_type(char *type);
-static int			parse_option(t_object *object, t_option_t type, char *arg);
+static int			parse_option(t_engine *engine, t_object *object, t_option_t type, char *arg);
 
-int	parse_optional_data(t_object *object)
+int	parse_optional_data(t_engine *engine, t_object *object)
 {
 	char		*arg;
 	char		*name;
@@ -39,13 +40,13 @@ int	parse_optional_data(t_object *object)
 		arg = ft_strtok_r(NULL, ":", &save);
 		if (arg == NULL)
 			return (-1);
-		parse_option(object, type, arg);
+		parse_option(engine, object, type, arg);
 		arg = ft_strtok(NULL, " \t");
 	}
 	return (0);
 }
 
-static void	init_optional_data(t_optional_data *data)
+static void	init_optional_data(t_option *data)
 {
 	data->material.diffuse_ratio = DIFFUSE_RATIO;
 	data->material.specular_ratio = SPECULAR_RATIO;
@@ -58,6 +59,7 @@ static t_option_t	get_optional_type(char *type)
 {
 	static char	*values[] = {
 	[MATERIAL] = "ma",
+	[TEXTURE] = "tx",
 	};
 	size_t		i;
 
@@ -71,11 +73,12 @@ static t_option_t	get_optional_type(char *type)
 	return (UNKNOWN_OPTION);
 }
 
-static int	parse_option(t_object *object, t_option_t type, char *arg)
+static int	parse_option(t_engine *engine, t_object *object, t_option_t type, char *arg)
 {
-	static int	(*values[])(t_optional_data *data, char *arg) = {
+	static int	(*values[])(t_engine *engine, t_option *data, char *arg) = {
 	[MATERIAL] = parse_material,
+	[TEXTURE] = parse_texture,
 	};
 
-	return (values[type](&object->optional_data, arg));
+	return (values[type](engine, &object->optional_data, arg));
 }

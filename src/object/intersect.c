@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:08:44 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:38:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "object.h"
 #include "ray.h"
+#include <stdio.h>
 
 double	intersect(t_object *obj, t_ray *ray)
 {

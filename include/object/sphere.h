@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 17:38:55 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:14:08 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:39:04 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ typedef struct s_sphere
 	t_color			color;
 }	t_sphere;
 
-union	u_object_data;
 struct	s_engine;
+union	u_object_data;
 
 int	parse_sphere(struct s_engine *engine, union u_object_data *object);
 

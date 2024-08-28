@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 04:34:04 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:41:07 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,8 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 
 static void	fill_uv(t_object *obj, t_ray *ray)
 {
-	ray->data.u = 0.5 + (atan2(ray->data.normal.y, ray->data.normal.x) / (M_PI * 2));
-	ray->data.v = 0.5 - (asin(ray->data.normal.z / obj->data.sphere.radius) / M_PI);
+	const t_vec3	*normal = &ray->data.normal;
+
+	ray->data.u = 0.5 + (atan2(normal->y, normal->x) / (M_PI * 2));
+	ray->data.v = 0.5 - (asin(normal->z / obj->data.sphere.radius) / M_PI);
 }

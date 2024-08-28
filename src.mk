@@ -99,6 +99,7 @@ SRC = \
 	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \
 	  parsing/parse_sphere.c \
+	  parsing/parse_texture.c \
 	  parsing/parse_triangle.c \
 	  parsing/parse_vector3d.c \
 	  \
