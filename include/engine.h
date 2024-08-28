@@ -6,16 +6,16 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 02:30:26 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 04:25:19 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ENGINE_H
 # define ENGINE_H
 
-#include "kdtree.h"
-#include "mlx_wrapper.h"
-#include "scene.h"
+# include "kdtree.h"
+# include "mlx_wrapper.h"
+# include "scene.h"
 
 typedef struct s_engine
 {

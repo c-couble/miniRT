@@ -6,14 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:52:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 03:20:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 04:30:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef KDTREE_H
 # define KDTREE_H
 
-#include "photon.h"
+# include "photon.h"
 
 typedef struct s_kdtree
 {

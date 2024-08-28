@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 02:36:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 04:12:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 static double	get_axis(t_vec3 *v, int axis);
 static double	distance_squared(t_vec3 *a, t_vec3 *b);
 static void		get_nearest(t_kdtree *node, t_query *best, t_vec3 *t, int d);
+static void		set_best(t_kdtree *node, t_query *target, double dist);
 
 t_kdtree	*get_nearest_neighbour(t_query *best, t_kdtree *tree, t_vec3 *aim)
 {
@@ -39,11 +40,7 @@ static void	get_nearest(t_kdtree *node, t_query *best, t_vec3 *aim, int depth)
 		return ;
 	axis = depth % 3;
 	dist = distance_squared(&node->photon.pos, aim);
-	if (dist < best->best_dist)
-	{
-		best->node = node;
-		best->best_dist = dist;
-	}
+	set_best(node, best, dist);
 	if (get_axis(aim, axis) - get_axis(&node->photon.pos, axis))
 	{
 		next_branch = node->left;
@@ -67,7 +64,16 @@ static double	distance_squared(t_vec3 *a, t_vec3 *b)
 		+ (a->z - b->z) * (a->z - b->z));
 }
 
-static double get_axis(t_vec3 *v, int axis)
+static void	set_best(t_kdtree *node, t_query *target, double dist)
+{
+	if (dist < target->best_dist)
+	{
+		target->node = node;
+		target->best_dist = dist;
+	}
+}
+
+static double	get_axis(t_vec3 *v, int axis)
 {
 	if (axis == 0)
 		return (v->x);
