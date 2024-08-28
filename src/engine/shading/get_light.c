@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 20:25:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 03:36:29 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 
 void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *pixel_light)
 {
-	t_kaboul	kaboul;
+	t_query	kaboul;
 	t_object	obj;
 	t_ray		photon_ray;
 	double		norm;

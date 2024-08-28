@@ -6,20 +6,22 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:36:24 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/25 19:14:43 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 03:20:41 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "kdtree.h"
 #include <stdlib.h>
 
-int	create_kdnode(t_kdtree **node, t_photon *photon)
+t_kdtree	*create_kdnode(t_photon *photon)
 {
-	*node = malloc(sizeof(t_kdtree));
-	if (*node == NULL)
-		return (-1);
-	(*node)->photon = *photon;
-	(*node)->left = NULL;
-	(*node)->right = NULL;
-	return (0);
-};
+	t_kdtree	*node;
+
+	node = malloc(sizeof(t_kdtree));
+	if (node == NULL)
+		return (NULL);
+	node->photon = *photon;
+	node->left = NULL;
+	node->right = NULL;
+	return (node);
+}
