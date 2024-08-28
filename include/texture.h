@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_uv_color.c                                     :+:      :+:    :+:   */
+/*   texture.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/27 06:00:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:02:51 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/28 05:42:26 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/28 06:03:20 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
-#include "color.h"
-#include "object.h"
-#include "ray.h"
+#ifndef TEXTURE_H
+# define TEXTURE_H
 
-uint32_t	get_uv_color(t_ray *camera_ray)
+# include <stddef.h>
+# include "color.h"
+
+typedef struct s_texture
 {
-	t_color	color;
+	char	*name;
+	t_color	*texture;
+	size_t	width;
+	size_t	height;
+}	t_texture;
 
-	color.rgb.r = camera_ray->data.u * 255;
-	color.rgb.g = camera_ray->data.v * 255;
-	color.rgb.b = 0;
-	return (color.color);
-}
+struct s_optional_data;
+
+int	parse_ppm_texture(struct s_optional_data *data);
+
+#endif
