@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:06:31 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:06:53 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 # include "object/camera.h"
 # include "object/cylinder.h"
 # include "object/light.h"
-# include "object/material.h"
 # include "object/mesh.h"
+# include "object/optional_data.h"
 # include "object/plane.h"
 # include "object/paraboloid.h"
 # include "object/triangle.h"
@@ -57,7 +57,7 @@ typedef struct s_object
 {
 	t_object_type	type;
 	t_object_data	data;
-	t_material_data	material;
+	t_optional_data	optional_data;
 }	t_object;
 
 int		init_object(t_engine *engine, t_object *object, char *line);

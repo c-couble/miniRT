@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/23 14:04:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/02/27 02:56:28 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:26:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <ft_util.h>
+#include "ft_util.h"
 
 void	ft_reverse_sort(int *tab, size_t len)
 {

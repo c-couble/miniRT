@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 00:18:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/13 20:56:49 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:28:48 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_char.h"
 #include "float.h"
+#include "ft_char.h"
 
 static double	get_fractional_part(const char *nptr);
 

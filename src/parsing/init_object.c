@@ -6,13 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:14:38 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:10:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "ft_string.h"
 #include "object.h"
-#include <stdio.h>
+#include "object/optional_data.h"
 
 static t_object_type	get_object_type(char *type);
 static int				parse_object(t_engine *engine, t_object *object);
@@ -37,7 +38,7 @@ int	init_object(t_engine *engine, t_object *object, char *line)
 	if (object->type != LIGHT
 		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
 	{
-		if (parse_material(&object->material) == -1)
+		if (parse_optional_data(object) == -1)
 			return (-1);
 	}
 	return (0);

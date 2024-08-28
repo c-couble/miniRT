@@ -6,14 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:50:20 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/02 02:39:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:39:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
-#include "color.h"
 #include <stdint.h>
 #include <stdio.h>
+#include "color.h"
+#include "ft_string.h"
 
 static int	parse_uint8(uint8_t *n, char *nptr);
 

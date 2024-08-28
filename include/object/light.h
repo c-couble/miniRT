@@ -6,15 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:12:30 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:07:07 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIGHT_H
 # define LIGHT_H
 
-# include "vec3.h"
 # include "color.h"
+# include "vec3.h"
 
 typedef struct s_light
 {

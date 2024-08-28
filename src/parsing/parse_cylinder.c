@@ -6,17 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:15:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:11:04 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
-#include "object.h"
-#include "object/parse_util.h"
-#include "color.h"
-#include "vec3.h"
 #include "float.h"
 #include <stdio.h>
+#include "ft_string.h"
+#include "color.h"
+#include "object.h"
+#include "object/parse_util.h"
+#include "vec3.h"
 
 int	parse_cylinder(t_engine *engine, t_object_data *data)
 {

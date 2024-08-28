@@ -6,34 +6,21 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 01:50:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/20 03:28:29 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:39:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
+#include "float.h"
 #include "ft_string.h"
 #include "object/material.h"
+#include "object/optional_data.h"
 #include "object/parse_util.h"
-#include "float.h"
-#include <stdlib.h>
 
 static int	fill_data(t_material_data *material, char *str);
 
-int	parse_material(t_material_data *material)
+int	parse_material(t_optional_data *data, char *arg)
 {
-	char	*arg;
-
-	arg = ft_strtok(NULL, " \t");
-	if (arg == NULL)
-	{
-		material->diffuse_ratio = DIFFUSE_RATIO;
-		material->specular_ratio = SPECULAR_RATIO;
-		material->specular_shine = SPECULAR_SHINE;
-		material->reflect_ratio = REFLECT_RATIO;
-		material->refraction_ratio = REFRACTION_RATIO;
-		return (0);
-	}
-	return (fill_data(material, arg));
+	return (fill_data(&data->material, arg));
 }
 
 static int	fill_data(t_material_data *material, char *str)
@@ -54,7 +41,9 @@ static int	fill_data(t_material_data *material, char *str)
 	if (parse_double(&material->reflect_ratio, data, 0, 1) == -1)
 		return (-1);
 	data = ft_strtok_r(NULL, ",", &save);
-	if (parse_double(&material->refraction_ratio, data, 1, 5) == -1)
+	if (parse_double(&material->refraction_ratio, data, 0, 5) == -1)
+		return (-1);
+	if (material->refraction_ratio > 0 && material->refraction_ratio < 1)
 		return (-1);
 	return (0);
 }

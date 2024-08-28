@@ -6,13 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:26:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:08:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
 #include <stdio.h>
 #include <unistd.h>
+#include "engine.h"
+#include "mlx.h"
 
 int	main(int argc, char *argv[])
 {
@@ -25,7 +26,7 @@ int	main(int argc, char *argv[])
 	if (init_engine(&engine, argv[1]) == -1)
 		return (1);
 	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
-	run_loop(&engine);
+	mlx_loop(engine.mlx.mlx);
 	clear_engine(&engine);
 	return (0);
 }

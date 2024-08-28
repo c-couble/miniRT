@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/03 00:17:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/04/15 06:44:48 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:28:04 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
-#include "vector.h"
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include "ft_string.h"
+#include "vector.h"
 
 static int	flag_handler(va_list *lst, t_vector *buffer, char *format);
 static int	parse_string(va_list *lst, t_vector *buffer, char *format);
