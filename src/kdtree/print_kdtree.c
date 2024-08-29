@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:46:01 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/25 17:54:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/29 04:12:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ void	print_kdtree(t_kdtree *node, int depth)
 		printf(" ");
 		++i;
 	}
-	printf("( %lf, %lf, %lf )\n", node->photon.pos.x,
-		node->photon.pos.y, node->photon.pos.z);
+	printf("( %lf, %lf, %lf )(%d)\n", node->photon.pos.x,
+		node->photon.pos.y, node->photon.pos.z, depth);
 	print_kdtree(node->left, depth + 1);
 	print_kdtree(node->right, depth + 1);
 }

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/29 01:36:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/29 04:39:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	get_nearest(t_kdtree *node, t_query *best, t_vec3 *aim, int depth)
 	axis = depth % 3;
 	dist = distance_squared(&node->photon.pos, aim);
 	set_best(node, best, dist);
-	if (get_axis(aim, axis) - get_axis(&node->photon.pos, axis))
+	if (get_axis(aim, axis) < get_axis(&node->photon.pos, axis))
 	{
 		next_branch = node->left;
 		other_branch = node->right;
@@ -64,12 +64,12 @@ static double	distance_squared(t_vec3 *a, t_vec3 *b)
 		+ (a->z - b->z) * (a->z - b->z));
 }
 
-static void	set_best(t_kdtree *node, t_query *target, double dist)
+static void	set_best(t_kdtree *node, t_query *best, double dist)
 {
-	if (dist < target->best_dist)
+	if (dist < best->best_dist)
 	{
-		target->node = node;
-		target->best_dist = dist;
+		best->node = node;
+		best->best_dist = dist;
 	}
 }
 

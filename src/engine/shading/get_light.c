@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:48:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/29 04:35:52 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
+#include <stdio.h>
 #include "color_util.h"
 #include "defines.h"
 #include "ft_math.h"
@@ -53,11 +54,13 @@ static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
 	double		norm;
 
 	get_nearest_neighbour(&target, photons, &c_ray->data.hitpos);
+	if (target.node == NULL)
+		return ;
 	norm = sqrtf(target.best_dist);
 	photon_ray.startpos = c_ray->startpos;
 	photon_ray.ray = target.node->photon.pos;
 	photon_ray.data.color.color = target.node->photon.color.color;
-	if (ft_dabs(norm) <= PHOTON_DISTANCE)
+	if (norm <= PHOTON_DISTANCE)
 	{
 		obj.data.light.pos = photon_ray.startpos;
 		obj.data.light.color = photon_ray.data.color;

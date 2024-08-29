@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 04:19:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/29 01:37:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ int	main(int argc, char *argv[])
 {
 	t_engine	engine;
 
-	srand(time(NULL));
+//	srand(time(NULL));
+	srand(12);
 	if (write(STDOUT_FILENO, "miniRT\n", 7) != 7)
 		return (1);
 	if (argc == 1)
