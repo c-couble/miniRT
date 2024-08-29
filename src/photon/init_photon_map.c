@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/29 03:42:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/30 01:32:46 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int	init_photon_map(t_engine *eng)
 		}
 		++i;
 	}
+	sort_photons_axis(&photon_map, 0, photon_map.size - 1, 1);
 	print_photon_map(&photon_map);
 	eng->node = init_kdtree(&photon_map, 0);
 	//clear_vector(&photon_map);

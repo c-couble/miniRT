@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 21:42:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 06:18:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/30 01:19:34 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	print_photon_map(t_vector *photons)
 	t_photon	*curr;
 
 	i = 0;
+	if (photons->size == 0)
+		printf("Null\n");
 	while (i < photons->size)
 	{
 		curr = at_vector(photons, i);
