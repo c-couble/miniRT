@@ -6,16 +6,24 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:38:05 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/29 05:30:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "color.h"
 #include "engine.h"
 #include "object.h"
 #include "ray.h"
+#include "texture.h"
 #include "util.h"
 #include "vec3.h"
-#include <stdio.h>
+
+t_color	get_texture_color(t_texture *texture, double u, double v)
+{
+	const int	col = u * texture->width;
+	const int	line = v * texture->height;
+	return (texture->texture[line * texture->width + col]);
+}
 
 int	trace_ray(t_engine *engine, t_ray *ray)
 {
@@ -48,6 +56,8 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 		ray->data.raw_normal = ray->data.normal;
 		if (vec3_dot(&ray->ray, &data.normal) < 0)
 			vec3_scale(&ray->data.normal, -1);
+		if (ray->data.obj->optional_data.texture)
+			ray->data.color = get_texture_color(ray->data.obj->optional_data.texture, ray->data.u, ray->data.v);
 	}
 	return (t);
 }

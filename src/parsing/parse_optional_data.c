@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:45:37 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/29 01:51:00 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,29 +18,17 @@
 
 static void			init_optional_data(t_option *data);
 static t_option_t	get_optional_type(char *type);
-static int			parse_option(t_engine *engine, t_object *object, t_option_t type, char *arg);
+static int			parse_option(t_engine *engine, t_object *object, char *arg);
 
 int	parse_optional_data(t_engine *engine, t_object *object)
 {
 	char		*arg;
-	char		*name;
-	char		*save;
-	t_option_t	type;
 
 	init_optional_data(&object->optional_data);
 	arg = ft_strtok(NULL, " \t");
 	while (arg)
 	{
-		name = ft_strtok_r(arg, ":", &save);
-		if (name == NULL)
-			return (-1);
-		type = get_optional_type(name);
-		if (type == UNKNOWN_OPTION)
-			return (-1);
-		arg = ft_strtok_r(NULL, ":", &save);
-		if (arg == NULL)
-			return (-1);
-		parse_option(engine, object, type, arg);
+		parse_option(engine, object, arg);
 		arg = ft_strtok(NULL, " \t");
 	}
 	return (0);
@@ -73,12 +61,24 @@ static t_option_t	get_optional_type(char *type)
 	return (UNKNOWN_OPTION);
 }
 
-static int	parse_option(t_engine *engine, t_object *object, t_option_t type, char *arg)
+static int	parse_option(t_engine *engine, t_object *object, char *arg)
 {
 	static int	(*values[])(t_engine *engine, t_option *data, char *arg) = {
 	[MATERIAL] = parse_material,
 	[TEXTURE] = parse_texture,
 	};
+	t_option_t	type;
+	char		*name;
+	char		*save;
 
+	name = ft_strtok_r(arg, ":", &save);
+	if (name == NULL)
+		return (-1);
+	type = get_optional_type(name);
+	if (type == UNKNOWN_OPTION)
+		return (-1);
+	arg = ft_strtok_r(NULL, ":", &save);
+	if (arg == NULL)
+		return (-1);
 	return (values[type](engine, &object->optional_data, arg));
 }

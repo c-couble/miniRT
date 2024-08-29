@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 05:55:50 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 05:22:48 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/29 03:27:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int		ft_putendl_fd(const char *s, int fd);
 int		ft_putnbr_fd(int n, int fd);
 int		ft_putstr_fd(const char *s, int fd);
 char	*get_next_line(int fd);
-char	*get_next_line_ptr(int fd, t_buffer *buf);
+char	*get_next_line_ptr(int fd, t_buffer *buf, const char *charset);
 
 #endif

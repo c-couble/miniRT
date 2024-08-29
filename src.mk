@@ -91,6 +91,7 @@ SRC = \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \
 	  parsing/parse_double.c \
+	  parsing/parse_int.c \
 	  parsing/parse_light.c \
 	  parsing/parse_material.c \
 	  parsing/parse_mesh.c \
@@ -105,6 +106,9 @@ SRC = \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
+	  \
+	  texture/parse_texture_file.c \
+	  texture/parse_texture_if_needed.c \
 	  \
 	  ray/trace_ray.c \
 	  \
