@@ -6,10 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:31:40 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 03:51:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/29 07:05:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "kdtree.h"
 #include "vector.h"
 
@@ -31,10 +32,12 @@ t_kdtree	*init_kdtree(t_vector *photons, int depth)
 	node = create_kdnode(median);
 	if (node == NULL)
 		return (NULL);
+	remove_vector(photons, photons->size / 2);
 	if (split_photons(photons, &left, &right) == -1)
 	{
 		clear_vector(&left);
 		clear_vector(&right);
+		free(node);
 		return (NULL);
 	}
 	node->left = init_kdtree(&left, depth + 1);
@@ -59,7 +62,7 @@ static int	split_photons(t_vector *photons, t_vector *left, t_vector *right)
 			return (-1);
 		++i;
 	}
-	while (i < photons->size - 1)
+	while (i < photons->size)
 	{
 		curr = at_vector(photons, i);
 		if (add_vector(right, curr, 1) == -1)
