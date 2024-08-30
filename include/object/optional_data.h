@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 02:18:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:20:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/30 07:21:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ typedef struct s_option
 {
 	t_material_data	material;
 	t_texture		*texture;
-	int				has_material;
 }	t_option;
 
 struct	s_engine;

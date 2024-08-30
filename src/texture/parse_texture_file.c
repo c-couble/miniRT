@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 03:33:50 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/30 04:41:24 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 #include "texture.h"
 
 static ssize_t	read_header(t_texture *texture, char *content);
+static ssize_t	set_word(t_texture *texture, char *content, size_t i, size_t j);
 static int		set_value(t_texture *texture, char *word);
 static int		read_data(t_texture *texture, char *content);
 
@@ -42,13 +43,44 @@ int	parse_texture_file(t_texture *texture, char *file)
 	ft_memset(buf, 0, sizeof(t_buffer));
 	content = get_next_line_ptr(fd, buf, "");
 	free(buf);
+	if (ft_strncmp(content, "P6", 2) != 0)
+		return (-1);
 	offset = read_header(texture, content);
 	if (offset == -1)
 		return (-1);
 	return (read_data(texture, content + offset));
 }
 
-static ssize_t	kaboul(t_texture *texture, char *content, size_t i, size_t j)
+static ssize_t	read_header(t_texture *texture, char *content)
+{
+	size_t	i;
+	size_t	j;
+	ssize_t	result;
+
+	i = 2;
+	while (content[i] && ft_strchr(" \t\r\n", content[i]))
+		++i;
+	while (content[i])
+	{
+		j = i;
+		while (content[i] && ft_strchr(" \t\r\n", content[i]) == NULL
+			&& content[i] != '#')
+			++i;
+		result = set_word(texture, content, i, j);
+		if (result)
+			return (result);
+		if (content[i] == '#')
+		{
+			while (content[i] && content[i] != '\n')
+				++i;
+		}
+		while (content[i] && ft_strchr(" \t\r\n", content[i]))
+			++i;
+	}
+	return (0);
+}
+
+static ssize_t	set_word(t_texture *texture, char *content, size_t i, size_t j)
 {
 	const char	tmp = content[i];
 	int			result;
@@ -67,36 +99,6 @@ static ssize_t	kaboul(t_texture *texture, char *content, size_t i, size_t j)
 		}
 	}
 	content[i] = tmp;
-	return (0);
-}
-
-static ssize_t	read_header(t_texture *texture, char *content)
-{
-	size_t	i;
-	size_t	j;
-	ssize_t	result;
-
-	if (ft_strncmp(content, "P6", 2) != 0)
-		return (-1);
-	i = 2;
-	while (content[i] && ft_strchr(" \t\r\n", content[i]))
-		++i;
-	while (content[i])
-	{
-		j = i;
-		while (content[i] && ft_strchr(" \t\r\n", content[i]) == NULL && content[i] != '#')
-			++i;
-		result = kaboul(texture, content, i, j);
-		if (result)
-			return (result);
-		if (content[i] == '#')
-		{
-			while (content[i] && content[i] != '\n')
-				++i;
-		}
-		while (content[i] && ft_strchr(" \t\r\n", content[i]))
-			++i;
-	}
 	return (0);
 }
 
@@ -122,7 +124,7 @@ static int	set_value(t_texture *texture, char *word)
 	return (1);
 }
 
-static int		read_data(t_texture *texture, char *content)
+static int	read_data(t_texture *texture, char *content)
 {
 	size_t	i;
 	t_color	*color;
