@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 05:42:26 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/29 05:58:39 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/30 03:20:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ typedef struct s_texture
 {
 	char	*file_name;
 	t_color	*texture;
-	int		width;
-	int		height;
+	size_t	width;
+	size_t	height;
 	int		maxval;
 }	t_texture;
 
