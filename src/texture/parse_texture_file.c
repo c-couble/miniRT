@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 02:32:53 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/30 02:46:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,14 +75,18 @@ static ssize_t	read_header(t_texture *texture, char *content)
 			++i;
 		char	tmp = content[i];
 		content[i] = '\0';
-		result = set_value(texture, content + j);
-		if (result == -1)
-			return (-1);
-		if (result == 1)
+		printf("value %ld %ld\n", i, j);
+		if (i != j)
 		{
-			if (ft_strchr(" \t\r\n", content[i]) == NULL)
+			result = set_value(texture, content + j);
+			if (result == -1)
 				return (-1);
-			return (i + 1);
+			if (result == 1)
+			{
+				if (ft_strchr(" \t\r\n", content[i]) == NULL)
+					return (-1);
+				return (i + 1);
+			}
 		}
 		content[i] = tmp;
 		if (content[i] == '#')
