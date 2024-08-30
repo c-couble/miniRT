@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/29 04:35:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/30 04:34:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <stdio.h>
 #include "color_util.h"
 #include "defines.h"
-#include "ft_math.h"
 #include "kdtree.h"
 #include "photon.h"
 #include "shading.h"
@@ -60,7 +59,7 @@ static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
 	photon_ray.startpos = c_ray->startpos;
 	photon_ray.ray = target.node->photon.pos;
 	photon_ray.data.color.color = target.node->photon.color.color;
-	if (norm <= PHOTON_DISTANCE)
+	if (norm <= PHOTON_RADIUS)
 	{
 		obj.data.light.pos = photon_ray.startpos;
 		obj.data.light.color = photon_ray.data.color;

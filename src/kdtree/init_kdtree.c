@@ -6,26 +6,23 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:31:40 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/30 02:05:31 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/30 06:48:56 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "kdtree.h"
 #include "photon.h"
 #include "vector.h"
-#include "util.h"
 
-static int	split_photons(t_vector *photons, t_vector *left, t_vector *right,
-						 t_vec3 *median, int axis);
+static int	split_photons(t_vector *photons, t_kdtree *node, int depth, int axis);
 
 t_kdtree	*init_kdtree(t_vector *photons, int depth)
 {
 	int			axis;
 	t_photon	*median;
-	t_vector	left;
-	t_vector	right;
 	t_kdtree	*node;
 
 	if (photons->size == 0)
@@ -37,55 +34,64 @@ t_kdtree	*init_kdtree(t_vector *photons, int depth)
 	if (node == NULL)
 		return (NULL);
 	remove_vector(photons, photons->size / 2);
-	if (split_photons(photons, &left, &right, &node->photon.pos, axis) == -1)
+	if (split_photons(photons, node, depth, axis) == -1)
 	{
-		clear_vector(&left);
-		clear_vector(&right);
 		free(node);
 		return (NULL);
 	}
-	printf("\n\n");
-	printf("init kdtree depth = %d, axis = %d\n", depth, axis);
-	print_vec3(&node->photon.pos, "median = ");
-	printf("left list = \n");
-	print_photon_map(&left);
-	printf("\n");
-	printf("right list = \n");
-	printf("\n");
-	print_photon_map(&right);
-	node->left = init_kdtree(&left, depth + 1);
-	node->right = init_kdtree(&right, depth + 1);
-	clear_vector(&left);
-	clear_vector(&right);
 	return (node);
 }
 
-static int	split_photons(t_vector *photons, t_vector *left, t_vector *right,
-						 t_vec3 *median, int axis)
+int	fill_vectors(t_vector *photons, t_vector *left, t_vector *right, t_kdtree *node,
+				 int axis)
 {
 	size_t		i;
 	t_photon	*curr;
+	t_vector	*ptr;
 
-	init_vector(left, sizeof(t_photon));
-	init_vector(right, sizeof(t_photon));
 	i = 0;
-	printf("photons.size = %ld\n", photons->size);
 	while (i < photons->size)
 	{
 		curr = at_vector(photons, i);
-		printf("get axis curr->pos = %lf\n", get_axis(&curr->pos, axis));
-		printf("get axis median = %lf\n", get_axis(median, axis));
-		if (get_axis(&curr->pos, axis) < get_axis(median, axis))
-		{
-			if (add_vector(left, curr, 1) == -1)
-				return (-1);
-		}
+		if (get_axis(&curr->pos, axis) < get_axis(&node->photon.pos, axis))
+			ptr = left;
 		else
+			ptr = right;
+		if (add_vector(ptr, curr, 1) == -1)
 		{
-			if (add_vector(right, curr, 1) == -1)
-				return (-1);
+			clear_vector(left);
+			clear_vector(right);
+			return (-1);
 		}
 		++i;
 	}
+	return (0);
+}
+
+static int	split_photons(t_vector *photons, t_kdtree *node, int depth, int axis)
+{
+	t_vector	left;
+	t_vector	right;
+
+	init_vector(&left, sizeof(t_photon));
+	init_vector(&right, sizeof(t_photon));
+	if (fill_vectors(photons, &left, &right, node, axis) == -1)
+		return (-1);
+	node->left = init_kdtree(&left, depth + 1);
+	if (node->left == NULL && errno)
+	{
+		clear_vector(&left);
+		clear_vector(&right);
+		return (-1);
+	}
+	node->right = init_kdtree(&right, depth + 1);
+	if (node->right == NULL && errno)
+	{
+		clear_vector(&left);
+		clear_vector(&right);
+		return (-1);
+	}
+	clear_vector(&left);
+	clear_vector(&right);
 	return (0);
 }

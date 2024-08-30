@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/30 01:32:46 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/30 06:04:56 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ static int	get_photon(t_vector *photons, t_engine *eng, t_light *light)
 		if (curr->type == SPHERE && curr->material.refraction_ratio)
 		{
 			int i = 0;
-			while (i < PHONTON_PER_OBJ)
+			while (i < PHOTON_PER_OBJ)
 			{
 				p_ray.startpos = light->pos;
 				vec3_subtract(&curr->data.sphere.pos, &p_ray.startpos, &p_ray.ray);

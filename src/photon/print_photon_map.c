@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 21:42:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/30 01:19:34 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/30 04:43:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	print_photon_map(t_vector *photons)
 	while (i < photons->size)
 	{
 		curr = at_vector(photons, i);
-		print_vec3(&curr->pos, "p_ray");
+		vec3_print(&curr->pos, "p_ray");
 		printf("color r = %d, g = %d, b = %d\n", curr->color.rgb.r,
 			curr->color.rgb.b, curr->color.rgb.b);
 		++i;
