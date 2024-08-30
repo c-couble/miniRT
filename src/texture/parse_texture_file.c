@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/29 06:36:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/30 02:32:53 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,14 @@
 #include "object/parse_util.h"
 #include "texture.h"
 
-static int	read_header(t_texture *texture, char *content, char **save);
-static int	set_value(t_texture *texture, char *word);
+static ssize_t	read_header(t_texture *texture, char *content);
+static int		set_value(t_texture *texture, char *word);
 //static int	read_data(t_texture *texture, char *content);
 
 int	parse_texture_file(t_texture *texture, char *file)
 {
 	int	fd;
 	char	*content;
-	char	*save;
 
 	ft_memset(texture, 0, sizeof(t_texture));
 	texture->file_name = file;
@@ -40,12 +39,12 @@ int	parse_texture_file(t_texture *texture, char *file)
 	ft_memset(buf, 0, sizeof(t_buffer));
 	content = get_next_line_ptr(fd, buf, "");
 	free(buf);
-	if (read_header(texture, content, &save) == -1)
+	ssize_t	offset = read_header(texture, content);
+	if (offset == -1)
 		return (-1);
 	texture->texture = malloc((texture->width * texture->height) * sizeof(t_color));
 
-	char *word;
-	word = ft_strtok_r(NULL, "", &save);
+	char *word = content + offset;
 	int	i;
 	i = 0;
 	while (i < texture->width * texture->height)
@@ -58,33 +57,43 @@ int	parse_texture_file(t_texture *texture, char *file)
 	return (0);
 }
 
-static int	read_header(t_texture *texture, char *content, char **save)
+static ssize_t	read_header(t_texture *texture, char *content)
 {
-	char	*word;
-	int		comment;
 	int		result;
+	size_t	i;
+	size_t	j;
 
-	word = ft_strtok_r(content, " \t\r\n", save);
-	if (ft_strcmp(word, "P6") != 0)
+	if (ft_strncmp(content, "P6", 2) != 0)
 		return (-1);
-	comment = 0;
-	word = ft_strtok_r(NULL, " \t\r\n", save);
-	while (word)
+	i = 2;
+	while (content[i] && ft_strchr(" \t\r\n", content[i]))
+		++i;
+	while (content[i])
 	{
-		if (word[0] == '#')
-			comment = 1;
-		if (comment)
+		j = i;
+		while (content[i] && ft_strchr(" \t\r\n", content[i]) == NULL && content[i] != '#')
+			++i;
+		char	tmp = content[i];
+		content[i] = '\0';
+		result = set_value(texture, content + j);
+		if (result == -1)
+			return (-1);
+		if (result == 1)
 		{
-			if (ft_strchr(word, '\n'))
-				comment = 0;
+			if (ft_strchr(" \t\r\n", content[i]) == NULL)
+				return (-1);
+			return (i + 1);
 		}
-		else
+		content[i] = tmp;
+		if (content[i] == '#')
 		{
-			result = set_value(texture, word);
-			if (result != 0)
-				return (result);
+			printf("pre comment %ld\n", i);
+			while (content[i] && content[i] != '\n')
+				++i;
+			printf("comment %ld\n", i);
 		}
-		word = ft_strtok_r(NULL, " \t\r\n", save);
+		while (content[i] && ft_strchr(" \t\r\n", content[i]))
+			++i;
 	}
 	return (0);
 }
