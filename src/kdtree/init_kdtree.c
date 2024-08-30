@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:31:40 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/30 01:38:11 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/30 02:05:31 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,14 +59,7 @@ t_kdtree	*init_kdtree(t_vector *photons, int depth)
 	clear_vector(&right);
 	return (node);
 }
-static double	get_axis(t_vec3 *v, int axis)
-{
-	if (axis == 0)
-		return (v->x);
-	if (axis == 1)
-		return (v->y);
-	return (v->z);
-}
+
 static int	split_photons(t_vector *photons, t_vector *left, t_vector *right,
 						 t_vec3 *median, int axis)
 {

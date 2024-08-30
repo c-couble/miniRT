@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/29 04:39:14 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/30 02:05:25 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include "kdtree.h"
 #include "vec3.h"
 
-static double	get_axis(t_vec3 *v, int axis);
 static double	distance_squared(t_vec3 *a, t_vec3 *b);
 static void		get_nearest(t_kdtree *node, t_query *best, t_vec3 *t, int d);
 static void		set_best(t_kdtree *node, t_query *target, double dist);
@@ -71,13 +70,4 @@ static void	set_best(t_kdtree *node, t_query *best, double dist)
 		best->node = node;
 		best->best_dist = dist;
 	}
-}
-
-static double	get_axis(t_vec3 *v, int axis)
-{
-	if (axis == 0)
-		return (v->x);
-	if (axis == 1)
-		return (v->y);
-	return (v->z);
 }
