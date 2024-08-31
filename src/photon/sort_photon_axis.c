@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 14:50:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 06:21:03 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/31 05:53:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <unistd.h>
 
 static size_t	array_partition(t_vector *p, ssize_t start, ssize_t end, int a);
-static int		compare_photon(t_photon *p1, t_photon *p2, int axis);
+static double	compare_photon(t_photon *p1, t_photon *p2, int axis);
 static void		swap_photons(t_photon *p1, t_photon *p2);
 
 void	sort_photons_axis(t_vector *point, ssize_t start, ssize_t end, int axis)
@@ -47,7 +47,7 @@ static size_t	array_partition(t_vector *p, ssize_t start, ssize_t end, int a)
 		photon = at_vector(p, i);
 		if (compare_photon(photon, pivot, a) < 0)
 		{
-			swap_photons(at_vector(p, j), photon);
+			swap_photons(photon, at_vector(p, j));
 			++j;
 		}
 		++i;
@@ -56,7 +56,7 @@ static size_t	array_partition(t_vector *p, ssize_t start, ssize_t end, int a)
 	return (j);
 }
 
-static int	compare_photon(t_photon *p1, t_photon *p2, int axis)
+static double	compare_photon(t_photon *p1, t_photon *p2, int axis)
 {
 	if (axis == 0)
 		return (p1->pos.x - p2->pos.x);

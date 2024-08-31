@@ -6,16 +6,19 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:31:40 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/30 07:07:47 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/31 06:44:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <errno.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include "kdtree.h"
+#include "vector.h"
 
 static int	split_photons(t_vector *left, t_kdtree *node, int depth, int axis);
-static int	fill_right(t_vector *left, t_vector *right, t_kdtree *node, int ax);
+static int	fill_right(t_vector *left, t_vector *right);
 
 t_kdtree	*init_kdtree(t_vector *photons, int depth)
 {
@@ -26,9 +29,12 @@ t_kdtree	*init_kdtree(t_vector *photons, int depth)
 	if (photons->size == 0)
 		return (NULL);
 	axis = depth % 3;
+
+	printf("init kdtree depth = %d\n", depth);
 	sort_photons_axis(photons, 0, photons->size - 1, axis);
 	median = at_vector(photons, photons->size / 2);
 	node = create_kdnode(median);
+	printf("sorted\n");
 	if (node == NULL)
 		return (NULL);
 	remove_vector(photons, photons->size / 2);
@@ -44,8 +50,9 @@ static int	split_photons(t_vector *left, t_kdtree *node, int depth, int axis)
 {
 	t_vector	right;
 
+	(void)axis;
 	init_vector(&right, sizeof(t_photon));
-	if (fill_right(left, &right, node, axis) == -1)
+	if (fill_right(left, &right) == -1)
 	{
 		clear_vector(&right);
 		return (-1);
@@ -66,26 +73,18 @@ static int	split_photons(t_vector *left, t_kdtree *node, int depth, int axis)
 	return (0);
 }
 
-static int	fill_right(t_vector *left, t_vector *right, t_kdtree *node, int ax)
+static int	fill_right(t_vector *left, t_vector *right)
 {
 	size_t		i;
 	t_photon	*curr;
 
-	i = 0;
-	while (i < left->size)
+	i = left->size / 2;
+	curr = at_vector(left, i);
+	if (add_vector(right, curr, i) == -1)
 	{
-		curr = at_vector(left, i);
-		if (get_axis(&curr->pos, ax) > get_axis(&node->photon.pos, ax))
-		{
-			if (add_vector(right, curr, 1) == -1)
-			{
-				clear_vector(right);
-				return (-1);
-			}
-			remove_vector(left, i);
-		}
-		else
-			++i;
+		clear_vector(right);
+		return (-1);
 	}
+	remove_vector_from_end(left, i);
 	return (0);
 }

@@ -76,5 +76,6 @@ SRC = \
 	  vector/merge_vector.c \
 	  vector/reallocate_vector.c \
 	  vector/remove_vector.c \
+	  vector/remove_vector_from_end.c \
 	  vector/set_alloc_size.c \
 	  vector/set_value_vector.c \
