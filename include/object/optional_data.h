@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 02:18:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 07:21:36 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/31 02:42:21 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@ typedef enum e_option_t
 typedef struct s_option
 {
 	t_material_data	material;
+	t_texture		*down_texture;
 	t_texture		*texture;
+	t_texture		*up_texture;
 }	t_option;
 
 struct	s_engine;

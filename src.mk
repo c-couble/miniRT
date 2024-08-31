@@ -120,6 +120,7 @@ SRC = \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
 	  util/get_normal_color.c \
+	  util/get_theta_axis.c \
 	  util/get_uv_color.c \
 	  util/multiply_color.c \
 	  util/print_error.c \

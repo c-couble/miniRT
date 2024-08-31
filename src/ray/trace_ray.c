@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/29 05:30:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/31 05:54:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,19 @@
 #include "texture.h"
 #include "util.h"
 #include "vec3.h"
+#include <stdio.h>
 
 t_color	get_texture_color(t_texture *texture, double u, double v)
 {
-	const int	col = u * texture->width;
-	const int	line = v * texture->height;
+	t_color	color;
+	color.color = 0xffffff;
+	if (u < 0 || u > 1 || v < 0 || v > 1)
+	{
+		printf("incorrect uv %lf %lf\n", u, v);
+		return color;
+	}
+	int	col = u * texture->width;
+	int	line = v * texture->height;
 	return (texture->texture[line * texture->width + col]);
 }
 
@@ -42,7 +50,7 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 		if (get_closest_distance_ptr(tmp, t, &t))
 		{
 			data = ray->data;
-			if (data.obj->type != SPHERE)
+			if (data.obj->type != SPHERE && data.obj->type != CYLINDER)
 			{
 				data.u = 0;
 				data.v = 0;

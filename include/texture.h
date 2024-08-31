@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 05:42:26 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 03:20:59 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/31 02:31:21 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define TEXTURE_H
 
 # include <stddef.h>
-#include <stdint.h>
 # include "color.h"
 
 typedef struct s_texture

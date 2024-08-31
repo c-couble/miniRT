@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 04:41:24 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/31 04:46:22 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,9 @@ int	parse_texture_file(t_texture *texture, char *file)
 	ssize_t		offset;
 
 	ft_memset(texture, 0, sizeof(t_texture));
-	texture->file_name = file;
+	texture->file_name = ft_strdup(file);
+	if (texture->file_name == NULL)
+		return (-1);
 	fd = open(file, O_RDONLY);
 	if (fd == -1)
 		return (-1);
