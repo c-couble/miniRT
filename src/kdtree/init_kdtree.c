@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:31:40 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/31 06:44:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/01 02:57:19 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "kdtree.h"
 #include "vector.h"
 
-static int	split_photons(t_vector *left, t_kdtree *node, int depth, int axis);
+static int	split_photons(t_vector *left, t_kdtree *node, int depth);
 static int	fill_right(t_vector *left, t_vector *right);
 
 t_kdtree	*init_kdtree(t_vector *photons, int depth)
@@ -29,7 +29,6 @@ t_kdtree	*init_kdtree(t_vector *photons, int depth)
 	if (photons->size == 0)
 		return (NULL);
 	axis = depth % 3;
-
 	printf("init kdtree depth = %d\n", depth);
 	sort_photons_axis(photons, 0, photons->size - 1, axis);
 	median = at_vector(photons, photons->size / 2);
@@ -38,7 +37,7 @@ t_kdtree	*init_kdtree(t_vector *photons, int depth)
 	if (node == NULL)
 		return (NULL);
 	remove_vector(photons, photons->size / 2);
-	if (split_photons(photons, node, depth, axis) == -1)
+	if (split_photons(photons, node, depth) == -1)
 	{
 		free(node);
 		return (NULL);
@@ -46,11 +45,10 @@ t_kdtree	*init_kdtree(t_vector *photons, int depth)
 	return (node);
 }
 
-static int	split_photons(t_vector *left, t_kdtree *node, int depth, int axis)
+static int	split_photons(t_vector *left, t_kdtree *node, int depth)
 {
 	t_vector	right;
 
-	(void)axis;
 	init_vector(&right, sizeof(t_photon));
 	if (fill_right(left, &right) == -1)
 	{
