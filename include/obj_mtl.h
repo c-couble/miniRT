@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   material.h                                         :+:      :+:    :+:   */
+/*   obj_mtl.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/20 02:02:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 01:53:01 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/02 01:28:02 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/02 01:41:26 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MATERIAL_H
-# define MATERIAL_H
+#ifndef OBJ_MTL_H
+# define OBJ_MTL_H
 
-# include "texture.h"
+# include "vector.h"
 
-typedef struct s_material_data
+typedef struct s_obj_mtl
 {
-	double		diffuse_ratio;
-	double		specular_ratio;
-	double		specular_shine;
-	double		reflect_ratio;
-	double		refraction_ratio;
-	t_texture	texture;
-}	t_material_data;
-
-struct	s_optional_data;
-
-int	parse_material(struct s_optional_data *data, char *arg);
+	char		*file_name;
+	t_vector	materials;
+}	t_obj_mtl;
 
 #endif

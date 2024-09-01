@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:06:18 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 01:12:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "mlx_wrapper.h"
 # include "scene.h"
-#include "vector.h"
+# include "vector.h"
 
 typedef struct s_engine
 {

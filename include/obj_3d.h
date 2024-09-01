@@ -6,19 +6,19 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 04:01:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:31:38 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 01:27:44 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef OBJ_3D
-# define OBJ_3D
+#ifndef OBJ_3D_H
+# define OBJ_3D_H
 
 # include "vector.h"
 # include <stddef.h>
 
 typedef struct s_obj_3d
 {
-	const char	*file_name;
+	char		*file_name;
 	t_vector	vertices;
 	t_vector	texture_coordinates;
 	t_vector	vertex_normals;

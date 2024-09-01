@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_obj_file.c                                   :+:      :+:    :+:   */
+/*   parse_obj_mtl.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 01:11:41 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/02 01:33:43 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/02 01:42:02 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_utils.h"
-#include "obj_3d.h"
-#include "ft_io.h"
 #include "ft_string.h"
-#include "vec3.h"
-#include "object/parse_util.h"
-#include "float.h"
-#include "vec4.h"
-#include "vector.h"
-#include "ft_mem.h"
-#include <stdlib.h>
-#include <fcntl.h>
-#include <errno.h>
-#include <unistd.h>
-#include <stdio.h>
+#include "obj_mtl.h"
+#include "object/material.h"
 
 static int	parse_line(t_obj_3d *obj, char *line);
 static int	parse_obj_vertice(t_obj_3d *obj);
@@ -33,20 +21,16 @@ static int	parse_obj_texture_coord(t_obj_3d *obj);
 static int	parse_obj_space_vertice(t_obj_3d *obj);
 static int	parse_obj_polygon(t_obj_3d *obj);
 
-int	parse_obj_file(t_obj_3d *obj, const char *file)
+int	parse_obj_mtl(t_obj_mtl *mtl, const char *file)
 {
 	int		fd;
 	char	*line;
 
-	obj->file_name = ft_strdup(file);
+	mtl->file_name = ft_strdup(file);
 	fd = open(file, O_RDONLY);
 	if (fd == -1)
 		return (-1);
-	init_vector(&obj->vertices, sizeof(t_vec4));
-	init_vector(&obj->texture_coordinates, sizeof(t_vec3));
-	init_vector(&obj->vertex_normals, sizeof(t_vec3));
-	init_vector(&obj->space_vertices, sizeof(t_vec3));
-	init_vector(&obj->faces, sizeof(t_polygon));
+	init_vector(&mtl->materials, sizeof(t_material_data));
 	t_buffer *buf = malloc(sizeof(t_buffer));
 	if (buf == NULL)
 		return (-1);
@@ -55,7 +39,7 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 	while (line)
 	{
 		line = ft_strtok(line, "\r");
-		if (parse_line(obj, line) == -1)
+		if (parse_line(mtl, line) == -1)
 		{
 			close(fd);
 			return (-1);
