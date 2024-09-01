@@ -113,6 +113,7 @@ SRC = \
 	  util/scale_color.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
+	  util/rand_range.c \
 	  \
 	  vec3/vec3_add.c \
 	  vec3/vec3_create.c \
