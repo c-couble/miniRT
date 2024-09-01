@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_uv_color.c                                     :+:      :+:    :+:   */
+/*   parse_int.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/27 06:00:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:02:51 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/29 05:46:07 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/29 05:47:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
-#include "color.h"
-#include "object.h"
-#include "ray.h"
+#include "ft_string.h"
 
-uint32_t	get_uv_color(t_ray *camera_ray)
+int	parse_int(int *data, const char *nptr, double min, double max)
 {
-	t_color	color;
-
-	color.rgb.r = camera_ray->data.u * 255;
-	color.rgb.g = camera_ray->data.v * 255;
-	color.rgb.b = 0;
-	return (color.color);
+	if (ft_atoi_ptr(data, nptr) == -1)
+		return (-1);
+	if (*data > max || *data < min)
+		return (-1);
+	return (0);
 }

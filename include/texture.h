@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sphere.h                                           :+:      :+:    :+:   */
+/*   texture.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 17:38:55 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:39:04 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/28 05:42:26 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/01 05:21:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SPHERE_H
-# define SPHERE_H
+#ifndef TEXTURE_H
+# define TEXTURE_H
 
+# include <stddef.h>
 # include "color.h"
-# include "vec3.h"
 
-typedef struct s_sphere
+typedef struct s_texture
 {
-	t_vec3			pos;
-	double			diameter;
-	double			radius;
-	t_color			color;
-}	t_sphere;
+	char	*file_name;
+	t_color	*texture;
+	size_t	width;
+	size_t	height;
+	int		maxval;
+}	t_texture;
 
-struct	s_engine;
-union	u_object_data;
+typedef struct s_engine	t_engine;
+struct					s_option;
 
-int	parse_sphere(struct s_engine *engine, union u_object_data *object);
+t_texture	*parse_texture_if_needed(t_engine *engine, char *file);
+int			parse_texture(t_engine *engine, struct s_option *data, char *arg);
+int			parse_texture_file(t_texture *texture, char *file);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:50:12 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:11:44 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:45:50 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ int	parse_vector3d(t_vec3 *vector, double min, double max)
 	char	*save;
 
 	arg = ft_strtok(NULL, " \t");
-	printf("Arg %s\n", arg);
 	if (arg == NULL)
 		return (-1);
 	save = NULL;

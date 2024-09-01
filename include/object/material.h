@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 02:02:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 01:53:01 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 01:54:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,9 @@ typedef struct s_material_data
 	t_texture	texture;
 }	t_material_data;
 
-struct	s_optional_data;
+struct	s_engine;
+struct	s_option;
 
-int	parse_material(struct s_optional_data *data, char *arg);
+int	parse_material(struct s_engine *engine, struct s_option *data, char *arg);
 
 #endif

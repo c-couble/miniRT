@@ -6,15 +6,16 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 06:10:11 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:38:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vec3.h"
-#include "ray.h"
-#include "object.h"
-#include "defines.h"
 #include <unistd.h>
+#include "defines.h"
+#include "object.h"
+#include "ray.h"
+#include "util.h"
+#include "vec3.h"
 
 double	intersect_triangle(t_object *obj, t_ray *ray)
 {
@@ -31,7 +32,10 @@ double	intersect_triangle(t_object *obj, t_ray *ray)
 	vec3_subtract(&obj->data.triangle.p2, &obj->data.triangle.p0, &E2);
 	vec3_cross(&D, &E2, &P);
 	vec3_cross(&T, &E1, &Q);
-	double inv_det = 1 / vec3_dot(&P, &E1);
+	double dot = vec3_dot(&P, &E1);
+	if (double_equals(dot, 0))
+		return (-1);
+	double inv_det = 1 / dot;
 	double u = inv_det * vec3_dot(&P, &T);
 	if (u < 0 || u > 1)
 		return (-1);

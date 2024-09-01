@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 01:11:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 01:54:43 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 	if (buf == NULL)
 		return (-1);
 	ft_memset(buf, 0, sizeof(t_buffer));
-	line = get_next_line_ptr(fd, buf);
+	line = get_next_line_ptr(fd, buf, "\n");
 	while (line)
 	{
 		line = ft_strtok(line, "\r");
@@ -60,7 +60,7 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 			close(fd);
 			return (-1);
 		}
-		line = get_next_line_ptr(fd, buf);
+		line = get_next_line_ptr(fd, buf, "\n");
 	}
 	free(line);
 	if (errno)
