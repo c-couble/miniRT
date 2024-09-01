@@ -6,22 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/01 05:07:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/01 05:24:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <X11/X.h>
 #include <errno.h>
 #include <math.h>
-#include <stdio.h>
-#include "engine.h"
-#include "kdtree.h"
-#include "object.h"
-#include "photon.h"
-#include "util.h"
-#include "vec3.h"
-#include "vector.h"
 #include "defines.h"
+#include "object.h"
+#include "util.h"
 
 static int	fill_photons(t_vector *photons, t_engine *eng, t_light *light);
 static int	generate_photons(t_engine *eng, t_vector *photons, t_light *light);
@@ -42,7 +35,10 @@ int	init_photon_map(t_engine *eng)
 		{
 			if (fill_photons(&photon_map, eng,
 					(t_light *)&curr->data.light) == -1)
+			{
+				clear_vector(&photon_map);
 				return (-1);
+			}
 		}
 		++i;
 	}
@@ -87,6 +83,7 @@ static int	generate_photons(t_engine *eng, t_vector *photons, t_light *light)
 	{
 		generate_spherical_ray(&p_ray.ray);
 		vec3_normalize(&p_ray.ray);
+		p_ray.startpos = light->pos;
 		if (trace_photon(eng, &p_ray, DEPTH, &photon))
 		{
 			photon.color.color = light->color.color;
