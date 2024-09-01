@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/29 03:42:47 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/01 03:48:49 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,12 @@
 # include "kdtree.h"
 # include "mlx_wrapper.h"
 # include "scene.h"
-#include "vector.h"
 
 typedef struct s_engine
 {
 	t_scene		scene;
 	t_mlx		mlx;
 	t_kdtree	*node;
-	t_vector	photons;
 }	t_engine;
 
 int		init_engine(t_engine *engine, char *scene);

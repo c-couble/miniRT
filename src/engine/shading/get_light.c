@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 04:34:03 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/01 03:52:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,11 @@ static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
 	photon_ray.startpos = c_ray->startpos;
 	photon_ray.ray = target.node->photon.pos;
 	photon_ray.data.color.color = target.node->photon.color.color;
-	if (norm <= PHOTON_RADIUS)
+	if (norm < PHOTON_RADIUS)
 	{
 		obj.data.light.pos = photon_ray.startpos;
 		obj.data.light.color = photon_ray.data.color;
-		obj.data.light.ratio = 1;
+		obj.data.light.ratio = target.node->photon.ratio;
 		phong_model(&obj, light, c_ray, &photon_ray);
 	}
 }

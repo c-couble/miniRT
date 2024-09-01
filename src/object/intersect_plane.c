@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 02:45:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:08:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/01 04:21:34 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,23 +23,6 @@ double	intersect_plane(t_object *obj, t_ray *ray)
 		return (-1);
 	ray->data.normal = obj->data.plane.normal;
 	get_hitpos(ray, t);
-	if (obj->material.checker)
-	{
-	 	int x_index = ray->data.hitpos.x / obj->material.checker - 100.5;
-		int y_index = ray->data.hitpos.y / obj->material.checker - 100.5;
-		if ((x_index + y_index) % 2 == 0)
-		{
-			ray->data.color.rgb.r = 225;
-			ray->data.color.rgb.g = 225;
-			ray->data.color.rgb.b = 225;
-		}
-		else {
-			ray->data.color.rgb.r = 070;
-			ray->data.color.rgb.g = 070;
-			ray->data.color.rgb.b = 070;
-		}
-	}
-	else
-		ray->data.color = obj->data.plane.color;
+	ray->data.color = obj->data.plane.color;
 	return (t);
 }
