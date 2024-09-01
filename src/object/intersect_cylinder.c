@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/31 06:39:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/01 05:16:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include <stdio.h>
+#include "defines.h"
 #include "math_util.h"
 #include "object.h"
 #include "object/plane.h"
@@ -68,8 +69,10 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p, size_t face)
 	if (vec3_get_norm(&hitpoint) < obj->data.cylinder.radius)
 	{
 		ray->data.normal = plane.normal;
-		ray->data.u = 0;
-		ray->data.v = 0;
+		vec3_scale(&hitpoint, 1 / (obj->data.cylinder.radius * 2));
+		quaternion_rotate(&hitpoint, &obj->data.cylinder.rot_axis, obj->data.cylinder.theta, &hitpoint);
+		ray->data.u = 0.5 - hitpoint.y;
+		ray->data.v = 0.5 - hitpoint.x;
 		ray->data.face = face;
 		return (t);
 	}
@@ -86,13 +89,11 @@ static double	hit_cyl(t_object *obj, t_ray *ray, t_vec3 *r1, t_vec3 *r2)
 	get_hitpos(ray, t);
 	if (point_far(obj, &ray->data.hitpos, r1, r2))
 		return (-1);
-
-	local = ray->data.hitpos;
-	vec3_subtract(&local, &obj->data.cylinder.pos, &local);
-	quaternion_rotate(&local, &obj->data.cylinder.rot_axis, obj->data.cylinder.theta, &local);
+	vec3_subtract(&ray->data.hitpos, &obj->data.cylinder.pos, &local);
+	quaternion_rotate(&local, &obj->data.cylinder.rot_axis,
+			obj->data.cylinder.theta, &local);
 	ray->data.u = 0.5 + (atan2(local.y, local.x)) / (M_PI * 2);
 	ray->data.v = 1 - (local.z / obj->data.cylinder.height);
-	printf("end points %lf %lf %lf\n", local.x, local.y, local.z);
 	return (t);
 }
 
@@ -128,7 +129,7 @@ static double	solve_cylinder_quadratic(t_object *obj, t_ray *ray)
 	vec3_scale(&ra0, 2);
 	q.b = vec3_dot(&ra0, &va);
 	solve_quadratic_equation(&q);
-	if (q.delta < 0)
+	if (q.delta < INACCURATE_ZERO)
 		return (-1);
 	closest = get_closest_distance(q.r1, q.r2);
 	if (closest == -1)

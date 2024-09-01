@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 01:59:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 03:18:08 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/01 05:19:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,16 @@ t_texture	*parse_texture_if_needed(t_engine *engine, char *file)
 	t_texture	obj;
 
 	i = 0;
-	while (i < engine->objs_3d.size)
+	while (i < engine->textures.size)
 	{
-		current = at_vector(&engine->objs_3d, i);
+		current = at_vector(&engine->textures, i);
 		if (ft_strcmp(file, current->file_name) == 0)
 			return (current);
 		++i;
 	}
 	if (parse_texture_file(&obj, file) == -1)
 		return (NULL);
-	if (add_vector(&engine->objs_3d, &obj, 1) == -1)
+	if (add_vector(&engine->textures, &obj, 1) == -1)
 		return (NULL);
-	return (at_vector(&engine->objs_3d, engine->objs_3d.size - 1));
+	return (at_vector(&engine->textures, engine->objs_3d.size - 1));
 }

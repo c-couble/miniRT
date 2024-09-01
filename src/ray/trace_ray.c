@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/31 05:54:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/01 04:59:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,10 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 		if (vec3_dot(&ray->ray, &data.normal) < 0)
 			vec3_scale(&ray->data.normal, -1);
 		if (ray->data.obj->optional_data.texture)
+		{
 			ray->data.color = get_texture_color(ray->data.obj->optional_data.texture, ray->data.u, ray->data.v);
+
+		}
 	}
 	return (t);
 }

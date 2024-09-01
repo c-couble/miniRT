@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:20:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/01 05:18:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ typedef struct s_object
 {
 	t_object_type	type;
 	t_object_data	data;
-	t_option	optional_data;
+	t_option		optional_data;
 }	t_object;
 
 int		init_object(t_engine *engine, t_object *object, char *line);
