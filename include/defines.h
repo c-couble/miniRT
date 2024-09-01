@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 06:54:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/01 03:44:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/01 04:58:16 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
 # define PHOTON_PER_OBJ		100000
 # define PHOTON_RADIUS		0.02
 # define AIR_RATIO			1.0
-# define DEPTH				9
+# define DEPTH				8
 
 # define DIFFUSE_RATIO		0.65
 # define SPECULAR_RATIO		1

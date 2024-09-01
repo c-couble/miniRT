@@ -6,16 +6,16 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 00:46:45 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/24 01:08:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 05:43:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SHADING_H
 # define SHADING_H
 
+# include "engine.h"
 # include "object.h"
 # include "ray.h"
-# include "engine.h"
 
 uint32_t	get_ambiant_light(t_engine *engine);
 void		get_fresnel(t_engine *eng, t_ray *c_ray, t_color *color, int depth);

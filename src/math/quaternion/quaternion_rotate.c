@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   quaternion_mult.c                                  :+:      :+:    :+:   */
+/*   quaternion_rotate.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/29 06:35:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/29 07:51:14 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/29 06:53:06 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/27 05:36:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <math.h>
 #include "quaternion.h"
 #include "vec3.h"
 
-void	quaternion_mult(t_quaternion *a, t_quaternion *b, t_quaternion *out)
+void	quaternion_rotate(t_vec3 *p, t_vec3 *axis, double angle, t_vec3 *out)
 {
-	t_quaternion	tmp;
-	t_vec3			veca;
-	t_vec3			vecb;
+	t_quaternion	q;
+	t_quaternion	point;
+	t_quaternion	inv_q;
+	double			half_angle;
 
-	tmp.a = a->a * b->a - vec3_dot_product(&a->vec, &b->vec);
-	veca = a->vec;
-	vecb = b->vec;
-	vec3_scale(&veca, b->a);
-	vec3_scale(&vecb, a->a);
-	vec3_cross_product(&a->vec, &b->vec, &tmp.vec);
-	vec3_add(&tmp.vec, &veca, &tmp.vec);
-	vec3_add(&tmp.vec, &vecb, &tmp.vec);
-	*out = tmp;
+	half_angle = angle / 2;
+	q.a = cos(half_angle);
+	q.vec = *axis;
+	vec3_scale(&q.vec, sin(half_angle));
+	point.a = 0;
+	point.vec = *p;
+	quaternion_inv(&q, &inv_q);
+	quaternion_mult(&q, &point, &point);
+	quaternion_mult(&point, &inv_q, &point);
+	*out = point.vec;
 }

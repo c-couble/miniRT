@@ -6,13 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 04:12:21 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/24 04:05:31 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:37:21 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "mlx_wrapper.h"
-#include "mlx.h"
-#include <stdio.h>
 
 int	loop_hook(t_mlx *mlx)
 {

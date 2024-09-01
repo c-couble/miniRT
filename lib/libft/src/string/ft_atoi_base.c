@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 06:13:41 by ccouble           #+#    #+#             */
-/*   Updated: 2024/02/27 01:50:28 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:29:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <limits.h>
 #include "ft_char.h"
 #include "ft_string.h"
-#include <limits.h>
 
 size_t	ft_get_base_number(char c, char *base);
 

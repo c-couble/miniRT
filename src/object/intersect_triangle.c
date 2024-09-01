@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/03 09:27:03 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 05:38:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
+#include "object.h"
+#include "ray.h"
 #include "util.h"
 #include "vec3.h"
-#include "ray.h"
-#include "object.h"
 
 static void		get_plane_from_triangle(t_triangle *tr, t_plane *p);
 static int		bsp(t_vec3 *a, t_vec3 *b, t_vec3 *c, t_vec3 *p);
@@ -45,7 +45,7 @@ static void	get_plane_from_triangle(t_triangle *tr, t_plane *p)
 
 	vec3_subtract(&tr->p1, &tr->p0, &s1);
 	vec3_subtract(&tr->p2, &tr->p1, &s2);
-	vec3_cross_product(&s1, &s2, &normal);
+	vec3_cross(&s1, &s2, &normal);
 	vec3_normalize(&normal);
 	p->pos = tr->p0;
 	p->normal.x = normal.x;

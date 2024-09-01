@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:05:21 by ccouble           #+#    #+#             */
-/*   Updated: 2024/02/27 02:44:30 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:30:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
-#include "ft_mem.h"
 #include <stdlib.h>
+#include "ft_mem.h"
+#include "ft_string.h"
 
 char	*ft_strtrim(const char *s1, const char *set)
 {

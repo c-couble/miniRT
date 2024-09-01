@@ -6,14 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:28:37 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/01 05:01:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <X11/X.h>
-#include <stdint.h>
 #include <time.h>
 #include "color.h"
+#include "defines.h"
 #include "engine.h"
 #include "ray.h"
 #include "shading.h"
@@ -57,7 +56,7 @@ static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
 	if (engine->scene.camera.locked)
 		color.color = get_pixel_color(engine, &camera_ray, DEPTH);
 	else
-		color.color = get_pixel_color(engine, &camera_ray, 4);
+		color.color = get_pixel_color(engine, &camera_ray, 5);
 	color_pixels(engine, i, j, color.color);
 }
 

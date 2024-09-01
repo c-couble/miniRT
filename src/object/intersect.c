@@ -6,13 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/06/09 23:26:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/27 05:37:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "object.h"
 #include "ray.h"
-#include <stdio.h>
 
 double	intersect(t_object *obj, t_ray *ray)
 {
@@ -26,10 +25,17 @@ double	intersect(t_object *obj, t_ray *ray)
 	[PARABOLOID] = intersect_paraboloid,
 	[TRIANGLE] = intersect_triangle,
 	};
+	double			t;
 
 	if (f[obj->type] != NULL)
 	{
-		return (f[obj->type](obj, ray));
+		t = f[obj->type](obj, ray);
+		if (t > 0)
+		{
+			ray->data.obj = obj;
+			ray->data.materials = obj->optional_data.material;
+		}
+		return (t);
 	}
 	return (-1);
 }

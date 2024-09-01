@@ -6,17 +6,17 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:20:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/24 23:41:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/27 05:42:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MLX_WRAPPER_H
 # define MLX_WRAPPER_H
 
+# include <stddef.h>
 # include "color.h"
 # include "keyboard.h"
 # include "vector.h"
-# include <stddef.h>
 
 typedef enum e_hooktype
 {
