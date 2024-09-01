@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 06:42:56 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/31 02:42:59 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/01 05:57:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,13 @@ int	parse_texture(t_engine *engine, t_option *data, char *arg)
 	data->texture = parse_texture_if_needed(engine, word);
 	if (data->texture == NULL)
 		return (-1);
-	word = ft_strtok_r(arg, ",", &save);
+	word = ft_strtok_r(NULL, ",", &save);
 	if (word == NULL)
 		return (0);
 	data->up_texture = parse_texture_if_needed(engine, word);
 	if (data->up_texture == NULL)
 		return (-1);
-	word = ft_strtok_r(arg, ",", &save);
+	word = ft_strtok_r(NULL, ",", &save);
 	if (word == NULL)
 		return (0);
 	data->down_texture = parse_texture_if_needed(engine, word);

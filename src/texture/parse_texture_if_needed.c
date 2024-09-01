@@ -6,13 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 01:59:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 05:19:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/01 05:59:04 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "ft_string.h"
 #include "texture.h"
+#include <stdio.h>
 
 t_texture	*parse_texture_if_needed(t_engine *engine, char *file)
 {
@@ -32,5 +33,5 @@ t_texture	*parse_texture_if_needed(t_engine *engine, char *file)
 		return (NULL);
 	if (add_vector(&engine->textures, &obj, 1) == -1)
 		return (NULL);
-	return (at_vector(&engine->textures, engine->objs_3d.size - 1));
+	return (at_vector(&engine->textures, engine->textures.size - 1));
 }
