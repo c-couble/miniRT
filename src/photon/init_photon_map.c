@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/01 05:04:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/01 05:07:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,15 +56,24 @@ int	init_photon_map(t_engine *eng)
 	return (0);
 }
 
-static void	generate_spherical_ray(t_vec3 *dir)
+static int	fill_photons(t_vector *photons, t_engine *eng, t_light *light)
 {
-	const double	phi = rand_range(0.0, 2.0 * M_PI);
-	const double	cos_theta = rand_range(-1, 1);
-	const double	sin_theta = sqrt(1 - cos_theta * cos_theta);
+	size_t		i;
+	t_object	*curr;
 
-	dir->x = sin_theta * cos(phi);
-	dir->y = sin_theta * sin(phi);
-	dir->z = cos_theta;
+	i = 0;
+	while (i < eng->scene.objects.size)
+	{
+		curr = at_vector(&eng->scene.objects, i);
+		if (curr->type == SPHERE
+			&& curr->optional_data.material.refraction_ratio)
+		{
+			if (generate_photons(eng, photons, light) == -1)
+				return (-1);
+		}
+		++i;
+	}
+	return (0);
 }
 
 static int	generate_photons(t_engine *eng, t_vector *photons, t_light *light)
@@ -90,21 +99,13 @@ static int	generate_photons(t_engine *eng, t_vector *photons, t_light *light)
 	return (0);
 }
 
-static int	fill_photons(t_vector *photons, t_engine *eng, t_light *light)
+static void	generate_spherical_ray(t_vec3 *dir)
 {
-	size_t		i;
-	t_object	*curr;
+	const double	phi = rand_range(0.0, 2.0 * M_PI);
+	const double	cos_theta = rand_range(-1, 1);
+	const double	sin_theta = sqrt(1 - cos_theta * cos_theta);
 
-	i = 0;
-	while (i < eng->scene.objects.size)
-	{
-		curr = at_vector(&eng->scene.objects, i);
-		if (curr->type == SPHERE && curr->optional_data.material.refraction_ratio)
-		{
-			if (generate_photons(eng, photons, light) == -1)
-				return (-1);
-		}
-		++i;
-	}
-	return (0);
+	dir->x = sin_theta * cos(phi);
+	dir->y = sin_theta * sin(phi);
+	dir->z = cos_theta;
 }
