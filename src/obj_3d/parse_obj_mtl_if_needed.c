@@ -1,39 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_texture_if_needed.c                          :+:      :+:    :+:   */
+/*   parse_obj_mtl_if_needed.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/29 01:59:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 06:36:03 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/02 05:19:58 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/02 05:43:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "engine.h"
 #include "ft_string.h"
-#include "texture.h"
-#include <stdio.h>
+#include "obj_mtl.h"
 
-t_texture	*parse_texture_if_needed(t_engine *engine, char *file)
+t_obj_mtl	*parse_obj_mtl_if_needed(t_engine *engine, char *file)
 {
 	size_t		i;
-	t_texture	*current;
-	t_texture	obj;
+	t_obj_mtl	*current;
+	t_obj_mtl	mtl;
 
 	i = 0;
-	while (i < engine->textures.size)
+	while (i < engine->obj_mtls.size)
 	{
-		current = at_vector(&engine->textures, i);
+		current = at_vector(&engine->obj_mtls, i);
 		if (ft_strcmp(file, current->file_name) == 0)
 			return (current);
 		++i;
 	}
-	printf("texture received\n");
-	if (parse_texture_file(&obj, file) == -1)
+	if (parse_mtl_file(engine, &mtl, file) == -1)
 		return (NULL);
-	printf("texture finished\n");
-	if (add_vector(&engine->textures, &obj, 1) == -1)
+	if (add_vector(&engine->obj_mtls, &mtl, 1) == -1)
 		return (NULL);
-	return (at_vector(&engine->textures, engine->textures.size - 1));
+	return (at_vector(&engine->obj_mtls, engine->obj_mtls.size - 1));
 }

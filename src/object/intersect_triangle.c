@@ -6,10 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 06:38:28 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 06:49:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include <unistd.h>
 #include "defines.h"
 #include "object.h"
@@ -56,6 +57,13 @@ double	intersect_triangle(t_object *obj, t_ray *ray)
 	ray->data.color.rgb.r = (ray->data.normal.x + 1) * 0.5 * 255;
 	ray->data.color.rgb.g = (ray->data.normal.y + 1) * 0.5 * 255;
 	ray->data.color.rgb.b = (ray->data.normal.z + 1) * 0.5 * 255;
+	ray->data.u = (1 - u - v) * obj->data.triangle.p0t.x
+		+ u * obj->data.triangle.p1t.x
+		+ v * obj->data.triangle.p2t.x;
+	ray->data.v = (1 - u - v) * obj->data.triangle.p0t.y
+		+ u * obj->data.triangle.p1t.y
+		+ v * obj->data.triangle.p2t.y;
+	ray->data.texture = obj->data.triangle.texture;
 	//vec3_normalize(&normal);
 	return (t);
 }

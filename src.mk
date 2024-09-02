@@ -82,6 +82,8 @@ SRC = \
 	  object/intersect_sphere.c \
 	  object/intersect_triangle.c \
 	  \
+	  obj_3d/parse_mtl_file.c \
+	  obj_3d/parse_obj_mtl_if_needed.c \
 	  obj_3d/parse_obj_file.c \
 	  obj_3d/parse_obj_if_needed.c \
 	  \
@@ -114,8 +116,9 @@ SRC = \
 	  \
 	  util/add_color.c \
 	  util/add_scale_color.c \
-	  util/get_biggest_distance.c \
 	  util/double_equals.c \
+	  util/init_material.c \
+	  util/get_biggest_distance.c \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \

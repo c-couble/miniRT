@@ -6,14 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 01:54:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 06:24:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "engine.h"
 #include "get_next_line_utils.h"
 #include "obj_3d.h"
 #include "ft_io.h"
 #include "ft_string.h"
+#include "obj_mtl.h"
+#include "object/material.h"
 #include "vec3.h"
 #include "object/parse_util.h"
 #include "float.h"
@@ -23,22 +26,27 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <time.h>
 #include <unistd.h>
 #include <stdio.h>
 
-static int	parse_line(t_obj_3d *obj, char *line);
-static int	parse_obj_vertice(t_obj_3d *obj);
-static int	parse_obj_vertex_normal(t_obj_3d *obj);
-static int	parse_obj_texture_coord(t_obj_3d *obj);
-static int	parse_obj_space_vertice(t_obj_3d *obj);
-static int	parse_obj_polygon(t_obj_3d *obj);
+static int	parse_line(t_engine *engine, t_obj_3d *obj, char *line);
+static int	parse_obj_mtl(t_engine *engine, t_obj_3d *obj);
+static int	parse_use_mtl(t_engine *engine, t_obj_3d *obj);
+static int	parse_obj_vertice(t_engine *engine, t_obj_3d *obj);
+static int	parse_obj_vertex_normal(t_engine *engine, t_obj_3d *obj);
+static int	parse_obj_texture_coord(t_engine *engine, t_obj_3d *obj);
+static int	parse_obj_space_vertice(t_engine *engine, t_obj_3d *obj);
+static int	parse_obj_polygon(t_engine *engine, t_obj_3d *obj);
 
-int	parse_obj_file(t_obj_3d *obj, const char *file)
+int	parse_obj_file(t_engine *engine, t_obj_3d *obj, char *file)
 {
 	int		fd;
 	char	*line;
 
 	obj->file_name = ft_strdup(file);
+	obj->mtl = NULL;
+	obj->current_material = NULL;
 	fd = open(file, O_RDONLY);
 	if (fd == -1)
 		return (-1);
@@ -55,7 +63,7 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 	while (line)
 	{
 		line = ft_strtok(line, "\r");
-		if (parse_line(obj, line) == -1)
+		if (parse_line(engine, obj, line) == -1)
 		{
 			close(fd);
 			return (-1);
@@ -73,9 +81,11 @@ int	parse_obj_file(t_obj_3d *obj, const char *file)
 	return (0);
 }
 
-static int	parse_line(t_obj_3d *obj, char *line)
+static int	parse_line(t_engine *engine, t_obj_3d *obj, char *line)
 {
-	static int	(*funcs[])(t_obj_3d *data) = {
+	static int	(*funcs[])(t_engine *engine, t_obj_3d *data) = {
+	[MTLLIB] = parse_obj_mtl,
+	[USEMTL] = parse_use_mtl,
 	[VERTICE] = parse_obj_vertice,
 	[VERTEX_NORMAL] = parse_obj_vertex_normal,
 	[TEXTURE_COORD] = parse_obj_texture_coord,
@@ -83,6 +93,8 @@ static int	parse_line(t_obj_3d *obj, char *line)
 	[POLYGON] = parse_obj_polygon,
 	};
 	static char	*data[] = {
+	[MTLLIB] = "mtllib",
+	[USEMTL] = "usemtl",
 	[VERTICE] = "v",
 	[VERTEX_NORMAL] = "vn",
 	[TEXTURE_COORD] = "vt",
@@ -98,16 +110,50 @@ static int	parse_line(t_obj_3d *obj, char *line)
 	while (i <= POLYGON)
 	{
 		if (ft_strcmp(arg, data[i]) == 0)
-			return (funcs[i](obj));
+			return (funcs[i](engine, obj));
 		++i;
 	}
 	return (0);
 }
 
-static int	parse_obj_vertice(t_obj_3d *obj)
+static int	parse_obj_mtl(t_engine *engine, t_obj_3d *obj)
+{
+	char *mtl = ft_strtok(NULL, " \t");
+
+	obj->mtl = parse_obj_mtl_if_needed(engine, mtl);
+	if (obj->mtl == NULL)
+		return (-1);
+	return (0);
+}
+
+static int	parse_use_mtl(t_engine *engine, t_obj_3d *obj)
+{
+	char			*mtl = ft_strtok(NULL, " \t");
+	size_t			i;
+	t_material_data	*material;
+
+	(void) engine;
+	if (obj->mtl == NULL)
+		return (-1);
+	i = 0;
+	while (i < obj->mtl->materials.size)
+	{
+		material = at_vector(&obj->mtl->materials, i);
+		if (ft_strcmp(material->name, mtl) == 0)
+		{
+			obj->current_material = material;
+			return (0);
+		}
+		++i;
+	}
+	return (-1);
+}
+
+static int	parse_obj_vertice(t_engine *engine, t_obj_3d *obj)
 {
 	t_vec4	vec;
 
+	(void) engine;
 	if (parse_double(&vec.x, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_double(&vec.y, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
@@ -120,10 +166,11 @@ static int	parse_obj_vertice(t_obj_3d *obj)
 		return (-1);
 	return (0);
 }
-static int	parse_obj_vertex_normal(t_obj_3d *obj)
+static int	parse_obj_vertex_normal(t_engine *engine, t_obj_3d *obj)
 {
 	t_vec3	vec;
 
+	(void) engine;
 	if (parse_double(&vec.x, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_double(&vec.y, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
@@ -134,10 +181,11 @@ static int	parse_obj_vertex_normal(t_obj_3d *obj)
 		return (-1);
 	return (0);
 }
-static int	parse_obj_texture_coord(t_obj_3d *obj)
+static int	parse_obj_texture_coord(t_engine *engine, t_obj_3d *obj)
 {
 	t_vec3	vec;
 
+	(void) engine;
 	if (parse_double(&vec.x, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_double(&vec.y, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
@@ -148,10 +196,11 @@ static int	parse_obj_texture_coord(t_obj_3d *obj)
 		return (-1);
 	return (0);
 }
-static int	parse_obj_space_vertice(t_obj_3d *obj)
+static int	parse_obj_space_vertice(t_engine *engine, t_obj_3d *obj)
 {
 	t_vec3	vec;
 
+	(void) engine;
 	if (parse_double(&vec.x, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (parse_double(&vec.y, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
@@ -187,10 +236,12 @@ static int	parse_polygon_point(t_polygon_point *point)
 	return (0);
 }
 
-static int	parse_obj_polygon(t_obj_3d *obj)
+static int	parse_obj_polygon(t_engine *engine, t_obj_3d *obj)
 {
 	t_polygon	poly;
 
+	(void) engine;
+	poly.material = obj->current_material;
 	if (parse_polygon_point(&poly.points[0]) == -1)
 		return (-1);
 	if (parse_polygon_point(&poly.points[1]) == -1)

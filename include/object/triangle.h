@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:00:08 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/26 04:13:06 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 06:47:20 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,18 @@
 # define TRIANGLE_H
 
 # include "color.h"
+#include "texture.h"
 # include "vec3.h"
 
 typedef struct s_triangle
 {
-	t_vec3			p0;
-	t_vec3			p1;
-	t_vec3			p2;
+	t_vec3	p0;
+	t_vec3	p1;
+	t_vec3	p2;
+	t_vec3	p0t;
+	t_vec3	p1t;
+	t_vec3	p2t;
+	t_texture	*texture;
 	t_color			color;
 }	t_triangle;
 

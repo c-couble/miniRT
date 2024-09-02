@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/31 04:46:22 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 06:45:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	parse_texture_file(t_texture *texture, char *file)
 	t_buffer	*buf;
 	ssize_t		offset;
 
+	printf("attempt texture parse |%s|\n", file);
 	ft_memset(texture, 0, sizeof(t_texture));
 	texture->file_name = ft_strdup(file);
 	if (texture->file_name == NULL)
@@ -41,15 +42,18 @@ int	parse_texture_file(t_texture *texture, char *file)
 	fd = open(file, O_RDONLY);
 	if (fd == -1)
 		return (-1);
+	printf("opened\n");
 	buf = malloc(sizeof(t_buffer));
 	ft_memset(buf, 0, sizeof(t_buffer));
 	content = get_next_line_ptr(fd, buf, "");
 	free(buf);
 	if (ft_strncmp(content, "P6", 2) != 0)
 		return (-1);
+	printf("start read header\n");
 	offset = read_header(texture, content);
 	if (offset == -1)
 		return (-1);
+	printf("end read header\n");
 	return (read_data(texture, content + offset));
 }
 
@@ -121,7 +125,7 @@ static int	set_value(t_texture *texture, char *word)
 		texture->height = tmp;
 		return (result);
 	}
-	if (parse_int(&texture->maxval, word, 255, 255) == -1)
+	if (parse_int(&texture->maxval, word, 1, 255) == -1)
 		return (-1);
 	return (1);
 }
@@ -141,6 +145,9 @@ static int	read_data(t_texture *texture, char *content)
 		ft_memcpy(&color[i].rgb.r, content + (i * 3), sizeof(uint8_t));
 		ft_memcpy(&color[i].rgb.g, content + (i * 3) + 1, sizeof(uint8_t));
 		ft_memcpy(&color[i].rgb.b, content + (i * 3) + 2, sizeof(uint8_t));
+		color[i].rgb.r *= 255 / texture->maxval;
+		color[i].rgb.g *= 255 / texture->maxval;
+		color[i].rgb.b *= 255 / texture->maxval;
 		++i;
 	}
 	return (0);

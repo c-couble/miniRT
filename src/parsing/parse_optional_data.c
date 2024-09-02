@@ -6,15 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 02:52:15 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 05:59:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
 #include "engine.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/optional_data.h"
+#include "util.h"
 
 static void			init_optional_data(t_option *data);
 static t_option_t	get_optional_type(char *type);
@@ -36,12 +36,10 @@ int	parse_optional_data(t_engine *engine, t_object *object)
 
 static void	init_optional_data(t_option *data)
 {
-	data->material.diffuse_ratio = DIFFUSE_RATIO;
-	data->material.specular_ratio = SPECULAR_RATIO;
-	data->material.specular_shine = SPECULAR_SHINE;
-	data->material.reflect_ratio = REFLECT_RATIO;
-	data->material.refraction_ratio = 0;
+	init_material(&data->material);
 	data->texture = NULL;
+	data->up_texture = NULL;
+	data->down_texture = NULL;
 }
 
 static t_option_t	get_optional_type(char *type)

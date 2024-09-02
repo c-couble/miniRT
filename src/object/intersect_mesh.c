@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 07:00:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/25 05:58:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 06:49:50 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "util.h"
 #include "vec3.h"
 #include "vector.h"
+#include <stdio.h>
 
 double	intersect_mesh(t_object *obj, t_ray *ray)
 {
@@ -36,6 +37,17 @@ double	intersect_mesh(t_object *obj, t_ray *ray)
 		triangle.p1 = *vec;
 		vec = at_vector(&obj->data.mesh.obj_3d->vertices, face->points[2].vertice_id - 1);
 		triangle.p2 = *vec;
+
+		vec = at_vector(&obj->data.mesh.obj_3d->texture_coordinates, face->points[0].texture_id - 1);
+		triangle.p0t = *vec;
+		vec = at_vector(&obj->data.mesh.obj_3d->texture_coordinates, face->points[1].texture_id - 1);
+		triangle.p1t = *vec;
+		vec = at_vector(&obj->data.mesh.obj_3d->texture_coordinates, face->points[2].texture_id - 1);
+		triangle.p2t = *vec;
+		if (face->material)
+			triangle.texture = face->material->texture;
+		else
+			triangle.texture = NULL;
 		triangle.color.rgb.r = 0;
 		triangle.color.rgb.g = 255;
 		triangle.color.rgb.b = 0;
