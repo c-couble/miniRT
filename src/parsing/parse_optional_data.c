@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 07:03:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 02:29:53 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ static void	init_optional_data(t_optional_data *data)
 	data->material.specular_ratio = SPECULAR_RATIO;
 	data->material.specular_shine = SPECULAR_SHINE;
 	data->material.reflect_ratio = REFLECT_RATIO;
-	data->material.refraction_ratio = 0;
+	data->material.refract_index = 0;
+	data->material.refract_blend = 1;
 }
 
 static t_option_t	get_optional_type(char *type)

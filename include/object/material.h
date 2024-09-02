@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 02:02:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 04:58:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/02 02:29:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ typedef struct s_material_data
 	double	specular_ratio;
 	double	specular_shine;
 	double	reflect_ratio;
-	double	refraction_ratio;
+	double	refract_index;
+	double	refract_blend;
 	double	checker;
 }	t_material_data;
 

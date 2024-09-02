@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/01 05:24:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/02 02:29:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ static int	fill_photons(t_vector *photons, t_engine *eng, t_light *light)
 	{
 		curr = at_vector(&eng->scene.objects, i);
 		if (curr->type == SPHERE
-			&& curr->optional_data.material.refraction_ratio)
+			&& curr->optional_data.material.refract_index)
 		{
 			if (generate_photons(eng, photons, light) == -1)
 				return (-1);
