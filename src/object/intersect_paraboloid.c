@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:38:11 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/02 09:47:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "ray.h"
 #include "util.h"
 #include "vec3.h"
+#include <math.h>
 
 static int		check_height(t_ray *ray, t_paraboloid *para);
 static void		get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid);
@@ -42,6 +43,15 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 		&para.rot_axis, -para.theta, &ray->data.normal);
 	get_hitpos(ray, t);
 	ray->data.color = obj->data.paraboloid.color;
+	/*
+	if (ray->data.texture)
+	{
+		double thetha = atan2(obj_ray.data.hitpos.y, obj_ray.data.hitpos.x);
+		ray->data.u = thetha / (2 * M_PI);
+		if (ray->data.u < 0)
+			ray->data.u += 1.0;
+		ray->data.v = obj_ray.data.hitpos.z / obj->data.paraboloid.height;
+	}*/
 	return (t);
 }
 
