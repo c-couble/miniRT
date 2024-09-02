@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 02:29:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/02 02:33:41 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 static void	apply_caustic_light(t_ray *ray, t_kdtree *photons, t_color *light);
 
-uint32_t	get_light(t_engine *engine, t_ray *ray)
+uint32_t	get_light(t_engine *engine, t_ray *c_ray)
 {
 	t_color		light;
 	t_object	*obj;
@@ -36,13 +36,14 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 		obj = at_vector(&engine->scene.objects, i);
 		if (obj->type == LIGHT)
 		{
-			if (trace_light(engine, &light_ray, ray, &obj->data.light))
-				phong_model(obj, &light, ray, &light_ray);
+			if (trace_light(engine, &light_ray, c_ray, &obj->data.light))
+				phong_model(obj, &light, c_ray, &light_ray);
 		}
 		++i;
 	}
-	apply_caustic_light(ray, engine->node, &light);
-	return (multiply_color(&light, &ray->data.color));
+	if (c_ray->data.materials.refract_index == 0)
+		apply_caustic_light(c_ray, engine->node, &light);
+	return (multiply_color(&light, &c_ray->data.color));
 }
 
 static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
