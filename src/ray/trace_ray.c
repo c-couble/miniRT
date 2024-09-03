@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 03:38:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/03 08:30:05 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 		{
 			data = ray->data;
 			if (data.obj->type != SPHERE && data.obj->type != CYLINDER 
-				&& data.obj->type != PLANE)
+				&& data.obj->type != PLANE && data.obj->type != PARABOLOID)
 				data.texture = NULL;
 		}
 		++i;
