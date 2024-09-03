@@ -43,6 +43,7 @@ SRC = \
 	  kdtree/clear_kdtree.c \
 	  kdtree/get_axis.c \
 	  kdtree/print_kdtree.c \
+	  kdtree/sort_photon_axis.c \
 	  \
 	  math/mat4/divide_line.c \
 	  math/mat4/mat4_identity.c \
@@ -109,7 +110,6 @@ SRC = \
 	  photon/init_photon_map.c \
 	  photon/trace_photon.c \
 	  photon/print_photon_map.c \
-	  photon/sort_photon_axis.c \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
