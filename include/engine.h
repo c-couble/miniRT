@@ -6,22 +6,22 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 03:48:49 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/03 23:41:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ENGINE_H
 # define ENGINE_H
 
-# include "kdtree.h"
 # include "mlx_wrapper.h"
 # include "scene.h"
+#include "vector.h"
 
 typedef struct s_engine
 {
 	t_scene		scene;
 	t_mlx		mlx;
-	t_kdtree	*node;
+	t_vector	caustic_maps;
 }	t_engine;
 
 int		init_engine(t_engine *engine, char *scene);

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 02:33:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/03 22:56:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include "photon.h"
 #include "shading.h"
 #include "vec3.h"
+#include "vector.h"
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 static void	apply_caustic_light(t_ray *ray, t_kdtree *photons, t_color *light);
@@ -42,7 +43,18 @@ uint32_t	get_light(t_engine *engine, t_ray *c_ray)
 		++i;
 	}
 	if (c_ray->data.materials.refract_index == 0)
-		apply_caustic_light(c_ray, engine->node, &light);
+	{
+		size_t		j;
+		t_kdtree	**node;
+
+		j = 0;
+		while (j < engine->caustic_maps.size)
+		{
+			node = at_vector(&engine->caustic_maps, j);
+			apply_caustic_light(c_ray, *node, &light);
+			++j;
+		}
+	}
 	return (multiply_color(&light, &c_ray->data.color));
 }
 

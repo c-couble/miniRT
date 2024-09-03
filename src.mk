@@ -107,6 +107,7 @@ SRC = \
 	  parsing/parse_triangle.c \
 	  parsing/parse_vector3d.c \
 	  \
+	  photon/clear_photon_maps.c \
 	  photon/init_photon_map.c \
 	  photon/trace_photon.c \
 	  photon/print_photon_map.c \
