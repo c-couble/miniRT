@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 01:33:43 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 06:35:50 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/03 22:38:13 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	parse_mtl_file(t_engine *engine, t_obj_mtl *mtl, char *file)
 	if (buf == NULL)
 		return (-1);
 	ft_memset(buf, 0, sizeof(t_buffer));
-	line = get_next_line_ptr(fd, buf, "\n");
+	line = get_next_line_ptr(fd, buf, "\n\r");
 	while (line)
 	{
 		if (parse_line(engine, mtl, line) == -1)
@@ -54,7 +54,7 @@ int	parse_mtl_file(t_engine *engine, t_obj_mtl *mtl, char *file)
 			close(fd);
 			return (-1);
 		}
-		line = get_next_line_ptr(fd, buf, "\n");
+		line = get_next_line_ptr(fd, buf, "\n\r");
 	}
 	free(line);
 	if (errno)
@@ -128,6 +128,7 @@ static int	parse_newmtl(t_engine *engine, t_obj_mtl *mtl, char *line)
 		at = at_vector(&mtl->materials, i);
 		if (ft_strcmp(at->name, line) == 0)
 			return (-1);
+		++i;
 	}
 	init_material(&material);
 	material.name = ft_strdup(line);
