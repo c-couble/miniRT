@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 06:24:55 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 03:30:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,7 @@ int	parse_obj_file(t_engine *engine, t_obj_3d *obj, char *file)
 	}
 	if (close(fd) == -1)
 		return (-1);
+	build_obj_cache(obj);
 	return (0);
 }
 

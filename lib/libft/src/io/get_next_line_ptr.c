@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 05:13:44 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/29 03:31:26 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 02:09:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ static char	*get_nearest_line_end(char *start, const char *set, size_t len)
 	while (set[i])
 	{
 		cur = ft_memchr(start, set[i], len);
-		if (best == NULL || cur < best)
+		if (best == NULL || (cur < best && cur != NULL))
 			best = cur;
 		++i;
 	}

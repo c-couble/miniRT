@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 05:18:31 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 03:28:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ double	intersect_cylinder(t_object *obj, t_ray *ray);
 double	intersect_plane(t_object *obj, t_ray *ray);
 double	intersect_paraboloid(t_object *obj, t_ray *ray);
 double	intersect_triangle(t_object *obj, t_ray *ray);
+double	intersect_cached_triangle(t_cached_triangle *triangle, t_ray *ray);
 double	intersect_mesh(t_object *obj, t_ray *ray);
 
 #endif

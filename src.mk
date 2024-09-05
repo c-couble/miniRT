@@ -75,6 +75,7 @@ SRC = \
 	  mlx_wrapper/init_mlx_struct.c \
 	  \
 	  object/intersect.c \
+	  object/intersect_cached_triangle.c \
 	  object/intersect_cylinder.c \
 	  object/intersect_mesh.c \
 	  object/intersect_paraboloid.c \
@@ -82,6 +83,7 @@ SRC = \
 	  object/intersect_sphere.c \
 	  object/intersect_triangle.c \
 	  \
+	  obj_3d/build_obj_cache.c \
 	  obj_3d/parse_mtl_file.c \
 	  obj_3d/parse_obj_mtl_if_needed.c \
 	  obj_3d/parse_obj_file.c \

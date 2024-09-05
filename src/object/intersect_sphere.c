@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 05:50:40 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 05:00:30 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 		vec3_subtract(&ray->data.hitpos, &obj->data.sphere.pos,
 				&ray->data.normal);
 		fill_uv(obj, ray);
-		vec3_normalize(&ray->data.normal);
 	}
 	return (t);
 }

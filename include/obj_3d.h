@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 04:01:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 06:24:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 03:30:26 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # include <stddef.h>
 #include "obj_mtl.h"
 #include "object/material.h"
+#include "object/triangle.h"
+#include "vec3.h"
 # include "vector.h"
 
 typedef struct s_obj_3d
@@ -39,8 +41,9 @@ typedef struct s_face_point
 
 typedef struct s_polygon
 {
-	t_polygon_point	points[3];
-	t_material_data	*material;
+	t_polygon_point		points[3];
+	t_cached_triangle	cache;
+	t_material_data		*material;
 }	t_polygon;
 
 typedef enum e_obj_line_type
@@ -58,5 +61,6 @@ struct	s_engine;
 
 t_obj_3d	*parse_obj_if_needed(struct s_engine *engine, char *file);
 int			parse_obj_file(struct s_engine *engine, t_obj_3d *obj, char *file);
+void		build_obj_cache(t_obj_3d *obj);
 
 #endif

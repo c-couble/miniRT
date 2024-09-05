@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 03:00:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/28 01:20:36 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 01:16:50 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int	parse_mesh(t_engine *engine, t_object_data *data)
 		free(data->mesh.name);
 		return (-1);
 	}
+	printf("got mesh\n");
 	return (0);
 }
 

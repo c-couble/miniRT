@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 05:46:40 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 05:03:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 		return (-1);
 	ray->data = data;
 	ray->data.color = obj->data.cylinder.color;
-	get_hitpos(ray, t);
 	return (t);
 }
 
