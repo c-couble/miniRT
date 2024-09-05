@@ -107,6 +107,9 @@ SRC = \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
 	  \
+	  texture/clear_texture.c \
+	  texture/clear_textures.c \
+	  texture/get_texture_color.c \
 	  texture/parse_texture_file.c \
 	  texture/parse_texture_if_needed.c \
 	  \

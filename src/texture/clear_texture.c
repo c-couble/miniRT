@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   intersect_mesh.c                                   :+:      :+:    :+:   */
+/*   clear_texture.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 07:00:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 05:48:37 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/05 06:42:43 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/05 06:49:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "object.h"
-#include "ray.h"
+#include <stdlib.h>
+#include "texture.h"
 
-double	intersect_mesh(t_object *obj, t_ray *ray)
+void	clear_texture(t_texture *texture)
 {
-	(void) obj;
-	(void) ray;
-	return (-1);
+	free(texture->file_name);
+	free(texture->texture);
+	free(texture);
 }

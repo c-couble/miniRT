@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/30 02:52:15 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 07:13:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ int	parse_optional_data(t_engine *engine, t_object *object)
 	arg = ft_strtok(NULL, " \t");
 	while (arg)
 	{
-		parse_option(engine, object, arg);
+		if (parse_option(engine, object, arg) == -1)
+			return (-1);
 		arg = ft_strtok(NULL, " \t");
 	}
 	return (0);
@@ -42,6 +43,8 @@ static void	init_optional_data(t_option *data)
 	data->material.reflect_ratio = REFLECT_RATIO;
 	data->material.refraction_ratio = 0;
 	data->texture = NULL;
+	data->down_texture = NULL;
+	data->up_texture = NULL;
 }
 
 static t_option_t	get_optional_type(char *type)

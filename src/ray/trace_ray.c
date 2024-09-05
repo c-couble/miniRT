@@ -6,32 +6,18 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/03 08:30:05 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/05 07:15:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
 #include "engine.h"
 #include "object.h"
 #include "ray.h"
 #include "texture.h"
 #include "util.h"
 #include "vec3.h"
-#include <stdio.h>
 
-t_color	get_texture_color(t_texture *texture, double u, double v)
-{
-	t_color	color;
-	color.color = 0xffffff;
-	if (u < 0 || u > 1 || v < 0 || v > 1)
-	{
-		printf("incorrect uv %lf %lf\n", u, v);
-		return color;
-	}
-	int	col = u * texture->width;
-	int	line = v * texture->height;
-	return (texture->texture[line * texture->width + col]);
-}
+static void	add_ray_data(t_ray *ray);
 
 int	trace_ray(t_engine *engine, t_ray *ray)
 {
@@ -50,23 +36,23 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 		if (get_closest_distance_ptr(tmp, t, &t))
 		{
 			data = ray->data;
-			if (data.obj->type != SPHERE && data.obj->type != CYLINDER 
-				&& data.obj->type != PLANE && data.obj->type != PARABOLOID)
-				data.texture = NULL;
 		}
 		++i;
 	}
+	ray->data = data;
 	if (t != -1)
-	{
-		ray->data = data;
-		ray->data.raw_normal = ray->data.normal;
-		if (vec3_dot(&ray->ray, &data.normal) < 0)
-			vec3_scale(&ray->data.normal, -1);
-		if (ray->data.texture)
-		{
-			ray->data.color = get_texture_color(ray->data.texture, ray->data.u, ray->data.v);
-
-		}
-	}
+		add_ray_data(ray);
 	return (t);
+}
+
+static void	add_ray_data(t_ray *ray)
+{
+	ray->data.raw_normal = ray->data.normal;
+	if (vec3_dot(&ray->ray, &ray->data.normal) < 0)
+		vec3_scale(&ray->data.normal, -1);
+	if (ray->data.texture)
+	{
+		ray->data.color = get_texture_color(ray->data.texture,
+				ray->data.u, ray->data.v);
+	}
 }
