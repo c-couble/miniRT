@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 07:47:30 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 08:12:52 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -134,6 +134,8 @@ static int	read_data(t_texture *texture, t_file *file, ssize_t offset)
 	t_color	*color;
 	char	*current;
 
+	if (offset + 3 * texture->width * texture->height != file->length)
+		return (-1);
 	color = malloc((texture->width * texture->height) * sizeof(t_color));
 	if (color == NULL)
 		return (-1);
@@ -141,11 +143,6 @@ static int	read_data(t_texture *texture, t_file *file, ssize_t offset)
 	i = 0;
 	while (i < texture->width * texture->height)
 	{
-		if (i * 3 + offset + 2 >= file->length)
-		{
-			free(texture->texture);
-			return (-1);
-		}
 		current = file->content + offset + i * 3;
 		ft_memcpy(&color[i].rgb.r, current, sizeof(uint8_t));
 		ft_memcpy(&color[i].rgb.g, current + 1, sizeof(uint8_t));
