@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:42:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:07:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,9 @@ typedef struct s_camera
 
 union	u_object_data;
 
-int		parse_camera(union u_object_data *data);
-
 struct	s_engine;
 
+int		parse_camera(struct s_engine *engine, union u_object_data *data);
 void	setup_camera(struct s_engine *engine);
 void	create_camera_vectors(t_camera *cam);
 void	color_pixels(struct s_engine *engine, size_t i, size_t j, uint32_t c);

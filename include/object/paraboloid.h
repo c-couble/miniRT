@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:06:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/03 03:09:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/28 06:07:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ typedef struct s_paraboloid
 }	t_paraboloid;
 
 union	u_object_data;
+struct	s_engine;
 
-int	parse_paraboloid(union u_object_data *object);
+int	parse_paraboloid(struct s_engine *engine, union u_object_data *object);
 
 #endif

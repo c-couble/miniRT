@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 01:50:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:39:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:20:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
+#include "engine.h"
 #include "ft_string.h"
 #include "object/material.h"
 #include "object/optional_data.h"
@@ -18,8 +19,9 @@
 
 static int	fill_data(t_material_data *material, char *str);
 
-int	parse_material(t_optional_data *data, char *arg)
+int	parse_material(t_engine *engine, t_option *data, char *arg)
 {
+	(void) engine;
 	return (fill_data(&data->material, arg));
 }
 

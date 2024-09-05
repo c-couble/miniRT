@@ -76,10 +76,14 @@ SRC = \
 	  \
 	  object/intersect.c \
 	  object/intersect_cylinder.c \
+	  object/intersect_mesh.c \
 	  object/intersect_paraboloid.c \
 	  object/intersect_plane.c \
 	  object/intersect_sphere.c \
 	  object/intersect_triangle.c \
+	  \
+	  obj_3d/parse_obj_file.c \
+	  obj_3d/parse_obj_if_needed.c \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
@@ -87,18 +91,27 @@ SRC = \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \
 	  parsing/parse_double.c \
+	  parsing/parse_int.c \
 	  parsing/parse_light.c \
 	  parsing/parse_material.c \
+	  parsing/parse_mesh.c \
 	  parsing/parse_normalized_vector3d.c \
 	  parsing/parse_optional_data.c \
 	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \
 	  parsing/parse_sphere.c \
+	  parsing/parse_texture.c \
 	  parsing/parse_triangle.c \
 	  parsing/parse_vector3d.c \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
+	  \
+	  texture/clear_texture.c \
+	  texture/clear_textures.c \
+	  texture/get_texture_color.c \
+	  texture/parse_texture_file.c \
+	  texture/parse_texture_if_needed.c \
 	  \
 	  ray/trace_ray.c \
 	  \
@@ -110,6 +123,7 @@ SRC = \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
 	  util/get_normal_color.c \
+	  util/get_theta_axis.c \
 	  util/get_uv_color.c \
 	  util/multiply_color.c \
 	  util/print_error.c \

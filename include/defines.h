@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/30 06:54:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 01:06:05 by ccouble          ###   ########.fr       */
+/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/03 11:28:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@
 # define INACCURATE_ZERO	10e-8
 # define SKY				7591935
 # define BACKGROUND_COLOR	0
+# define TILE_DIVIDER		100.
 
 # define AIR_RATIO			1.0
 # define DEPTH				8

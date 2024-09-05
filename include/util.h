@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 19:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/26 06:14:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/08/31 03:55:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ double	get_closest_distance(double a, double b);
 int		get_closest_distance_ptr(double a, double b, double *out);
 double	solve_plane_equation(t_plane *plane, t_ray *ray);
 void	get_hitpos(t_ray *ray, double t);
+double	get_theta_axis(t_vec3 *axis, t_vec3 *rot_axis);
 void	ft_dswap(double *a, double *b);
 
 #endif

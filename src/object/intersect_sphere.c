@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 06:28:02 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/05 07:16:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include "ray.h"
 #include "util.h"
 #include "vec3.h"
+
+static void	fill_uv(t_object *obj, t_ray *ray);
 
 double	intersect_sphere(t_object *obj, t_ray *ray)
 {
@@ -32,10 +34,23 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 	if (q.delta < 0)
 		return (-1);
 	t = get_closest_distance(q.r1, q.r2);
-	ray->data.color = obj->data.sphere.color;
-	get_hitpos(ray, t);
-	vec3_subtract(&ray->data.hitpos, &obj->data.sphere.pos,
-		&ray->data.normal);
-	vec3_normalize(&ray->data.normal);
+	if (t > 0)
+	{
+		ray->data.color = obj->data.sphere.color;
+		get_hitpos(ray, t);
+		vec3_subtract(&ray->data.hitpos, &obj->data.sphere.pos,
+			&ray->data.normal);
+		fill_uv(obj, ray);
+		vec3_normalize(&ray->data.normal);
+	}
 	return (t);
+}
+
+static void	fill_uv(t_object *obj, t_ray *ray)
+{
+	const t_vec3	*normal = &ray->data.normal;
+
+	ray->data.u = 0.5 + (atan2(normal->y, normal->x) / (M_PI * 2));
+	ray->data.v = 0.5 - (asin(normal->z / obj->data.sphere.radius) / M_PI);
+	ray->data.texture = obj->optional_data.texture;
 }

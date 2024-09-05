@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   light.h                                            :+:      :+:    :+:   */
+/*   clear_texture.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:41:42 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/05 06:42:43 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/05 06:49:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIGHT_H
-# define LIGHT_H
+#include <stdlib.h>
+#include "texture.h"
 
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_light
+void	clear_texture(t_texture *texture)
 {
-	t_vec3	pos;
-	double	ratio;
-	t_color	color;
-}	t_light;
-
-struct	s_engine;
-union	u_object_data;
-
-int	parse_light(struct s_engine *engine, union u_object_data *object);
-
-#endif
+	free(texture->file_name);
+	free(texture->texture);
+	free(texture);
+}
