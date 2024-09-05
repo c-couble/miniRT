@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/03 11:22:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/05 05:26:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,12 +98,9 @@ static void	get_uv(t_ray *obj_ray, t_ray *ray, const t_paraboloid *para)
 {
 	double	thetha;
 
-	if (ray->data.texture)
-	{
-		thetha = atan2(obj_ray->data.hitpos.y, obj_ray->data.hitpos.x);
-		ray->data.u = thetha / (2 * M_PI);
-		if (ray->data.u < 0)
-			ray->data.u += 1.0;
-		ray->data.v = obj_ray->data.hitpos.z / para->height;
-	}
+	thetha = atan2(obj_ray->data.hitpos.y, obj_ray->data.hitpos.x);
+	ray->data.u = thetha / (2 * M_PI);
+	if (ray->data.u < 0)
+		ray->data.u += 1.0;
+	ray->data.v = obj_ray->data.hitpos.z / para->height;
 }
