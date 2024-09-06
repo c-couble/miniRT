@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:40:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/28 06:12:58 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,11 @@
 #include "object/parse_util.h"
 #include "vec3.h"
 
-int	parse_sphere(t_object_data *data)
+int	parse_sphere(t_engine *engine, t_object_data *data)
 {
 	char	*arg;
 
+	(void) engine;
 	if (parse_vector3d(&data->sphere.pos, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	arg = ft_strtok(NULL, " \t");

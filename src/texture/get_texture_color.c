@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   light.h                                            :+:      :+:    :+:   */
+/*   get_texture_color.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:41:42 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/05 05:52:25 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/05 05:57:57 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIGHT_H
-# define LIGHT_H
+#include "color.h"
+#include "texture.h"
+#include <stdint.h>
 
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_light
+t_color	get_texture_color(t_texture *texture, double u, double v)
 {
-	t_vec3	pos;
-	double	ratio;
 	t_color	color;
-}	t_light;
+	int		col;
+	int		line;
 
-struct	s_engine;
-union	u_object_data;
-
-int	parse_light(struct s_engine *engine, union u_object_data *object);
-
-#endif
+	color.color = 0xffffff;
+	if (u < 0 || u > 1 || v < 0 || v > 1)
+		return (color);
+	col = u * texture->width;
+	line = v * texture->height;
+	return (texture->texture[line * texture->width + col]);
+}

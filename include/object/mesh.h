@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   light.h                                            :+:      :+:    :+:   */
+/*   mesh.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:41:42 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/20 03:43:40 by ccouble           #+#    #+#             */
+/*   Updated: 2024/07/26 04:12:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIGHT_H
-# define LIGHT_H
+#ifndef MESH_H
+# define MESH_H
 
-# include "color.h"
+# include "obj_3d.h"
 # include "vec3.h"
 
-typedef struct s_light
+typedef struct s_mesh
 {
-	t_vec3	pos;
-	double	ratio;
-	t_color	color;
-}	t_light;
+	char		*name;
+	t_vec3		pos;
+	t_vec3		orientation;
+	double		scale;
 
-struct	s_engine;
+	t_obj_3d	*obj_3d;
+}	t_mesh;
+
 union	u_object_data;
+struct	s_engine;
 
-int	parse_light(struct s_engine *engine, union u_object_data *object);
+int	parse_mesh(struct s_engine *engine, union u_object_data *object);
 
 #endif

@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   light.h                                            :+:      :+:    :+:   */
+/*   parse_int.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:41:42 by ccouble          ###   ########.fr       */
+/*   Created: 2024/08/29 05:46:07 by ccouble           #+#    #+#             */
+/*   Updated: 2024/08/29 05:47:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIGHT_H
-# define LIGHT_H
+#include "ft_string.h"
 
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_light
+int	parse_int(int *data, const char *nptr, double min, double max)
 {
-	t_vec3	pos;
-	double	ratio;
-	t_color	color;
-}	t_light;
-
-struct	s_engine;
-union	u_object_data;
-
-int	parse_light(struct s_engine *engine, union u_object_data *object);
-
-#endif
+	if (ft_atoi_ptr(data, nptr) == -1)
+		return (-1);
+	if (*data > max || *data < min)
+		return (-1);
+	return (0);
+}

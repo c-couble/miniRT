@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   light.h                                            :+:      :+:    :+:   */
+/*   parse_obj_file.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:41:42 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/05 05:50:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIGHT_H
-# define LIGHT_H
+#include "obj_3d.h"
+#include "float.h"
 
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_light
+int	parse_obj_file(t_obj_3d *obj, const char *file)
 {
-	t_vec3	pos;
-	double	ratio;
-	t_color	color;
-}	t_light;
-
-struct	s_engine;
-union	u_object_data;
-
-int	parse_light(struct s_engine *engine, union u_object_data *object);
-
-#endif
+	(void) file;
+	(void) obj;
+	return (-1);
+}

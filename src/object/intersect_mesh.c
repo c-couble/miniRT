@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   light.h                                            :+:      :+:    :+:   */
+/*   intersect_mesh.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 17:30:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:41:42 by ccouble          ###   ########.fr       */
+/*   Created: 2024/07/22 07:00:38 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/05 05:48:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIGHT_H
-# define LIGHT_H
+#include "object.h"
+#include "ray.h"
 
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_light
+double	intersect_mesh(t_object *obj, t_ray *ray)
 {
-	t_vec3	pos;
-	double	ratio;
-	t_color	color;
-}	t_light;
-
-struct	s_engine;
-union	u_object_data;
-
-int	parse_light(struct s_engine *engine, union u_object_data *object);
-
-#endif
+	(void) obj;
+	(void) ray;
+	return (-1);
+}

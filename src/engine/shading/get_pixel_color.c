@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/02 02:29:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/06 10:14:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,10 @@ uint32_t	get_pixel_color(t_engine *engine, t_ray *c_ray, int depth)
 		return (BACKGROUND_COLOR);
 	if (trace_ray(engine, c_ray) > -INACCURATE_ZERO)
 	{
+		if (engine->scene.camera.render_type == NORMAL)
+			return (get_normal_color(c_ray));
+		if (engine->scene.camera.render_type == UV_MAP)
+			return (get_uv_color(c_ray));
 		color.color = get_light(engine, c_ray);
 		if (c_ray->data.materials.refract_index
 			&& c_ray->data.materials.reflect_ratio)
@@ -31,10 +35,6 @@ uint32_t	get_pixel_color(t_engine *engine, t_ray *c_ray, int depth)
 			color.color = get_reflect(engine, c_ray, color, depth -1);
 		else if (c_ray->data.materials.refract_index)
 			color.color = get_refract(engine, c_ray, color, depth -1);
-		if (engine->scene.camera.render_type == NORMAL)
-			return (get_normal_color(c_ray));
-		if (engine->scene.camera.render_type == UV_MAP)
-			return (get_uv_color(c_ray));
 		return (color.color);
 	}
 	return (BACKGROUND_COLOR);

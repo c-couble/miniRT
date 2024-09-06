@@ -6,21 +6,25 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/03 23:42:51 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/06 10:14:29 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
-#include "kdtree.h"
 #include "mlx_wrapper.h"
+#include "obj_3d.h"
 #include "scene.h"
 #include "photon.h"
+#include "texture.h"
+#include "vector.h"
 
 static int	init_hooks(t_engine *engine);
 
 int	init_engine(t_engine *engine, char *scene)
 {
-	if (init_scene(&engine->scene, scene) == -1)
+	init_vector(&engine->objs_3d, sizeof(t_obj_3d));
+	init_vector(&engine->textures, sizeof(t_texture *));
+	if (init_scene(engine, &engine->scene, scene) == -1)
 		return (-1);
 	if (init_photon_map(engine) == -1)
 	{

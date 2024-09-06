@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 08:20:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/22 03:08:18 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/07/26 04:11:22 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ typedef struct s_ambient_light
 }	t_ambient_light;
 
 union	u_object_data;
+struct	s_engine;
 
-int	parse_ambient_light(union u_object_data *data);
+int	parse_ambient_light(struct s_engine *engine, union u_object_data *data);
 
 #endif

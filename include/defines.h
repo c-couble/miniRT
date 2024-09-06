@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/30 06:54:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/03 23:52:54 by lespenel         ###   ########.fr       */
+/*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/06 09:57:49 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@
 # define INACCURATE_ZERO	10e-8
 # define SKY				7591935
 # define BACKGROUND_COLOR	0
+# define TILE_DIVIDER		100.
 
 # define PHOTON_PER_OBJ		1000000
 # define PHOTON_RADIUS		0.03

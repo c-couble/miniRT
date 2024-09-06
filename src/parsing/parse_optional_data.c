@@ -6,46 +6,36 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 02:29:53 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/06 10:15:48 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
+#include "engine.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/optional_data.h"
 
-static void			init_optional_data(t_optional_data *data);
+static void			init_optional_data(t_option *data);
 static t_option_t	get_optional_type(char *type);
-static int			parse_option(t_object *object, t_option_t type, char *arg);
+static int			parse_option(t_engine *engine, t_object *object, char *arg);
 
-int	parse_optional_data(t_object *object)
+int	parse_optional_data(t_engine *engine, t_object *object)
 {
 	char		*arg;
-	char		*name;
-	char		*save;
-	t_option_t	type;
 
 	init_optional_data(&object->optional_data);
 	arg = ft_strtok(NULL, " \t");
 	while (arg)
 	{
-		name = ft_strtok_r(arg, ":", &save);
-		if (name == NULL)
+		if (parse_option(engine, object, arg) == -1)
 			return (-1);
-		type = get_optional_type(name);
-		if (type == UNKNOWN_OPTION)
-			return (-1);
-		arg = ft_strtok_r(NULL, ":", &save);
-		if (arg == NULL)
-			return (-1);
-		parse_option(object, type, arg);
 		arg = ft_strtok(NULL, " \t");
 	}
 	return (0);
 }
 
-static void	init_optional_data(t_optional_data *data)
+static void	init_optional_data(t_option *data)
 {
 	data->material.diffuse_ratio = DIFFUSE_RATIO;
 	data->material.specular_ratio = SPECULAR_RATIO;
@@ -53,12 +43,16 @@ static void	init_optional_data(t_optional_data *data)
 	data->material.reflect_ratio = REFLECT_RATIO;
 	data->material.refract_index = 0;
 	data->material.refract_blend = 1;
+	data->texture = NULL;
+	data->down_texture = NULL;
+	data->up_texture = NULL;
 }
 
 static t_option_t	get_optional_type(char *type)
 {
 	static char	*values[] = {
 	[MATERIAL] = "ma",
+	[TEXTURE] = "tx",
 	};
 	size_t		i;
 
@@ -72,11 +66,24 @@ static t_option_t	get_optional_type(char *type)
 	return (UNKNOWN_OPTION);
 }
 
-static int	parse_option(t_object *object, t_option_t type, char *arg)
+static int	parse_option(t_engine *engine, t_object *object, char *arg)
 {
-	static int	(*values[])(t_optional_data *data, char *arg) = {
+	static int	(*values[])(t_engine *engine, t_option *data, char *arg) = {
 	[MATERIAL] = parse_material,
+	[TEXTURE] = parse_texture,
 	};
+	t_option_t	type;
+	char		*name;
+	char		*save;
 
-	return (values[type](&object->optional_data, arg));
+	name = ft_strtok_r(arg, ":", &save);
+	if (name == NULL)
+		return (-1);
+	type = get_optional_type(name);
+	if (type == UNKNOWN_OPTION)
+		return (-1);
+	arg = ft_strtok_r(NULL, ":", &save);
+	if (arg == NULL)
+		return (-1);
+	return (values[type](engine, &object->optional_data, arg));
 }
