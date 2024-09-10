@@ -10,9 +10,28 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 Ray tracing is primarily used in fields where rendering time can be longer, such as high-quality CGI and VFX for film and television.
 Real-time ray-traced images remain a significant challenge, highlighting the computational complexity of achieving such high visual fidelity on the fly.
 
-<td><image src="./assets/screenshots/cornell.png " width="400" height="400"></image></td>
+## Table of Contents
 
+<img align="right" width="400" height="400" src="./assets/screenshots/cornell.png">
 
+- [Usage](#usage)
+- [Features](#features)
+- [Supported File Formats](#supported-file-formats)
+- [Credits](#credits)
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+## Usage
+## Features
+## Supported File Formats
 ## Credits
 
 - [Charlie Couble](https://github.com/c-couble)
