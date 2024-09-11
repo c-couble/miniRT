@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:35:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/11 23:17:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color_util.h"
+#include "object/light.h"
 #include "shading.h"
 #include "vec3.h"
 
@@ -19,20 +20,17 @@ static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 uint32_t	get_light(t_engine *engine, t_ray *ray)
 {
 	t_color		light;
-	t_object	*obj;
+	t_light		*curr;
 	t_ray		light_ray;
 	size_t		i;
 
 	i = 0;
 	light.color = get_ambiant_light(engine);
-	while (i < engine->scene.objects.size)
+	while (i < engine->scene.lights.size)
 	{
-		obj = at_vector(&engine->scene.objects, i);
-		if (obj->type == LIGHT)
-		{
-			if (trace_light(engine, &light_ray, ray, &obj->data.light))
-				phong_model(obj, &light, ray, &light_ray);
-		}
+		curr = at_vector(&engine->scene.lights, i);
+		if (trace_light(engine, &light_ray, ray, curr))
+			phong_model(curr, &light, ray, &light_ray);
 		++i;
 	}
 	return (multiply_color(&light, &ray->data.color));

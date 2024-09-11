@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:11:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/11 23:19:29 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,15 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 	if (fd == -1)
 		return (-1);
 	init_vector(&scene->objects, sizeof(t_object));
+	init_vector(&scene->lights, sizeof(t_light));
 	if (read_file(engine, scene, fd) == -1)
 	{
-		clear_vector(&scene->objects);
 		close(fd);
 		return (-1);
 	}
 	close(fd);
 	if (scene->ambient_light.ratio == -1 || scene->camera.fov == -1)
 	{
-		clear_vector(&scene->objects);
 		print_error("You need one camera and one ambient light");
 		return (-1);
 	}
@@ -108,7 +107,15 @@ static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i)
 		dprintf(STDERR_FILENO, "Error\nParsing error on line %ld\n", i);
 		return (-1);
 	}
-	if (obj.type != COMMENT)
+	if (obj.type == LIGHT)
+	{
+		if (add_vector(&scene->lights, &obj.data.light, 1) == -1)
+		{
+			print_error("Memory allocation failure");
+			return (-1);
+		}
+	}
+	else if (obj.type != COMMENT)
 	{
 		if (add_created_object(scene, &obj) == -1)
 			return (-1);

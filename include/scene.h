@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 20:28:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/26 04:03:47 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/11 23:09:27 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct s_scene
 	t_camera		camera;
 	int				has_camera;
 	t_vector		objects;
+	t_vector		lights;
 	char			*scene_name;
 }	t_scene;
 
