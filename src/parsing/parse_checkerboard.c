@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 06:53:24 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 08:37:31 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/11 10:48:24 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,16 @@ static int	fill_data(t_checkerboard *checker, char *str)
 	char	*data;
 
 	data = ft_strtok_r(str, ",", &save);
-	if (parse_int(&checker->x_size, data, 0, INT_MAX) == -1)
+	if (parse_int(&checker->x_size, data, 0, INT_MAX / 2) == -1)
 		return (-1);
 	data = ft_strtok_r(NULL, ",", &save);
-	if (parse_int(&checker->y_size, data, 0, INT_MAX) == -1)
+	if (parse_int(&checker->y_size, data, 0, INT_MAX / 2) == -1)
 		return (-1);
 	if (parse_color(&checker->x_color) == -1)
 		return (-1);
 	if (parse_color(&checker->y_color) == -1)
 		return (-1);
+	checker->x_size *= 2;
+	checker->y_size *= 2;
 	return (0);
 }
