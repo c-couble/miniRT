@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 07:16:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/11 08:48:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
+#include "checkerboard.h"
 #include "math_util.h"
 #include "object.h"
 #include "ray.h"
@@ -42,6 +43,7 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 			&ray->data.normal);
 		fill_uv(obj, ray);
 		vec3_normalize(&ray->data.normal);
+		apply_checkerboard(ray, obj);
 	}
 	return (t);
 }
