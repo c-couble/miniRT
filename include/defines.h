@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/03 11:28:10 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/11 17:22:59 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
 # define MAX_RAY_LEN		10000
 # define INACCURATE_ZERO	10e-8
 # define SKY				7591935
+# define GREEN				0xFF00
 # define BACKGROUND_COLOR	0
 # define TILE_DIVIDER		100.
 

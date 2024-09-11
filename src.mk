@@ -1,4 +1,11 @@
 SRC = \
+	  bvh/draw_lines.c \
+	  bvh/draw_bounding_box.c \
+	  bvh/get_sphere_aabb.c \
+	  bvh/get_3d_aabb.c \
+	  bvh/print_aabb.c \
+	  bvh/print_3d_aabb.c \
+	  \
 	  camera/color_pixels.c \
 	  camera/create_camera_vectors.c \
 	  camera/move_camera.c \
@@ -44,12 +51,15 @@ SRC = \
 	  math/mat4/mat4_print.c \
 	  math/mat4/swap_lines.c \
 	  \
+	  math/vec2/vec2_create.c \
+	  \
 	  math/vec3/vec3_add.c \
 	  math/vec3/vec3_create.c \
 	  math/vec3/vec3_cross.c \
 	  math/vec3/vec3_dot.c \
 	  math/vec3/vec3_get_norm.c \
 	  math/vec3/vec3_normalize.c \
+	  math/vec3/vec3_print.c \
 	  math/vec3/vec3_scale.c \
 	  math/vec3/vec3_subtract.c \
 	  \
