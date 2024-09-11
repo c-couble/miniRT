@@ -1,10 +1,13 @@
 SRC = \
+	  bvh/create_bvh_node.c \
+	  bvh/clear_bvh.c \
 	  bvh/draw_lines.c \
 	  bvh/draw_bounding_box.c \
 	  bvh/get_sphere_aabb.c \
 	  bvh/get_3d_aabb.c \
 	  bvh/print_aabb.c \
 	  bvh/print_3d_aabb.c \
+	  bvh/intersect_aabb.c \
 	  \
 	  camera/color_pixels.c \
 	  camera/create_camera_vectors.c \
@@ -129,6 +132,7 @@ SRC = \
 	  util/add_scale_color.c \
 	  util/get_biggest_distance.c \
 	  util/double_equals.c \
+	  util/get_axis.c \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \

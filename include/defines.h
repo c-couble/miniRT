@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 17:22:59 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/11 21:05:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,10 @@
 # define GREEN				0xFF00
 # define BACKGROUND_COLOR	0
 # define TILE_DIVIDER		100.
+
+# define X					0
+# define Y					1
+# define Z					2
 
 # define AIR_RATIO			1.0
 # define DEPTH				8

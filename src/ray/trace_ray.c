@@ -6,16 +6,18 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 08:06:07 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/11 21:59:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "bvh.h"
 #include "engine.h"
 #include "object.h"
 #include "ray.h"
 #include "texture.h"
 #include "util.h"
 #include "vec3.h"
+#include <stdio.h>
 
 static void	add_ray_data(t_ray *ray);
 
@@ -33,6 +35,26 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	{
 		obj = at_vector(&engine->scene.objects, i);
 		tmp = intersect(obj, ray);
+		if (obj->type == SPHERE)
+		{
+			tmp = intersect_aabb(ray, &obj->data.sphere.aabb);
+			if (tmp != -1)
+			{
+				ray->data.color = obj->data.sphere.color;
+				get_hitpos(ray, tmp);
+				vec3_subtract(&ray->data.hitpos, &obj->data.sphere.pos,
+					&ray->data.normal);
+				ray->data.u = 0;
+				ray->data.v = 0;
+				ray->data.texture = obj->optional_data.texture;
+				vec3_normalize(&ray->data.normal);
+				printf("t = %lf\n", tmp);
+				ray->data.obj = obj;
+				ray->data.materials = obj->optional_data.material;
+				data = ray->data;
+				++i ;
+			}
+		}
 		if (get_closest_distance_ptr(tmp, t, &t))
 		{
 			data = ray->data;
