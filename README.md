@@ -12,7 +12,7 @@ Real-time ray-traced images remain a significant challenge, highlighting the com
 
 ## Table of Contents
 
-<img align="right" width="400" height="400" src="./assets/screenshots/cornell.png">
+<img align="right" width="400" height="400" src="./assets/screenshots/cornell.gif">
 
 - [Render](#render)
 - [Usage](#usage)
@@ -28,6 +28,7 @@ Real-time ray-traced images remain a significant challenge, highlighting the com
 -
 -
 -
+
 ## Render
 
 <!-- Table one -->
