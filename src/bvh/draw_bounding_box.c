@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:50:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 10:47:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 17:47:23 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	draw_bounding_box(t_engine *eng)
 				obj->data.sphere.pos.x, obj->data.sphere.pos.y,
 		  	obj->data.sphere.pos.z, obj->data.sphere.radius);
 			print_aabb(&obj->aabb, "sphere aabb");
-			print_3d_aabb(&obj->aabb.box);
+			print_bounding_box(&obj->aabb.box);
 		}
 		++i;
 	}

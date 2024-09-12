@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 17:15:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 17:35:56 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/12 17:42:39 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/12 17:43:25 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 #include "ft_io.h"
 #include "vec3.h"
 
-void	print_3d_aabb(t_3d_aabb *aabb)
+void	print_bounding_box(t_b_box *b_box)
 {
-	ft_dprintf(2, "3d_aabb\n");
-	vec3_print(&aabb->cube[0], "F U L");
-	vec3_print(&aabb->cube[1], "F U R");
-	vec3_print(&aabb->cube[2], "F D R");
-	vec3_print(&aabb->cube[3], "F D L");
-	vec3_print(&aabb->cube[4], "R U L");
-	vec3_print(&aabb->cube[5], "R U R");
-	vec3_print(&aabb->cube[6], "R D R");
-	vec3_print(&aabb->cube[7], "R D L");
+	ft_dprintf(2, "bounding_box\n");
+	vec3_print(&b_box->top[0], "T R L");
+	vec3_print(&b_box->top[1], "T F L");
+	vec3_print(&b_box->top[2], "T F R");
+	vec3_print(&b_box->top[3], "T R R");
+	vec3_print(&b_box->bottom[0], "D R L");
+	vec3_print(&b_box->bottom[1], "D R R");
+	vec3_print(&b_box->bottom[2], "D F R");
+	vec3_print(&b_box->bottom[3], "D F L");
 }

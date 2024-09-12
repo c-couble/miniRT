@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:35:27 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 11:21:35 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 17:47:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ void	get_sphere_aabb(t_sphere *sphere, t_object *obj)
 	obj->aabb.max.y = sphere->pos.y + sphere->radius;
 	obj->aabb.max.z = sphere->pos.z + sphere->radius;
 	obj->aabb.center = sphere->pos;
-	get_3d_aabb(&obj->aabb);
+	get_bounding_box(&obj->aabb);
 }

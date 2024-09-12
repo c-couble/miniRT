@@ -1,18 +1,20 @@
 SRC = \
-	  bvh/print_objs.c \
 	  bvh/create_bvh_node.c \
 	  bvh/create_empty_aabb.c \
 	  bvh/clear_bvh.c \
-	  bvh/init_bvh.c \
-	  bvh/update_node_aabb.c \
 	  bvh/draw_lines.c \
 	  bvh/draw_bounding_box.c \
 	  bvh/get_sphere_aabb.c \
-	  bvh/get_3d_aabb.c \
-	  bvh/print_aabb.c \
-	  bvh/print_3d_aabb.c \
+	  bvh/get_paraboloid_aabb.c \
+	  bvh/get_cylinder_aabb.c \
+	  bvh/get_bounding_box.c \
+	  bvh/init_bvh.c \
 	  bvh/intersect_aabb.c \
 	  bvh/intersect_bvh.c \
+	  bvh/print_objs.c \
+	  bvh/print_aabb.c \
+	  bvh/print_bounding_box.c \
+	  bvh/update_node_aabb.c \
 	  \
 	  camera/color_pixels.c \
 	  camera/create_camera_vectors.c \

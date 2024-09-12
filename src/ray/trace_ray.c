@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/12 13:13:07 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 15:50:55 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,25 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 				ray->data.v = 0;
 				ray->data.texture = obj->optional_data.texture;
 				vec3_normalize(&ray->data.normal);
+				//printf("t = %lf\n", tmp);
+				ray->data.obj = obj;
+				ray->data.materials = obj->optional_data.material;
+				data = ray->data;
+				++i ;
+			}
+		}*/
+		/*
+		if (obj->type == PARABOLOID)
+		{
+			tmp = intersect_aabb(ray, &obj->aabb);
+			if (tmp != -1)
+			{
+				ray->data.color = obj->data.paraboloid.color;
+				get_hitpos(ray, tmp);
+				vec3_create(0, 1, 0, &ray->data.normal);
+				ray->data.u = 0;
+				ray->data.v = 0;
+				ray->data.texture = obj->optional_data.texture;
 				//printf("t = %lf\n", tmp);
 				ray->data.obj = obj;
 				ray->data.materials = obj->optional_data.material;

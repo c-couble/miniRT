@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/12 11:09:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 17:05:00 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	//	draw_bounding_box(engine);
+		draw_bounding_box(engine);
 	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }
