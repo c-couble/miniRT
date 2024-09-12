@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_sphere_aabb.c                                  :+:      :+:    :+:   */
+/*   create_empty_aabb.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 13:35:27 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 11:21:35 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/11 23:28:14 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/11 23:30:24 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bvh.h"
-#include "object.h"
 #include "vec3.h"
+#include <float.h>
 
-void	get_sphere_aabb(t_sphere *sphere, t_object *obj)
+void	create_empty_aabb(t_aabb *aabb)
 {
-	obj->aabb.min.x = sphere->pos.x - sphere->radius;
-	obj->aabb.min.y = sphere->pos.y - sphere->radius;
-	obj->aabb.min.z = sphere->pos.z - sphere->radius;
-	obj->aabb.max.x = sphere->pos.x + sphere->radius;
-	obj->aabb.max.y = sphere->pos.y + sphere->radius;
-	obj->aabb.max.z = sphere->pos.z + sphere->radius;
-	obj->aabb.center = sphere->pos;
-	get_3d_aabb(&obj->aabb);
+	vec3_create(DBL_MIN, DBL_MIN, DBL_MIN, &aabb->min);
+	vec3_create(DBL_MAX, DBL_MAX, DBL_MAX, &aabb->max);
 }

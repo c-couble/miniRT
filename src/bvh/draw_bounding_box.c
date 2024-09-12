@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:50:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 17:27:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 10:47:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ int	draw_bounding_box(t_engine *eng)
 			printf("sphere pos x: %lf, y: %lf, z:%lf | radius = %lf\n",
 				obj->data.sphere.pos.x, obj->data.sphere.pos.y,
 		  	obj->data.sphere.pos.z, obj->data.sphere.radius);
-			print_aabb(&obj->data.sphere.aabb, "sphere aabb");
-			print_3d_aabb(&obj->data.sphere.aabb.box);
+			print_aabb(&obj->aabb, "sphere aabb");
+			print_3d_aabb(&obj->aabb.box);
 		}
 		++i;
 	}

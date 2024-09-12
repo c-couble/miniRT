@@ -6,13 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/11 17:07:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 10:42:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef OBJECT_H
 # define OBJECT_H
 
+#include "bvh.h"
 # include "object/ambient_light.h"
 # include "object/camera.h"
 # include "object/cylinder.h"
@@ -55,6 +56,7 @@ typedef union u_object_data
 
 typedef struct s_object
 {
+	t_aabb			aabb;
 	t_object_type	type;
 	t_object_data	data;
 	t_option		optional_data;

@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_bvh.c                                        :+:      :+:    :+:   */
+/*   print_objs.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 18:55:24 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 23:34:07 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/12 11:51:28 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/12 11:57:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "bvh.h"
 #include "vector.h"
+#include "stdio.h"
+#include "object.h"
 
-void	clear_bvh(t_bvh_node *bvh)
+void	print_objs(t_vector *objs)
 {
-	if (bvh == NULL)
-		return ;
-	clear_bvh(bvh->left);
-	clear_bvh(bvh->right);
-	clear_vector(&bvh->objects);
-	free(bvh);
+	size_t	i;
+	t_object *obj;
+
+	i = 0;
+	printf("print obj, size = %ld\n", objs->size);
+	while (i < objs->size)
+	{
+		obj = at_vector(objs, i);
+		printf("obj nb: %ld | type = %d\n", i, obj->type);
+		++i;
+	}
 }

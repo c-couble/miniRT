@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_bvh.c                                        :+:      :+:    :+:   */
+/*   ft_dmax.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 18:55:24 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 23:34:07 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/12 10:48:40 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/12 10:49:00 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "bvh.h"
-#include "vector.h"
-
-void	clear_bvh(t_bvh_node *bvh)
+double	ft_dmax(double a, double b)
 {
-	if (bvh == NULL)
-		return ;
-	clear_bvh(bvh->left);
-	clear_bvh(bvh->right);
-	clear_vector(&bvh->objects);
-	free(bvh);
+	if (a > b)
+		return (a);
+	return (b);
 }

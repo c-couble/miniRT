@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/11 23:19:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 11:48:50 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,9 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 		print_error("You need one camera and one ambient light");
 		return (-1);
 	}
+	scene->bvh = init_bvh(&scene->objects, 0);
+	if (scene->bvh == NULL)
+		return (-1);
 	return (0);
 }
 

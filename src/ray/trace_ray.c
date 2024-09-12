@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/11 21:59:35 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 13:13:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,10 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	{
 		obj = at_vector(&engine->scene.objects, i);
 		tmp = intersect(obj, ray);
+		/*
 		if (obj->type == SPHERE)
 		{
-			tmp = intersect_aabb(ray, &obj->data.sphere.aabb);
+			tmp = intersect_aabb(ray, &obj->aabb);
 			if (tmp != -1)
 			{
 				ray->data.color = obj->data.sphere.color;
@@ -48,13 +49,13 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 				ray->data.v = 0;
 				ray->data.texture = obj->optional_data.texture;
 				vec3_normalize(&ray->data.normal);
-				printf("t = %lf\n", tmp);
+				//printf("t = %lf\n", tmp);
 				ray->data.obj = obj;
 				ray->data.materials = obj->optional_data.material;
 				data = ray->data;
 				++i ;
 			}
-		}
+		}*/
 		if (get_closest_distance_ptr(tmp, t, &t))
 		{
 			data = ray->data;

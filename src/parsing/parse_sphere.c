@@ -6,11 +6,10 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/11 13:46:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 10:44:46 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bvh.h"
 #include "float.h"
 #include <stdio.h>
 #include "color.h"
@@ -32,6 +31,5 @@ int	parse_sphere(t_engine *engine, t_object_data *data)
 	data->sphere.radius = data->sphere.diameter / 2;
 	if (parse_color(&data->sphere.color) == -1)
 		return (-1);
-	get_sphere_aabb(&data->sphere.aabb, &data->sphere);
 	return (0);
 }
