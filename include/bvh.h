@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:31:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 17:47:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 22:15:50 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,18 @@
 # include "vector.h"
 
 // counterclockwise
-typedef struct s_b_box
+typedef struct s_bbox
 {
 	t_vec3	top[4];
 	t_vec3	bottom[4];
-}	t_b_box;
+}	t_bbox;
 
 typedef struct s_aabb
 {
 	t_vec3		min;
 	t_vec3		max;
 	t_vec3		center;
-	t_b_box		box;
+	t_bbox		box;
 }	t_aabb;
 
 typedef struct s_bvh_node
@@ -55,8 +55,9 @@ void		update_node_aabb(t_bvh_node *node);
 double		intersect_bvh(t_ray *ray, t_bvh_node *node);
 double		intersect_aabb(t_ray *ray, t_aabb *aabb);
 
-void		print_bounding_box(t_b_box *b_box);
+void		print_bounding_box(t_bbox *b_box);
 void		get_bounding_box(t_aabb *aabb);
+void		get_aabb_from_bbox(t_bbox *bbobx, t_aabb *aabb);
 
 void		print_objs(t_vector *objs);
 void		print_aabb(t_aabb *aabb, char *str);

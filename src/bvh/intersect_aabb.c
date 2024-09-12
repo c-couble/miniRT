@@ -6,15 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:58:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 21:57:39 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 22:20:05 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "float.h"
 #include "defines.h"
 #include "bvh.h"
 #include "util.h"
-#include <float.h>
-#include <stdio.h>
 
 int	get_tinterval_axis(t_ray *ray, t_aabb *aabb, double *t_start, double *t_end, int axis);
 

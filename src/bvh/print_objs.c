@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 11:51:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 11:57:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 22:19:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 
 void	print_objs(t_vector *objs)
 {
-	size_t	i;
-	t_object *obj;
+	size_t		i;
+	t_object	*obj;
 
 	i = 0;
 	printf("print obj, size = %ld\n", objs->size);

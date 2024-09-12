@@ -4,6 +4,7 @@ SRC = \
 	  bvh/clear_bvh.c \
 	  bvh/draw_lines.c \
 	  bvh/draw_bounding_box.c \
+	  bvh/get_aabb_from_bbox.c \
 	  bvh/get_sphere_aabb.c \
 	  bvh/get_paraboloid_aabb.c \
 	  bvh/get_cylinder_aabb.c \

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 23:36:19 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 12:34:34 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/12 22:13:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	update_node_aabb(t_bvh_node *node)
 
 	i = 0;
 	vec3_create(DBL_MAX, DBL_MAX, DBL_MAX, &node->aabb.min);
-	vec3_create(DBL_MIN, DBL_MIN, DBL_MIN, &node->aabb.max);
+	vec3_create(-DBL_MAX, -DBL_MAX, -DBL_MAX, &node->aabb.max);
 	while (i < node->objects.size)
 	{
 		obj = at_vector(&node->objects, i);
