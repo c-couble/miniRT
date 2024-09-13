@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 21:05:14 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/13 16:59:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 # define SKY				7591935
 # define GREEN				0xFF00
 # define BACKGROUND_COLOR	0
-# define TILE_DIVIDER		100.
+# define TILE_DIVIDER		150.
 
 # define X					0
 # define Y					1
