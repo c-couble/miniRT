@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 08:49:05 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/13 05:19:43 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,6 @@ double	intersect_paraboloid(t_object *obj, t_ray *ray)
 	ray->data.texture = obj->optional_data.texture;
 	ray->data.color = obj->data.paraboloid.color;
 	get_uv(&obj_ray, ray, &para);
-	apply_checkerboard(ray, obj);
 	return (t);
 }
 

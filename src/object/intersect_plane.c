@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 02:45:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/11 08:48:15 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/13 05:19:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "checkerboard.h"
 #include "defines.h"
 #include "ft_math.h"
 #include "object.h"
@@ -33,7 +32,6 @@ double	intersect_plane(t_object *obj, t_ray *ray)
 	get_hitpos(ray, t);
 	ray->data.texture = obj->optional_data.texture;
 	get_uv(ray, &obj->data.plane);
-	apply_checkerboard(ray, obj);
 	return (t);
 }
 
