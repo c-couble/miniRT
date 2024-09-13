@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:59:03 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 17:23:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/13 20:00:56 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,9 @@ static void	bresenham_dx(t_engine *eng, t_vec2 *a, t_vec2 *b, int *deltas)
 	e = 2 * deltas[1] - deltas[0];
 	while (x <= b->x)
 	{
-		if (x >= 0 && x < SCREEN_WIDTH && y >= 0 && y < SCREEN_HEIGHT)
-			color_pixels(eng, x, y, GREEN);
+		if (x >= 0 && x < (int)eng->scene.camera.frame_width
+			&& y >= 0 && y < (int)eng->scene.camera.frame_height)
+			color_pixels(eng, y, x, GREEN);
 		x++;
 		if (e < 0)
 			e = e + 2 * deltas[1];
@@ -81,8 +82,9 @@ static void	bresenham_dy(t_engine *eng, t_vec2 *a, t_vec2 *b, int *deltas)
 	e = 2 * deltas[0] - deltas[1];
 	while (y <= b->y)
 	{
-		if (x >= 0 && x < SCREEN_WIDTH && y >= 0 && y < SCREEN_HEIGHT)
-			color_pixels(eng, x, y, GREEN);
+		if (x >= 0 && x < (int)eng->scene.camera.frame_width
+			&& y >= 0 && y < (int)eng->scene.camera.frame_height)
+			color_pixels(eng, y, x, GREEN);
 		y++;
 		if (e < 0)
 			e = e + 2 * deltas[0];

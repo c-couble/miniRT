@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:33:54 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 12:39:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/13 17:43:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_bvh_node	*init_bvh(t_vector *objs, int depth)
 {
 	t_bvh_node	*node;
 
-	printf("init bvh depth = %d\n", depth);
+//	printf("init bvh depth = %d\n", depth);
 	node = create_bvh_node();
 	if (node == NULL)
 		return (NULL);
@@ -41,8 +41,8 @@ t_bvh_node	*init_bvh(t_vector *objs, int depth)
 			return (NULL);
 		++i;
 	}
-	printf("obj got copied to the node (%ld)\n", node->objects.size);
-	printf("obj.size = %ld\n", objs->size);
+//	printf("obj got copied to the node (%ld)\n", node->objects.size);
+//	printf("obj.size = %ld\n", objs->size);
 	update_node_aabb(node);
 	if (subdivide(node, depth) == -1)
 		return (NULL);
@@ -56,7 +56,7 @@ int	subdivide(t_bvh_node *node, int depth)
 	int		axis;
 	double	split_pos;
 
-	printf("je rentre dans subdivie\n");
+//	printf("je rentre dans subdivie\n");
 	vec3_subtract(&node->aabb.max, &node->aabb.min, &split_plane);
 	axis = X;
 	if (split_plane.y > split_plane.x)
@@ -70,8 +70,8 @@ int	subdivide(t_bvh_node *node, int depth)
 	t_object *obj;
 	i = 0;
 	j = node->objects.size - 1;
-	printf("node.obj.size = %ld\n", node->objects.size);
-	printf("split pose = %lf\n", split_pos);
+//	printf("node.obj.size = %ld\n", node->objects.size);
+//	printf("split pose = %lf\n", split_pos);
 	while (i < j && node->objects.size > 1)
 	{
 		//printf("loop i: %ld j: %ld\n", i, j);

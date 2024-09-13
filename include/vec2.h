@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 14:17:01 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 14:20:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/13 17:28:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 typedef struct s_vec2
 {
-	double	x;
-	double	y;
+	int	x;
+	int	y;
 }	t_vec2;
 
 t_vec2	*vec2_create(double x, double y, t_vec2 *out);
