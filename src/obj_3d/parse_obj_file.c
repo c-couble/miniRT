@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 03:30:39 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 03:44:06 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,13 @@
 #include <stdio.h>
 
 static int	parse_line(t_engine *engine, t_obj_3d *obj, char *line);
-static int	parse_obj_mtl(t_engine *engine, t_obj_3d *obj);
-static int	parse_use_mtl(t_engine *engine, t_obj_3d *obj);
-static int	parse_obj_vertice(t_engine *engine, t_obj_3d *obj);
-static int	parse_obj_vertex_normal(t_engine *engine, t_obj_3d *obj);
-static int	parse_obj_texture_coord(t_engine *engine, t_obj_3d *obj);
-static int	parse_obj_space_vertice(t_engine *engine, t_obj_3d *obj);
-static int	parse_obj_polygon(t_engine *engine, t_obj_3d *obj);
+static int	parse_obj_mtl(t_engine *engine, t_obj_3d *obj, char *save);
+static int	parse_use_mtl(t_engine *engine, t_obj_3d *obj, char *save);
+static int	parse_obj_vertice(t_engine *engine, t_obj_3d *obj, char *save);
+static int	parse_obj_vertex_normal(t_engine *engine, t_obj_3d *obj, char *save);
+static int	parse_obj_texture_coord(t_engine *engine, t_obj_3d *obj, char *save);
+static int	parse_obj_space_vertice(t_engine *engine, t_obj_3d *obj, char *save);
+static int	parse_obj_polygon(t_engine *engine, t_obj_3d *obj, char *save);
 
 int	parse_obj_file(t_engine *engine, t_obj_3d *obj, char *file)
 {
@@ -59,16 +59,15 @@ int	parse_obj_file(t_engine *engine, t_obj_3d *obj, char *file)
 	if (buf == NULL)
 		return (-1);
 	ft_memset(buf, 0, sizeof(t_buffer));
-	line = get_next_line_ptr(fd, buf, "\n");
+	line = get_next_line_ptr(fd, buf, "\n\r");
 	while (line)
 	{
-		line = ft_strtok(line, "\r");
 		if (parse_line(engine, obj, line) == -1)
 		{
 			close(fd);
 			return (-1);
 		}
-		line = get_next_line_ptr(fd, buf, "\n");
+		line = get_next_line_ptr(fd, buf, "\n\r");
 	}
 	free(line);
 	if (errno)
@@ -84,7 +83,7 @@ int	parse_obj_file(t_engine *engine, t_obj_3d *obj, char *file)
 
 static int	parse_line(t_engine *engine, t_obj_3d *obj, char *line)
 {
-	static int	(*funcs[])(t_engine *engine, t_obj_3d *data) = {
+	static int	(*funcs[])(t_engine *engine, t_obj_3d *data, char *save) = {
 	[MTLLIB] = parse_obj_mtl,
 	[USEMTL] = parse_use_mtl,
 	[VERTICE] = parse_obj_vertice,
@@ -103,33 +102,31 @@ static int	parse_line(t_engine *engine, t_obj_3d *obj, char *line)
 	[POLYGON] = "f",
 	};
 	char	*arg;
+	char	*save;
 
-	arg = ft_strtok(line, " \t");
+	arg = ft_strtok_r(line, " \t", &save);
 	if (arg == NULL || arg[0] == '#')
 		return (0);
 	int i = 0;
 	while (i <= POLYGON)
 	{
 		if (ft_strcmp(arg, data[i]) == 0)
-			return (funcs[i](engine, obj));
+			return (funcs[i](engine, obj, save));
 		++i;
 	}
 	return (0);
 }
 
-static int	parse_obj_mtl(t_engine *engine, t_obj_3d *obj)
+static int	parse_obj_mtl(t_engine *engine, t_obj_3d *obj, char *line)
 {
-	char *mtl = ft_strtok(NULL, " \t");
-
-	obj->mtl = parse_obj_mtl_if_needed(engine, mtl);
+	obj->mtl = parse_obj_mtl_if_needed(engine, line);
 	if (obj->mtl == NULL)
 		return (-1);
 	return (0);
 }
 
-static int	parse_use_mtl(t_engine *engine, t_obj_3d *obj)
+static int	parse_use_mtl(t_engine *engine, t_obj_3d *obj, char *line)
 {
-	char			*mtl = ft_strtok(NULL, " \t");
 	size_t			i;
 	t_material_data	*material;
 
@@ -140,7 +137,7 @@ static int	parse_use_mtl(t_engine *engine, t_obj_3d *obj)
 	while (i < obj->mtl->materials.size)
 	{
 		material = at_vector(&obj->mtl->materials, i);
-		if (ft_strcmp(material->name, mtl) == 0)
+		if (ft_strcmp(material->name, line) == 0)
 		{
 			obj->current_material = material;
 			return (0);
@@ -150,74 +147,75 @@ static int	parse_use_mtl(t_engine *engine, t_obj_3d *obj)
 	return (-1);
 }
 
-static int	parse_obj_vertice(t_engine *engine, t_obj_3d *obj)
+static int	parse_obj_vertice(t_engine *engine, t_obj_3d *obj, char *line)
 {
 	t_vec4	vec;
+	char	*save;
 
 	(void) engine;
-	if (parse_double(&vec.x, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.x, ft_strtok_r(line, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_double(&vec.y, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.y, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_double(&vec.z, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.z, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_double(&vec.w, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.w, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		vec.w = 1;
 	if (add_vector(&obj->vertices, &vec, 1) == -1)
 		return (-1);
 	return (0);
 }
-static int	parse_obj_vertex_normal(t_engine *engine, t_obj_3d *obj)
+static int	parse_obj_vertex_normal(t_engine *engine, t_obj_3d *obj, char *line)
 {
 	t_vec3	vec;
+	char	*save;
 
 	(void) engine;
-	if (parse_double(&vec.x, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.x, ft_strtok_r(line, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_double(&vec.y, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.y, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_double(&vec.z, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.z, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (add_vector(&obj->vertex_normals, &vec, 1) == -1)
 		return (-1);
 	return (0);
 }
-static int	parse_obj_texture_coord(t_engine *engine, t_obj_3d *obj)
+static int	parse_obj_texture_coord(t_engine *engine, t_obj_3d *obj, char *line)
 {
 	t_vec3	vec;
+	char	*save;
 
 	(void) engine;
-	if (parse_double(&vec.x, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.x, ft_strtok_r(line, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_double(&vec.y, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.y, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		vec.y = 0;
-	if (parse_double(&vec.z, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.z, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		vec.z = 0;
 	if (add_vector(&obj->texture_coordinates, &vec, 1) == -1)
 		return (-1);
 	return (0);
 }
-static int	parse_obj_space_vertice(t_engine *engine, t_obj_3d *obj)
+static int	parse_obj_space_vertice(t_engine *engine, t_obj_3d *obj, char *line)
 {
 	t_vec3	vec;
+	char	*save;
 
 	(void) engine;
-	if (parse_double(&vec.x, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.x, ft_strtok_r(line, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_double(&vec.y, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.y, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		vec.y = 0;
-	if (parse_double(&vec.z, ft_strtok(NULL, " \t"), -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.z, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
 		vec.z = 0;
 	if (add_vector(&obj->texture_coordinates, &vec, 1) == -1)
 		return (-1);
 	return (0);
 }
 
-static int	parse_polygon_point(t_polygon_point *point)
+static int	parse_polygon_point(t_polygon_point *point, char *arg)
 {
-	char	*arg;
-
-	arg = ft_strtok(NULL, " \t");
 	if (arg == NULL)
 		return (-1);
 	point->vertice_id = ft_atoi(arg);
@@ -237,17 +235,18 @@ static int	parse_polygon_point(t_polygon_point *point)
 	return (0);
 }
 
-static int	parse_obj_polygon(t_engine *engine, t_obj_3d *obj)
+static int	parse_obj_polygon(t_engine *engine, t_obj_3d *obj, char *line)
 {
 	t_polygon	poly;
+	char		*save;
 
 	(void) engine;
 	poly.material = obj->current_material;
-	if (parse_polygon_point(&poly.points[0]) == -1)
+	if (parse_polygon_point(&poly.points[0], ft_strtok_r(line, " \t", &save)) == -1)
 		return (-1);
-	if (parse_polygon_point(&poly.points[1]) == -1)
+	if (parse_polygon_point(&poly.points[1], ft_strtok_r(NULL, " \t", &save)) == -1)
 		return (-1);
-	if (parse_polygon_point(&poly.points[2]) == -1)
+	if (parse_polygon_point(&poly.points[2], ft_strtok_r(NULL, " \t", &save)) == -1)
 		return (-1);
 	if (add_vector(&obj->faces, &poly, 1) == -1)
 		return (-1);
