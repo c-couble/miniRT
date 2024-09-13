@@ -55,7 +55,7 @@ static double	solve_para(t_vec3 *start, t_vec3 *dir, t_ray *ray, t_object *o)
 	double		t;
 	double		a;
 
-	a = o->data.paraboloid.ray_coef;
+	a = o->data.paraboloid.radius_coef;
 	q.a = a * (dir->x * dir->x + dir->y * dir->y);
 	q.b = a * 2 * (start->x * dir->x + start->y * dir->y) - dir->z;
 	q.c = a * (start->x * start->x + start->y * start->y) - start->z;
@@ -88,8 +88,8 @@ static int	check_height(t_ray *ray, t_paraboloid *para)
 
 static void	get_paraboloid_normal(t_ray *ray, t_paraboloid *para)
 {
-	ray->data.normal.x = 2 * para->ray_coef * (ray->data.hitpos.x);
-	ray->data.normal.y = 2 * para->ray_coef * (ray->data.hitpos.y);
+	ray->data.normal.x = 2 * para->radius_coef * (ray->data.hitpos.x);
+	ray->data.normal.y = 2 * para->radius_coef * (ray->data.hitpos.y);
 	ray->data.normal.z = -1;
 	vec3_normalize(&ray->data.normal);
 }
