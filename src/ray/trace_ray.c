@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 04:06:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:52:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "util.h"
 #include "vec3.h"
 
-static void	add_ray_data(t_ray *ray);
+static void	add_ray_data(t_ray *ray, double t);
 
 int	trace_ray(t_engine *engine, t_ray *ray)
 {
@@ -42,12 +42,12 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	if (t != -1)
 	{
 		ray->data = data;
-		add_ray_data(ray);
+		add_ray_data(ray, t);
 	}
 	return (t);
 }
 
-static void	add_ray_data(t_ray *ray)
+static void	add_ray_data(t_ray *ray, double t)
 {
 	ray->data.raw_normal = ray->data.normal;
 	if (vec3_dot(&ray->ray, &ray->data.normal) < 0)
@@ -57,4 +57,5 @@ static void	add_ray_data(t_ray *ray)
 		ray->data.color = get_texture_color(ray->data.texture,
 				ray->data.u, ray->data.v);
 	}
+	get_hitpos(ray, t);
 }
