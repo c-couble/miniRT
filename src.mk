@@ -88,6 +88,7 @@ SRC = \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
+	  parsing/parse_checkerboard.c \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \
 	  parsing/parse_double.c \
@@ -107,6 +108,7 @@ SRC = \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
 	  \
+	  texture/apply_checkerboard.c \
 	  texture/clear_texture.c \
 	  texture/clear_textures.c \
 	  texture/get_texture_color.c \
