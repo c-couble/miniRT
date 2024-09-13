@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 05:19:11 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 05:23:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "checkerboard.h"
 #include "math_util.h"
 #include "object.h"
 #include "ray.h"
