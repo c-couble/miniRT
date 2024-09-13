@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 01:59:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 04:11:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:41:48 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ t_texture	*parse_texture_if_needed(t_engine *engine, char *file)
 {
 	size_t		i;
 	t_texture	*current;
-	t_texture	*tx;
 
 	i = 0;
 	while (i < engine->textures.size)
@@ -33,14 +32,6 @@ t_texture	*parse_texture_if_needed(t_engine *engine, char *file)
 			return (current);
 		++i;
 	}
-	tx = malloc(sizeof(t_texture));
-	if (tx == NULL)
-		return (NULL);
-	if (parse_texture_file(tx, file) == -1)
-		return (NULL);
-	if (add_vector(&engine->textures, &tx, 1) == -1)
-		return (NULL);
-	tx = *(t_texture **)at_vector(&engine->textures, engine->textures.size - 1);
 	return (add_new_texture(engine, file));
 }
 
