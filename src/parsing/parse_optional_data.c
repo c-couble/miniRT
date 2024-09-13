@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 05:59:47 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:05:22 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ int	parse_optional_data(t_engine *engine, t_object *object)
 	arg = ft_strtok(NULL, " \t");
 	while (arg)
 	{
-		parse_option(engine, object, arg);
+		if (parse_option(engine, object, arg) == -1)
+			return (-1);
 		arg = ft_strtok(NULL, " \t");
 	}
 	return (0);

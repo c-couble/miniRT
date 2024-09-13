@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/05 02:52:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:02:02 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include "object.h"
 #include "ray.h"
 #include "util.h"
-#include "vec3.h"
 
 double	intersect_triangle(t_object *obj, t_ray *ray)
 {

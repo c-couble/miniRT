@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 06:45:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:10:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,47 +14,45 @@
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include "color.h"
 #include "ft_io.h"
 #include "ft_mem.h"
 #include "ft_string.h"
-#include "get_next_line_utils.h"
 #include "object/parse_util.h"
 #include "texture.h"
 
 static ssize_t	read_header(t_texture *texture, char *content);
 static ssize_t	set_word(t_texture *texture, char *content, size_t i, size_t j);
 static int		set_value(t_texture *texture, char *word);
-static int		read_data(t_texture *texture, char *content);
+static int		read_data(t_texture *texture, t_file *file, ssize_t offset);
 
-int	parse_texture_file(t_texture *texture, char *file)
+int	parse_texture_file(t_texture *texture, char *path)
 {
-	int			fd;
-	char		*content;
-	t_buffer	*buf;
 	ssize_t		offset;
+	t_file		file;
 
-	printf("attempt texture parse |%s|\n", file);
-	ft_memset(texture, 0, sizeof(t_texture));
-	texture->file_name = ft_strdup(file);
+	if (get_file_content(&file, path) == -1)
+		return (-1);
+	if (ft_strncmp(file.content, "P6", 2) != 0)
+	{
+		free(file.content);
+		return (-1);
+	}
+	offset = read_header(texture, file.content);
+	if (offset == -1 || read_data(texture, &file, offset) == -1)
+	{
+		free(file.content);
+		return (-1);
+	}
+	free(file.content);
+	texture->file_name = ft_strdup(path);
 	if (texture->file_name == NULL)
+	{
+		free(texture->texture);
 		return (-1);
-	fd = open(file, O_RDONLY);
-	if (fd == -1)
-		return (-1);
-	printf("opened\n");
-	buf = malloc(sizeof(t_buffer));
-	ft_memset(buf, 0, sizeof(t_buffer));
-	content = get_next_line_ptr(fd, buf, "");
-	free(buf);
-	if (ft_strncmp(content, "P6", 2) != 0)
-		return (-1);
-	printf("start read header\n");
-	offset = read_header(texture, content);
-	if (offset == -1)
-		return (-1);
-	printf("end read header\n");
-	return (read_data(texture, content + offset));
+	}
+	return (0);
 }
 
 static ssize_t	read_header(t_texture *texture, char *content)
@@ -130,11 +128,14 @@ static int	set_value(t_texture *texture, char *word)
 	return (1);
 }
 
-static int	read_data(t_texture *texture, char *content)
+static int	read_data(t_texture *texture, t_file *file, ssize_t offset)
 {
 	size_t	i;
 	t_color	*color;
+	char	*current;
 
+	if (offset + 3 * texture->width * texture->height != file->length)
+		return (-1);
 	color = malloc((texture->width * texture->height) * sizeof(t_color));
 	if (color == NULL)
 		return (-1);
@@ -142,9 +143,10 @@ static int	read_data(t_texture *texture, char *content)
 	i = 0;
 	while (i < texture->width * texture->height)
 	{
-		ft_memcpy(&color[i].rgb.r, content + (i * 3), sizeof(uint8_t));
-		ft_memcpy(&color[i].rgb.g, content + (i * 3) + 1, sizeof(uint8_t));
-		ft_memcpy(&color[i].rgb.b, content + (i * 3) + 2, sizeof(uint8_t));
+		current = file->content + offset + i * 3;
+		ft_memcpy(&color[i].rgb.r, current, sizeof(uint8_t));
+		ft_memcpy(&color[i].rgb.g, current + 1, sizeof(uint8_t));
+		ft_memcpy(&color[i].rgb.b, current + 2, sizeof(uint8_t));
 		color[i].rgb.r *= 255 / texture->maxval;
 		color[i].rgb.g *= 255 / texture->maxval;
 		color[i].rgb.b *= 255 / texture->maxval;

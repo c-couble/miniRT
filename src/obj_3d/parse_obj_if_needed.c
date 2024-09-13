@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 04:27:10 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 04:42:17 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 03:58:33 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include "engine.h"
 #include "obj_3d.h"
 #include "ft_string.h"
+#include "engine.h"
+#include "obj_3d.h"
 
 t_obj_3d	*parse_obj_if_needed(t_engine *engine, char *file)
 {

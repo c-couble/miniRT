@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 01:54:49 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:02:13 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,5 +85,6 @@ static int	parse_object(t_engine *engine, t_object *object)
 	[MESH] = parse_mesh,
 	};
 
+	(void)engine;
 	return (values[object->type](engine, &object->data));
 }

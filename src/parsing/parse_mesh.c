@@ -6,22 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 03:00:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 01:16:50 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:04:58 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "engine.h"
 #include "ft_string.h"
-#include "mat4.h"
-#include "mlx_wrapper.h"
-#include "obj_3d.h"
 #include "object.h"
-#include "vec3.h"
-#include "float.h"
 #include "object/parse_util.h"
+#include "float.h"
 #include "vec4.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 static int	read_obj_and_position(t_engine *engine, t_object_data *data);
 
@@ -29,6 +24,7 @@ int	parse_mesh(t_engine *engine, t_object_data *data)
 {
 	char	*arg;
 
+	(void) data;
 	(void) engine;
 	arg = ft_strtok(NULL, " \t");
 	if (arg == NULL)
@@ -41,7 +37,6 @@ int	parse_mesh(t_engine *engine, t_object_data *data)
 		free(data->mesh.name);
 		return (-1);
 	}
-	printf("got mesh\n");
 	return (0);
 }
 
@@ -90,8 +85,7 @@ static void	create_transformation_matrix(t_mat4 *mat, t_object_data *data)
 	mat->matrix[6] = 0;
 	mat->matrix[7] = 0;
 	mat->matrix[8] = 0;
-	mat->matrix[9] = 0;
-	mat->matrix[10] = data->mesh.scale;
+	mat->matrix[9] = 0; mat->matrix[10] = data->mesh.scale;
 	mat->matrix[11] = 0;
 	mat->matrix[12] = data->mesh.pos.x;
 	mat->matrix[13] = data->mesh.pos.y;

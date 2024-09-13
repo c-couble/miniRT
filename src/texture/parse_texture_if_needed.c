@@ -6,15 +6,18 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 01:59:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 04:42:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:11:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "engine.h"
+#include "ft_mem.h"
 #include "ft_string.h"
 #include "texture.h"
+
+static t_texture	*add_new_texture(t_engine *engine, char *file);
 
 t_texture	*parse_texture_if_needed(t_engine *engine, char *file)
 {
@@ -38,5 +41,26 @@ t_texture	*parse_texture_if_needed(t_engine *engine, char *file)
 	if (add_vector(&engine->textures, &tx, 1) == -1)
 		return (NULL);
 	tx = *(t_texture **)at_vector(&engine->textures, engine->textures.size - 1);
+	return (add_new_texture(engine, file));
+}
+
+static t_texture	*add_new_texture(t_engine *engine, char *file)
+{
+	t_texture	*tx;
+
+	tx = malloc(sizeof(t_texture));
+	if (tx == NULL)
+		return (NULL);
+	ft_memset(tx, 0, sizeof(t_texture));
+	if (parse_texture_file(tx, file) == -1)
+	{
+		free(tx);
+		return (NULL);
+	}
+	if (add_vector(&engine->textures, &tx, 1) == -1)
+	{
+		clear_texture(tx);
+		return (NULL);
+	}
 	return (tx);
 }

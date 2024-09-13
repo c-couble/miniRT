@@ -1,38 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   intersect_mesh.c                                   :+:      :+:    :+:   */
+/*   clear_textures.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 07:00:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 03:59:17 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/05 07:51:39 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/05 07:53:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "object.h"
-#include "ray.h"
-#include "util.h"
+#include "texture.h"
 #include "vector.h"
 
-double	intersect_mesh(t_object *obj, t_ray *ray)
+void	clear_textures(t_vector *textures)
 {
-	size_t	i;
-	double	t = -1;
-	t_hit_data	data;
+	size_t		i;
+	t_texture	**texture;
 
 	i = 0;
-	while (i < obj->data.mesh.obj_3d->faces.size)
+	while (i < textures->size)
 	{
-		t_polygon	*face = at_vector(&obj->data.mesh.obj_3d->faces, i);
-		if (get_closest_distance_ptr(intersect_cached_triangle(&face->cache, ray), t, &t))
-		{
-			data = ray->data;
-		}
+		texture = at_vector(textures, i);
+		clear_texture(*texture);
 		++i;
 	}
-	if (t == -1)
-		return (-1);
-	ray->data = data;
-	return (t);
+	clear_vector(textures);
 }

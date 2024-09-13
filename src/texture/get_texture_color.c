@@ -1,33 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   plane.h                                            :+:      :+:    :+:   */
+/*   get_texture_color.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/14 18:06:23 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 05:40:12 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/05 05:52:25 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/05 05:57:57 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PLANE_H
-# define PLANE_H
+#include "color.h"
+#include "texture.h"
+#include <stdint.h>
 
-# include "color.h"
-# include "vec3.h"
-
-typedef struct s_plane
+t_color	get_texture_color(t_texture *texture, double u, double v)
 {
-	t_vec3			pos;
-	t_vec3			normal;
-	t_color			color;
-	t_vec3			rot_axis;
-	double			theta;
-}	t_plane;
+	t_color	color;
+	int		col;
+	int		line;
 
-union	u_object_data;
-struct	s_engine;
-
-int	parse_plane(struct s_engine *engine, union u_object_data *object);
-
-#endif
+	color.color = 0xffffff;
+	if (u < 0 || u > 1 || v < 0 || v > 1)
+		return (color);
+	col = u * texture->width;
+	line = v * texture->height;
+	return (texture->texture[line * texture->width + col]);
+}

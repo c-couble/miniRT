@@ -1,24 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_engine.c                                     :+:      :+:    :+:   */
+/*   clear_texture.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:47:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/05 07:53:07 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/05 06:42:43 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/05 06:49:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "scene.h"
+#include <stdlib.h>
 #include "texture.h"
-#include "vector.h"
 
-void	clear_engine(t_engine *engine)
+void	clear_texture(t_texture *texture)
 {
-	clear_scene(&engine->scene);
-	clear_mlx_struct(&engine->mlx);
-	clear_textures(&engine->textures);
-	clear_vector(&engine->objs_3d);
+	free(texture->file_name);
+	free(texture->texture);
+	free(texture);
 }
