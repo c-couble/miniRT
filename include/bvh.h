@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:31:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 22:15:50 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/14 01:45:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void		print_objs(t_vector *objs);
 void		print_aabb(t_aabb *aabb, char *str);
 
 void		draw_line(t_engine *img, t_vec2 *a, t_vec2 *b);
-int			draw_bounding_box(t_engine *eng);
+int			draw_bounding_boxes(t_engine *eng);
 
 void		get_sphere_aabb(struct s_sphere *sphere, struct s_object *obj);
 void		get_paraboloid_aabb(struct s_paraboloid *sphere, struct s_object *obj);

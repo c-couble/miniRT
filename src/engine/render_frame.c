@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 18:44:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/14 02:02:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "engine.h"
 #include "ray.h"
 #include "shading.h"
+#include "vec3.h"
 #include "vec4.h"
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
@@ -42,7 +43,8 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	draw_bounding_box(engine);
+	if (engine->scene.camera.render_type == BVH)
+		draw_bounding_boxes(engine);
 	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }
@@ -73,7 +75,15 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	ray->ray.z = py;
 	ray->startpos = engine->scene.camera.coordinates;
 	vec4_create(&ray->ray, 1, &final);
-	vec4_mat4_mult(&final, &engine->scene.camera.final, &final);
+	vec4_mat4_mult(&final, &engine->scene.camera.inverse_projection, &final);
+	final.x /= final.w;
+	final.y /= final.w;
+	final.z /= final.w;
+	t_vec3 kaboul;
+	vec3_create(final.x, final.y, final.z, &kaboul);
+	vec3_normalize(&kaboul);
+	vec4_create(&kaboul, final.w, &final);
+	vec4_mat4_mult(&final, &engine->scene.camera.inverse_view, &final);
 	ray->ray.x = final.x;
 	ray->ray.y = final.y;
 	ray->ray.z = final.z;

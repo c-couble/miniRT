@@ -3,7 +3,7 @@ SRC = \
 	  bvh/create_empty_aabb.c \
 	  bvh/clear_bvh.c \
 	  bvh/draw_lines.c \
-	  bvh/draw_bounding_box.c \
+	  bvh/draw_bounding_boxes.c \
 	  bvh/get_aabb_from_bbox.c \
 	  bvh/get_sphere_aabb.c \
 	  bvh/get_paraboloid_aabb.c \
@@ -76,6 +76,8 @@ SRC = \
 	  \
 	  math/vec4/vec4_create.c \
 	  math/vec4/vec4_mat4_mult.c \
+	  math/vec4/vec4_divide_nw.c \
+	  math/vec4/vec4_substract_vec3.c \
 	  \
 	  math/quaternion/quaternion_inv.c \
 	  math/quaternion/quaternion_mult.c \

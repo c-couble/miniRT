@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:59:03 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/13 20:00:56 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/13 23:31:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,10 @@ static void	bresenham(t_engine *eng, t_vec2 *a, t_vec2 *b)
 	int	dy;
 	int	delta_xy[2];
 
+	if (a->x == -1 && a->y == -1)
+		return ;
+	if (b->x == -1 && b->y == -1)
+		return ;
 	if (a == NULL || b == NULL)
 		return ;
 	dx = ft_abs(b->x - a->x);

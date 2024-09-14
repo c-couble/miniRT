@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:35:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/07/15 04:02:37 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/14 01:56:47 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ typedef struct s_vec4
 
 t_vec4	*vec4_create(t_vec3 *from, double w, t_vec4 *out);
 t_vec4	*vec4_mat4_mult(t_vec4 *vec, t_mat4 *mat, t_vec4 *out);
+t_vec4	*vec4_divide_nw(t_vec4 *in, double divider, t_vec4 *out);
+t_vec4	*vec4_substract_vec3(t_vec4 *a, t_vec3 *b, t_vec4 *out);
 
 #endif

@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_bounding_box.c                               :+:      :+:    :+:   */
+/*   vec4_substract_vec3.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 17:42:39 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/13 23:47:25 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/14 01:55:07 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/14 01:56:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bvh.h"
-#include "ft_io.h"
 #include "vec3.h"
+#include "vec4.h"
 
-void	print_bounding_box(t_bbox *bbox)
+t_vec4	*vec4_substract_vec3(t_vec4 *a, t_vec3 *b, t_vec4 *out)
 {
-	ft_dprintf(2, "bounding_box\n");
-	vec3_print(&bbox->top[0], "T R L");
-	vec3_print(&bbox->top[1], "T F L");
-	vec3_print(&bbox->top[2], "T F R");
-	vec3_print(&bbox->top[3], "T R R");
-	vec3_print(&bbox->bottom[0], "D R L");
-	vec3_print(&bbox->bottom[1], "D F L");
-	vec3_print(&bbox->bottom[2], "D F R");
-	vec3_print(&bbox->bottom[3], "D R R");
+	out->x = a->x - b->x;
+	out->y = a->y - b->y;
+	out->z = a->z - b->z;
+	return (out);
 }

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:07:01 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/14 02:02:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 typedef enum e_rtype
 {
 	CLASSIC,
+	BVH,
 	NORMAL,
 	UV_MAP
 }	t_rtype;
@@ -32,6 +33,7 @@ typedef struct s_camera
 	t_vec3	right;
 	t_vec3	up;
 	t_mat4	projection;
+	t_mat4	perspective;
 	t_mat4	inverse_projection;
 	t_mat4	view;
 	t_mat4	inverse_view;
@@ -40,6 +42,7 @@ typedef struct s_camera
 	size_t	frame_width;
 	size_t	frame_height;
 	double	fov;
+	double	ratio;
 	double	sensitivity;
 	double	speed;
 	size_t	last_frame_time;
