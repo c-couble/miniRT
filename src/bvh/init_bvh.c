@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:33:54 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/14 13:56:24 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 16:28:06 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ t_bvh_node	*init_bvh(t_vector *objs, int depth, int *mem_depth)
 			return (NULL);
 		++i;
 	}
-	printf("bite\n");
 //	printf("obj got copied to the node (%ld)\n", node->objects.size);
 //	printf("obj.size = %ld\n", objs->size);
 	update_node_aabb(node);
@@ -77,7 +76,6 @@ int	subdivide(t_bvh_node *node, int depth, int *mem_depth)
 //	printf("split pose = %lf\n", split_pos);
 	while (i < j && node->objects.size > 1)
 	{
-	printf("singe %ld , j %ld\n", i, j);
 		//printf("loop i: %ld j: %ld\n", i, j);
 		obj = at_vector(&node->objects, i);
 		if (get_axis(&obj->aabb.min, axis) < split_pos)
@@ -88,7 +86,6 @@ int	subdivide(t_bvh_node *node, int depth, int *mem_depth)
 			--j;
 		}
 	}
-	printf("swaped objs (%ld)\n", node->objects.size);
 	t_vector left;
 	t_vector right;
 

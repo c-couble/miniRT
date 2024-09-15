@@ -6,12 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:10:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 16:23:31 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 18:00:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
-#include "defines.h"
+#include "color.h"
 #include "draw.h"
 
 static void	draw_bvh_at_depth(t_engine *eng, t_bvh_node *bvh, int depth);
@@ -47,7 +46,7 @@ static void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 	{
 		get_bounding_box(&bvh->aabb);
 		draw_bounding_box(eng, &bvh->aabb.box,
-			get_interpolate_color(BLUE, GREEN, depth, eng->scene.bvh_m_depth - 1));
+			get_depth_color(depth, eng->scene.bvh_m_depth));
 	}
 }
 
@@ -64,6 +63,6 @@ static void	draw_bvh_at_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 	{
 		get_bounding_box(&bvh->aabb);
 		draw_bounding_box(eng, &bvh->aabb.box,
-			get_interpolate_color(BLUE, GREEN, depth, eng->scene.bvh_m_depth - 1));
+			get_depth_color(depth, eng->scene.bvh_m_depth));
 	}
 }

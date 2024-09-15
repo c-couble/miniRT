@@ -6,11 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 11:41:00 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 18:01:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
+#include "color.h"
 #include "object/light.h"
 #include "shading.h"
 #include "vec3.h"

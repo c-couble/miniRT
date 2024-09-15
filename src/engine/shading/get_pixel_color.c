@@ -6,11 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 11:40:48 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 18:01:53 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
+#include "color.h"
 #include "defines.h"
 #include "object/camera.h"
 #include "shading.h"

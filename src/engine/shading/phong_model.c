@@ -6,12 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 18:57:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 23:16:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 18:02:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "color_util.h"
+#include "color.h"
 #include "ft_math.h"
 #include "shading.h"
 

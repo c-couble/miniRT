@@ -49,6 +49,15 @@ SRC = \
 	  camera/hooks/speed_down.c \
 	  camera/hooks/speed_up.c \
 	  \
+	  color/add_color.c \
+	  color/add_scale_color.c \
+	  color/get_normal_color.c \
+	  color/get_depth_color.c \
+	  color/interpolate_color.c \
+	  color/get_uv_color.c \
+	  color/multiply_color.c \
+	  color/scale_color.c \
+	  \
 	  engine/clear_engine.c \
 	  engine/engine_focus_in.c \
 	  engine/engine_loop_hook.c \
@@ -152,21 +161,14 @@ SRC = \
 	  ray/trace_ray.c \
 	  ray/trace_ray_2.c \
 	  \
-	  util/add_color.c \
-	  util/add_scale_color.c \
-	  util/get_interpolate_color.c \
 	  util/get_biggest_distance.c \
 	  util/double_equals.c \
 	  util/get_axis.c \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
-	  util/get_normal_color.c \
 	  util/get_theta_axis.c \
-	  util/get_uv_color.c \
-	  util/multiply_color.c \
 	  util/print_error.c \
-	  util/scale_color.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
 	  \

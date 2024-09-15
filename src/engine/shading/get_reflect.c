@@ -6,11 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 00:05:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:35:44 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/15 18:02:05 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
+#include "color.h"
 #include "shading.h"
 
 uint32_t	get_reflect(t_engine *eng, t_ray *c_ray, t_color color, int depth)

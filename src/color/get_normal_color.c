@@ -6,11 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 14:14:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/18 14:23:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 18:01:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
+#include "color.h"
+#include "ray.h"
 
 uint32_t	get_normal_color(t_ray *camera_ray)
 {

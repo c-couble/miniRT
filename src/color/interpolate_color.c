@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_interpolate_color.c                            :+:      :+:    :+:   */
+/*   interpolate_color.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 10:29:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 10:46:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 18:04:46 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 #include <stdint.h>
 
-uint32_t	get_interpolate_color(uint32_t c_a, uint32_t c_b, int curr, int max)
+uint32_t	interpolate_color(uint32_t c_a, uint32_t c_b, int curr, int max)
 {
-	const double	min = 0;
-	const double	normalized = (curr - min) / (max - min);
+	const double	normalized = (double)curr / max;
 	t_color			interpolated;
 	t_color			a;
 	t_color			b;
