@@ -6,10 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 23:19:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 11:13:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "bvh.h"
 #include "engine.h"
 #include "keyboard.h"
 #include "mlx_wrapper.h"
@@ -48,6 +49,8 @@ static int	init_hooks(t_engine *engine)
 	t_hook	hook;
 
 	if (init_camera_hooks(engine) == -1)
+		return (-1);
+	if (init_bvh_hooks(engine) == -1)
 		return (-1);
 	hook = create_mlx_hook(engine_focus_in, engine, 0, FOCUS_IN);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)

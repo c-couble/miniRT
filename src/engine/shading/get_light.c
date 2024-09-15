@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/12 15:18:24 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/14 13:41:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "object/light.h"
 #include "shading.h"
 #include "vec3.h"
+#include <stdio.h>
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 
@@ -45,8 +46,7 @@ static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l)
 	l_ray->startpos = c_ray->data.hitpos;
 	vec3_subtract(&l->pos, &l_ray->startpos, &l_ray->ray);
 	norm = vec3_normalize(&l_ray->ray);
-	d = trace_ray(eng, l_ray);
-//	d = intersect_bvh(l_ray, eng->scene.bvh);
+	d = trace_ray2(eng, l_ray);
 	if (vec3_dot(&c_ray->data.normal, &l_ray->ray) > 0)
 		return (0);
 	if (d < norm && d > 0 && l_ray->data.materials.refraction_ratio)

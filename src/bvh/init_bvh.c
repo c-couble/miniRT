@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:33:54 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/13 17:43:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/14 13:56:24 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,36 +21,39 @@
 
 static void	swap_obj(t_object *a, t_object *b);
 int	split_objs(t_vector *src, t_vector *left, t_vector *right);
-int	subdivide(t_bvh_node *node, int depth);
+int	subdivide(t_bvh_node *node, int depth, int *mem_depth);
 
-t_bvh_node	*init_bvh(t_vector *objs, int depth)
+t_bvh_node	*init_bvh(t_vector *objs, int depth, int *mem_depth)
 {
 	t_bvh_node	*node;
 
-//	printf("init bvh depth = %d\n", depth);
 	node = create_bvh_node();
 	if (node == NULL)
 		return (NULL);
+	*mem_depth = depth;
 	size_t	i;
 	i = 0;
 //	print_objs(objs);
 	while (i < objs->size)
 	{
 		t_object *curr = at_vector(objs, i);
+		printf("object type = %d\n", curr->type);
 		if (add_vector(&node->objects, curr, 1) == -1)
 			return (NULL);
 		++i;
 	}
+	printf("bite\n");
 //	printf("obj got copied to the node (%ld)\n", node->objects.size);
 //	printf("obj.size = %ld\n", objs->size);
 	update_node_aabb(node);
-	if (subdivide(node, depth) == -1)
+	if (i < 2)
+		return (node);
+	if (subdivide(node, depth, mem_depth) == -1)
 		return (NULL);
-
 	return (node);
 }
 
-int	subdivide(t_bvh_node *node, int depth)
+int	subdivide(t_bvh_node *node, int depth, int *mem_depth)
 {
 	t_vec3	split_plane;
 	int		axis;
@@ -74,9 +77,10 @@ int	subdivide(t_bvh_node *node, int depth)
 //	printf("split pose = %lf\n", split_pos);
 	while (i < j && node->objects.size > 1)
 	{
+	printf("singe %ld , j %ld\n", i, j);
 		//printf("loop i: %ld j: %ld\n", i, j);
 		obj = at_vector(&node->objects, i);
-		if (get_axis(&obj->aabb.center, axis) < split_pos)
+		if (get_axis(&obj->aabb.min, axis) < split_pos)
 			++i;
 		else
 		{
@@ -94,10 +98,10 @@ int	subdivide(t_bvh_node *node, int depth)
 		return (-1);
 	if (left.size == 0 || right.size == 0)
 		return (0);
-	node->left = init_bvh(&left, depth + 1);
+	node->left = init_bvh(&left, depth + 1, mem_depth);
 	if (node->left == NULL)
 		return (-1);
-	node->right = init_bvh(&right, depth + 1);
+	node->right = init_bvh(&right, depth + 1, mem_depth);
 	if (node->right == NULL)
 		return (-1);
 	return (0);

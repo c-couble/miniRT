@@ -6,14 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/12 17:41:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 11:18:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef OBJECT_H
 # define OBJECT_H
 
-#include "bvh.h"
+# include "bvh.h"
 # include "object/ambient_light.h"
 # include "object/camera.h"
 # include "object/cylinder.h"

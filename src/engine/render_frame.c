@@ -6,12 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/14 02:02:32 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 10:56:36 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdint.h>
+#include <stdio.h>
 #include <time.h>
 #include "bvh.h"
+#include "draw.h"
 #include "color.h"
 #include "defines.h"
 #include "engine.h"
@@ -33,6 +36,7 @@ void	render_frame(t_engine *engine)
 	start = clock();
 	i = 0;
 	setup_camera(engine);
+	printf("start frame\n");
 	while (i < engine->scene.camera.frame_height)
 	{
 		j = 0;
@@ -43,8 +47,22 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	if (engine->scene.camera.render_type == BVH)
-		draw_bounding_boxes(engine);
+	
+	printf("bvh depth = %d\n", engine->scene.bvh_depth); 	
+	printf("bvh maxdepth = %d\n", engine->scene.bvh_m_depth); 
+	if (engine->scene.camera.render_type != BVH_2 
+		&& engine->scene.bvh_depth != engine->scene.bvh_m_depth + 1)
+	{
+		if (engine->scene.bvh_depth == engine->scene.bvh_m_depth)
+			draw_bounding_boxes(engine, &engine->scene.objects, WHITE);
+		else
+			draw_bvh_at_depth(engine, engine->scene.bvh, 0);
+		engine->scene.camera.should_render = 1;
+	}
+	if (engine->scene.camera.render_type == BVH)        			
+		draw_bvh(engine, engine->scene.bvh, 0);
+	long int time = clock();
+	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time - start);
 	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }

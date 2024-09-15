@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/12 11:48:50 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 11:22:39 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,14 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 	scene->camera.fov = -1;
 	scene->ambient_light.ratio = -1;
 	scene->scene_name = file;
+	scene->bvh_depth = 0;
+	scene->bvh_m_depth = 0;
 	fd = get_file(file);
 	if (fd == -1)
 		return (-1);
 	init_vector(&scene->objects, sizeof(t_object));
 	init_vector(&scene->lights, sizeof(t_light));
+	init_vector(&scene->planes, sizeof(t_object));
 	if (read_file(engine, scene, fd) == -1)
 	{
 		close(fd);
@@ -52,7 +55,7 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 		print_error("You need one camera and one ambient light");
 		return (-1);
 	}
-	scene->bvh = init_bvh(&scene->objects, 0);
+	scene->bvh = init_bvh(&scene->objects, 0, &scene->bvh_m_depth);
 	if (scene->bvh == NULL)
 		return (-1);
 	return (0);
@@ -149,6 +152,14 @@ static int	add_created_object(t_scene *scene, t_object *obj)
 			return (-1);
 		}
 		scene->ambient_light = obj->data.ambient_light;
+	}
+	else if (obj->type == PLANE)
+	{
+		if (add_vector(&scene->planes, obj, 1) == -1)
+		{
+			print_error("Memory allocation failure");
+			return (-1);
+		}
 	}
 	else if (add_vector(&scene->objects, obj, 1) == -1)
 	{

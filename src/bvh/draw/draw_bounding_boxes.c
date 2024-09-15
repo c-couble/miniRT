@@ -1,23 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_axis.c                                         :+:      :+:    :+:   */
+/*   draw_bounding_boxes.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 21:13:30 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 11:00:39 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/11 13:50:18 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/14 03:17:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
-#include "vec3.h"
+#include "bvh.h"
+#include "draw.h"
+#include "object.h"
+#include "engine.h"
+#include <stdint.h>
 
-double	get_axis(t_vec3 *v, int axis)
+void	draw_bounding_boxes(t_engine *eng, t_vector *objs, uint32_t color)
 {
-	if (axis == X)
-		return (v->x);
-	if (axis == Y)
-		return (v->y);
-	return (v->z);
+	size_t		i;
+	t_object	*obj;
+
+	i = 0;
+	while (i < objs->size)
+	{
+		obj = at_vector(objs, i);
+		if (obj->type != PLANE)
+			draw_bounding_box(eng, &obj->aabb.box, color);
+		++i;
+	}
 }

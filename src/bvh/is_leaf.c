@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_axis.c                                         :+:      :+:    :+:   */
+/*   is_leaf.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 21:13:30 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 11:00:39 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/15 11:03:42 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/15 11:03:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
-#include "vec3.h"
+#include "bvh.h"
 
-double	get_axis(t_vec3 *v, int axis)
+inline int	is_leaf(t_bvh_node *node)
 {
-	if (axis == X)
-		return (v->x);
-	if (axis == Y)
-		return (v->y);
-	return (v->z);
+	return (node->left == NULL && node->right == NULL);
 }

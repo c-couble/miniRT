@@ -1,60 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   intersect_bvh.c                                    :+:      :+:    :+:   */
+/*   trace_ray_2.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/12 12:41:49 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 11:05:18 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/14 13:15:18 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/14 13:35:40 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bvh.h"
-#include "mlx_wrapper.h"
+#include "engine.h"
 #include "object.h"
-#include "ray.h"
 #include "util.h"
-#include "vector.h"
-#include <stdio.h>
 
-double		intersect_bvh(t_ray *ray, t_bvh_node *node)
+static void	add_ray_data(t_ray *ray);
+
+int	trace_ray2(t_engine *engine, t_ray *ray)
 {
+	size_t		i;
 	double		t;
 	double		tmp;
-	size_t		i;
 	t_object	*obj;
 	t_hit_data	data;
 
-	t = -1;
-	if (intersect_aabb(ray, &node->aabb) == -1)
-		return (-1);
-	if (is_leaf(node))
-	{
-		i = 0;
-//		printf("is leaf obj size = %ld\n", node->objects.size);
-		while (i < node->objects.size)
-		{
-			obj = at_vector(&node->objects, i);
-			tmp = intersect(obj, ray);
-			if (get_closest_distance_ptr(tmp, t, &t))
-				data = ray->data;
-			++i;
-		}
-		if (t != -1)
-			ray->data = data;
-		return (t);
-	}
-	t = intersect_bvh(ray, node->left);
+	i = 0;
+	t = intersect_bvh(ray, engine->scene.bvh);
 	if (t != -1)
 		data = ray->data;
-	tmp = intersect_bvh(ray, node->right);
-	if (tmp != -1)
+	while (i < engine->scene.planes.size)
 	{
+		obj = at_vector(&engine->scene.planes, i);
+		tmp = intersect(obj, ray);
 		if (get_closest_distance_ptr(tmp, t, &t))
 			data = ray->data;
+		++i;
 	}
 	if (t != -1)
+	{
 		ray->data = data;
+		add_ray_data(ray);
+	}
 	return (t);
+}
+
+static void	add_ray_data(t_ray *ray)
+{
+	ray->data.raw_normal = ray->data.normal;
+	if (vec3_dot(&ray->ray, &ray->data.normal) < 0)
+		vec3_scale(&ray->data.normal, -1);
+	apply_checkerboard(ray, ray->data.obj);
+	if (ray->data.texture)
+	{
+		ray->data.color = get_texture_color(ray->data.texture,
+				ray->data.u, ray->data.v);
+	}
 }

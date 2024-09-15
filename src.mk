@@ -2,20 +2,27 @@ SRC = \
 	  bvh/create_bvh_node.c \
 	  bvh/create_empty_aabb.c \
 	  bvh/clear_bvh.c \
-	  bvh/draw_lines.c \
-	  bvh/draw_bounding_boxes.c \
 	  bvh/get_aabb_from_bbox.c \
 	  bvh/get_sphere_aabb.c \
 	  bvh/get_paraboloid_aabb.c \
 	  bvh/get_cylinder_aabb.c \
 	  bvh/get_bounding_box.c \
 	  bvh/init_bvh.c \
+	  bvh/is_leaf.c \
 	  bvh/intersect_aabb.c \
 	  bvh/intersect_bvh.c \
 	  bvh/print_objs.c \
 	  bvh/print_aabb.c \
 	  bvh/print_bounding_box.c \
 	  bvh/update_node_aabb.c \
+	  \
+	  bvh/draw/draw_bvh.c \
+	  bvh/draw/draw_bvh_at_depth.c \
+	  bvh/draw/draw_lines.c \
+	  bvh/draw/draw_bounding_box.c \
+	  bvh/draw/draw_bounding_boxes.c \
+	  \
+	  bvh/hooks/init_bvh_hooks.c \
 	  \
 	  camera/color_pixels.c \
 	  camera/create_camera_vectors.c \
@@ -139,9 +146,11 @@ SRC = \
 	  texture/parse_texture_if_needed.c \
 	  \
 	  ray/trace_ray.c \
+	  ray/trace_ray_2.c \
 	  \
 	  util/add_color.c \
 	  util/add_scale_color.c \
+	  util/get_interpolate_color.c \
 	  util/get_biggest_distance.c \
 	  util/double_equals.c \
 	  util/get_axis.c \

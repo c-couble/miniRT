@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 18:41:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 22:17:55 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 11:02:50 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "float.h"
 #include "vec3.h"
 
-static	void get_aabb_from_face(t_vec3 *face, t_aabb *aabb);
+static void	get_aabb_from_face(t_vec3 *face, t_aabb *aabb);
 
 void	get_aabb_from_bbox(t_bbox *bbobx, t_aabb *aabb)
 {
@@ -25,7 +25,7 @@ void	get_aabb_from_bbox(t_bbox *bbobx, t_aabb *aabb)
 	get_aabb_from_face(bbobx->bottom, aabb);
 }
 
-static	void get_aabb_from_face(t_vec3 *face, t_aabb *aabb)
+static	void	get_aabb_from_face(t_vec3 *face, t_aabb *aabb)
 {
 	int	i;
 
