@@ -17,8 +17,6 @@ SRC = \
 	  bvh/update_node_aabb.c \
 	  \
 	  bvh/draw/draw_bvh.c \
-	  bvh/draw/draw_bvh_at_depth.c \
-	  bvh/draw/draw_bvh_from_depth.c \
 	  bvh/draw/draw_lines.c \
 	  bvh/draw/draw_bounding_box.c \
 	  bvh/draw/draw_bounding_boxes.c \

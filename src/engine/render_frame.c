@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 15:59:27 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 16:22:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,25 +49,9 @@ void	render_frame(t_engine *engine)
 	}
 	printf("bvh depth = %d\n", engine->scene.bvh_depth); 	
 	printf("bvh maxdepth = %d\n", engine->scene.bvh_m_depth); 
-	if (engine->scene.camera.bvh_mode != NONE)
-	{
-		if (engine->scene.camera.bvh_mode == PERSISTENT)
-		{
-			draw_bvh_from_depth(engine, engine->scene.bvh, 0);
-			if (engine->scene.bvh_depth != engine->scene.bvh_depth + 1)
-				draw_bounding_boxes(engine, &engine->scene.objects, WHITE);
-		}
-		else
-		{
-			if (engine->scene.bvh_depth == engine->scene.bvh_m_depth)
-				draw_bounding_boxes(engine, &engine->scene.objects, WHITE);
-			else
-				draw_bvh_at_depth(engine, engine->scene.bvh, 0);
-		}
-		engine->scene.camera.should_render = 1;
-	}
+	draw_bvh(engine);
 	long int time = clock();
-	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time - start);
+	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time -start);
 	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
 	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
