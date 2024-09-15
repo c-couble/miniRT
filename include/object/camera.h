@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/14 07:37:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 14:04:47 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ typedef struct s_camera
 	size_t	frame_width;
 	size_t	frame_height;
 	double	fov;
-	double	ratio;
 	double	sensitivity;
 	double	speed;
 	size_t	last_frame_time;
