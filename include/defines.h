@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 17:52:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 18:29:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 # define SPEED				90
 # define MAX_RAY_LEN		1000000
 # define INACCURATE_ZERO	10e-8
-# define BACKGROUND_COLOR	9211020
+# define BACKGROUND_COLOR	0
 # define TILE_DIVIDER		150.
 
 # define NEAR_PLANE			1
