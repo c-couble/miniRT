@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 11:43:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 13:16:25 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	
 	printf("bvh depth = %d\n", engine->scene.bvh_depth); 	
 	printf("bvh maxdepth = %d\n", engine->scene.bvh_m_depth); 
 	if (engine->scene.camera.render_type != BVH_2 
@@ -64,6 +63,7 @@ void	render_frame(t_engine *engine)
 	long int time = clock();
 	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time - start);
 	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
+	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }
 
@@ -76,7 +76,7 @@ static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
 	if (engine->scene.camera.locked)
 		color.color = get_pixel_color(engine, &camera_ray, DEPTH);
 	else
-		color.color = get_pixel_color(engine, &camera_ray, 5);
+		color.color = get_pixel_color(engine, &camera_ray, LOW_RENDER_DEPTH);
 	color_pixels(engine, i, j, color.color);
 }
 
@@ -132,6 +132,6 @@ static void	change_ray_size(t_engine *engine, size_t fps)
 {
 	if (fps < MINIMUM_FPS)
 		++engine->scene.camera.pixel_square_size;
-	if (fps > MAXIMUM_FPS)
+	else if (fps > MAXIMUM_FPS && engine->scene.camera.pixel_square_size > 1)
 		--engine->scene.camera.pixel_square_size;
 }

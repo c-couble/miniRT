@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:32:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/15 12:56:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,10 @@ static void	setup_view(t_camera *camera);
 
 void	setup_camera(t_engine *engine)
 {
-	const double	ratio = (double) engine->mlx.width / engine->mlx.height;
 	t_camera		*cam;
 
 	cam = &engine->scene.camera;
-	setup_projection(cam, ratio);
+	setup_projection(cam, engine->mlx.aspect);
 	setup_view(cam);
 	mat4_multiply(&cam->inverse_projection, &cam->inverse_view, &cam->final);
 	cam->frame_width = engine->mlx.width / cam->pixel_square_size + 1;

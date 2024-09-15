@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 04:56:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:45:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/15 12:58:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <X11/X.h>
 #include "color.h"
 #include "defines.h"
+#include "ft_math.h"
 #include "mlx.h"
 #include "mlx_wrapper.h"
 
@@ -35,7 +35,7 @@ int	init_mlx_struct(t_mlx *mlx)
 		free(mlx->mlx);
 		return (-1);
 	}
-	mlx->img = mlx_new_image(mlx->mlx, SCREEN_WIDTH, SCREEN_HEIGHT);
+	mlx->img = mlx_new_image(mlx->mlx, mlx->width, mlx->height);
 	if (mlx->img == NULL)
 	{
 		mlx_destroy_window(mlx->mlx, mlx->mlx_window);
@@ -51,8 +51,9 @@ int	init_mlx_struct(t_mlx *mlx)
 
 static void	init_values(t_mlx *mlx)
 {
-	mlx->width = SCREEN_WIDTH;
-	mlx->height = SCREEN_HEIGHT;
+	mlx->width = ft_max(SCREEN_WIDTH, 1);
+	mlx->height = ft_max(SCREEN_HEIGHT, 1);
+	mlx->aspect = (double)mlx->width / (double)mlx->height;
 	mlx->focused = 1;
 }
 
