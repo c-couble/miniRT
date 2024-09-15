@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/14 01:44:48 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 11:45:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,32 +41,7 @@ int	parse_camera(t_engine *engine, t_object_data *data)
 	data->camera.render_type = CLASSIC;
 	return (0);
 }
-/*
-static void	get_perspective(t_camera *camera, t_mat4 *projection, double fov, double aspect)
-{
-	const double	fov_rad = fov * (M_PI / 180.0);
-	const double	tan_half_fov = tan(fov_rad / 2.0);
-	const double	far = FAR_PLANE;
-	const double	near = NEAR_PLANE;
-	const double	far_minus_near = far - near;
 
-	projection->matrix[0] = 1.0 / (aspect * tan_half_fov);
-	projection->matrix[1] = 0.0;
-	projection->matrix[2] = 0.0;
-	projection->matrix[3] = 0.0;
-	projection->matrix[4] = 0.0;
-	projection->matrix[5] = 0.0;
-	projection->matrix[6] = -far / (far_minus_near);
-	projection->matrix[7] = -(far * near) / (far_minus_near);
-	projection->matrix[8] = 0.0;
-	projection->matrix[9] = 1.0 / tan_half_fov;
-	projection->matrix[10] = 0.0;
-	projection->matrix[11] = 0.0;
-	projection->matrix[12] = 0.0;
-	projection->matrix[13] = 0.0;
-	projection->matrix[14] = -1.0;
-    projection->matrix[15] = 0.0;
-}*/
 static void	get_perspective(t_camera *camera)
 {
 	const double	fov_rad = camera->fov * (M_PI / 180.0);

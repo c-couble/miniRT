@@ -6,16 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/14 13:41:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 11:41:00 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bvh.h"
 #include "color_util.h"
 #include "object/light.h"
 #include "shading.h"
 #include "vec3.h"
-#include <stdio.h>
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 
