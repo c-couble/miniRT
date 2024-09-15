@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 19:39:21 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 00:37:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,7 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	ray->ray.y = final.y;
 	ray->ray.z = final.z;
 	vec3_normalize(&ray->ray);
+	get_inv_dir(ray);
 }
 
 static void	change_ray_size(t_engine *engine, size_t fps)

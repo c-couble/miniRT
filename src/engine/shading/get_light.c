@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 19:58:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 00:37:39 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 #include "object/light.h"
+#include "ray.h"
 #include "shading.h"
 #include "vec3.h"
 
@@ -44,6 +45,7 @@ static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l)
 	l_ray->startpos = c_ray->data.hitpos;
 	vec3_subtract(&l->pos, &l_ray->startpos, &l_ray->ray);
 	norm = vec3_normalize(&l_ray->ray);
+	get_inv_dir(l_ray);
 	d = trace_ray2(eng, l_ray);
 	if (vec3_dot(&c_ray->data.normal, &l_ray->ray) > 0)
 		return (0);

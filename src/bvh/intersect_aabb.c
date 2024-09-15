@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:58:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 19:55:10 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 00:39:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,8 +49,8 @@ static int	get_tinterval_x(t_ray *r, t_aabb *aabb, double *t, double *t_end)
 	if (r->ray.x == 0 && ((r->startpos.x < aabb->min.x)
 			|| r->startpos.x > aabb->max.x))
 		return (-1);
-	t_1 = (aabb->min.x - r->startpos.x) / r->ray.x;
-	t_2 = (aabb->max.x - r->startpos.x) / r->ray.x;
+	t_1 = (aabb->min.x - r->startpos.x) * r->inv_x;
+	t_2 = (aabb->max.x - r->startpos.x) * r->inv_x;
 	if (t_1 > t_2)
 		ft_dswap(&t_1, &t_2);
 	if (t_1 > *t)
@@ -68,8 +68,8 @@ static int	get_tinterval_y(t_ray *r, t_aabb *aabb, double *t, double *t_end)
 	if (r->ray.y == 0 && ((r->startpos.y < aabb->min.y)
 			|| r->startpos.y > aabb->max.y))
 		return (-1);
-	t_1 = (aabb->min.y - r->startpos.y) / r->ray.y;
-	t_2 = (aabb->max.y - r->startpos.y) / r->ray.y;
+	t_1 = (aabb->min.y - r->startpos.y) * r->inv_y;
+	t_2 = (aabb->max.y - r->startpos.y) * r->inv_y;
 	if (t_1 > t_2)
 		ft_dswap(&t_1, &t_2);
 	if (t_1 > *t)
@@ -87,8 +87,8 @@ static int	get_tinterval_z(t_ray *r, t_aabb *aabb, double *t, double *t_end)
 	if (r->ray.z == 0 && ((r->startpos.z < aabb->min.z)
 			|| r->startpos.z > aabb->max.z))
 		return (-1);
-	t_1 = (aabb->min.z - r->startpos.z) / r->ray.z;
-	t_2 = (aabb->max.z - r->startpos.z) / r->ray.z;
+	t_1 = (aabb->min.z - r->startpos.z) * r->inv_z;
+	t_2 = (aabb->max.z - r->startpos.z) * r->inv_z;
 	if (t_1 > t_2)
 		ft_dswap(&t_1, &t_2);
 	if (t_1 > *t)

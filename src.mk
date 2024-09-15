@@ -158,6 +158,7 @@ SRC = \
 	  texture/parse_texture_file.c \
 	  texture/parse_texture_if_needed.c \
 	  \
+	  ray/get_inv_dir.c \
 	  ray/trace_ray.c \
 	  ray/trace_ray_2.c \
 	  \
