@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 06:43:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/15 12:57:52 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
+	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }
 
@@ -54,7 +54,7 @@ static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
 	if (engine->scene.camera.locked)
 		color.color = get_pixel_color(engine, &camera_ray, DEPTH);
 	else
-		color.color = get_pixel_color(engine, &camera_ray, 5);
+		color.color = get_pixel_color(engine, &camera_ray, LOW_RENDER_DEPTH);
 	color_pixels(engine, i, j, color.color);
 }
 
@@ -82,6 +82,6 @@ static void	change_ray_size(t_engine *engine, size_t fps)
 {
 	if (fps < MINIMUM_FPS)
 		++engine->scene.camera.pixel_square_size;
-	if (fps > MAXIMUM_FPS)
+	else if (fps > MAXIMUM_FPS && engine->scene.camera.pixel_square_size > 1)
 		--engine->scene.camera.pixel_square_size;
 }
