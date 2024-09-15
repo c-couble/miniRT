@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 14:04:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 15:15:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ int	parse_camera(t_engine *engine, t_object_data *data)
 	data->camera.sensitivity = SENSITIVITY;
 	data->camera.speed = SPEED;
 	data->camera.render_type = CLASSIC;
+	data->camera.bvh_mode = NONE;
 	return (0);
 }

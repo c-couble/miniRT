@@ -18,11 +18,17 @@ SRC = \
 	  \
 	  bvh/draw/draw_bvh.c \
 	  bvh/draw/draw_bvh_at_depth.c \
+	  bvh/draw/draw_bvh_from_depth.c \
 	  bvh/draw/draw_lines.c \
 	  bvh/draw/draw_bounding_box.c \
 	  bvh/draw/draw_bounding_boxes.c \
 	  \
 	  bvh/hooks/init_bvh_hooks.c \
+	  bvh/hooks/change_bvh_mode.c \
+	  bvh/hooks/increase_depth_manual.c \
+	  bvh/hooks/increase_depth_persistent.c \
+	  bvh/hooks/decrease_depth_manual.c \
+	  bvh/hooks/decrease_depth_persistent.c \
 	  \
 	  camera/color_pixels.c \
 	  camera/create_camera_vectors.c \

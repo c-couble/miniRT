@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   draw_bvh_at_depth.c                                :+:      :+:    :+:   */
+/*   draw_bvh_from_depth.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 10:54:58 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 15:40:08 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/15 15:28:46 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/15 15:47:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,13 @@
 #include "defines.h"
 #include "draw.h"
 
-void	draw_bvh_at_depth(t_engine *eng, t_bvh_node *bvh, int depth)
+void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 {
 	if (is_leaf(bvh))
 		return ;
-	if (depth < eng->scene.bvh_depth)
-	{
-		draw_bvh_at_depth(eng, bvh->left, depth + 1);
-		draw_bvh_at_depth(eng, bvh->right, depth + 1);
-	}
-	else
+	draw_bvh_from_depth(eng, bvh->left, depth + 1);
+	draw_bvh_from_depth(eng, bvh->right, depth + 1);
+	if (depth >= eng->scene.bvh_depth)
 	{
 		get_bounding_box(&bvh->aabb);
 		draw_bounding_box(eng, &bvh->aabb.box,

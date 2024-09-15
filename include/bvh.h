@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:31:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 11:24:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/15 16:10:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,11 @@ void		print_objs(t_vector *objs);
 void		print_aabb(t_aabb *aabb, char *str);
 
 int			init_bvh_hooks(t_engine *engine);
+void		change_bvh_mode(t_engine *engine);
+void		increase_depth_manual(t_engine *engine);
+void		increase_depth_persistent(t_engine *engine);
+void		decrease_depth_manual(t_engine *engine);
+void		decrease_depth_persistent(t_engine *engine);
 
 void		get_sphere_aabb(struct s_sphere *sphere, struct s_object *obj);
 void		get_paraboloid_aabb(struct s_paraboloid *pa, struct s_object *obj);
