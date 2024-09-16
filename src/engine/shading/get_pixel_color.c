@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 19:58:47 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 23:39:09 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ uint32_t	get_pixel_color(t_engine *engine, t_ray *c_ray, int depth)
 
 	if (depth <= 0)
 		return (BACKGROUND_COLOR);
-	if (trace_ray2(engine, c_ray) > -INACCURATE_ZERO)
+	if (trace_ray(engine, c_ray) > -INACCURATE_ZERO)
 	{
 		if (engine->scene.camera.render_type == NORMAL)
 			return (get_normal_color(c_ray));

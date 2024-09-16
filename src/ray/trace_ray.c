@@ -3,55 +3,52 @@
 /*                                                        :::      ::::::::   */
 /*   trace_ray.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 11:01:38 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/14 13:15:18 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/16 23:38:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "bvh.h"
+#include "engine.h"
 #include "object.h"
 #include "util.h"
 
-static void	add_ray_data(t_ray *ray);
+static inline void	add_ray_data(t_ray *ray, t_hit_data *data);
 
 int	trace_ray(t_engine *engine, t_ray *ray)
 {
 	size_t		i;
-	t_object	*obj;
 	double		t;
-	t_hit_data	data;
 	double		tmp;
+	t_object	*planes;
+	t_hit_data	data;
 
 	i = 0;
-	t = -1;
-	while (i < engine->scene.objects.size)
-	{
-		obj = at_vector(&engine->scene.objects, i);
-		tmp = intersect(obj, ray);
-		if (get_closest_distance_ptr(tmp, t, &t))
-			data = ray->data;
-		++i;
-	}
-	i = 0;
+	t = intersect_bvh(ray, engine->scene.bvh, &engine->scene.objects);
+	if (t != -1)
+		data = ray->data;
+	planes = engine->scene.planes.array;
 	while (i < engine->scene.planes.size)
 	{
-		obj = at_vector(&engine->scene.planes, i);
-		tmp = intersect(obj, ray);
-		if (get_closest_distance_ptr(tmp, t, &t))
+		tmp = intersect_plane(&planes[i], ray);
+		if (tmp > 0 && get_closest_distance_ptr(tmp, t, &t))
+		{
+			ray->data.obj = &planes[i];
+			ray->data.materials = planes[i].optional_data.material;
 			data = ray->data;
+		}
 		++i;
 	}
 	if (t != -1)
-	{
-		ray->data = data;
-		add_ray_data(ray);
-	}
+		add_ray_data(ray, &data);
 	return (t);
 }
 
-static void	add_ray_data(t_ray *ray)
+static inline void	add_ray_data(t_ray *ray, t_hit_data *data)
 {
+	ray->data = *data;
 	ray->data.raw_normal = ray->data.normal;
 	if (vec3_dot(&ray->ray, &ray->data.normal) < 0)
 		vec3_scale(&ray->data.normal, -1);

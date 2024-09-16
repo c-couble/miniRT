@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 12:41:49 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 20:11:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 23:19:46 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ double		intersect_bvh(t_ray *ray, t_bvh_node *node, t_vector *objs)
 	{
 		int size = node->size + node->start;
 		i = node->start;
-//		printf("is leaf obj size = %ld\n", node->objects.size);
 		while (i < (size))
 		{
 			obj = at_vector(objs, i);
@@ -50,11 +49,8 @@ double		intersect_bvh(t_ray *ray, t_bvh_node *node, t_vector *objs)
 	if (t != -1)
 		data = ray->data;
 	tmp = intersect_bvh(ray, node->right, objs);
-	if (tmp != -1)
-	{
-		if (get_closest_distance_ptr(tmp, t, &t))
-			data = ray->data;
-	}
+	if (get_closest_distance_ptr(tmp, t, &t))
+		data = ray->data;
 	if (t != -1)
 		ray->data = data;
 	return (t);

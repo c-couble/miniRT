@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 19:51:09 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 23:17:27 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # define SCREEN_HEIGHT		1080
 # define WINDOW_NAME		"miniRT ccouble lespenel"
 # define DEFAULT_RAY_SIZE	5
-# define MINIMUM_FPS		10
+# define MINIMUM_FPS		20
 # define MAXIMUM_FPS		20
 # define ROLL_ANGLE			0.05
 # define SENSITIVITY		2

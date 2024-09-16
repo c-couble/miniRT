@@ -162,7 +162,6 @@ SRC = \
 	  \
 	  ray/get_inv_dir.c \
 	  ray/trace_ray.c \
-	  ray/trace_ray_2.c \
 	  \
 	  util/get_biggest_distance.c \
 	  util/double_equals.c \
