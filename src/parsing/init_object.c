@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/12 16:02:05 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 01:29:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "bvh.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/optional_data.h"
@@ -39,12 +38,6 @@ int	init_object(t_engine *engine, t_object *object, char *line)
 	if (object->type != LIGHT
 		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
 	{
-		if (object->type == SPHERE)
-			get_sphere_aabb(&object->data.sphere, object);
-		if (object->type == PARABOLOID)
-			get_paraboloid_aabb(&object->data.paraboloid, object);
-		if (object->type == CYLINDER)
-			get_cylinder_aabb(&object->data.cylinder, object);
 		if (parse_optional_data(engine, object) == -1)
 			return (-1);
 	}
