@@ -6,20 +6,21 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 14:25:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 01:08:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
 #include "ft_string.h"
+#include "util.h"
 #include "object.h"
 #include "object/parse_util.h"
-#include "util.h"
-#include <stdio.h>
+
+static void	fill_properties(t_paraboloid *para);
 
 int	parse_paraboloid(t_engine *engine, t_object_data *data)
 {
-	char	*arg;
+	char			*arg;
 
 	(void) engine;
 	if (parse_vector3d(&data->paraboloid.pos, -DBL_MAX, DBL_MAX) == -1)
@@ -34,14 +35,19 @@ int	parse_paraboloid(t_engine *engine, t_object_data *data)
 		return (-1);
 	if (parse_color(&data->paraboloid.color) == -1)
 		return (-1);
-	data->paraboloid.theta = get_theta_axis(&data->paraboloid.axis,
-			&data->paraboloid.rot_axis);
-	if (data->paraboloid.radius < 0.01)
-		data->paraboloid.radius_coef = 0;
-	else
-	{
-		data->paraboloid.radius_coef = data->paraboloid.height
-			/ (data->paraboloid.radius * data->paraboloid.radius);
-	}
+	fill_properties(&data->paraboloid);
 	return (0);
+}
+
+static void	fill_properties(t_paraboloid *para)
+{
+	t_vec3	tmp;
+
+	para->theta = get_theta_axis(&para->axis, &para->rot_axis);
+	if (para->radius < 0.01)
+		para->radius_coef = 0;
+	para->radius_coef = para->height / (para->radius * para->radius);
+	tmp = para->axis;
+	vec3_scale(&tmp, para->height / 2);
+	vec3_add(&para->pos, &tmp, &para->center);
 }

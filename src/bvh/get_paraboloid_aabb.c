@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 15:13:35 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 19:59:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 00:57:27 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	get_paraboloid_aabb(t_paraboloid *para, t_object *obj)
 	t_vec3	radial_a;
 	t_vec3	radial_b;
 	t_bbox	b_box;
-	t_vec3	tmp;
 
 	bottom_mid = para->pos;
 	top_mid = para->axis;
@@ -37,9 +36,7 @@ void	get_paraboloid_aabb(t_paraboloid *para, t_object *obj)
 	get_face(b_box.bottom, &bottom_mid, &radial_a, &radial_b);
 	get_aabb_from_bbox(&b_box, &obj->aabb);
 	obj->aabb.box = b_box;
-	tmp = para->axis;
-	vec3_scale(&tmp, para->height / 2);
-	vec3_add(&para->pos, &tmp, &obj->aabb.center);
+	obj->aabb.center = para->center;
 }
 
 static void	get_radial_vec(t_vec3 *ra, t_vec3 *rb, t_vec3 *axis, double radius)

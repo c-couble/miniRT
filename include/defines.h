@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 23:17:27 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 01:02:27 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 # define TILE_DIVIDER		150.
 
 # define NEAR_PLANE			1
-# define FAR_PLANE			5000
+# define FAR_PLANE			1000000
 
 # define X					0
 # define Y					1
