@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:31:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 16:10:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 22:45:23 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include "engine.h"
 # include "ray.h"
 # include "vector.h"
+#include <stdio.h>
 
 // counterclockwise
 typedef struct s_bbox
@@ -37,7 +38,8 @@ typedef struct s_bvh_node
 	t_aabb				aabb;
 	struct s_bvh_node	*left;
 	struct s_bvh_node	*right;
-	t_vector			objects;
+	int					start;
+	int					size;
 }	t_bvh_node;
 
 struct	s_sphere;
@@ -45,15 +47,19 @@ struct	s_paraboloid;
 struct	s_cylinder;
 struct	s_object;
 
+
 t_bvh_node	*create_bvh_node(void);
-t_bvh_node	*init_bvh(t_vector *objs, int depth, int *mem_depth);
+t_bvh_node	*init_bvh(t_vector *objs);
 void		clear_bvh(t_bvh_node *bvh);
 void		create_empty_aabb(t_aabb *aabb);
-void		update_node_aabb(t_bvh_node *node);
+void		update_node_aabb(t_bvh_node *node, t_vector *objs);
+double		get_split_pos_axis(t_bvh_node *node, int *axis);
 double		intersect_aabb(t_ray *ray, t_aabb *aabb);
-double		intersect_bvh(t_ray *ray, t_bvh_node *node);
+double		intersect_bvh(t_ray *ray, t_bvh_node *node, t_vector *objs);
+void		print_node(t_bvh_node *n, t_vector *objs, char *str);
 
-int			is_leaf(t_bvh_node *node);
+void		swap_by_axis(t_bvh_node *bvh, t_vector *objs, double pos, int axis);
+void		get_bvh_depth(t_bvh_node *bvh, int depth, int *depth_ptr);
 void		print_bounding_box(t_bbox *b_box);
 void		get_bounding_box(t_aabb *aabb);
 void		get_aabb_from_bbox(t_bbox *bbobx, t_aabb *aabb);

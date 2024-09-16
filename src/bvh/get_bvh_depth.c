@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_bvh.c                                        :+:      :+:    :+:   */
+/*   get_bvh_depth.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 18:55:24 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 19:05:05 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/16 20:50:45 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/16 22:47:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "bvh.h"
 
-void	clear_bvh(t_bvh_node *bvh)
+void	get_bvh_depth(t_bvh_node *bvh, int depth, int *depth_ptr)
 {
-	if (bvh == NULL)
+	if (bvh->size)
 		return ;
-	clear_bvh(bvh->left);
-	clear_bvh(bvh->right);
-	free(bvh);
+	*depth_ptr = depth;
+	get_bvh_depth(bvh->left, depth + 1, depth_ptr);
+	get_bvh_depth(bvh->right, depth + 1, depth_ptr);
 }

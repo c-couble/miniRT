@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 12:41:49 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 11:05:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 20:11:29 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,25 @@
 #include "vector.h"
 #include <stdio.h>
 
-double		intersect_bvh(t_ray *ray, t_bvh_node *node)
+double		intersect_bvh(t_ray *ray, t_bvh_node *node, t_vector *objs)
 {
 	double		t;
 	double		tmp;
-	size_t		i;
+	int			i;
 	t_object	*obj;
 	t_hit_data	data;
 
 	t = -1;
 	if (intersect_aabb(ray, &node->aabb) == -1)
 		return (-1);
-	if (is_leaf(node))
+	if (node->size)
 	{
-		i = 0;
+		int size = node->size + node->start;
+		i = node->start;
 //		printf("is leaf obj size = %ld\n", node->objects.size);
-		while (i < node->objects.size)
+		while (i < (size))
 		{
-			obj = at_vector(&node->objects, i);
+			obj = at_vector(objs, i);
 			tmp = intersect(obj, ray);
 			if (get_closest_distance_ptr(tmp, t, &t))
 				data = ray->data;
@@ -45,10 +46,10 @@ double		intersect_bvh(t_ray *ray, t_bvh_node *node)
 			ray->data = data;
 		return (t);
 	}
-	t = intersect_bvh(ray, node->left);
+	t = intersect_bvh(ray, node->left, objs);
 	if (t != -1)
 		data = ray->data;
-	tmp = intersect_bvh(ray, node->right);
+	tmp = intersect_bvh(ray, node->right, objs);
 	if (tmp != -1)
 	{
 		if (get_closest_distance_ptr(tmp, t, &t))

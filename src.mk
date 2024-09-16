@@ -4,11 +4,13 @@ SRC = \
 	  bvh/clear_bvh.c \
 	  bvh/get_aabb_from_bbox.c \
 	  bvh/get_sphere_aabb.c \
+	  bvh/get_bvh_depth.c \
 	  bvh/get_paraboloid_aabb.c \
 	  bvh/get_cylinder_aabb.c \
 	  bvh/get_bounding_box.c \
+	  bvh/get_split_pos_axis.c \
+	  bvh/swap_by_axis.c \
 	  bvh/init_bvh.c \
-	  bvh/is_leaf.c \
 	  bvh/intersect_aabb.c \
 	  bvh/intersect_bvh.c \
 	  bvh/print_objs.c \

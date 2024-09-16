@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/16 00:37:21 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 19:21:27 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-//	printf("bvh depth = %d\n", engine->scene.bvh_depth); 	
-//	printf("bvh maxdepth = %d\n", engine->scene.bvh_m_depth); 
+	printf("bvh depth = %d\n", engine->scene.bvh_depth); 	
+	printf("bvh maxdepth = %d\n", engine->scene.bvh_m_depth); 
 	draw_bvh(engine);
 	long int time = clock();
 	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time -start);

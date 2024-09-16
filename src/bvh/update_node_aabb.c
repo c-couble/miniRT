@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 23:36:19 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 22:13:10 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 19:44:38 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,18 @@
 #include "vec3.h"
 #include "vector.h"
 
-void	update_node_aabb(t_bvh_node *node)
+void	update_node_aabb(t_bvh_node *node, t_vector *objs)
 {
-	size_t		i;
+	int			i;
+	const int	size = node->start + node->size;
 	t_object	*obj;
 
-	i = 0;
+	i = node->start;
 	vec3_create(DBL_MAX, DBL_MAX, DBL_MAX, &node->aabb.min);
 	vec3_create(-DBL_MAX, -DBL_MAX, -DBL_MAX, &node->aabb.max);
-	while (i < node->objects.size)
+	while (i < size)
 	{
-		obj = at_vector(&node->objects, i);
+		obj = at_vector(objs, i);
 		node->aabb.min.x = ft_dmin(node->aabb.min.x, obj->aabb.min.x);
 		node->aabb.min.y = ft_dmin(node->aabb.min.y, obj->aabb.min.y);
 		node->aabb.min.z = ft_dmin(node->aabb.min.z, obj->aabb.min.z);

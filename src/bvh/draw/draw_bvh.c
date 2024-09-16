@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:10:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 18:00:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 20:44:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void	draw_bvh(t_engine *engine)
 
 static void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 {
-	if (is_leaf(bvh))
+	if (bvh->size)
 		return ;
 	draw_bvh_from_depth(eng, bvh->left, depth + 1);
 	draw_bvh_from_depth(eng, bvh->right, depth + 1);
@@ -52,7 +52,7 @@ static void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 
 static void	draw_bvh_at_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 {
-	if (is_leaf(bvh))
+	if (bvh->size)
 		return ;
 	if (depth < eng->scene.bvh_depth)
 	{

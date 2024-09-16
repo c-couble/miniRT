@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 11:22:39 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 20:57:00 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include "bvh.h"
 #include "ft_io.h"
 #include "ft_mem.h"
 #include "ft_string.h"
@@ -55,9 +56,10 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 		print_error("You need one camera and one ambient light");
 		return (-1);
 	}
-	scene->bvh = init_bvh(&scene->objects, 0, &scene->bvh_m_depth);
+	scene->bvh = init_bvh(&scene->objects);
 	if (scene->bvh == NULL)
 		return (-1);
+	get_bvh_depth(scene->bvh, 0, &scene->bvh_m_depth);
 	return (0);
 }
 
