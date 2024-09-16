@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:20:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:42:36 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/15 12:48:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ typedef struct s_mlx
 	int			endian;
 	size_t		height;
 	size_t		width;
+	double		aspect;
 	t_vector	hooks;
 	int			x;
 	int			y;
