@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:58:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 00:39:22 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 23:58:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	get_tinterval_x(t_ray *r, t_aabb *aabb, double *t, double *t_end);
 static int	get_tinterval_y(t_ray *r, t_aabb *aabb, double *t, double *t_end);
 static int	get_tinterval_z(t_ray *r, t_aabb *aabb, double *t, double *t_end);
 
-double	intersect_aabb(t_ray *ray, t_aabb *aabb)
+inline double	intersect_aabb(t_ray *ray, t_aabb *aabb)
 {
 	double	t_start;
 	double	t_end;

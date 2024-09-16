@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:33:54 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 22:47:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 00:12:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 #include "util.h"
 #include "vector.h"
 
-static int	subdivide(t_bvh_node *node, t_vector *objs);
-static int	get_left_len(t_bvh_node *node, t_vector *obj, double pos, int axis);
-static int	init_child_nodes(t_bvh_node *node, t_vector *objs, int left_size);
+static int	subdivide(t_bvh *node, t_vector *objs);
+static int	get_left_len(t_bvh *node, t_vector *obj, double pos, int axis);
+static int	init_child_nodes(t_bvh *node, t_vector *objs, int left_size);
 
-t_bvh_node	*init_bvh(t_vector *objs)
+t_bvh	*init_bvh(t_vector *objs)
 {
-	t_bvh_node	*node;
+	t_bvh	*node;
 
 	node = create_bvh_node();
 	if (node == NULL)
@@ -35,7 +35,7 @@ t_bvh_node	*init_bvh(t_vector *objs)
 	return (node);
 }
 
-static int	init_child_nodes(t_bvh_node *node, t_vector *objs, int left_size)
+static int	init_child_nodes(t_bvh *node, t_vector *objs, int left_size)
 {
 	node->left = create_bvh_node();
 	if (node->left == NULL)
@@ -53,7 +53,7 @@ static int	init_child_nodes(t_bvh_node *node, t_vector *objs, int left_size)
 	return (0);
 }
 
-static int	subdivide(t_bvh_node *node, t_vector *objs)
+static int	subdivide(t_bvh *node, t_vector *objs)
 {
 	int			axis;
 	int			left_size;
@@ -73,7 +73,7 @@ static int	subdivide(t_bvh_node *node, t_vector *objs)
 	return (0);
 }
 
-static int	get_left_len(t_bvh_node *node, t_vector *obj, double pos, int axis)
+static int	get_left_len(t_bvh *node, t_vector *obj, double pos, int axis)
 {
 	size_t		i;
 	size_t		j;

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 21:02:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 22:34:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 00:13:24 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 static void	swap_obj(t_object *a, t_object *b);
 
-void	swap_by_axis(t_bvh_node *node, t_vector *objs, double pos, int axis)
+void	swap_by_axis(t_bvh *node, t_vector *objs, double pos, int axis)
 {
 	int			i;
 	int			j;

@@ -6,18 +6,18 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 18:51:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 19:08:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 00:12:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "bvh.h"
 
-t_bvh_node	*create_bvh_node(void)
+t_bvh	*create_bvh_node(void)
 {
-	t_bvh_node	*node;
+	t_bvh	*node;
 
-	node = malloc(sizeof(t_bvh_node));
+	node = malloc(sizeof(t_bvh));
 	if (node == NULL)
 		return (NULL);
 	node->left = NULL;

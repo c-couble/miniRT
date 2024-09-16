@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 13:15:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 23:38:35 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 23:55:47 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	t_object	*planes;
 	t_hit_data	data;
 
-	i = 0;
 	t = intersect_bvh(ray, engine->scene.bvh, &engine->scene.objects);
 	if (t != -1)
 		data = ray->data;
+	i = 0;
 	planes = engine->scene.planes.array;
 	while (i < engine->scene.planes.size)
 	{

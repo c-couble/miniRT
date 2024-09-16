@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 20:37:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 20:40:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 00:13:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "util.h"
 #include "vec3.h"
 
-double	get_split_pos_axis(t_bvh_node *node, int *axis)
+double	get_split_pos_axis(t_bvh *node, int *axis)
 {
 	t_vec3	split_plane;
 	double	split_pos;

@@ -6,14 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 18:55:24 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 19:05:05 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 00:12:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "bvh.h"
 
-void	clear_bvh(t_bvh_node *bvh)
+void	clear_bvh(t_bvh *bvh)
 {
 	if (bvh == NULL)
 		return ;

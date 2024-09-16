@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:10:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 20:44:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 00:12:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 #include "draw.h"
 
-static void	draw_bvh_at_depth(t_engine *eng, t_bvh_node *bvh, int depth);
-static void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth);
+static void	draw_bvh_at_depth(t_engine *eng, t_bvh *bvh, int depth);
+static void	draw_bvh_from_depth(t_engine *eng, t_bvh *bvh, int depth);
 
 void	draw_bvh(t_engine *engine)
 {
@@ -36,7 +36,7 @@ void	draw_bvh(t_engine *engine)
 	}
 }
 
-static void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth)
+static void	draw_bvh_from_depth(t_engine *eng, t_bvh *bvh, int depth)
 {
 	if (bvh->size)
 		return ;
@@ -50,7 +50,7 @@ static void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 	}
 }
 
-static void	draw_bvh_at_depth(t_engine *eng, t_bvh_node *bvh, int depth)
+static void	draw_bvh_at_depth(t_engine *eng, t_bvh *bvh, int depth)
 {
 	if (bvh->size)
 		return ;

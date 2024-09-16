@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/16 23:38:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/16 23:55:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,17 @@ static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 uint32_t	get_light(t_engine *engine, t_ray *ray)
 {
 	t_color		light;
-	t_light		*curr;
+	t_light		*lights;
 	t_ray		light_ray;
 	size_t		i;
 
 	i = 0;
 	light.color = get_ambiant_light(engine);
+	lights = engine->scene.lights.array;
 	while (i < engine->scene.lights.size)
 	{
-		curr = at_vector(&engine->scene.lights, i);
-		if (trace_light(engine, &light_ray, ray, curr))
-			phong_model(curr, &light, ray, &light_ray);
+		if (trace_light(engine, &light_ray, ray, &lights[i]))
+			phong_model(&lights[i], &light, ray, &light_ray);
 		++i;
 	}
 	return (multiply_color(&light, &ray->data.color));
