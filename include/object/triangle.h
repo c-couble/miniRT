@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:00:08 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/05 03:28:26 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/16 05:10:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define TRIANGLE_H
 
 # include "color.h"
-#include "object/material.h"
+# include "object/material.h"
 # include "texture.h"
 # include "vec3.h"
 

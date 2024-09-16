@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_engine.c                                     :+:      :+:    :+:   */
+/*   clear_obj_3d.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:47:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 07:30:04 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/16 05:14:14 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/16 07:00:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
+#include <stdlib.h>
 #include "obj_3d.h"
-#include "scene.h"
-#include "texture.h"
+#include "vector.h"
 
-void	clear_engine(t_engine *engine)
+void	clear_obj_3d(t_obj_3d *obj)
 {
-	clear_scene(&engine->scene);
-	clear_mlx_struct(&engine->mlx);
-	clear_textures(&engine->textures);
-	clear_objs_3d(&engine->objs_3d);
+	clear_vector(&obj->faces);
+	clear_vector(&obj->vertices);
+	clear_vector(&obj->space_vertices);
+	clear_vector(&obj->vertex_normals);
+	clear_vector(&obj->texture_coordinates);
+	free(obj);
 }

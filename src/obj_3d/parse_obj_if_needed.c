@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 04:27:10 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 03:58:33 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/16 07:24:29 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,37 @@
 #include <stdlib.h>
 #include "engine.h"
 #include "obj_3d.h"
+#include "ft_mem.h"
 #include "ft_string.h"
 #include "engine.h"
 #include "obj_3d.h"
+
+static t_obj_3d	*add_new_obj(t_engine *engine, char *file);
 
 t_obj_3d	*parse_obj_if_needed(t_engine *engine, char *file)
 {
 	size_t		i;
 	t_obj_3d	*current;
-	t_obj_3d	*obj;
 
 	i = 0;
 	while (i < engine->objs_3d.size)
 	{
-		current = at_vector(&engine->objs_3d, i);
+		current = at_vector(&engine->textures, i);
 		if (ft_strcmp(file, current->file_name) == 0)
 			return (current);
 		++i;
 	}
+	return (add_new_obj(engine, file));
+}
+
+static t_obj_3d	*add_new_obj(t_engine *engine, char *file)
+{
+	t_obj_3d	*obj;
+
 	obj = malloc(sizeof(t_obj_3d));
 	if (obj == NULL)
 		return (NULL);
+	ft_memset(obj, 0, sizeof(t_obj_3d));
 	if (parse_obj_file(engine, obj, file) == -1)
 	{
 		free(obj);
@@ -43,9 +53,8 @@ t_obj_3d	*parse_obj_if_needed(t_engine *engine, char *file)
 	}
 	if (add_vector(&engine->objs_3d, &obj, 1) == -1)
 	{
-		free(obj);
+		clear_obj_3d(obj);
 		return (NULL);
 	}
-	obj = *(t_obj_3d **)at_vector(&engine->objs_3d, engine->objs_3d.size - 1);
 	return (obj);
 }

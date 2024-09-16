@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 04:01:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 03:30:26 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/16 07:01:53 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 # define OBJ_3D_H
 
 # include <stddef.h>
-#include "obj_mtl.h"
-#include "object/material.h"
-#include "object/triangle.h"
-#include "vec3.h"
+# include "obj_mtl.h"
+# include "object/material.h"
+# include "object/triangle.h"
 # include "vector.h"
 
 typedef struct s_obj_3d
@@ -62,5 +61,7 @@ struct	s_engine;
 t_obj_3d	*parse_obj_if_needed(struct s_engine *engine, char *file);
 int			parse_obj_file(struct s_engine *engine, t_obj_3d *obj, char *file);
 void		build_obj_cache(t_obj_3d *obj);
+void		clear_obj_3d(t_obj_3d *obj);
+void		clear_objs_3d(t_vector *objs_3d);
 
 #endif

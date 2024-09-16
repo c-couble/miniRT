@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 01:33:43 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 02:09:47 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/16 07:34:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,9 @@ int	parse_mtl_file(t_engine *engine, t_obj_mtl *mtl, char *file)
 			close(fd);
 			return (-1);
 		}
+		free(line);
 		line = get_next_line_ptr(fd, buf, "\n\r");
 	}
-	free(line);
 	if (errno)
 	{
 		close(fd);

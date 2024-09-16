@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_engine.c                                     :+:      :+:    :+:   */
+/*   clear_objs_3d.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:47:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 07:30:04 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/16 06:56:40 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/16 07:31:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
 #include "obj_3d.h"
-#include "scene.h"
-#include "texture.h"
+#include "vector.h"
 
-void	clear_engine(t_engine *engine)
+void	clear_objs_3d(t_vector *objs_3d)
 {
-	clear_scene(&engine->scene);
-	clear_mlx_struct(&engine->mlx);
-	clear_textures(&engine->textures);
-	clear_objs_3d(&engine->objs_3d);
+	size_t		i;
+	t_obj_3d	**obj;
+
+	i = 0;
+	while (i < objs_3d->size)
+	{
+		obj = at_vector(objs_3d, i);
+		clear_obj_3d(*obj);
+		++i;
+	}
+	clear_vector(objs_3d);
 }

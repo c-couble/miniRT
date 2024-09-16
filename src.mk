@@ -84,6 +84,8 @@ SRC = \
 	  object/intersect_triangle.c \
 	  \
 	  obj_3d/build_obj_cache.c \
+	  obj_3d/clear_obj_3d.c \
+	  obj_3d/clear_objs_3d.c \
 	  obj_3d/parse_mtl_file.c \
 	  obj_3d/parse_obj_mtl_if_needed.c \
 	  obj_3d/parse_obj_file.c \
