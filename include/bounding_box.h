@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 01:38:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 17:00:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:58:06 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ typedef struct s_aabb
 	t_vec3		center;
 }	t_aabb;
 
+struct	s_object;
 struct	s_sphere;
 struct	s_paraboloid;
 struct	s_cylinder;
@@ -42,6 +43,7 @@ void		get_aabb_from_bbox(t_bbox *bbox, t_aabb *aabb);
 void		print_aabb(t_aabb *aabb, char *str);
 double		intersect_aabb(struct s_ray *ray, t_aabb *aabb);
 
+void		get_objects_ababb(struct s_object *object);
 void		get_sphere_aabb(struct s_sphere *sphere, t_aabb *aabb);
 void		get_paraboloid_aabb(struct s_paraboloid *para, t_aabb *aabb);
 void		get_cylinder_aabb(struct s_cylinder *cyl, t_aabb *aabb);

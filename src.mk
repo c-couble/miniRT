@@ -15,6 +15,7 @@ SRC = \
 	  bvh/bounding_box/create_empty_aabb.c \
 	  bvh/bounding_box/get_aabb_from_bbox.c \
 	  bvh/bounding_box/get_bbox_from_aabb.c \
+	  bvh/bounding_box/get_objects_aabb.c \
 	  bvh/bounding_box/get_cylinder_aabb.c \
 	  bvh/bounding_box/get_paraboloid_aabb.c \
 	  bvh/bounding_box/get_sphere_aabb.c \
