@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:06:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 06:07:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/17 00:56:37 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,12 @@
 typedef struct s_paraboloid
 {
 	t_vec3			pos;
+	t_vec3			center;
 	t_vec3			axis;
 	t_vec3			rot_axis;
 	double			theta;
-	double			ray_coef;
+	double			radius;
+	double			radius_coef;
 	double			height;
 	t_color			color;
 }	t_paraboloid;

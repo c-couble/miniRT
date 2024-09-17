@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:52:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/03 04:58:55 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 21:21:09 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ typedef struct s_query
 
 void		clear_kdtree(t_kdtree *tree);
 t_kdtree	*create_kdnode(t_photon *photon);
-double		get_axis(t_vec3 *v, int axis);
 t_kdtree	*get_nearest_neighbour(t_query *best, t_kdtree *tree, t_vec3 *aim);
 t_kdtree	*init_kdtree(t_vector *photons, int depth);
 void		print_kdtree(t_kdtree *node, int depth);

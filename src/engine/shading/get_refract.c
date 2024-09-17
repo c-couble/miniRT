@@ -6,11 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 01:36:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/02 02:29:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 21:19:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
+#include "ray.h"
 #include "shading.h"
 
 uint32_t	get_refract(t_engine *eng, t_ray *c_ray, t_color color, int depth)
@@ -20,6 +20,7 @@ uint32_t	get_refract(t_engine *eng, t_ray *c_ray, t_color color, int depth)
 
 	get_refraction_ray(c_ray, &refract_ray.ray,
 		c_ray->data.materials.refract_index);
+	get_inv_dir(&refract_ray);
 	refract_ray.startpos = c_ray->data.hitpos;
 	refract.color = get_pixel_color(eng, &refract_ray, depth);
 	refract.color = scale_color(&refract, c_ray->data.materials.refract_blend);

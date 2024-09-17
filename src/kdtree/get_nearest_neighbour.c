@@ -6,13 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/30 02:05:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 21:21:34 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <limits.h>
 #include "float.h"
 #include "kdtree.h"
+#include "util.h"
 #include "vec3.h"
 
 static double	distance_squared(t_vec3 *a, t_vec3 *b);

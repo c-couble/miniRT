@@ -6,43 +6,43 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/03 22:56:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 21:19:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include <stdio.h>
-#include "color_util.h"
 #include "defines.h"
 #include "kdtree.h"
 #include "photon.h"
+#include "color.h"
+#include "object/light.h"
+#include "ray.h"
 #include "shading.h"
 #include "vec3.h"
 #include "vector.h"
+#include "object.h"
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
 static void	apply_caustic_light(t_ray *ray, t_kdtree *photons, t_color *light);
 
-uint32_t	get_light(t_engine *engine, t_ray *c_ray)
+uint32_t	get_light(t_engine *engine, t_ray *ray)
 {
 	t_color		light;
-	t_object	*obj;
+	t_light		*lights;
 	t_ray		light_ray;
 	size_t		i;
 
 	i = 0;
 	light.color = get_ambiant_light(engine);
-	while (i < engine->scene.objects.size)
+	lights = engine->scene.lights.array;
+	while (i < engine->scene.lights.size)
 	{
-		obj = at_vector(&engine->scene.objects, i);
-		if (obj->type == LIGHT)
-		{
-			if (trace_light(engine, &light_ray, c_ray, &obj->data.light))
-				phong_model(obj, &light, c_ray, &light_ray);
-		}
+		if (trace_light(engine, &light_ray, ray, &lights[i]))
+			phong_model(&lights[i], &light, ray, &light_ray);
 		++i;
 	}
-	if (c_ray->data.materials.refract_index == 0)
+	if (ray->data.materials.refract_index == 0)
 	{
 		size_t		j;
 		t_kdtree	**node;
@@ -51,11 +51,11 @@ uint32_t	get_light(t_engine *engine, t_ray *c_ray)
 		while (j < engine->caustic_maps.size)
 		{
 			node = at_vector(&engine->caustic_maps, j);
-			apply_caustic_light(c_ray, *node, &light);
+			apply_caustic_light(ray, *node, &light);
 			++j;
 		}
 	}
-	return (multiply_color(&light, &c_ray->data.color));
+	return (multiply_color(&light, &ray->data.color));
 }
 
 static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
@@ -77,7 +77,7 @@ static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
 		obj.data.light.pos = photon_ray.startpos;
 		obj.data.light.color = photon_ray.data.color;
 		obj.data.light.ratio = target.node->photon.ratio;
-		phong_model(&obj, light, c_ray, &photon_ray);
+		phong_model(&obj.data.light, light, c_ray, &photon_ray);
 	}
 }
 
@@ -89,6 +89,7 @@ static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l)
 	l_ray->startpos = c_ray->data.hitpos;
 	vec3_subtract(&l->pos, &l_ray->startpos, &l_ray->ray);
 	norm = vec3_normalize(&l_ray->ray);
+	get_inv_dir(l_ray);
 	d = trace_ray(eng, l_ray);
 	if (vec3_dot(&c_ray->data.normal, &l_ray->ray) > 0)
 		return (0);

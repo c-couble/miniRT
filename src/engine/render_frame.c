@@ -6,19 +6,21 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 05:01:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:10:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdint.h>
+#include <stdio.h>
 #include <time.h>
+#include "draw.h"
 #include "color.h"
 #include "defines.h"
 #include "engine.h"
 #include "ray.h"
 #include "shading.h"
+#include "vec3.h"
 #include "vec4.h"
-#include "photon.h"
-#include "defines.h"
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
 static void	change_ray_size(t_engine *engine, size_t fps);
@@ -33,6 +35,7 @@ void	render_frame(t_engine *engine)
 	start = clock();
 	i = 0;
 	setup_camera(engine);
+//	printf("start frame\n");
 	while (i < engine->scene.camera.frame_height)
 	{
 		j = 0;
@@ -43,7 +46,13 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
+	printf("bvh depth = %d\n", engine->scene.bvh.depth); 	
+	printf("bvh maxdepth = %d\n", engine->scene.bvh.max_depth); 
+	draw_bvh(engine);
+	long int time = clock();
+	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time -start);
 	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
+	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }
 
@@ -56,7 +65,7 @@ static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
 	if (engine->scene.camera.locked)
 		color.color = get_pixel_color(engine, &camera_ray, DEPTH);
 	else
-		color.color = get_pixel_color(engine, &camera_ray, 5);
+		color.color = get_pixel_color(engine, &camera_ray, LOW_RENDER_DEPTH);
 	color_pixels(engine, i, j, color.color);
 }
 
@@ -77,16 +86,14 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	ray->ray.x = final.x;
 	ray->ray.y = final.y;
 	ray->ray.z = final.z;
-	ray->data.hitpos.x = 0;
-	ray->data.hitpos.y = 0;
-	ray->data.hitpos.z = 0;
 	vec3_normalize(&ray->ray);
+	get_inv_dir(ray);
 }
 
 static void	change_ray_size(t_engine *engine, size_t fps)
 {
 	if (fps < MINIMUM_FPS)
 		++engine->scene.camera.pixel_square_size;
-	if (fps > MAXIMUM_FPS)
+	else if (fps > MAXIMUM_FPS && engine->scene.camera.pixel_square_size > 1)
 		--engine->scene.camera.pixel_square_size;
 }

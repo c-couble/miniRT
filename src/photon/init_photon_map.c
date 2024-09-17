@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/03 22:45:03 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 21:26:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "kdtree.h"
 #include "object.h"
 #include "photon.h"
+#include "ray.h"
 #include "util.h"
 #include "vector.h"
 
@@ -28,20 +29,17 @@ static void	generate_spherical_ray(t_vec3 *dir);
 int	init_photon_map(t_engine *eng)
 {
 	size_t		i;
-	t_object	*curr;
+	t_light		*curr;
 
 	init_vector(&eng->caustic_maps, (sizeof(t_kdtree *)));
 	i = 0;
-	while (i < eng->scene.objects.size)
+	while (i < eng->scene.lights.size)
 	{
-		curr = at_vector(&eng->scene.objects, i);
-		if (curr->type == LIGHT)
+		curr = at_vector(&eng->scene.lights, i);
+		if (create_photon_map(eng, curr) == -1)
 		{
-			if (create_photon_map(eng, &curr->data.light) == -1)
-			{
-				clear_photon_maps(&eng->caustic_maps);
-				return (-1);
-			}
+			clear_photon_maps(&eng->caustic_maps);
+			return (-1);
 		}
 		++i;
 	}
@@ -104,6 +102,7 @@ static int	generate_photons(t_engine *eng, t_vector *photons, t_light *light)
 		generate_spherical_ray(&p_ray.ray);
 		vec3_normalize(&p_ray.ray);
 		p_ray.startpos = light->pos;
+		get_inv_dir(&p_ray);
 		if (trace_photon(eng, &p_ray, DEPTH, &photon))
 		{
 			photon.color.color = light->color.color;
