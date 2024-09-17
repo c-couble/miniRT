@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:10:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 01:43:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 15:33:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ static void	draw_bvh_from_depth(t_engine *eng, t_bvh *bvh, int depth)
 	draw_bvh_from_depth(eng, bvh->right, depth + 1);
 	if (depth >= eng->scene.bvh_depth)
 	{
-		get_bbox_from_aabb(&bvh->aabb);
+		get_bbox_from_aabb(&bvh->aabb, &bvh->aabb.box);
 		draw_bounding_box(eng, &bvh->aabb.box,
 			get_depth_color(depth, eng->scene.bvh_m_depth));
 	}
@@ -61,7 +61,7 @@ static void	draw_bvh_at_depth(t_engine *eng, t_bvh *bvh, int depth)
 	}
 	else
 	{
-		get_bbox_from_aabb(&bvh->aabb);
+		get_bbox_from_aabb(&bvh->aabb, &bvh->aabb.box);
 		draw_bounding_box(eng, &bvh->aabb.box,
 			get_depth_color(depth, eng->scene.bvh_m_depth));
 	}

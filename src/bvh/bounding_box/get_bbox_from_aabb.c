@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 17:03:21 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 01:44:02 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 15:31:53 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 static	void	get_bb_top_face(t_vec3 top[4], t_aabb *aabb);
 static	void	get_bb_bottom_face(t_vec3 bottom[4], t_aabb *aabb);
 
-void	get_bbox_from_aabb(t_aabb *aabb)
+void	get_bbox_from_aabb(t_aabb *aabb, t_bbox *bbox)
 {
-	get_bb_top_face(aabb->box.top, aabb);
-	get_bb_bottom_face(aabb->box.bottom, aabb);
+	get_bb_top_face(bbox->top, aabb);
+	get_bb_bottom_face(bbox->bottom, aabb);
 }
 
 static	void	get_bb_top_face(t_vec3 top[4], t_aabb *aabb)

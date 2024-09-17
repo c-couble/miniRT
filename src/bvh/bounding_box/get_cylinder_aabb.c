@@ -6,17 +6,18 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 15:56:30 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 19:58:10 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 15:29:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "object.h"
+#include "bounding_box.h"
+#include "object/cylinder.h"
 #include "util.h"
 
 static void	get_radial_vec(t_vec3 *ra, t_vec3 *rb, t_vec3 *axis, double radius);
 static void	get_face(t_vec3 face[4], t_vec3 *mid, t_vec3 *ra, t_vec3 *rb);
 
-void	get_cylinder_aabb(t_cylinder *cyl, t_object *obj)
+void	get_cylinder_aabb(t_cylinder *cyl, t_aabb *aabb)
 {
 	t_vec3	top_mid;
 	t_vec3	bottom_mid;
@@ -31,9 +32,9 @@ void	get_cylinder_aabb(t_cylinder *cyl, t_object *obj)
 	get_radial_vec(&radial_a, &radial_b, &cyl->axis, cyl->radius);
 	get_face(b_box.top, &top_mid, &radial_a, &radial_b);
 	get_face(b_box.bottom, &bottom_mid, &radial_a, &radial_b);
-	get_aabb_from_bbox(&b_box, &obj->aabb);
-	obj->aabb.box = b_box;
-	obj->aabb.center = cyl->center;
+	get_aabb_from_bbox(&b_box, aabb);
+	aabb->box = b_box;
+	aabb->center = cyl->center;
 }
 
 static void	get_radial_vec(t_vec3 *ra, t_vec3 *rb, t_vec3 *axis, double radius)

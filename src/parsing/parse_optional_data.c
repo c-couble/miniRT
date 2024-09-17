@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 01:27:22 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 15:28:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ int	parse_optional_data(t_engine *engine, t_object *object)
 	char		*arg;
 
 	if (object->type == SPHERE)
-		get_sphere_aabb(&object->data.sphere, object);
+		get_sphere_aabb(&object->data.sphere, &object->aabb);
 	if (object->type == PARABOLOID)
-		get_paraboloid_aabb(&object->data.paraboloid, object);
+		get_paraboloid_aabb(&object->data.paraboloid, &object->aabb);
 	if (object->type == CYLINDER)
-		get_cylinder_aabb(&object->data.cylinder, object);
+		get_cylinder_aabb(&object->data.cylinder, &object->aabb);
 	init_optional_data(&object->optional_data);
 	arg = ft_strtok(NULL, " \t");
 	while (arg)
