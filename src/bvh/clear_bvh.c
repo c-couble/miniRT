@@ -5,19 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 18:55:24 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 00:12:45 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/17 16:57:40 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/17 16:58:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "bvh.h"
 
 void	clear_bvh(t_bvh *bvh)
 {
-	if (bvh == NULL)
-		return ;
-	clear_bvh(bvh->left);
-	clear_bvh(bvh->right);
-	free(bvh);
+	clear_bvh_tree(bvh->bvh);
 }

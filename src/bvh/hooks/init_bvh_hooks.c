@@ -6,11 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 11:10:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 16:13:00 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:04:41 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bvh.h"
+#include "engine.h"
 
 int	init_bvh_hooks(t_engine *engine)
 {

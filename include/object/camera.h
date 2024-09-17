@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 15:51:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:11:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,6 @@ typedef enum e_rtype
 	NORMAL,
 	UV_MAP
 }	t_rtype;
-
-typedef enum e_bvh_mode
-{
-	NONE,
-	MANUAL,
-	PERSISTENT,
-}	t_bvh_mode;
 
 typedef struct s_camera
 {
@@ -55,7 +48,6 @@ typedef struct s_camera
 	int			locked;
 	int			should_render;
 	t_rtype		render_type;
-	t_bvh_mode	bvh_mode;
 }	t_camera;
 
 union	u_object_data;

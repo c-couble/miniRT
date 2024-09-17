@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 15:56:30 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 15:29:32 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 16:37:52 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ void	get_cylinder_aabb(t_cylinder *cyl, t_aabb *aabb)
 	get_face(b_box.top, &top_mid, &radial_a, &radial_b);
 	get_face(b_box.bottom, &bottom_mid, &radial_a, &radial_b);
 	get_aabb_from_bbox(&b_box, aabb);
-	aabb->box = b_box;
 	aabb->center = cyl->center;
 }
 

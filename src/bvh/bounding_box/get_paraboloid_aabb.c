@@ -6,16 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 15:13:35 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 15:27:10 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 16:44:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bounding_box.h"
-#include "bvh.h"
-#include "object.h"
-#include "vec3.h"
-#include "object.h"
+#include "object/paraboloid.h"
 #include "util.h"
+#include "vec3.h"
 
 static void	get_radial_vec(t_vec3 *ra, t_vec3 *rb, t_vec3 *axis, double radius);
 static void	get_face(t_vec3 face[4], t_vec3 *mid, t_vec3 *ra, t_vec3 *rb);
@@ -36,7 +34,6 @@ void	get_paraboloid_aabb(t_paraboloid *para, t_aabb *aabb)
 	get_face(b_box.top, &top_mid, &radial_a, &radial_b);
 	get_face(b_box.bottom, &bottom_mid, &radial_a, &radial_b);
 	get_aabb_from_bbox(&b_box, aabb);
-	aabb->box = b_box;
 	aabb->center = para->center;
 }
 

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 12:41:49 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 00:14:09 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 16:50:48 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 #include "util.h"
 #include "vector.h"
 
-static inline	double	hit(t_bvh *node, t_object *objs, t_ray *ray, double t);
+static inline	double	hit(t_bvh_node *node, t_object *o, t_ray *r, double t);
 
-double	intersect_bvh(t_ray *ray, t_bvh *node, t_vector *objs)
+double	intersect_bvh(t_ray *ray, t_bvh_node *node, t_vector *objs)
 {
 	double		t;
 	double		tmp;
@@ -40,22 +40,22 @@ double	intersect_bvh(t_ray *ray, t_bvh *node, t_vector *objs)
 	return (t);
 }
 
-static inline	double	hit(t_bvh *node, t_object *objs, t_ray *ray, double t)
+static inline	double	hit(t_bvh_node *bvh, t_object *objs, t_ray *r, double t)
 {
-	const int	size = node->size + node->start;
+	const int	size = bvh->size + bvh->start;
 	int			i;
 	double		tmp;
 	t_hit_data	data;
 
-	i = node->start;
+	i = bvh->start;
 	while (i < size)
 	{
-		tmp = intersect(&objs[i], ray);
+		tmp = intersect(&objs[i], r);
 		if (get_closest_distance_ptr(tmp, t, &t))
-			data = ray->data;
+			data = r->data;
 		++i;
 	}
 	if (t != -1)
-		ray->data = data;
+		r->data = data;
 	return (t);
 }

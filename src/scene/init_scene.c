@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/16 20:57:00 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:07:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,6 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 	scene->camera.fov = -1;
 	scene->ambient_light.ratio = -1;
 	scene->scene_name = file;
-	scene->bvh_depth = 0;
-	scene->bvh_m_depth = 0;
 	fd = get_file(file);
 	if (fd == -1)
 		return (-1);
@@ -56,10 +54,11 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 		print_error("You need one camera and one ambient light");
 		return (-1);
 	}
-	scene->bvh = init_bvh(&scene->objects);
-	if (scene->bvh == NULL)
+	if (init_bvh(&scene->bvh, &scene->objects) == -1)
+	{
+		print_error("Failed to init BVH");
 		return (-1);
-	get_bvh_depth(scene->bvh, 0, &scene->bvh_m_depth);
+	}
 	return (0);
 }
 

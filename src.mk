@@ -1,9 +1,11 @@
 SRC = \
 	  bvh/create_bvh_node.c \
-	  bvh/clear_bvh.c \
 	  bvh/get_split_pos_axis.c \
 	  bvh/swap_by_axis.c \
+	  bvh/init_bvh_tree.c \
+	  bvh/clear_bvh_tree.c \
 	  bvh/init_bvh.c \
+	  bvh/clear_bvh.c \
 	  bvh/intersect_bvh.c \
 	  bvh/print_objs.c \
 	  bvh/update_node_aabb.c \

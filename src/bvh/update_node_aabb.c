@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 23:36:19 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 00:12:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 16:49:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include "vec3.h"
 #include "vector.h"
 
-void	update_node_aabb(t_bvh *node, t_vector *objs)
+void	update_node_aabb(t_bvh_node *node, t_vector *objs)
 {
 	int			i;
 	const int	size = node->start + node->size;

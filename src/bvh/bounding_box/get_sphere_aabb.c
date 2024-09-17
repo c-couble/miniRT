@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:35:27 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 15:32:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 16:45:36 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,4 @@ void	get_sphere_aabb(t_sphere *sphere, t_aabb *aabb)
 	aabb->max.y = sphere->pos.y + sphere->radius;
 	aabb->max.z = sphere->pos.z + sphere->radius;
 	aabb->center = sphere->pos;
-	get_bbox_from_aabb(aabb, &aabb->box);
 }
