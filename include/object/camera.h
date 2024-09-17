@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 17:11:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:18:39 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,26 +28,26 @@ typedef enum e_rtype
 
 typedef struct s_camera
 {
-	t_vec3		coordinates;
-	t_vec3		front;
-	t_vec3		right;
-	t_vec3		up;
-	t_mat4		projection;
-	t_mat4		perspective;
-	t_mat4		inverse_projection;
-	t_mat4		view;
-	t_mat4		inverse_view;
-	t_mat4		final;
-	size_t		pixel_square_size;
-	size_t		frame_width;
-	size_t		frame_height;
-	double		fov;
-	double		sensitivity;
-	double		speed;
-	size_t		last_frame_time;
-	int			locked;
-	int			should_render;
-	t_rtype		render_type;
+	t_vec3	coordinates;
+	t_vec3	front;
+	t_vec3	right;
+	t_vec3	up;
+	t_mat4	projection;
+	t_mat4	perspective;
+	t_mat4	inverse_projection;
+	t_mat4	view;
+	t_mat4	inverse_view;
+	t_mat4	final;
+	size_t	pixel_square_size;
+	size_t	frame_width;
+	size_t	frame_height;
+	double	fov;
+	double	sensitivity;
+	double	speed;
+	size_t	last_frame_time;
+	int		locked;
+	int		should_render;
+	t_rtype	render_type;
 }	t_camera;
 
 union	u_object_data;
