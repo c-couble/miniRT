@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:31:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 19:15:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/18 00:44:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 typedef enum e_bvh_mode
 {
 	NONE,
-	MANUAL,
-	PERSISTENT,
+	SINGLE_LAYER,
+	FULL_LAYER,
 }	t_bvh_mode;
 
 typedef struct s_bvh_node
@@ -60,9 +60,9 @@ void		print_objs(t_vector *objs);
 
 int			init_bvh_hooks(struct s_engine *engine);
 void		change_bvh_mode(struct s_engine *engine);
-void		increase_depth_manual(struct s_engine *engine);
-void		increase_depth_persistent(struct s_engine *engine);
-void		decrease_depth_manual(struct s_engine *engine);
-void		decrease_depth_persistent(struct s_engine *engine);
+void		increase_single_layer(struct s_engine *engine);
+void		increase_full_layer(struct s_engine *engine);
+void		decrease_single_layer(struct s_engine *engine);
+void		decrease_full_layer(struct s_engine *engine);
 
 #endif
