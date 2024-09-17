@@ -6,16 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:29:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/14 07:48:27 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:48:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bvh.h"
-#include "defines.h"
 #include "draw.h"
-#include "vec2.h"
-#include "engine.h"
-#include "vec3.h"
 #include "vec4.h"
 
 static void	world_to_screen(t_camera *camera, t_vec3 *in, t_vec2 *out);

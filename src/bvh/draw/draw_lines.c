@@ -6,14 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:59:03 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/14 03:44:32 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:49:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "draw.h"
-#include "engine.h"
 #include "ft_math.h"
-#include "vec2.h"
 
 static void	bresenham(t_engine *eng, t_vec2 *a, t_vec2 *b, uint32_t *color);
 static void	bresenham_dx(t_engine *eng, t_line *line);

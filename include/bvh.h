@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:31:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 17:16:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:41:53 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BVH_H
 # define BVH_H
 
-# include "vector.h"
 # include "bounding_box.h"
+# include "vector.h"
 
 typedef enum e_bvh_mode
 {

@@ -6,13 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 21:02:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 16:49:33 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:47:49 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "util.h"
 #include "bvh.h"
 #include "object.h"
+#include "util.h"
 
 static void	swap_obj(t_object *a, t_object *b);
 

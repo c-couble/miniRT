@@ -6,16 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 23:36:19 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 16:49:33 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:48:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
-#include "bvh.h"
 #include "ft_math.h"
 #include "object.h"
-#include "vec3.h"
-#include "vector.h"
 
 void	update_node_aabb(t_bvh_node *node, t_vector *objs)
 {

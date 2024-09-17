@@ -6,14 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 20:37:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 16:49:33 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:52:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
 #include "bvh.h"
+#include "defines.h"
 #include "util.h"
-#include "vec3.h"
 
 double	get_split_pos_axis(t_bvh_node *node, int *axis)
 {

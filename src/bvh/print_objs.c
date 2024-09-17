@@ -6,12 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 11:51:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/12 22:19:43 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:47:38 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vector.h"
-#include "stdio.h"
+#include <stdio.h>
 #include "object.h"
 
 void	print_objs(t_vector *objs)

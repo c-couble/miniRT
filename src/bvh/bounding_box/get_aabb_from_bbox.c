@@ -6,13 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 18:41:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 11:02:50 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:50:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bvh.h"
-#include "ft_math.h"
 #include "float.h"
+#include "bounding_box.h"
+#include "ft_math.h"
 #include "vec3.h"
 
 static void	get_aabb_from_face(t_vec3 *face, t_aabb *aabb);

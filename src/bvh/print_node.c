@@ -6,14 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 20:59:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 00:12:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:47:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "object.h"
+#include <stdio.h>
 #include "bvh.h"
+#include "object.h"
 
-void	print_node(t_bvh *n, t_vector *objs, char *str)
+void	print_node(t_bvh_node *n, t_vector *objs, char *str)
 {
 	t_object	*obj;
 	int			i;

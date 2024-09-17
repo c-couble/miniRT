@@ -6,13 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:35:27 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 16:45:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:51:17 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bounding_box.h"
 #include "object/sphere.h"
-#include "vec3.h"
 
 void	get_sphere_aabb(t_sphere *sphere, t_aabb *aabb)
 {

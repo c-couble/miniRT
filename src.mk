@@ -1,15 +1,16 @@
 SRC = \
-	  bvh/create_bvh_node.c \
-	  bvh/get_split_pos_axis.c \
-	  bvh/swap_by_axis.c \
-	  bvh/init_bvh_tree.c \
-	  bvh/clear_bvh_tree.c \
-	  bvh/init_bvh.c \
 	  bvh/clear_bvh.c \
+	  bvh/clear_bvh_tree.c \
+	  bvh/create_bvh_node.c \
+	  bvh/get_bvh_depth.c \
+	  bvh/get_split_pos_axis.c \
+	  bvh/init_bvh.c \
+	  bvh/init_bvh_tree.c \
 	  bvh/intersect_bvh.c \
 	  bvh/print_objs.c \
+	  bvh/print_node.c \
+	  bvh/swap_by_axis.c \
 	  bvh/update_node_aabb.c \
-	  bvh/get_bvh_depth.c \
 	  \
 	  bvh/bounding_box/create_empty_aabb.c \
 	  bvh/bounding_box/get_aabb_from_bbox.c \
@@ -21,17 +22,17 @@ SRC = \
 	  bvh/bounding_box/print_aabb.c \
 	  bvh/bounding_box/print_bounding_box.c \
 	  \
-	  bvh/draw/draw_bvh.c \
-	  bvh/draw/draw_lines.c \
 	  bvh/draw/draw_bounding_box.c \
 	  bvh/draw/draw_bounding_boxes.c \
+	  bvh/draw/draw_bvh.c \
+	  bvh/draw/draw_lines.c \
 	  \
-	  bvh/hooks/init_bvh_hooks.c \
 	  bvh/hooks/change_bvh_mode.c \
-	  bvh/hooks/increase_depth_manual.c \
-	  bvh/hooks/increase_depth_persistent.c \
 	  bvh/hooks/decrease_depth_manual.c \
 	  bvh/hooks/decrease_depth_persistent.c \
+	  bvh/hooks/increase_depth_manual.c \
+	  bvh/hooks/increase_depth_persistent.c \
+	  bvh/hooks/init_bvh_hooks.c \
 	  \
 	  camera/color_pixels.c \
 	  camera/create_camera_vectors.c \
@@ -167,9 +168,9 @@ SRC = \
 	  ray/get_inv_dir.c \
 	  ray/trace_ray.c \
 	  \
-	  util/get_biggest_distance.c \
 	  util/double_equals.c \
 	  util/get_axis.c \
+	  util/get_biggest_distance.c \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \

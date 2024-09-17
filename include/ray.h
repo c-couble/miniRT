@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/16 23:38:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:54:04 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define RAY_H
 
 # include "color.h"
-# include "engine.h"
 # include "object/material.h"
 # include "vec3.h"
 
@@ -44,7 +43,9 @@ typedef struct s_ray
 	double		inv_z;
 }	t_ray;
 
-int		trace_ray(t_engine *engine, t_ray *ray);
+struct	s_engine;
+
+int		trace_ray(struct s_engine *engine, t_ray *ray);
 void	get_inv_dir(t_ray *ray);
 
 #endif

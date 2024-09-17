@@ -6,13 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 20:58:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 23:58:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:53:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
 #include "defines.h"
-#include "bvh.h"
+#include "bounding_box.h"
+#include "ray.h"
 #include "util.h"
 
 static int	get_tinterval_x(t_ray *r, t_aabb *aabb, double *t, double *t_end);
