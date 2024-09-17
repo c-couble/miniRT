@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 18:07:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 15:51:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 typedef enum e_rtype
 {
 	CLASSIC,
+	BOUNDING_BOX,
 	NORMAL,
 	UV_MAP
 }	t_rtype;
