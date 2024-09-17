@@ -6,15 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:33:54 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 16:54:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:39:46 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bvh.h"
-#include "mlx_wrapper.h"
 #include "object.h"
 #include "util.h"
-#include "vector.h"
 
 static int	subdivide(t_bvh_node *node, t_vector *objs);
 static int	get_left_len(t_bvh_node *node, t_vector *obj, double pos, int axis);
@@ -35,24 +33,6 @@ t_bvh_node	*init_bvh_tree(t_vector *objs)
 	return (node);
 }
 
-static int	init_child_nodes(t_bvh_node *node, t_vector *objs, int left_size)
-{
-	node->left = create_bvh_node();
-	if (node->left == NULL)
-		return (-1);
-	node->right = create_bvh_node();
-	if (node->right == NULL)
-		return (-1);
-	node->left->start = node->start;
-	node->left->size = left_size;
-	node->right->start = node->start + left_size;
-	node->right->size = node->size - left_size;
-	update_node_aabb(node->left, objs);
-	update_node_aabb(node->right, objs);
-	node->size = 0;
-	return (0);
-}
-
 static int	subdivide(t_bvh_node *node, t_vector *objs)
 {
 	int			axis;
@@ -70,6 +50,24 @@ static int	subdivide(t_bvh_node *node, t_vector *objs)
 		return (-1);
 	if (subdivide(node->right, objs) == -1)
 		return (-1);
+	return (0);
+}
+
+static int	init_child_nodes(t_bvh_node *node, t_vector *objs, int left_size)
+{
+	node->left = create_bvh_node();
+	if (node->left == NULL)
+		return (-1);
+	node->right = create_bvh_node();
+	if (node->right == NULL)
+		return (-1);
+	node->left->start = node->start;
+	node->left->size = left_size;
+	node->right->start = node->start + left_size;
+	node->right->size = node->size - left_size;
+	update_node_aabb(node->left, objs);
+	update_node_aabb(node->right, objs);
+	node->size = 0;
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 20:28:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 17:07:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 17:29:05 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,10 @@ typedef struct s_scene
 	char				*scene_name;
 }	t_scene;
 
+struct	s_engine;
+
 int		init_scene(struct s_engine *engine, t_scene *scene, char *file);
 void	clear_scene(t_scene *scene);
+int		read_file(struct s_engine *engine, t_scene *scene, int fd);
 
 #endif

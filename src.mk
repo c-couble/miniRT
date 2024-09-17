@@ -155,6 +155,7 @@ SRC = \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
+	  scene/read_file.c \
 	  \
 	  texture/apply_checkerboard.c \
 	  texture/clear_texture.c \
