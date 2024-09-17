@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:10:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/18 00:53:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/18 01:12:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,7 @@ void	draw_bvh(t_engine *engine)
 		if (engine->scene.bvh.bvh_mode == FULL_LAYER)
 			draw_bvh_from_depth(engine, engine->scene.bvh.bvh, 0);
 		else
-		{
-				draw_bvh_at_depth(engine, engine->scene.bvh.bvh, 0);
-		}
+			draw_bvh_at_depth(engine, engine->scene.bvh.bvh, 0);
 	}
 }
 
