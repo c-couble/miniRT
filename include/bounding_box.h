@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 01:38:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 17:58:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 19:15:41 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,11 @@ struct	s_object;
 struct	s_ray;
 
 void		create_empty_aabb(t_aabb *aabb);
-void		print_bounding_box(t_bbox *b_box);
 void		get_bbox_from_aabb(t_aabb *aabb, t_bbox *bbox);
 void		get_aabb_from_bbox(t_bbox *bbox, t_aabb *aabb);
-void		print_aabb(t_aabb *aabb, char *str);
 double		intersect_aabb(struct s_ray *ray, t_aabb *aabb);
+void		print_bounding_box(t_bbox *b_box);
+void		print_aabb(t_aabb *aabb, char *str);
 
 void		get_objects_ababb(struct s_object *object);
 void		get_sphere_aabb(struct s_sphere *sphere, t_aabb *aabb);

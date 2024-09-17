@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:33:54 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 17:39:46 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 19:10:40 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,10 @@ t_bvh_node	*init_bvh_tree(t_vector *objs)
 	node->size = objs->size;
 	update_node_aabb(node, objs);
 	if (subdivide(node, objs) == -1)
+	{
+		clear_bvh_tree(node);
 		return (NULL);
+	}
 	return (node);
 }
 
