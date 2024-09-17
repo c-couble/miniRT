@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 01:38:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 19:15:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 22:15:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ double		intersect_aabb(struct s_ray *ray, t_aabb *aabb);
 void		print_bounding_box(t_bbox *b_box);
 void		print_aabb(t_aabb *aabb, char *str);
 
-void		get_objects_ababb(struct s_object *object);
+void		get_objects_aabb(struct s_object *object);
 void		get_sphere_aabb(struct s_sphere *sphere, t_aabb *aabb);
 void		get_paraboloid_aabb(struct s_paraboloid *para, t_aabb *aabb);
 void		get_cylinder_aabb(struct s_cylinder *cyl, t_aabb *aabb);
