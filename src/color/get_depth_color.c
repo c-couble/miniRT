@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 18:02:47 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 18:05:27 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 05:10:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ uint32_t	get_depth_color(int value, int max_value)
 	const int	left = max_value % 4;
 
 	if (max_value == 0)
-		return (WHITE);
+		return (GREEN);
 	if (max_value < 4)
 		return (interpolate_color(GREEN, YELLOW, value, max_value));
 	if (value < step)
