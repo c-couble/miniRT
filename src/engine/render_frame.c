@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 17:10:11 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 18:31:55 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ void	render_frame(t_engine *engine)
 	start = clock();
 	i = 0;
 	setup_camera(engine);
-//	printf("start frame\n");
 	while (i < engine->scene.camera.frame_height)
 	{
 		j = 0;
@@ -46,11 +45,7 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	printf("bvh depth = %d\n", engine->scene.bvh.depth); 	
-	printf("bvh maxdepth = %d\n", engine->scene.bvh.max_depth); 
 	draw_bvh(engine);
-	long int time = clock();
-	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time -start);
 	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
 	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
