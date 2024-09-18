@@ -1,14 +1,11 @@
 ## MiniRT
 
-**miniRT** offers an in-depth exploration of ray tracing.
+**miniRT** offers an exploration of ray tracing.
 
 This method excels at creating visually stunning images by simulating how light rays travel, 
 interact, and reflect off various surfaces and materials.
 The interdisciplinary nature of ray tracing, combining elements of physics, mathematics, and computer graphics, 
 is one of the reasons rendering is such a fascinating and challenging field of study.
-
-Ray tracing is primarily used in fields where rendering time can be longer, such as high-quality CGI and VFX for film and television.
-Real-time ray-traced images remain a significant challenge, highlighting the computational complexity of achieving such high visual fidelity on the fly.
 
 ## Table of Contents
 
@@ -16,6 +13,7 @@ Real-time ray-traced images remain a significant challenge, highlighting the com
 
 - [Render](#render)
 - [Usage](#usage)
+- [Controls](#controls)
 - [Features](#features)
 - [Supported File Formats](#supported-file-formats)
 - [Credits](#credits)
@@ -76,7 +74,23 @@ Real-time ray-traced images remain a significant challenge, highlighting the com
   </tr>
 </table>
 
+## Controls
 
+| **Key**                  | **Function**                              |
+|--------------------------|-------------------------------------------|
+| **Enter**                | Start rendering                           |
+| **M**                    | Change render mode (boxes/normal/uv)      |
+| **W**, **A**, **S**, **D** |Camera forward (W), left (A), backward (S), right (D)
+| **Space**                | Camera up                                 |
+| **Ctrl**                 | Camera down                               |
+| **Q**, **E**             | Camera roll left (Q),  roll right(E)      |
+| **R**                    | Reset roll angle                          |
+| **Wheel Up**             | Increase camera speed                     |
+| **Wheel Down**           | Reduce camera speed                       |
+| **B**                    | BVH visualization on/off                  |
+| **Left arrow**, **Right arrow** | Decrease/increase BVH multi layer depth |
+| **Down arrow**, **Up arrow** | Decrease/increase BVH single layer depth  |
+| **Esc**                  | Exit the program                          |
 
 ## Usage
 ## Features
