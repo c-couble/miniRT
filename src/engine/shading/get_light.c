@@ -6,10 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 21:19:14 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/19 01:25:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <float.h>
+#include <stdlib.h>
 #include <math.h>
 #include <stdio.h>
 #include "defines.h"
@@ -58,26 +60,50 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 	return (multiply_color(&light, &ray->data.color));
 }
 
+int init_knn(t_knn *knn, size_t k)
+{
+	size_t	i;
+
+	knn->querys = malloc(sizeof(t_query) * k);
+	if (knn->querys == NULL)
+		return (-1);
+	knn->count = 0;
+	knn->size = k;
+	knn->farest = 0;
+	i = 0;
+	while (i < k)
+	{
+		knn->querys[i].node = NULL;
+		knn->querys[i].dist = DBL_MAX;
+		++i;
+	}
+	return (0);
+}
+
 static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
 {
-	t_query		target;
 	t_object	obj;
 	t_ray		photon_ray;
 	double		norm;
+	t_knn		knn;
 
-	get_nearest_neighbour(&target, photons, &c_ray->data.hitpos);
-	if (target.node == NULL)
+	if (init_knn(&knn, 5) == -1)
 		return ;
-	norm = sqrtf(target.best_dist);
-	photon_ray.startpos = c_ray->startpos;
-	photon_ray.ray = target.node->photon.pos;
-	photon_ray.data.color.color = target.node->photon.color.color;
-	if (norm < PHOTON_RADIUS)
+	get_nearest_neighbour2(&knn, photons, &c_ray->data.hitpos);
+	print_knn(&knn);
+	for (size_t i = 0; i < knn.count; ++i)
 	{
-		obj.data.light.pos = photon_ray.startpos;
-		obj.data.light.color = photon_ray.data.color;
-		obj.data.light.ratio = target.node->photon.ratio;
-		phong_model(&obj.data.light, light, c_ray, &photon_ray);
+		norm = sqrtf(knn.querys[i].dist);
+		photon_ray.startpos = c_ray->startpos;
+		photon_ray.ray = knn.querys[i].node->photon.pos;
+		photon_ray.data.color.color = knn.querys[i].node->photon.color.color;
+		if (norm < PHOTON_RADIUS)
+		{
+			obj.data.light.pos = photon_ray.startpos;
+			obj.data.light.color = photon_ray.data.color;
+			obj.data.light.ratio = knn.querys[i].node->photon.ratio;
+			phong_model(&obj.data.light, light, c_ray, &photon_ray);
+		}
 	}
 }
 

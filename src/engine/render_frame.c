@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 17:10:11 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/19 01:32:26 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 #include "shading.h"
 #include "vec3.h"
 #include "vec4.h"
+#include "kdtree.h"
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
 static void	change_ray_size(t_engine *engine, size_t fps);

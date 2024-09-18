@@ -85,8 +85,10 @@ SRC = \
 	  kdtree/create_kdnode.c \
 	  kdtree/init_kdtree.c \
 	  kdtree/get_nearest_neighbour.c \
+	  kdtree/get_nearest_neighbour2.c \
 	  kdtree/clear_kdtree.c \
 	  kdtree/print_kdtree.c \
+	  kdtree/print_knn.c \
 	  kdtree/sort_photon_axis.c \
 	  \
 	  math/mat4/divide_line.c \
