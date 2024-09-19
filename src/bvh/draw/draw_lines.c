@@ -6,24 +6,24 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:59:03 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 17:49:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/19 04:22:29 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "draw.h"
 #include "ft_math.h"
 
-static void	bresenham(t_engine *eng, t_vec2 *a, t_vec2 *b, uint32_t *color);
+static void	bresenham(t_engine *eng, t_vec2 *a, t_vec2 *b, uint32_t color);
 static void	bresenham_dx(t_engine *eng, t_line *line);
 static void	bresenham_dy(t_engine *eng, t_line *line);
 
-void	draw_line(t_engine *eng, t_vec2 *a, t_vec2 *b, uint32_t	*color)
+void	draw_line(t_engine *eng, t_vec2 *a, t_vec2 *b, uint32_t	color)
 {
 	bresenham(eng, a, b, color);
 	bresenham(eng, b, a, color);
 }
 
-static void	bresenham(t_engine *eng, t_vec2 *a, t_vec2 *b, uint32_t *color)
+static void	bresenham(t_engine *eng, t_vec2 *a, t_vec2 *b, uint32_t color)
 {
 	t_line	line;
 
@@ -33,7 +33,7 @@ static void	bresenham(t_engine *eng, t_vec2 *a, t_vec2 *b, uint32_t *color)
 		return ;
 	if (a == NULL || b == NULL)
 		return ;
-	line.color = *color;
+	line.color = color;
 	line.a = a;
 	line.b = b;
 	line.dx = ft_abs(b->x - a->x);

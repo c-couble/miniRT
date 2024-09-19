@@ -82,6 +82,8 @@ SRC = \
 	  engine/shading/get_refract.c \
 	  engine/shading/phong_model.c \
 	  \
+	  kdtree/get_density.c \
+	  kdtree/visualize_graph.c \
 	  kdtree/create_kdnode.c \
 	  kdtree/init_kdtree.c \
 	  kdtree/get_nearest_neighbour.c \

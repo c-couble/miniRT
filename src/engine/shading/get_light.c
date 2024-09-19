@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/19 01:25:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/19 04:44:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ static void	apply_caustic_light(t_ray *c_ray, t_kdtree *photons, t_color *light)
 	if (init_knn(&knn, 5) == -1)
 		return ;
 	get_nearest_neighbour2(&knn, photons, &c_ray->data.hitpos);
-	print_knn(&knn);
+//	print_knn(&knn);
 	for (size_t i = 0; i < knn.count; ++i)
 	{
 		norm = sqrtf(knn.querys[i].dist);
