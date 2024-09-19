@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:10:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/18 01:12:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/20 01:22:52 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ static void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 {
 	t_bbox	bbox;
 
+	if (bvh == NULL)
+		return ;
 	if (bvh->size == 0)
 	{
 		draw_bvh_from_depth(eng, bvh->left, depth + 1);
@@ -51,6 +53,8 @@ static void	draw_bvh_at_depth(t_engine *eng, t_bvh_node *bvh, int depth)
 {
 	t_bbox	bbox;
 
+	if (bvh == NULL)
+		return ;
 	if (depth < eng->scene.bvh.depth && bvh->size == 0)
 	{
 		draw_bvh_at_depth(eng, bvh->left, depth + 1);

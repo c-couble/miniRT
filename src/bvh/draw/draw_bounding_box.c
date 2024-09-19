@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:29:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 17:48:43 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/20 01:24:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,18 +28,18 @@ void	draw_bounding_box(t_engine *eng, t_bbox *box, uint32_t color)
 	world_to_screen(&eng->scene.camera, &box->bottom[1], &bottom[1]);
 	world_to_screen(&eng->scene.camera, &box->bottom[2], &bottom[2]);
 	world_to_screen(&eng->scene.camera, &box->bottom[3], &bottom[3]);
-	draw_line(eng, &top[0], &top[1], &color);
-	draw_line(eng, &top[1], &top[2], &color);
-	draw_line(eng, &top[2], &top[3], &color);
-	draw_line(eng, &top[3], &top[0], &color);
-	draw_line(eng, &top[0], &bottom[0], &color);
-	draw_line(eng, &top[1], &bottom[1], &color);
-	draw_line(eng, &top[2], &bottom[2], &color);
-	draw_line(eng, &top[3], &bottom[3], &color);
-	draw_line(eng, &bottom[0], &bottom[1], &color);
-	draw_line(eng, &bottom[1], &bottom[2], &color);
-	draw_line(eng, &bottom[2], &bottom[3], &color);
-	draw_line(eng, &bottom[3], &bottom[0], &color);
+	draw_line(eng, &top[0], &top[1], color);
+	draw_line(eng, &top[1], &top[2], color);
+	draw_line(eng, &top[2], &top[3], color);
+	draw_line(eng, &top[3], &top[0], color);
+	draw_line(eng, &top[0], &bottom[0], color);
+	draw_line(eng, &top[1], &bottom[1], color);
+	draw_line(eng, &top[2], &bottom[2], color);
+	draw_line(eng, &top[3], &bottom[3], color);
+	draw_line(eng, &bottom[0], &bottom[1], color);
+	draw_line(eng, &bottom[1], &bottom[2], color);
+	draw_line(eng, &bottom[2], &bottom[3], color);
+	draw_line(eng, &bottom[3], &bottom[0], color);
 }
 
 static void	world_to_screen(t_camera *camera, t_vec3 *in, t_vec2 *out)
