@@ -9,23 +9,22 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 
 ## Table of Contents
 
-<img align="right" width="400" height="400" src="./assets/screenshots/cornell.gif">
+<img align="right" width="380" height="380" src="./assets/screenshots/cornell.gif">
 
-- [Render](#render)
+- [Gallery](#gallery)
 - [Usage](#usage)
 - [Controls](#controls)
-- [Features](#features)
 - [Supported File Formats](#supported-file-formats)
+- [Features](#features)
+- [Shading](#features)
+- [Camera](#features)
+- [Geometry](#features)
+- [Polygon meshes](#features)
+- [Space partitioning](#features)
+- [Texturing](#features)
 - [Credits](#credits)
-- 
--
--
--
--
--
--
 
-## Render
+## Gallery
 
 <!-- Table one -->
 <table style="width:100%; border-collapse:collapse;">	
@@ -72,6 +71,8 @@ is one of the reasons rendering is such a fascinating and challenging field of s
   </tr>
 </table>
 
+## Features
+
 ## Controls
 
 | **Key**                  | **Function**                              |
@@ -89,8 +90,6 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 | **Left arrow**, **Right arrow** | Decrease/increase BVH multi layer depth |
 | **Down arrow**, **Up arrow** | Decrease/increase BVH single layer depth  |
 | **Esc**                  | Exit the program                          |
-
-## Features
 
 ## Usage
 
