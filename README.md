@@ -143,9 +143,6 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 | `reflection`     | Reflection ratio (float `0.0` to `1.0`)                 | `0.0` (no reflection) to `1.0` (full reflection) |
 | `refraction`     | Refraction index (integer `1` to `5` or `0`)            | `0` (none) to `5.0`                |
 
-**Example:**
-sp 0.0,0.0,20.6 12.6 10,0,255 ma:0.8,0.3,20.0,0.5,1.2
-
 ### Checkerboard (`ch`)
 `ch:<x_size>,<y_size> <R,G,B> <R,G,B>`
 
@@ -156,9 +153,6 @@ sp 0.0,0.0,20.6 12.6 10,0,255 ma:0.8,0.3,20.0,0.5,1.2
 | `x_color`      | Color for the tiles in the X direction                                     | `R,G,B` values `[0-255]`          |
 | `y_color`      | Color for the tiles in the Y direction                                     | `R,G,B` values `[0-255]`          |
 
-**Example:**
-sp 0.0,0.0,20.6 12.6 10,0,255 ch:2,2 40,40,40 210,210,210
-
 ### Texture (`tx`)
 `tx:<path_to_texture1>,<path_to_texture2(optional)>,<path_to_texture3(optional)>`
 
@@ -167,9 +161,6 @@ sp 0.0,0.0,20.6 12.6 10,0,255 ch:2,2 40,40,40 210,210,210
 | `texture1.ppm`    | Texture for the main shape                                        | Applicable to all shapes                      |
 | `texture2.ppm`    | (Optional) Top texture					        | Only for shapes like cylinders and paraboloids|
 | `texture3.ppm`    | (Optional) Bottom texture					        | Only for cylinders                            |
-
-**Example:**
-sp 0,50.6,50 20 255,0,0 ma:0.79,1,1024,0.08,0 tx:textures/pool_14.ppm
 
 ### Sample .rt File
 
@@ -188,10 +179,6 @@ sp 0,50.6,50 20 255,0,0 ma:0.79,1,1024,0.08,0 tx:textures/pool_14.ppm
 
 pa -50,50,25 0,0,1 20 50 0 220,220,190 ch:10,10 120,20,220 220,50,120
 ```
-
-### Notes:
-- Ensure that the element identifiers and values follow the exact format to avoid parsing errors.
-- All coordinates are in 3D space, and colors are represented in standard RGB format.
 </details>
 
 ## Credits
