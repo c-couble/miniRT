@@ -27,6 +27,8 @@ SRC = \
 	  bvh/draw/draw_bounding_boxes.c \
 	  bvh/draw/draw_bvh.c \
 	  bvh/draw/draw_lines.c \
+	  bvh/draw/draw_graph.c \
+	  bvh/draw/draw_square.c \
 	  \
 	  bvh/hooks/change_bvh_mode.c \
 	  bvh/hooks/decrease_depth_manual.c \
@@ -73,6 +75,7 @@ SRC = \
 	  engine/render_frame.c \
 	  \
 	  engine/shading/get_ambiant_light.c \
+	  engine/shading/get_caustic.c \
 	  engine/shading/get_fresnel.c \
 	  engine/shading/get_light.c \
 	  engine/shading/get_pixel_color.c \
@@ -83,11 +86,10 @@ SRC = \
 	  engine/shading/phong_model.c \
 	  \
 	  kdtree/get_density.c \
-	  kdtree/visualize_graph.c \
 	  kdtree/create_kdnode.c \
 	  kdtree/init_kdtree.c \
 	  kdtree/get_nearest_neighbour.c \
-	  kdtree/get_nearest_neighbour2.c \
+	  kdtree/get_knearest_neighbour.c \
 	  kdtree/clear_kdtree.c \
 	  kdtree/print_kdtree.c \
 	  kdtree/print_knn.c \
@@ -168,6 +170,7 @@ SRC = \
 	  parsing/parse_vector3d.c \
 	  \
 	  photon/clear_photon_maps.c \
+	  photon/generate_photons.c \
 	  photon/init_photon_map.c \
 	  photon/trace_photon.c \
 	  photon/print_photon_map.c \
@@ -187,6 +190,9 @@ SRC = \
 	  ray/trace_ray.c \
 	  \
 	  util/double_equals.c \
+	  util/find_max.c \
+	  util/find_mean.c \
+	  util/find_min.c \
 	  util/get_axis.c \
 	  util/get_biggest_distance.c \
 	  util/get_closest_distance.c \

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 00:46:45 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/11 23:17:00 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/21 22:19:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 # define SHADING_H
 
 # include "engine.h"
+# include "kdtree.h"
 # include "object/light.h"
 # include "ray.h"
 
 uint32_t	get_ambiant_light(t_engine *engine);
+void		get_caustic(t_ray *c_ray, t_kdtree *photons, t_color *light);
 void		get_fresnel(t_engine *eng, t_ray *c_ray, t_color *color, int depth);
 uint32_t	get_light(t_engine *engine, t_ray *ray);
 uint32_t	get_pixel_color(t_engine *engine, t_ray *ray, int depth);

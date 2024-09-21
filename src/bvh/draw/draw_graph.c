@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   visualize_graph.c                                  :+:      :+:    :+:   */
+/*   draw_graph.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 19:51:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/19 09:34:09 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/21 22:07:05 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/21 22:16:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,44 +18,10 @@
 #include "vec2.h"
 #include "float.h"
 #include <stdio.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <math.h>
-#include <stdint.h>
-
-void	draw_square(t_engine *eng, int size, t_vec2 *p, uint32_t color);
-
-
-double	find_min(double *arr, size_t size)
-{
-	size_t	i;
-	double	min;
-
-	i = 0;
-	min = DBL_MAX;
-	while (i < size)
-	{
-		if (arr[i] < min)
-			min = arr[i];
-		++i;
-	}
-	return (min);
-}
-
-double	find_max(double *arr, size_t size)
-{
-	size_t	i;
-	double	max;
-
-	i = 0;
-	max = -DBL_MAX;
-	while (i < size)
-	{
-		if (arr[i] > max)
-			max = arr[i];
-		++i;
-	}
-	return (max);
-}
+#include "util.h"
 
 double	gaussian_kernel(double value)
 {
@@ -78,14 +44,14 @@ double	*generate_gaussian_arr(size_t size, double mu)
 	return (datas);
 }
 
-void	visualize_graph(t_engine * eng, int size, double *data)
+void	draw_graph(t_engine * eng, size_t size, double *data)
 {
 	double min = find_min(data, size);
 	double max = find_max(data, size);
 	int step = eng->scene.camera.frame_width / size;
 	int	height = eng->scene.camera.frame_height;
 	double range = max - min;
-	int	i;
+	size_t	i;
 	t_vec2	a;
 	t_vec2	b;
 	double height_coeff = height / range;
@@ -94,7 +60,7 @@ void	visualize_graph(t_engine * eng, int size, double *data)
 	printf("step = %d height = %d, height coeft = %lf\n", step, height, height_coeff);
 
 	i = 0;
-	while (i < size - 1)
+	while (i < (size_t)size - 1)
 	{
 		a.x = i * step;
 		a.y = height - (data[i] - min) * height_coeff;
@@ -107,25 +73,4 @@ void	visualize_graph(t_engine * eng, int size, double *data)
 	}
 	draw_square(eng, 4, &b, RED);
 	return ;
-}
-
-void	draw_square(t_engine *eng, int size, t_vec2 *p, uint32_t color)
-{
-	int		i;
-	int		j;
-
-	i = 0;
-	while (i < size)
-	{
-		j = 0;
-		while (j < size)
-		{
-			color_pixels(eng, p->y - i, p->x - j, color);
-			color_pixels(eng, p->y + i, p->x + j, color);
-			color_pixels(eng, p->y - i, p->x + j, color);
-			color_pixels(eng, p->y + i, p->x - j, color);
-			++j;
-		}
-		++i;
-	}
 }

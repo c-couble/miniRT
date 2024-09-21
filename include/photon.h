@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 13:56:52 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/03 22:02:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/21 22:31:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "vec3.h"
 # include "color.h"
+# include "object/light.h"
 # include "vector.h"
 
 typedef struct s_photon
@@ -32,5 +33,6 @@ int		init_photon_map(t_engine *eng);
 int		trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph);
 void	print_photon_map(t_vector *photons);
 double	get_closest_photon(t_engine *engine, t_ray *ray, t_ray *p_ray);
+int		generate_photons(t_engine *eng, t_vector *photons, t_light *light);
 
 #endif
