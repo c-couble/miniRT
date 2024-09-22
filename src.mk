@@ -91,6 +91,14 @@ SRC = \
 	  obj_3d/parse_obj_file.c \
 	  obj_3d/parse_obj_if_needed.c \
 	  \
+	  obj_3d/lines/parse_obj_mtl.c \
+	  obj_3d/lines/parse_obj_polygon.c \
+	  obj_3d/lines/parse_obj_space_vertice.c \
+	  obj_3d/lines/parse_obj_texture_coord.c \
+	  obj_3d/lines/parse_obj_vertice.c \
+	  obj_3d/lines/parse_obj_vertex_normal.c \
+	  obj_3d/lines/parse_use_mtl.c \
+	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \

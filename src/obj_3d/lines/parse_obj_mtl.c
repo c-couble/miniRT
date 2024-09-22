@@ -1,26 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_obj_3d.c                                     :+:      :+:    :+:   */
+/*   parse_obj_mtl.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 05:14:14 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/22 15:50:53 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/22 16:27:32 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/22 16:27:52 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "float.h"
+#include "engine.h"
 #include "obj_3d.h"
-#include "vector.h"
 
-void	clear_obj_3d(t_obj_3d *obj)
+int	parse_obj_mtl(t_engine *engine, t_obj_3d *obj, char *line)
 {
-	clear_vector(&obj->faces);
-	clear_vector(&obj->vertices);
-	clear_vector(&obj->space_vertices);
-	clear_vector(&obj->vertex_normals);
-	clear_vector(&obj->texture_coordinates);
-	free(obj->file_name);
-	free(obj);
+	obj->mtl = parse_obj_mtl_if_needed(engine, line);
+	if (obj->mtl == NULL)
+		return (-1);
+	return (0);
 }
