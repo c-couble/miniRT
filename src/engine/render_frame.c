@@ -6,16 +6,20 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 12:57:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 18:31:55 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdint.h>
+#include <stdio.h>
 #include <time.h>
+#include "draw.h"
 #include "color.h"
 #include "defines.h"
 #include "engine.h"
 #include "ray.h"
 #include "shading.h"
+#include "vec3.h"
 #include "vec4.h"
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
@@ -41,6 +45,8 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
+	draw_bvh(engine);
+	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
 	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }
@@ -76,6 +82,7 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	ray->ray.y = final.y;
 	ray->ray.z = final.z;
 	vec3_normalize(&ray->ray);
+	get_inv_dir(ray);
 }
 
 static void	change_ray_size(t_engine *engine, size_t fps)

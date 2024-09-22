@@ -6,11 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 00:05:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 05:35:44 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/16 00:37:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color_util.h"
+#include "color.h"
+#include "ray.h"
 #include "shading.h"
 
 uint32_t	get_reflect(t_engine *eng, t_ray *c_ray, t_color color, int depth)
@@ -19,6 +20,7 @@ uint32_t	get_reflect(t_engine *eng, t_ray *c_ray, t_color color, int depth)
 	t_color	ref;
 
 	get_reflection_ray(c_ray, c_ray, &reflection_ray.ray);
+	get_inv_dir(&reflection_ray);
 	reflection_ray.startpos = c_ray->data.hitpos;
 	ref.color = get_pixel_color(eng, &reflection_ray, depth);
 	ref.color = scale_color(&ref, c_ray->data.materials.reflect_ratio);

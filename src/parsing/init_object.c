@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 05:47:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/17 22:16:06 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int	init_object(t_engine *engine, t_object *object, char *line)
 	if (object->type != LIGHT
 		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
 	{
+		get_objects_aabb(object);
 		if (parse_optional_data(engine, object) == -1)
 			return (-1);
 	}
