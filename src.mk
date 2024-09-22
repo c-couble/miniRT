@@ -85,15 +85,18 @@ SRC = \
 	  engine/shading/get_refract.c \
 	  engine/shading/phong_model.c \
 	  \
-	  kdtree/get_density.c \
 	  kdtree/create_kdnode.c \
 	  kdtree/init_kdtree.c \
 	  kdtree/get_nearest_neighbour.c \
 	  kdtree/get_knearest_neighbour.c \
 	  kdtree/clear_kdtree.c \
+	  kdtree/init_knn.c \
 	  kdtree/print_kdtree.c \
 	  kdtree/print_knn.c \
 	  kdtree/sort_photon_axis.c \
+	  \
+	  math/density/generate_gaussian_arr.c \
+	  math/density/density_estimation.c \
 	  \
 	  math/mat4/divide_line.c \
 	  math/mat4/mat4_identity.c \

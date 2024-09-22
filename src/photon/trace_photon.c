@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/02 02:29:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/22 00:20:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,9 @@ int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph)
 			refract_ray.startpos = ph_ray->data.hitpos;
 			return (trace_photon(engine, &refract_ray, depth -1, ph));
 		}
+		if (depth == DEPTH)
+			return (0);
+		ph->origin = ph_ray->ray;
 		ph->pos = ph_ray->data.hitpos;
 		return (1);
 	}

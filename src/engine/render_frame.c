@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/21 22:13:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/21 23:36:06 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 #include "shading.h"
 #include "vec3.h"
 #include "vec4.h"
-#include "kdtree.h"
+#include "density.h"
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
 static void	change_ray_size(t_engine *engine, size_t fps);
@@ -47,11 +47,11 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	double size = 60;
-	double *datas = generate_gaussian_arr(size, 50);
-	draw_graph(engine, size, datas);
-	printf("bvh depth = %d\n", engine->scene.bvh.depth); 	
-	printf("bvh maxdepth = %d\n", engine->scene.bvh.max_depth); 
+//	double size = 60;
+//	double *datas = generate_gaussian_arr(size, 50);
+//	draw_graph(engine, size, datas);
+//	printf("bvh depth = %d\n", engine->scene.bvh.depth); 	
+//	printf("bvh maxdepth = %d\n", engine->scene.bvh.max_depth); 
 	draw_bvh(engine);
 	long int time = clock();
 	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time -start);

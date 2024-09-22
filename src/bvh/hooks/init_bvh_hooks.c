@@ -6,11 +6,23 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 11:10:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 17:04:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/21 23:45:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
+
+void	incr(t_engine *engine)
+{
+	engine->bandwidth += 0.05;
+	engine->scene.camera.should_render = 1;
+}
+
+void	decr(t_engine *engine)
+{
+	engine->bandwidth -= 0.05;
+	engine->scene.camera.should_render = 1;
+}
 
 int	init_bvh_hooks(t_engine *engine)
 {
@@ -29,6 +41,12 @@ int	init_bvh_hooks(t_engine *engine)
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	hook = create_mlx_hook(change_bvh_mode, engine, KEY_B, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(decr, engine, KEY_F, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(incr, engine, KEY_G, PRESS);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/19 05:55:04 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/22 02:44:39 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # define WINDOW_NAME		"miniRT ccouble lespenel"
 # define DEFAULT_RAY_SIZE	5
 # define MINIMUM_FPS		20
-# define MAXIMUM_FPS		80
+# define MAXIMUM_FPS		20
 # define ROLL_ANGLE			0.05
 # define SENSITIVITY		2
 # define SPEED				80
@@ -34,10 +34,10 @@
 # define Y					1
 # define Z					2
 
-# define PHOTON_PER_OBJ		5
-# define PHOTON_RADIUS		10
+# define PHOTON_PER_OBJ		100000
+# define PHOTON_RADIUS		05
 # define AIR_RATIO			1.0
-# define DEPTH				10
+# define DEPTH				8
 # define LOW_RENDER_DEPTH   5
 
 # define DIFFUSE_RATIO		0.65

@@ -6,16 +6,16 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/21 22:20:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/21 23:05:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <float.h>
+#include "float.h"
 #include <stdlib.h>
-#include "kdtree.h"
-#include "photon.h"
 #include "color.h"
+#include "kdtree.h"
 #include "object/light.h"
+#include "photon.h"
 #include "ray.h"
 #include "shading.h"
 #include "vec3.h"
@@ -48,7 +48,7 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 		while (j < engine->caustic_maps.size)
 		{
 			node = at_vector(&engine->caustic_maps, j);
-			get_caustic(ray, *node, &light);
+			get_caustic(engine, ray, *node, &light);
 			++j;
 		}
 	}

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:07:05 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/21 22:16:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/21 22:43:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,42 +19,19 @@
 #include "float.h"
 #include <stdio.h>
 #include <stdint.h>
-#include <stdlib.h>
-#include <math.h>
 #include "util.h"
-
-double	gaussian_kernel(double value)
-{
-	double	gaussian_point;
-
-	gaussian_point = 1 / sqrt(2 * M_PI) * exp(-(value * value) / 2);
-	return (gaussian_point);
-}
-
-double	*generate_gaussian_arr(size_t size, double mu)
-{
-	double *datas;
-	datas = malloc(sizeof(double) * size);
-	if (datas == NULL)
-		return (NULL);
-
-	for (int i = 0; (size_t)i < size ; ++i)
-		datas[i] = gaussian_kernel((double)(i - ((double)size / 2)) / 19);
-	(void)mu;
-	return (datas);
-}
 
 void	draw_graph(t_engine * eng, size_t size, double *data)
 {
-	double min = find_min(data, size);
-	double max = find_max(data, size);
-	int step = eng->scene.camera.frame_width / size;
-	int	height = eng->scene.camera.frame_height;
-	double range = max - min;
-	size_t	i;
-	t_vec2	a;
-	t_vec2	b;
-	double height_coeff = height / range;
+	const double	min = find_min(data, size);
+	const double	max = find_max(data, size);
+	const int		step = eng->scene.camera.frame_width / size;
+	const int		height = eng->scene.camera.frame_height;
+	const double	range = max - min;
+	size_t			i;
+	t_vec2			a;
+	t_vec2			b;
+	const double	height_coeff = height / range;
 	printf("width = %ld\n", eng->scene.camera.frame_width);
 	printf("width = %ld\n", eng->mlx.width);
 	printf("step = %d height = %d, height coeft = %lf\n", step, height, height_coeff);

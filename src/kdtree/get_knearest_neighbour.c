@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_nearest_neighbour2.c                           :+:      :+:    :+:   */
+/*   get_knearest_neighbour.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/21 22:17:07 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/21 22:33:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static double	distance_squared(t_vec3 *a, t_vec3 *b);
 static void		get_nearest(t_kdtree *node, t_knn *knn, t_vec3 *t, int d);
 static void		set_best(t_kdtree *node, t_knn *knn, double dist);
 
-void get_knearest_neighbour(t_knn *knn, t_kdtree *tree, t_vec3 *aim)
+void	get_knearest_neighbour(t_knn *knn, t_kdtree *tree, t_vec3 *aim)
 {
 	get_nearest(tree, knn, aim, 0);
 }
