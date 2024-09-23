@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 01:08:51 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/23 05:03:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,9 @@ int	parse_paraboloid(t_engine *engine, t_object_data *data)
 		return (-1);
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->paraboloid.height, arg, 0, DBL_MAX) == -1)
+		return (-1);
+	arg = ft_strtok(NULL, " \t");
+	if (parse_int(&data->paraboloid.disk, arg, 0, 1) == -1)
 		return (-1);
 	if (parse_color(&data->paraboloid.color) == -1)
 		return (-1);
