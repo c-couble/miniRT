@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:52:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/21 23:12:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:12:34 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ typedef struct s_knn
 }	t_knn;
 
 int 		init_knn(t_knn *knn, size_t k);
+void		clear_knn(t_knn *knn);
 void		print_knn(t_knn *knn);
 void 		get_knearest_neighbour(t_knn *knn, t_kdtree *tree, t_vec3 *aim);
 void		clear_kdtree(t_kdtree *tree);

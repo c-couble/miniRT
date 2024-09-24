@@ -91,6 +91,7 @@ SRC = \
 	  kdtree/get_knearest_neighbour.c \
 	  kdtree/clear_kdtree.c \
 	  kdtree/init_knn.c \
+	  kdtree/clear_knn.c \
 	  kdtree/print_kdtree.c \
 	  kdtree/print_knn.c \
 	  kdtree/sort_photon_axis.c \

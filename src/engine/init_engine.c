@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/21 23:37:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:11:29 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ static void	init_projection(t_camera *cam, double ratio);
 int	init_engine(t_engine *engine, char *scene)
 {
 	engine->bandwidth = 0.1;
+	engine->nn = 5;
 	init_vector(&engine->objs_3d, sizeof(t_obj_3d));
 	init_vector(&engine->textures, sizeof(t_texture *));
 	if (init_scene(engine, &engine->scene, scene) == -1)

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/21 23:37:38 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:07:31 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct s_engine
 	t_mlx		mlx;
 	t_vector	caustic_maps;
 	double		bandwidth;
+	int			nn;
 	t_vector	objs_3d;
 	t_vector	textures;
 }	t_engine;
