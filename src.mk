@@ -31,10 +31,10 @@ SRC = \
 	  bvh/draw/draw_square.c \
 	  \
 	  bvh/hooks/change_bvh_mode.c \
-	  bvh/hooks/decrease_depth_manual.c \
-	  bvh/hooks/decrease_depth_persistent.c \
-	  bvh/hooks/increase_depth_manual.c \
-	  bvh/hooks/increase_depth_persistent.c \
+	  bvh/hooks/decrease_full_layer.c \
+	  bvh/hooks/decrease_single_layer.c \
+	  bvh/hooks/increase_full_layer.c \
+	  bvh/hooks/increase_single_layer.c \
 	  bvh/hooks/init_bvh_hooks.c \
 	  \
 	  camera/color_pixels.c \
