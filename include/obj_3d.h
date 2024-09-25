@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 04:01:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/22 16:30:01 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/25 05:07:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,12 +63,12 @@ int			parse_obj_file(struct s_engine *engine, t_obj_3d *obj, char *file);
 void		build_obj_cache(t_obj_3d *obj);
 void		clear_obj_3d(t_obj_3d *obj);
 void		clear_objs_3d(t_vector *objs_3d);
-int			parse_obj_polygon(struct s_engine *engine, t_obj_3d *obj, char *line);
-int			parse_obj_space_vertice(struct s_engine *engine, t_obj_3d *obj, char *line);
-int			parse_use_mtl(struct s_engine *engine, t_obj_3d *obj, char *line);
-int			parse_obj_vertex_normal(struct s_engine *engine, t_obj_3d *obj, char *line);
-int			parse_obj_vertice(struct s_engine *engine, t_obj_3d *obj, char *line);
-int			parse_obj_mtl(struct s_engine *engine, t_obj_3d *obj, char *line);
-int			parse_obj_texture_coord(struct s_engine *engine, t_obj_3d *obj, char *line);
+int			parse_f(struct s_engine *engine, t_obj_3d *obj, char *line);
+int			parse_vp(struct s_engine *engine, t_obj_3d *obj, char *line);
+int			parse_usemtl(struct s_engine *engine, t_obj_3d *obj, char *line);
+int			parse_vn(struct s_engine *engine, t_obj_3d *obj, char *line);
+int			parse_v(struct s_engine *engine, t_obj_3d *obj, char *line);
+int			parse_mtllib(struct s_engine *engine, t_obj_3d *obj, char *line);
+int			parse_vt(struct s_engine *engine, t_obj_3d *obj, char *line);
 
 #endif
