@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 03:00:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 04:04:58 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/25 05:22:43 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 #include "float.h"
 #include "vec4.h"
 
-static int	read_obj_and_position(t_engine *engine, t_object_data *data);
+static int	read_obj_and_position(t_engine *engine, t_object_data *data, char *arg);
 
 int	parse_mesh(t_engine *engine, t_object_data *data)
 {
@@ -29,20 +29,14 @@ int	parse_mesh(t_engine *engine, t_object_data *data)
 	arg = ft_strtok(NULL, " \t");
 	if (arg == NULL)
 		return (-1);
-	data->mesh.name = ft_strdup(arg);
-	if (data->mesh.name == NULL)
-		return (-2);
-	if (read_obj_and_position(engine, data) == -1)
-	{
-		free(data->mesh.name);
+	if (read_obj_and_position(engine, data, arg) == -1)
 		return (-1);
-	}
 	return (0);
 }
 
 static void	create_transformation_matrix(t_mat4 *mat, t_object_data *data);
 
-static int	read_obj_and_position(t_engine *engine, t_object_data *data)
+static int	read_obj_and_position(t_engine *engine, t_object_data *data, char *obj)
 {
 	char	*arg;
 
@@ -53,7 +47,7 @@ static int	read_obj_and_position(t_engine *engine, t_object_data *data)
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->mesh.scale, arg, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	data->mesh.obj_3d = parse_obj_if_needed(engine, data->mesh.name);
+	data->mesh.obj_3d = parse_obj_if_needed(engine, obj);
 	if (data->mesh.obj_3d == NULL)
 		return (-1);
 	size_t	i;

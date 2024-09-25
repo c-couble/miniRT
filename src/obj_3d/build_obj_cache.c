@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 02:53:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 03:26:55 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/25 05:53:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "obj_3d.h"
+
 static void	cache_point(t_obj_3d *obj, t_polygon *p, int i);
 static void	finish_polygon(t_cached_triangle *t);
 

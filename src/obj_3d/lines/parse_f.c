@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_obj_polygon.c                                :+:      :+:    :+:   */
+/*   parse_f.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 16:22:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/22 16:23:33 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/25 05:47:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,22 @@
 
 static int	parse_polygon_point(t_polygon_point *point, char *arg);
 
-int	parse_obj_polygon(t_engine *engine, t_obj_3d *obj, char *line)
+int	parse_f(t_engine *engine, t_obj_3d *obj, char *line)
 {
 	t_polygon	poly;
 	char		*save;
+	char		*arg;
 
 	(void) engine;
 	poly.material = obj->current_material;
-	if (parse_polygon_point(&poly.points[0], ft_strtok_r(line, " \t", &save)) == -1)
+	arg = ft_strtok_r(line, " \t", &save);
+	if (parse_polygon_point(&poly.points[0], arg) == -1)
 		return (-1);
-	if (parse_polygon_point(&poly.points[1], ft_strtok_r(NULL, " \t", &save)) == -1)
+	arg = ft_strtok_r(NULL, " \t", &save);
+	if (parse_polygon_point(&poly.points[1], arg) == -1)
 		return (-1);
-	if (parse_polygon_point(&poly.points[2], ft_strtok_r(NULL, " \t", &save)) == -1)
+	arg = ft_strtok_r(NULL, " \t", &save);
+	if (parse_polygon_point(&poly.points[2], arg) == -1)
 		return (-1);
 	if (add_vector(&obj->faces, &poly, 1) == -1)
 		return (-1);

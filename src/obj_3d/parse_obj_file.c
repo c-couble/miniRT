@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/22 16:30:57 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/25 05:51:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ static int	read_obj_data(t_engine *engine, t_obj_3d *obj, int fd)
 {
 	t_buffer	*buf;
 	char		*line;
-	
+
 	buf = malloc(sizeof(t_buffer));
 	if (buf == NULL)
 		return (-1);
@@ -112,13 +112,14 @@ static int	parse_line(t_engine *engine, t_obj_3d *obj, char *line)
 	[SPACE_VERTICE] = "vp",
 	[POLYGON] = "f",
 	};
-	char	*arg;
-	char	*save;
+	char		*arg;
+	char		*save;
+	int			i;
 
 	arg = ft_strtok_r(line, " \t", &save);
 	if (arg == NULL || arg[0] == '#')
 		return (0);
-	int i = 0;
+	i = 0;
 	while (i <= POLYGON)
 	{
 		if (ft_strcmp(arg, data[i]) == 0)
@@ -131,14 +132,14 @@ static int	parse_line(t_engine *engine, t_obj_3d *obj, char *line)
 static int	parse_elem(t_engine *engine, t_obj_3d *data, char *save, int i)
 {
 	static int	(*funcs[])(t_engine *engine, t_obj_3d *data, char *save) = {
-	[MTLLIB] = parse_obj_mtl,
-	[USEMTL] = parse_use_mtl,
-	[VERTICE] = parse_obj_vertice,
-	[VERTEX_NORMAL] = parse_obj_vertex_normal,
-	[TEXTURE_COORD] = parse_obj_texture_coord,
-	[SPACE_VERTICE] = parse_obj_space_vertice,
-	[POLYGON] = parse_obj_polygon,
+	[MTLLIB] = parse_mtllib,
+	[USEMTL] = parse_usemtl,
+	[VERTICE] = parse_v,
+	[VERTEX_NORMAL] = parse_vn,
+	[TEXTURE_COORD] = parse_vt,
+	[SPACE_VERTICE] = parse_vp,
+	[POLYGON] = parse_f,
 	};
-	
+
 	return (funcs[i](engine, data, save));
 }

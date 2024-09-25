@@ -86,18 +86,27 @@ SRC = \
 	  obj_3d/build_obj_cache.c \
 	  obj_3d/clear_obj_3d.c \
 	  obj_3d/clear_objs_3d.c \
+	  obj_3d/clear_mtl.c \
+	  obj_3d/clear_mtls.c \
 	  obj_3d/parse_mtl_file.c \
 	  obj_3d/parse_obj_mtl_if_needed.c \
 	  obj_3d/parse_obj_file.c \
 	  obj_3d/parse_obj_if_needed.c \
 	  \
-	  obj_3d/lines/parse_obj_mtl.c \
-	  obj_3d/lines/parse_obj_polygon.c \
-	  obj_3d/lines/parse_obj_space_vertice.c \
-	  obj_3d/lines/parse_obj_texture_coord.c \
-	  obj_3d/lines/parse_obj_vertice.c \
-	  obj_3d/lines/parse_obj_vertex_normal.c \
-	  obj_3d/lines/parse_use_mtl.c \
+	  obj_3d/lines/parse_mtllib.c \
+	  obj_3d/lines/parse_f.c \
+	  obj_3d/lines/parse_vp.c \
+	  obj_3d/lines/parse_vt.c \
+	  obj_3d/lines/parse_v.c \
+	  obj_3d/lines/parse_vn.c \
+	  obj_3d/lines/parse_usemtl.c \
+	  \
+	  obj_3d/mtl_lines/parse_kd.c \
+	  obj_3d/mtl_lines/parse_ks.c \
+	  obj_3d/mtl_lines/parse_map_kd.c \
+	  obj_3d/mtl_lines/parse_newmtl.c \
+	  obj_3d/mtl_lines/parse_ni.c \
+	  obj_3d/mtl_lines/parse_ns.c \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \

@@ -1,34 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_obj_vertex_normal.c                          :+:      :+:    :+:   */
+/*   parse_use_mtl.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/22 16:25:43 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/22 16:26:01 by ccouble          ###   ########.fr       */
+/*   Created: 2024/09/22 16:26:58 by ccouble           #+#    #+#             */
+/*   Updated: 2024/09/25 05:07:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
 #include "engine.h"
 #include "ft_string.h"
-#include "object/parse_util.h"
 #include "obj_3d.h"
 
-int	parse_obj_vertex_normal(t_engine *engine, t_obj_3d *obj, char *line)
+int	parse_usemtl(t_engine *engine, t_obj_3d *obj, char *line)
 {
-	t_vec3	vec;
-	char	*save;
+	size_t			i;
+	t_material_data	*material;
 
 	(void) engine;
-	if (parse_double(&vec.x, ft_strtok_r(line, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
+	if (obj->mtl == NULL)
 		return (-1);
-	if (parse_double(&vec.y, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
-		return (-1);
-	if (parse_double(&vec.z, ft_strtok_r(NULL, " \t", &save), -DBL_MAX, DBL_MAX) == -1)
-		return (-1);
-	if (add_vector(&obj->vertex_normals, &vec, 1) == -1)
-		return (-1);
-	return (0);
+	i = 0;
+	while (i < obj->mtl->materials.size)
+	{
+		material = at_vector(&obj->mtl->materials, i);
+		if (ft_strcmp(material->name, line) == 0)
+		{
+			obj->current_material = material;
+			return (0);
+		}
+		++i;
+	}
+	return (-1);
 }
