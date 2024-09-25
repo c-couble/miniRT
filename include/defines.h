@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/25 04:29:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/25 04:31:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@
 # define Y					1
 # define Z					2
 
-# define PHOTON_PER_OBJ		10000
+# define PHOTON_PER_OBJ		100000
 # define PHOTON_RADIUS		05
 # define AIR_RATIO			1.0
 # define DEPTH				8

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:28:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/21 23:14:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/25 06:45:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ int	generate_photons(t_engine *eng, t_vector *photons, t_light *light)
 		vec3_normalize(&p_ray.ray);
 		p_ray.startpos = light->pos;
 		get_inv_dir(&p_ray);
+		photon.color.color = light->color.color;
+		photon.ratio = light->ratio;
 		if (trace_photon(eng, &p_ray, DEPTH, &photon))
 		{
-			photon.color.color = light->color.color;
-			photon.ratio = light->ratio;
 			if (add_vector(photons, &photon, 1) == -1)
 				return (-1);
 		}

@@ -6,18 +6,19 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/22 00:20:21 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/25 06:48:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "color.h"
 #include "defines.h"
 #include "photon.h"
 #include "ray.h"
 #include "shading.h"
-
 int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph)
 {
 	t_ray	refract_ray;
+	t_color	refract;
 
 	if (depth <= 0)
 		return (BACKGROUND_COLOR);
@@ -25,6 +26,9 @@ int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph)
 	{
 		if (ph_ray->data.materials.refract_index)
 		{
+			refract.color = scale_color(&ph_ray->data.color,
+							   1);
+			ph->color.color = multiply_color(&refract, &ph->color);
 			get_refraction_ray(ph_ray, &refract_ray.ray,
 				ph_ray->data.materials.refract_index);
 			refract_ray.startpos = ph_ray->data.hitpos;
