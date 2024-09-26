@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/24 17:11:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 06:26:17 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "mlx_wrapper.h"
 #include "obj_3d.h"
 #include "scene.h"
-#include "photon.h"
+#include "caustic.h"
 #include "texture.h"
 #include "vector.h"
 
@@ -35,21 +35,21 @@ int	init_engine(t_engine *engine, char *scene)
 		clear_scene(&engine->scene);
 		return (-1);
 	}
-	if (init_photon_map(engine) == -1)
+	if (init_caustic_maps(engine) == -1)
 	{
-		clear_photon_maps(&engine->caustic_maps);
+		clear_caustic_maps(&engine->caustic_maps);
 		clear_scene(&engine->scene);
 		return (-1);
 	}
 	if (init_mlx_struct(&engine->mlx) == -1)
 	{
-		clear_photon_maps(&engine->caustic_maps);
+		clear_caustic_maps(&engine->caustic_maps);
 		clear_scene(&engine->scene);
 		return (-1);
 	}
 	if (init_hooks(engine) == -1)
 	{
-		clear_photon_maps(&engine->caustic_maps);
+		clear_caustic_maps(&engine->caustic_maps);
 		clear_scene(&engine->scene);
 		clear_mlx_struct(&engine->mlx);
 		return (-1);

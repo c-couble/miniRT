@@ -6,12 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:28:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/25 06:45:22 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 04:44:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include <stdio.h>
+#include "engine.h"
+#include "caustic.h"
 #include "defines.h"
 #include "object/light.h"
 #include "photon.h"

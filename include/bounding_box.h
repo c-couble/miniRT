@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 01:38:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 22:15:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 05:36:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define BOUNDING_BOX_H
 
 # include "vec3.h"
+# include "vector.h"
 
 // counterclockwise
 typedef struct s_bbox
@@ -47,5 +48,6 @@ void		get_objects_aabb(struct s_object *object);
 void		get_sphere_aabb(struct s_sphere *sphere, t_aabb *aabb);
 void		get_paraboloid_aabb(struct s_paraboloid *para, t_aabb *aabb);
 void		get_cylinder_aabb(struct s_cylinder *cyl, t_aabb *aabb);
+void		get_caustic_aabb(t_vector *photons, t_aabb *aabb);
 
 #endif

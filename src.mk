@@ -15,8 +15,9 @@ SRC = \
 	  bvh/bounding_box/create_empty_aabb.c \
 	  bvh/bounding_box/get_aabb_from_bbox.c \
 	  bvh/bounding_box/get_bbox_from_aabb.c \
-	  bvh/bounding_box/get_objects_aabb.c \
+	  bvh/bounding_box/get_caustic_aabb.c \
 	  bvh/bounding_box/get_cylinder_aabb.c \
+	  bvh/bounding_box/get_objects_aabb.c \
 	  bvh/bounding_box/get_paraboloid_aabb.c \
 	  bvh/bounding_box/get_sphere_aabb.c \
 	  bvh/bounding_box/intersect_aabb.c \
@@ -57,6 +58,14 @@ SRC = \
 	  camera/hooks/roll_right.c \
 	  camera/hooks/speed_down.c \
 	  camera/hooks/speed_up.c \
+	  \
+	  caustic/init_caustic_maps.c \
+	  caustic/clear_caustic_maps.c \
+	  caustic/clear_photon_maps.c \
+	  caustic/generate_photons.c \
+	  caustic/init_photon_map.c \
+	  caustic/trace_photon.c \
+	  caustic/print_photon_map.c \
 	  \
 	  color/add_color.c \
 	  color/add_scale_color.c \
@@ -173,12 +182,6 @@ SRC = \
 	  parsing/parse_texture.c \
 	  parsing/parse_triangle.c \
 	  parsing/parse_vector3d.c \
-	  \
-	  photon/clear_photon_maps.c \
-	  photon/generate_photons.c \
-	  photon/init_photon_map.c \
-	  photon/trace_photon.c \
-	  photon/print_photon_map.c \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \

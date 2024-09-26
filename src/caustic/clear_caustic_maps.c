@@ -1,33 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_photon_map.c                                 :+:      :+:    :+:   */
+/*   clear_caustic_maps.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/18 21:42:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/30 04:43:03 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/26 05:07:22 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/26 06:25:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "photon.h"
-#include "util.h"
+#include "caustic.h"
+#include "kdtree.h"
+#include "vector.h"
 
-void	print_photon_map(t_vector *photons)
+void	clear_caustic_maps(t_vector *maps)
 {
-	size_t		i;
-	t_photon	*curr;
+	t_caustic_map	*map;
+	size_t			i;
 
 	i = 0;
-	if (photons->size == 0)
-		printf("Null\n");
-	while (i < photons->size)
+	map = maps->array;
+	while (i < maps->size)
 	{
-		curr = at_vector(photons, i);
-		vec3_print(&curr->pos, "p_ray");
-		printf("color r = %d, g = %d, b = %d\n", curr->color.rgb.r,
-			curr->color.rgb.b, curr->color.rgb.b);
+		clear_kdtree(map[i].tree);
 		++i;
 	}
+	clear_vector(maps);
 }

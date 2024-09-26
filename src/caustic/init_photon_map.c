@@ -6,12 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 14:03:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 04:08:37 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 04:44:48 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <errno.h>
 #include <stdio.h>
+#include "caustic.h"
 #include "kdtree.h"
 #include "object.h"
 #include "photon.h"

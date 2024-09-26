@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 04:33:00 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 05:54:17 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@
 # define Y					1
 # define Z					2
 
+# define KNN_MAX			50
 # define PHOTON_PER_OBJ		100000
 # define PHOTON_RADIUS		05
 # define AIR_RATIO			1.0

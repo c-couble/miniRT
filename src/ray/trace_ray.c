@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 13:15:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 17:10:38 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 06:01:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	planes = engine->scene.planes.array;
 	while (i < engine->scene.planes.size)
 	{
-		tmp = intersect_plane(&planes[i], ray);
+		tmp = intersect_plane(planes + i, ray);
 		if (tmp > 0 && get_closest_distance_ptr(tmp, t, &t))
 		{
-			ray->data.obj = &planes[i];
+			ray->data.obj = planes + i;
 			ray->data.materials = planes[i].optional_data.material;
 			data = ray->data;
 		}

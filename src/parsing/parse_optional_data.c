@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/26 03:56:56 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 05:11:34 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "ft_string.h"
 #include "object.h"
 #include "object/optional_data.h"
-#include "photon.h"
+#include "caustic.h"
 
 static void			init_optional_data(t_option *data);
 static t_option_t	get_optional_type(char *type);
@@ -51,6 +51,7 @@ static void	init_optional_data(t_option *data)
 	data->checker.y_size = 0;
 	data->checker.x_color.color = 0;
 	data->checker.y_color.color = 0;
+	data->photon_nb = 0;
 }
 
 static t_option_t	get_optional_type(char *type)

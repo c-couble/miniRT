@@ -6,22 +6,21 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/21 23:05:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 05:45:59 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
 #include <stdlib.h>
 #include "color.h"
-#include "kdtree.h"
 #include "object/light.h"
-#include "photon.h"
 #include "ray.h"
 #include "shading.h"
 #include "vec3.h"
 #include "vector.h"
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
+
 
 uint32_t	get_light(t_engine *engine, t_ray *ray)
 {
@@ -39,19 +38,7 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 			phong_model(&lights[i], &light, ray, &light_ray);
 		++i;
 	}
-	if (ray->data.materials.refract_index == 0)
-	{
-		size_t		j;
-		t_kdtree	**node;
-
-		j = 0;
-		while (j < engine->caustic_maps.size)
-		{
-			node = at_vector(&engine->caustic_maps, j);
-			get_caustic(engine, ray, *node, &light);
-			++j;
-		}
-	}
+	get_caustic(engine, ray, &light);
 	return (multiply_color(&light, &ray->data.color));
 }
 

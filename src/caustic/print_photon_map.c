@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   photon.h                                           :+:      :+:    :+:   */
+/*   print_photon_map.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/18 13:56:52 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 04:41:13 by lespenel         ###   ########.fr       */
+/*   Created: 2024/08/18 21:42:32 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/26 04:45:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHOTON_H
-# define PHOTON_H
+#include <stdio.h>
+#include "caustic.h"
+#include "photon.h"
 
-# include "vec3.h"
-# include "color.h"
-
-typedef struct s_photon
+void	print_photon_map(t_vector *photons)
 {
-	t_vec3	pos;
-	t_vec3	origin;
-	t_color	color;
-	double	ratio;
-}	t_photon;
+	size_t		i;
+	t_photon	*curr;
 
-#endif
+	i = 0;
+	if (photons->size == 0)
+		printf("Null\n");
+	while (i < photons->size)
+	{
+		curr = at_vector(photons, i);
+		vec3_print(&curr->pos, "p_ray");
+		printf("color r = %d, g = %d, b = %d\n", curr->color.rgb.r,
+			curr->color.rgb.b, curr->color.rgb.b);
+		++i;
+	}
+}

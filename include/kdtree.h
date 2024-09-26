@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:52:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/24 17:12:34 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 04:42:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "photon.h"
 # include "sys/types.h"
+# include "vector.h"
 
 typedef struct s_kdtree
 {
