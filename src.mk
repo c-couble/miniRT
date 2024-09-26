@@ -20,6 +20,7 @@ SRC = \
 	  bvh/bounding_box/get_objects_aabb.c \
 	  bvh/bounding_box/get_paraboloid_aabb.c \
 	  bvh/bounding_box/get_sphere_aabb.c \
+	  bvh/bounding_box/is_point_inside_aabb.c \
 	  bvh/bounding_box/intersect_aabb.c \
 	  bvh/bounding_box/print_aabb.c \
 	  bvh/bounding_box/print_bounding_box.c \
