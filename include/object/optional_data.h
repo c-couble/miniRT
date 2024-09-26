@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 02:18:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/11 08:54:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 03:56:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef enum e_option_t
 	MATERIAL,
 	TEXTURE,
 	CHECKERBOARD,
+	CAUSTIC,
 	UNKNOWN_OPTION,
 }	t_option_t;
 
@@ -32,6 +33,7 @@ typedef struct s_option
 	t_texture		*down_texture;
 	t_texture		*texture;
 	t_texture		*up_texture;
+	int				photon_nb;
 }	t_option;
 
 struct	s_engine;

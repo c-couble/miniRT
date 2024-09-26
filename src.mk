@@ -156,6 +156,7 @@ SRC = \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
+	  parsing/parse_caustic.c \
 	  parsing/parse_checkerboard.c \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \

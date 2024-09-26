@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 21:20:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 03:56:56 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "ft_string.h"
 #include "object.h"
 #include "object/optional_data.h"
+#include "photon.h"
 
 static void			init_optional_data(t_option *data);
 static t_option_t	get_optional_type(char *type);
@@ -58,6 +59,7 @@ static t_option_t	get_optional_type(char *type)
 	[MATERIAL] = "ma",
 	[TEXTURE] = "tx",
 	[CHECKERBOARD] = "ch",
+	[CAUSTIC] = "ca",
 	};
 	size_t		i;
 
@@ -77,6 +79,7 @@ static int	parse_option(t_engine *engine, t_object *object, char *arg)
 	[MATERIAL] = parse_material,
 	[TEXTURE] = parse_texture,
 	[CHECKERBOARD] = parse_checkerboard,
+	[CAUSTIC] = parse_caustic,
 	};
 	t_option_t	type;
 	char		*name;
