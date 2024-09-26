@@ -6,14 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:50:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 06:17:14 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 23:20:24 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <errno.h>
 #include "bounding_box.h"
 #include "caustic.h"
-#include "defines.h"
 #include "engine.h"
 #include "kdtree.h"
 #include "object.h"
@@ -23,7 +22,7 @@
 
 static int	init_caustic_map(t_engine *eng, t_light *light, t_object *obj);
 
-int	init_caustic_maps(t_engine *eng)
+int	init_caustic_maps(t_engine *eng, t_caustic *caustic)
 {
 	size_t		i;
 	size_t		j;
@@ -31,7 +30,7 @@ int	init_caustic_maps(t_engine *eng)
 	t_object	*objects;
 
 	dprintf(2, "init caustic maps\n");
-	init_vector(&eng->caustic_maps, sizeof(t_caustic_map));
+	init_vector(&caustic->caustic_maps, sizeof(t_caustic_map));
 	lights = eng->scene.lights.array;
 	objects = eng->scene.objects.array;
 	i = 0;
@@ -74,7 +73,7 @@ static int	init_caustic_map(t_engine *eng, t_light *light, t_object *obj)
 		clear_kdtree(map.tree);
 		return (-1);
 	}
-	if (add_vector(&eng->caustic_maps, &map, 1) == -1)
+	if (add_vector(&eng->caustic.caustic_maps, &map, 1) == -1)
 		return (-1);
 	return (0);
 }

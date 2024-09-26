@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 06:26:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 23:19:19 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@ static void	init_projection(t_camera *cam, double ratio);
 
 int	init_engine(t_engine *engine, char *scene)
 {
-	engine->bandwidth = 0.1;
-	engine->nn = 5;
 	init_vector(&engine->objs_3d, sizeof(t_obj_3d));
 	init_vector(&engine->textures, sizeof(t_texture *));
 	if (init_scene(engine, &engine->scene, scene) == -1)
@@ -35,21 +33,21 @@ int	init_engine(t_engine *engine, char *scene)
 		clear_scene(&engine->scene);
 		return (-1);
 	}
-	if (init_caustic_maps(engine) == -1)
+	if (init_caustic(engine, &engine->caustic) == -1)
 	{
-		clear_caustic_maps(&engine->caustic_maps);
 		clear_scene(&engine->scene);
+		clear_caustic_maps(&engine->caustic.caustic_maps);
 		return (-1);
 	}
 	if (init_mlx_struct(&engine->mlx) == -1)
 	{
-		clear_caustic_maps(&engine->caustic_maps);
+		clear_caustic_maps(&engine->caustic.caustic_maps);
 		clear_scene(&engine->scene);
 		return (-1);
 	}
 	if (init_hooks(engine) == -1)
 	{
-		clear_caustic_maps(&engine->caustic_maps);
+		clear_caustic_maps(&engine->caustic.caustic_maps);
 		clear_scene(&engine->scene);
 		clear_mlx_struct(&engine->mlx);
 		return (-1);
@@ -66,6 +64,8 @@ static int	init_hooks(t_engine *engine)
 	if (init_camera_hooks(engine) == -1)
 		return (-1);
 	if (init_bvh_hooks(engine) == -1)
+		return (-1);
+	if (init_caustic_hooks(engine) == -1)
 		return (-1);
 	hook = create_mlx_hook(engine_focus_in, engine, 0, FOCUS_IN);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)

@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_photon_maps.c                                :+:      :+:    :+:   */
+/*   set_knn_size.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/03 21:52:27 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/03 23:44:29 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/26 22:58:38 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/26 23:00:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "kdtree.h"
-#include "vector.h"
 
-void	clear_photon_maps(t_vector *maps)
+void	set_knn_size(t_knn *knn, int k)
 {
-	t_kdtree	**curr;
-	size_t		i;
-
-	i = 0;
-	while (i < maps->size)
-	{
-		curr = at_vector(maps, i);
-		clear_kdtree(*curr);
-		++i;
-	}
-	clear_vector(maps);
+	knn->size = k;
 }

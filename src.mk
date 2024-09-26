@@ -59,13 +59,15 @@ SRC = \
 	  camera/hooks/speed_down.c \
 	  camera/hooks/speed_up.c \
 	  \
+	  caustic/init_caustic.c \
+	  caustic/clear_caustic.c \
 	  caustic/init_caustic_maps.c \
 	  caustic/clear_caustic_maps.c \
-	  caustic/clear_photon_maps.c \
 	  caustic/generate_photons.c \
-	  caustic/init_photon_map.c \
 	  caustic/trace_photon.c \
 	  caustic/print_photon_map.c \
+	  \
+	  caustic/hooks/init_caustic_hooks.c \
 	  \
 	  color/add_color.c \
 	  color/add_scale_color.c \
@@ -100,6 +102,8 @@ SRC = \
 	  kdtree/get_knearest_neighbour.c \
 	  kdtree/clear_kdtree.c \
 	  kdtree/init_knn.c \
+	  kdtree/empty_knn.c \
+	  kdtree/set_knn_size.c \
 	  kdtree/clear_knn.c \
 	  kdtree/print_kdtree.c \
 	  kdtree/print_knn.c \

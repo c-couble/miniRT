@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:34:39 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 06:25:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 23:19:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,22 @@ typedef	struct s_caustic_map
 	t_kdtree	*tree;
 }	t_caustic_map;
 
+typedef struct s_caustic
+{
+	t_vector	caustic_maps;
+	t_knn		knn;
+	int			nn;
+	double		bandwidth;
+}	t_caustic;
+
 typedef struct s_option t_option;
 typedef struct s_engine	t_engine;
 typedef struct s_ray	t_ray;
 
-int		init_caustic_maps(t_engine *eng);
+int		init_caustic(t_engine *eng, t_caustic *caustic);
+int		init_caustic_maps(t_engine *eng, t_caustic *caustic);
 void	clear_caustic_maps(t_vector *maps);
+int		init_caustic_hooks(t_engine *engine);
 
 void	clear_photon_maps(t_vector *maps);
 int		init_photon_map(t_engine *eng);

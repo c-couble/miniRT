@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 06:16:56 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/26 23:23:53 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int	get_caustic(t_engine *eng, t_ray *ray, t_color *light)
 	t_caustic_map	*map;
 
 	i = 0;
-	map = eng->caustic_maps.array;
-	while (i < eng->caustic_maps.size)
+	map = eng->caustic.caustic_maps.array;
+	while (i < eng->caustic.caustic_maps.size)
 	{
 		if (get_caustic2(eng, ray, map[i].tree, light) == -1)
 			return (-1);
@@ -46,8 +46,9 @@ int get_caustic2(t_engine *eng, t_ray *c_ray, t_kdtree *tree, t_color *light)
 	t_knn		knn;
 	t_color		caustic;
 
-	if (init_knn(&knn, eng->nn) == -1)
+	if (init_knn(&knn, eng->caustic.nn) == -1)
 		return (-1);
+	set_knn_size(&eng->caustic.knn, eng->caustic.nn);
 	get_knearest_neighbour(&knn, tree, &c_ray->data.hitpos);
 	if (knn.count == 0)
 	{
@@ -55,11 +56,11 @@ int get_caustic2(t_engine *eng, t_ray *c_ray, t_kdtree *tree, t_color *light)
 		return (0);
 	}
 	caustic.color = get_mean_color(&knn);
-	estimate = density_estimation(&knn, eng->bandwidth) * 100;
+	estimate = density_estimation(&knn, eng->caustic.bandwidth) * 100;
 	caustic.color = scale_color(&caustic, estimate);
 	printf("estimate: %lf\n", estimate);
 	light->color = add_color(light, &caustic);
-	clear_knn(&knn);
+	empty_knn(&knn);
 	return (0);
 }
 
