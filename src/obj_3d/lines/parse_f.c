@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 16:22:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:47:54 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/26 06:30:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,14 +43,14 @@ static int	parse_polygon_point(t_polygon_point *point, char *arg)
 	if (arg == NULL)
 		return (-1);
 	point->vertice_id = ft_atoi(arg);
-	point->texture_id = -1;
+	point->tx_id = -1;
 	point->normal_id = -1;
 	arg = ft_strchr(arg, '/');
 	if (arg == NULL)
 		return (0);
 	++arg;
 	if (*arg != '/')
-		point->texture_id = ft_atoi(arg);
+		point->tx_id = ft_atoi(arg);
 	arg = ft_strchr(arg, '/');
 	if (arg == NULL)
 		return (0);

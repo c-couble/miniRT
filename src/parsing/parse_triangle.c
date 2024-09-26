@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:02:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/05 04:20:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/26 05:03:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int	parse_triangle(t_engine *engine, t_object_data *data)
 		return (-1);
 	if (parse_color(&data->triangle.color) == -1)
 		return (-1);
-	data->triangle.cached.points[0] = &data->triangle.p0;
-	data->triangle.cached.points[1] = &data->triangle.p1;
-	data->triangle.cached.points[2] = &data->triangle.p2;
+	data->triangle.cached.points[0] = data->triangle.p0;
+	data->triangle.cached.points[1] = data->triangle.p1;
+	data->triangle.cached.points[2] = data->triangle.p2;
 	return (0);
 }

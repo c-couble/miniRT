@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 03:43:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:21:15 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/26 04:36:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,20 @@
 
 typedef struct s_mesh
 {
-	t_vec3		pos;
-	t_vec3		orientation;
-	double		scale;
-	t_obj_3d	*obj_3d;
+	t_vec3				pos;
+	t_vec3				front;
+	t_vec3				up;
+	t_vec3				right;
+	double				scale;
+	t_obj_3d			*obj_3d;
+	t_cached_triangle	*cache;
+	size_t				triangles;
 }	t_mesh;
 
 union	u_object_data;
 struct	s_engine;
 
-int	parse_mesh(struct s_engine *engine, union u_object_data *object);
+int		parse_mesh(struct s_engine *engine, union u_object_data *object);
+void	build_obj_cache(t_mesh *mesh);
 
 #endif

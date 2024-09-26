@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:00:08 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/16 05:10:36 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/26 06:28:51 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 
 typedef struct s_cached_triangle
 {
-	t_vec3			*points[3];
-	t_vec3			*point_texture[3];
+	t_vec3			points[3];
+	t_vec3			*point_tx[3];
 	t_vec3			e1;
 	t_vec3			e2;
 	t_vec3			normal;

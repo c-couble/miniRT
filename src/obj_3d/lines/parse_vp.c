@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 16:23:53 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:47:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/26 06:29:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	parse_vp(t_engine *engine, t_obj_3d *obj, char *line)
 	arg = ft_strtok_r(NULL, " \t", &save);
 	if (parse_double(&vec.z, arg, -DBL_MAX, DBL_MAX) == -1)
 		vec.z = 0;
-	if (add_vector(&obj->texture_coordinates, &vec, 1) == -1)
+	if (add_vector(&obj->space_vertices, &vec, 1) == -1)
 		return (-1);
 	return (0);
 }

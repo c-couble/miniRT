@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:51:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/26 06:29:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ int	parse_obj_file(t_engine *engine, t_obj_3d *obj, char *file)
 		clear_obj_3d(obj);
 		return (-1);
 	}
-	build_obj_cache(obj);
 	return (0);
 }
 
@@ -67,7 +66,7 @@ static int	prepare_obj(t_obj_3d *obj, char *file)
 	obj->mtl = NULL;
 	obj->current_material = NULL;
 	init_vector(&obj->vertices, sizeof(t_vec4));
-	init_vector(&obj->texture_coordinates, sizeof(t_vec3));
+	init_vector(&obj->tx_coords, sizeof(t_vec3));
 	init_vector(&obj->vertex_normals, sizeof(t_vec3));
 	init_vector(&obj->space_vertices, sizeof(t_vec3));
 	init_vector(&obj->faces, sizeof(t_polygon));
