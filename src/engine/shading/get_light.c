@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/26 05:45:59 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 00:36:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 #include "vector.h"
 
 static int	trace_light(t_engine *eng, t_ray *l_ray, t_ray *c_ray, t_light *l);
-
 
 uint32_t	get_light(t_engine *engine, t_ray *ray)
 {
@@ -38,7 +37,7 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 			phong_model(&lights[i], &light, ray, &light_ray);
 		++i;
 	}
-	get_caustic(engine, ray, &light);
+	get_caustic(&engine->caustic, ray, &light);
 	return (multiply_color(&light, &ray->data.color));
 }
 

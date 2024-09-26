@@ -6,10 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 23:23:53 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 00:36:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "bounding_box.h"
 #include "caustic.h"
 #include "float.h"
 #include "density.h"
@@ -22,46 +23,38 @@
 #include <stdio.h>
 
 static uint32_t	get_mean_color(t_knn *knn);
-int get_caustic2(t_engine *eng, t_ray *c_ray, t_kdtree *tree, t_color *light);
+void	get_caustic2(t_caustic *caustic, t_ray *c_ray, t_kdtree *tree, t_color *light);
 
-int	get_caustic(t_engine *eng, t_ray *ray, t_color *light)
+void	get_caustic(t_caustic *caustic, t_ray *ray, t_color *light)
 {
 	size_t			i;
 	t_caustic_map	*map;
 
 	i = 0;
-	map = eng->caustic.caustic_maps.array;
-	while (i < eng->caustic.caustic_maps.size)
+	map = caustic->caustic_maps.array;
+	while (i < caustic->caustic_maps.size)
 	{
-		if (get_caustic2(eng, ray, map[i].tree, light) == -1)
-			return (-1);
+		if (is_point_iside_aabb(&ray->data.hitpos, &map[i].aabb))
+			get_caustic2(caustic, ray, map[i].tree, light);
 		++i;
 	}
-	return (0);
 }
 
-int get_caustic2(t_engine *eng, t_ray *c_ray, t_kdtree *tree, t_color *light)
+void	get_caustic2(t_caustic *c, t_ray *c_ray, t_kdtree *tree, t_color *light)
 {
 	double		estimate;
-	t_knn		knn;
 	t_color		caustic;
 
-	if (init_knn(&knn, eng->caustic.nn) == -1)
-		return (-1);
-	set_knn_size(&eng->caustic.knn, eng->caustic.nn);
-	get_knearest_neighbour(&knn, tree, &c_ray->data.hitpos);
-	if (knn.count == 0)
-	{
-		clear_knn(&knn);
-		return (0);
-	}
-	caustic.color = get_mean_color(&knn);
-	estimate = density_estimation(&knn, eng->caustic.bandwidth) * 100;
+	set_knn_size(&c->knn, c->nn);
+	get_knearest_neighbour(&c->knn, tree, &c_ray->data.hitpos);
+	if (c->knn.count == 0)
+		return ;
+	caustic.color = get_mean_color(&c->knn);
+	estimate = density_estimation(&c->knn, c->bandwidth) * 100;
 	caustic.color = scale_color(&caustic, estimate);
 	printf("estimate: %lf\n", estimate);
 	light->color = add_color(light, &caustic);
-	empty_knn(&knn);
-	return (0);
+	empty_knn(&c->knn);
 }
 
 static uint32_t	get_mean_color(t_knn *knn)
