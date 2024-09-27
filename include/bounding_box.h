@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 01:38:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 22:15:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:29:16 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define BOUNDING_BOX_H
 
 # include "vec3.h"
+# include "object/triangle.h"
 
 // counterclockwise
 typedef struct s_bbox
@@ -29,12 +30,12 @@ typedef struct s_aabb
 	t_vec3		center;
 }	t_aabb;
 
-struct	s_object;
-struct	s_sphere;
-struct	s_paraboloid;
 struct	s_cylinder;
+struct	s_mesh;
 struct	s_object;
+struct	s_paraboloid;
 struct	s_ray;
+struct	s_sphere;
 
 void		create_empty_aabb(t_aabb *aabb);
 void		get_bbox_from_aabb(t_aabb *aabb, t_bbox *bbox);
@@ -43,9 +44,11 @@ double		intersect_aabb(struct s_ray *ray, t_aabb *aabb);
 void		print_bounding_box(t_bbox *b_box);
 void		print_aabb(t_aabb *aabb, char *str);
 
-void		get_objects_aabb(struct s_object *object);
-void		get_sphere_aabb(struct s_sphere *sphere, t_aabb *aabb);
-void		get_paraboloid_aabb(struct s_paraboloid *para, t_aabb *aabb);
+void		get_cached_triangle_aabb(t_cached_triangle *triangle, t_aabb *aabb);
 void		get_cylinder_aabb(struct s_cylinder *cyl, t_aabb *aabb);
+void		get_mesh_aabb(struct s_mesh *mesh, t_aabb *aabb);
+void		get_objects_aabb(struct s_object *object);
+void		get_paraboloid_aabb(struct s_paraboloid *para, t_aabb *aabb);
+void		get_sphere_aabb(struct s_sphere *sphere, t_aabb *aabb);
 
 #endif

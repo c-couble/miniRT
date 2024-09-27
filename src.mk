@@ -19,6 +19,8 @@ SRC = \
 	  bvh/bounding_box/get_cylinder_aabb.c \
 	  bvh/bounding_box/get_paraboloid_aabb.c \
 	  bvh/bounding_box/get_sphere_aabb.c \
+	  bvh/bounding_box/get_cached_triangle_aabb.c \
+	  bvh/bounding_box/get_mesh_aabb.c \
 	  bvh/bounding_box/intersect_aabb.c \
 	  bvh/bounding_box/print_aabb.c \
 	  bvh/bounding_box/print_bounding_box.c \
