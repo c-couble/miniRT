@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 05:19:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 04:31:21 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 04:31:18 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,14 @@ static t_obj_mtl	*add_new_mtl(t_engine *engine, char *file)
 	ft_memset(mtl, 0, sizeof(t_obj_mtl));
 	if (parse_mtl_file(engine, mtl, file) == -1)
 	{
+		dprintf(2, "Parsing error in %s\n", file);
 		free(mtl);
 		return (NULL);
 	}
 	if (add_vector(&engine->obj_mtls, &mtl, 1) == -1)
 	{
 		clear_mtl(mtl);
+		free(mtl);
 		return (NULL);
 	}
 	return (mtl);

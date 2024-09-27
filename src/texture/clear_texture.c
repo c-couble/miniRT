@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 06:42:43 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/16 07:25:02 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 03:12:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,4 @@ void	clear_texture(t_texture *texture)
 {
 	free(texture->file_name);
 	free(texture->texture);
-	free(texture);
 }

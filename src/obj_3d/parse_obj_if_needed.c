@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 04:27:10 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/16 07:24:29 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 04:30:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,14 @@ static t_obj_3d	*add_new_obj(t_engine *engine, char *file)
 	ft_memset(obj, 0, sizeof(t_obj_3d));
 	if (parse_obj_file(engine, obj, file) == -1)
 	{
+		dprintf(2, "Parsing error in %s\n", file);
 		free(obj);
 		return (NULL);
 	}
 	if (add_vector(&engine->objs_3d, &obj, 1) == -1)
 	{
 		clear_obj_3d(obj);
+		free(obj);
 		return (NULL);
 	}
 	return (obj);

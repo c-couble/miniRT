@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 03:49:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:50:59 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 03:12:30 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "obj_mtl.h"
 #include "vector.h"
 
@@ -23,6 +24,7 @@ void	clear_mtls(t_vector *mtls)
 	{
 		mtl = at_vector(mtls, i);
 		clear_mtl(*mtl);
+		free(*mtl);
 		++i;
 	}
 	clear_vector(mtls);

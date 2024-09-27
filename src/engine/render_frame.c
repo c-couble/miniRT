@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 06:43:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 01:49:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	ray->ray.y = -1;
 	ray->ray.z = py;
 	ray->startpos = engine->scene.camera.coordinates;
-	vec4_create(&ray->ray, 1, &final);
+	vec4_create(&ray->ray, 0, &final);
 	vec4_mat4_mult(&final, &engine->scene.camera.final, &final);
 	ray->ray.x = final.x;
 	ray->ray.y = final.y;

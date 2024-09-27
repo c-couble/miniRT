@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 02:53:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/26 06:31:31 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 02:03:23 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,20 @@ static	void	get_matrix(t_mesh *mesh, t_mat4 *matrix);
 static	void	cache_point(t_mesh *mesh, t_mat4 *mat, size_t face, int i);
 static	void	finish_polygon(t_cached_triangle *t);
 
-void	build_obj_cache(t_mesh *mesh)
+int	build_obj_cache(t_mesh *mesh)
 {
 	size_t		i;
 	t_polygon	*polygon;
 	t_obj_3d	*obj;
 	t_mat4		transformation;
 
-	get_matrix(mesh, &transformation);
 	obj = mesh->obj_3d;
-	i = 0;
 	mesh->cache = malloc(obj->faces.size * sizeof(t_cached_triangle));
+	if (mesh->cache == NULL)
+		return (-1);
 	mesh->triangles = obj->faces.size;
+	get_matrix(mesh, &transformation);
+	i = 0;
 	while (i < obj->faces.size)
 	{
 		polygon = at_vector(&obj->faces, i);
@@ -45,6 +47,7 @@ void	build_obj_cache(t_mesh *mesh)
 		mesh->cache[i].material = polygon->material;
 		++i;
 	}
+	return (0);
 }
 
 static void	get_matrix(t_mesh *mesh, t_mat4 *matrix)

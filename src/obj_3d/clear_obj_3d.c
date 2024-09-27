@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 05:14:14 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/26 06:29:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 03:12:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ void	clear_obj_3d(t_obj_3d *obj)
 	clear_vector(&obj->vertex_normals);
 	clear_vector(&obj->tx_coords);
 	free(obj->file_name);
-	free(obj);
 }

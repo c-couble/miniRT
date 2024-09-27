@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 03:44:20 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:38:22 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 03:12:20 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,4 @@ void	clear_mtl(t_obj_mtl *mtl)
 		++i;
 	}
 	clear_vector(&mtl->materials);
-	free(mtl);
 }

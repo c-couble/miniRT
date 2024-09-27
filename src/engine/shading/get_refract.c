@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 01:36:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 01:42:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 02:24:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ uint32_t	get_refract(t_engine *eng, t_ray *c_ray, t_color color, int depth)
 	t_color	refract_color;
 
 	get_refraction_ray(c_ray, &refract_ray.ray,
-		c_ray->data.materials.refraction_ratio);
+		c_ray->data.materials->refraction_ratio);
 	refract_ray.startpos = c_ray->data.hitpos;
 	refract_color.color = get_pixel_color(eng, &refract_ray, depth);
 	color.color = refract_color.color;

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 03:43:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/26 04:36:03 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 02:03:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ union	u_object_data;
 struct	s_engine;
 
 int		parse_mesh(struct s_engine *engine, union u_object_data *object);
-void	build_obj_cache(t_mesh *mesh);
+int		build_obj_cache(t_mesh *mesh);
 
 #endif
