@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:10:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/20 01:22:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 01:47:49 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ static void	draw_bvh_from_depth(t_engine *eng, t_bvh_node *bvh, int depth);
 
 void	draw_bvh(t_engine *engine)
 {
-	if (engine->scene.camera.render_type == BOUNDING_BOX)
-		draw_bounding_boxes(engine, &engine->scene.objects, WHITE);
 	if (engine->scene.bvh.bvh_mode != NONE)
 	{
 		if (engine->scene.bvh.bvh_mode == FULL_LAYER)

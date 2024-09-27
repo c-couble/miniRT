@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:50:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 23:20:24 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 02:28:47 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 #include "vector.h"
 #include <stdio.h>
 
-static int	init_caustic_map(t_engine *eng, t_light *light, t_object *obj);
+static int	init_caustic_map(t_engine *eng, t_caustic *c, t_light *light, t_object *oj);
 
 int	init_caustic_maps(t_engine *eng, t_caustic *caustic)
 {
@@ -29,8 +29,8 @@ int	init_caustic_maps(t_engine *eng, t_caustic *caustic)
 	t_light		*lights;
 	t_object	*objects;
 
+	(void)caustic;
 	dprintf(2, "init caustic maps\n");
-	init_vector(&caustic->caustic_maps, sizeof(t_caustic_map));
 	lights = eng->scene.lights.array;
 	objects = eng->scene.objects.array;
 	i = 0;
@@ -39,10 +39,8 @@ int	init_caustic_maps(t_engine *eng, t_caustic *caustic)
 		j = 0;
 		while (j < eng->scene.objects.size)
 		{
-			if (init_caustic_map(eng, &lights[i], &objects[j]) == -1)
-			{
+			if (init_caustic_map(eng, &eng->caustic, &lights[i], &objects[j]) == -1)
 				return (-1);
-			}
 			++j;
 		}
 		++i;
@@ -50,17 +48,17 @@ int	init_caustic_maps(t_engine *eng, t_caustic *caustic)
 	return (0);
 }
 
-static int	init_caustic_map(t_engine *eng, t_light *light, t_object *obj)
+static int	init_caustic_map(t_engine *eng, t_caustic *c, t_light *light, t_object *obj)
 {
 	t_vector		photon_map;
 	t_caustic_map	map;
 
-	(void)obj;
+	(void)c;
 	if (obj->optional_data.photon_nb == 0)
 		return (0);
 	dprintf(2, "init caustic map\n");
 	init_vector(&photon_map, sizeof(t_photon));
-	if (generate_photons(eng, &photon_map, light) == -1)
+	if (generate_photons(eng, &photon_map, obj, light) == -1)
 	{
 		clear_vector(&photon_map);
 		return (-1);
@@ -74,6 +72,9 @@ static int	init_caustic_map(t_engine *eng, t_light *light, t_object *obj)
 		return (-1);
 	}
 	if (add_vector(&eng->caustic.caustic_maps, &map, 1) == -1)
+	{
+		clear_kdtree(map.tree);
 		return (-1);
+	}
 	return (0);
 }
