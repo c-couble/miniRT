@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:38:36 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 02:26:33 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ double	intersect(t_object *obj, t_ray *ray)
 		if (t > 0)
 		{
 			ray->data.obj = obj;
-			ray->data.materials = obj->optional_data.material;
+			if (ray->data.obj->type != MESH)
+				ray->data.materials = &obj->optional_data.material;
 		}
 		return (t);
 	}

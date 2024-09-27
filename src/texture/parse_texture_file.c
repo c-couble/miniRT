@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 08:12:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/13 04:10:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,7 +123,7 @@ static int	set_value(t_texture *texture, char *word)
 		texture->height = tmp;
 		return (result);
 	}
-	if (parse_int(&texture->maxval, word, 255, 255) == -1)
+	if (parse_int(&texture->maxval, word, 1, 255) == -1)
 		return (-1);
 	return (1);
 }
@@ -147,6 +147,9 @@ static int	read_data(t_texture *texture, t_file *file, ssize_t offset)
 		ft_memcpy(&color[i].rgb.r, current, sizeof(uint8_t));
 		ft_memcpy(&color[i].rgb.g, current + 1, sizeof(uint8_t));
 		ft_memcpy(&color[i].rgb.b, current + 2, sizeof(uint8_t));
+		color[i].rgb.r *= 255 / texture->maxval;
+		color[i].rgb.g *= 255 / texture->maxval;
+		color[i].rgb.b *= 255 / texture->maxval;
 		++i;
 	}
 	return (0);

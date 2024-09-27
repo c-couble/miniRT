@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/14 09:39:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 05:11:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef struct s_engine
 	t_scene		scene;
 	t_mlx		mlx;
 	t_vector	objs_3d;
+	t_vector	obj_mtls;
 	t_vector	textures;
 }	t_engine;
 

@@ -6,10 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 17:56:08 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/17 22:15:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:09:16 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "bounding_box.h"
 #include "object.h"
 
 void	get_objects_aabb(t_object *object)
@@ -20,4 +21,6 @@ void	get_objects_aabb(t_object *object)
 		get_paraboloid_aabb(&object->data.paraboloid, &object->aabb);
 	if (object->type == CYLINDER)
 		get_cylinder_aabb(&object->data.cylinder, &object->aabb);
+	if (object->type == MESH)
+		get_mesh_aabb(&object->data.mesh, &object->aabb);
 }

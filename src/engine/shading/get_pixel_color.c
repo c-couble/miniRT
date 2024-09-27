@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:06:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 05:14:57 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,12 @@ uint32_t	get_pixel_color(t_scene *scene, t_ray *c_ray, int depth)
 		if (scene->camera.render_type == UV_MAP)
 			return (get_uv_color(c_ray));
 		color.color = get_light(scene, c_ray);
-		if (c_ray->data.materials.refraction_ratio
-			&& c_ray->data.materials.reflect_ratio)
+		if (c_ray->data.materials->refraction_ratio
+			&& c_ray->data.materials->reflect_ratio)
 			get_fresnel(scene, c_ray, &color, depth -1);
-		else if (c_ray->data.materials.reflect_ratio)
+		else if (c_ray->data.materials->reflect_ratio)
 			color.color = get_reflect(scene, c_ray, color, depth -1);
-		else if (c_ray->data.materials.refraction_ratio)
+		else if (c_ray->data.materials->refraction_ratio)
 			color.color = get_refract(scene, c_ray, color, depth -1);
 		return (color.color);
 	}

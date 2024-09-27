@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:29:55 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/20 01:24:21 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 05:35:08 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,10 @@ static void	world_to_screen(t_camera *camera, t_vec3 *in, t_vec2 *out)
 	double	x;
 	double	y;
 
-	vec4_create(in, 1, &world);
+	vec4_create(in, 0, &world);
 	vec4_substract_vec3(&world, &camera->coordinates, &world);
 	vec4_mat4_mult(&world, &camera->view, &screen_space);
+	world.w = 1;
 	vec4_mat4_mult(&screen_space, &camera->perspective, &screen_space);
 	if (screen_space.w > 0)
 		vec4_divide_nw(&screen_space, screen_space.w, &screen_space);

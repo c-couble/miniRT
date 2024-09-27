@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:00:08 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/26 04:13:06 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/26 06:28:51 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,32 @@
 # define TRIANGLE_H
 
 # include "color.h"
+# include "object/material.h"
+# include "texture.h"
 # include "vec3.h"
+
+typedef struct s_cached_triangle
+{
+	t_vec3			points[3];
+	t_vec3			*point_tx[3];
+	t_vec3			e1;
+	t_vec3			e2;
+	t_vec3			normal;
+	t_material_data	*material;
+	t_color			color;
+}	t_cached_triangle;
 
 typedef struct s_triangle
 {
-	t_vec3			p0;
-	t_vec3			p1;
-	t_vec3			p2;
-	t_color			color;
+	t_vec3				p0;
+	t_vec3				p1;
+	t_vec3				p2;
+	t_vec3				p0t;
+	t_vec3				p1t;
+	t_vec3				p2t;
+	t_texture			*texture;
+	t_color				color;
+	t_cached_triangle	cached;
 }	t_triangle;
 
 union	u_object_data;
