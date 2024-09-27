@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 18:31:55 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:10:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,14 +53,14 @@ void	render_frame(t_engine *engine)
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
 {
-	t_ray	camera_ray;
+	t_ray	c_ray;
 	t_color	color;
 
-	setup_camera_ray(engine, &camera_ray, j, i);
+	setup_camera_ray(engine, &c_ray, j, i);
 	if (engine->scene.camera.locked)
-		color.color = get_pixel_color(engine, &camera_ray, DEPTH);
+		color.color = get_pixel_color(&engine->scene, &c_ray, DEPTH);
 	else
-		color.color = get_pixel_color(engine, &camera_ray, LOW_RENDER_DEPTH);
+		color.color = get_pixel_color(&engine->scene, &c_ray, LOW_RENDER_DEPTH);
 	color_pixels(engine, i, j, color.color);
 }
 
