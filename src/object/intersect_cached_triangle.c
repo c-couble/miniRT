@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:16:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 04:27:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 07:01:16 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,18 +59,23 @@ static double	get_t(t_cached_triangle *tr, t_ray *ray, t_vec3 *vt, t_vec3 *p)
 static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 {
 	ray->data.normal = t->normal;
-	ray->data.u = (1 - u - v) * t->point_tx[0]->x
-		+ u * t->point_tx[1]->x
-		+ v * t->point_tx[2]->x;
-	ray->data.v = (1 - u - v) * t->point_tx[0]->y
-		+ u * t->point_tx[1]->y
-		+ v * t->point_tx[2]->y;
-	ray->data.u = ft_dabs(fmod(ray->data.u, 1));
-	ray->data.v = ft_dabs(fmod(ray->data.v, 1));
-	if (t->material)
+	if (t->point_tx[0] && t->point_tx[1] && t->point_tx[2])
 	{
-		ray->data.materials = t->material;
-		ray->data.texture = t->material->texture;
+		ray->data.u = (1 - u - v) * t->point_tx[0]->x
+			+ u * t->point_tx[1]->x
+			+ v * t->point_tx[2]->x;
+		ray->data.v = (1 - u - v) * t->point_tx[0]->y
+			+ u * t->point_tx[1]->y
+			+ v * t->point_tx[2]->y;
+		ray->data.u = ft_dabs(fmod(ray->data.u, 1));
+		ray->data.v = ft_dabs(fmod(ray->data.v, 1));
+		if (t->material)
+		{
+			ray->data.materials = t->material;
+			ray->data.texture = t->material->texture;
+		}
+		else
+			ray->data.texture = NULL;
 	}
 	else
 		ray->data.texture = NULL;
