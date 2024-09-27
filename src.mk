@@ -24,6 +24,7 @@ SRC = \
 	  bvh/bounding_box/intersect_aabb.c \
 	  bvh/bounding_box/print_aabb.c \
 	  bvh/bounding_box/print_bounding_box.c \
+	  bvh/bounding_box/update_caustic_aabb.c \
 	  \
 	  bvh/draw/draw_bounding_box.c \
 	  bvh/draw/draw_bounding_boxes.c \
