@@ -6,18 +6,17 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 13:15:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 06:01:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 03:43:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bvh.h"
-#include "engine.h"
 #include "object.h"
 #include "util.h"
 
 static inline void	add_ray_data(t_ray *ray, t_hit_data *data);
 
-int	trace_ray(t_engine *engine, t_ray *ray)
+int	trace_ray(t_scene *scene, t_ray *ray)
 {
 	size_t		i;
 	double		t;
@@ -25,12 +24,12 @@ int	trace_ray(t_engine *engine, t_ray *ray)
 	t_object	*planes;
 	t_hit_data	data;
 
-	t = intersect_bvh(ray, engine->scene.bvh.bvh, &engine->scene.objects);
+	t = intersect_bvh(ray, scene->bvh.bvh, &scene->objects);
 	if (t != -1)
 		data = ray->data;
 	i = 0;
-	planes = engine->scene.planes.array;
-	while (i < engine->scene.planes.size)
+	planes = scene->planes.array;
+	while (i < scene->planes.size)
 	{
 		tmp = intersect_plane(planes + i, ray);
 		if (tmp > 0 && get_closest_distance_ptr(tmp, t, &t))

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 02:25:26 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 03:43:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph)
 
 	if (depth <= 0)
 		return (BACKGROUND_COLOR);
-	if (trace_ray(engine, ph_ray) > -INACCURATE_ZERO)
+	if (trace_ray(&engine->scene, ph_ray) > -INACCURATE_ZERO)
 	{
 		if (ph_ray->data.materials.refract_index)
 		{

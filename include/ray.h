@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 21:16:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 03:42:38 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ typedef struct s_ray
 	double		inv_z;
 }	t_ray;
 
-struct	s_engine;
+struct	s_scene;
 
-int		trace_ray(struct s_engine *engine, t_ray *ray);
+int		trace_ray(struct s_scene *scene, t_ray *ray);
 void	get_inv_dir(t_ray *ray);
 
 #endif
