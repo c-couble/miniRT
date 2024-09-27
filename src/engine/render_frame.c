@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 20:36:11 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 00:22:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ void	render_frame(t_engine *engine)
 	draw_bvh(engine);
 	long int time = clock();
 	printf("end frame time %ld.%lds. \n", (time - start) / CLOCKS_PER_SEC, time -start);
-	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
 	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }

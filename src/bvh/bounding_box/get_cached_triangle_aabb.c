@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 05:51:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 06:28:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 00:40:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "bounding_box.h"
 #include "ft_math.h"
 #include "object/triangle.h"
+#include "vec3.h"
 
 void	get_cached_triangle_aabb(t_cached_triangle *triangle, t_aabb *aabb)
 {
@@ -32,4 +33,7 @@ void	get_cached_triangle_aabb(t_cached_triangle *triangle, t_aabb *aabb)
 		aabb->max.z = ft_dmax(aabb->max.z, triangle->points[i].z);
 		++i;
 	}
+	vec3_add(&triangle->points[0], &triangle->points[1], &aabb->center);
+	vec3_add(&triangle->points[2], &aabb->center, &aabb->center);
+	vec3_scale(&aabb->center, 0.3333);
 }

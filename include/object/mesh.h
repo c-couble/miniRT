@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 03:43:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 06:56:06 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 00:49:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 
 typedef struct s_mesh
 {
-	t_aabb				aabb;
 	t_vec3				pos;
 	t_vec3				front;
 	t_vec3				up;

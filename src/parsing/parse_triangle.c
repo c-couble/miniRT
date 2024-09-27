@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:02:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 07:08:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 01:11:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,12 @@ int	parse_triangle(t_engine *engine, t_object_data *data)
 	data->triangle.cached.point_tx[2] = NULL;
 	data->triangle.cached.color = data->triangle.color;
 	data->triangle.texture = NULL;
+	vec3_subtract(&data->triangle.cached.points[1],
+		&data->triangle.cached.points[0], &data->triangle.cached.e1);
+	vec3_subtract(&data->triangle.cached.points[2],
+		&data->triangle.cached.points[0], &data->triangle.cached.e2);
+	vec3_cross(&data->triangle.cached.e1,
+		&data->triangle.cached.e2, &data->triangle.cached.normal);
+	vec3_normalize(&data->triangle.cached.normal);
 	return (0);
 }

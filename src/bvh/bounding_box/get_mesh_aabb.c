@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 05:49:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 06:28:33 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 00:24:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,5 @@ void	get_mesh_aabb(t_mesh *mesh, t_aabb *aabb)
 		aabb->max.z = ft_dmax(aabb->max.z, tmp.max.z);
 		++i;
 	}
+	get_aabb_center(aabb);
 }
