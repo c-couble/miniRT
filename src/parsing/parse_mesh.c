@@ -6,16 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 03:00:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 02:09:11 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 06:44:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "float.h"
 #include <stdlib.h>
 #include "engine.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/parse_util.h"
-#include "float.h"
+#include "util.h"
 
 static int	read_obj_data(t_engine *engine, t_object_data *data, char *arg);
 
@@ -40,9 +41,11 @@ static int	read_obj_data(t_engine *engine, t_object_data *data, char *obj)
 
 	if (parse_vector3d(&data->mesh.pos, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
-	if (parse_vector3d(&data->mesh.front, -DBL_MAX, DBL_MAX) == -1)
+	if (parse_normalized_vector3d(&data->mesh.front) == -1)
 		return (-1);
-	if (parse_vector3d(&data->mesh.up, -DBL_MAX, DBL_MAX) == -1)
+	if (parse_normalized_vector3d(&data->mesh.up) == -1)
+		return (-1);
+	if (double_equals(vec3_dot(&data->mesh.front, &data->mesh.up), 0) != 1)
 		return (-1);
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->mesh.scale, arg, -DBL_MAX, DBL_MAX) == -1)
