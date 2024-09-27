@@ -6,24 +6,24 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 18:57:02 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 02:25:00 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 05:15:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "color_util.h"
+#include "color.h"
 #include "ft_math.h"
 #include "shading.h"
 
 static void	difuse_reflect(t_color *light, t_vec3 *light_n, t_ray *ray);
 static void	specular_reflect(t_color *light, t_ray *light_r, t_ray *camera_r);
 
-void	phong_model(t_object *obj, t_color *light, t_ray *c_ray, t_ray *l_ray)
+void	phong_model(t_light *l, t_color *light, t_ray *c_ray, t_ray *l_ray)
 {
 	t_color		scene_light;
 
-	scene_light = obj->data.light.color;
-	scene_light.color = scale_color(&scene_light, obj->data.light.ratio);
+	scene_light = l->color;
+	scene_light.color = scale_color(&scene_light, l->ratio);
 	difuse_reflect(&scene_light, &l_ray->ray, c_ray);
 	light->color = add_scale_color(light, &scene_light,
 			c_ray->data.materials->diffuse_ratio);

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:10:57 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/17 17:13:59 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 #include "defines.h"
 #include "ft_string.h"
 #include "object.h"
-#include "object/camera.h"
 #include "object/parse_util.h"
-#include "vec3.h"
 
 int	parse_camera(t_engine *engine, t_object_data *data)
 {

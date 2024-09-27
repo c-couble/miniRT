@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 04:05:22 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 05:16:25 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,10 @@ static void	init_optional_data(t_option *data)
 	data->texture = NULL;
 	data->up_texture = NULL;
 	data->down_texture = NULL;
+	data->checker.x_size = 0;
+	data->checker.y_size = 0;
+	data->checker.x_color.color = 0;
+	data->checker.y_color.color = 0;
 }
 
 static t_option_t	get_optional_type(char *type)
@@ -48,6 +52,7 @@ static t_option_t	get_optional_type(char *type)
 	static char	*values[] = {
 	[MATERIAL] = "ma",
 	[TEXTURE] = "tx",
+	[CHECKERBOARD] = "ch",
 	};
 	size_t		i;
 
@@ -66,6 +71,7 @@ static int	parse_option(t_engine *engine, t_object *object, char *arg)
 	static int	(*values[])(t_engine *engine, t_option *data, char *arg) = {
 	[MATERIAL] = parse_material,
 	[TEXTURE] = parse_texture,
+	[CHECKERBOARD] = parse_checkerboard,
 	};
 	t_option_t	type;
 	char		*name;

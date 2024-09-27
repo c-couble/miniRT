@@ -6,12 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:40:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:33:50 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 05:20:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "object.h"
+#include "bvh.h"
 #include "scene.h"
 
 static void	clear_object(t_object *obj);
@@ -29,6 +30,9 @@ void	clear_scene(t_scene *scene)
 		++i;
 	}
 	clear_vector(&scene->objects);
+	clear_vector(&scene->lights);
+	clear_vector(&scene->planes);
+	clear_bvh(&scene->bvh);
 }
 
 static void	clear_object(t_object *obj)

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 19:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 04:53:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 05:12:08 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include "object/plane.h"
 # include "ray.h"
 
+double	get_axis(t_vec3 *v, int axis);
 int		double_equals(double a, double b);
 void	init_material(t_material_data *data);
 double	get_biggest_distance(double a, double b);

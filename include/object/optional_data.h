@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 02:18:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/02 05:44:02 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 05:11:53 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,19 @@
 
 # include "object/material.h"
 # include "texture.h"
+# include "checkerboard.h"
 
 typedef enum e_option_t
 {
 	MATERIAL,
 	TEXTURE,
+	CHECKERBOARD,
 	UNKNOWN_OPTION,
 }	t_option_t;
 
 typedef struct s_option
 {
+	t_checkerboard	checker;
 	t_material_data	material;
 	t_texture		*down_texture;
 	t_texture		*texture;

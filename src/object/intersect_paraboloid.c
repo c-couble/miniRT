@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/05 05:26:02 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/23 05:33:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,37 +15,38 @@
 #include "math_util.h"
 #include "object.h"
 #include "quaternion.h"
-#include "ray.h"
 #include "util.h"
-#include "vec3.h"
 
 static int		check_height(t_ray *ray, t_paraboloid *para);
-static void		get_paraboloid_normal(t_ray *ray, t_paraboloid *paraboloid);
+static void		get_data(t_ray *local, t_ray *r, t_object *obj, t_hit_data *d);
 static double	solve_para(t_vec3 *o, t_vec3 *d, t_ray *r, t_object *obj);
-static void		get_uv(t_ray *obj_ray, t_ray *ray, const t_paraboloid *para);
+static double	check_disk(t_object *obj, t_ray *ray);
 
 double	intersect_paraboloid(t_object *obj, t_ray *ray)
 {
-	const t_paraboloid	para = obj->data.paraboloid;
-	t_ray				obj_ray;
+	t_ray				local;
 	double				t;
+	double				t2;
+	t_hit_data			data;
 
-	obj_ray = *ray;
-	vec3_subtract(&ray->startpos, (t_vec3 *)&para.pos, &obj_ray.startpos);
-	quaternion_rotate(&obj_ray.startpos,
-		(t_vec3 *)&para.rot_axis, para.theta, &obj_ray.startpos);
-	quaternion_rotate(&ray->ray, (t_vec3 *)&para.rot_axis,
-		para.theta, &obj_ray.ray);
-	t = solve_para(&obj_ray.startpos, &obj_ray.ray, &obj_ray, obj);
-	if (t == -1)
-		return (-1);
-	get_paraboloid_normal(&obj_ray, &obj->data.paraboloid);
-	quaternion_rotate(&obj_ray.data.normal, (t_vec3 *)
-		&para.rot_axis, -para.theta, &ray->data.normal);
-	get_hitpos(ray, t);
-	ray->data.texture = obj->optional_data.texture;
-	ray->data.color = obj->data.paraboloid.color;
-	get_uv(&obj_ray, ray, &para);
+	local = *ray;
+	vec3_subtract(&ray->startpos, &obj->data.paraboloid.pos, &local.startpos);
+	quaternion_rotate(&local.startpos, &obj->data.paraboloid.rot_axis,
+		obj->data.paraboloid.theta, &local.startpos);
+	quaternion_rotate(&ray->ray, &obj->data.paraboloid.rot_axis,
+		obj->data.paraboloid.theta, &local.ray);
+	t = solve_para(&local.startpos, &local.ray, &local, obj);
+	if (t != -1)
+		get_data(&local, ray, obj, &data);
+	t2 = check_disk(obj, ray);
+	if (t2 != -1 && get_closest_distance_ptr(t2, t, &t))
+		data = ray->data;
+	if (t != -1)
+	{
+		ray->data = data;
+		ray->data.color = obj->data.paraboloid.color;
+		get_hitpos(ray, t);
+	}
 	return (t);
 }
 
@@ -55,7 +56,7 @@ static double	solve_para(t_vec3 *start, t_vec3 *dir, t_ray *ray, t_object *o)
 	double		t;
 	double		a;
 
-	a = o->data.paraboloid.ray_coef;
+	a = o->data.paraboloid.radius_coef;
 	q.a = a * (dir->x * dir->x + dir->y * dir->y);
 	q.b = a * 2 * (start->x * dir->x + start->y * dir->y) - dir->z;
 	q.c = a * (start->x * start->x + start->y * start->y) - start->z;
@@ -86,21 +87,51 @@ static int	check_height(t_ray *ray, t_paraboloid *para)
 	return (0);
 }
 
-static void	get_paraboloid_normal(t_ray *ray, t_paraboloid *para)
+static void	get_data(t_ray *local, t_ray *ray, t_object *obj, t_hit_data *data)
 {
-	ray->data.normal.x = 2 * para->ray_coef * (ray->data.hitpos.x);
-	ray->data.normal.y = 2 * para->ray_coef * (ray->data.hitpos.y);
-	ray->data.normal.z = -1;
-	vec3_normalize(&ray->data.normal);
-}
+	const double	radius_coeff = obj->data.paraboloid.radius_coef;
+	double			theta;
 
-static void	get_uv(t_ray *obj_ray, t_ray *ray, const t_paraboloid *para)
-{
-	double	thetha;
-
-	thetha = atan2(obj_ray->data.hitpos.y, obj_ray->data.hitpos.x);
-	ray->data.u = thetha / (2 * M_PI);
+	local->data.normal.x = 2 * radius_coeff * (local->data.hitpos.x);
+	local->data.normal.y = 2 * radius_coeff * (local->data.hitpos.y);
+	local->data.normal.z = -1;
+	vec3_normalize(&local->data.normal);
+	quaternion_rotate(&local->data.normal, &obj->data.paraboloid.rot_axis,
+		-obj->data.paraboloid.theta, &ray->data.normal);
+	ray->data.texture = obj->optional_data.texture;
+	theta = atan2(local->data.hitpos.y, local->data.hitpos.x);
+	ray->data.u = theta / (2 * M_PI);
 	if (ray->data.u < 0)
 		ray->data.u += 1.0;
-	ray->data.v = obj_ray->data.hitpos.z / para->height;
+	ray->data.v = local->data.hitpos.z / obj->data.paraboloid.height;
+	*data = ray->data;
+}
+
+static double	check_disk(t_object *obj, t_ray *ray)
+{
+	t_plane	plane;
+	t_vec3	hitpoint;
+	double	t;
+
+	if (obj->data.paraboloid.disk == 0)
+		return (-1);
+	plane.pos = obj->data.paraboloid.axis;
+	vec3_scale(&plane.pos, obj->data.paraboloid.height);
+	vec3_add(&plane.pos, &obj->data.paraboloid.pos, &plane.pos);
+	plane.normal = obj->data.paraboloid.axis;
+	t = solve_plane_equation(&plane, ray);
+	get_hitpos(ray, t);
+	vec3_subtract(&plane.pos, &ray->data.hitpos, &hitpoint);
+	if (vec3_get_norm(&hitpoint) < obj->data.paraboloid.radius)
+	{
+		ray->data.normal = plane.normal;
+		vec3_scale(&hitpoint, 1 / (obj->data.paraboloid.radius * 2));
+		quaternion_rotate(&hitpoint, &obj->data.paraboloid.rot_axis,
+			obj->data.paraboloid.theta, &hitpoint);
+		ray->data.u = 0.5 - hitpoint.y;
+		ray->data.v = 0.5 - hitpoint.x;
+		ray->data.texture = obj->optional_data.up_texture;
+		return (t);
+	}
+	return (-1);
 }

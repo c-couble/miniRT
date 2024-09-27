@@ -1,4 +1,40 @@
 SRC = \
+	  bvh/clear_bvh.c \
+	  bvh/clear_bvh_tree.c \
+	  bvh/create_bvh_node.c \
+	  bvh/get_bvh_depth.c \
+	  bvh/get_split_pos_axis.c \
+	  bvh/init_bvh.c \
+	  bvh/init_bvh_tree.c \
+	  bvh/intersect_bvh.c \
+	  bvh/print_objs.c \
+	  bvh/print_node.c \
+	  bvh/swap_by_axis.c \
+	  bvh/update_node_aabb.c \
+	  \
+	  bvh/bounding_box/create_empty_aabb.c \
+	  bvh/bounding_box/get_aabb_from_bbox.c \
+	  bvh/bounding_box/get_bbox_from_aabb.c \
+	  bvh/bounding_box/get_objects_aabb.c \
+	  bvh/bounding_box/get_cylinder_aabb.c \
+	  bvh/bounding_box/get_paraboloid_aabb.c \
+	  bvh/bounding_box/get_sphere_aabb.c \
+	  bvh/bounding_box/intersect_aabb.c \
+	  bvh/bounding_box/print_aabb.c \
+	  bvh/bounding_box/print_bounding_box.c \
+	  \
+	  bvh/draw/draw_bounding_box.c \
+	  bvh/draw/draw_bounding_boxes.c \
+	  bvh/draw/draw_bvh.c \
+	  bvh/draw/draw_lines.c \
+	  \
+	  bvh/hooks/change_bvh_mode.c \
+	  bvh/hooks/decrease_full_layer.c \
+	  bvh/hooks/decrease_single_layer.c \
+	  bvh/hooks/increase_full_layer.c \
+	  bvh/hooks/increase_single_layer.c \
+	  bvh/hooks/init_bvh_hooks.c \
+	  \
 	  camera/color_pixels.c \
 	  camera/create_camera_vectors.c \
 	  camera/move_camera.c \
@@ -19,6 +55,15 @@ SRC = \
 	  camera/hooks/roll_right.c \
 	  camera/hooks/speed_down.c \
 	  camera/hooks/speed_up.c \
+	  \
+	  color/add_color.c \
+	  color/add_scale_color.c \
+	  color/get_normal_color.c \
+	  color/get_depth_color.c \
+	  color/interpolate_color.c \
+	  color/get_uv_color.c \
+	  color/multiply_color.c \
+	  color/scale_color.c \
 	  \
 	  engine/clear_engine.c \
 	  engine/engine_focus_in.c \
@@ -46,17 +91,22 @@ SRC = \
 	  math/mat4/mat4_view.c \
 	  math/mat4/swap_lines.c \
 	  \
+	  math/vec2/vec2_create.c \
+	  \
 	  math/vec3/vec3_add.c \
 	  math/vec3/vec3_create.c \
 	  math/vec3/vec3_cross.c \
 	  math/vec3/vec3_dot.c \
 	  math/vec3/vec3_get_norm.c \
 	  math/vec3/vec3_normalize.c \
+	  math/vec3/vec3_print.c \
 	  math/vec3/vec3_scale.c \
 	  math/vec3/vec3_subtract.c \
 	  \
 	  math/vec4/vec4_create.c \
 	  math/vec4/vec4_mat4_mult.c \
+	  math/vec4/vec4_divide_nw.c \
+	  math/vec4/vec4_substract_vec3.c \
 	  \
 	  math/quaternion/quaternion_inv.c \
 	  math/quaternion/quaternion_mult.c \
@@ -113,6 +163,7 @@ SRC = \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
+	  parsing/parse_checkerboard.c \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \
 	  parsing/parse_double.c \
@@ -131,29 +182,27 @@ SRC = \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
+	  scene/read_file.c \
 	  \
+	  texture/apply_checkerboard.c \
 	  texture/clear_texture.c \
 	  texture/clear_textures.c \
 	  texture/get_texture_color.c \
 	  texture/parse_texture_file.c \
 	  texture/parse_texture_if_needed.c \
 	  \
+	  ray/get_inv_dir.c \
 	  ray/trace_ray.c \
 	  \
-	  util/add_color.c \
-	  util/add_scale_color.c \
 	  util/double_equals.c \
 	  util/init_material.c \
+	  util/get_axis.c \
 	  util/get_biggest_distance.c \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
-	  util/get_normal_color.c \
 	  util/get_theta_axis.c \
-	  util/get_uv_color.c \
-	  util/multiply_color.c \
 	  util/print_error.c \
-	  util/scale_color.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
 	  \
