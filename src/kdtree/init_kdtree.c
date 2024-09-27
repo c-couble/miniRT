@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:31:40 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 05:10:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:35:29 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,9 @@ t_kdtree	*init_kdtree(t_vector *photons, int depth)
 	if (photons->size == 0)
 		return (NULL);
 	axis = depth % 3;
-//	printf("init kdtree depth = %d\n", depth);
 	sort_photons_axis(photons, 0, photons->size - 1, axis);
 	median = at_vector(photons, photons->size / 2);
 	node = create_kdnode(median);
-//	printf("sorted\n");
 	if (node == NULL)
 		return (NULL);
 	remove_vector(photons, photons->size / 2);

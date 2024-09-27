@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 01:38:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:44:59 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 05:10:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ typedef struct s_aabb
 	t_vec3		center;
 }	t_aabb;
 
-struct s_object;
-struct s_sphere;
-struct s_paraboloid;
-struct s_cylinder;
-struct s_object;
-struct s_ray;
-struct s_engine;
-struct s_scene;
+struct	s_object;
+struct	s_sphere;
+struct	s_paraboloid;
+struct	s_cylinder;
+struct	s_object;
+struct	s_ray;
+struct	s_engine;
+struct	s_scene;
 
 void		create_empty_aabb(t_aabb *aabb);
 void		get_bbox_from_aabb(t_aabb *aabb, t_bbox *bbox);

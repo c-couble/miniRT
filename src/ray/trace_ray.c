@@ -6,12 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 13:15:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:21:35 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:31:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bvh.h"
 #include "object.h"
+#include "scene.h"
 #include "util.h"
 
 static inline void	add_ray_data(t_ray *ray, t_hit_data *data);

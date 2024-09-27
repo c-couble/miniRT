@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:28:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:42:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:25:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,13 @@
 #include "object.h"
 #include "photon.h"
 #include "ray.h"
+#include "scene.h"
 #include "util.h"
 #include "vector.h"
 
 static void	generate_spherical_ray(t_vec3 *dir);
 
-int	generate_photons(t_scene *scene, t_vector *photons, t_object *obj, t_light *light)
+int	get_photons(t_scene *scene, t_vector *p, t_object *obj, t_light *light)
 {
 	int			i;
 	t_photon	photon;
@@ -40,7 +41,7 @@ int	generate_photons(t_scene *scene, t_vector *photons, t_object *obj, t_light *
 		{
 			if (trace_photon(scene, &p_ray, DEPTH, &photon))
 			{
-				if (add_vector(photons, &photon, 1) == -1)
+				if (add_vector(p, &photon, 1) == -1)
 					return (-1);
 			}
 		}

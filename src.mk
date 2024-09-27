@@ -30,8 +30,6 @@ SRC = \
 	  bvh/draw/draw_bounding_boxes.c \
 	  bvh/draw/draw_bvh.c \
 	  bvh/draw/draw_lines.c \
-	  bvh/draw/draw_graph.c \
-	  bvh/draw/draw_square.c \
 	  \
 	  bvh/hooks/change_bvh_mode.c \
 	  bvh/hooks/decrease_full_layer.c \
@@ -68,6 +66,7 @@ SRC = \
 	  caustic/generate_photons.c \
 	  caustic/trace_photon.c \
 	  caustic/print_photon_map.c \
+	  caustic/density_estimation.c \
 	  \
 	  caustic/hooks/init_caustic_hooks.c \
 	  \
@@ -110,9 +109,6 @@ SRC = \
 	  kdtree/print_kdtree.c \
 	  kdtree/print_knn.c \
 	  kdtree/sort_photon_axis.c \
-	  \
-	  math/density/generate_gaussian_arr.c \
-	  math/density/density_estimation.c \
 	  \
 	  math/mat4/divide_line.c \
 	  math/mat4/mat4_identity.c \

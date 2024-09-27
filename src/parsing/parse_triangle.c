@@ -6,12 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:02:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/28 06:11:39 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 06:30:16 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
 #include "float.h"
+#include "color.h"
+#include "engine.h"
 #include "object.h"
 #include "vec3.h"
 

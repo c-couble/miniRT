@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:50:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:37:16 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:25:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@
 #include "kdtree.h"
 #include "object.h"
 #include "object/light.h"
+#include "scene.h"
 #include "vector.h"
 #include <stdio.h>
 
-static int	init_caustic_map(t_scene *s, t_caustic *c, t_light *light, t_object *oj);
+static int	init_caustic_map(t_scene *scene, t_light *light, t_object *obj);
 
 int	init_caustic_maps(t_scene *scene, t_caustic *caustic)
 {
@@ -37,7 +38,7 @@ int	init_caustic_maps(t_scene *scene, t_caustic *caustic)
 		j = 0;
 		while (j < scene->objects.size)
 		{
-			if (init_caustic_map(scene, &scene->caustic, &lights[i], &objects[j]) == -1)
+			if (init_caustic_map(scene, &lights[i], &objects[j]) == -1)
 				return (-1);
 			++j;
 		}
@@ -46,17 +47,16 @@ int	init_caustic_maps(t_scene *scene, t_caustic *caustic)
 	return (0);
 }
 
-static int	init_caustic_map(t_scene *s, t_caustic *c, t_light *light, t_object *obj)
+static int	init_caustic_map(t_scene *scene, t_light *light, t_object *obj)
 {
 	t_vector		photon_map;
 	t_caustic_map	map;
 
-	(void)c;
 	if (obj->optional_data.photon_nb == 0)
 		return (0);
 	dprintf(2, "init caustic map\n");
 	init_vector(&photon_map, sizeof(t_photon));
-	if (generate_photons(s, &photon_map, obj, light) == -1)
+	if (get_photons(scene, &photon_map, obj, light) == -1)
 	{
 		clear_vector(&photon_map);
 		return (-1);
@@ -65,7 +65,7 @@ static int	init_caustic_map(t_scene *s, t_caustic *c, t_light *light, t_object *
 	map.tree = init_kdtree(&photon_map, 0);
 	clear_vector(&photon_map);
 	if ((map.tree == NULL && errno)
-		|| add_vector(&s->caustic.caustic_maps, &map, 1) == -1)
+		|| add_vector(&scene->caustic.caustic_maps, &map, 1) == -1)
 	{
 		clear_kdtree(map.tree);
 		return (-1);

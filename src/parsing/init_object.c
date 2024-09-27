@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 22:16:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:26:09 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "engine.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/optional_data.h"

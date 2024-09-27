@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 23:11:51 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 00:41:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:35:36 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "defines.h"
 #include "kdtree.h"
 
-int init_knn(t_knn *knn, size_t k)
+int	init_knn(t_knn *knn, size_t k)
 {
 	size_t	i;
 

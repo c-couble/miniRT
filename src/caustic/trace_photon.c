@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:40:39 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:34:36 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	trace_photon(t_scene *scene, t_ray *ph_ray, int depth, t_photon *ph)
 			if (ph_ray->data.materials.refract_blend != 1)
 			{
 				refract.color = scale_color(&ph_ray->data.color,
-					1 - ph_ray->data.materials.refract_blend);
+						1 - ph_ray->data.materials.refract_blend);
 				ph->color.color = multiply_color(&refract, &ph->color);
 			}
 			get_refraction_ray(ph_ray, &refract_ray.ray,

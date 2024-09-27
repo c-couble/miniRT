@@ -6,10 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 23:06:50 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:31:49 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:24:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "scene.h"
 #include "caustic.h"
 #include "defines.h"
 #include "kdtree.h"
