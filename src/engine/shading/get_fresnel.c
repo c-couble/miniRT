@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 00:31:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 18:01:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:08:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 static void		compute_fresnel(t_ray *ray, double n1, double *kr);
 static double	compute_kr(double cosi, double etai, double etat, double sint);
 
-void	get_fresnel(t_engine *eng, t_ray *c_ray, t_color *color, int depth)
+void	get_fresnel(t_scene *scene, t_ray *c_ray, t_color *color, int depth)
 {
 	double	kr;
 	t_color	refract;
@@ -27,8 +27,8 @@ void	get_fresnel(t_engine *eng, t_ray *c_ray, t_color *color, int depth)
 	compute_fresnel(c_ray, c_ray->data.materials.refraction_ratio, &kr);
 	refract.color = 0;
 	if (kr < 1)
-		refract.color = get_refract(eng, c_ray, *color, depth - 1);
-	reflect.color = get_reflect(eng, c_ray, *color, depth - 1);
+		refract.color = get_refract(scene, c_ray, *color, depth - 1);
+	reflect.color = get_reflect(scene, c_ray, *color, depth - 1);
 	reflect.color = scale_color(&reflect, kr);
 	refract.color = scale_color(&refract, 1 - kr);
 	color->color = add_color(&refract, &reflect);
