@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 00:36:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 03:28:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ uint32_t	get_light(t_engine *engine, t_ray *ray)
 			phong_model(&lights[i], &light, ray, &light_ray);
 		++i;
 	}
-	get_caustic(&engine->caustic, ray, &light);
+	get_caustics(&engine->caustic, ray, &light);
 	return (multiply_color(&light, &ray->data.color));
 }
 

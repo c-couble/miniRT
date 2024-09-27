@@ -88,7 +88,7 @@ SRC = \
 	  engine/render_frame.c \
 	  \
 	  engine/shading/get_ambiant_light.c \
-	  engine/shading/get_caustic.c \
+	  engine/shading/get_caustics.c \
 	  engine/shading/get_fresnel.c \
 	  engine/shading/get_light.c \
 	  engine/shading/get_pixel_color.c \

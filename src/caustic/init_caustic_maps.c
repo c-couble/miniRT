@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:50:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 03:14:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 03:32:04 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int	init_caustic_maps(t_engine *eng, t_caustic *caustic)
 	t_object	*objects;
 
 	(void)caustic;
-	dprintf(2, "init caustic maps\n");
 	lights = eng->scene.lights.array;
 	objects = eng->scene.objects.array;
 	i = 0;
@@ -66,12 +65,8 @@ static int	init_caustic_map(t_engine *eng, t_caustic *c, t_light *light, t_objec
 	get_caustic_aabb(&photon_map, &map.aabb);
 	map.tree = init_kdtree(&photon_map, 0);
 	clear_vector(&photon_map);
-	if (map.tree == NULL && errno)
-	{
-		clear_kdtree(map.tree);
-		return (-1);
-	}
-	if (add_vector(&eng->caustic.caustic_maps, &map, 1) == -1)
+	if ((map.tree == NULL && errno)
+		|| add_vector(&eng->caustic.caustic_maps, &map, 1) == -1)
 	{
 		clear_kdtree(map.tree);
 		return (-1);

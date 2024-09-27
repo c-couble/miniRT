@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 05:54:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 03:26:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,9 @@
 # define Z					2
 
 # define KNN_MAX			50
+# define DEFAULT_BANDWIDTH  0.1
+# define DEFAULT_NN			5
+
 # define PHOTON_PER_OBJ		100000
 # define PHOTON_RADIUS		05
 # define AIR_RATIO			1.0

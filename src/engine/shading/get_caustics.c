@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_caustic.c                                      :+:      :+:    :+:   */
+/*   get_caustics.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 00:38:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 03:29:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@
 #include <stdio.h>
 
 static uint32_t	get_mean_color(t_knn *knn);
-void	get_caustic2(t_caustic *caustic, t_ray *c_ray, t_kdtree *tree, t_color *light);
+void	get_caustic(t_caustic *caustic, t_ray *c_ray, t_kdtree *tree, t_color *light);
 
-void	get_caustic(t_caustic *caustic, t_ray *ray, t_color *light)
+void	get_caustics(t_caustic *caustic, t_ray *ray, t_color *light)
 {
 	size_t			i;
 	t_caustic_map	*map;
@@ -35,12 +35,12 @@ void	get_caustic(t_caustic *caustic, t_ray *ray, t_color *light)
 	while (i < caustic->caustic_maps.size)
 	{
 		if (is_point_iside_aabb(&ray->data.hitpos, &map[i].aabb))
-			get_caustic2(caustic, ray, map[i].tree, light);
+			get_caustic(caustic, ray, map[i].tree, light);
 		++i;
 	}
 }
 
-void	get_caustic2(t_caustic *c, t_ray *c_ray, t_kdtree *tree, t_color *light)
+void	get_caustic(t_caustic *c, t_ray *c_ray, t_kdtree *tree, t_color *light)
 {
 	double		estimate;
 	t_color		caustic;
