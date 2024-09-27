@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 03:29:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:47:50 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	get_caustic(t_caustic *c, t_ray *c_ray, t_kdtree *tree, t_color *light)
 	caustic.color = get_mean_color(&c->knn);
 	estimate = density_estimation(&c->knn, c->bandwidth) * 100;
 	caustic.color = scale_color(&caustic, estimate);
-	printf("estimate: %lf\n", estimate);
+//	printf("estimate: %lf\n", estimate);
 	light->color = add_color(light, &caustic);
 	empty_knn(&c->knn);
 }
