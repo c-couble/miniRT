@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 17:36:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:30:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <fcntl.h>
 #include <unistd.h>
+#include "caustic.h"
 #include "ft_mem.h"
 #include "ft_string.h"
 #include "object.h"
@@ -44,6 +45,8 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 		return (-1);
 	}
 	if (init_bvh(&scene->bvh, &scene->objects) == -1)
+		return (-1);
+	if (init_caustic(scene, &scene->caustic) == -1)
 		return (-1);
 	return (0);
 }

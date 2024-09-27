@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:34:39 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 02:26:49 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:43:05 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,21 +34,20 @@ typedef struct s_caustic
 
 typedef struct s_object t_object ;
 typedef struct s_option t_option;
-typedef struct s_engine	t_engine;
+typedef struct s_scene	t_scene;
+struct s_engine;
 typedef struct s_ray	t_ray;
 
-int		init_caustic(t_engine *eng, t_caustic *caustic);
-int		init_caustic_maps(t_engine *eng, t_caustic *caustic);
+int		init_caustic(t_scene *scene, t_caustic *caustic);
+void	clear_caustic(t_caustic *caustic);
+int		init_caustic_maps(t_scene *scene, t_caustic *caustic);
 void	clear_caustic_maps(t_vector *maps);
-int		init_caustic_hooks(t_engine *engine);
 
-void	clear_photon_maps(t_vector *maps);
-int		init_photon_map(t_engine *eng);
-
-int		trace_photon(t_engine *engine, t_ray *ph_ray, int depth, t_photon *ph);
+int		trace_photon(t_scene *scene, t_ray *ph_ray, int depth, t_photon *ph);
 void	print_photon_map(t_vector *photons);
-double	get_closest_photon(t_engine *engine, t_ray *ray, t_ray *p_ray);
-int		generate_photons(t_engine *eng, t_vector *p, t_object *obj, t_light *light);
-int		parse_caustic(t_engine *engine, t_option *data, char *arg);
+int		generate_photons(t_scene *eng, t_vector *p, t_object *obj, t_light *light);
+
+int		init_caustic_hooks(struct s_engine *engine);
+int		parse_caustic(struct s_engine *engine, t_option *data, char *arg);
 
 #endif

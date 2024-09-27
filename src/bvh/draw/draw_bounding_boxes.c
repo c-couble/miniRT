@@ -6,12 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:50:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 01:52:03 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:45:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bounding_box.h"
-#include "color.h"
 #include "caustic.h"
 #include "draw.h"
 #include "object.h"
@@ -34,7 +33,7 @@ void	draw_bounding_boxes(t_engine *eng, t_vector *objs, uint32_t color)
 		draw_bounding_box(eng, &bbox, color);
 		++i;
 	}
-	draw_caustic_boxes(eng, &eng->caustic, color);
+	draw_caustic_boxes(eng, &eng->scene.caustic, color);
 }
 
 static void	draw_caustic_boxes(t_engine *eng, t_caustic *caustic, uint32_t c)

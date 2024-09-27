@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 23:16:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 03:14:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:46:24 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,30 +38,30 @@ int	init_caustic_hooks(t_engine *engine)
 
 static void	bw_incr(t_engine *engine)
 {
-	engine->caustic.bandwidth += 0.01;
+	engine->scene.caustic.bandwidth += 0.01;
 	engine->scene.camera.should_render = 1;
-	update_caustic_aabb(engine);
+	update_caustic_aabb(&engine->scene);
 }
 
 static void	bw_decr(t_engine *engine)
 {
-	if (engine->caustic.bandwidth > 0.)
+	if (engine->scene.caustic.bandwidth > 0.)
 	{
-		engine->caustic.bandwidth -= 0.01;
-		update_caustic_aabb(engine);
+		engine->scene.caustic.bandwidth -= 0.01;
+		update_caustic_aabb(&engine->scene);
 	}
 	engine->scene.camera.should_render = 1;
 }
 
 static void	nn_incr(t_engine *engine)
 {
-	engine->caustic.nn += 1;
+	engine->scene.caustic.nn += 1;
 	engine->scene.camera.should_render = 1;
 }
 
 static void	nn_decr(t_engine *engine)
 {
-	if (engine->caustic.nn > 0)
-		engine->caustic.nn -= 1;
+	if (engine->scene.caustic.nn > 0)
+		engine->scene.caustic.nn -= 1;
 	engine->scene.camera.should_render = 1;
 }

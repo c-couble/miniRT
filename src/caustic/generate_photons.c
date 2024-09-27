@@ -6,12 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:28:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 02:28:22 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:42:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "engine.h"
 #include "caustic.h"
 #include "defines.h"
 #include "object.h"
@@ -22,7 +21,7 @@
 
 static void	generate_spherical_ray(t_vec3 *dir);
 
-int	generate_photons(t_engine *eng, t_vector *photons, t_object *obj, t_light *light)
+int	generate_photons(t_scene *scene, t_vector *photons, t_object *obj, t_light *light)
 {
 	int			i;
 	t_photon	photon;
@@ -39,7 +38,7 @@ int	generate_photons(t_engine *eng, t_vector *photons, t_object *obj, t_light *l
 		photon.ratio = light->ratio;
 		if (intersect(obj, &p_ray) > INACCURATE_ZERO)
 		{
-			if (trace_photon(eng, &p_ray, DEPTH, &photon))
+			if (trace_photon(scene, &p_ray, DEPTH, &photon))
 			{
 				if (add_vector(photons, &photon, 1) == -1)
 					return (-1);

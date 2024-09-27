@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 23:19:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:28:24 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,21 +33,13 @@ int	init_engine(t_engine *engine, char *scene)
 		clear_scene(&engine->scene);
 		return (-1);
 	}
-	if (init_caustic(engine, &engine->caustic) == -1)
-	{
-		clear_scene(&engine->scene);
-		clear_caustic_maps(&engine->caustic.caustic_maps);
-		return (-1);
-	}
 	if (init_mlx_struct(&engine->mlx) == -1)
 	{
-		clear_caustic_maps(&engine->caustic.caustic_maps);
 		clear_scene(&engine->scene);
 		return (-1);
 	}
 	if (init_hooks(engine) == -1)
 	{
-		clear_caustic_maps(&engine->caustic.caustic_maps);
 		clear_scene(&engine->scene);
 		clear_mlx_struct(&engine->mlx);
 		return (-1);

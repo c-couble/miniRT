@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 03:06:05 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 03:20:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:43:49 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@
 
 static void	update_aabb(t_aabb *aabb, double bandwith);
 
-void	update_caustic_aabb(t_engine *eng)
+void	update_caustic_aabb(t_scene *scene)
 {
 	size_t			i;
 	t_caustic_map	*map;
 
 	i = 0;
-	map = eng->caustic.caustic_maps.array;
-	while (i < eng->caustic.caustic_maps.size)
+	map = scene->caustic.caustic_maps.array;
+	while (i < scene->caustic.caustic_maps.size)
 	{
-		update_aabb(&map[i].aabb, eng->caustic.bandwidth);
+		update_aabb(&map[i].aabb, scene->caustic.bandwidth);
 		++i;
 	}
 }
