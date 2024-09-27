@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 04:22:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 07:16:55 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
 #include "shading.h"
 #include "vec3.h"
 #include "vec4.h"
-#include "density.h"
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
 static void	change_ray_size(t_engine *engine, size_t fps);
@@ -87,7 +86,7 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	ray->ray.y = -1;
 	ray->ray.z = py;
 	ray->startpos = engine->scene.camera.coordinates;
-	vec4_create(&ray->ray, 1, &final);
+	vec4_create(&ray->ray, 0, &final);
 	vec4_mat4_mult(&final, &engine->scene.camera.final, &final);
 	ray->ray.x = final.x;
 	ray->ray.y = final.y;

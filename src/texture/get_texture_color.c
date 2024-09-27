@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 05:52:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 05:57:57 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 03:30:48 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdint.h>
 #include "color.h"
 #include "texture.h"
-#include <stdint.h>
 
 t_color	get_texture_color(t_texture *texture, double u, double v)
 {

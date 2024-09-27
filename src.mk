@@ -21,6 +21,8 @@ SRC = \
 	  bvh/bounding_box/get_paraboloid_aabb.c \
 	  bvh/bounding_box/get_sphere_aabb.c \
 	  bvh/bounding_box/is_point_inside_aabb.c \
+	  bvh/bounding_box/get_cached_triangle_aabb.c \
+	  bvh/bounding_box/get_mesh_aabb.c \
 	  bvh/bounding_box/intersect_aabb.c \
 	  bvh/bounding_box/print_aabb.c \
 	  bvh/bounding_box/print_bounding_box.c \
@@ -115,6 +117,8 @@ SRC = \
 	  math/mat4/mat4_inverse.c \
 	  math/mat4/mat4_multiply.c \
 	  math/mat4/mat4_print.c \
+	  math/mat4/mat4_scale.c \
+	  math/mat4/mat4_view.c \
 	  math/mat4/swap_lines.c \
 	  \
 	  math/vec2/vec2_create.c \
@@ -154,6 +158,7 @@ SRC = \
 	  mlx_wrapper/init_mlx_struct.c \
 	  \
 	  object/intersect.c \
+	  object/intersect_cached_triangle.c \
 	  object/intersect_cylinder.c \
 	  object/intersect_mesh.c \
 	  object/intersect_paraboloid.c \
@@ -161,8 +166,30 @@ SRC = \
 	  object/intersect_sphere.c \
 	  object/intersect_triangle.c \
 	  \
+	  obj_3d/build_obj_cache.c \
+	  obj_3d/clear_obj_3d.c \
+	  obj_3d/clear_objs_3d.c \
+	  obj_3d/clear_mtl.c \
+	  obj_3d/clear_mtls.c \
+	  obj_3d/parse_mtl_file.c \
+	  obj_3d/parse_obj_mtl_if_needed.c \
 	  obj_3d/parse_obj_file.c \
 	  obj_3d/parse_obj_if_needed.c \
+	  \
+	  obj_3d/lines/parse_mtllib.c \
+	  obj_3d/lines/parse_f.c \
+	  obj_3d/lines/parse_vp.c \
+	  obj_3d/lines/parse_vt.c \
+	  obj_3d/lines/parse_v.c \
+	  obj_3d/lines/parse_vn.c \
+	  obj_3d/lines/parse_usemtl.c \
+	  \
+	  obj_3d/mtl_lines/parse_kd.c \
+	  obj_3d/mtl_lines/parse_ks.c \
+	  obj_3d/mtl_lines/parse_map_kd.c \
+	  obj_3d/mtl_lines/parse_newmtl.c \
+	  obj_3d/mtl_lines/parse_ni.c \
+	  obj_3d/mtl_lines/parse_ns.c \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
@@ -203,6 +230,7 @@ SRC = \
 	  util/find_max.c \
 	  util/find_mean.c \
 	  util/find_min.c \
+	  util/init_material.c \
 	  util/get_axis.c \
 	  util/get_biggest_distance.c \
 	  util/get_closest_distance.c \

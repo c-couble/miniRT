@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:28:24 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 07:16:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "engine.h"
 #include "mlx_wrapper.h"
 #include "obj_3d.h"
+#include "obj_mtl.h"
 #include "scene.h"
 #include "caustic.h"
 #include "texture.h"
@@ -26,7 +27,8 @@ static void	init_projection(t_camera *cam, double ratio);
 
 int	init_engine(t_engine *engine, char *scene)
 {
-	init_vector(&engine->objs_3d, sizeof(t_obj_3d));
+	init_vector(&engine->objs_3d, sizeof(t_obj_3d *));
+	init_vector(&engine->obj_mtls, sizeof(t_obj_mtl *));
 	init_vector(&engine->textures, sizeof(t_texture *));
 	if (init_scene(engine, &engine->scene, scene) == -1)
 	{
