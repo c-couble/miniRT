@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 23:01:26 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 03:56:18 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 01:12:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,11 @@
 
 double	intersect_triangle(t_object *obj, t_ray *ray)
 {
-	return (intersect_cached_triangle(&obj->data.triangle.cached, ray));
+	double	t;
+
+	t = intersect_cached_triangle(&obj->data.triangle.cached, ray);
+	if (t == -1)
+		return (-1);
+	ray->data.color = obj->data.triangle.color;
+	return (t);
 }

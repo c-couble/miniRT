@@ -6,18 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 02:53:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 02:03:23 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 05:47:48 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "mat4.h"
 #include "obj_3d.h"
 #include "object/mesh.h"
 #include "object/triangle.h"
 #include "vec3.h"
 #include "vec4.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 static	void	get_matrix(t_mesh *mesh, t_mat4 *matrix);
 static	void	cache_point(t_mesh *mesh, t_mat4 *mat, size_t face, int i);
