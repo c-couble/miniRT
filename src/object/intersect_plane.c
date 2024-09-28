@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 02:45:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 05:15:57 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 05:18:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ double	intersect_plane(t_object *obj, t_ray *ray)
 	ray->data.normal = obj->data.plane.normal;
 	get_hitpos(ray, t);
 	ray->data.texture = obj->optional_data.texture;
+	ray->data.normal_map = obj->optional_data.normal_map;
 	get_uv(ray, &obj->data.plane);
 	return (t);
 }

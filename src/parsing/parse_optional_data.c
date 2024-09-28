@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 05:16:25 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 05:11:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "ft_string.h"
+#include "normal_map.h"
 #include "object.h"
 #include "object/optional_data.h"
 #include "util.h"
@@ -41,6 +42,9 @@ static void	init_optional_data(t_option *data)
 	data->texture = NULL;
 	data->up_texture = NULL;
 	data->down_texture = NULL;
+	data->normal_map = NULL;
+	data->up_normal_map = NULL;
+	data->down_normal_map = NULL;
 	data->checker.x_size = 0;
 	data->checker.y_size = 0;
 	data->checker.x_color.color = 0;
@@ -52,6 +56,7 @@ static t_option_t	get_optional_type(char *type)
 	static char	*values[] = {
 	[MATERIAL] = "ma",
 	[TEXTURE] = "tx",
+	[NORMAL_MAP] = "nm",
 	[CHECKERBOARD] = "ch",
 	};
 	size_t		i;
@@ -71,6 +76,7 @@ static int	parse_option(t_engine *engine, t_object *object, char *arg)
 	static int	(*values[])(t_engine *engine, t_option *data, char *arg) = {
 	[MATERIAL] = parse_material,
 	[TEXTURE] = parse_texture,
+	[NORMAL_MAP] = parse_normal_map,
 	[CHECKERBOARD] = parse_checkerboard,
 	};
 	t_option_t	type;

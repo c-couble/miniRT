@@ -130,6 +130,8 @@ SRC = \
 	  mlx_wrapper/create_mlx_hook.c \
 	  mlx_wrapper/init_mlx_struct.c \
 	  \
+	  normal_map/apply_normal_map.c \
+	  \
 	  object/intersect.c \
 	  object/intersect_cached_triangle.c \
 	  object/intersect_cylinder.c \
@@ -175,6 +177,7 @@ SRC = \
 	  parsing/parse_light.c \
 	  parsing/parse_material.c \
 	  parsing/parse_mesh.c \
+	  parsing/parse_normal_map.c \
 	  parsing/parse_normalized_vector3d.c \
 	  parsing/parse_optional_data.c \
 	  parsing/parse_paraboloid.c \
