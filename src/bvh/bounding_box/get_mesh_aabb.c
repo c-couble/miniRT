@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 05:49:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 01:43:59 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 05:36:06 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 #include "ft_math.h"
 #include "object/mesh.h"
 
-static void	set_mesh_tri_aabb(t_mesh *mesh);
-
 void	get_mesh_aabb(t_mesh *mesh, t_aabb *aabb)
 {
 	size_t	i;
@@ -24,7 +22,6 @@ void	get_mesh_aabb(t_mesh *mesh, t_aabb *aabb)
 	i = 0;
 	vec3_create(DBL_MAX, DBL_MAX, DBL_MAX, &aabb->min);
 	vec3_create(-DBL_MAX, -DBL_MAX, -DBL_MAX, &aabb->max);
-	set_mesh_tri_aabb(mesh);
 	while (i < mesh->triangles)
 	{
 		aabb->min.x = ft_dmin(aabb->min.x, mesh->cache[i].aabb.min.x);
@@ -36,16 +33,4 @@ void	get_mesh_aabb(t_mesh *mesh, t_aabb *aabb)
 		++i;
 	}
 	get_aabb_center(aabb);
-}
-
-static void	set_mesh_tri_aabb(t_mesh *mesh)
-{
-	size_t	i;
-
-	i = 0;
-	while (i < mesh->triangles)
-	{
-		get_cached_triangle_aabb(&mesh->cache[i], &mesh->cache[i].aabb);
-		++i;
-	}
 }
