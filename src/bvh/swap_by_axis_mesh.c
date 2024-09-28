@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 02:00:20 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 02:04:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 05:29:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 
 static void	swap_tri(t_cached_triangle *a, t_cached_triangle *b);
 
-void	swap_by_axis_mesh(t_bvh_node *node, t_cached_triangle *tri, double pos, int axis)
+void	swap_tris(t_bvh_node *n, t_cached_triangle *tri, double pos, int axis)
 {
 	int			i;
 	int			j;
 
-	i = node->start;
-	j = node->start + node->size - 1;
+	i = n->start;
+	j = n->start + n->size - 1;
 	while (i <= j)
 	{
 		if (get_axis(&tri[i].aabb.center, axis) < pos)

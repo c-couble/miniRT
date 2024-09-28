@@ -6,13 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:31:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 02:35:33 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 05:30:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BVH_H
 # define BVH_H
 
+# include "object/triangle.h"
 # include "bounding_box.h"
 # include "vector.h"
 
@@ -53,9 +54,7 @@ void		clear_bvh_tree(t_bvh_node *bvh);
 void		update_node_aabb(t_bvh_node *node, t_vector *objs);
 void		update_node_aabb_mesh(t_bvh_node *node, struct s_cached_triangle *tris);
 void		swap_by_axis(t_bvh_node *bvh, t_vector *objs, double pos, int axis);
-void	print_node2(t_bvh_node *n, struct s_cached_triangle *tri, char *str);
-void	swap_by_axis_mesh(t_bvh_node *node, 
-		struct s_cached_triangle *tri, double pos, int axis);
+void		swap_tris(t_bvh_node *node, t_cached_triangle *t, double p, int a);
 double		get_split_pos_axis(t_bvh_node *node, int *axis);
 double		intersect_bvh(struct s_ray *ray, t_bvh_node *node, t_vector *objs);
 double		intersect_bvh_mesh(struct s_ray *ray, t_bvh_node *node,

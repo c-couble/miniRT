@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 02:53:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 02:39:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 05:20:52 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "bvh.h"
 #include "mat4.h"
 #include "obj_3d.h"
@@ -17,13 +18,11 @@
 #include "object/triangle.h"
 #include "vec3.h"
 #include "vec4.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 static	void	get_matrix(t_mesh *mesh, t_mat4 *matrix);
 static	void	cache_point(t_mesh *mesh, t_mat4 *mat, size_t face, int i);
 static	void	finish_polygon(t_cached_triangle *t);
-static void	set_mesh_tri_aabb(t_mesh *mesh);
+static	void	set_cached_triangles_aabb(t_mesh *mesh);
 
 int	build_obj_cache(t_mesh *mesh)
 {
@@ -49,23 +48,11 @@ int	build_obj_cache(t_mesh *mesh)
 		mesh->cache[i].material = polygon->material;
 		++i;
 	}
-	set_mesh_tri_aabb(mesh);
+	set_cached_triangles_aabb(mesh);
 	mesh->bvh = init_bvh_mesh(mesh->cache, mesh->triangles);
 	if (mesh->bvh == NULL)
 		return (-1);
 	return (0);
-}
-
-static void	set_mesh_tri_aabb(t_mesh *mesh)
-{
-	size_t	i;
-
-	i = 0;
-	while (i < mesh->triangles)
-	{
-		get_cached_triangle_aabb(&mesh->cache[i], &mesh->cache[i].aabb);
-		++i;
-	}
 }
 
 static void	get_matrix(t_mesh *mesh, t_mat4 *matrix)
@@ -104,4 +91,16 @@ static void	finish_polygon(t_cached_triangle *t)
 	vec3_subtract(&t->points[2], &t->points[0], &t->e2);
 	vec3_cross(&t->e1, &t->e2, &t->normal);
 	vec3_normalize(&t->normal);
+}
+
+static void	set_cached_triangles_aabb(t_mesh *mesh)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < mesh->triangles)
+	{
+		get_cached_triangle_aabb(&mesh->cache[i], &mesh->cache[i].aabb);
+		++i;
+	}
 }

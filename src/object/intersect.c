@@ -6,14 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 02:33:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 05:34:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bvh.h"
 #include "object.h"
 #include "ray.h"
-#include <stdio.h>
 
 double	intersect(t_object *obj, t_ray *ray)
 {
@@ -30,9 +28,6 @@ double	intersect(t_object *obj, t_ray *ray)
 	};
 	double			t;
 
-	if (obj->type == MESH)
-		return (intersect_bvh_mesh(ray, obj->data.mesh.bvh, 
-	obj->data.mesh.cache));
 	if (f[obj->type] != NULL)
 	{
 		t = f[obj->type](obj, ray);
