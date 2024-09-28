@@ -6,15 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 16:55:11 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 05:35:03 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 09:31:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bvh.h"
 #include "object.h"
-#include <stdio.h>
 
-static void	search_for_mesh_depth(t_vector *obj, int *bvh_depth);
+static int		search_for_mesh(t_bvh_node *n, t_object *objs);
 
 int	init_bvh(t_bvh *bvh, t_vector *objs)
 {
@@ -24,25 +23,29 @@ int	init_bvh(t_bvh *bvh, t_vector *objs)
 	bvh->depth = 0;
 	bvh->bvh_mode = NONE;
 	get_bvh_depth(bvh->bvh, 0, &bvh->max_depth);
-	search_for_mesh_depth(objs, &bvh->max_depth);
+	bvh->max_depth += search_for_mesh(bvh->bvh, objs->array);
 	return (0);
 }
 
-static void	search_for_mesh_depth(t_vector *obj, int *bvh_depth)
+static int	search_for_mesh(t_bvh_node *n, t_object *objs)
 {
-	size_t		i;
+	const int	size = n->start + n->size;
+	int			i;
+	int			deepest_depth;
 	int			tmp;
-	t_object	*objs;
 
-	i = 0;
+	i = n->start;
+	deepest_depth = 0;
 	tmp = 0;
-	objs = obj->array;
-	while (i < obj->size)
+	while (i < size)
 	{
 		if (objs[i].type == MESH)
+		{
 			get_bvh_depth(objs[i].data.mesh.bvh, 0, &tmp);
-		if (tmp > *bvh_depth)
-			*bvh_depth = tmp;
+			if (tmp > deepest_depth)
+				deepest_depth = tmp;
+		}
 		++i;
 	}
+	return (deepest_depth);
 }
