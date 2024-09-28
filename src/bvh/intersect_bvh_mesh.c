@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 02:22:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 05:35:25 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 06:57:46 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "object.h"
 #include "ray.h"
 #include "util.h"
+#include <stdio.h>
 
 static double	hit(t_bvh_node *bvh, t_cached_triangle *tr, t_ray *r, double t);
 

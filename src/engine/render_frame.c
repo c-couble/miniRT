@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 05:56:16 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 07:03:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	render_frame(t_engine *engine)
 	clock_gettime(CLOCK_REALTIME, &ts2);
 	elapsed = (ts2.tv_sec - ts.tv_sec);
 	elapsed += (ts2.tv_nsec - ts.tv_nsec) / 1000000000.0;
-	engine->scene.camera.last_frame_time = elapsed * 1000;
+	engine->scene.camera.last_frame_time = elapsed * 1000 + 1;
 	printf("frame time elapsed %lfs\n", elapsed);
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }

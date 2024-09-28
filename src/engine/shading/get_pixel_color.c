@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 05:14:57 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 07:32:24 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "defines.h"
 #include "object/camera.h"
 #include "shading.h"
+#include <stdio.h>
 
 uint32_t	get_pixel_color(t_scene *scene, t_ray *c_ray, int depth)
 {
