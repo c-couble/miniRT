@@ -5,12 +5,16 @@ SRC = \
 	  bvh/get_bvh_depth.c \
 	  bvh/get_split_pos_axis.c \
 	  bvh/init_bvh.c \
+	  bvh/init_bvh_mesh.c \
 	  bvh/init_bvh_tree.c \
 	  bvh/intersect_bvh.c \
+	  bvh/intersect_bvh_mesh.c \
 	  bvh/print_objs.c \
 	  bvh/print_node.c \
 	  bvh/swap_by_axis.c \
+	  bvh/swap_by_axis_mesh.c \
 	  bvh/update_node_aabb.c \
+	  bvh/update_node_aabb_mesh.c \
 	  \
 	  bvh/bounding_box/create_empty_aabb.c \
 	  bvh/bounding_box/get_aabb_from_bbox.c \
@@ -30,6 +34,7 @@ SRC = \
 	  bvh/draw/draw_bounding_boxes.c \
 	  bvh/draw/draw_bvh.c \
 	  bvh/draw/draw_lines.c \
+	  bvh/draw/draw_mesh.c \
 	  \
 	  bvh/hooks/change_bvh_mode.c \
 	  bvh/hooks/decrease_full_layer.c \

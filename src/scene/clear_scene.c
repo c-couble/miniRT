@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:40:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 05:20:39 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 02:21:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,8 @@ void	clear_scene(t_scene *scene)
 static void	clear_object(t_object *obj)
 {
 	if (obj->type == MESH)
+	{
+		clear_bvh_tree(obj->data.mesh.bvh);
 		free(obj->data.mesh.cache);
+	}
 }

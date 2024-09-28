@@ -6,19 +6,20 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 03:43:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 00:49:43 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 02:14:37 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MESH_H
 # define MESH_H
 
-# include "bounding_box.h"
+# include "bvh.h"
 # include "obj_3d.h"
 # include "vec3.h"
 
 typedef struct s_mesh
 {
+	t_bvh_node			*bvh;
 	t_vec3				pos;
 	t_vec3				front;
 	t_vec3				up;

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 05:20:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 02:40:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static inline void	add_ray_data(t_ray *ray, t_hit_data *data, double t)
 	ray->data.raw_normal = ray->data.normal;
 	if (vec3_dot(&ray->ray, &ray->data.normal) < 0)
 		vec3_scale(&ray->data.normal, -1);
-	apply_checkerboard(ray, ray->data.obj);
+//	apply_checkerboard(ray, ray->data.obj);
 	if (ray->data.texture)
 	{
 		ray->data.color = get_texture_color(ray->data.texture,
