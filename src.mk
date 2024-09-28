@@ -65,7 +65,7 @@ SRC = \
 	  caustic/clear_caustic.c \
 	  caustic/init_caustic_maps.c \
 	  caustic/clear_caustic_maps.c \
-	  caustic/generate_photons.c \
+	  caustic/get_photons.c \
 	  caustic/trace_photon.c \
 	  caustic/print_photon_map.c \
 	  caustic/density_estimation.c \

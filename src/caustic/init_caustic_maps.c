@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:50:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:25:01 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 22:42:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ static int	init_caustic_map(t_scene *scene, t_light *light, t_object *obj)
 		return (-1);
 	}
 	get_caustic_aabb(&photon_map, &map.aabb);
+	dprintf(2, "photon nb = %ld\n", photon_map.size);
 	map.tree = init_kdtree(&photon_map, 0);
 	clear_vector(&photon_map);
 	if ((map.tree == NULL && errno)

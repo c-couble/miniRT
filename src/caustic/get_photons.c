@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:28:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:25:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 22:42:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@ int	get_photons(t_scene *scene, t_vector *p, t_object *obj, t_light *light)
 				if (add_vector(p, &photon, 1) == -1)
 					return (-1);
 			}
+			++i;
 		}
-		++i;
 	}
 	return (0);
 }
