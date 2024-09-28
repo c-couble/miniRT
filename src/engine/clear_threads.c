@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 02:36:31 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 02:52:23 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 04:01:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <pthread.h>
 #include <stddef.h>
+#include <stdlib.h>
 #include <time.h>
 #include "engine.h"
 
@@ -28,4 +29,5 @@ void	clear_threads(t_engine *engine, size_t threads)
 		++i;
 	}
 	pthread_mutex_destroy(&engine->line_mutex);
+	free(engine->threads);
 }
