@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 13:56:52 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 04:41:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:42:46 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 typedef struct s_photon
 {
 	t_vec3	pos;
-	t_vec3	origin;
 	t_color	color;
 	double	ratio;
 }	t_photon;

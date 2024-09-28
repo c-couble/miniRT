@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 07:16:55 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:35:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ void	render_frame(t_engine *engine)
 	start = clock();
 	i = 0;
 	setup_camera(engine);
-//	printf("start frame\n");
 	while (i < engine->scene.camera.frame_height)
 	{
 		j = 0;
@@ -46,11 +45,6 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-//	double size = 60;
-//	double *datas = generate_gaussian_arr(size, 50);
-//	draw_graph(engine, size, datas);
-//	printf("bvh depth = %d\n", engine->scene.bvh.depth); 	
-//	printf("bvh maxdepth = %d\n", engine->scene.bvh.max_depth);
 	if (engine->scene.camera.render_type == BOUNDING_BOX)
 		draw_bounding_boxes(engine, &engine->scene.objects, WHITE);
 	draw_bvh(engine);
