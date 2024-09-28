@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 22:54:50 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 00:42:04 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:54:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ void	empty_knn(t_knn *knn)
 	size_t	i;
 
 	i = 0;
-	while (i < knn->count)
+	while (i < knn->nn_count)
 	{
 		knn->querys[i].node = NULL;
 		knn->querys[i].dist = DBL_MAX;
 		++i;
 	}
-	knn->count = 0;
-	knn->farest = 0;
+	knn->nn_count = 0;
+	knn->farest_idx = 0;
 }

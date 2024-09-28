@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 17:32:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/21 22:33:35 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:54:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static void	get_nearest(t_kdtree *node, t_knn *knn, t_vec3 *aim, int depth)
 	}
 	get_nearest(next_branch, knn, aim, depth + 1);
 	dist_from_plane = get_axis(aim, axis) - get_axis(&node->photon.pos, axis);
-	if (dist_from_plane * dist_from_plane < knn->querys[knn->farest].dist)
+	if (dist_from_plane * dist_from_plane < knn->querys[knn->farest_idx].dist)
 		get_nearest(other_branch, knn, aim, depth + 1);
 }
 
@@ -66,27 +66,27 @@ static void	set_best(t_kdtree *node, t_knn *knn, double dist)
 {
 	size_t	i;
 
-	if (knn->count < knn->size)
+	if (knn->nn_count < knn->nn_size)
 	{
-		knn->querys[knn->count].node = node;
-		knn->querys[knn->count].dist = dist;
-		if (dist > knn->farest)
-			knn->farest = knn->count;
-		knn->count += 1;
+		knn->querys[knn->nn_count].node = node;
+		knn->querys[knn->nn_count].dist = dist;
+		if (dist > knn->farest_idx)
+			knn->farest_idx = knn->nn_count;
+		knn->nn_count += 1;
 	}
 	else
 	{
 		i = 0;
-		while (i < knn->count)
+		while (i < knn->nn_count)
 		{
-			if (knn->querys[i].dist > knn->querys[knn->farest].dist)
-				knn->farest = i;
+			if (knn->querys[i].dist > knn->querys[knn->farest_idx].dist)
+				knn->farest_idx = i;
 			++i;
 		}
-		if (dist < knn->querys[knn->farest].dist)
+		if (dist < knn->querys[knn->farest_idx].dist)
 		{
-			knn->querys[knn->farest].node = node;
-			knn->querys[knn->farest].dist = dist;
+			knn->querys[knn->farest_idx].node = node;
+			knn->querys[knn->farest_idx].dist = dist;
 		}
 	}
 }

@@ -6,13 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 03:06:05 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:43:49 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:59:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include "caustic.h"
-#include "engine.h"
+#include "defines.h"
+#include "scene.h"
 #include "vector.h"
 
 static void	update_aabb(t_aabb *aabb, double bandwith);
@@ -33,7 +34,7 @@ void	update_caustic_aabb(t_scene *scene)
 
 static void	update_aabb(t_aabb *aabb, double bandwith)
 {
-	const double	incr = 0.025 * sqrt(bandwith);
+	const double	incr = CA_BBOX_SCALING * sqrt(bandwith);
 
 	aabb->min.x -= incr;
 	aabb->min.y -= incr;

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:52:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:33:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:54:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ typedef struct s_query
 typedef struct s_knn
 {
 	t_query		*querys;
-	size_t		size;
-	size_t		count;
+	size_t		nn_size;
+	size_t		nn_count;
 	size_t		max_size;
-	size_t		farest;
+	size_t		farest_idx;
 }	t_knn;
 
 int			init_knn(t_knn *knn, size_t k);

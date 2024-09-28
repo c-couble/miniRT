@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 22:58:38 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 23:00:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:54:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	set_knn_size(t_knn *knn, int k)
 {
-	knn->size = k;
+	knn->nn_size = k;
 }

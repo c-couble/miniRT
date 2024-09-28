@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 21:42:11 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:54:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static void	get_caustic(t_caustic *c, t_ray *r, t_kdtree *tree, t_color *light)
 
 	set_knn_size(&c->knn, c->nn);
 	get_knearest_neighbour(&c->knn, tree, &r->data.hitpos);
-	if (c->knn.count == 0)
+	if (c->knn.nn_count == 0)
 		return ;
 	caustic.color = get_mean_color(&c->knn);
 	estimate = density_estimation(&c->knn, c->bandwidth) * 100;
@@ -58,7 +58,7 @@ static uint32_t	get_mean_color(t_knn *knn)
 	r = 0;
 	g = 0;
 	b = 0;
-	while (i < knn->count)
+	while (i < knn->nn_count)
 	{
 		r += knn->querys[i].node->photon.color.rgb.r;
 		g += knn->querys[i].node->photon.color.rgb.g;

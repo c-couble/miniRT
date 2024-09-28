@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 23:11:51 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:35:36 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:54:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ int	init_knn(t_knn *knn, size_t k)
 	knn->querys = malloc(sizeof(t_query) * KNN_MAX);
 	if (knn->querys == NULL)
 		return (-1);
-	knn->count = 0;
-	knn->size = k;
+	knn->nn_count = 0;
+	knn->nn_size = k;
 	knn->max_size = KNN_MAX;
-	knn->farest = 0;
+	knn->farest_idx = 0;
 	i = 0;
 	while (i < knn->max_size)
 	{

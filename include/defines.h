@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 07:27:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:58:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,11 @@
 # define Y					1
 # define Z					2
 
-# define KNN_MAX			50
-# define DEFAULT_BANDWIDTH  0.1
 # define DEFAULT_NN			5
+# define KNN_MAX			50
+# define CA_BBOX_SCALING	0.025
+# define DEFAULT_BANDWIDTH  0.1
 
-# define PHOTON_PER_OBJ		100000
-# define PHOTON_RADIUS		05
 # define AIR_RATIO			1.0
 # define DEPTH				8
 # define LOW_RENDER_DEPTH   5

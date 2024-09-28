@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 01:16:39 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/21 22:33:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:54:33 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ void	print_knn(t_knn *knn)
 	size_t	i;
 
 	i = 0;
-	printf("knn.count :%ld, knn.size :%ld\n", knn->count, knn->size);
-	printf("knn.farest :%ld\n", knn->farest);
-	while (i < knn->size)
+	printf("knn.count :%ld, knn.size :%ld\n", knn->nn_count, knn->nn_size);
+	printf("knn.farest :%ld\n", knn->farest_idx);
+	while (i < knn->nn_size)
 	{
 		if (knn->querys[i].dist == DBL_MAX)
 		{

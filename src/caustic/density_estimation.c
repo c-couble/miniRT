@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 23:09:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:40:50 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 21:54:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ double	density_estimation(t_knn *knn, double bandwidth)
 
 	i = 0;
 	estimation = 0;
-	while (i < knn->count)
+	while (i < knn->nn_count)
 	{
 		kernel = kernel_gaussian_3d(knn->querys[i].dist, bandwidth);
 		estimation += kernel * knn->querys[i].node->photon.ratio;
 		++i;
 	}
-	return (estimation / (knn->count * volume));
+	return (estimation / (knn->nn_count * volume));
 }
