@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 03:34:17 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 08:52:26 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 #include "obj_mtl.h"
 #include "scene.h"
 #include "texture.h"
+#include "util.h"
 #include "vector.h"
 
 static int	init_threads(t_engine *engine);
@@ -54,6 +55,7 @@ int	init_engine(t_engine *engine, char *scene)
 	}
 	init_projection(&engine->scene.camera, engine->mlx.aspect);
 	init_perspective(&engine->scene.camera, engine->mlx.aspect);
+	init_material(&engine->default_material);
 	return (0);
 }
 

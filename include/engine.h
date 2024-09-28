@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 05:55:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/28 08:52:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <pthread.h>
 # include "mlx_wrapper.h"
+#include "object/material.h"
 # include "scene.h"
 # include "vector.h"
 
@@ -31,6 +32,7 @@ typedef struct s_engine
 	size_t			current_line;
 	size_t			finished_lines;
 	int				stop;
+	t_material_data	default_material;
 }	t_engine;
 
 int		init_engine(t_engine *engine, char *scene);
