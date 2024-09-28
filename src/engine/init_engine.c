@@ -6,11 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 05:13:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 03:34:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <time.h>
 #include "defines.h"
 #include "bvh.h"
 #include "engine.h"
@@ -22,6 +26,7 @@
 #include "texture.h"
 #include "vector.h"
 
+static int	init_threads(t_engine *engine);
 static int	init_hooks(t_engine *engine);
 static void	init_perspective(t_camera *camera, double ratio);
 static void	init_projection(t_camera *cam, double ratio);
@@ -41,7 +46,7 @@ int	init_engine(t_engine *engine, char *scene)
 		clear_scene(&engine->scene);
 		return (-1);
 	}
-	if (init_hooks(engine) == -1)
+	if (init_hooks(engine) == -1 || init_threads(engine) == -1)
 	{
 		clear_scene(&engine->scene);
 		clear_mlx_struct(&engine->mlx);
@@ -49,6 +54,35 @@ int	init_engine(t_engine *engine, char *scene)
 	}
 	init_projection(&engine->scene.camera, engine->mlx.aspect);
 	init_perspective(&engine->scene.camera, engine->mlx.aspect);
+	return (0);
+}
+
+static int	init_threads(t_engine *engine)
+{
+	size_t	i;
+
+	engine->thread_count = THREADS;
+	engine->threads = malloc(engine->thread_count * sizeof(pthread_t));
+	if (engine->threads == NULL)
+		return (-1);
+	if (pthread_mutex_init(&engine->line_mutex, NULL) != 0)
+	{
+		free(engine->threads);
+		return (-1);
+	}
+	engine->current_line = 0;
+	engine->stop = 0;
+	i = 0;
+	pthread_mutex_lock(&engine->line_mutex);
+	while (i < engine->thread_count)
+	{
+		if (pthread_create(engine->threads + i, NULL, routine, engine) != 0)
+		{
+			clear_threads(engine, i);
+			return (-1);
+		}
+		++i;
+	}
 	return (0);
 }
 
