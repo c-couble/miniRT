@@ -6,10 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 05:13:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 02:07:06 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <bits/time.h>
+#include <pthread.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <time.h>
@@ -26,13 +28,76 @@ static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
 static void	change_ray_size(t_engine *engine, size_t fps);
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y);
 
+void	*routine_t(void *arg)
+{
+	t_engine	*engine;
+
+	engine = arg;
+	while (1)
+	{
+		size_t	i;
+		int	got;
+		got = 0;
+		while (got == 0)
+		{
+			pthread_mutex_lock(&engine->line_mutex);
+			if (engine->current_line < engine->scene.camera.frame_height)
+			{
+				i = engine->current_line;
+				++engine->current_line;
+				got = 1;
+			}
+			pthread_mutex_unlock(&engine->line_mutex);
+		}
+		size_t	j;
+
+		j = 0;
+		while (j < engine->scene.camera.frame_width)
+		{
+			handle_single_ray(engine, i, j);
+			++j;
+		}
+		pthread_mutex_lock(&engine->line_mutex);
+		++engine->finished_lines;
+		pthread_mutex_unlock(&engine->line_mutex);
+
+	}
+	return (NULL);
+}
+void	render_frame2(t_engine *engine)
+{
+	struct timespec	ts;
+	struct timespec	ts2;
+
+	clock_gettime(CLOCK_REALTIME, &ts);
+	setup_camera(engine);
+	engine->current_line = 0;
+	engine->finished_lines = 0;
+	pthread_mutex_unlock(&engine->line_mutex);
+	pthread_mutex_lock(&engine->line_mutex);
+	while (engine->finished_lines < engine->scene.camera.frame_height)
+	{
+		pthread_mutex_unlock(&engine->line_mutex);
+		pthread_mutex_lock(&engine->line_mutex);
+	}
+	draw_bvh(engine);
+	clock_gettime(CLOCK_REALTIME, &ts2);
+	double elapsed;
+	elapsed = (ts2.tv_sec - ts.tv_sec);
+	elapsed += (ts2.tv_nsec - ts.tv_nsec) / 1000000000.0;
+	engine->scene.camera.last_frame_time = elapsed * 1000;
+	printf("frame time elapsed %lfs\n", elapsed);
+	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
+}
 void	render_frame(t_engine *engine)
 {
 	size_t	i;
 	size_t	j;
-	size_t	start;
+	struct timespec	ts;
+	struct timespec	ts2;
 
-	start = clock();
+	return (render_frame2(engine));
+	clock_gettime(CLOCK_REALTIME, &ts);
 	i = 0;
 	setup_camera(engine);
 	while (i < engine->scene.camera.frame_height)
@@ -46,8 +111,12 @@ void	render_frame(t_engine *engine)
 		++i;
 	}
 	draw_bvh(engine);
-	engine->scene.camera.last_frame_time = (clock() - start) / 1000;
-	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
+	clock_gettime(CLOCK_REALTIME, &ts2);
+	double elapsed;
+	elapsed = (ts2.tv_sec - ts.tv_sec);
+	elapsed += (ts2.tv_nsec - ts.tv_nsec) / 1000000000.0;
+	engine->scene.camera.last_frame_time = elapsed * 1000;
+	printf("frame time elapsed %lfs\n", elapsed);
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }
 

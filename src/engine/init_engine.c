@@ -6,11 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 05:13:43 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 01:33:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <time.h>
 #include "defines.h"
 #include "bvh.h"
 #include "engine.h"
@@ -25,6 +28,7 @@
 static int	init_hooks(t_engine *engine);
 static void	init_perspective(t_camera *camera, double ratio);
 static void	init_projection(t_camera *cam, double ratio);
+
 
 int	init_engine(t_engine *engine, char *scene)
 {
@@ -46,6 +50,17 @@ int	init_engine(t_engine *engine, char *scene)
 		clear_scene(&engine->scene);
 		clear_mlx_struct(&engine->mlx);
 		return (-1);
+	}
+	engine->current_line = 0;
+	pthread_mutex_init(&engine->line_mutex, NULL);
+	int threads = 4;
+	engine->threads = malloc(threads * sizeof(pthread_t));
+	int i = 0;
+	pthread_mutex_lock(&engine->line_mutex);
+	while (i < threads)
+	{
+		engine->threads[i] = pthread_create(&engine->threads[i], NULL, routine_t, engine);
+		++i;
 	}
 	init_projection(&engine->scene.camera, engine->mlx.aspect);
 	init_perspective(&engine->scene.camera, engine->mlx.aspect);
