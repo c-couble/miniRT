@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 04:49:08 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 06:03:37 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 09:45:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,10 @@
 void	apply_normal_map(t_ray *ray)
 {
 	t_vec3	axis;
-	double angle;
+	double	angle;
 	t_vec3	normal;
 	t_color	color;
+
 	angle = get_theta_axis(&ray->data.normal, &axis);
 	color = get_texture_color(ray->data.normal_map, ray->data.u, ray->data.v);
 	normal.x = ((color.rgb.r / 255.) * 2) - 1;
@@ -29,10 +30,7 @@ void	apply_normal_map(t_ray *ray)
 	normal.z = ((color.rgb.b / 255.) * 2) - 1;
 	vec3_normalize(&normal);
 	quaternion_rotate(&normal, &axis, -angle, &ray->data.normal);
-
-
 	angle = get_theta_axis(&ray->data.raw_normal, &axis);
-	color = get_texture_color(ray->data.normal_map, ray->data.u, ray->data.v);
 	normal.x = ((color.rgb.r / 255.) * 2) - 1;
 	normal.y = ((color.rgb.g / 255.) * 2) - 1;
 	normal.z = ((color.rgb.b / 255.) * 2) - 1;

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 23:59:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 09:37:49 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,8 +98,7 @@ static void	get_data(t_ray *local, t_ray *ray, t_object *obj, t_hit_data *data)
 	vec3_normalize(&local->data.normal);
 	quaternion_rotate(&local->data.normal, &obj->data.paraboloid.rot_axis,
 		-obj->data.paraboloid.theta, &ray->data.normal);
-	ray->data.texture = obj->optional_data.texture;
-	ray->data.normal_map = obj->optional_data.normal_map;
+	set_texture_normal(obj, ray, 0);
 	theta = atan2(local->data.hitpos.y, local->data.hitpos.x);
 	ray->data.u = theta / (2 * M_PI);
 	if (ray->data.u < 0)
@@ -131,8 +130,7 @@ static double	check_disk(t_object *obj, t_ray *ray)
 			obj->data.paraboloid.theta, &hitpoint);
 		ray->data.u = 0.5 - hitpoint.y;
 		ray->data.v = 0.5 - hitpoint.x;
-		ray->data.texture = obj->optional_data.up_texture;
-		ray->data.normal_map = obj->optional_data.up_normal_map;
+		set_texture_normal(obj, ray, 1);
 		return (t);
 	}
 	return (-1);

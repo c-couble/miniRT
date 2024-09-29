@@ -220,6 +220,7 @@ SRC = \
 	  util/get_hitpos.c \
 	  util/get_theta_axis.c \
 	  util/print_error.c \
+	  util/set_texture_normal.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
 	  \
