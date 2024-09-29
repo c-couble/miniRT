@@ -80,6 +80,7 @@ SRC = \
 	  engine/engine_focus_in.c \
 	  engine/engine_loop_hook.c \
 	  engine/init_engine.c \
+	  engine/init_threads.c \
 	  engine/quit_engine.c \
 	  engine/render_frame.c \
 	  engine/routine.c \

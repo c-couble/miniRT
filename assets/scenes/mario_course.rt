@@ -1,11 +1,11 @@
-C 0,110,100 0,-0.8,-0.6 60
+C 30,55,90 0,-0.8,-0.6 60
 
 
 
 A 0.2 255,255,255
 
 
-L 80,100,80 1 255,255,255
+L -40,20,90 1 255,255,255
 
-mesh assets/objects/mario_course/mario_course.obj 0,0,0 1,0,0 0,1,0 1
-mesh assets/objects/gold_mantis/gold_mantis.obj 25,70,32 0,0,-1 0,1,0 10
+mesh assets/objects/mario_course/mario_course.obj 0,0,0 1,0,0 0,0,1 1
+mesh assets/objects/gold_mantis/gold_mantis.obj 1,-13,22 0,1,0 0,0,1 10
