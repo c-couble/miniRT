@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 04:27:10 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 04:30:55 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 06:55:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,14 @@ static t_obj_3d	*add_new_obj(t_engine *engine, char *file);
 t_obj_3d	*parse_obj_if_needed(t_engine *engine, char *file)
 {
 	size_t		i;
-	t_obj_3d	*current;
+	t_obj_3d	**current;
 
 	i = 0;
 	while (i < engine->objs_3d.size)
 	{
-		current = at_vector(&engine->textures, i);
-		if (ft_strcmp(file, current->file_name) == 0)
-			return (current);
+		current = at_vector(&engine->objs_3d, i);
+		if (ft_strcmp(file, (*current)->file_name) == 0)
+			return (*current);
 		++i;
 	}
 	return (add_new_obj(engine, file));

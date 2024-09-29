@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 01:33:43 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:52:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 08:00:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ static int	parse_line(t_engine *engine, t_obj_mtl *mtl, char *line)
 	[KS] = "Ks", [TF] = "Tf", [ILLUM] = "illum", [DISSOLVE] = "d",
 	[NS] = "Ns",
 	[NI] = "Ni",
+	[MAP_BUMP] = "map_Bump",
 	[MAP_KD] = "map_Kd"
 	};
 	char		*arg;
@@ -131,6 +132,7 @@ static int	parse_elem(t_engine *engine, t_obj_mtl *data, char *save, int i)
 	[DISSOLVE] = NULL,
 	[NS] = parse_ns,
 	[NI] = parse_ni,
+	[MAP_BUMP] = parse_map_bump,
 	[MAP_KD] = parse_map_kd
 	};
 

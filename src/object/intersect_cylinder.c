@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 05:15:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 09:36:24 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,9 +72,9 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p, size_t face)
 		ray->data.u = 0.5 - hitpoint.y;
 		ray->data.v = 0.5 - hitpoint.x;
 		if (face == 1)
-			ray->data.texture = obj->optional_data.up_texture;
+			set_texture_normal(obj, ray, 1);
 		else
-			ray->data.texture = obj->optional_data.down_texture;
+			set_texture_normal(obj, ray, 2);
 		return (t);
 	}
 	return (-1);
@@ -95,7 +95,7 @@ static double	hit_cyl(t_object *obj, t_ray *ray, t_vec3 *r1, t_vec3 *r2)
 		obj->data.cylinder.theta, &local);
 	ray->data.u = 0.5 + (atan2(local.y, local.x)) / (M_PI * 2);
 	ray->data.v = 1 - (local.z / obj->data.cylinder.height);
-	ray->data.texture = obj->optional_data.texture;
+	set_texture_normal(obj, ray, 0);
 	return (t);
 }
 

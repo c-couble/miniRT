@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 05:11:58 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 04:48:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct s_hit_data
 	double				v;
 	struct s_object		*obj;
 	struct s_texture	*texture;
+	struct s_texture	*normal_map;
 	t_material_data		*materials;
 }	t_hit_data;
 

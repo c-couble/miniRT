@@ -6,13 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 05:34:31 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 05:55:26 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "bvh.h"
+#include "normal_map.h"
 #include "object.h"
 #include "util.h"
+#include <stdio.h>
 
 static inline void	add_ray_data(t_ray *ray, t_hit_data *data, double t);
 
@@ -56,6 +58,10 @@ static inline void	add_ray_data(t_ray *ray, t_hit_data *data, double t)
 	{
 		ray->data.color = get_texture_color(ray->data.texture,
 				ray->data.u, ray->data.v);
+	}
+	if (ray->data.normal_map)
+	{
+		apply_normal_map(ray);
 	}
 	get_hitpos(ray, t);
 }

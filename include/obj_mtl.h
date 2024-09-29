@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 01:28:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:10:53 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 07:24:46 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef enum e_mtl_line_type
 	DISSOLVE,
 	NS,
 	NI,
+	MAP_BUMP,
 	MAP_KD
 }	t_mtl_line_type;
 
@@ -47,6 +48,7 @@ int			parse_kd(struct s_engine *engine, t_obj_mtl *mtl, char *line);
 int			parse_ks(struct s_engine *engine, t_obj_mtl *mtl, char *line);
 int			parse_ns(struct s_engine *engine, t_obj_mtl *mtl, char *line);
 int			parse_ni(struct s_engine *engine, t_obj_mtl *mtl, char *line);
+int			parse_map_bump(struct s_engine *engine, t_obj_mtl *mtl, char *line);
 int			parse_map_kd(struct s_engine *engine, t_obj_mtl *mtl, char *line);
 
 #endif

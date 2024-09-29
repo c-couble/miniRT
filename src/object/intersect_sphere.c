@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 12:47:39 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 09:36:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,5 @@ static void	fill_uv(t_object *obj, t_ray *ray)
 
 	ray->data.u = 0.5 + (atan2(normal->y, normal->x) / (M_PI * 2));
 	ray->data.v = 0.5 - (asin(normal->z / obj->data.sphere.radius) / M_PI);
-	ray->data.texture = obj->optional_data.texture;
+	set_texture_normal(obj, ray, 0);
 }
