@@ -168,6 +168,8 @@ SRC = \
 	  mlx_wrapper/create_mlx_hook.c \
 	  mlx_wrapper/init_mlx_struct.c \
 	  \
+	  normal_map/apply_normal_map.c \
+	  \
 	  object/intersect.c \
 	  object/intersect_cached_triangle.c \
 	  object/intersect_cylinder.c \
@@ -197,6 +199,7 @@ SRC = \
 	  \
 	  obj_3d/mtl_lines/parse_kd.c \
 	  obj_3d/mtl_lines/parse_ks.c \
+	  obj_3d/mtl_lines/parse_map_bump.c \
 	  obj_3d/mtl_lines/parse_map_kd.c \
 	  obj_3d/mtl_lines/parse_newmtl.c \
 	  obj_3d/mtl_lines/parse_ni.c \
@@ -214,6 +217,7 @@ SRC = \
 	  parsing/parse_light.c \
 	  parsing/parse_material.c \
 	  parsing/parse_mesh.c \
+	  parsing/parse_normal_map.c \
 	  parsing/parse_normalized_vector3d.c \
 	  parsing/parse_optional_data.c \
 	  parsing/parse_paraboloid.c \
@@ -249,6 +253,7 @@ SRC = \
 	  util/get_hitpos.c \
 	  util/get_theta_axis.c \
 	  util/print_error.c \
+	  util/set_texture_normal.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
 	  util/rand_range.c \

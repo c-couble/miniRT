@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 05:19:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 04:31:18 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 06:55:52 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@ static t_obj_mtl	*add_new_mtl(t_engine *engine, char *file);
 t_obj_mtl	*parse_obj_mtl_if_needed(t_engine *engine, char *file)
 {
 	size_t		i;
-	t_obj_mtl	*current;
+	t_obj_mtl	**current;
 
 	i = 0;
 	while (i < engine->obj_mtls.size)
 	{
-		current = at_vector(&engine->textures, i);
-		if (ft_strcmp(file, current->file_name) == 0)
-			return (current);
+		current = at_vector(&engine->obj_mtls, i);
+		if (ft_strcmp(file, (*current)->file_name) == 0)
+			return (*current);
 		++i;
 	}
 	return (add_new_mtl(engine, file));

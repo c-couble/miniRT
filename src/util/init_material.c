@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 04:52:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 07:24:55 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 00:05:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ void	init_material(t_material_data *data)
 	data->reflect_ratio = REFLECT_RATIO;
 	data->refract_index = 0;
 	data->texture = NULL;
+	data->normal_map = NULL;
 	data->name = NULL;
 }
