@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:47:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 07:16:34 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 08:22:57 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 void	clear_engine(t_engine *engine)
 {
+	clear_threads(engine, engine->thread_count);
 	clear_scene(&engine->scene);
 	clear_mlx_struct(&engine->mlx);
 	clear_textures(&engine->textures);

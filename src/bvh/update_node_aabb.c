@@ -6,11 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 23:36:19 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:24:15 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 08:22:17 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bvh.h"
+#include "bounding_box.h"
 #include "float.h"
 #include "ft_math.h"
 #include "object.h"

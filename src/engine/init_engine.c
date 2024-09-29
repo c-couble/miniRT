@@ -6,11 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 07:16:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 08:23:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
+#include <pthread.h>
 #include "defines.h"
 #include "engine.h"
 #include "mlx_wrapper.h"
@@ -19,8 +20,10 @@
 #include "scene.h"
 #include "caustic.h"
 #include "texture.h"
+#include "util.h"
 #include "vector.h"
 
+static int	prepare_engine(t_engine *engine, char *scene);
 static int	init_hooks(t_engine *engine);
 static void	init_perspective(t_camera *camera, double ratio);
 static void	init_projection(t_camera *cam, double ratio);
@@ -30,6 +33,21 @@ int	init_engine(t_engine *engine, char *scene)
 	init_vector(&engine->objs_3d, sizeof(t_obj_3d *));
 	init_vector(&engine->obj_mtls, sizeof(t_obj_mtl *));
 	init_vector(&engine->textures, sizeof(t_texture *));
+	if (prepare_engine(engine, scene) == -1)
+	{
+		clear_textures(&engine->textures);
+		clear_mtls(&engine->obj_mtls);
+		clear_objs_3d(&engine->objs_3d);
+		return (-1);
+	}
+	init_projection(&engine->scene.camera, engine->mlx.aspect);
+	init_perspective(&engine->scene.camera, engine->mlx.aspect);
+	init_material(&engine->default_material);
+	return (0);
+}
+
+static int	prepare_engine(t_engine *engine, char *scene)
+{
 	if (init_scene(engine, &engine->scene, scene) == -1)
 	{
 		clear_scene(&engine->scene);
@@ -40,14 +58,12 @@ int	init_engine(t_engine *engine, char *scene)
 		clear_scene(&engine->scene);
 		return (-1);
 	}
-	if (init_hooks(engine) == -1)
+	if (init_hooks(engine) == -1 || init_threads(engine) == -1)
 	{
 		clear_scene(&engine->scene);
 		clear_mlx_struct(&engine->mlx);
 		return (-1);
 	}
-	init_projection(&engine->scene.camera, engine->mlx.aspect);
-	init_perspective(&engine->scene.camera, engine->mlx.aspect);
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 05:21:11 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/26 06:29:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/28 08:53:07 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ int	parse_obj_file(t_engine *engine, t_obj_3d *obj, char *file)
 
 	if (prepare_obj(obj, file) == -1)
 		return (-1);
+	obj->current_material = &engine->default_material;
 	fd = open(file, O_RDONLY);
 	if (fd == -1)
 	{

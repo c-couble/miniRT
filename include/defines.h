@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 21:58:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 08:25:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,13 @@
 # define DEFAULT_RAY_SIZE	25
 # define MINIMUM_FPS		20
 # define MAXIMUM_FPS		20
+# define THREADS			1
 # define ROLL_ANGLE			0.05
 # define SENSITIVITY		2
 # define SPEED				80
 # define MAX_RAY_LEN		1000000
 # define INACCURATE_ZERO	10e-8
-# define BACKGROUND_COLOR	0
+# define BACKGROUND_COLOR	7591935
 # define TILE_DIVIDER		150.
 
 # define NEAR_PLANE			1
