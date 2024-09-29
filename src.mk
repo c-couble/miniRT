@@ -170,6 +170,7 @@ SRC = \
 	  \
 	  obj_3d/mtl_lines/parse_kd.c \
 	  obj_3d/mtl_lines/parse_ks.c \
+	  obj_3d/mtl_lines/parse_map_bump.c \
 	  obj_3d/mtl_lines/parse_map_kd.c \
 	  obj_3d/mtl_lines/parse_newmtl.c \
 	  obj_3d/mtl_lines/parse_ni.c \
