@@ -6,12 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 01:51:43 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 11:36:09 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 #include "defines.h"
+#include "ray.h"
 #include "shading.h"
 
 static void	set_refract_photon(t_ray *ph_ray, t_ray *refr, t_photon *ph);
@@ -52,5 +53,6 @@ static void	set_refract_photon(t_ray *ph_ray, t_ray *refr, t_photon *ph)
 	refr->inv_x = 0;
 	refr->inv_y = 0;
 	refr->inv_z = 0;
+	get_inv_dir(refr);
 	refr->startpos = ph_ray->data.hitpos;
 }

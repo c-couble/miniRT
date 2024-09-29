@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 08:23:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 22:53:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ void	render_frame(t_engine *engine)
 	}
 	printf("bvh depth: %d\n", engine->scene.bvh.depth);
 	printf("bvh max depth: %d\n", engine->scene.bvh.max_depth);
+	if (engine->scene.camera.render_type == BOUNDING_BOX)
+		draw_bounding_boxes(engine, &engine->scene.objects, WHITE);
 	draw_bvh(engine);
 	clock_gettime(CLOCK_REALTIME, &ts2);
 	elapsed = (ts2.tv_sec - ts.tv_sec);

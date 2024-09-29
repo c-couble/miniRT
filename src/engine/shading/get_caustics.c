@@ -6,10 +6,11 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 21:54:15 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 22:48:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "defines.h"
 #include "shading.h"
 
 static uint32_t	get_mean_color(t_knn *knn);
@@ -40,7 +41,7 @@ static void	get_caustic(t_caustic *c, t_ray *r, t_kdtree *tree, t_color *light)
 	if (c->knn.nn_count == 0)
 		return ;
 	caustic.color = get_mean_color(&c->knn);
-	estimate = density_estimation(&c->knn, c->bandwidth) * 100;
+	estimate = density_estimation(&c->knn, c->bandwidth) * ESTIMATION_SCALE;
 	caustic.color = scale_color(&caustic, estimate);
 	light->color = add_color(light, &caustic);
 	empty_knn(&c->knn);
