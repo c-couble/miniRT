@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 01:52:33 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 06:13:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 #include "util.h"
 #include "vector.h"
 
-static int	kaboul(t_engine *engine, char *scene);
+static int	prepare_engine(t_engine *engine, char *scene);
 static int	init_hooks(t_engine *engine);
 static void	init_perspective(t_camera *camera, double ratio);
 static void	init_projection(t_camera *cam, double ratio);
@@ -34,7 +34,7 @@ int	init_engine(t_engine *engine, char *scene)
 	init_vector(&engine->objs_3d, sizeof(t_obj_3d *));
 	init_vector(&engine->obj_mtls, sizeof(t_obj_mtl *));
 	init_vector(&engine->textures, sizeof(t_texture *));
-	if (kaboul(engine, scene) == -1)
+	if (prepare_engine(engine, scene) == -1)
 	{
 		clear_textures(&engine->textures);
 		clear_mtls(&engine->obj_mtls);
@@ -47,7 +47,7 @@ int	init_engine(t_engine *engine, char *scene)
 	return (0);
 }
 
-static int	kaboul(t_engine *engine, char *scene)
+static int	prepare_engine(t_engine *engine, char *scene)
 {
 	if (init_scene(engine, &engine->scene, scene) == -1)
 	{

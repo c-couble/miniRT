@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 03:03:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 02:27:47 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 06:29:02 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,11 @@ void	*routine(void *arg)
 	t_engine	*engine;
 	size_t		i;
 	size_t		j;
+	int			thread_id;
 
 	engine = arg;
+	thread_id = engine->thread_run++;
+	(void)thread_id;
 	while (1)
 	{
 		if (set_line(engine, &i) == -1)

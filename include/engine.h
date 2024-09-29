@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 01:52:38 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 06:26:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define ENGINE_H
 
 # include <pthread.h>
+# include <stdatomic.h>
 # include "mlx_wrapper.h"
 # include "object/material.h"
 # include "scene.h"
@@ -33,6 +34,7 @@ typedef struct s_engine
 	size_t			finished_lines;
 	int				stop;
 	t_material_data	default_material;
+	atomic_int		thread_run;
 }	t_engine;
 
 void	clear_engine(t_engine *engine);
