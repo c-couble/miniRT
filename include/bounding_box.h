@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 01:38:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 22:52:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 23:41:52 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void		get_bbox_from_aabb(t_aabb *aabb, t_bbox *bbox);
 double		intersect_aabb(struct s_ray *ray, t_aabb *aabb);
 void		print_bounding_box(t_bbox *b_box);
 void		print_aabb(t_aabb *aabb, char *str);
-void		update_caustic_aabb(struct s_scene *scene, int incr);
+void		update_caustic_aabb(struct s_scene *scene);
 
 void		get_cached_triangle_aabb(struct s_cached_triangle *t, t_aabb *aabb);
 void		get_cylinder_aabb(struct s_cylinder *cyl, t_aabb *aabb);

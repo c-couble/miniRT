@@ -6,12 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 22:48:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 23:06:34 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
 #include "shading.h"
+#include <stdio.h>
 
 static uint32_t	get_mean_color(t_knn *knn);
 static void		get_caustic(t_caustic *c, t_ray *r, t_kdtree *tree, t_color *l);

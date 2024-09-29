@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 22:48:12 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 23:05:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,12 @@
 # define Y					1
 # define Z					2
 
-# define ESTIMATION_SCALE	150
-# define FORCE_P_RAY		0
+# define ESTIMATION_SCALE	100
+# define FORCE_P_RAY		1
 # define DEFAULT_NN			5
 # define KNN_MAX			50
 # define CA_BBOX_SCALING	0.025
-# define DEFAULT_BANDWIDTH  0.6
+# define DEFAULT_BANDWIDTH  0.60
 
 # define AIR_RATIO			1.0
 # define DEPTH				12

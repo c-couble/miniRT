@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 22:53:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 22:57:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,6 @@ void	render_frame(t_engine *engine)
 		pthread_mutex_unlock(&engine->line_mutex);
 		pthread_mutex_lock(&engine->line_mutex);
 	}
-	printf("bvh depth: %d\n", engine->scene.bvh.depth);
-	printf("bvh max depth: %d\n", engine->scene.bvh.max_depth);
 	if (engine->scene.camera.render_type == BOUNDING_BOX)
 		draw_bounding_boxes(engine, &engine->scene.objects, WHITE);
 	draw_bvh(engine);
