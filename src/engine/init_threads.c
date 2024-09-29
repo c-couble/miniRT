@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 01:37:10 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 01:37:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 06:26:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,9 @@ int	init_threads(t_engine *engine)
 		free(engine->threads);
 		return (-1);
 	}
-	engine->current_line = 0;
+	engine->current_line = engine->scene.camera.frame_height;
 	engine->stop = 0;
+	engine->thread_run = 0;
 	i = 0;
 	pthread_mutex_lock(&engine->line_mutex);
 	while (i < engine->thread_count)
