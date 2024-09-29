@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:16:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 00:00:12 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 05:56:02 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
+#include <stdio.h>
 #include "defines.h"
 #include "ft_math.h"
 #include "object/triangle.h"
@@ -59,6 +60,7 @@ static double	get_t(t_cached_triangle *tr, t_ray *ray, t_vec3 *vt, t_vec3 *p)
 static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 {
 	ray->data.normal = t->normal;
+	ray->data.materials = t->material;
 	if (t->point_tx[0] && t->point_tx[1] && t->point_tx[2])
 	{
 		ray->data.u = (1 - u - v) * t->point_tx[0]->x
@@ -71,12 +73,18 @@ static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 		ray->data.v = ft_dabs(fmod(ray->data.v, 1));
 		if (t->material)
 		{
-			ray->data.materials = t->material;
 			ray->data.texture = t->material->texture;
+			ray->data.normal_map = t->material->normal_map;
 		}
 		else
+		{
 			ray->data.texture = NULL;
+			ray->data.normal_map = NULL;
+		}
 	}
 	else
+	{
 		ray->data.texture = NULL;
+		ray->data.normal_map = NULL;
+	}
 }

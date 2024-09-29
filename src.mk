@@ -5,16 +5,21 @@ SRC = \
 	  bvh/get_bvh_depth.c \
 	  bvh/get_split_pos_axis.c \
 	  bvh/init_bvh.c \
+	  bvh/init_bvh_mesh.c \
 	  bvh/init_bvh_tree.c \
 	  bvh/intersect_bvh.c \
+	  bvh/intersect_bvh_mesh.c \
 	  bvh/print_objs.c \
 	  bvh/print_node.c \
 	  bvh/swap_by_axis.c \
+	  bvh/swap_by_axis_mesh.c \
 	  bvh/update_node_aabb.c \
+	  bvh/update_node_aabb_mesh.c \
 	  \
 	  bvh/bounding_box/create_empty_aabb.c \
 	  bvh/bounding_box/get_aabb_from_bbox.c \
 	  bvh/bounding_box/get_bbox_from_aabb.c \
+	  bvh/bounding_box/get_aabb_center.c \
 	  bvh/bounding_box/get_objects_aabb.c \
 	  bvh/bounding_box/get_cylinder_aabb.c \
 	  bvh/bounding_box/get_paraboloid_aabb.c \
@@ -28,7 +33,10 @@ SRC = \
 	  bvh/draw/draw_bounding_box.c \
 	  bvh/draw/draw_bounding_boxes.c \
 	  bvh/draw/draw_bvh.c \
+	  bvh/draw/draw_bvh_at_depth.c \
+	  bvh/draw/draw_bvh_from_depth.c \
 	  bvh/draw/draw_lines.c \
+	  bvh/draw/draw_mesh.c \
 	  \
 	  bvh/hooks/change_bvh_mode.c \
 	  bvh/hooks/decrease_full_layer.c \
@@ -72,6 +80,7 @@ SRC = \
 	  engine/engine_focus_in.c \
 	  engine/engine_loop_hook.c \
 	  engine/init_engine.c \
+	  engine/init_threads.c \
 	  engine/quit_engine.c \
 	  engine/render_frame.c \
 	  engine/routine.c \

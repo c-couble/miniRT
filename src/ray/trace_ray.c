@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 05:41:22 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 05:55:26 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "normal_map.h"
 #include "object.h"
 #include "util.h"
+#include <stdio.h>
 
 static inline void	add_ray_data(t_ray *ray, t_hit_data *data, double t);
 

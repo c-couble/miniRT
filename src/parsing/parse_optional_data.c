@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 05:11:12 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 05:30:33 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include "object.h"
 #include "object/optional_data.h"
 #include "util.h"
+#include <stdio.h>
 
 static void			init_optional_data(t_option *data);
 static t_option_t	get_optional_type(char *type);
