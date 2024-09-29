@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 07:03:11 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 05:25:51 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ void	render_frame(t_engine *engine)
 		pthread_mutex_unlock(&engine->line_mutex);
 		pthread_mutex_lock(&engine->line_mutex);
 	}
+	printf("bvh depth: %d\n", engine->scene.bvh.depth);
+	printf("bvh max depth: %d\n", engine->scene.bvh.max_depth);
 	draw_bvh(engine);
 	clock_gettime(CLOCK_REALTIME, &ts2);
 	elapsed = (ts2.tv_sec - ts.tv_sec);
