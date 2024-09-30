@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 19:31:22 by ccouble           #+#    #+#             */
-/*   Updated: 2024/05/15 19:32:00 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 20:36:44 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "ft_io.h"
 
 void	print_error(char *err)
 {
-	dprintf(2, "Error\n%s\n", err);
+	ft_dprintf(2, "Error\n%s\n", err);
 }

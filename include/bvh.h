@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:31:59 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 21:11:40 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:38:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ double		intersect_bvh(t_ray *ray, t_bvh_node *node, t_vector *objs);
 double		intersect_bvh_mesh(t_ray *r, t_bvh_node *n, t_cached_triangle *t);
 
 void		get_bvh_depth(t_bvh_node *b, struct s_object *o, int d, int *d_ptr);
-void		print_node(t_bvh_node *n, t_vector *objs, char *str);
 void		print_objs(t_vector *objs);
 
 int			init_bvh_hooks(struct s_engine *engine);

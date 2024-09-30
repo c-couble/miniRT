@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:32:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:36:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 #include "draw.h"
 #include "defines.h"
 #include "engine.h"
+#include "ft_io.h"
 #include "mlx.h"
 #include "save_render.h"
 
@@ -68,7 +69,7 @@ static int	save_render_to_file(t_engine *engine)
 		printf("finished save frame !\n");
 		if (save_render_file(engine) == -1)
 		{
-			dprintf(2, "Error saving file\n");
+			ft_dprintf(2, "Error saving file\n");
 			mlx_loop_end(engine->mlx.mlx);
 			return (-1);
 		}

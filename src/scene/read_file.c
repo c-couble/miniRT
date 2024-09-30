@@ -6,15 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 17:27:20 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 08:41:49 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:37:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <errno.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "defines.h"
 #include "engine.h"
 #include "ft_io.h"
 #include "object.h"
@@ -56,7 +54,7 @@ static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i)
 
 	if (init_object(engine, &obj, line) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error\nParsing error on line %ld\n", i);
+		ft_dprintf(STDERR_FILENO, "Error\nParsing error on line %d\n", (int) i);
 		return (-1);
 	}
 	if (obj.type == LIGHT)
