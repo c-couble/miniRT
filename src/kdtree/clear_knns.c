@@ -1,20 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_caustic.c                                    :+:      :+:    :+:   */
+/*   clear_knns.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 23:10:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:33:45 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/30 10:22:30 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/30 10:38:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "caustic.h"
+
+#include <stdlib.h>
 #include "kdtree.h"
 
-void	clear_caustic(t_caustic *caustic)
+static void	clear_knn(t_knn *knn);
+
+void	clear_knns(t_knn *knn, size_t knn_size)
 {
-	clear_knns(caustic->knn, caustic->knn_nb);
-	clear_caustic_maps(&caustic->caustic_maps);
+	size_t	i;
+
+	i = 0;
+	while (i < knn_size && knn[i].querys)
+	{
+		clear_knn(&knn[i]);
+		++i;
+	}
+	free(knn);
+}
+
+static void	clear_knn(t_knn *knn)
+{
+	free(knn->querys);
 }

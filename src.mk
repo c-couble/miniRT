@@ -118,7 +118,7 @@ SRC = \
 	  kdtree/init_knn.c \
 	  kdtree/empty_knn.c \
 	  kdtree/set_knn_size.c \
-	  kdtree/clear_knn.c \
+	  kdtree/clear_knns.c \
 	  kdtree/print_kdtree.c \
 	  kdtree/print_knn.c \
 	  kdtree/sort_photon_axis.c \

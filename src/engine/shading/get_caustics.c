@@ -6,13 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 23:06:34 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:36:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "defines.h"
 #include "shading.h"
-#include <stdio.h>
 
 static uint32_t	get_mean_color(t_knn *knn);
 static void		get_caustic(t_caustic *c, t_ray *r, t_kdtree *tree, t_color *l);
@@ -37,15 +36,15 @@ static void	get_caustic(t_caustic *c, t_ray *r, t_kdtree *tree, t_color *light)
 	double		estimate;
 	t_color		caustic;
 
-	set_knn_size(&c->knn, c->nn);
-	get_knearest_neighbour(&c->knn, tree, &r->data.hitpos);
-	if (c->knn.nn_count == 0)
+	set_knn_size(&c->knn[r->t_id], c->nn_nb);
+	get_knearest_neighbour(&c->knn[r->t_id], tree, &r->data.hitpos);
+	if (c->knn[r->t_id].nn_count == 0)
 		return ;
-	caustic.color = get_mean_color(&c->knn);
-	estimate = density_estimation(&c->knn, c->bandwidth) * ESTIMATION_SCALE;
+	caustic.color = get_mean_color(&c->knn[r->t_id]);
+	estimate = density_estimation(&c->knn[r->t_id], c->bandwidth) * ESTIMATION_SCALE;
 	caustic.color = scale_color(&caustic, estimate);
 	light->color = add_color(light, &caustic);
-	empty_knn(&c->knn);
+	empty_knn(&c->knn[r->t_id]);
 }
 
 static uint32_t	get_mean_color(t_knn *knn)

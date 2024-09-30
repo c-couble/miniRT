@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 01:36:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 07:20:35 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:17:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ uint32_t	get_refract(t_scene *scene, t_ray *c_ray, t_color color, int depth)
 		c_ray->data.materials->refract_index);
 	get_inv_dir(&refract_ray);
 	refract_ray.startpos = c_ray->data.hitpos;
+	refract_ray.t_id = c_ray->t_id;
 	refract.color = get_pixel_color(scene, &refract_ray, depth);
 	refract.color = scale_color(&refract, c_ray->data.materials->refract_blend);
 	color.color = scale_color(&color, 1 - c_ray->data.materials->refract_blend);
