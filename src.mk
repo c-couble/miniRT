@@ -207,6 +207,7 @@ SRC = \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
+	  parsing/parse_background_color.c \
 	  parsing/parse_camera.c \
 	  parsing/parse_caustic.c \
 	  parsing/parse_checkerboard.c \
@@ -225,6 +226,7 @@ SRC = \
 	  parsing/parse_sphere.c \
 	  parsing/parse_texture.c \
 	  parsing/parse_triangle.c \
+	  parsing/parse_uint8t.c \
 	  parsing/parse_vector3d.c \
 	  \
 	  scene/clear_scene.c \

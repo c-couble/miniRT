@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 17:27:20 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:30:51 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 08:41:49 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include "defines.h"
 #include "engine.h"
 #include "ft_io.h"
 #include "object.h"

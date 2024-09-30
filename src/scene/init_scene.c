@@ -6,13 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 21:52:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 08:42:06 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <fcntl.h>
+#include <stdio.h>
 #include <unistd.h>
 #include "caustic.h"
+#include "defines.h"
 #include "engine.h"
 #include "ft_mem.h"
 #include "ft_string.h"
@@ -30,6 +32,7 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 	scene->camera.fov = -1;
 	scene->ambient_light.ratio = -1;
 	scene->scene_name = file;
+	scene->background.color = DEFAULT_BACKGROUND;
 	fd = get_file(file);
 	if (fd == -1)
 		return (-1);
