@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:50:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 15:27:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:38:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 #include "object/light.h"
 #include "scene.h"
 #include "vector.h"
-#include <stdio.h>
 
 static int	init_caustic_map(t_scene *scene, t_light *light, t_object *obj);
 
@@ -53,7 +52,6 @@ static int	init_caustic_map(t_scene *scene, t_light *light, t_object *obj)
 
 	if (obj->optional_data.photon_nb == 0)
 		return (0);
-	dprintf(2, "init caustic map\n");
 	init_vector(&photon_map, sizeof(t_photon));
 	if (get_photons(scene, &photon_map, obj, light) == -1)
 	{
@@ -61,7 +59,6 @@ static int	init_caustic_map(t_scene *scene, t_light *light, t_object *obj)
 		return (-1);
 	}
 	get_caustic_aabb(&photon_map, &map.aabb);
-	dprintf(2, "photon nb = %ld\n", photon_map.size);
 	map.tree = init_kdtree(&photon_map, 0);
 	clear_vector(&photon_map);
 	if ((map.tree == NULL && errno)

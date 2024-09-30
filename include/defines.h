@@ -6,19 +6,19 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 16:35:22 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 20:23:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DEFINES_H
 # define DEFINES_H
 
-# define SCREEN_WIDTH		1920
-# define SCREEN_HEIGHT		1080
+# define SCREEN_WIDTH		3840
+# define SCREEN_HEIGHT		2160
 
 # define DEPTH				12
 # define LOW_RENDER_DEPTH   5
-# define DEFAULT_RAY_SIZE	10
+# define DEFAULT_RAY_SIZE	5
 # define MINIMUM_FPS		20
 # define MAXIMUM_FPS		80
 # define THREADS			16
@@ -31,7 +31,7 @@
 //Caustic parameters
 # define ESTIMATION_SCALE	100
 # define FORCE_P_RAY		1
-# define DEFAULT_NN			5
+# define DEFAULT_NN			10
 # define KNN_MAX			50
 # define CA_BBOX_SCALING	0.025
 # define DEFAULT_BANDWIDTH  0.60

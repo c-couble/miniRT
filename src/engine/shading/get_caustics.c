@@ -6,11 +6,10 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:45:11 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:51:46 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "defines.h"
 #include "shading.h"
 
 static uint32_t	get_mean_color(t_knn *knn);
