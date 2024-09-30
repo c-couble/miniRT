@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 04:52:13 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 00:05:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 06:19:26 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 #include "object/material.h"
 
 void	init_material(t_material_data *data)
-{
+{	
 	data->diffuse_ratio = DIFFUSE_RATIO;
 	data->specular_ratio = SPECULAR_RATIO;
 	data->specular_shine = SPECULAR_SHINE;
 	data->reflect_ratio = REFLECT_RATIO;
 	data->refract_index = 0;
+	data->refract_index = 1;
 	data->texture = NULL;
 	data->normal_map = NULL;
 	data->name = NULL;
