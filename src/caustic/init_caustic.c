@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 23:06:50 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:40:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:44:56 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	init_caustic(t_scene *scene, t_caustic *caustic)
 	caustic->bandwidth = DEFAULT_BANDWIDTH;
 	caustic->knn_max_size = KNN_MAX;
 	caustic->knn_nb = THREADS;
+	caustic->intensity_scalar = ESTIMATION_SCALE;
 	if (init_knns(caustic) == -1)
 		return (-1);
 	init_vector(&caustic->caustic_maps, sizeof(t_caustic_map));
