@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:25:27 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:27:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include "normal_map.h"
 #include "object.h"
 #include "object/optional_data.h"
+#include "save_render.h"
 #include "util.h"
 
 static void			init_optional_data(t_option *data);
@@ -61,6 +62,7 @@ static t_option_t	get_optional_type(char *type)
 	[NORMAL_MAP] = "nm",
 	[CHECKERBOARD] = "ch",
 	[CAUSTIC] = "ca",
+	[SAVE_RENDER] = "sr",
 	[BACKGROUND_COLOR] = "bkg",
 	};
 	size_t		i;
@@ -83,6 +85,7 @@ static int	parse_option(t_engine *engine, t_object *object, char *arg)
 	[NORMAL_MAP] = parse_normal_map,
 	[CHECKERBOARD] = parse_checkerboard,
 	[CAUSTIC] = parse_caustic,
+	[SAVE_RENDER] = parse_save_render,
 	[BACKGROUND_COLOR] = parse_background_color,
 	};
 	t_option_t	type;

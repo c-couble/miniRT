@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:59:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 04:51:20 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 10:41:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ int	init_camera_hooks(t_engine *engine)
 	if (init_rotation_hooks(engine) == -1)
 		return (-1);
 	hook = create_mlx_hook(lock_camera, engine, KEY_ENTER, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(save_render, engine, KEY_P, PRESS);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	hook = create_mlx_hook(speed_down, engine, MOUSE_WHEELDOWN, MOUSE);

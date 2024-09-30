@@ -6,10 +6,9 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:23:05 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:38:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>

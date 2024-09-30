@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:02:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:37:34 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
 #include <stdlib.h>
+#include "defines.h"
 #include "color.h"
 #include "object/light.h"
 #include "ray.h"
