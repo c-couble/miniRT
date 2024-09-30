@@ -6,20 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 23:09:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 21:54:15 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 06:10:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "kdtree.h"
 #include <math.h>
 
-double	kernel_gaussian_3d(double dist, double bandwidth)
-{
-	const double	normal = 1.0 / pow(2 * M_PI, 1.5) * pow(bandwidth, 3);
-	const double	exponant = exp(-dist / (2 * (bandwidth * bandwidth)));
-
-	return (normal * exponant);
-}
+static double	kernel_gaussian_3d(double dist, double bandwidth);
 
 double	density_estimation(t_knn *knn, double bandwidth)
 {
@@ -37,4 +31,12 @@ double	density_estimation(t_knn *knn, double bandwidth)
 		++i;
 	}
 	return (estimation / (knn->nn_count * volume));
+}
+
+static double	kernel_gaussian_3d(double dist, double bandwidth)
+{
+	const double	normal = 1.0 / pow(2 * M_PI, 1.5) * pow(bandwidth, 3);
+	const double	exponant = exp(-dist / (2 * (bandwidth * bandwidth)));
+
+	return (normal * exponant);
 }
