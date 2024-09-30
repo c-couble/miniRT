@@ -79,6 +79,12 @@ SRC = \
 	  caustic/density_estimation.c \
 	  \
 	  caustic/hooks/init_caustic_hooks.c \
+	  caustic/hooks/bandwith_incr.c \
+	  caustic/hooks/bandwith_decr.c \
+	  caustic/hooks/estimation_incr.c \
+	  caustic/hooks/estimation_decr.c \
+	  caustic/hooks/nearest_neighbour_incr.c \
+	  caustic/hooks/nearest_neighbour_decr.c \
 	  \
 	  color/add_color.c \
 	  color/add_scale_color.c \

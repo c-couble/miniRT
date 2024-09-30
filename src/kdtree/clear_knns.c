@@ -6,10 +6,9 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 10:22:30 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:38:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:02:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <stdlib.h>
 #include "kdtree.h"

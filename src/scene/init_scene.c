@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 08:42:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:23:05 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 	scene->camera.fov = -1;
 	scene->ambient_light.ratio = -1;
 	scene->scene_name = file;
-	scene->background.color = DEFAULT_BACKGROUND;
 	fd = get_file(file);
 	if (fd == -1)
 		return (-1);
@@ -56,6 +55,7 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 
 static void	init_object_vectors(t_scene *scene)
 {
+	scene->background.color = DEFAULT_BACKGROUND;
 	init_vector(&scene->objects, sizeof(t_object));
 	init_vector(&scene->lights, sizeof(t_light));
 	init_vector(&scene->planes, sizeof(t_object));

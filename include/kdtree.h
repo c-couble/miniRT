@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 17:52:23 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:40:14 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:23:23 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ typedef struct s_knn
 	size_t		farest_idx;
 }	t_knn;
 
-int	init_knn(t_knn *knn, size_t k, size_t knn_max);
-void	clear_knns(t_knn *knn, size_t knn_size);
+int			init_knn(t_knn *knn, size_t k, size_t knn_max);
+void		clear_knns(t_knn *knn, size_t knn_size);
 void		print_knn(t_knn *knn);
 void		empty_knn(t_knn *knn);
 void		set_knn_size(t_knn *knn, int k);
