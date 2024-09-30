@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 02:18:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:25:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:36:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef enum e_option_t
 	NORMAL_MAP,
 	CHECKERBOARD,
 	CAUSTIC,
+	SAVE_RENDER,
 	BACKGROUND_COLOR,
 	UNKNOWN_OPTION,
 }	t_option_t;

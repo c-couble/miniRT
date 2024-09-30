@@ -6,18 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:39:17 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:33:13 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "float.h"
-#include <stdlib.h>
-#include "color.h"
-#include "object/light.h"
-#include "ray.h"
 #include "shading.h"
-#include "vec3.h"
-#include "vector.h"
 
 static int	trace_light(t_scene *scene, t_ray *l_ray, t_ray *c_ray, t_light *l);
 

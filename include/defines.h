@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 16:24:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:35:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 
 # define DEPTH				12
 # define LOW_RENDER_DEPTH   5
-# define DEFAULT_RAY_SIZE	25
+# define DEFAULT_RAY_SIZE	10
 # define MINIMUM_FPS		20
-# define MAXIMUM_FPS		20
+# define MAXIMUM_FPS		80
 # define THREADS			16
 # define ROLL_ANGLE			0.05
 # define SENSITIVITY		2

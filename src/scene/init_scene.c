@@ -6,10 +6,9 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:25:34 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:33:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <fcntl.h>
 #include <unistd.h>
 #include "defines.h"

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 08:40:32 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:27:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stddef.h>
 # include <stdint.h>
-# include "color.h"
 # include "mat4.h"
 # include "vec3.h"
 
@@ -33,9 +32,10 @@ typedef struct s_camera
 	t_vec3	front;
 	t_vec3	right;
 	t_vec3	up;
-	t_mat4	projection;
 	t_mat4	perspective;
-	t_mat4	inverse_projection;
+	t_mat4	inv_projection;
+	t_mat4	proj_file;
+	t_mat4	inv_proj_file;
 	t_mat4	view;
 	t_mat4	inverse_view;
 	t_mat4	final;
@@ -48,6 +48,7 @@ typedef struct s_camera
 	size_t	last_frame_time;
 	int		locked;
 	int		should_render;
+	int		save;
 	t_rtype	render_type;
 }	t_camera;
 
@@ -73,6 +74,7 @@ void	reset_roll_angle(struct s_engine *engine);
 void	roll_left(struct s_engine *engine);
 void	roll_right(struct s_engine *engine);
 void	lock_camera(struct s_engine *engine);
+void	save_render(struct s_engine *engine);
 void	speed_down(struct s_engine *engine);
 void	speed_up(struct s_engine *engine);
 void	change_render_mode(struct s_engine *engine);

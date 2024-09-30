@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 04:51:34 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 15:57:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,20 @@ void	setup_camera(t_engine *engine)
 	cam = &engine->scene.camera;
 	get_cam_view(&cam->view, &cam->front, &cam->up, &cam->coordinates);
 	mat4_inverse(&cam->view, &cam->inverse_view);
-	mat4_multiply(&cam->inverse_projection, &cam->inverse_view, &cam->final);
-	cam->frame_width = engine->mlx.width / cam->pixel_square_size + 1;
-	cam->frame_height = engine->mlx.height / cam->pixel_square_size + 1;
+	if (engine->scene.camera.save)
+		mat4_multiply(&cam->inv_proj_file, &cam->inverse_view, &cam->final);
+	else
+		mat4_multiply(&cam->inv_projection, &cam->inverse_view, &cam->final);
+	if (engine->scene.camera.save)
+	{
+		engine->scene.camera.frame_height = engine->render_height;
+		engine->scene.camera.frame_width = engine->render_width;
+	}
+	else
+	{
+		cam->frame_width = engine->mlx.width / cam->pixel_square_size + 1;
+		cam->frame_height = engine->mlx.height / cam->pixel_square_size + 1;
+	}
 }
 
 static void	get_cam_view(t_mat4 *mat, t_vec3 *front, t_vec3 *up, t_vec3 *pos)
