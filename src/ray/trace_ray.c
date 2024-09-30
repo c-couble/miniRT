@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:12:44 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 19:35:48 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include "object.h"
 #include "scene.h"
 #include "util.h"
-#include <stdio.h>
 
 static inline void	add_ray_data(t_ray *ray, t_hit_data *data, double t);
 

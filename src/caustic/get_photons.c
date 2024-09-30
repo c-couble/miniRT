@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:28:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 22:47:24 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:36:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	get_photons(t_scene *scene, t_vector *p, t_object *obj, t_light *light)
 		p_ray.startpos = light->pos;
 		photon.color.color = light->color.color;
 		photon.ratio = light->ratio;
-		if (intersect(obj, &p_ray) > INACCURATE_ZERO)
+		if (intersect(obj, &p_ray) > -INACCURATE_ZERO)
 		{
 			if (trace_photon(scene, &p_ray, DEPTH, &photon))
 			{

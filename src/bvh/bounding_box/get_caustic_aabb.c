@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 05:30:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/26 05:36:37 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:42:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,10 @@ void	get_caustic_aabb(t_vector *photons, t_aabb *aabb)
 		aabb->max.z = ft_dmax(aabb->max.z, photon[i].pos.z);
 		++i;
 	}
+	aabb->min.x -= 1;
+	aabb->min.y -= 1;
+	aabb->min.z -= 1;
+	aabb->max.x += 1;
+	aabb->max.y += 1;
+	aabb->max.z += 1;
 }
