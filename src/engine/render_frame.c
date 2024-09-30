@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 17:09:54 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 18:42:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <time.h>
 #include "color.h"
 #include "defines.h"
 #include "engine.h"
@@ -39,7 +38,6 @@ void	render_frame(t_engine *engine)
 		}
 		++i;
 	}
-	printf("finish frame\n");
 }
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
@@ -58,8 +56,8 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	double	py;
 	t_vec4	final;
 
-	px = (2 * ((x + 0.5) / (engine->scene.camera.frame_width)) - 1);
-	py = (1 - 2 * (y + 0.5) / (engine->scene.camera.frame_height / 1.));
+	px = (2 * ((x + 0.5) / (engine->mlx.width)) - 1);
+	py = (1 - 2 * (y + 0.5) / (engine->mlx.height / 1.));
 	ray->ray.x = px;
 	ray->ray.y = -1;
 	ray->ray.z = py;

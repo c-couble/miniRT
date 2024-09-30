@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:55:01 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 18:12:02 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ typedef struct s_camera
 	t_mat4	view;
 	t_mat4	inverse_view;
 	t_mat4	final;
-	size_t	frame_width;
-	size_t	frame_height;
 	double	fov;
 }	t_camera;
 
