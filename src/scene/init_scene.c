@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 15:14:50 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:25:34 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,8 +59,8 @@ static void	set_scene(t_scene *scene, char *file)
 
 static int	fill_objects(t_engine *engine, t_scene *scene, char *file)
 {
-	int	fd
-	;
+	int	fd;
+
 	fd = get_file(file);
 	if (fd == -1)
 		return (-1);

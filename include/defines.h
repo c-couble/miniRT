@@ -6,15 +6,15 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 13:38:24 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:24:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DEFINES_H
 # define DEFINES_H
 
-# define SCREEN_WIDTH		1920 * 2
-# define SCREEN_HEIGHT		1080 * 2
+# define SCREEN_WIDTH		1920
+# define SCREEN_HEIGHT		1080
 
 # define DEPTH				12
 # define LOW_RENDER_DEPTH   5

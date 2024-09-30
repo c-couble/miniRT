@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 23:06:50 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:44:56 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:29:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	init_caustic(t_scene *scene, t_caustic *caustic)
 	if (init_knns(caustic) == -1)
 		return (-1);
 	init_vector(&caustic->caustic_maps, sizeof(t_caustic_map));
-	if (init_caustic_maps(scene, caustic) == -1)
+	if (init_caustic_maps(scene) == -1)
 	{
 		clear_knns(caustic->knn, caustic->knn_nb);
 		clear_vector(&caustic->caustic_maps);
