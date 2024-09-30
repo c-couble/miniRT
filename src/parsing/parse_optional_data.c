@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 10:47:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 13:38:37 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ static t_option_t	get_optional_type(char *type)
 	[CHECKERBOARD] = "ch",
 	[CAUSTIC] = "ca",
 	[SAVE_RENDER] = "sr",
+	[BACKGROUND_COLOR] = "bkg",
 	};
 	size_t		i;
 
@@ -84,6 +85,7 @@ static int	parse_option(t_engine *engine, t_object *object, char *arg)
 	[CHECKERBOARD] = parse_checkerboard,
 	[CAUSTIC] = parse_caustic,
 	[SAVE_RENDER] = parse_save_render,
+	[BACKGROUND_COLOR] = parse_background_color,
 	};
 	t_option_t	type;
 	char		*name;

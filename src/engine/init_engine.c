@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:39:56 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 13:39:47 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ int	init_engine(t_engine *engine, char *scene)
 		clear_objs_3d(&engine->objs_3d);
 		return (-1);
 	}
+	init_projection(&engine->scene.camera, engine->mlx.aspect);
 	init_projection(&engine->scene.camera, engine->mlx.aspect);
 	init_perspective(&engine->scene.camera, engine->mlx.aspect);
 	init_material(&engine->default_material);

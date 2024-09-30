@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 20:28:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 04:27:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 08:40:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct s_scene
 	t_vector			planes;
 	t_bvh				bvh;
 	char				*scene_name;
+	t_color				background;
 }	t_scene;
 
 struct	s_engine;

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 10:42:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 13:36:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 typedef enum e_rtype
 {
 	CLASSIC,
-	BOUNDING_BOX,
 	NORMAL,
-	UV_MAP
+	UV_MAP,
+	BOUNDING_BOX
 }	t_rtype;
 
 typedef struct s_camera

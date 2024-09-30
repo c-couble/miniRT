@@ -6,12 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 10:57:27 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 13:38:15 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <fcntl.h>
+#include <stdio.h>
 #include <unistd.h>
 #include "caustic.h"
+#include "defines.h"
 #include "engine.h"
 #include "ft_mem.h"
 #include "ft_string.h"
@@ -52,6 +54,7 @@ int	init_scene(t_engine *engine, t_scene *scene, char *file)
 
 static void	init_object_vectors(t_scene *scene)
 {
+	scene->background.color = DEFAULT_BACKGROUND;
 	init_vector(&scene->objects, sizeof(t_object));
 	init_vector(&scene->lights, sizeof(t_light));
 	init_vector(&scene->planes, sizeof(t_object));
