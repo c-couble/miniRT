@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 07:18:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 01:50:07 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,8 @@ static int	trace_light(t_scene *scene, t_ray *l_ray, t_ray *c_ray, t_light *l)
 	d = trace_ray(scene, l_ray);
 	if (vec3_dot(&c_ray->data.normal, &l_ray->ray) > 0)
 		return (0);
-	if (d < norm && d > 0 && l_ray->data.materials->refract_index)
-		return (0);
+	if (d < norm && d > 0 && l_ray->data.materials->refract_index 
+		&& l_ray->data.obj->type == PLANE)
+		return (1);
 	return (d < 0 || d > norm);
 }
