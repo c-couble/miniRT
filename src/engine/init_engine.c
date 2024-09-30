@@ -6,13 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 15:43:13 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:28:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include <pthread.h>
-#include <sched.h>
 #include <stdlib.h>
 #include "defines.h"
 #include "engine.h"

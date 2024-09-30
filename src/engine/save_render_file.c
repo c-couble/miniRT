@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 10:55:10 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 15:43:45 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:27:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ static int	write_to_file(t_engine *engine, int fd)
 	ret = write(fd, v.array, v.size);
 	clear_vector(&v);
 	if (ret == -1)
-		write(2, "Error saving file\n", 18);
+		dprintf(2, "Error saving file\n");
 	return (0);
 }
 
@@ -68,7 +68,7 @@ static int	write_header(t_engine *engine, int fd)
 	if (dprintf(fd, "P6\n%d\n%d\n255\n",
 			engine->render_width, engine->render_height) == -1)
 	{
-		write(2, "Error saving file\n", 18);
+		dprintf(2, "Error saving file\n");
 		return (-1);
 	}
 	return (0);

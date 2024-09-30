@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:02:12 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:27:48 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ static int	save_render_to_file(t_engine *engine)
 		printf("finished save frame !\n");
 		if (save_render_file(engine) == -1)
 		{
-			write(2, "Fatal error\n", 12);
+			dprintf(2, "Error saving file\n");
 			mlx_loop_end(engine->mlx.mlx);
 			return (-1);
 		}
