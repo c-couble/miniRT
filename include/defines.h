@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 15:50:56 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:16:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # define DEFAULT_RAY_SIZE	100
 # define MINIMUM_FPS		20
 # define MAXIMUM_FPS		20
-# define THREADS			16
+# define THREADS			1
 # define ROLL_ANGLE			0.05
 # define SENSITIVITY		2
 # define CAMERA_SPEED		80

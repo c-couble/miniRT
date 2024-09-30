@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 08:19:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 18:07:46 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 16:23:04 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 # define ORANGE	0xFFFFA500
 # define CYAN	0xFF00FFFF
 # define PURPLE	0xFF800080
+# define NO_TEXTURE 7434869
 
 struct	s_ray;
 
