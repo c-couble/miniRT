@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 00:03:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 09:27:14 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # define DEFAULT_RAY_SIZE	25
 # define MINIMUM_FPS		20
 # define MAXIMUM_FPS		20
-# define THREADS			1
+# define THREADS			16
 # define ROLL_ANGLE			0.05
 # define SENSITIVITY		2
 # define SPEED				80
