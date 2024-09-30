@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 03:43:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 02:14:37 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 08:59:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ typedef struct s_mesh
 	t_obj_3d			*obj_3d;
 	t_cached_triangle	*cache;
 	size_t				triangles;
+	int					gouraud_shading;
 }	t_mesh;
 
 union	u_object_data;

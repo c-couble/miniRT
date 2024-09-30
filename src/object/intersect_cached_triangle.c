@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:16:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 07:36:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 09:12:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 
 static double	get_t(t_cached_triangle *t, t_ray *ray, t_vec3 *vt, t_vec3 *p);
 static void		set_data(t_cached_triangle *t, t_ray *ray, double u, double v);
+static void		gouraud(t_cached_triangle *t, t_ray *ray, double u, double v);
 
 double	intersect_cached_triangle(t_cached_triangle *triangle, t_ray *ray)
 {
@@ -53,36 +54,16 @@ static double	get_t(t_cached_triangle *tr, t_ray *ray, t_vec3 *vt, t_vec3 *p)
 	t = inv_det * vec3_dot(&vec_q, &tr->e2);
 	if (t < INACCURATE_ZERO)
 		return (-1);
-	if (tr->has_normals)
-	{
-		t_vec3	normal;
-		t_vec3	n1;
-		t_vec3	n2;
-		t_vec3	n3;
-		n1 = tr->normals[0];
-		n2 = tr->normals[1];
-		n3 = tr->normals[2];
-		vec3_scale(&n1, 1 - u - v);
-		vec3_scale(&n2, u);
-		vec3_scale(&n3, v);
-		vec3_add(&n1, &n2, &normal);
-		vec3_add(&normal, &n3, &ray->data.normal);
-		vec3_normalize(&ray->data.normal);
-		//vec3_print(&tr->normals[0], "normal 0");
-		//vec3_print(&tr->normals[1], "normal 1");
-		//vec3_print(&tr->normals[2], "normal 2");
-		//vec3_print(&ray->data.normal, "interpolated");
-		//printf("barycentric u %lf v %lf\n", ray->data.u, ray->data.v);
-		//vec3_print(&ray->data.normal, "interpolated");
-	}
-	else
-		ray->data.normal = tr->normal;
 	set_data(tr, ray, u, v);
 	return (t);
 }
 
 static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 {
+	if (t->has_normals)
+		gouraud(t, ray, u, v);
+	else
+		ray->data.normal = t->normal;
 	ray->data.materials = t->material;
 	if (t->material && t->point_tx[0] && t->point_tx[1] && t->point_tx[2])
 	{
@@ -102,4 +83,20 @@ static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 		ray->data.texture = NULL;
 		ray->data.normal_map = NULL;
 	}
+}
+
+static void	gouraud(t_cached_triangle *t, t_ray *ray, double u, double v)
+{
+	t_vec3	tmp1;
+	t_vec3	tmp2;
+
+	tmp1 = t->normals[0];
+	tmp2 = t->normals[1];
+	vec3_scale(&tmp1, 1 - u - v);
+	vec3_scale(&tmp2, u);
+	vec3_add(&tmp1, &tmp2, &ray->data.normal);
+	tmp1 = t->normals[2];
+	vec3_scale(&tmp1, v);
+	vec3_add(&ray->data.normal, &tmp1, &ray->data.normal);
+	vec3_normalize(&ray->data.normal);
 }
