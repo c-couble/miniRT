@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 16:25:43 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 05:45:03 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 07:12:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ int	parse_vn(t_engine *engine, t_obj_3d *obj, char *line)
 	if (parse_double(&vec.x, arg, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	arg = ft_strtok_r(NULL, " \t", &save);
-	if (parse_double(&vec.y, arg, -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.z, arg, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	arg = ft_strtok_r(NULL, " \t", &save);
-	if (parse_double(&vec.z, arg, -DBL_MAX, DBL_MAX) == -1)
+	if (parse_double(&vec.y, arg, -DBL_MAX, DBL_MAX) == -1)
 		return (-1);
 	if (add_vector(&obj->vertex_normals, &vec, 1) == -1)
 		return (-1);

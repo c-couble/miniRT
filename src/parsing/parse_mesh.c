@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 03:00:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 05:47:32 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 09:20:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include "engine.h"
 #include "ft_string.h"
@@ -60,6 +61,11 @@ static int	read_obj_data(t_engine *engine, t_object_data *data, char *obj)
 		return (-1);
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->mesh.scale, arg, -DBL_MAX, DBL_MAX) == -1)
+		return (-1);
+	arg = ft_strtok(NULL, " \t");
+	if (arg == NULL)
+		return (-1);
+	if (parse_int(&data->mesh.gouraud_shading, arg, 0, 1) == -1)
 		return (-1);
 	data->mesh.obj_3d = parse_obj_if_needed(engine, obj);
 	if (data->mesh.obj_3d == NULL)

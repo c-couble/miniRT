@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:16:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 09:42:28 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 09:12:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 
 static double	get_t(t_cached_triangle *t, t_ray *ray, t_vec3 *vt, t_vec3 *p);
 static void		set_data(t_cached_triangle *t, t_ray *ray, double u, double v);
+static void		gouraud(t_cached_triangle *t, t_ray *ray, double u, double v);
 
 double	intersect_cached_triangle(t_cached_triangle *triangle, t_ray *ray)
 {
@@ -59,7 +60,10 @@ static double	get_t(t_cached_triangle *tr, t_ray *ray, t_vec3 *vt, t_vec3 *p)
 
 static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 {
-	ray->data.normal = t->normal;
+	if (t->has_normals)
+		gouraud(t, ray, u, v);
+	else
+		ray->data.normal = t->normal;
 	ray->data.materials = t->material;
 	if (t->material && t->point_tx[0] && t->point_tx[1] && t->point_tx[2])
 	{
@@ -79,4 +83,20 @@ static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 		ray->data.texture = NULL;
 		ray->data.normal_map = NULL;
 	}
+}
+
+static void	gouraud(t_cached_triangle *t, t_ray *ray, double u, double v)
+{
+	t_vec3	tmp1;
+	t_vec3	tmp2;
+
+	tmp1 = t->normals[0];
+	tmp2 = t->normals[1];
+	vec3_scale(&tmp1, 1 - u - v);
+	vec3_scale(&tmp2, u);
+	vec3_add(&tmp1, &tmp2, &ray->data.normal);
+	tmp1 = t->normals[2];
+	vec3_scale(&tmp1, v);
+	vec3_add(&ray->data.normal, &tmp1, &ray->data.normal);
+	vec3_normalize(&ray->data.normal);
 }
