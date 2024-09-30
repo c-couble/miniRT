@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:59:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 19:51:25 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,8 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p)
 	if (vec3_get_norm(&hitpoint) < obj->data.cylinder.radius)
 	{
 		ray->data.normal = plane.normal;
+		if (obj->data.cylinder.radius < INACCURATE_ZERO)
+			return (-1);
 		vec3_scale(&hitpoint, 1 / (obj->data.cylinder.radius * 2));
 		return (t);
 	}
