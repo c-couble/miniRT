@@ -19,16 +19,19 @@ SRC = \
 	  bvh/bounding_box/create_empty_aabb.c \
 	  bvh/bounding_box/get_aabb_from_bbox.c \
 	  bvh/bounding_box/get_bbox_from_aabb.c \
+	  bvh/bounding_box/get_caustic_aabb.c \
 	  bvh/bounding_box/get_aabb_center.c \
-	  bvh/bounding_box/get_objects_aabb.c \
 	  bvh/bounding_box/get_cylinder_aabb.c \
+	  bvh/bounding_box/get_objects_aabb.c \
 	  bvh/bounding_box/get_paraboloid_aabb.c \
 	  bvh/bounding_box/get_sphere_aabb.c \
+	  bvh/bounding_box/is_point_inside_aabb.c \
 	  bvh/bounding_box/get_cached_triangle_aabb.c \
 	  bvh/bounding_box/get_mesh_aabb.c \
 	  bvh/bounding_box/intersect_aabb.c \
 	  bvh/bounding_box/print_aabb.c \
 	  bvh/bounding_box/print_bounding_box.c \
+	  bvh/bounding_box/update_caustic_aabb.c \
 	  \
 	  bvh/draw/draw_bounding_box.c \
 	  bvh/draw/draw_bounding_boxes.c \
@@ -66,6 +69,17 @@ SRC = \
 	  camera/hooks/speed_down.c \
 	  camera/hooks/speed_up.c \
 	  \
+	  caustic/init_caustic.c \
+	  caustic/clear_caustic.c \
+	  caustic/init_caustic_maps.c \
+	  caustic/clear_caustic_maps.c \
+	  caustic/get_photons.c \
+	  caustic/trace_photon.c \
+	  caustic/print_photon_map.c \
+	  caustic/density_estimation.c \
+	  \
+	  caustic/hooks/init_caustic_hooks.c \
+	  \
 	  color/add_color.c \
 	  color/add_scale_color.c \
 	  color/get_normal_color.c \
@@ -86,6 +100,7 @@ SRC = \
 	  engine/routine.c \
 	  \
 	  engine/shading/get_ambiant_light.c \
+	  engine/shading/get_caustics.c \
 	  engine/shading/get_fresnel.c \
 	  engine/shading/get_light.c \
 	  engine/shading/get_pixel_color.c \
@@ -94,6 +109,19 @@ SRC = \
 	  engine/shading/get_refraction_ray.c \
 	  engine/shading/get_refract.c \
 	  engine/shading/phong_model.c \
+	  \
+	  kdtree/create_kdnode.c \
+	  kdtree/init_kdtree.c \
+	  kdtree/get_nearest_neighbour.c \
+	  kdtree/get_knearest_neighbour.c \
+	  kdtree/clear_kdtree.c \
+	  kdtree/init_knn.c \
+	  kdtree/empty_knn.c \
+	  kdtree/set_knn_size.c \
+	  kdtree/clear_knn.c \
+	  kdtree/print_kdtree.c \
+	  kdtree/print_knn.c \
+	  kdtree/sort_photon_axis.c \
 	  \
 	  math/mat4/divide_line.c \
 	  math/mat4/mat4_identity.c \
@@ -115,6 +143,7 @@ SRC = \
 	  math/vec3/vec3_print.c \
 	  math/vec3/vec3_scale.c \
 	  math/vec3/vec3_subtract.c \
+	  math/vec3/vec3_random.c \
 	  \
 	  math/vec4/vec4_create.c \
 	  math/vec4/vec4_mat4_mult.c \
@@ -179,6 +208,7 @@ SRC = \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
+	  parsing/parse_caustic.c \
 	  parsing/parse_checkerboard.c \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \
@@ -212,6 +242,9 @@ SRC = \
 	  ray/trace_ray.c \
 	  \
 	  util/double_equals.c \
+	  util/find_max.c \
+	  util/find_mean.c \
+	  util/find_min.c \
 	  util/init_material.c \
 	  util/get_axis.c \
 	  util/get_biggest_distance.c \
@@ -223,5 +256,6 @@ SRC = \
 	  util/set_texture_normal.c \
 	  util/solve_plane_equation.c \
 	  util/solve_quadratic_equation.c \
+	  util/rand_range.c \
 	  \
 	  main.c \

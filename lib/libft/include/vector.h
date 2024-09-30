@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 09:13:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/03/12 17:03:39 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/08/31 06:06:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int		set_value_vector(t_vector *this, const void *data, size_t i);
 int		reallocate_vector(t_vector *this);
 void	clear_vector(t_vector *this);
 void	remove_vector(t_vector *this, size_t i);
+void	remove_vector_from_end(t_vector *this, size_t count);
 void	init_vector(t_vector *this, size_t elemsize);
 void	set_alloc_size(t_vector *this, size_t count);
 int		merge_vector(t_vector *to, t_vector *from, size_t i);

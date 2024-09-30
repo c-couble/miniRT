@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 02:02:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 23:59:38 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 00:03:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@
 
 typedef struct s_material_data
 {
+	double		refract_index;
+	double		refract_blend;
 	double		diffuse_ratio;
 	double		specular_ratio;
 	double		specular_shine;
 	double		reflect_ratio;
-	double		refraction_ratio;
 	t_texture	*texture;
 	t_texture	*normal_map;
 	char		*name;
