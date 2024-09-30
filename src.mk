@@ -99,6 +99,7 @@ SRC = \
 	  engine/quit_engine.c \
 	  engine/render_frame.c \
 	  engine/routine.c \
+	  engine/save_render_file.c \
 	  \
 	  engine/shading/get_ambiant_light.c \
 	  engine/shading/get_caustics.c \

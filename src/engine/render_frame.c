@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 10:54:49 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 13:22:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include "draw.h"
 #include "defines.h"
 #include "engine.h"
+#include "save_render.h"
 
 static void	change_ray_size(t_engine *engine, size_t fps);
 
