@@ -6,20 +6,19 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 06:13:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/29 08:23:08 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include <pthread.h>
 #include "defines.h"
-#include "bvh.h"
 #include "engine.h"
-#include "keyboard.h"
 #include "mlx_wrapper.h"
 #include "obj_3d.h"
 #include "obj_mtl.h"
 #include "scene.h"
+#include "caustic.h"
 #include "texture.h"
 #include "util.h"
 #include "vector.h"
@@ -75,6 +74,8 @@ static int	init_hooks(t_engine *engine)
 	if (init_camera_hooks(engine) == -1)
 		return (-1);
 	if (init_bvh_hooks(engine) == -1)
+		return (-1);
+	if (init_caustic_hooks(engine) == -1)
 		return (-1);
 	hook = create_mlx_hook(engine_focus_in, engine, 0, FOCUS_IN);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)

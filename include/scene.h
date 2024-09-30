@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 20:28:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/17 17:29:05 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:27:19 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define SCENE_H
 
 # include <stdint.h>
+# include "caustic.h"
 # include "bvh.h"
 # include "object/ambient_light.h"
 # include "object/camera.h"
@@ -24,6 +25,7 @@ typedef struct s_scene
 	t_ambient_light		ambient_light;
 	int					has_ambient_light;
 	t_camera			camera;
+	t_caustic			caustic;
 	int					has_camera;
 	t_vector			objects;
 	t_vector			lights;

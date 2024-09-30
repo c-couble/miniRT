@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:40:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 02:21:07 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 08:25:31 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ void	clear_scene(t_scene *scene)
 	clear_vector(&scene->lights);
 	clear_vector(&scene->planes);
 	clear_bvh(&scene->bvh);
+	clear_caustic(&scene->caustic);
 }
 
 static void	clear_object(t_object *obj)

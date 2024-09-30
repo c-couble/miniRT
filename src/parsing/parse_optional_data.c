@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 09:59:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 06:21:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "caustic.h"
 #include "engine.h"
 #include "ft_string.h"
 #include "normal_map.h"
@@ -49,6 +50,7 @@ static void	init_optional_data(t_option *data)
 	data->checker.y_size = 0;
 	data->checker.x_color.color = 0;
 	data->checker.y_color.color = 0;
+	data->photon_nb = 0;
 }
 
 static t_option_t	get_optional_type(char *type)
@@ -58,6 +60,7 @@ static t_option_t	get_optional_type(char *type)
 	[TEXTURE] = "tx",
 	[NORMAL_MAP] = "nm",
 	[CHECKERBOARD] = "ch",
+	[CAUSTIC] = "ca",
 	};
 	size_t		i;
 
@@ -78,6 +81,7 @@ static int	parse_option(t_engine *engine, t_object *object, char *arg)
 	[TEXTURE] = parse_texture,
 	[NORMAL_MAP] = parse_normal_map,
 	[CHECKERBOARD] = parse_checkerboard,
+	[CAUSTIC] = parse_caustic,
 	};
 	t_option_t	type;
 	char		*name;

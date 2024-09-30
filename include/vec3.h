@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:35:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/11 13:40:24 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/17 21:20:09 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ double	vec3_dot(t_vec3 *vec1, t_vec3 *vec2);
 void	vec3_print(t_vec3 *ray, char *str);
 t_vec3	*vec3_cross(t_vec3 *a, t_vec3 *b, t_vec3 *out);
 t_vec3	*vec3_create(double x, double y, double z, t_vec3 *out);
+t_vec3	*vec3_random(t_vec3 *vec, double min, double max);
 
 #endif

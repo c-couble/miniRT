@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 00:46:45 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 04:11:49 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 04:47:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include "ray.h"
 
 uint32_t	get_ambiant_light(t_scene *scene);
+void		get_caustics(t_caustic *caustic, t_ray *ray, t_color *light);
 void		get_fresnel(t_scene *scene, t_ray *cray, t_color *color, int depth);
 uint32_t	get_light(t_scene *scene, t_ray *ray);
 uint32_t	get_pixel_color(t_scene *scene, t_ray *ray, int depth);

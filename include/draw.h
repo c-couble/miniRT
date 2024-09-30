@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 02:22:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 04:49:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/29 08:20:38 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdint.h>
 # include "engine.h"
-# include "object/mesh.h"
 # include "vec2.h"
 
 typedef struct s_line

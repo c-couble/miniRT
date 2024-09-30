@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/12 10:44:46 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/27 06:29:50 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
-#include <stdio.h>
+#include "engine.h"
 #include "color.h"
 #include "ft_string.h"
 #include "object.h"
