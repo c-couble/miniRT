@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 17:23:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 19:35:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i)
 
 	if (init_object(engine, &obj, line) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error\nParsing error on line %ld\n", i);
+		ft_dprintf(STDERR_FILENO, "Error\nParsing error on line %d\n", (int)i);
 		return (-1);
 	}
 	if (obj.type == LIGHT && scene->has_light)

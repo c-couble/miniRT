@@ -17,7 +17,6 @@ SRC = \
 	  math/mat4/mat4_identity.c \
 	  math/mat4/mat4_inverse.c \
 	  math/mat4/mat4_multiply.c \
-	  math/mat4/mat4_print.c \
 	  math/mat4/swap_lines.c \
 	  \
 	  math/vec3/vec3_add.c \
