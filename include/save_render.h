@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 10:31:39 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 10:55:03 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 15:27:20 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include "object/optional_data.h"
 
-struct s_engine;
+struct	s_engine;
 
 int	parse_save_render(struct s_engine *engine, t_option *data, char *arg);
 int	save_render_file(struct s_engine *engine);

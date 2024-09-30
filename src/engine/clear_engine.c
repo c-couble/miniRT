@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:47:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:40:17 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 15:42:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ void	clear_engine(t_engine *engine)
 	clear_textures(&engine->textures);
 	clear_objs_3d(&engine->objs_3d);
 	clear_mtls(&engine->obj_mtls);
-	if (engine->render_width != 0 && engine->render_height != 0)
+	if (engine->render_size != 0)
 		free(engine->render_data);
 }

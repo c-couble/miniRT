@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 10:32:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 10:52:17 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 15:45:39 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int	parse_save_render(t_engine *engine, t_option *data, char *arg)
 	char	*save;
 	char	*str;
 
-	printf("nique sa mere\n");
 	(void) data;
 	str = ft_strtok_r(arg, ",", &save);
 	if (parse_int(&engine->render_width, str, 1, 100000) == -1)

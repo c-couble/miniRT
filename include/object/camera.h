@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:36:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 15:27:01 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,10 @@ typedef struct s_camera
 	t_vec3	front;
 	t_vec3	right;
 	t_vec3	up;
-	t_mat4	projection;
 	t_mat4	perspective;
-	t_mat4	inverse_projection;
+	t_mat4	inv_projection;
+	t_mat4	proj_file;
+	t_mat4	inv_proj_file;
 	t_mat4	view;
 	t_mat4	inverse_view;
 	t_mat4	final;

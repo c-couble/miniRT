@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 10:38:08 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 15:40:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <pthread.h>
 # include <stdatomic.h>
-#include "color.h"
+# include "color.h"
 # include "mlx_wrapper.h"
 # include "object/material.h"
 # include "scene.h"
@@ -38,6 +38,7 @@ typedef struct s_engine
 	atomic_int		thread_run;
 	int				render_width;
 	int				render_height;
+	size_t			render_size;
 	t_color			*render_data;
 }	t_engine;
 

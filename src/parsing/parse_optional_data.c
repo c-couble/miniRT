@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:38:37 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 15:27:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ int	parse_optional_data(t_engine *engine, t_object *object)
 			return (-1);
 		arg = ft_strtok(NULL, " \t");
 	}
-	return (0); }
+	return (0);
+}
 
 static void	init_optional_data(t_option *data)
 {
