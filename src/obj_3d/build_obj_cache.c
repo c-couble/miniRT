@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 02:53:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 04:59:53 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 07:28:48 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ static void	cache_point(t_mesh *mesh, t_mat4 *mat, size_t face, int i)
 		vec3_create(0, 0, 0, c->normals + i);
 	else
 	{
-		vec4_create(at_vector(&obj->vertices, p->points[i].normal_id - 1), 1, &v4);
+		vec4_create(at_vector(&obj->vertex_normals, p->points[i].normal_id - 1), 0, &v4);
 		vec4_mat4_mult(&v4, mat, &v4);
 		c->normals[i].x = v4.x;
 		c->normals[i].y = v4.y;
@@ -96,7 +96,8 @@ static void	finish_polygon(t_cached_triangle *t)
 	vec3_cross(&t->e1, &t->e2, &t->normal);
 	vec3_normalize(&t->normal);
 	if (vec3_get_norm(&t->normals[0]) != 0
-		&& vec3_get_norm(&t->normals[1]) != 0 && vec3_get_norm(&t->normals[0]) != 0)
+		&& vec3_get_norm(&t->normals[1]) != 0
+		&& vec3_get_norm(&t->normals[2]) != 0)
 		t->has_normals = 1;
 	else
 		t->has_normals = 0;
