@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 00:44:07 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 10:42:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ typedef struct s_camera
 	size_t	last_frame_time;
 	int		locked;
 	int		should_render;
+	int		save;
 	t_rtype	render_type;
 }	t_camera;
 
@@ -72,6 +73,7 @@ void	reset_roll_angle(struct s_engine *engine);
 void	roll_left(struct s_engine *engine);
 void	roll_right(struct s_engine *engine);
 void	lock_camera(struct s_engine *engine);
+void	save_render(struct s_engine *engine);
 void	speed_down(struct s_engine *engine);
 void	speed_up(struct s_engine *engine);
 void	change_render_mode(struct s_engine *engine);

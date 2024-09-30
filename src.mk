@@ -66,6 +66,7 @@ SRC = \
 	  camera/hooks/reset_roll_angle.c \
 	  camera/hooks/roll_left.c \
 	  camera/hooks/roll_right.c \
+	  camera/hooks/save_render.c \
 	  camera/hooks/speed_down.c \
 	  camera/hooks/speed_up.c \
 	  \
@@ -222,6 +223,7 @@ SRC = \
 	  parsing/parse_optional_data.c \
 	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \
+	  parsing/parse_save_render.c \
 	  parsing/parse_sphere.c \
 	  parsing/parse_texture.c \
 	  parsing/parse_triangle.c \

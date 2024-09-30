@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 08:24:21 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:53:41 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ int	init_object(t_engine *engine, t_object *object, char *line)
 		return (-1);
 	if (object->type == TRIANGLE)
 		object->data.triangle.cached.material = &object->optional_data.material;
+	if (parse_optional_data(engine, object) == -1)
+		return (-1);
 	if (object->type != LIGHT
 		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
 	{
 		get_objects_aabb(object);
-		if (parse_optional_data(engine, object) == -1)
-			return (-1);
 	}
 	return (0);
 }

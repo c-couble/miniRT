@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 06:26:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:42:36 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	parse_camera(t_engine *engine, t_object_data *data)
 		return (-1);
 	create_camera_vectors(&data->camera);
 	data->camera.locked = 0;
+	data->camera.save = 0;
 	data->camera.pixel_square_size = DEFAULT_RAY_SIZE;
 	data->camera.should_render = 1;
 	data->camera.sensitivity = SENSITIVITY;

@@ -6,12 +6,14 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 08:23:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:39:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include <pthread.h>
+#include <sched.h>
+#include <stdlib.h>
 #include "defines.h"
 #include "engine.h"
 #include "mlx_wrapper.h"
@@ -33,6 +35,8 @@ int	init_engine(t_engine *engine, char *scene)
 	init_vector(&engine->objs_3d, sizeof(t_obj_3d *));
 	init_vector(&engine->obj_mtls, sizeof(t_obj_mtl *));
 	init_vector(&engine->textures, sizeof(t_texture *));
+	engine->render_width = 0;
+	engine->render_height = 0;
 	if (prepare_engine(engine, scene) == -1)
 	{
 		clear_textures(&engine->textures);
@@ -86,6 +90,13 @@ static int	init_hooks(t_engine *engine)
 	hook = create_mlx_hook(quit_engine, engine, 0, DESTROY);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
+	size_t	size = engine->render_height * engine->render_width;
+	if (engine->render_width != 0 && engine->render_height != 0)
+	{
+		engine->render_data = malloc(size * sizeof(t_color));
+		if (engine->render_data == NULL)
+			return (-1);
+	}
 	return (0);
 }
 

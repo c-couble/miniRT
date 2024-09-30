@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 22:57:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:54:49 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,11 @@ void	render_frame(t_engine *engine)
 	setup_camera(engine);
 	engine->current_line = 0;
 	engine->finished_lines = 0;
+	if (engine->scene.camera.save)
+	{
+		engine->scene.camera.frame_height = engine->render_height;
+		engine->scene.camera.frame_width = engine->render_width;
+	}
 	pthread_mutex_unlock(&engine->line_mutex);
 	pthread_mutex_lock(&engine->line_mutex);
 	while (engine->finished_lines < engine->scene.camera.frame_height)
@@ -41,6 +46,12 @@ void	render_frame(t_engine *engine)
 	if (engine->scene.camera.render_type == BOUNDING_BOX)
 		draw_bounding_boxes(engine, &engine->scene.objects, WHITE);
 	draw_bvh(engine);
+	if (engine->scene.camera.save)
+	{
+		printf("finished save frame ! %d %d\n", engine->render_width, engine->render_height);
+		save_render_file(engine);
+		engine->scene.camera.save = 0;
+	}
 	clock_gettime(CLOCK_REALTIME, &ts2);
 	elapsed = (ts2.tv_sec - ts.tv_sec);
 	elapsed += (ts2.tv_nsec - ts.tv_nsec) / 1000000000.0;

@@ -6,10 +6,9 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 21:52:06 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:57:27 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <fcntl.h>
 #include <unistd.h>
 #include "caustic.h"

@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 07:18:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:03:40 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
 #include <stdlib.h>
+#include "defines.h"
 #include "color.h"
 #include "object/light.h"
 #include "ray.h"
@@ -55,5 +56,5 @@ static int	trace_light(t_scene *scene, t_ray *l_ray, t_ray *c_ray, t_light *l)
 		return (0);
 	if (d < norm && d > 0 && l_ray->data.materials->refract_index)
 		return (0);
-	return (d < 0 || d > norm);
+	return (d < -INACCURATE_ZERO || d + 50000 * INACCURATE_ZERO > norm);
 }
