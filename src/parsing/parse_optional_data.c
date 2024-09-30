@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 06:19:29 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 06:21:58 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "caustic.h"
-#include "defines.h"
 #include "engine.h"
 #include "ft_string.h"
 #include "normal_map.h"
