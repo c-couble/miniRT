@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 05:48:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:51:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include "color.h"
 # include "engine.h"
-# include "object/material.h"
 # include "vec3.h"
 
 struct	s_object;
@@ -27,11 +26,7 @@ typedef struct s_hit_data
 	t_vec3				normal;
 	t_vec3				raw_normal;
 	t_color				color;
-	double				u;
-	double				v;
 	struct s_object		*obj;
-	struct s_texture	*texture;
-	t_material_data		materials;
 }	t_hit_data;
 
 typedef struct s_ray

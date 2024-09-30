@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 12:57:52 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 17:09:54 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include <time.h>
 #include "color.h"
 #include "defines.h"
@@ -19,30 +20,26 @@
 #include "vec4.h"
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
-static void	change_ray_size(t_engine *engine, size_t fps);
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y);
 
 void	render_frame(t_engine *engine)
 {
 	size_t	i;
 	size_t	j;
-	size_t	start;
 
-	start = clock();
 	i = 0;
 	setup_camera(engine);
-	while (i < engine->scene.camera.frame_height)
+	while (i < engine->mlx.height)
 	{
 		j = 0;
-		while (j < engine->scene.camera.frame_width)
+		while (j < engine->mlx.width)
 		{
 			handle_single_ray(engine, i, j);
 			++j;
 		}
 		++i;
 	}
-	engine->scene.camera.last_frame_time = ((clock() - start) / 1000) + 1;
-	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
+	printf("finish frame\n");
 }
 
 static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
@@ -51,10 +48,7 @@ static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
 	t_color	color;
 
 	setup_camera_ray(engine, &camera_ray, j, i);
-	if (engine->scene.camera.locked)
-		color.color = get_pixel_color(engine, &camera_ray, DEPTH);
-	else
-		color.color = get_pixel_color(engine, &camera_ray, LOW_RENDER_DEPTH);
+	color.color = get_pixel_color(engine, &camera_ray, DEPTH);
 	color_pixels(engine, i, j, color.color);
 }
 
@@ -76,12 +70,4 @@ static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y)
 	ray->ray.y = final.y;
 	ray->ray.z = final.z;
 	vec3_normalize(&ray->ray);
-}
-
-static void	change_ray_size(t_engine *engine, size_t fps)
-{
-	if (fps < MINIMUM_FPS)
-		++engine->scene.camera.pixel_square_size;
-	else if (fps > MAXIMUM_FPS && engine->scene.camera.pixel_square_size > 1)
-		--engine->scene.camera.pixel_square_size;
 }

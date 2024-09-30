@@ -1,40 +1,16 @@
 SRC = \
 	  camera/color_pixels.c \
 	  camera/create_camera_vectors.c \
-	  camera/move_camera.c \
 	  camera/setup_camera.c \
 	  \
-	  camera/init_camera_hooks.c \
-	  camera/hooks/camera_mouse_hook.c \
-	  camera/hooks/change_render_mode.c \
-	  camera/hooks/lock_camera.c \
-	  camera/hooks/move_backwards.c \
-	  camera/hooks/move_down.c \
-	  camera/hooks/move_forward.c \
-	  camera/hooks/move_left.c \
-	  camera/hooks/move_right.c \
-	  camera/hooks/move_up.c \
-	  camera/hooks/reset_roll_angle.c \
-	  camera/hooks/roll_left.c \
-	  camera/hooks/roll_right.c \
-	  camera/hooks/speed_down.c \
-	  camera/hooks/speed_up.c \
-	  \
 	  engine/clear_engine.c \
-	  engine/engine_focus_in.c \
-	  engine/engine_loop_hook.c \
 	  engine/init_engine.c \
 	  engine/quit_engine.c \
 	  engine/render_frame.c \
 	  \
 	  engine/shading/get_ambiant_light.c \
-	  engine/shading/get_fresnel.c \
 	  engine/shading/get_light.c \
 	  engine/shading/get_pixel_color.c \
-	  engine/shading/get_reflect.c \
-	  engine/shading/get_reflection_ray.c \
-	  engine/shading/get_refraction_ray.c \
-	  engine/shading/get_refract.c \
 	  engine/shading/phong_model.c \
 	  \
 	  math/mat4/divide_line.c \
@@ -56,10 +32,6 @@ SRC = \
 	  math/vec4/vec4_create.c \
 	  math/vec4/vec4_mat4_mult.c \
 	  \
-	  math/quaternion/quaternion_inv.c \
-	  math/quaternion/quaternion_mult.c \
-	  math/quaternion/quaternion_rotate.c \
-	  \
 	  mlx_wrapper/hooks/destroy_hook.c \
 	  mlx_wrapper/hooks/focus_in_hook.c \
 	  mlx_wrapper/hooks/focus_out_hook.c \
@@ -76,44 +48,24 @@ SRC = \
 	  \
 	  object/intersect.c \
 	  object/intersect_cylinder.c \
-	  object/intersect_mesh.c \
-	  object/intersect_paraboloid.c \
 	  object/intersect_plane.c \
 	  object/intersect_sphere.c \
-	  object/intersect_triangle.c \
-	  \
-	  obj_3d/parse_obj_file.c \
-	  obj_3d/parse_obj_if_needed.c \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
 	  parsing/parse_camera.c \
-	  parsing/parse_checkerboard.c \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \
 	  parsing/parse_double.c \
 	  parsing/parse_int.c \
 	  parsing/parse_light.c \
-	  parsing/parse_material.c \
-	  parsing/parse_mesh.c \
 	  parsing/parse_normalized_vector3d.c \
-	  parsing/parse_optional_data.c \
-	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \
 	  parsing/parse_sphere.c \
-	  parsing/parse_texture.c \
-	  parsing/parse_triangle.c \
 	  parsing/parse_vector3d.c \
 	  \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
-	  \
-	  texture/apply_checkerboard.c \
-	  texture/clear_texture.c \
-	  texture/clear_textures.c \
-	  texture/get_texture_color.c \
-	  texture/parse_texture_file.c \
-	  texture/parse_texture_if_needed.c \
 	  \
 	  ray/trace_ray.c \
 	  \
@@ -124,9 +76,6 @@ SRC = \
 	  util/get_closest_distance.c \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
-	  util/get_normal_color.c \
-	  util/get_theta_axis.c \
-	  util/get_uv_color.c \
 	  util/multiply_color.c \
 	  util/print_error.c \
 	  util/scale_color.c \

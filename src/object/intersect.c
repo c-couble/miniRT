@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:38:36 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:58:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@ double	intersect(t_object *obj, t_ray *ray)
 	[SPHERE] = intersect_sphere,
 	[PLANE] = intersect_plane,
 	[CYLINDER] = intersect_cylinder,
-	[PARABOLOID] = intersect_paraboloid,
-	[TRIANGLE] = intersect_triangle,
-	[MESH] = intersect_mesh
 	};
 	double			t;
 
@@ -35,7 +32,6 @@ double	intersect(t_object *obj, t_ray *ray)
 		if (t > 0)
 		{
 			ray->data.obj = obj;
-			ray->data.materials = obj->optional_data.material;
 		}
 		return (t);
 	}

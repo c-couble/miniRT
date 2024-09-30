@@ -6,14 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 04:00:27 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 05:20:25 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:57:29 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "object.h"
 #include "ray.h"
-#include "texture.h"
 #include "util.h"
 #include "vec3.h"
 
@@ -52,10 +51,4 @@ static void	add_ray_data(t_ray *ray)
 	ray->data.raw_normal = ray->data.normal;
 	if (vec3_dot(&ray->ray, &ray->data.normal) < 0)
 		vec3_scale(&ray->data.normal, -1);
-	apply_checkerboard(ray, ray->data.obj);
-	if (ray->data.texture)
-	{
-		ray->data.color = get_texture_color(ray->data.texture,
-				ray->data.u, ray->data.v);
-	}
 }

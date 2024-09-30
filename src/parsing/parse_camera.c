@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:10:57 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:57:55 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
-#include "defines.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/camera.h"
@@ -28,11 +27,5 @@ int	parse_camera(t_engine *engine, t_object_data *data)
 	if (parse_double(&data->camera.fov, ft_strtok(NULL, " \t"), 0, 180) == -1)
 		return (-1);
 	create_camera_vectors(&data->camera);
-	data->camera.locked = 0;
-	data->camera.pixel_square_size = DEFAULT_RAY_SIZE;
-	data->camera.should_render = 1;
-	data->camera.sensitivity = SENSITIVITY;
-	data->camera.speed = SPEED;
-	data->camera.render_type = CLASSIC;
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/15 13:52:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 17:02:16 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void	setup_camera(t_engine *engine)
 	cam = &engine->scene.camera;
 	setup_view(cam);
 	mat4_multiply(&cam->inverse_projection, &cam->inverse_view, &cam->final);
-	cam->frame_width = engine->mlx.width / cam->pixel_square_size + 1;
-	cam->frame_height = engine->mlx.height / cam->pixel_square_size + 1;
+	cam->frame_width = engine->mlx.width;
+	cam->frame_height = engine->mlx.height;
 }
 
 static void	setup_view(t_camera *camera)

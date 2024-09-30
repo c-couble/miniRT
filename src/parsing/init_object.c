@@ -6,14 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 05:47:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:56:46 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "ft_string.h"
 #include "object.h"
-#include "object/optional_data.h"
 
 static t_object_type	get_object_type(char *type);
 static int				parse_object(t_engine *engine, t_object *object);
@@ -35,12 +34,6 @@ int	init_object(t_engine *engine, t_object *object, char *line)
 		return (0);
 	if (parse_object(engine, object) == -1)
 		return (-1);
-	if (object->type != LIGHT
-		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
-	{
-		if (parse_optional_data(engine, object) == -1)
-			return (-1);
-	}
 	return (0);
 }
 
@@ -53,9 +46,6 @@ static t_object_type	get_object_type(char *type)
 	[SPHERE] = "sp",
 	[PLANE] = "pl",
 	[CYLINDER] = "cy",
-	[PARABOLOID] = "pa",
-	[TRIANGLE] = "tr",
-	[MESH] = "mesh",
 	};
 	size_t		i;
 
@@ -80,9 +70,6 @@ static int	parse_object(t_engine *engine, t_object *object)
 	[SPHERE] = parse_sphere,
 	[PLANE] = parse_plane,
 	[CYLINDER] = parse_cylinder,
-	[PARABOLOID] = parse_paraboloid,
-	[TRIANGLE] = parse_triangle,
-	[MESH] = parse_mesh,
 	};
 
 	(void)engine;

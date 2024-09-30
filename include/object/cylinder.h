@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 18:15:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/31 03:56:25 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 17:06:52 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ typedef struct s_cylinder
 {
 	t_vec3	pos;
 	t_vec3	axis;
-	t_vec3	rot_axis;
-	double	theta;
 	double	diameter;
 	double	radius;
 	double	height;

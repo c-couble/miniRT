@@ -6,17 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 05:19:28 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:59:10 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include <stdio.h>
 #include "defines.h"
 #include "math_util.h"
 #include "object.h"
 #include "object/plane.h"
-#include "quaternion.h"
 #include "ray.h"
 #include "util.h"
 #include "vec3.h"
@@ -24,7 +22,7 @@
 static double	hit_cyl(t_object *obj, t_ray *ray, t_vec3 *r1, t_vec3 *r2);
 static double	solve_cylinder_quadratic(t_object *obj, t_ray *ray);
 static double	point_far(t_object *obj, t_vec3 *rray, t_vec3 *r1, t_vec3 *r2);
-static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p, size_t face);
+static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p);
 
 double	intersect_cylinder(t_object *obj, t_ray *ray)
 {
@@ -41,9 +39,9 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 	t = hit_cyl(obj, ray, &r1, &r2);
 	if (t != -1)
 		data = ray->data;
-	if (get_closest_distance_ptr(check_disk(obj, ray, &r1, 2), t, &t))
+	if (get_closest_distance_ptr(check_disk(obj, ray, &r1), t, &t))
 		data = ray->data;
-	if (get_closest_distance_ptr(check_disk(obj, ray, &r2, 1), t, &t))
+	if (get_closest_distance_ptr(check_disk(obj, ray, &r2), t, &t))
 		data = ray->data;
 	if (t == -1)
 		return (-1);
@@ -53,7 +51,7 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 	return (t);
 }
 
-static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p, size_t face)
+static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p)
 {
 	t_plane	plane;
 	t_vec3	hitpoint;
@@ -68,14 +66,6 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p, size_t face)
 	{
 		ray->data.normal = plane.normal;
 		vec3_scale(&hitpoint, 1 / (obj->data.cylinder.radius * 2));
-		quaternion_rotate(&hitpoint, &obj->data.cylinder.rot_axis,
-			obj->data.cylinder.theta, &hitpoint);
-		ray->data.u = 0.5 - hitpoint.y;
-		ray->data.v = 0.5 - hitpoint.x;
-		if (face == 1)
-			ray->data.texture = obj->optional_data.up_texture;
-		else
-			ray->data.texture = obj->optional_data.down_texture;
 		return (t);
 	}
 	return (-1);
@@ -92,11 +82,6 @@ static double	hit_cyl(t_object *obj, t_ray *ray, t_vec3 *r1, t_vec3 *r2)
 	if (point_far(obj, &ray->data.hitpos, r1, r2))
 		return (-1);
 	vec3_subtract(&ray->data.hitpos, &obj->data.cylinder.pos, &local);
-	quaternion_rotate(&local, &obj->data.cylinder.rot_axis,
-		obj->data.cylinder.theta, &local);
-	ray->data.u = 0.5 + (atan2(local.y, local.x)) / (M_PI * 2);
-	ray->data.v = 1 - (local.z / obj->data.cylinder.height);
-	ray->data.texture = obj->optional_data.texture;
 	return (t);
 }
 
