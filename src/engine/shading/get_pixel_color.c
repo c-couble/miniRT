@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/12 06:11:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 08:24:05 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 08:43:25 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ uint32_t	get_pixel_color(t_scene *scene, t_ray *c_ray, int depth)
 	t_color	color;
 
 	if (depth <= 0)
-		return (BACKGROUND_COLOR);
+		return (scene->background.color);
 	if (trace_ray(scene, c_ray) > -INACCURATE_ZERO)
 	{
 		if (scene->camera.render_type == NORMAL)
@@ -37,5 +37,5 @@ uint32_t	get_pixel_color(t_scene *scene, t_ray *c_ray, int depth)
 			color.color = get_refract(scene, c_ray, color, depth -1);
 		return (color.color);
 	}
-	return (BACKGROUND_COLOR);
+	return (scene->background.color);
 }

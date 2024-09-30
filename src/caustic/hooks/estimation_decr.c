@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   change_render_mode.c                               :+:      :+:    :+:   */
+/*   estimation_decr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/27 04:46:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 06:55:23 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/30 13:16:58 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/30 13:17:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
-#include "object/camera.h"
 
-void	change_render_mode(t_engine *engine)
+void	estimation_decr(t_engine *engine)
 {
-	++engine->scene.camera.render_type;
-	if (engine->scene.camera.render_type > BOUNDING_BOX)
-		engine->scene.camera.render_type = CLASSIC;
-	engine->scene.camera.should_render = 1;
+	if (engine->scene.caustic.intensity_scalar > 0)
+	{
+		engine->scene.caustic.intensity_scalar -= 1;
+		engine->scene.camera.should_render = 1;
+	}
 }

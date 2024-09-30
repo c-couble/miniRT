@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_caustic.c                                    :+:      :+:    :+:   */
+/*   parse_uint8t.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 23:10:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:33:45 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/30 08:03:20 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/30 08:15:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "caustic.h"
-#include "kdtree.h"
+#include <stdint.h>
+#include "ft_string.h"
 
-void	clear_caustic(t_caustic *caustic)
+int	parse_uint8t(uint8_t *data, char *nptr)
 {
-	clear_knns(caustic->knn, caustic->knn_nb);
-	clear_caustic_maps(&caustic->caustic_maps);
+	int		n;
+
+	if (nptr == NULL)
+		return (-1);
+	if (ft_atoi_ptr(&n, nptr) == -1)
+		return (-1);
+	if (n < 0 || n > 255)
+		return (-1);
+	*data = n;
+	return (0);
 }

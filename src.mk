@@ -79,6 +79,12 @@ SRC = \
 	  caustic/density_estimation.c \
 	  \
 	  caustic/hooks/init_caustic_hooks.c \
+	  caustic/hooks/bandwith_incr.c \
+	  caustic/hooks/bandwith_decr.c \
+	  caustic/hooks/estimation_incr.c \
+	  caustic/hooks/estimation_decr.c \
+	  caustic/hooks/nearest_neighbour_incr.c \
+	  caustic/hooks/nearest_neighbour_decr.c \
 	  \
 	  color/add_color.c \
 	  color/add_scale_color.c \
@@ -118,7 +124,7 @@ SRC = \
 	  kdtree/init_knn.c \
 	  kdtree/empty_knn.c \
 	  kdtree/set_knn_size.c \
-	  kdtree/clear_knn.c \
+	  kdtree/clear_knns.c \
 	  kdtree/print_kdtree.c \
 	  kdtree/print_knn.c \
 	  kdtree/sort_photon_axis.c \
@@ -207,6 +213,7 @@ SRC = \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
+	  parsing/parse_background_color.c \
 	  parsing/parse_camera.c \
 	  parsing/parse_caustic.c \
 	  parsing/parse_checkerboard.c \
@@ -225,6 +232,7 @@ SRC = \
 	  parsing/parse_sphere.c \
 	  parsing/parse_texture.c \
 	  parsing/parse_triangle.c \
+	  parsing/parse_uint8t.c \
 	  parsing/parse_vector3d.c \
 	  \
 	  scene/clear_scene.c \

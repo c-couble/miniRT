@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 02:18:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 08:58:42 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 13:25:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef enum e_option_t
 	NORMAL_MAP,
 	CHECKERBOARD,
 	CAUSTIC,
+	BACKGROUND_COLOR,
 	UNKNOWN_OPTION,
 }	t_option_t;
 
@@ -44,5 +45,6 @@ struct	s_engine;
 struct	s_object;
 
 int	parse_optional_data(struct s_engine *engine, struct s_object *object);
+int	parse_background_color(struct s_engine *engine, t_option *data, char *arg);
 
 #endif
