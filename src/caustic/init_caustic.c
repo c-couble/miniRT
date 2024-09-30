@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 23:06:50 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:33:09 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:40:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,19 +37,19 @@ int	init_caustic(t_scene *scene, t_caustic *caustic)
 	return (0);
 }
 
-static int	init_knns(t_caustic *caustic)
+static int	init_knns(t_caustic *ca)
 {
 	size_t	i;
 
-	caustic->knn = malloc(sizeof(t_knn) * caustic->knn_nb);
-	if (caustic->knn == NULL)
+	ca->knn = malloc(sizeof(t_knn) * ca->knn_nb);
+	if (ca->knn == NULL)
 		return (-1);
 	i = 0;
-	while (i < caustic->knn_nb)
+	while (i < ca->knn_nb)
 	{
-		if (init_knn(&caustic->knn[i], caustic->nn_nb) == -1)
+		if (init_knn(&ca->knn[i], ca->nn_nb, ca->knn_max_size) == -1)
 		{
-			clear_knns(caustic->knn, caustic->knn_nb);
+			clear_knns(ca->knn, ca->knn_nb);
 			return (-1);
 		}
 		++i;

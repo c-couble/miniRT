@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:34:39 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:31:24 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:43:24 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ typedef struct s_caustic
 	t_knn		*knn;
 	size_t		knn_nb;
 	size_t		knn_max_size;
-	int			nn_nb;
+	size_t		nn_nb;
+	size_t		intensity_scalar;
 	double		bandwidth;
 }	t_caustic;
 

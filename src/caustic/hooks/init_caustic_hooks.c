@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 23:16:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 10:30:41 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 10:42:38 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,14 +51,18 @@ static void	bw_decr(t_engine *engine)
 
 static void	nn_incr(t_engine *engine)
 {
-	if (engine->scene.caustic.nn_nb < (int)engine->scene.caustic.knn_max_size - 1)
+	if (engine->scene.caustic.nn_nb < engine->scene.caustic.knn_max_size - 1)
+	{
 		engine->scene.caustic.nn_nb += 1;
-	engine->scene.camera.should_render = 1;
+		engine->scene.camera.should_render = 1;
+	}
 }
 
 static void	nn_decr(t_engine *engine)
 {
 	if (engine->scene.caustic.nn_nb > 0)
+	{
 		engine->scene.caustic.nn_nb -= 1;
-	engine->scene.camera.should_render = 1;
+		engine->scene.camera.should_render = 1;
+	}
 }
