@@ -6,23 +6,17 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 16:28:10 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 16:34:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include <pthread.h>
 #include <stdlib.h>
 #include "defines.h"
 #include "engine.h"
-#include "mlx_wrapper.h"
-#include "obj_3d.h"
-#include "obj_mtl.h"
-#include "scene.h"
 #include "caustic.h"
 #include "texture.h"
 #include "util.h"
-#include "vector.h"
 
 static int	prepare_engine(t_engine *engine, char *scene);
 static int	init_hooks(t_engine *engine);
@@ -59,10 +53,7 @@ int	init_engine(t_engine *engine, char *scene)
 static int	prepare_engine(t_engine *engine, char *scene)
 {
 	if (init_scene(engine, &engine->scene, scene) == -1)
-	{
-		clear_scene(&engine->scene);
 		return (-1);
-	}
 	engine->render_size = engine->render_width * engine->render_height;
 	if (init_mlx_struct(&engine->mlx) == -1)
 	{

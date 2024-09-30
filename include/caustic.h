@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:34:39 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 13:17:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:28:53 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ struct	s_scene;
 
 int		init_caustic(struct s_scene *scene, t_caustic *caustic);
 void	clear_caustic(t_caustic *caustic);
-int		init_caustic_maps(struct s_scene *scene, t_caustic *caustic);
+int		init_caustic_maps(struct s_scene *scene);
 void	clear_caustic_maps(t_vector *maps);
 
 int		parse_caustic(struct s_engine *engine, t_option *data, char *arg);

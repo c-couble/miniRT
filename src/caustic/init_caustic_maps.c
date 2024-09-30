@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 04:50:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 22:42:15 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:27:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,13 @@
 
 static int	init_caustic_map(t_scene *scene, t_light *light, t_object *obj);
 
-int	init_caustic_maps(t_scene *scene, t_caustic *caustic)
+int	init_caustic_maps(t_scene *scene)
 {
 	size_t		i;
 	size_t		j;
 	t_light		*lights;
 	t_object	*objects;
 
-	(void)caustic;
 	lights = scene->lights.array;
 	objects = scene->objects.array;
 	i = 0;

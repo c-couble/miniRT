@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 20:28:38 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 08:40:42 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:02:59 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ typedef struct s_scene
 struct	s_engine;
 
 int		init_scene(struct s_engine *engine, t_scene *scene, char *file);
+void	init_object_vectors(t_scene *scene);
+void	clear_objects_vectors(t_scene *scene);
 void	clear_scene(t_scene *scene);
 int		read_file(struct s_engine *engine, t_scene *scene, int fd);
 

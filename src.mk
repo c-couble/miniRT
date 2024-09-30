@@ -238,8 +238,10 @@ SRC = \
 	  parsing/parse_uint8t.c \
 	  parsing/parse_vector3d.c \
 	  \
+	  scene/clear_objects_vectors.c \
 	  scene/clear_scene.c \
 	  scene/init_scene.c \
+	  scene/init_objects_vectors.c \
 	  scene/read_file.c \
 	  \
 	  texture/apply_checkerboard.c \

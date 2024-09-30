@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 13:16:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 13:16:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 14:03:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	estimation_incr(t_engine *engine)
 {
+	if (engine->scene.camera.locked)
+		return ;
 	if (engine->scene.caustic.intensity_scalar < 10000)
 	{
 		engine->scene.caustic.intensity_scalar += 1;
