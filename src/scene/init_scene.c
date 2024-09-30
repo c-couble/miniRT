@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:11:51 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 17:23:19 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,11 @@ static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i)
 		dprintf(STDERR_FILENO, "Error\nParsing error on line %ld\n", i);
 		return (-1);
 	}
+	if (obj.type == LIGHT && scene->has_light)
+	{
+		print_error("You can't have multiple lights");
+		return (-1);
+	}
 	if (obj.type != COMMENT)
 	{
 		if (add_created_object(scene, &obj) == -1)
@@ -116,6 +121,8 @@ static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i)
 			scene->has_camera = 1;
 		else if (obj.type == AMBIENT_LIGHT)
 			scene->has_ambient_light = 1;
+		else if (obj.type == LIGHT)
+			scene->has_light = 1;
 	}
 	return (0);
 }
