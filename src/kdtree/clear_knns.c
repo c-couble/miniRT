@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_scene.c                                      :+:      :+:    :+:   */
+/*   clear_knns.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:40:32 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 15:02:48 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/30 10:22:30 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/30 13:02:03 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "object.h"
-#include "bvh.h"
-#include "scene.h"
+#include <stdlib.h>
+#include "kdtree.h"
 
-void	clear_scene(t_scene *scene)
+static void	clear_knn(t_knn *knn);
+
+void	clear_knns(t_knn *knn, size_t knn_size)
 {
+	size_t	i;
 
-	clear_bvh(&scene->bvh);
-	clear_caustic(&scene->caustic);
+	i = 0;
+	while (i < knn_size && knn[i].querys)
+	{
+		clear_knn(&knn[i]);
+		++i;
+	}
+	free(knn);
+}
+
+static void	clear_knn(t_knn *knn)
+{
+	free(knn->querys);
 }

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 11:36:09 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 09:23:01 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	trace_photon(t_scene *scene, t_ray *ph_ray, int depth, t_photon *ph)
 	t_ray	refract_ray;
 
 	if (depth <= 0)
-		return (BACKGROUND_COLOR);
+		return (0);
 	if (trace_ray(scene, ph_ray) > INACCURATE_ZERO)
 	{
 		if (ph_ray->data.materials->refract_index)

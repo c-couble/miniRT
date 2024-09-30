@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 03:03:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 06:29:02 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 14:48:39 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@
 #include "shading.h"
 #include "vec3.h"
 #include "vec4.h"
-#include <sched.h>
-#include <stdio.h>
 
 static int	set_line(t_engine *engine, size_t *i);
-static void	handle_single_ray(t_engine *engine, size_t i, size_t j);
+static void	handle_single_ray(t_engine *engine, size_t i, size_t j, int t_id);
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y);
 
 void	*routine(void *arg)
@@ -33,7 +31,6 @@ void	*routine(void *arg)
 
 	engine = arg;
 	thread_id = engine->thread_run++;
-	(void)thread_id;
 	while (1)
 	{
 		if (set_line(engine, &i) == -1)
@@ -41,7 +38,7 @@ void	*routine(void *arg)
 		j = 0;
 		while (j < engine->scene.camera.frame_width)
 		{
-			handle_single_ray(engine, i, j);
+			handle_single_ray(engine, i, j, thread_id);
 			++j;
 		}
 		pthread_mutex_lock(&engine->line_mutex);
@@ -72,12 +69,13 @@ static int	set_line(t_engine *engine, size_t *i)
 	}
 }
 
-static void	handle_single_ray(t_engine *engine, size_t i, size_t j)
+static void	handle_single_ray(t_engine *engine, size_t i, size_t j, int t_id)
 {
 	t_ray	c_ray;
 	t_color	color;
 
 	setup_camera_ray(engine, &c_ray, j, i);
+	c_ray.t_id = t_id;
 	if (engine->scene.camera.locked)
 		color.color = get_pixel_color(&engine->scene, &c_ray, DEPTH);
 	else

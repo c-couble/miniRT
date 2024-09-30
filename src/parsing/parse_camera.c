@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 06:26:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 09:37:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	parse_camera(t_engine *engine, t_object_data *data)
 	data->camera.pixel_square_size = DEFAULT_RAY_SIZE;
 	data->camera.should_render = 1;
 	data->camera.sensitivity = SENSITIVITY;
-	data->camera.speed = SPEED;
+	data->camera.speed = CAMERA_SPEED;
 	data->camera.render_type = CLASSIC;
 	return (0);
 }

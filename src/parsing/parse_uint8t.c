@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   reset_roll_angle.c                                 :+:      :+:    :+:   */
+/*   parse_uint8t.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/26 04:07:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 14:10:39 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/30 08:03:20 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/30 08:15:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "object/camera.h"
+#include <stdint.h>
+#include "ft_string.h"
 
-void	reset_roll_angle(t_engine *engine)
+int	parse_uint8t(uint8_t *data, char *nptr)
 {
-	if (engine->scene.camera.locked)
-		return ;
-	create_camera_vectors(&engine->scene.camera);
-	engine->scene.camera.should_render = 1;
+	int		n;
+
+	if (nptr == NULL)
+		return (-1);
+	if (ft_atoi_ptr(&n, nptr) == -1)
+		return (-1);
+	if (n < 0 || n > 255)
+		return (-1);
+	*data = n;
+	return (0);
 }

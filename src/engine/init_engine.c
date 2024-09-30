@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 08:23:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 15:05:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,10 +49,7 @@ int	init_engine(t_engine *engine, char *scene)
 static int	prepare_engine(t_engine *engine, char *scene)
 {
 	if (init_scene(engine, &engine->scene, scene) == -1)
-	{
-		clear_scene(&engine->scene);
 		return (-1);
-	}
 	if (init_mlx_struct(&engine->mlx) == -1)
 	{
 		clear_scene(&engine->scene);

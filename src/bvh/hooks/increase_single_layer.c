@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 16:05:38 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/18 00:59:09 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 14:13:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	increase_single_layer(t_engine *engine)
 {
+	if (engine->scene.camera.locked)
+		return ;
 	if (engine->scene.bvh.bvh_mode == NONE)
 		return ;
 	if (engine->scene.bvh.bvh_mode == FULL_LAYER)

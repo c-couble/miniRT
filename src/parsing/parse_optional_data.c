@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 00:05:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 13:25:27 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "caustic.h"
-#include "defines.h"
 #include "engine.h"
 #include "ft_string.h"
 #include "normal_map.h"
@@ -40,12 +39,6 @@ int	parse_optional_data(t_engine *engine, t_object *object)
 
 static void	init_optional_data(t_option *data)
 {
-	data->material.diffuse_ratio = DIFFUSE_RATIO;
-	data->material.specular_ratio = SPECULAR_RATIO;
-	data->material.specular_shine = SPECULAR_SHINE;
-	data->material.reflect_ratio = REFLECT_RATIO;
-	data->material.refract_index = 0;
-	data->material.refract_blend = 1;
 	init_material(&data->material);
 	data->texture = NULL;
 	data->up_texture = NULL;
@@ -68,6 +61,7 @@ static t_option_t	get_optional_type(char *type)
 	[NORMAL_MAP] = "nm",
 	[CHECKERBOARD] = "ch",
 	[CAUSTIC] = "ca",
+	[BACKGROUND_COLOR] = "bkg",
 	};
 	size_t		i;
 
@@ -89,6 +83,7 @@ static int	parse_option(t_engine *engine, t_object *object, char *arg)
 	[NORMAL_MAP] = parse_normal_map,
 	[CHECKERBOARD] = parse_checkerboard,
 	[CAUSTIC] = parse_caustic,
+	[BACKGROUND_COLOR] = parse_background_color,
 	};
 	t_option_t	type;
 	char		*name;

@@ -4,4 +4,4 @@ A 0.2 255,255,255
 
 L -190,100,090 1 255,255,255
 
-mesh assets/objects/diablo/diablo.obj 0,0,-100 1,0,0 0,0,1 10
+mesh assets/objects/diablo/diablo.obj 0,0,-100 1,0,0 0,0,1 10 1

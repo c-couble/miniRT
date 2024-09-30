@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   reset_roll_angle.c                                 :+:      :+:    :+:   */
+/*   init_objects_vectors.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/26 04:07:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 14:10:39 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/30 14:49:42 by lespenel          #+#    #+#             */
+/*   Updated: 2024/09/30 14:53:26 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "engine.h"
-#include "object/camera.h"
+#include "scene.h"
 
-void	reset_roll_angle(t_engine *engine)
+void	init_object_vectors(t_scene *scene)
 {
-	if (engine->scene.camera.locked)
-		return ;
-	create_camera_vectors(&engine->scene.camera);
-	engine->scene.camera.should_render = 1;
+	init_vector(&scene->objects, sizeof(t_object));
+	init_vector(&scene->lights, sizeof(t_light));
+	init_vector(&scene->planes, sizeof(t_object));
 }

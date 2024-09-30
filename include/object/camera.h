@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/28 00:44:07 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 08:40:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,16 @@
 
 # include <stddef.h>
 # include <stdint.h>
+# include "color.h"
 # include "mat4.h"
 # include "vec3.h"
 
 typedef enum e_rtype
 {
 	CLASSIC,
-	BOUNDING_BOX,
 	NORMAL,
-	UV_MAP
+	UV_MAP,
+	BOUNDING_BOX
 }	t_rtype;
 
 typedef struct s_camera

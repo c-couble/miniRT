@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 16:08:58 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/18 00:52:39 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/09/30 14:13:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	decrease_full_layer(t_engine *engine)
 {
+	if (engine->scene.camera.locked)
+		return ;
 	if (engine->scene.bvh.bvh_mode == NONE)
 		return ;
 	if (engine->scene.bvh.bvh_mode == SINGLE_LAYER)
