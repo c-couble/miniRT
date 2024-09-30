@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 00:20:17 by lespenel          #+#    #+#             */
-/*   Updated: 2024/08/27 01:15:16 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 20:40:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,6 @@ void	get_refraction_ray(t_ray *to_ref, t_vec3 *out_ref, double n1)
 		return ;
 	}
 	vec3_scale(&i, eta);
-	vec3_scale(&n, eta * dot_n_i - sqrtf(k));
+	vec3_scale(&n, eta * dot_n_i - sqrt(k));
 	vec3_add(&n, &i, out_ref);
 }

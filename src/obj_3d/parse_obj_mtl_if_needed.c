@@ -6,15 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 05:19:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 06:55:52 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 20:34:30 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "engine.h"
 #include "ft_string.h"
 #include "ft_mem.h"
+#include "ft_io.h"
 #include "obj_mtl.h"
 
 static t_obj_mtl	*add_new_mtl(t_engine *engine, char *file);
@@ -45,7 +45,7 @@ static t_obj_mtl	*add_new_mtl(t_engine *engine, char *file)
 	ft_memset(mtl, 0, sizeof(t_obj_mtl));
 	if (parse_mtl_file(engine, mtl, file) == -1)
 	{
-		dprintf(2, "Parsing error in %s\n", file);
+		ft_dprintf(2, "Parsing error in %s\n", file);
 		free(mtl);
 		return (NULL);
 	}

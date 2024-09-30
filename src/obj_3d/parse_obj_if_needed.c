@@ -6,15 +6,15 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 04:27:10 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 06:55:31 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 20:34:49 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include "engine.h"
 #include "obj_3d.h"
+#include "ft_io.h"
 #include "ft_mem.h"
 #include "ft_string.h"
 #include "engine.h"
@@ -48,7 +48,7 @@ static t_obj_3d	*add_new_obj(t_engine *engine, char *file)
 	ft_memset(obj, 0, sizeof(t_obj_3d));
 	if (parse_obj_file(engine, obj, file) == -1)
 	{
-		dprintf(2, "Parsing error in %s\n", file);
+		ft_dprintf(2, "Parsing error in %s\n", file);
 		free(obj);
 		return (NULL);
 	}

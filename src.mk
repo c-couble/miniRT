@@ -10,7 +10,6 @@ SRC = \
 	  bvh/intersect_bvh.c \
 	  bvh/intersect_bvh_mesh.c \
 	  bvh/print_objs.c \
-	  bvh/print_node.c \
 	  bvh/swap_by_axis.c \
 	  bvh/swap_by_axis_mesh.c \
 	  bvh/update_node_aabb.c \
@@ -29,8 +28,6 @@ SRC = \
 	  bvh/bounding_box/get_cached_triangle_aabb.c \
 	  bvh/bounding_box/get_mesh_aabb.c \
 	  bvh/bounding_box/intersect_aabb.c \
-	  bvh/bounding_box/print_aabb.c \
-	  bvh/bounding_box/print_bounding_box.c \
 	  bvh/bounding_box/update_caustic_aabb.c \
 	  \
 	  bvh/draw/draw_bounding_box.c \
@@ -76,7 +73,6 @@ SRC = \
 	  caustic/clear_caustic_maps.c \
 	  caustic/get_photons.c \
 	  caustic/trace_photon.c \
-	  caustic/print_photon_map.c \
 	  caustic/density_estimation.c \
 	  \
 	  caustic/hooks/init_caustic_hooks.c \
@@ -128,7 +124,6 @@ SRC = \
 	  kdtree/set_knn_size.c \
 	  kdtree/clear_knns.c \
 	  kdtree/print_kdtree.c \
-	  kdtree/print_knn.c \
 	  kdtree/sort_photon_axis.c \
 	  \
 	  math/mat4/divide_line.c \
@@ -148,7 +143,6 @@ SRC = \
 	  math/vec3/vec3_dot.c \
 	  math/vec3/vec3_get_norm.c \
 	  math/vec3/vec3_normalize.c \
-	  math/vec3/vec3_print.c \
 	  math/vec3/vec3_scale.c \
 	  math/vec3/vec3_subtract.c \
 	  math/vec3/vec3_random.c \
