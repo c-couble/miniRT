@@ -144,7 +144,8 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 | `ks`             | Specular ratio (float `0.0` to `1.0`)                   | `0.0` to `1.0`                     |
 | `ss`             | Specular shine (float `0` to `DBLMAX`)                  | `0` to `DBLMAX`                    |
 | `reflection`     | Reflection ratio (float `0.0` to `1.0`)                 | `0.0` (no reflection) to `1.0` (full reflection) |
-| `refraction`     | Refraction index (integer `1` to `5` or `0`)            | `0` (none) to `5.0`                |
+| `refraction`     | Refraction index (integer `1` to `5` or `0`)            | `0` (none), `1` to `5.0`           |
+| `refraction`     | Refraction blend (float `0.0` to `1.0`)           	     | `0.0` (no refraction) to `1.0` (full refraction) |
 
 ### Checkerboard (`ch`)
 `ch:<x_size>,<y_size> <R,G,B> <R,G,B>`
@@ -164,6 +165,21 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 | `texture1.ppm`    | Texture for the main shape                                        | Applicable to all shapes                      |
 | `texture2.ppm`    | (Optional) Top texture					        | Only for shapes like cylinders and paraboloids|
 | `texture3.ppm`    | (Optional) Bottom texture					        | Only for cylinders                            |
+
+### Normal Map (`nm`)
+`nm:<path_to_normal_map>,<path_to_normal_map2(optional)>,<path_to_normal_map3(optional)>`
+
+| **Property**      | **Description**                                                   | **Details**                                   |
+|-------------------|-------------------------------------------------------------------|-----------------------------------------------|
+| `normal_map1.ppm` | Normal Map for the main shape                                     | Applicable to all shapes                      |
+| `normal_map2.ppm` | (Optional) Top Normal Map				        	| Only for shapes like cylinders and paraboloids|
+| `normal_map3.ppm` | (Optional) Bottom Normal Map			        	| Only for cylinders                            |
+
+### Background Color (`bkg`)
+`bkg:<R,G,B>`
+
+### Caustic (`ca`)
+`ca:<photon_nb>`
 
 ### Sample .rt File
 
