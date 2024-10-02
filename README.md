@@ -89,6 +89,10 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 | **B**                    | BVH visualization on/off                  |
 | **Left arrow**, **Right arrow** | Decrease/increase BVH multi layer depth |
 | **Down arrow**, **Up arrow** | Decrease/increase BVH single layer depth  |
+| **Num 7**, **Num 9** | Decrease/increase Caustic bandwidth  |
+| **Num 4**, **Num 6** | Decrease/increase Caustic nearest neighbour number  |
+| **Num 1**, **Num 3** | Decrease/increase Caustic brightness scalar  |
+| **P** | Save high quality screenshot in ppm format |
 | **Esc**                  | Exit the program                          |
 
 ## Usage
