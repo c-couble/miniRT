@@ -131,12 +131,13 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 | `pl`           | Plane             | `pl <point_x,y,z> <normal_x,y,z> <R,G,B>`                                                             |
 | `cy`           | Cylinder          | `cy <center_x,y,z> <axis_vector_x,y,z> <diameter> <height> <R,G,B>`			             |
 | `pa`           | Paraboloid        | `pa <center_x,y,z> <axis_vector_x,y,z> <radius> <height> <disk> <R,G,B>`|
+| `mesh`           | Mesh        | `mesh <object_path.obj> <center_x,y,z> <axis_vector_front_x,y,z> <axis_vector_up_x,y,z> <scale>`|
 
 ### Optional specification can be added at the end of any geometry:
 
 ### Material (`ma`)
 
-`ma:<kd>,<ks>,<ss>,<reflection>,<refraction>`
+`ma:<kd>,<ks>,<ss>,<reflection>,<refraction>,<refraction_blend>`
 
 | **Property**     | **Description**                                          | **Range**                          |
 |------------------|----------------------------------------------------------|------------------------------------|
@@ -145,7 +146,7 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 | `ss`             | Specular shine (float `0` to `DBLMAX`)                  | `0` to `DBLMAX`                    |
 | `reflection`     | Reflection ratio (float `0.0` to `1.0`)                 | `0.0` (no reflection) to `1.0` (full reflection) |
 | `refraction`     | Refraction index (integer `1` to `5` or `0`)            | `0` (none), `1` to `5.0`           |
-| `refraction`     | Refraction blend (float `0.0` to `1.0`)           	     | `0.0` (no refraction) to `1.0` (full refraction) |
+| `refraction_blend`     | Refraction blend (float `0.0` to `1.0`)           	     | `0.0` (no refraction) to `1.0` (full refraction) |
 
 ### Checkerboard (`ch`)
 `ch:<x_size>,<y_size> <R,G,B> <R,G,B>`
@@ -180,6 +181,9 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 
 ### Caustic (`ca`)
 `ca:<photon_nb>`
+
+### Save render (`sr`)
+`sr:<width>,<height>`
 
 ### Sample .rt File
 
