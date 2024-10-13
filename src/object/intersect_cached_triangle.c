@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:16:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:20:49 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/13 08:23:59 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,9 @@ static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 	else
 		ray->data.normal = t->normal;
 	ray->data.materials = t->material;
-	if (t->material == NULL || t->material->texture == NULL)
+	if (t->material == NULL)
 		ray->data.color.color = NO_TEXTURE;
+	ray->data.color.color = t->material->color.color;
 	if (t->material && t->point_tx[0] && t->point_tx[1] && t->point_tx[2])
 	{
 		ray->data.u = (1 - u - v) * t->point_tx[0]->x

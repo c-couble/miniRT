@@ -6,13 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 02:02:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 00:03:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/13 02:12:39 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MATERIAL_H
 # define MATERIAL_H
 
+#include "color.h"
 # include "texture.h"
 
 typedef struct s_material_data
@@ -26,6 +27,7 @@ typedef struct s_material_data
 	t_texture	*texture;
 	t_texture	*normal_map;
 	char		*name;
+	t_color		color;
 }	t_material_data;
 
 struct	s_engine;

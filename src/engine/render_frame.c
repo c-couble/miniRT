@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 20:36:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/13 07:02:31 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ void	render_frame(t_engine *engine)
 	draw_bvh(engine);
 	if (save_render_to_file(engine) == -1)
 		return ;
+	printf("%lf, %lf, %lf\n", engine->scene.camera.coordinates.x, engine->scene.camera.coordinates.y, engine->scene.camera.coordinates.z);
+	printf("%lf, %lf, %lf, lookat\n", engine->scene.camera.front.x, engine->scene.camera.front.y, engine->scene.camera.front.z);
 	clock_gettime(CLOCK_REALTIME, &ts2);
 	elapsed = (ts2.tv_sec - ts.tv_sec);
 	elapsed += (ts2.tv_nsec - ts.tv_nsec) / 1000000000.0;

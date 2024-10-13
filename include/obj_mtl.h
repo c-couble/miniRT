@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 01:28:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 07:24:46 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/13 03:24:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,10 @@ typedef enum e_mtl_line_type
 	NS,
 	NI,
 	MAP_BUMP,
-	MAP_KD
+	MAP_KD,
+	REFLECTION,
+	REFRACTION,
+	REFRACTION_BLEND
 }	t_mtl_line_type;
 
 struct	s_engine;
@@ -50,5 +53,8 @@ int			parse_ns(struct s_engine *engine, t_obj_mtl *mtl, char *line);
 int			parse_ni(struct s_engine *engine, t_obj_mtl *mtl, char *line);
 int			parse_map_bump(struct s_engine *engine, t_obj_mtl *mtl, char *line);
 int			parse_map_kd(struct s_engine *engine, t_obj_mtl *mtl, char *line);
+int			parse_reflection(struct s_engine *engine, t_obj_mtl *mtl, char *s);
+int			parse_refraction(struct s_engine *engine, t_obj_mtl *mtl, char *s);
+int			parse_refraction_blend(struct s_engine *e, t_obj_mtl *m, char *s);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 01:33:43 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 08:00:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/13 09:18:37 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,8 +100,9 @@ static int	parse_line(t_engine *engine, t_obj_mtl *mtl, char *line)
 	[KS] = "Ks", [TF] = "Tf", [ILLUM] = "illum", [DISSOLVE] = "d",
 	[NS] = "Ns",
 	[NI] = "Ni",
-	[MAP_BUMP] = "map_Bump",
-	[MAP_KD] = "map_Kd"
+	[MAP_BUMP] = "map_Bump", [MAP_KD] = "map_Kd",
+	[REFLECTION] = "reflection",
+	[REFRACTION] = "refraction", [REFRACTION_BLEND] = "refraction_blend",
 	};
 	char		*arg;
 	char		*save;
@@ -111,7 +112,7 @@ static int	parse_line(t_engine *engine, t_obj_mtl *mtl, char *line)
 	if (arg == NULL || arg[0] == '#')
 		return (0);
 	i = 0;
-	while (i <= MAP_KD)
+	while (i <= REFRACTION_BLEND)
 	{
 		if (ft_strcmp(arg, data[i]) == 0)
 			return (parse_elem(engine, mtl, save, i));
@@ -133,7 +134,10 @@ static int	parse_elem(t_engine *engine, t_obj_mtl *data, char *save, int i)
 	[NS] = parse_ns,
 	[NI] = parse_ni,
 	[MAP_BUMP] = parse_map_bump,
-	[MAP_KD] = parse_map_kd
+	[MAP_KD] = parse_map_kd,
+	[REFLECTION] = parse_reflection,
+	[REFRACTION] = parse_refraction,
+	[REFRACTION_BLEND] = parse_refraction_blend
 	};
 
 	if (data->materials.size == 0 && i != NEWMTL)

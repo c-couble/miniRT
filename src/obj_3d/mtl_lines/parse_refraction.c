@@ -1,41 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_kd.c                                         :+:      :+:    :+:   */
+/*   parse_refraction.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 04:55:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/13 03:55:19 by lespenel         ###   ########.fr       */
+/*   Created: 2024/09/25 04:54:43 by ccouble           #+#    #+#             */
+/*   Updated: 2024/10/13 03:27:12 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <defines.h>
 #include "engine.h"
 #include "ft_string.h"
 #include "obj_mtl.h"
 #include "object/material.h"
 #include "object/parse_util.h"
 
-int	parse_kd(t_engine *engine, t_obj_mtl *mtl, char *line)
+int	parse_refraction(t_engine *engine, t_obj_mtl *mtl, char *line)
 {
 	t_material_data	*material;
 	char			*save;
-	double			r;
-	double			g;
-	double			b;
+	char			*word;
 
 	(void) engine;
 	material = at_vector(&mtl->materials, mtl->materials.size - 1);
-	if (parse_double(&r, ft_strtok_r(line, " \t", &save), 0, 1) == -1)
-		return (-1);
-	if (parse_double(&g, ft_strtok_r(NULL, " \t", &save), 0, 1) == -1)
-		return (-1);
-	if (parse_double(&b, ft_strtok_r(NULL, " \t", &save), 0, 1) == -1)
-		return (-1);
-	material->color.rgb.r = 255 * r;
-	material->color.rgb.g = 255 * g;
-	material->color.rgb.b = 255 * b;
-	material->diffuse_ratio = 1;//DIFFUSE_RATIO;
-	return (0);
+	word = ft_strtok_r(line, " \t", &save);
+	return (parse_double(&material->refract_index, word, 1, 5));
 }

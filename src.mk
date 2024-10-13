@@ -206,6 +206,9 @@ SRC = \
 	  obj_3d/mtl_lines/parse_newmtl.c \
 	  obj_3d/mtl_lines/parse_ni.c \
 	  obj_3d/mtl_lines/parse_ns.c \
+	  obj_3d/mtl_lines/parse_reflection.c \
+	  obj_3d/mtl_lines/parse_refraction.c \
+	  obj_3d/mtl_lines/parse_refraction_blend.c \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
