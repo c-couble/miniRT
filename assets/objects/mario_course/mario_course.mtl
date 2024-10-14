@@ -10,7 +10,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/castle_shadow1.ppm
+map_Kd castle_shadow1.ppm
 
 newmtl material_1
 Ka 0.200000 0.200000 0.200000
@@ -19,7 +19,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/dis_water1.ppm
+map_Kd dis_water1.ppm
 
 newmtl material_2
 Ka 0.200000 0.200000 0.200000
@@ -28,7 +28,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_kyaku1.ppm
+map_Kd mc_kyaku1.ppm
 
 newmtl material_3
 Ka 0.200000 0.200000 0.200000
@@ -37,7 +37,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_flag1.ppm
+map_Kd mc_flag1.ppm
 
 newmtl material_4
 Ka 0.200000 0.200000 0.200000
@@ -46,7 +46,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_RoadDirt.ppm
+map_Kd mc_RoadDirt.ppm
 
 newmtl material_5
 Ka 0.200000 0.200000 0.200000
@@ -55,7 +55,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_kusaFUTI1.ppm
+map_Kd mc_kusaFUTI1.ppm
 
 newmtl material_6
 Ka 0.200000 0.200000 0.200000
@@ -64,7 +64,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_tunnel1.ppm
+map_Kd mc_tunnel1.ppm
 
 newmtl material_7
 Ka 0.200000 0.200000 0.200000
@@ -73,7 +73,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_SunaKusa2.ppm
+map_Kd mc_SunaKusa2.ppm
 
 newmtl material_8
 Ka 0.200000 0.200000 0.200000
@@ -82,7 +82,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_ami1.ppm
+map_Kd mc_ami1.ppm
 
 newmtl material_9
 Ka 0.200000 0.200000 0.200000
@@ -91,7 +91,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_panel1.ppm
+map_Kd mc_panel1.ppm
 
 newmtl material_10
 Ka 0.200000 0.200000 0.200000
@@ -100,7 +100,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/castle_mado.ppm
+map_Kd castle_mado.ppm
 
 newmtl material_11
 Ka 0.200000 0.200000 0.200000
@@ -109,7 +109,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_block1.ppm
+map_Kd mc_block1.ppm
 
 newmtl material_12
 Ka 0.200000 0.200000 0.200000
@@ -118,7 +118,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/castle_yane.ppm
+map_Kd castle_yane.ppm
 
 newmtl material_13
 Ka 0.200000 0.200000 0.200000
@@ -127,7 +127,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_dirt1.ppm
+map_Kd mc_dirt1.ppm
 
 newmtl material_14
 Ka 0.200000 0.200000 0.200000
@@ -136,7 +136,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_combD.ppm
+map_Kd mc_combD.ppm
 
 newmtl material_15
 Ka 0.200000 0.200000 0.200000
@@ -145,7 +145,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_combA.ppm
+map_Kd mc_combA.ppm
 
 newmtl material_16
 Ka 0.200000 0.200000 0.200000
@@ -154,7 +154,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_combE.ppm
+map_Kd mc_combE.ppm
 
 newmtl material_17
 Ka 0.200000 0.200000 0.200000
@@ -163,7 +163,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_suna1.ppm
+map_Kd mc_suna1.ppm
 
 newmtl material_18
 Ka 0.200000 0.200000 0.200000
@@ -172,7 +172,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_combB.ppm
+map_Kd mc_combB.ppm
 
 newmtl material_19
 Ka 0.200000 0.200000 0.200000
@@ -181,7 +181,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_road1.ppm
+map_Kd mc_road1.ppm
 
 newmtl material_20
 Ka 0.200000 0.200000 0.200000
@@ -190,7 +190,7 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_combC.ppm
+map_Kd mc_combC.ppm
 
 newmtl material_21
 Ka 0.200000 0.200000 0.200000
@@ -199,5 +199,5 @@ Ks 1.000000 1.000000 1.000000
 Tr 1.000000
 illum 2
 Ns 0.000000
-map_Kd assets/objects/mario_course/mc_grass1.ppm
+map_Kd mc_grass1.ppm
 

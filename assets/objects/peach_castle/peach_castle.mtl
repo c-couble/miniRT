@@ -10,7 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/carpet_red.ppm
+map_Kd carpet_red.ppm
 
 newmtl conc_wall.001
 Ns 0.000000
@@ -21,7 +21,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/concwall_32.ppm
+map_Kd concwall_32.ppm
 
 newmtl gake_00.001
 Ns 0.000000
@@ -32,7 +32,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_gake.ppm
+map_Kd mc_gake.ppm
 
 newmtl grass.001
 Ns 0.000000
@@ -43,7 +43,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_grass.ppm
+map_Kd mc_grass.ppm
 
 newmtl mc_bridge.001
 Ns 0.000000
@@ -54,7 +54,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_bridge.ppm
+map_Kd mc_bridge.ppm
 
 newmtl mc_fence.001
 Ns 0.000000
@@ -65,7 +65,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_fence.ppm
+map_Kd mc_fence.ppm
 
 newmtl mc_flow_a.001
 Ns 0.000000
@@ -76,7 +76,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_flow_a.ppm
+map_Kd mc_flow_a.ppm
 
 newmtl mc_flow_b.001
 Ns 0.000000
@@ -87,7 +87,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_flow_b.ppm
+map_Kd mc_flow_b.ppm
 
 newmtl mc_kakine00.001
 Ns 0.000000
@@ -98,7 +98,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_kakine00.ppm
+map_Kd mc_kakine00.ppm
 
 newmtl mc_kakine01.001
 Ns 0.000000
@@ -109,7 +109,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_kakine01.ppm
+map_Kd mc_kakine01.ppm
 
 newmtl mc_road.001
 Ns 0.000000
@@ -120,7 +120,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_road.ppm
+map_Kd mc_road.ppm
 
 newmtl mc_roof.001
 Ns 0.000000
@@ -131,7 +131,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_roof.ppm
+map_Kd mc_roof.ppm
 
 newmtl mc_sand.001
 Ns 0.000000
@@ -142,7 +142,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_sand.ppm
+map_Kd mc_sand.ppm
 
 newmtl mc_sand_d.001
 Ns 0.000000
@@ -153,7 +153,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_sand_d.ppm
+map_Kd mc_sand_d.ppm
 
 newmtl mc_til_str.001
 Ns 0.000000
@@ -164,7 +164,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_til_str.ppm
+map_Kd mc_til_str.ppm
 
 newmtl mc_tile00.001
 Ns 0.000000
@@ -175,7 +175,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_til00.ppm
+map_Kd mc_til00.ppm
 
 newmtl mc_window.001
 Ns 0.000000
@@ -186,7 +186,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_window.ppm
+map_Kd mc_window.ppm
 
 newmtl peach.001
 Ns 0.000000
@@ -197,7 +197,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/peach.ppm
+map_Kd peach.ppm
 
 newmtl renga_g.001
 Ns 0.000000
@@ -208,7 +208,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/renga_grass.ppm
+map_Kd renga_grass.ppm
 
 newmtl renga_sk.001
 Ns 0.000000
@@ -219,7 +219,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/renga_shik00.ppm
+map_Kd renga_shik00.ppm
 
 newmtl tree_shadow.001
 Ns 0.000000
@@ -230,7 +230,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/tree_shadow.ppm
+map_Kd tree_shadow.ppm
 
 newmtl tri_tile.001
 Ns 0.000000
@@ -241,7 +241,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_tritile.ppm
+map_Kd mc_tritile.ppm
 
 newmtl water_mat.001
 Ns 0.000000
@@ -252,7 +252,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/water.ppm
+map_Kd water.ppm
 
 newmtl yama.001
 Ns 0.000000
@@ -263,4 +263,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd assets/objects/peach_castle/mc_yama.ppm
+map_Kd mc_yama.ppm

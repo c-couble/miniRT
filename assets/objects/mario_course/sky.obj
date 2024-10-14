@@ -9,7 +9,7 @@
 # Faces: 24
 #
 ####
-mtllib assets/objects/mario_course/sky.mtl
+mtllib sky.mtl
 
 vn 0.000000 0.000000 0.000000
 v 372.265594 -9.375000 0.000000 0.972549 0.972549 0.972549
