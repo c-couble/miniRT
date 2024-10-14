@@ -1,6 +1,6 @@
 # Blender v2.64 (sub 1) OBJ File: ''
 # www.blender.org
-mtllib assets/objects/gold_mantis/gold_mantis.mtl
+mtllib gold_mantis.mtl
 o polygon1
 v 0.273926 0.445312 0.055908
 v 0.299316 0.429932 0.034424

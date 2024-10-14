@@ -1,6 +1,6 @@
 # Blender 4.2.1 LTS
 # www.blender.org
-mtllib assets/objects/stand/stand.mtl
+mtllib stand.mtl
 o Pedestal
 v 0.995857 -0.001431 -0.995857
 v 0.995857 0.002712 -1.000000

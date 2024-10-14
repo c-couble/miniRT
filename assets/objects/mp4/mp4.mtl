@@ -6,7 +6,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 reflect 0.3
 illum 3
-map_Kd assets/objects/mp4/bodyUVtextured.ppm
+map_Kd bodyUVtextured.ppm
 
 newmtl BodyworkBlackGloss
 Ns 200.000000
@@ -27,7 +27,7 @@ Ni 1.500000
 d 1.000000
 illum 3
 reflect 0.3
-map_Kd assets/objects/mp4/Marlboro red.ppm
+map_Kd Marlboro red.ppm
 
 newmtl BodyworkWhite
 Ns 200.000000
@@ -58,7 +58,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 3
 reflect 0.3
-map_Kd assets/objects/mp4/wingUVtextured.ppm
+map_Kd wingUVtextured.ppm
 map_d wingUVtextured.ppm
 
 newmtl Rearwing
@@ -69,7 +69,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 illum 3
 reflect 0.3
-map_Kd assets/objects/mp4/rearwingUVtextured.ppm
+map_Kd rearwingUVtextured.ppm
 map_d rearwingUVtextured.ppm
 
 newmtl Rim
@@ -80,7 +80,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd assets/objects/mp4/metal.ppm
+map_Kd metal.ppm
 
 newmtl Tach
 Ns 200.000000
@@ -90,7 +90,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd assets/objects/mp4/tachUVtextured.ppm
+map_Kd tachUVtextured.ppm
 
 newmtl Tachometer
 Ns 200.000000
@@ -100,7 +100,7 @@ Ke 1.000000 1.000000 1.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd assets/objects/mp4/bze8wepcqi3z.ppm
+map_Kd bze8wepcqi3z.ppm
 
 newmtl Tyre
 Ns 200.000000
@@ -110,7 +110,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd assets/objects/mp4/tyreUVtextured.ppm
+map_Kd tyreUVtextured.ppm
 
 newmtl driveShaft
 Ns 63.117920
@@ -150,7 +150,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd assets/objects/mp4/shutterstock_212282632.ppm
+map_Kd shutterstock_212282632.ppm
 
 newmtl mirror
 Ns 200.000000
@@ -200,7 +200,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 3
-map_Kd assets/objects/mp4/wheelUVtextured.ppm
+map_Kd wheelUVtextured.ppm
 
 newmtl window
 Ns 63.117920
