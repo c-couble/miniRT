@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 18:15:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/16 19:57:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 21:46:11 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct s_cylinder
 	double	theta;
 	double	diameter;
 	double	radius;
+	double	radiussq;
 	double	height;
 	t_color	color;
 }	t_cylinder;

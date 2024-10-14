@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:35:52 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 09:36:47 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 21:42:46 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ double	intersect_sphere(t_object *obj, t_ray *ray)
 	q.a = powl(ray->ray.x, 2) + powl(ray->ray.y, 2) + powl(ray->ray.z, 2);
 	q.b = 2 * vec3_dot(&p, &ray->ray);
 	q.c = powl(p.x, 2) + powl(p.y, 2) + powl(p.z, 2)
-		- powl(obj->data.sphere.radius, 2);
+		- obj->data.sphere.radiussq;
 	solve_quadratic_equation(&q);
 	if (q.delta < 0)
 		return (-1);

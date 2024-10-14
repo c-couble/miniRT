@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:27:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 21:50:31 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int	parse_paraboloid(t_engine *engine, t_object_data *data)
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->paraboloid.radius, arg, 0, DBL_MAX) == -1)
 		return (-1);
+	data->paraboloid.radiussq = data->paraboloid.radius * data->paraboloid.radius;
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->paraboloid.height, arg, 0, DBL_MAX) == -1)
 		return (-1);

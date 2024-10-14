@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:00:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/29 09:37:49 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 21:50:38 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,7 +122,7 @@ static double	check_disk(t_object *obj, t_ray *ray)
 	t = solve_plane_equation(&plane, ray);
 	get_hitpos(ray, t);
 	vec3_subtract(&plane.pos, &ray->data.hitpos, &hitpoint);
-	if (vec3_get_norm(&hitpoint) < obj->data.paraboloid.radius)
+	if (vec3_get_norm_squared(&hitpoint) < obj->data.paraboloid.radiussq)
 	{
 		ray->data.normal = plane.normal;
 		vec3_scale(&hitpoint, 1 / (obj->data.paraboloid.radius * 2));

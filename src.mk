@@ -142,6 +142,7 @@ SRC = \
 	  math/vec3/vec3_cross.c \
 	  math/vec3/vec3_dot.c \
 	  math/vec3/vec3_get_norm.c \
+	  math/vec3/vec3_get_norm_squared.c \
 	  math/vec3/vec3_normalize.c \
 	  math/vec3/vec3_scale.c \
 	  math/vec3/vec3_subtract.c \
