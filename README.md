@@ -37,21 +37,21 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 	</tr>
   <tr>
     <td style="width:50%; padding:5px; text-align:center;">
-      <div style="font-weight:bold; margin-bottom:5px;">screen 1</div>
+      <div style="font-weight:bold; margin-bottom:5px;"></div>
       <img src="assets/screenshots/mkds.png" style="width:100%; height:auto;">
     </td>
     <td style="width:50%; padding:5px; text-align:center;">
-      <div style="font-weight:bold; margin-bottom:5px;">screen 2</div>
-      <img src="assets/screenshots/steemed.png" style="width:100%; height:auto;">
+      <div style="font-weight:bold; margin-bottom:5px;"></div>
+      <img src="assets/screenshots/pool_caustic.png" style="width:100%; height:auto;">
     </td>
   </tr>
 	</tr>
     <td style="width:50%; padding:5px; text-align:center;">
-      <div style="font-weight:bold; margin-bottom:5px;">screen 3</div>
-      <img src="assets/screenshots/mp4.png" style="width:100%; height:auto;">
+      <div style="font-weight:bold; margin-bottom:5px;"></div>
+      <img src="assets/screenshots/teapot.png" style="width:100%; height:auto;">
     </td>
     <td style="width:50%; padding:5px; text-align:center;">
-      <div style="font-weight:bold; margin-bottom:5px;">screen 4</div>
+      <div style="font-weight:bold; margin-bottom:5px;"></div>
       <img src="assets/screenshots/para.png" style="width:100%; height:auto;">
     </td>
   </tr>
