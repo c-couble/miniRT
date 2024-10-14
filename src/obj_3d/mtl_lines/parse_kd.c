@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 04:55:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/13 03:55:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 12:04:51 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ int	parse_kd(t_engine *engine, t_obj_mtl *mtl, char *line)
 	material->color.rgb.r = 255 * r;
 	material->color.rgb.g = 255 * g;
 	material->color.rgb.b = 255 * b;
-	material->diffuse_ratio = 1;//DIFFUSE_RATIO;
+	material->diffuse_ratio = MESH_DIFFUSE_RATIO;
 	return (0);
 }
