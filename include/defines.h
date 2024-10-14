@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/10/14 07:59:57 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 11:53:59 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@
 //Caustic parameters
 # define ESTIMATION_SCALE	110
 # define FORCE_P_RAY		1
-# define DEFAULT_NN			6
+# define DEFAULT_NN			5
 # define KNN_MAX			50
 # define CA_BBOX_SCALING	0.025
-# define DEFAULT_BANDWIDTH  0.12
+# define DEFAULT_BANDWIDTH  0.40
 
 //Defaults material values
 # define AIR_RATIO			1.0
