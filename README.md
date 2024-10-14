@@ -16,13 +16,13 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 - [Controls](#controls)
 - [Supported File Formats](#supported-file-formats)
 - [Features](#features)
-- [Shading](#features)
-- [Camera](#features)
-- [Geometry](#features)
-- [Polygon meshes](#features)
-- [Space partitioning](#features)
-- [Texturing](#features)
 - [Credits](#credits)
+- 
+- 
+- 
+-
+-
+-
 
 ## Gallery
 <img src="assets/screenshots/f40.png">
@@ -74,7 +74,10 @@ is one of the reasons rendering is such a fascinating and challenging field of s
   </tr>
 </table>
 
-## Features
+
+## Usage
+
+To view the detailed information on how to create a .rt please check out the [detailed .rt section](#section-rt) below.
 
 ## Controls
 
@@ -97,10 +100,6 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 | **Num 1**, **Num 3** | Decrease/increase Caustic brightness scalar  |
 | **P** | Save high quality screenshot in ppm format |
 | **Esc**                  | Exit the program                          |
-
-## Usage
-
-To view the detailed information on how to create a .rt please check out the [detailed .rt section](#section-rt) below.
 
 ## Supported File Formats
 
@@ -206,6 +205,43 @@ sp 0,50.6,50 20 255,0,0 ma:0.79,1,1024,0.08,0 tx:textures/pool_14.ppm
 pa -50,50,25 0,0,1 20 50 0 220,220,190 ch:10,10 120,20,220 220,50,120
 ```
 </details>
+
+## Features
+
+### Lighting and Shading Models:
+- **Phong Illumination Model**: Full support for Phong shading with diffuse, specular, and ambient components.
+- **Reflection**: Accurate reflections based on material properties, allowing for reflective surfaces.
+- **Refraction**: Simulation of light refraction through transparent materials such as glass or water.
+- **Fresnel Effect**: Simulates how the reflectivity of a surface changes based on the viewing angle, adding realism to materials like glass, water, and metals.
+- **Caustics**: Precise rendering of light concentration effects caused by reflection and refraction (e.g., light patterns under water).
+
+### Textures and Materials:
+- **Normal Mapping**: Adds fine surface detail with normal maps without increasing the geometric complexity.
+- **Textures**: Apply textures to customize the appearance of surfaces.
+- **Checkerboard Pattern**: Configurable checkerboard pattern for planar surfaces.
+
+### Geometries Supported:
+- **Sphere, Cylinder, Paraboloid, Plane**: Basic geometric primitives with precise intersection handling.
+- **Triangle Meshes**: Support for complex objects represented by triangle meshes.
+- **Bounding Volume Hierarchy (BVH)**: An acceleration structure to improve the performance of intersection testing in complex scenes.
+
+### Camera and Rendering:
+- **Camera Movement**: Free camera movement through the scene, allowing dynamic exploration from different angles.
+- **Adaptive Resolution**: Automatically adjusts the resolution in real-time to maintain smooth framerate during free camera movement.
+- **High-Quality Rendering**: Supports rendering in high-quality **PPM (Portable Pixmap)** format for detailed outputs.
+
+### Performance and Optimization:
+- **Multithreading**: Fully utilizes multicore processors to perform ray tracing calculations in parallel, significantly improving rendering performance.
+- **BVH (Bounding Volume Hierarchy)**: Efficient ray-object intersection calculations using a hierarchical structure, improving rendering performance for large and complex scenes.
+- **Adaptive Resolution**: Dynamically reduces resolution to maintain a smooth framerate in free camera mode, while providing full resolution when needed.
+
+### Visualization and Customization:
+- **BVH Visualization**: Visualize the **BVH** structure layer by layer, enabling better understanding and debugging of the acceleration structure.
+- **Background Color Change**: Customize the background color of the scene to fit different rendering needs or artistic styles.
+- **Debug Mode**: Switch between different debug views:
+  - **Normal Mode**: Visualize surface normals.
+  - **UV Mode**: Display UV coordinates for texturing and debugging.
+  - **Bounding Box Mode**: Show bounding boxes for objects to visualize the BVH hierarchy and object culling.
 
 ## Credits
 
