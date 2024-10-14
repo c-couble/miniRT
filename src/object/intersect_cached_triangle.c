@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:16:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:20:49 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 12:08:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include <stdio.h>
 #include "defines.h"
 #include "ft_math.h"
 #include "object/triangle.h"
@@ -21,6 +20,7 @@
 static double	get_t(t_cached_triangle *t, t_ray *ray, t_vec3 *vt, t_vec3 *p);
 static void		set_data(t_cached_triangle *t, t_ray *ray, double u, double v);
 static void		gouraud(t_cached_triangle *t, t_ray *ray, double u, double v);
+static void		get_uv(t_cached_triangle *t, t_ray *ray, double u, double v);
 
 double	intersect_cached_triangle(t_cached_triangle *triangle, t_ray *ray)
 {
@@ -65,18 +65,12 @@ static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 	else
 		ray->data.normal = t->normal;
 	ray->data.materials = t->material;
-	if (t->material == NULL || t->material->texture == NULL)
+	if (t->material == NULL)
 		ray->data.color.color = NO_TEXTURE;
+	ray->data.color.color = t->material->color.color;
 	if (t->material && t->point_tx[0] && t->point_tx[1] && t->point_tx[2])
 	{
-		ray->data.u = (1 - u - v) * t->point_tx[0]->x
-			+ u * t->point_tx[1]->x
-			+ v * t->point_tx[2]->x;
-		ray->data.v = (1 - u - v) * t->point_tx[0]->y
-			+ u * t->point_tx[1]->y
-			+ v * t->point_tx[2]->y;
-		ray->data.u = ft_dabs(fmod(ray->data.u, 1));
-		ray->data.v = ft_dabs(fmod(ray->data.v, 1));
+		get_uv(t, ray, u, v);
 		ray->data.texture = t->material->texture;
 		ray->data.normal_map = t->material->normal_map;
 	}
@@ -101,4 +95,17 @@ static void	gouraud(t_cached_triangle *t, t_ray *ray, double u, double v)
 	vec3_scale(&tmp1, v);
 	vec3_add(&ray->data.normal, &tmp1, &ray->data.normal);
 	vec3_normalize(&ray->data.normal);
+}
+
+static void	get_uv(t_cached_triangle *t, t_ray *ray, double u, double v)
+{
+	ray->data.u = (1 - u - v) * t->point_tx[0]->x
+		+ u * t->point_tx[1]->x
+		+ v * t->point_tx[2]->x;
+	ray->data.v = (1 - u - v) * t->point_tx[0]->y
+		+ u * t->point_tx[1]->y
+		+ v * t->point_tx[2]->y;
+	ray->data.v = 1 - ray->data.v;
+	ray->data.u = ft_dabs(fmod(ray->data.u, 1));
+	ray->data.v = ft_dabs(fmod(ray->data.v, 1));
 }

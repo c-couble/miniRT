@@ -6,10 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 04:55:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/25 04:56:13 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 14:29:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <defines.h>
 #include "engine.h"
 #include "ft_string.h"
 #include "obj_mtl.h"
@@ -20,10 +21,27 @@ int	parse_kd(t_engine *engine, t_obj_mtl *mtl, char *line)
 {
 	t_material_data	*material;
 	char			*save;
-	char			*word;
+	double			r;
+	double			g;
+	double			b;
 
 	(void) engine;
 	material = at_vector(&mtl->materials, mtl->materials.size - 1);
-	word = ft_strtok_r(line, " \t", &save);
-	return (parse_double(&material->diffuse_ratio, word, 0, 1));
+	if (parse_double(&r, ft_strtok_r(line, " \t", &save), 0, 1) == -1)
+		return (-1);
+	if (parse_double(&g, ft_strtok_r(NULL, " \t", &save), 0, 1) == -1)
+	{
+		material->color.rgb.r = 255 * r;
+		material->color.rgb.g = 255 * r;
+		material->color.rgb.b = 255 * r;
+		material->diffuse_ratio = MESH_DIFFUSE_RATIO;
+		return (0);
+	}
+	if (parse_double(&b, ft_strtok_r(NULL, " \t", &save), 0, 1) == -1)
+		return (-1);
+	material->color.rgb.r = 255 * r;
+	material->color.rgb.g = 255 * g;
+	material->color.rgb.b = 255 * b;
+	material->diffuse_ratio = MESH_DIFFUSE_RATIO;
+	return (0);
 }
