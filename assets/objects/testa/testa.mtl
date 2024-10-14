@@ -65,7 +65,7 @@ Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
-reflection 0.3
+reflection 0.2
 illum 3
 
 newmtl Red_light

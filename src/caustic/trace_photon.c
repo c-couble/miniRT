@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 20:31:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 05:12:23 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,6 @@ static void	set_refract_photon(t_ray *ph_ray, t_ray *refr, t_photon *ph)
 	}
 	get_refraction_ray(ph_ray, &refr->ray,
 		ph_ray->data.materials->refract_index);
-	refr->inv_x = 0;
-	refr->inv_y = 0;
-	refr->inv_z = 0;
 	get_inv_dir(refr);
 	refr->startpos = ph_ray->data.hitpos;
 }

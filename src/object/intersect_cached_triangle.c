@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:16:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/13 08:23:59 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 00:53:50 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 		ray->data.v = (1 - u - v) * t->point_tx[0]->y
 			+ u * t->point_tx[1]->y
 			+ v * t->point_tx[2]->y;
+		ray->data.v = 1 - ray->data.v;
 		ray->data.u = ft_dabs(fmod(ray->data.u, 1));
 		ray->data.v = ft_dabs(fmod(ray->data.v, 1));
 		ray->data.texture = t->material->texture;

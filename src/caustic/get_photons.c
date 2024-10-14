@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:28:48 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 20:29:10 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 06:22:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	get_photons(t_scene *scene, t_vector *p, t_object *obj, t_light *light)
 	{
 		generate_spherical_ray(&p_ray);
 		p_ray.startpos = light->pos;
-		photon.color.color = light->color.color;
+		photon.color.color = scale_color(&light->color, 1.0);
 		photon.ratio = light->ratio;
 		if (intersect(obj, &p_ray) > INACCURATE_ZERO)
 		{
