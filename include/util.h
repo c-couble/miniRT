@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 19:32:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 00:04:48 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 15:12:48 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 int		double_equals(double a, double b);
 void	ft_dswap(double *a, double *b);
 double	get_axis(t_vec3 *v, int axis);
+char	*get_relative_path(const char *main_file, const char *needed_file);
 void	init_material(t_material_data *data);
 double	get_biggest_distance(double a, double b);
 double	get_closest_distance(double a, double b);
