@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 07:23:36 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/14 17:20:16 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 17:59:17 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,5 @@ int	parse_map_bump(t_engine *engine, t_obj_mtl *mtl, char *line)
 		if (material->normal_map == NULL)
 			return (-1);
 	}
-
 	return (0);
 }
