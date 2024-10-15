@@ -6,12 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:12:58 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 21:42:23 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
-#include <stdio.h>
+#include "engine.h"
 #include "color.h"
 #include "ft_string.h"
 #include "object.h"
@@ -29,6 +29,7 @@ int	parse_sphere(t_engine *engine, t_object_data *data)
 	if (parse_double(&data->sphere.diameter, arg, 0, DBL_MAX) == -1)
 		return (-1);
 	data->sphere.radius = data->sphere.diameter / 2;
+	data->sphere.radiussq = data->sphere.radius * data->sphere.radius;
 	if (parse_color(&data->sphere.color) == -1)
 		return (-1);
 	return (0);

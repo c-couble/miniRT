@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 05:48:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 10:15:19 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define RAY_H
 
 # include "color.h"
-# include "engine.h"
 # include "object/material.h"
 # include "vec3.h"
 
@@ -31,7 +30,8 @@ typedef struct s_hit_data
 	double				v;
 	struct s_object		*obj;
 	struct s_texture	*texture;
-	t_material_data		materials;
+	struct s_texture	*normal_map;
+	t_material_data		*materials;
 }	t_hit_data;
 
 typedef struct s_ray
@@ -39,8 +39,15 @@ typedef struct s_ray
 	t_vec3		startpos;
 	t_vec3		ray;
 	t_hit_data	data;
+	double		inv_x;
+	double		inv_y;
+	double		inv_z;
+	int			t_id;
 }	t_ray;
 
-int	trace_ray(t_engine *engine, t_ray *ray);
+struct	s_scene;
+
+int		trace_ray(struct s_scene *scene, t_ray *ray);
+void	get_inv_dir(t_ray *ray);
 
 #endif

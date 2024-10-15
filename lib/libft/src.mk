@@ -32,6 +32,7 @@ SRC = \
 	  math/ft_abs.c \
 	  math/ft_dabs.c \
 	  math/ft_dmin.c \
+	  math/ft_dmax.c \
 	  math/ft_max.c \
 	  \
 	  mem/ft_calloc.c \
@@ -78,5 +79,6 @@ SRC = \
 	  vector/merge_vector.c \
 	  vector/reallocate_vector.c \
 	  vector/remove_vector.c \
+	  vector/remove_vector_from_end.c \
 	  vector/set_alloc_size.c \
 	  vector/set_value_vector.c \

@@ -6,16 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:50:20 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:39:09 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 08:15:36 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
-#include <stdio.h>
 #include "color.h"
 #include "ft_string.h"
-
-static int	parse_uint8(uint8_t *n, char *nptr);
+#include "object/parse_util.h"
 
 int	parse_color(t_color *color)
 {
@@ -26,25 +23,11 @@ int	parse_color(t_color *color)
 	if (arg == NULL)
 		return (-1);
 	save = NULL;
-	if (parse_uint8(&color->rgb.r, ft_strtok_r(arg, ",", &save)) == -1)
+	if (parse_uint8t(&color->rgb.r, ft_strtok_r(arg, ",", &save)) == -1)
 		return (-1);
-	if (parse_uint8(&color->rgb.g, ft_strtok_r(NULL, ",", &save)) == -1)
+	if (parse_uint8t(&color->rgb.g, ft_strtok_r(NULL, ",", &save)) == -1)
 		return (-1);
-	if (parse_uint8(&color->rgb.b, ft_strtok_r(NULL, ",", &save)) == -1)
+	if (parse_uint8t(&color->rgb.b, ft_strtok_r(NULL, ",", &save)) == -1)
 		return (-1);
-	return (0);
-}
-
-static int	parse_uint8(uint8_t *data, char *nptr)
-{
-	int		n;
-
-	if (nptr == NULL)
-		return (-1);
-	if (ft_atoi_ptr(&n, nptr) == -1)
-		return (-1);
-	if (n < 0 || n > 255)
-		return (-1);
-	*data = n;
 	return (0);
 }

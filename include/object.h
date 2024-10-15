@@ -6,13 +6,14 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 05:18:31 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/27 07:14:31 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef OBJECT_H
 # define OBJECT_H
 
+# include "bounding_box.h"
 # include "object/ambient_light.h"
 # include "object/camera.h"
 # include "object/cylinder.h"
@@ -55,18 +56,22 @@ typedef union u_object_data
 
 typedef struct s_object
 {
+	t_aabb			aabb;
 	t_object_type	type;
 	t_object_data	data;
 	t_option		optional_data;
 }	t_object;
 
-int		init_object(t_engine *engine, t_object *object, char *line);
+struct	s_engine;
+
+int		init_object(struct s_engine *engine, t_object *object, char *line);
 double	intersect(t_object *obj, t_ray *ray);
 double	intersect_sphere(t_object *obj, t_ray *ray);
 double	intersect_cylinder(t_object *obj, t_ray *ray);
 double	intersect_plane(t_object *obj, t_ray *ray);
 double	intersect_paraboloid(t_object *obj, t_ray *ray);
 double	intersect_triangle(t_object *obj, t_ray *ray);
+double	intersect_cached_triangle(t_cached_triangle *triangle, t_ray *ray);
 double	intersect_mesh(t_object *obj, t_ray *ray);
 
 #endif

@@ -6,11 +6,12 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 05:47:32 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/09/30 13:37:48 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "engine.h"
 #include "ft_string.h"
 #include "object.h"
 #include "object/optional_data.h"
@@ -35,11 +36,14 @@ int	init_object(t_engine *engine, t_object *object, char *line)
 		return (0);
 	if (parse_object(engine, object) == -1)
 		return (-1);
+	if (object->type == TRIANGLE)
+		object->data.triangle.cached.material = &object->optional_data.material;
+	if (parse_optional_data(engine, object) == -1)
+		return (-1);
 	if (object->type != LIGHT
 		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
 	{
-		if (parse_optional_data(engine, object) == -1)
-			return (-1);
+		get_objects_aabb(object);
 	}
 	return (0);
 }

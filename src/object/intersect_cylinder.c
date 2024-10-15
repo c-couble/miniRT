@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/05 07:58:06 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 21:47:21 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ double	intersect_cylinder(t_object *obj, t_ray *ray)
 		return (-1);
 	ray->data = data;
 	ray->data.color = obj->data.cylinder.color;
-	get_hitpos(ray, t);
 	return (t);
 }
 
@@ -64,7 +63,7 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p, size_t face)
 	t = solve_plane_equation(&plane, ray);
 	get_hitpos(ray, t);
 	vec3_subtract(p, &ray->data.hitpos, &hitpoint);
-	if (vec3_get_norm(&hitpoint) < obj->data.cylinder.radius)
+	if (vec3_get_norm_squared(&hitpoint) < obj->data.cylinder.radiussq)
 	{
 		ray->data.normal = plane.normal;
 		vec3_scale(&hitpoint, 1 / (obj->data.cylinder.radius * 2));
@@ -73,9 +72,9 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p, size_t face)
 		ray->data.u = 0.5 - hitpoint.y;
 		ray->data.v = 0.5 - hitpoint.x;
 		if (face == 1)
-			ray->data.texture = obj->optional_data.up_texture;
+			set_texture_normal(obj, ray, 1);
 		else
-			ray->data.texture = obj->optional_data.down_texture;
+			set_texture_normal(obj, ray, 2);
 		return (t);
 	}
 	return (-1);
@@ -96,7 +95,7 @@ static double	hit_cyl(t_object *obj, t_ray *ray, t_vec3 *r1, t_vec3 *r2)
 		obj->data.cylinder.theta, &local);
 	ray->data.u = 0.5 + (atan2(local.y, local.x)) / (M_PI * 2);
 	ray->data.v = 1 - (local.z / obj->data.cylinder.height);
-	ray->data.texture = obj->optional_data.texture;
+	set_texture_normal(obj, ray, 0);
 	return (t);
 }
 
@@ -127,7 +126,7 @@ static double	solve_cylinder_quadratic(t_object *obj, t_ray *ray)
 	vec3_cross(&obj->data.cylinder.axis, &ray->ray, &va);
 	vec3_cross(&va, &obj->data.cylinder.axis, &va);
 	q.a = vec3_dot(&va, &va);
-	q.c = vec3_dot(&ra0, &ra0) - powl(obj->data.cylinder.radius, 2);
+	q.c = vec3_dot(&ra0, &ra0) - obj->data.cylinder.radiussq;
 	tmp = ra0;
 	vec3_scale(&ra0, 2);
 	q.b = vec3_dot(&ra0, &va);

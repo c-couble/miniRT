@@ -6,20 +6,28 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 02:02:40 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/28 06:20:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 12:05:25 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MATERIAL_H
 # define MATERIAL_H
 
+# include "color.h"
+# include "texture.h"
+
 typedef struct s_material_data
 {
-	double	diffuse_ratio;
-	double	specular_ratio;
-	double	specular_shine;
-	double	reflect_ratio;
-	double	refraction_ratio;
+	double		refract_index;
+	double		refract_blend;
+	double		diffuse_ratio;
+	double		specular_ratio;
+	double		specular_shine;
+	double		reflect_ratio;
+	t_texture	*texture;
+	t_texture	*normal_map;
+	char		*name;
+	t_color		color;
 }	t_material_data;
 
 struct	s_engine;
