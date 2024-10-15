@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:33:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/15 10:08:05 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ uint32_t	get_light(t_scene *scene, t_ray *ray)
 	lights = scene->lights.array;
 	while (i < scene->lights.size)
 	{
-		if (trace_light(scene, &light_ray, ray, &lights[i]))
+		if (trace_light(scene, &light_ray, ray, &lights[i])
+			|| ray->data.obj->optional_data.has_shadow == 0)
 			phong_model(lights + i, &light, ray, &light_ray);
 		++i;
 	}
