@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:35:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 20:35:47 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 21:45:23 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ t_vec3	*vec3_subtract(t_vec3 *vec1, t_vec3 *vec2, t_vec3 *out);
 t_vec3	*vec3_scale(t_vec3 *vec, double x);
 double	vec3_normalize(t_vec3 *vec);
 double	vec3_get_norm(t_vec3 *vec);
+double	vec3_get_norm_squared(t_vec3 *vec);
 double	vec3_dot(t_vec3 *vec1, t_vec3 *vec2);
 t_vec3	*vec3_cross(t_vec3 *a, t_vec3 *b, t_vec3 *out);
 t_vec3	*vec3_create(double x, double y, double z, t_vec3 *out);

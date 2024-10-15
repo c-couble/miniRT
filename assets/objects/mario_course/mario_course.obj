@@ -9,7 +9,7 @@
 # Faces: 1625
 #
 ####
-mtllib assets/objects/mario_course/mario_course.mtl
+mtllib mario_course.mtl
 
 vn 0.000000 2.000000 0.000000
 v 81.921883 11.250000 82.281250 0.972549 0.972549 0.972549

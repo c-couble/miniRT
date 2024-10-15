@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:06:18 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/23 05:04:08 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 21:50:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct s_paraboloid
 	t_vec3			rot_axis;
 	double			theta;
 	double			radius;
+	double			radiussq;
 	double			radius_coef;
 	double			height;
 	int				disk;

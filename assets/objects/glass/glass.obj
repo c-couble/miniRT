@@ -1,6 +1,6 @@
 # Blender 4.2.1 LTS
 # www.blender.org
-mtllib assets/objects/glass/glass.mtl
+mtllib glass.mtl
 o cup.001
 v 0.049190 0.494164 -0.797537
 v 0.045857 0.434178 -0.743490

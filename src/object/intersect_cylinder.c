@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 22:57:46 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/29 09:36:24 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 21:47:21 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ static double	check_disk(t_object *obj, t_ray *ray, t_vec3 *p, size_t face)
 	t = solve_plane_equation(&plane, ray);
 	get_hitpos(ray, t);
 	vec3_subtract(p, &ray->data.hitpos, &hitpoint);
-	if (vec3_get_norm(&hitpoint) < obj->data.cylinder.radius)
+	if (vec3_get_norm_squared(&hitpoint) < obj->data.cylinder.radiussq)
 	{
 		ray->data.normal = plane.normal;
 		vec3_scale(&hitpoint, 1 / (obj->data.cylinder.radius * 2));
@@ -126,7 +126,7 @@ static double	solve_cylinder_quadratic(t_object *obj, t_ray *ray)
 	vec3_cross(&obj->data.cylinder.axis, &ray->ray, &va);
 	vec3_cross(&va, &obj->data.cylinder.axis, &va);
 	q.a = vec3_dot(&va, &va);
-	q.c = vec3_dot(&ra0, &ra0) - powl(obj->data.cylinder.radius, 2);
+	q.c = vec3_dot(&ra0, &ra0) - obj->data.cylinder.radiussq;
 	tmp = ra0;
 	vec3_scale(&ra0, 2);
 	q.b = vec3_dot(&ra0, &va);

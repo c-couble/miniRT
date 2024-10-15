@@ -1,6 +1,6 @@
 # Blender v3.0.1 OBJ File: ''
 # www.blender.org
-mtllib assets/objects/peach_castle/peach_castle.mtl
+mtllib peach_castle.mtl
 o r0-node_r0-mesh.021
 v -5.436035 -1.229980 -2.295410
 v -5.032715 -1.229980 -2.683105

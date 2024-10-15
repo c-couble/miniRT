@@ -1,6 +1,6 @@
 # Blender 4.2.1 LTS
 # www.blender.org
-mtllib assets/objects/chirac/chirac.mtl
+mtllib chirac.mtl
 o cheveux_final
 v 0.832747 0.298738 -0.186825
 v 0.837013 0.284145 -0.252500

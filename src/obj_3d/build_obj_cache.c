@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 02:53:25 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 09:19:58 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 21:48:42 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,9 +110,9 @@ static void	finish_polygon(t_mesh *mesh, t_cached_triangle *t)
 	vec3_subtract(&t->points[2], &t->points[0], &t->e2);
 	vec3_cross(&t->e1, &t->e2, &t->normal);
 	vec3_normalize(&t->normal);
-	if (vec3_get_norm(&t->normals[0]) != 0
-		&& vec3_get_norm(&t->normals[1]) != 0
-		&& vec3_get_norm(&t->normals[2]) != 0
+	if (vec3_get_norm_squared(&t->normals[0]) != 0
+		&& vec3_get_norm_squared(&t->normals[1]) != 0
+		&& vec3_get_norm_squared(&t->normals[2]) != 0
 		&& mesh->gouraud_shading)
 		t->has_normals = 1;
 	else

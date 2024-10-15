@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 23:50:59 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:37:54 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/14 17:00:44 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	parse_camera(t_engine *engine, t_object_data *data)
 		return (-1);
 	if (parse_normalized_vector3d(&data->camera.front) == -1)
 		return (-1);
-	if (parse_double(&data->camera.fov, ft_strtok(NULL, " \t"), 0, 180) == -1)
+	if (parse_double(&data->camera.fov, ft_strtok(NULL, " \t"), 1, 180) == -1)
 		return (-1);
 	create_camera_vectors(&data->camera);
 	data->camera.locked = 0;

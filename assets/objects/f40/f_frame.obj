@@ -1,6 +1,6 @@
 # Blender 4.2.1 LTS
 # www.blender.org
-mtllib assets/objects/f40/f_frame.mtl
+mtllib f_frame.mtl
 o Cube
 v 0.000259 1.000000 -2.378927
 v 2.000259 1.000000 -2.378928

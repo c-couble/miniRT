@@ -312,7 +312,7 @@ Ni 1.500000
 d 1.000000
 illum 3
 reflection 0.3
-map_Kd assets/objects/f40/fender.ppm
+map_Kd fender.ppm
 
 newmtl hood_logo
 Ns 1000.000000
@@ -323,7 +323,7 @@ Ni 1.500000
 d 1.000000
 illum 3
 reflection 0.3
-map_Kd assets/objects/f40/hood_logo.ppm
+map_Kd hood_logo.ppm
 
 newmtl super_brakelight
 Ns 1000.000000
@@ -396,4 +396,4 @@ Ni 1.500000
 d 1.000000
 illum 3
 reflection 0.5
-map_Kd assets/objects/f40/wheel_emblem.ppm
+map_Kd wheel_emblem.ppm

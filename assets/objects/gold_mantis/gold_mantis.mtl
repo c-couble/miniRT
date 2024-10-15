@@ -9,8 +9,8 @@ Ks 0.500000 0.500000 0.500000
 Ni 1.000000
 d 0.000000
 illum 2
-map_Kd assets/objects/gold_mantis/kart_body.ppm
-map_d assets/objects/gold_mantis/kart_body.ppm
+map_Kd kart_body.ppm
+map_d kart_body.ppm
 
 
 newmtl kart_emblem
@@ -21,8 +21,8 @@ Ks 0.500000 0.500000 0.500000
 Ni 1.000000
 d 0.000000
 illum 2
-map_Kd assets/objects/gold_mantis/kart_emblem.ppm
-map_d assets/objects/gold_mantis/kart_emblem.ppm
+map_Kd kart_emblem.ppm
+map_d kart_emblem.ppm
 
 
 newmtl kart_tire
@@ -33,7 +33,7 @@ Ks 0.500000 0.500000 0.500000
 Ni 1.000000
 d 0.000000
 illum 2
-map_Kd assets/objects/gold_mantis/kart_tire.ppm
-map_d assets/objects/gold_mantis/kart_tire.ppm
+map_Kd kart_tire.ppm
+map_d kart_tire.ppm
 
 

@@ -7,7 +7,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi19.ppm
+map_Kd ast_hasi19.ppm
 
 newmtl ADVSS04_material_1
 Ns 0.000000
@@ -18,7 +18,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi21.ppm
+map_Kd ast_hasi21.ppm
 
 newmtl ADVSS04_material_10
 Ns 0.000000
@@ -29,7 +29,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasira02.ppm
+map_Kd ast_hasira02.ppm
 
 newmtl ADVSS04_material_11
 Ns 0.000000
@@ -40,7 +40,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_kabe46.ppm
+map_Kd ast_kabe46.ppm
 
 newmtl ADVSS04_material_12
 Ns 0.000000
@@ -51,7 +51,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_kabe51.ppm
+map_Kd ast_kabe51.ppm
 
 newmtl ADVSS04_material_13
 Ns 0.000000
@@ -62,7 +62,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_kabe52.ppm
+map_Kd ast_kabe52.ppm
 
 newmtl ADVSS04_material_14
 Ns 0.000000
@@ -73,7 +73,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_kabe54.ppm
+map_Kd ast_kabe54.ppm
 
 newmtl ADVSS04_material_15
 Ns 0.000000
@@ -84,7 +84,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_kabe55.ppm
+map_Kd ast_kabe55.ppm
 
 newmtl ADVSS04_material_16
 Ns 0.000000
@@ -95,7 +95,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_kabe57.ppm
+map_Kd ast_kabe57.ppm
 
 newmtl ADVSS04_material_17
 Ns 0.000000
@@ -106,7 +106,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_kabe58.ppm
+map_Kd ast_kabe58.ppm
 
 newmtl ADVSS04_material_18
 Ns 0.000000
@@ -117,7 +117,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_enta.ppm
+map_Kd bst_enta.ppm
 
 newmtl ADVSS04_material_19
 Ns 0.000000
@@ -128,7 +128,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shg.ppm
+map_Kd bst_shg.ppm
 
 newmtl ADVSS04_material_2
 Ns 0.000000
@@ -139,7 +139,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi27.ppm
+map_Kd ast_hasi27.ppm
 
 newmtl ADVSS04_material_20
 Ns 0.000000
@@ -150,7 +150,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shgb.ppm
+map_Kd bst_shgb.ppm
 
 newmtl ADVSS04_material_21
 Ns 0.000000
@@ -161,7 +161,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shgc.ppm
+map_Kd bst_shgc.ppm
 
 newmtl ADVSS04_material_22
 Ns 0.000000
@@ -172,7 +172,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shgd.ppm
+map_Kd bst_shgd.ppm
 
 newmtl ADVSS04_material_23
 Ns 0.000000
@@ -183,7 +183,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shgde.ppm
+map_Kd bst_shgde.ppm
 
 newmtl ADVSS04_material_24
 Ns 0.000000
@@ -194,7 +194,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shst.ppm
+map_Kd bst_shst.ppm
 
 newmtl ADVSS04_material_25
 Ns 0.000000
@@ -205,7 +205,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shstb.ppm
+map_Kd bst_shstb.ppm
 
 newmtl ADVSS04_material_26
 Ns 0.000000
@@ -216,7 +216,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shstc.ppm
+map_Kd bst_shstc.ppm
 
 newmtl ADVSS04_material_27
 Ns 0.000000
@@ -227,7 +227,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shstd.ppm
+map_Kd bst_shstd.ppm
 
 newmtl ADVSS04_material_28
 Ns 0.000000
@@ -238,7 +238,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shste.ppm
+map_Kd bst_shste.ppm
 
 newmtl ADVSS04_material_29
 Ns 0.000000
@@ -249,7 +249,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shstf.ppm
+map_Kd bst_shstf.ppm
 
 newmtl ADVSS04_material_3
 Ns 0.000000
@@ -260,7 +260,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi30.ppm
+map_Kd ast_hasi30.ppm
 
 newmtl ADVSS04_material_30
 Ns 0.000000
@@ -271,7 +271,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shstg.ppm
+map_Kd bst_shstg.ppm
 
 newmtl ADVSS04_material_31
 Ns 0.000000
@@ -282,7 +282,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shsth.ppm
+map_Kd bst_shsth.ppm
 
 newmtl ADVSS04_material_32
 Ns 0.000000
@@ -293,7 +293,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shsti.ppm
+map_Kd bst_shsti.ppm
 
 newmtl ADVSS04_material_33
 Ns 0.000000
@@ -304,7 +304,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shstj.ppm
+map_Kd bst_shstj.ppm
 
 newmtl ADVSS04_material_34
 Ns 0.000000
@@ -315,7 +315,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shstk.ppm
+map_Kd bst_shstk.ppm
 
 newmtl ADVSS04_material_35
 Ns 0.000000
@@ -326,7 +326,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/bst_shstl.ppm
+map_Kd bst_shstl.ppm
 
 newmtl ADVSS04_material_36
 Ns 0.000000
@@ -337,7 +337,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/cst_kabeh.ppm
+map_Kd cst_kabeh.ppm
 
 newmtl ADVSS04_material_37
 Ns 0.000000
@@ -348,7 +348,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/cst_kabeh02.ppm
+map_Kd cst_kabeh02.ppm
 
 newmtl ADVSS04_material_38
 Ns 0.000000
@@ -359,7 +359,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/cst_kaidan07.ppm
+map_Kd cst_kaidan07.ppm
 
 newmtl ADVSS04_material_39
 Ns 0.000000
@@ -370,7 +370,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/cst_tesuri01.ppm
+map_Kd cst_tesuri01.ppm
 
 newmtl ADVSS04_material_4
 Ns 0.000000
@@ -381,7 +381,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi31.ppm
+map_Kd ast_hasi31.ppm
 
 newmtl ADVSS04_material_40
 Ns 0.000000
@@ -392,7 +392,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/cst_yukad01.ppm
+map_Kd cst_yukad01.ppm
 
 newmtl ADVSS04_material_41
 Ns 0.000000
@@ -403,7 +403,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/cst_yukah01.ppm
+map_Kd cst_yukah01.ppm
 
 newmtl ADVSS04_material_42
 Ns 0.000000
@@ -414,7 +414,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/cst_yukah02.ppm
+map_Kd cst_yukah02.ppm
 
 newmtl ADVSS04_material_43
 Ns 0.000000
@@ -425,7 +425,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/grass0_t.ppm
+map_Kd grass0_t.ppm
 
 newmtl ADVSS04_material_44
 Ns 0.000000
@@ -436,7 +436,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/jyutan.ppm
+map_Kd jyutan.ppm
 
 newmtl ADVSS04_material_45
 Ns 0.000000
@@ -447,7 +447,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/kio_mado6.ppm
+map_Kd kio_mado6.ppm
 
 newmtl ADVSS04_material_46
 Ns 0.000000
@@ -458,7 +458,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/load.ppm
+map_Kd load.ppm
 
 newmtl ADVSS04_material_47
 Ns 0.000000
@@ -469,7 +469,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/load01.ppm
+map_Kd load01.ppm
 
 newmtl ADVSS04_material_48
 Ns 0.000000
@@ -480,7 +480,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/load07.ppm
+map_Kd load07.ppm
 
 newmtl ADVSS04_material_49
 Ns 0.000000
@@ -491,7 +491,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/m128_cos012.ppm
+map_Kd m128_cos012.ppm
 
 newmtl ADVSS04_material_5
 Ns 0.000000
@@ -502,7 +502,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi35.ppm
+map_Kd ast_hasi35.ppm
 
 newmtl ADVSS04_material_50
 Ns 0.000000
@@ -513,7 +513,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/m128_cos019.ppm
+map_Kd m128_cos019.ppm
 
 newmtl ADVSS04_material_51
 Ns 0.000000
@@ -524,7 +524,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/m128_cos020.ppm
+map_Kd m128_cos020.ppm
 
 newmtl ADVSS04_material_52
 Ns 0.000000
@@ -535,7 +535,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/m128_sand001.ppm
+map_Kd m128_sand001.ppm
 
 newmtl ADVSS04_material_53
 Ns 0.000000
@@ -549,7 +549,7 @@ illum 1
 refraction 1.3
 refraction_blend 0.7
 reflection 1
-map_Kd assets/objects/hotel_pool/m128_sea001.ppm
+map_Kd m128_sea001.ppm
 map_bump assets/normal_maps/waternrm.ppm
 
 newmtl ADVSS04_material_54
@@ -561,7 +561,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/m128_wave001.ppm
+map_Kd m128_wave001.ppm
 
 newmtl ADVSS04_material_55
 Ns 0.000000
@@ -572,7 +572,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/oda_ss_hashira01.ppm
+map_Kd oda_ss_hashira01.ppm
 
 newmtl ADVSS04_material_56
 Ns 0.000000
@@ -583,7 +583,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/plant_02.ppm
+map_Kd plant_02.ppm
 
 newmtl ADVSS04_material_57
 Ns 0.000000
@@ -594,7 +594,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/pool_oda01.ppm
+map_Kd pool_oda01.ppm
 
 newmtl ADVSS04_material_58
 Ns 0.000000
@@ -605,7 +605,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/rend_2casino_d.ppm
+map_Kd rend_2casino_d.ppm
 
 newmtl ADVSS04_material_59
 Ns 0.000000
@@ -616,7 +616,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/rend_2loads_d.ppm
+map_Kd rend_2loads_d.ppm
 
 newmtl ADVSS04_material_6
 Ns 0.000000
@@ -627,7 +627,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi36.ppm
+map_Kd ast_hasi36.ppm
 
 newmtl ADVSS04_material_60
 Ns 0.000000
@@ -638,7 +638,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/s1rkabe_02.ppm
+map_Kd s1rkabe_02.ppm
 
 newmtl ADVSS04_material_61
 Ns 0.000000
@@ -649,7 +649,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/s_w37.ppm
+map_Kd s_w37.ppm
 
 newmtl ADVSS04_material_62
 Ns 0.000000
@@ -660,7 +660,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/s_w38.ppm
+map_Kd s_w38.ppm
 
 newmtl ADVSS04_material_64
 Ns 0.000000
@@ -671,7 +671,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ss_hoteldoor.ppm
+map_Kd ss_hoteldoor.ppm
 
 newmtl ADVSS04_material_65
 Ns 0.000000
@@ -682,7 +682,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ss_hotelmado1.ppm
+map_Kd ss_hotelmado1.ppm
 
 newmtl ADVSS04_material_66
 Ns 0.000000
@@ -693,7 +693,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ss_mainroad0.ppm
+map_Kd ss_mainroad0.ppm
 
 newmtl ADVSS04_material_67
 Ns 0.000000
@@ -704,7 +704,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ss_sanbashi0.ppm
+map_Kd ss_sanbashi0.ppm
 
 newmtl ADVSS04_material_68
 Ns 0.000000
@@ -715,7 +715,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ss_sanbashi1.ppm
+map_Kd ss_sanbashi1.ppm
 
 newmtl ADVSS04_material_69
 Ns 0.000000
@@ -726,7 +726,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ss_sanbashi2.ppm
+map_Kd ss_sanbashi2.ppm
 
 newmtl ADVSS04_material_7
 Ns 0.000000
@@ -737,7 +737,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi37.ppm
+map_Kd ast_hasi37.ppm
 
 newmtl ADVSS04_material_70
 Ns 0.000000
@@ -748,7 +748,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ss_wkabe.ppm
+map_Kd ss_wkabe.ppm
 
 newmtl ADVSS04_material_71
 Ns 0.000000
@@ -759,7 +759,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ss_wkabe1.ppm
+map_Kd ss_wkabe1.ppm
 
 newmtl ADVSS04_material_72
 Ns 0.000000
@@ -770,7 +770,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/st3_100.ppm
+map_Kd st3_100.ppm
 
 newmtl ADVSS04_material_73
 Ns 0.000000
@@ -781,7 +781,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/st_hotel_oda.ppm
+map_Kd st_hotel_oda.ppm
 
 newmtl ADVSS04_material_74
 Ns 0.000000
@@ -792,7 +792,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/tokeiyoko.ppm
+map_Kd tokeiyoko.ppm
 
 newmtl ADVSS04_material_75
 Ns 0.000000
@@ -803,7 +803,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/yasi.ppm
+map_Kd yasi.ppm
 
 newmtl ADVSS04_material_76
 Ns 0.000000
@@ -814,7 +814,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/yasi_eda.ppm
+map_Kd yasi_eda.ppm
 
 newmtl ADVSS04_material_77
 Ns 0.000000
@@ -825,7 +825,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/yasi_happa2.ppm
+map_Kd yasi_happa2.ppm
 
 newmtl ADVSS04_material_78
 Ns 0.000000
@@ -836,7 +836,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ssmadotexh0_d.ppm
+map_Kd ssmadotexh0_d.ppm
 
 newmtl ADVSS04_material_8
 Ns 0.000000
@@ -847,7 +847,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi38.ppm
+map_Kd ast_hasi38.ppm
 
 newmtl ADVSS04_material_9
 Ns 0.000000
@@ -858,7 +858,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 1
-map_Kd assets/objects/hotel_pool/ast_hasi39.ppm
+map_Kd ast_hasi39.ppm
 
 newmtl Default_OBJ
 Ns 225.000000

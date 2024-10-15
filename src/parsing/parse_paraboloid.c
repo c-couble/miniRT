@@ -6,11 +6,12 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 01:03:44 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/27 06:27:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/15 09:54:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "float.h"
+#include <math.h>
 #include "engine.h"
 #include "ft_string.h"
 #include "util.h"
@@ -31,6 +32,7 @@ int	parse_paraboloid(t_engine *engine, t_object_data *data)
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->paraboloid.radius, arg, 0, DBL_MAX) == -1)
 		return (-1);
+	data->paraboloid.radiussq = powl(data->paraboloid.radius, 2);
 	arg = ft_strtok(NULL, " \t");
 	if (parse_double(&data->paraboloid.height, arg, 0, DBL_MAX) == -1)
 		return (-1);

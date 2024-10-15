@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 01:33:43 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/13 09:18:37 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/10/14 15:22:35 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ static int	read_mtl_data(t_engine *engine, t_obj_mtl *mtl, int fd)
 	if (buf == NULL)
 		return (-1);
 	ft_memset(buf, 0, sizeof(t_buffer));
+	errno = 0;
 	line = get_next_line_ptr(fd, buf, "\n\r");
 	while (line)
 	{
@@ -84,6 +85,7 @@ static int	read_mtl_data(t_engine *engine, t_obj_mtl *mtl, int fd)
 			return (-1);
 		}
 		free(line);
+		errno = 0;
 		line = get_next_line_ptr(fd, buf, "\n\r");
 	}
 	free(buf);

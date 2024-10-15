@@ -142,6 +142,7 @@ SRC = \
 	  math/vec3/vec3_cross.c \
 	  math/vec3/vec3_dot.c \
 	  math/vec3/vec3_get_norm.c \
+	  math/vec3/vec3_get_norm_squared.c \
 	  math/vec3/vec3_normalize.c \
 	  math/vec3/vec3_scale.c \
 	  math/vec3/vec3_subtract.c \
@@ -225,6 +226,7 @@ SRC = \
 	  parsing/parse_mesh.c \
 	  parsing/parse_normal_map.c \
 	  parsing/parse_normalized_vector3d.c \
+	  parsing/parse_no_shadow.c \
 	  parsing/parse_optional_data.c \
 	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \
@@ -262,6 +264,7 @@ SRC = \
 	  util/get_closest_distance_ptr.c \
 	  util/get_hitpos.c \
 	  util/get_theta_axis.c \
+	  util/get_relative_path.c \
 	  util/print_error.c \
 	  util/set_texture_normal.c \
 	  util/solve_plane_equation.c \

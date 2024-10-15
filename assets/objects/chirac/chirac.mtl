@@ -9,7 +9,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 1
-map_Kd assets/objects/chirac/chirac.ppm
+map_Kd chirac.ppm
 
 newmtl 02_-_Default
 Ns 20.000006

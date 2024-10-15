@@ -1,6 +1,6 @@
 # Blender 4.2.1 LTS
 # www.blender.org
-mtllib assets/objects/testa/testa.mtl
+mtllib testa.mtl
 o body
 v 0.432874 0.635412 -0.436106
 v 0.379923 0.733944 -0.198097
