@@ -5,5 +5,5 @@ A 0.2 255,255,255
 L -40,20,90 1 255,255,255
 
 mesh assets/objects/mario_course/mario_course.obj 0,0,0 1,0,0 0,0,1 1 1
-mesh assets/objects/mario_course/sky.obj 0,0,0 1,0,0 0,0,1 1 1
+mesh assets/objects/mario_course/sky.obj 0,0,0 1,0,0 0,0,1 1 1 nosh:1
 mesh assets/objects/gold_mantis/gold_mantis.obj 1,-13,22 0,1,0 0,0,1 10 1

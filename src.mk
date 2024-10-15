@@ -226,6 +226,7 @@ SRC = \
 	  parsing/parse_mesh.c \
 	  parsing/parse_normal_map.c \
 	  parsing/parse_normalized_vector3d.c \
+	  parsing/parse_no_shadow.c \
 	  parsing/parse_optional_data.c \
 	  parsing/parse_paraboloid.c \
 	  parsing/parse_plane.c \

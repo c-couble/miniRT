@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 05:13:57 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 15:27:35 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/15 10:04:32 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ static void	init_optional_data(t_option *data)
 	data->checker.x_color.color = 0;
 	data->checker.y_color.color = 0;
 	data->photon_nb = 0;
+	data->has_shadow = 1;
 }
 
 static t_option_t	get_optional_type(char *type)
@@ -64,6 +65,7 @@ static t_option_t	get_optional_type(char *type)
 	[CAUSTIC] = "ca",
 	[SAVE_RENDER] = "sr",
 	[BACKGROUND_COLOR] = "bkg",
+	[NO_SHADOW] = "nosh",
 	};
 	size_t		i;
 
@@ -87,6 +89,7 @@ static int	parse_option(t_engine *engine, t_object *object, char *arg)
 	[CAUSTIC] = parse_caustic,
 	[SAVE_RENDER] = parse_save_render,
 	[BACKGROUND_COLOR] = parse_background_color,
+	[NO_SHADOW] = parse_no_shadow,
 	};
 	t_option_t	type;
 	char		*name;
