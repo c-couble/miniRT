@@ -17,12 +17,17 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 - [Supported File Formats](#supported-file-formats)
 - [Features](#features)
 - [Credits](#credits)
-- 
-- 
-- 
--
--
--
+
+<br>     
+<br>     
+<br>     
+<br>     
+<br>     
+<br>     
+ 
+
+
+
 
 ## Gallery
 <img src="assets/screenshots/f40.png">
