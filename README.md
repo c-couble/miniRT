@@ -93,8 +93,19 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 
 
 ## Usage
+**Compile the project:**
 
-To view the detailed information on how to create a .rt please check out the [detailed .rt section](#section-rt) below.
+Use `make` to compile the project:
+```bash
+make
+```
+**Run the program:**
+
+Start minirt by specifying the path to a `.rt ` scene file:
+```bash
+./minirt assets/scenes/scene.rt
+```
+To view the detailed information on how to create a `.rt` please check out the [detailed .rt section](#section-rt) below.
 
 ## Controls
 
@@ -156,7 +167,7 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 
 ### Material (`ma`)
 
-`ma:<kd>,<ks>,<ss>,<reflection>,<refraction>,<refraction_blend>`
+`ma:<kd>,<ks>,<ss>,<reflection>,<refraction>,<refraction_blend(optional)>`
 
 | **Property**     | **Description**                                          | **Range**                          |
 |------------------|----------------------------------------------------------|------------------------------------|
@@ -164,7 +175,7 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 | `ks`             | Specular ratio (float `0.0` to `1.0`)                   | `0.0` to `1.0`                     |
 | `ss`             | Specular shine (float `0` to `DBLMAX`)                  | `0` to `DBLMAX`                    |
 | `reflection`     | Reflection ratio (float `0.0` to `1.0`)                 | `0.0` (no reflection) to `1.0` (full reflection) |
-| `refraction`     | Refraction index (integer `1` to `5` or `0`)            | `0` (none), `1` to `5.0`           |
+| `refraction`     | Refraction index (float `1` to `5` or `0`)              | `0` (none), `1` to `5.0`           |
 | `refraction_blend`     | Refraction blend (float `0.0` to `1.0`)           	     | `0.0` (no refraction) to `1.0` (full refraction) |
 
 ### Checkerboard (`ch`)
@@ -207,7 +218,7 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 ### Sample .rt File
 
 ```plaintext
-C 0,-25,60 0,1,0 90
+C 0,-25,60 0,1,0 90 bkg:230,230,210 sr:7680,4320
 
 A 0.2 255,255,255
 
@@ -245,7 +256,7 @@ pa -50,50,25 0,0,1 20 50 0 220,220,190 ch:10,10 120,20,220 220,50,120
 ### Camera and Rendering:
 - **Camera Movement**: Free camera movement through the scene, allowing dynamic exploration from different angles.
 - **Adaptive Resolution**: Automatically adjusts the resolution in real-time to maintain smooth framerate during free camera movement.
-- **High-Quality Rendering**: Supports rendering in high-quality **PPM (Portable Pixmap)** format for detailed outputs.
+- **High-Quality Rendering**: Supports rendering in high-quality **PPM** format for detailed outputs.
 
 ### Performance and Optimization:
 - **Multithreading**: Fully utilizes multicore processors to perform ray tracing calculations in parallel, significantly improving rendering performance.
