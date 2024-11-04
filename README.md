@@ -127,6 +127,7 @@ To view the detailed information on how to create a `.rt` please check out the [
 | **Num 4**, **Num 6** | Decrease/increase Caustic nearest neighbour number  |
 | **Num 1**, **Num 3** | Decrease/increase Caustic brightness scalar  |
 | **P** | Save high quality screenshot in ppm format |
+| **C** | Display camera position in the terminal |
 | **Esc**                  | Exit the program                          |
 
 ## Supported File Formats
@@ -214,6 +215,9 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 
 ### Save render (`sr`)
 `sr:<width>,<height>`
+
+### Disable shadow (`nosh`)
+`nosh:<1 or 0>`
 
 ### Sample .rt File
 
