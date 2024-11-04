@@ -6,12 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 15:57:14 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/11/04 01:59:44 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "engine.h"
 #include "object/camera.h"
+#include <stdio.h>
 
 static void	get_cam_view(t_mat4 *mat, t_vec3 *front, t_vec3 *up, t_vec3 *pos);
 
@@ -28,6 +29,8 @@ void	setup_camera(t_engine *engine)
 		mat4_multiply(&cam->inv_projection, &cam->inverse_view, &cam->final);
 	if (engine->scene.camera.save)
 	{
+		printf("Starting high quality frame (px:%d,%d)...\n",
+			engine->render_width, engine->render_height);
 		engine->scene.camera.frame_height = engine->render_height;
 		engine->scene.camera.frame_width = engine->render_width;
 	}
