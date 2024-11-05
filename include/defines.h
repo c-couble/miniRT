@@ -6,17 +6,17 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/11/04 02:00:18 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/11/05 09:20:30 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DEFINES_H
 # define DEFINES_H
 
-# define SCREEN_WIDTH		1920 / 2
-# define SCREEN_HEIGHT		1080 / 2
+# define SCREEN_WIDTH		1920
+# define SCREEN_HEIGHT		1080
 
-# define DEPTH				16
+# define DEPTH				10
 # define LOW_RENDER_DEPTH   8
 # define DEFAULT_RAY_SIZE	5
 # define MINIMUM_FPS		20
@@ -29,12 +29,12 @@
 # define TILE_DIVIDER		150.
 
 //Caustic parameters
-# define ESTIMATION_SCALE	110
-# define FORCE_P_RAY		1
-# define DEFAULT_NN			6
+# define DEFAULT_BANDWIDTH  0.1
+# define DEFAULT_NN			15
+# define ESTIMATION_SCALE	60
 # define KNN_MAX			50
+# define FORCE_P_RAY		1
 # define CA_BBOX_SCALING	0.025
-# define DEFAULT_BANDWIDTH  0.10
 
 //Defaults material values
 # define AIR_RATIO			1.0

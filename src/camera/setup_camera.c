@@ -6,13 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 20:13:05 by ccouble           #+#    #+#             */
-/*   Updated: 2024/11/04 01:59:44 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/11/04 02:02:45 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "engine.h"
 #include "object/camera.h"
-#include <stdio.h>
 
 static void	get_cam_view(t_mat4 *mat, t_vec3 *front, t_vec3 *up, t_vec3 *pos);
 
