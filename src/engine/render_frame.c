@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/22 04:55:37 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/14 13:49:04 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/11/05 06:56:37 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,8 @@ void	render_frame(t_engine *engine)
 	elapsed = (ts2.tv_sec - ts.tv_sec);
 	elapsed += (ts2.tv_nsec - ts.tv_nsec) / 1000000000.0;
 	engine->scene.camera.last_frame_time = elapsed * 1000 + 1;
-	printf("frame time elapsed %lfs\n", elapsed);
+	if (engine->scene.camera.locked)
+		printf("frame time elapsed %lfs\n", elapsed);
 	change_ray_size(engine, 1000 / engine->scene.camera.last_frame_time);
 }
 
@@ -66,13 +67,13 @@ static int	save_render_to_file(t_engine *engine)
 {
 	if (engine->scene.camera.save)
 	{
-		printf("finished save frame !\n");
 		if (save_render_file(engine) == -1)
 		{
 			ft_dprintf(2, "Error saving file\n");
 			mlx_loop_end(engine->mlx.mlx);
 			return (-1);
 		}
+		printf("Successfully saved high quality frame !\n");
 		engine->scene.camera.save = 0;
 	}
 	return (0);

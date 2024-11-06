@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:12:56 by lespenel          #+#    #+#             */
-/*   Updated: 2024/10/14 05:12:23 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/11/06 06:29:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static void	set_refract_photon(t_ray *ph_ray, t_ray *refr, t_photon *ph)
 	if (ph_ray->data.materials->refract_blend != 1)
 	{
 		refract.color = scale_color(&ph_ray->data.color,
-				1 - ph_ray->data.materials->refract_blend);
+				ph_ray->data.materials->refract_blend);
 		ph->color.color = multiply_color(&refract, &ph->color);
 	}
 	get_refraction_ray(ph_ray, &refr->ray,

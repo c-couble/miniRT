@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 10:55:10 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 20:36:15 by ccouble          ###   ########.fr       */
+/*   Updated: 2024/10/15 10:27:12 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	save_render_file(t_engine *engine)
 {
 	int	fd;
 
-	fd = open("render.ppm", O_CREAT | O_WRONLY, "0666");
+	fd = open("render.ppm", O_CREAT | O_WRONLY | O_TRUNC, "0666");
 	if (fd == -1)
 		return (-1);
 	if (write_to_file(engine, fd) == -1)
@@ -42,7 +42,7 @@ static int	write_to_file(t_engine *engine, int fd)
 {
 	size_t		i;
 	t_vector	v;
-	int			ret;
+	uint8_t		rgb[3];
 
 	if (write_header(engine, fd) == -1)
 		return (0);
@@ -50,17 +50,19 @@ static int	write_to_file(t_engine *engine, int fd)
 	i = 0;
 	while (i < engine->render_size)
 	{
-		if (add_vector(&v, &engine->render_data[i].rgb, 3) == -1)
+		rgb[0] = engine->render_data[i].rgb.r;
+		rgb[1] = engine->render_data[i].rgb.g;
+		rgb[2] = engine->render_data[i].rgb.b;
+		if (add_vector(&v, &rgb, 3) == -1)
 		{
 			clear_vector(&v);
 			return (-1);
 		}
 		++i;
 	}
-	ret = write(fd, v.array, v.size);
-	clear_vector(&v);
-	if (ret == -1)
+	if (write(fd, v.array, v.size) == -1)
 		ft_dprintf(2, "Error saving file\n");
+	clear_vector(&v);
 	return (0);
 }
 

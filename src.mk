@@ -60,6 +60,7 @@ SRC = \
 	  camera/hooks/move_left.c \
 	  camera/hooks/move_right.c \
 	  camera/hooks/move_up.c \
+	  camera/hooks/print_camera_pos.c \
 	  camera/hooks/reset_roll_angle.c \
 	  camera/hooks/roll_left.c \
 	  camera/hooks/roll_right.c \
