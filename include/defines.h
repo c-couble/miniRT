@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/11/05 09:20:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/11/06 06:28:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # define SCREEN_WIDTH		1920
 # define SCREEN_HEIGHT		1080
 
-# define DEPTH				10
+# define DEPTH				16
 # define LOW_RENDER_DEPTH   8
 # define DEFAULT_RAY_SIZE	5
 # define MINIMUM_FPS		20
