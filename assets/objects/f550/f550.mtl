@@ -1,0 +1,843 @@
+#logo pinifarina
+newmtl 550bachetta.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Kd 0.723143 0.577580 0.672443
+illum 3
+reflection 0.45
+#map_Kd 550bachetta_baseColor.ppm
+#map_Ke 550bachetta_emissive.ppm
+#map_d 550bachetta_baseColor.ppm
+
+#color
+newmtl car_color
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.323143 0.577580 0.672443
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 0.45
+illum 3
+
+newmtl PLdiffuser.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl PLhood.001
+Ns 102.399994
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl PLskirt.001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl PLsplitter.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl blackaluminium.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.100000 0.100000 0.100000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 0.5
+illum 2
+
+newmtl blackchrome.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.070000 0.070000 0.070000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl blackmatte.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+
+newmtl blackplastic.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.077500 0.077500 0.077500
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl boltschrome.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.300000 0.300000 0.300000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 0.4
+illum 3
+
+newmtl boltsplastic.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl bottom.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd bottom_baseColor.ppm
+map_Ke bottom_baseColor.ppm
+
+newmtl brakedisk.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+reflection 0.5
+map_Kd PLdiffuser_baseColor.ppm
+map_Ke PLdiffuser_baseColor.ppm
+
+newmtl brakelghtOFF.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+refraction 1.5
+reflection 1
+refraction_blend 0.6
+map_Kd brakelghtOFF_baseColor.ppm
+map_Ke brakelghtOFF_baseColor.ppm
+
+newmtl brakelghtON.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+refraction 1.5
+reflection 1
+refraction_blend 0.6
+map_Kd brakelghtOFF_baseColor.ppm
+map_Ke brakelghtOFF_baseColor.ppm
+
+newmtl centrbrakelight.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+refraction 1.5
+reflection 1
+refraction_blend 0.6
+map_Kd brakelghtOFF_baseColor.ppm
+map_Ke brakelghtOFF_baseColor.ppm
+
+newmtl chrome.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 1
+illum 3
+
+#logo aile ar
+newmtl designo.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+reflection 0.2
+map_Kd designo_baseColor.ppm
+
+newmtl detailschrome.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+reflection 0.6
+map_Kd PLdiffuser_baseColor.ppm
+map_Ke PLdiffuser_baseColor.ppm
+
+newmtl detailsmatte.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl detailsplastic.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl exhaust.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+reflection 0.6
+map_Kd PLdiffuser_baseColor.ppm
+map_Ke PLdiffuser_baseColor.ppm
+
+newmtl exhaustbronze.001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+reflection 0.5
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl exhausthole.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd PLdiffuser_baseColor.ppm
+map_Ke PLdiffuser_baseColor.ppm
+
+#logo ferrari etries
+newmtl ferrarisupportlogo.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+illum 3
+map_Kd ferrarisupportlogo_baseColor.ppm
+map_Ke ferrarisupportlogo_emissive.ppm
+map_d ferrarisupportlogo_baseColor.ppm
+
+newmtl floor
+Ns 202.500000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_d floor_baseColor.ppm
+map_Bump floor_normal.ppm
+
+newmtl floormat.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd floormat_baseColor.ppm
+
+newmtl foglight.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd brakelghtOFF_baseColor.ppm
+map_Ke brakelghtOFF_baseColor.ppm
+
+newmtl foglightglass.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd foglightglass_baseColor.ppm
+
+newmtl frontbumpvent.001
+Ns 525.625000
+Ka 1.000000 1.000000 1.000000
+Ks 0.062000 0.062000 0.062000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl fuelcap.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd brakelghtOFF_baseColor.ppm
+
+newmtl grillrearexh.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd floormat_baseColor.ppm
+map_Ke floormat_baseColor.ppm
+
+newmtl grillside.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd floormat_baseColor.ppm
+map_Ke floormat_baseColor.ppm
+
+newmtl headlight1.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+refraction 1.5
+reflection 1
+refraction_blend 0.6
+map_Kd brakelghtOFF_baseColor.ppm
+map_Ke brakelghtOFF_baseColor.ppm
+
+newmtl headlight2.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+refraction 1.5
+reflection 1
+refraction_blend 0.6
+map_Kd brakelghtOFF_baseColor.ppm
+map_Ke brakelghtOFF_baseColor.ppm
+
+newmtl headlightglass.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+reflection 1
+refraction 1.5
+refraction_blend 0.8
+map_Kd foglightglass_baseColor.ppm
+
+newmtl headlightplastic.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl headlightturnsignal.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+refraction 1.5
+reflection 1
+refraction_blend 0.6
+map_Kd brakelghtOFF_baseColor.ppm
+map_Ke brakelghtOFF_baseColor.ppm
+
+newmtl hoodemblem.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+reflection 0.2
+map_Kd floormat_baseColor.ppm
+
+newmtl hoodgrill.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_d hoodgrill_baseColor.ppm
+
+newmtl horse.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+reflection 0.2
+map_Kd designo_baseColor.ppm
+map_Ke designo_baseColor.ppm
+
+newmtl interior.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd interior_baseColor.ppm
+
+newmtl interiorchrome.001
+Ns 498.435974
+Ka 1.000000 1.000000 1.000000
+Kd 0.500000 0.500000 0.500000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 0.2
+illum 3
+
+newmtl interiorplastic.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd interior_baseColor.ppm
+
+newmtl material
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd material_baseColor.ppm
+map_d material_baseColor.ppm
+
+newmtl mirrorint.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+reflection 0.9
+illum 3
+map_Ke PLdiffuser_baseColor.ppm
+
+newmtl mirrorside.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+reflection 0.9
+illum 3
+map_Ke PLdiffuser_baseColor.ppm
+
+newmtl pininfarina.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+reflection 0.95
+map_Kd designo_baseColor.ppm
+map_Ke designo_baseColor.ppm
+
+newmtl plateFRONT.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 0.3
+map_Kd leo.ppm
+illum 1
+
+newmtl plateREAR.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 0.3
+map_Kd leo.ppm
+illum 1
+
+newmtl plateblackplastic.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl platecarname.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.050000 0.050000 0.050000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd interior_baseColor.ppm
+
+newmtl plateitalylogo.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd designo_baseColor.ppm
+
+newmtl platelightlamp.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd designo_baseColor.ppm
+map_Ke designo_baseColor.ppm
+
+newmtl radiator.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd floormat_baseColor.ppm
+map_Ke floormat_baseColor.ppm
+
+newmtl rim1.001
+Ns 739.600037
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 0.5
+illum 3
+
+newmtl rim2.001
+Ns 739.600037
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 0.5
+illum 3
+
+newmtl rimbolts1.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+reflection 0.5
+map_Kd rimbolts1_baseColor.ppm
+map_Ke rimbolts1_baseColor.ppm
+
+newmtl rimbolts2.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.500000
+d 1.000000
+illum 3
+reflection 0.5
+map_Kd rimbolts1_baseColor.ppm
+map_Ke rimbolts1_baseColor.ppm
+
+newmtl rimlogo.001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+reflection 0.2
+map_Kd rimbolts1_baseColor.ppm
+
+newmtl safecage.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+
+newmtl seatbelt.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd designo_baseColor.ppm
+
+newmtl sidehorseemblem.001
+Ns 1000.000000
+Ka 0.500000 0.500000 0.500000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd designo_baseColor.ppm
+
+newmtl sideturnsignals.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.150000 0.150000 0.150000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd brakelghtOFF_baseColor.ppm
+
+newmtl sidewindowHORSE.001
+Ns 1000.000000
+Ka 0.500000 0.500000 0.500000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 1
+map_Kd sidewindowHORSE_baseColor.ppm
+map_d sidewindowHORSE_baseColor.ppm
+
+newmtl splitergril.001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl steeringwheel.001
+Ns 0.000178
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd brakelghtOFF_baseColor.ppm
+
+newmtl support1.001
+Ns 206.115997
+Ka 1.000000 1.000000 1.000000
+Kd 0.686685 0.001214 0.001214
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl support2.001
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl tire.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd rimbolts1_baseColor.ppm
+
+newmtl tireprotector.001
+Ns 159.999985
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd tireprotector_baseColor.ppm
+
+newmtl underHOODbolt.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl underHOODplastic.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd PLdiffuser_baseColor.ppm
+
+newmtl wheelblack.001
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+
+newmtl windowF.001
+Ns 1000.000000
+Ka 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+reflection 1
+refraction 1.5
+refraction_blend 0.9
+illum 3
+map_Kd windowF_baseColor.ppm
+
+newmtl windowFinside.001
+Ns 1000.000000
+Ka 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd windowF_baseColor.ppm
+
+newmtl windowS.001
+Ns 1000.000000
+Ka 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd windowF_baseColor.ppm
+
+newmtl windowSinside.001
+Ns 1000.000000
+Ka 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd windowF_baseColor.ppm

@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2024/10/14 12:53:55 by lespenel         ###   ########.fr       */
+/*   Updated: 2024/11/06 06:28:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@
 # define TILE_DIVIDER		150.
 
 //Caustic parameters
-# define ESTIMATION_SCALE	110
-# define FORCE_P_RAY		1
-# define DEFAULT_NN			6
+# define DEFAULT_BANDWIDTH  0.1
+# define DEFAULT_NN			15
+# define ESTIMATION_SCALE	60
 # define KNN_MAX			50
+# define FORCE_P_RAY		1
 # define CA_BBOX_SCALING	0.025
-# define DEFAULT_BANDWIDTH  0.10
 
 //Defaults material values
 # define AIR_RATIO			1.0

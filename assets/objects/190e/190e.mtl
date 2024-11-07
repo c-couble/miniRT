@@ -1,0 +1,513 @@
+newmtl Car_Mirror
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+reflection 0.9
+illum 2
+
+#retro poigne cache pc av
+newmtl Car_Plastic_Detail
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.100000 0.100000 0.100000
+Ks 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+#barre de toit contour parebrise
+newmtl Car_Plastic_Detail_Ext_Door
+Ns 250.000000
+Kd 0.300000 0.300000 0.300000
+Ks 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl Car_Windows_All
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+reflection 1
+refraction 1.5
+illum 2
+
+#inte phare av
+newmtl Car_Windows_All_black
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+#cligno ar
+newmtl Car_backight_glass_orange
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.900000 0.500000 0
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+refraction 1.5
+reflection 1
+refraction_blend 0.8
+illum 2
+
+#feu recul
+newmtl Car_backlight_glass
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+refraction 1.5
+reflection 1
+refraction_blend 0.8
+illum 2
+
+#frein ar
+newmtl Car_backlight_glass_red
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+refraction 1.5
+reflection 1
+refraction_blend 0.8
+illum 2
+
+#frein ar
+newmtl Car_backlight_glass_red.001
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+refraction 1.5
+reflection 1
+refraction_blend 0.8
+illum 2
+
+#couleur
+newmtl Car_body_color
+Ns 358.112732
+Ka 1.000000 1.000000 1.000000
+Kd 0.1 0.1 0.1
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+reflection 0.25
+illum 1
+
+#monogrames
+newmtl Car_exterior_metal
+Ns 864.825623
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+reflection 0.95
+illum 3
+
+#noir (inte ouvrants)
+newmtl Car_frame
+Ns 250.000000
+Kd 0.000000 0.000000 0.000000
+Ks 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+
+#pare brise
+newmtl Car_headlight_glass
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+reflection 1
+refraction 1.5
+illum 2
+
+#cligno avant
+newmtl Car_turn_light
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.900000 0.500000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+refraction 1.5
+reflection 1
+refraction_blend 0.8
+illum 2
+
+newmtl INT_Cintura
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd int_belt.ppm
+
+newmtl Tyre
+Ns 268.512390
+Ka 1.000000 1.000000 1.000000
+Ks 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tyre_d2.ppm
+
+#interieur accesoi
+newmtl baddge2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd int2.ppm
+
+#interieur compteur
+newmtl badge
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd int.ppm
+
+newmtl black
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.003283 0.003283 0.003283
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+map_Kd misc.ppm
+illum 1
+
+newmtl bottom
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd lod.ppm
+
+newmtl bump_leather2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd grey.ppm
+
+newmtl bump_leather3
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd common_leather02_perforated_black_diffuse.ppm
+
+#etrier
+newmtl caliper
+Ns 250.000000
+Kd 0.6 0 0
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+reflection 0.1
+illum 1
+
+#joints de porte
+newmtl car
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd misc.ppm
+
+newmtl chrome
+Ns 250.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+reflection 0.95
+illum 1
+map_Kd misc.ppm
+
+newmtl cloth
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd common_leather02_perforated_black_diffuse.ppm
+
+newmtl emblem
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+reflection 0.2
+map_Kd lod.ppm
+
+#compteur
+newmtl gauge_emissive
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd int.ppm
+
+#hp
+newmtl grille
+Ns 745.867798
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd audio_tile_dark.ppm
+
+newmtl grille1_alpha
+Ns 339.054077
+Ka 1.000000 1.000000 1.000000
+Kd 0.044468 0.044468 0.044468
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_d grille1_s_lod0.ppm
+
+#interieur phare
+newmtl head_light
+Ns 640.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+reflection 0.95
+illum 3
+
+#moyeux
+newmtl hub
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd lod.ppm
+
+#interieur clignotant
+newmtl intlighty
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.900000 0.500000 0
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+reflection 0.95
+illum 2
+
+#echappemnt
+newmtl matte_colors
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+reflection 0.95
+map_Kd misc.ppm
+
+#pedales
+newmtl metal
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+reflection 0.85
+map_Kd int.ppm
+
+newmtl metallzz
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+reflection 0.85
+map_Kd key.ppm
+
+newmtl mottled
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd common_carpet_black01_diffuse.ppm
+
+newmtl plastic
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd grey.ppm
+
+#ceintures
+newmtl red
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd int.ppm
+
+#autoradio
+newmtl reflector
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+reflection 0.2
+map_Kd int.ppm
+
+#jantes
+newmtl rim
+Ns 568.852844
+Ka 1.000000 1.000000 1.000000
+Kd 0.8 0.8 0.8
+Ks 0.236364 0.236364 0.236364
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+reflection 0.95
+illum 3
+
+#disques frein
+newmtl rotor
+Ns 548.946289
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+reflection 0.2
+map_Kd disk_.ppm
+
+#leche vitres
+newmtl rubber_trim.001
+Kd 0.0 0.0 0.0
+
+#plafonier
+newmtl tett
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd common_cloth02_black_diffuse.ppm
+
+#chassis
+newmtl undercarriage
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd undercarriage.ppm
+
+newmtl wood
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+reflection 0.2
+map_Kd wood.ppm
