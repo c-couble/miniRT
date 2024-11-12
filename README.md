@@ -9,7 +9,7 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 
 ## Table of Contents
 
-<img align="right" width="380" height="380" src="./assets/screenshots/cornell.gif">
+<img align="right" width="250" height="250" src="./assets/screenshots/cornell.gif">
 
 - [Gallery](#gallery)
 - [Usage](#usage)
@@ -18,12 +18,8 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 - [Features](#features)
 - [Credits](#credits)
 
-<br>     
-<br>     
-<br>     
-<br>     
-<br>     
-<br>     
+<br>         
+  
  
 
 
@@ -33,6 +29,7 @@ is one of the reasons rendering is such a fascinating and challenging field of s
 <img src="assets/screenshots/f40.png">
 <img src="assets/screenshots/steemed.png">
 <img src="assets/screenshots/caustic.png">
+<img src="assets/screenshots/luxury.png">
 
 
 <!-- Table one -->
@@ -48,7 +45,7 @@ is one of the reasons rendering is such a fascinating and challenging field of s
     </td>
     <td style="width:50%; padding:5px; text-align:center;">
       <div style="font-weight:bold; margin-bottom:5px;"></div>
-      <img src="assets/screenshots/pool_caustic.png" style="width:100%; height:auto;">
+      <img src="assets/screenshots/hotel_pool_caustic.png" style="width:100%; height:auto;">
     </td>
   </tr>
 	</tr>
@@ -68,17 +65,7 @@ is one of the reasons rendering is such a fascinating and challenging field of s
     </td>
     <td style="width:50%; padding:5px; text-align:center;">
       <div style="font-weight:bold; margin-bottom:5px;"></div>
-      <img src="assets/screenshots/pool.png" style="width:100%; height:auto;">
-    </td>
-  </tr>
-	</tr>
-    <td style="width:50%; padding:5px; text-align:center;">
-      <div style="font-weight:bold; margin-bottom:5px;"></div>
-      <img src="assets/screenshots/mp4.png" style="width:100%; height:auto;">
-    </td>
-    <td style="width:50%; padding:5px; text-align:center;">
-      <div style="font-weight:bold; margin-bottom:5px;"></div>
-      <img src="assets/screenshots/chirac.png" style="width:100%; height:auto;">
+	    <img src="assets/screenshots/mp4.png" style="width:100%; height:auto;">
     </td>
   </tr>
 </table>
@@ -256,7 +243,7 @@ pa -50,50,25 0,0,1 20 50 0 220,220,190 ch:10,10 120,20,220 220,50,120
 - **Reflection**: Accurate reflections based on material properties, allowing for reflective surfaces.
 - **Refraction**: Simulation of light refraction through transparent materials such as glass or water.
 - **Fresnel Effect**: Simulates how the reflectivity of a surface changes based on the viewing angle, adding realism to materials like glass, water, and metals.
-- **Caustics**: Precise rendering of light concentration effects caused by reflection and refraction (e.g., light patterns under water).
+- **Caustics**: Precise rendering of light concentration effects caused by reflection and refraction.
 
 ### Textures and Materials:
 - **Normal Mapping**: Adds fine surface detail with normal maps without increasing the geometric complexity.
