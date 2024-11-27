@@ -1,6067 +1,0 @@
-P6
-512 512
-255
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀─┌├─┌├─┌├─┌├├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀────────▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀├├├├├├├├├┌▀├┌▀├┌▀├┌▀─┌├─┌├─┌├─┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀─┌├─┌├─┌├─┌├├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀────────▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀├├├├├├├├├┌▀├┌▀├┌▀├┌▀─┌├─┌├─┌├─┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀─┌├─┌├─┌├─┌├├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀╖ё╖╖ё╖╖ё╖╖ё╖ннннннннннннцаццаццаццацнннннннннннн╒⌡╒╒⌡╒╒⌡╒╒⌡╒├├├├├├├├├┌▀├┌▀├┌▀├┌▀─┌├─┌├─┌├─┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╛╝╛╛╝╛╛╝╛╛╝╛╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнннннннннннннцаццаццаццацнннннннннннннфннфннфннфннфннфннфннфннфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀╛╝╛╥╤╥ц╬цнфнцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццаццац╥╩╥╛╤╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╥╤╥ц╬цнфнцдцхиххиххихциццицхлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххинхинхинцднцдццдццдццдц╫╩╫╫╩╫╛╟╛°╕°}┘▀}┘▀}┘▀}┘▀├├├├├├├├▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀√⌡╒}┘▀}┘▀}┘▀}┘▀нфннфннфн╡╟╥нфннфннфннфннфннфннфн╥╟╥ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфнцацхиххиххиххихц╬цнфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлхцдц╫╬╫цдццдццдц╫╬╫цдццдцхиххиххиххиххлххлхцицхлххинхинхинхинхиххиххиххихнфннфннфн╫╩╫нфннфннфн╡╟╥нфннфннфннфн╖╕╖╖╕╖╖╕╖╖╕╖}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒}┘▀}┘▀}┘▀}┘▀}┘▀√⌡╒╡╟╥нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфнхиххиххиххихнфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххихциццицхлххлххинхинхинхинхиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфнцфццфццфццфцхфцхфцхфцхфцнлн╛╗╛▀┘▀▀┘▀°⌡°▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°нфннфннфннфн╡╟╥нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфнхиххиххиххихнфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххинхинхинхинхиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфнцфццфццфццфцхфцхфцхфцхфцнлннлннлн╛╗╛╫ф╫╛╟╛°⌡°▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀────────▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀╒⌡╒╥╟╥нфнцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╡╝╡╡╝╡√∙√}~}}┘▀}┘▀}┘▀}┘▀├┌▀├┌▀├┌▀├┌▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╒⌡╒──────╖ё╖нфннфннфн╥╟╥╥╟╥нфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╡╝╡нфннфннфн╡╟╥├┌▀├┌▀├┌▀├┌▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀▀░√├┌├├┌├├┌├├┌├▀┘▀╒⌡╒╥╟╥нфннфннфннфннфннфннфннфннфннфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфн√⌡╒√⌡╒√⌡╒√⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀▀░√╛╕╛цаццаццаццац╥╟╥нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфн╒═╒╒═╒╒═╒╒═╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├▀█▀╖╚╖циццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхфн╒╕╛}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀─┘▀─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀╒⌡╒╒⌡╒╥╟╥нфннфннфннфнциццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххфнхфнхфнхфннфннфннфн╥╟╥▀┘▀▀┘▀▀┘▀▀┘▀─┘▀─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀нфннфннфннфннфннфннфннфнциццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххфнхфнхфнхфннфннфннфннфнннн╥╤╥╒²╒▀┘▀─┘▀─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒нннннннннннннфннфннфннфннфннфннфннфнциццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххфнхфнхфнхфннфннфннфннфннннннннннннннфннфн╖╕╛─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘├}┘├}┘├}┘├▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀╛╚╖ницницницхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфнхфххфххфххфххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнннннннннннннхиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнниннинниннинхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццдццдцхиххиххиххиххиххихнфннфн╥╟╥▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘├}┘├}┘├}┘├▀┘▀▀┘▀▀┘▀╒⌡╒╡╟╥╡╟╥╡╟╥╡╟╥ницницницницхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфнхфххфххфххфххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнннннннннннннхиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнниннинниннинхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххихнфннфннфннфннфн╒⌡╒▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘├}┘├}┘├}┘├▀┘▀╒⌡╒╥╟╥нфннфннфннфннфнницницницницхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфн╫╧╫нфннфннфннфнхфххфххфххфххиххиххиххих╖ё╖╖ё╖╖ё╖╖ё╖°∙°°∙°°∙°°∙°}~}}~}}~}}~}zzzdfddfddfdmjmmjmmjmmjm}~}}~}}~}}~}√░√√░√√░√√░√╛╕╛╛╕╛╛╕╛╛╕╛нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнниннинниннинхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфн╥╟╥хфц╒╕╖}┘▀}┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°╕╒°╕╒°╕╒°╕╒╥╟╥нфннфннфннфннфннфннфнницницницницхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнцац╥╩╥╛╤╛╫╧╫╛╚╛°²°°²°▀█▀▀█▀▀█▀▀█▀}z}}z}}z}}z}mnmmnmmnmmnmmnmmnmmnmmnmuruuruuruuru}~}}~}}~}}~}zzzzzzzzzzzz─~──~──~──~─}~}}~}}~}}~}}z}}z}}z}}z}uruuruuruurumnmmnmmnmmnmuruuruuruuru├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀╛╝╛╛╝╛╛╝╛╛╝╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфнхфцхфцхфц╒╕╖чГч├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├}┘▀}┘▀}┘▀}┘▀─┘▀─┘▀─┘▀─┘▀▀┘▀╒⌡╒╥╟╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннннннннннннн╫╬╫╫╬╫╫╬╫╫╬╫╫╤╫╫╤╫╫╤╫╫╤╫▀░▀▀░▀}}}}}}}~}}~}}~}}~}uruuruuruurumjmmjmmjmmjmmnmmnmmnmmnmuzuuzuuzuuzu}~}}~}}~}}~}▀┘▀▀┘▀▀┘▀▀┘▀▀█▀▀█▀▀█▀▀█▀▀∙▀▀∙▀▀∙▀▀∙▀°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°∙°°∙°°∙°°∙°▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀┘▀▀┘▀▀┘▀▀┘▀}~}}~}}~}}~}}z}}z}}z}}z}uruuruuruuruoooooooooooo─┌──┌──┌──┌─────────√⌠√╛╕╛╛╕╛╛╕╛╫╬╫╫╬╫╫╬╫╫╬╫╫ф╫╫ф╫╫ф╫╫ф╫нфннфннфннфннфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххихцдц╡╟╥√⌡╒}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├}┘▀}┘▀}┘▀}┘▀─┘▀─┘▀╖╕╛нфн╥╟╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфнннннннннн╖╗╖°²°°²°}~}mnm\^\rrrrrrrrruruuru}}}}}}}~}}~}}~}}~}─~──~──~──~─▒▀▒▒▀▒▒▀▒▒▀▒▒█▒▒█▒▒█▒▒█▒√∙√√∙√√∙√√∙√°²°°²°°²°°²°°≤°°≤°°≤°°≤°°⌡°°⌡°°⌡°°⌡°°═°°═°°═°°═°╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╛╗╛╛╗╛°∙°°∙°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°√⌠√√⌠√√⌠√√⌠√°²°°²°°²°°²°▒░▒▒░▒▒░▒▒░▒√░√√░√√░√√░√├┌├├┌├├┌├├┌├─┌──┌──┌──┌─────────uvuuvuuvuuvuuruuruuru├┌├├┘├╒╕╒╒╕╒╫ф╫нфннфннфннфннфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххихнфннфннфн√⌡╒√⌡╒}┘▀}┘▀}┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├√⌡╒√⌡╒√⌡╒√⌡╒нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╖ё╖╖ё╖╖ё╖╖ё╖─┌──┌─mnmmnmmnm}~}}~}}~}▒█▒▒█▒▒█▒▒█▒▀░▀°╕°°╕°°╕°╛╕╛╛╕╛╛╕╛╛╕╛√∙√√∙√√∙√√∙√╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╝╛╛╝╛╛╝╛╛╝╛╛╚╛╛╚╛╛╚╛╛╚╛╛╗╛╛╗╛╛╗╛╛╗╛╛╚╛╛╚╛╛╚╛╛╚╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╫╩╫╛╗╛╛╗╛╛╗╛╛╝╛╛╝╛╛╝╛╛╝╛╛╗╛╛╗╛╛╗╛╛╗╛╒═╒╒═╒╒═╒╒═╒╛╝╛╛╝╛╛╝╛╛╝╛╖╚╖╖╚╖╖╚╖╖╚╖╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛√≤√√≤√√≤√√≤√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√├┌├├┌├├┌├├┌├├┘├uruuruuruuru▀┘▀▀┘▀╛╕╛нфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххихнфннфннфннфннфннфннфн╡╟╥├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├╡Ё╡╡Ё╡нфннфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡Ё╡нфн╛╗╛▀▀▀uvumnmmnmmnmmnm─┌──┌──┌──┌─°²°°²°°²°°²°▒█▒▒█▒▒█▒▒█▒°╕°°╕°°╕°°╕°╛╕╛╛╕╛╛╕╛╛╕╛╛╝╛╛╝╛╛╝╛╛╝╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╝╛╛╝╛╛╝╛╛╝╛╫╬╫╫╬╫╫╬╫╫╬╫╫╤╫╫╤╫╫╤╫╫╤╫╫╤╫╫╤╫╫╤╫╫╤╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫╫╬╫╫╬╫╫╬╫╫╬╫╫╤╫╫╤╫╫╤╫╫╤╫╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╖╚╖╖╚╖╖╚╖╖╚╖╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╝╛╛╝╛╛╝╛╛╝╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╒═╒╒═╒╒═╒╒═╒╒╕╒╒╕╒├┘├├┘├▀┘▀▀┘▀uruurumnmmnmmnmmnm▀┘▀°⌡°╛╟╛╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххихнфннфннфннфннфннфннфннфн╒╕╒╒╕╒╒╕╒╒╕╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннинниннфннфннфннфннфннфннфннфннфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╫ф╫╒╕╒╒╕╒├┘├mrmmrmmrmmrmuvuuvuuvu√≤√▀█▀▀█▀▀█▀▀█▀°²°°²°°²°°²°╖ё╖╖ё╖╖ё╖╖ё╖╡╝╡╡╝╡╡╝╡╡╝╡╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╥╧╥╫╩╫╫╩╫╫╩╫╫╩╫╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╫╬╫╫╬╫╫╬╫╫╬╫╥╩╥╥╩╥╥╩╥╥╩╥╫╬╫╫╬╫╫╬╫╫╬╫цаццац╫╬╫цаццдццдц╫╬╫цдццдццдццдццдццаццац╫╬╫цац╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╥╩╥╥╩╥╥╩╥╥╩╥╥╤╥╥╤╥╥╤╥╥╤╥╥╧╥╥╧╥╥╧╥╥╧╥╥╤╥╥╤╥╥╤╥╥╤╥╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╡╝╡╡╝╡╛╕╛╛╕╛°²°°²°°²°°²°°∙°°∙°°∙°°∙°▀▀▀▀▀▀}z}}z}─~──~─uruuruxyxxyx├┬├°²°╒═╒╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфн╥Ё╥▀█▀▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├┘▀├┘▀├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀ннннннннн╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннинниннфннфннфннфннфннфннфннфннфннфннфн╖ё╖°²°°²°}~}mnmuruuruuruuru─┘──┘──┘──┘──┌─√≤√√≤√╛╝╛°⌡°°⌡°°⌡°°⌡°╖╗╖╖╗╖╖╗╖╖╗╖╡╟╡╡╟╡╡╟╡╡╟╡╥╤╥╥╤╥╥╤╥╥╤╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╫╬╫╫╬╫╥╧╥╡Ё╡╫а╫╫а╫╫а╫╫а╫цдццдццдццдццдццдццдццдццаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдццдццдццдццдццдццдццаццаццаццаццдццдццдццдццдццдццдццдццаццаццаццаццдццдццдццдццаццаццаццацц╬цц╬цц╬цц╬ццдццдц╥╧╥╥╧╥ц╬цц╬ц╥╤╥╥╤╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╡Ё╡╡Ё╡╡Ё╡╡Ё╡╥╤╥╥╤╥╥╤╥╡╝╡╖╗╖╖╗╖╖╗╖╖╗╖╖ё╖╖ё╖╖ё╖╖ё╖°═°°═°°═°▀▀▀√∙√√∙√√∙√─~─├┬├├┬├├┬├xyxuruuruuruuru├┬├╒ё╒╒ё╒╫╬╫нфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфннфннфн╛╕╖╛╕╖╛╕╖╛╕╖}┘▀}┘▀}┘▀}┘▀├┘▀├┘▀├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀╛╕╛нфннфннфнннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннинниннфннфннфннфннфн╖ё╖╖ё╖──────mnmmnmmnm}~}}~}}~}├┘├├┘├├┘├╒╕╒╖╕╖╖╕╖╖╕╖╖╕╖√≤√╛╝╛╛╝╛╛╝╛╛╗╛╛╗╛╛╗╛╛╗╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╥╧╥╫а╫╫а╫╫а╫╫а╫цдццдццдццдццдццдццдццдццаццаццаццаццаццаццаццаццдццдццдццдццаццаццаццаццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдццдццдццдццдццдццдццаццаццаццаццдццдццдццдццаццаццаццацц╬цц╬цц╬цц╬ццдццдццдццдцц╬цц╬цц╬цц╬ццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╥╤╥╥╤╥╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡╟╡╡╟╡╡╟╡╡╟╡╛╤╛╛╤╛°═°°═°╛╝╛╛╝╛√∙√√∙√°²°├┬├°²°°²°├┌├├┌├├┌├├┌├uvuuvuuvuuvuuvuuvu▀▀▀▀▀▀╫ф╫╫ф╫╫ф╫╫ф╫╥Ё╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфннфннфннфцнфцнфцнфцнфн╡╟╥√⌡╒}┘▀├┘▀├┘▀├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╫ф╫╫ф╫╫ф╫╫ф╫нфннфннфннфнннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннин╛╝╛нфн╛╕╛▀┘▀urumnmmnm────────────°²°°²°°²°°²°╒╕╒╒╕╒╒╕╒╒╕╒╖╕╖╖╕╖╖╕╖╖╕╖╛╝╛╛╝╛╛╝╛╛╝╛╫╤╫╫╤╫╫╤╫╫╤╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫а╫╫а╫╫а╫╫а╫цдццдццдццдццдццдццдццдццаццаццаццаццаццаццаццаццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдццдццаццаццаццаццдццдццдццдццаццаццаццацнфннфннфннфнцдццдццдццдцц╬цц╬цц╬цц╬ццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╤╛╛╤╛╛╤╛╛╤╛╛╝╛╛╝╛╛╝╛╛╝╛°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒╒ё╒├┬├├┬├├┬├▀▀▀▀▀▀uvuuvumnmmnmmnmmnm▀█▀╒═╒╒═╒╥Ё╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфннфннфннфцнфцнфцнфцнфннфннфннфн╫фн├┘▀├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀╒⌡╒╥╟╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫нфннфннфннфн▒⌠▒▒⌠▒▒⌠▒▒⌠▒rsrrsrrsrrsr─┌──┌──┌──┌─▀█▀▀█▀▀█▀▀█▀°²°°²°°²°°²°°²°╖╗╖╖╗╖╡Ё╡╛╝╛╛╝╛╛╝╛╛╝╛╥╧╥╥╧╥╥╧╥╥╧╥╥╩╥╥╩╥╥╩╥╥╩╥╫╤╫ц╬цц╬цц╬ццдццдц╫╬╫цдццдццдццдццдц╫╬╫цац╫╬╫╫╬╫цаццаццаццац╫╬╫цдццдццдццаццаццаццаццаццаццацхдххдхцаццаццаццаццаццаццаццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдццдццдццдццдццдц╫╬╫цдццдццдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдцнннцаццаццаццаццдццдццдццдццдццдццдцхихцаццац╫╬╫цац╥╩╥╥╩╥╥╩╥╥╩╥╥╩╥╥╩╥╥╩╥╛╤╛╛╝╛╛╝╛╛╝╛╛╝╛╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖°²°°²°°²°°²°°²°°²°▀█▀▀█▀▀█▀▀█▀z~zz~zmrmmrmxyxxyx├┬├°²°°²°╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдцхиххиххиххиххихцдц╡╝╡√∙√}~}}~}}┘▀}┘▀}┘▀}┘▀─┘──┘──┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╥╟╥╥╟╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫╖╕╖─┘──┘─mrmz{zmnmz{zz{z─┌──┌──┌──┌─√≤√√≤√√≤√√≤√°⌡°°⌡°°⌡°°⌡°╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖╡Ё╡╡Ё╡╫╬╫╛╝╛╡Ё╡╡Ё╡╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥цаццаццаццацц╬цц╬цхфххфхцдццдццдццдццдццдццдццдццаццац╫╬╫╫╬╫цаццац╥╩╥цац╫╬╫цдццдццдцхдхцаццаццаццаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдццдццдццаццац╫╬╫╫╬╫цдццдццдццдццдццдццдццдццдццдццдццдц╫╬╫цдццдццдцхдхцаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццаццац╥╩╥цаццдццдццдццдццдццдццдццдццаццаццаццаццаццаццаццаццаццаццац╥╩╥╥╧╥╥╧╥╥╧╥╥╧╥╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╖╗╖╖╗╖╖╗╖╖╗╖╖╗╖°²°°²°°²°°²°▒∙▒▒∙▒▒∙▒z~z├┬├├┬├├┬├xyxmnmmnmmnm}~}}~}°²°╫╬╫╫╬╫нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн√∙√}┘▀}┘▀}┘▀}┘▀─┘──┘──┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒⌡╒╥╟╥нфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫√⌡√xwxdbdmrm─┘──┘──┘─▒⌠▒▒⌠▒▒⌠▒▒⌠▒°²°°²°°²°°²°╛╝╛╛╝╛╛╝╛╛╝╛╛╗╛╛╗╛╛╗╛╛╗╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццаццаццаццацхфххфххфххфхцдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╥╩╥╥╩╥цаццац╫╬╫цдццдццдцхдхцаццаццаццаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдццдццдццдццдццдцхихцдц╫╬╫╫╬╫цдццдццдццдцхихцдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххдхцаццаццаццдццдццдццдццдццдццдццдццдццдццдццдц╫╬╫цдццдццдцхдхцаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╥╩╥╥╩╥цаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццаццаццаццаццаццаццаццаццаццаццаццаццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛▒∙▒▒∙▒°²°├┬├°²°°²°°²°}~}}~}}~}}~}mnmmnmmnm▀┘▀╛╕╛нфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн╡╟╥√⌡╒}┘▀─┘──┘──┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒═╒╒═╒нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╕╛▀┘▀urudbdxwxxwx√⌡√─┘──┘─╖╕╖╖╕╖▒⌠▒▒⌠▒▒⌠▒▒⌠▒°²°°²°°²°°²°╛╝╛╛╝╛╛╝╛╛╝╛╫╤╫╫╤╫╫╤╫╫╤╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццаццаццаццацц╬цц╬цц╬цц╬ц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдццдццдцхдхцаццаццаццаццаццаццаццаццаццаццаццаццаццаццаццдццдццдццдццдццдццдццдццдццдцхиххихцдццдцхиххиххиххиххихцдццдццдцхиххиххиххиххиххихцдццдцхиххиххиххиххиххиххиххиххиххиххдххдххдххдххиххиххиххиххиххиххиххихцдццдцхиххихцдцхиххиххиххдхцаццаццаццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццаццаццаццаццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°}~}}~}uruuruuru▀┘▀°∙°╡╝╡хфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфн▀∙▀─┘──┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫╫╬╫╒═╒├┌├uruuruuruuru√∙√▀█▀▀█▀°²°°²°°²°°²°╖╗╖╖╗╖╛╝╛╛╝╛╛╝╛╥╧╥╛╝╛╛╝╛╥╤╥╥╤╥╥╩╥╥╩╥╥╩╥цац╫╬╫╫╬╫╫╬╫╫╬╫цаццац╫╬╫цац╫╬╫цдццдц╫╬╫хдххдххдххдх╥╩╥цаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдццдццдццдццдццдццдццдццдццдццдццдццдццдццдццдцхиххихцицциццицциццицциццицциццицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцицциццицциццдццдццдццдццдццдццдццдццдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫цдццдццдццдццдццаццац╫╬╫цаццдццдц╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╥╩╥╥╩╥╛╤╛╛╤╛╛╝╛╛╝╛╛╝╛╛╝╛╛╕╛╛╕╛╛╕╛╛╕╛°²°°²°°²°°²°▀┘▀▀┘▀▀┘▀▀┘▀uvuuvuuvuuvu√≤√╫╬╫╫╬╫╫╬╫нфннфннфннфнннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╡╟╥}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀╛╕╛╛╕╛╛╕╛╛╕╛хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфн╫ф╫╫ф╫°═°}}}├┌├uruuru├┌├─~─√∙√√∙√╛╝╛°²°°²°°²°╛╝╛╖╗╖╖╗╖╡Ё╡╡Ё╡╛╝╛╛╝╛╥╧╥╥╧╥╥╤╥╥╤╥ц╬цц╬ц╥╩╥╥╩╥цаццаццаццаццаццаццаццаццаццаццдццдцхих╫╬╫цаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫цаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдццдццдццдццдццдццдцхиххиххиххиххиххиххиххихцдццдццдццдццдццдццдццдцхиххиххиххиххлххлххлххлххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххихцдццдццдццдццдццдццдццдцхихцдццдццдц╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццаццаццаццаццдццдццдццдццдццдццдццдццац╥╩╥╥╩╥╥╩╥╥╧╥╥╧╥╥╧╥╥╧╥╥╤╥╥╤╥╥╤╥╥╤╥╖╗╖╖╗╖╖╗╖╖╗╖°≤°°≤°°≤°°≤°─┌──┌──┌──┌─xyxdfdxyx√≤√╖ё╖нфннфннфнннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн√⌡╒}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╖╕╖╖╕╖нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╗╛╛╗╛╛╗╛╛╗╛}}}mjm}}}}}}├┌├├┌├╒═╒╒═╒√∙√╛╝╛╛╝╛╛╝╛°²°╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╫╬╫╥╧╥╥╧╥цдццдцц╬цц╬цц╬цнфнцаццаццаццаццаццаццаццаццаццаццаццац╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫цацхдхцаццаццаццдццдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдцхиххиххихцдццдццдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдццдццдццдццдццдццдццаццаццац╥╩╥╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╡Ё╡╡Ё╡╛╚╛╛╚╛╛╚╛╛╚╛√≤√√≤√√≤√√≤√√≤√√≤√xyxxyxmnmmnm──╖ё╖╛╚╛нннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфн╡╟╥√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╖╕╖цфццфцнфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх°∙°uvuuvuuvuuvu}}}}}}°═°°═°├┌├├┌├╒═╒╒═╒╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╫╬╫╫╬╫╫╬╫цдццдццдцнннц╬цнфннфннфнцаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫цацнфнхдххдххдххдхцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннхиххиххиххихцаццаццаццаццдццдццдццдц╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╚╛╛╚╛╛╚╛╛╚╛╛╝╛╛╝╛╛╝╛╛╝╛√≤√√≤√√≤√√≤√──────mnmuru▀┬▀▀┬▀╛╚╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннфн╡╟╥√⌡╒}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀}┘▀}┘▀}~}╡╝╡нфннфнхиххиххиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфн╫ф╫╫ф╫╫ф╫╒╗╒xyxxyxxyxxyx▀┬▀▀┬▀▀┬▀▀┬▀°²°°²°╖╗╖╖╗╖╛╝╛╛╝╛╛╝╛╛╝╛╥╩╥╥╩╥╥╩╥╥╩╥╥╩╥╥╩╥цаццаццаццац╫╬╫цац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цц╬ц╫╬╫╫╬╫цдццдццдццдццдццдццдццдццдццдццдццдццдцхихциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихциццицхлххлхцицциццицциццдццдццдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫╫а╫╫а╫цаццаццаццаццаццаццаццаццаццаццац╥╩╥╫╬╫╫╬╫╫╬╫╫╬╫╥╤╥╥╤╥╥╤╥╛╝╛╖╗╖╖╗╖°²°°²°°═°°═°▀∙▀▀∙▀─┌──┌─uvuuvu──uvu√⌠√╛╕╛╫ф╫╫ф╫╫ф╫╫ф╫нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциц╡╟╥√⌡╒}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀}┘▀╡╟╥╡╝╡нфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфн╛╕╛├▀├uvuuvuuvu├┬├├┬├├┬├├┬├°⌡°°⌡°°⌡°°⌡°╖╗╖╖╗╖╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡цаццац╥╩╥╥╩╥цаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдцц╬цц╬цц╬цц╬ццдццдццдцхиххиххихцдццдццдццдцхиххихцдццдцхиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххихцдццдццдццдццдццдц╫╬╫╫╬╫цдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬ц╥╤╥╡Ё╡╡Ё╡╡Ё╡╖╗╖╛╚╛╛╚╛╛╚╛°═°√≤√√≤√√≤√─┌─√⌠√──uvuuvumrm}┘}°╕°╫ф╫╛╕╛нфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфн√⌡╒}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─√⌡╒╡╟╥нфннфннфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╕╛▀┘▀▀┘▀uruuruuvu├▀├├▀├├▀├°²°°²°°²°°²°╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╥╤╥╫╬╫цац╫╬╫╫╬╫╫╬╫╫╬╫цаццаццдццдццдццдцц╬цц╬цц╬цц╬ццдцхиххиххиххиххиххиххихцдцхиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххихцдццдццдцхихцдццдццдццаццаццаццац╫а╫╫╩╫╫╩╫╫╩╫╫╬╫╫╬╫╫╬╫╫╬╫╥╩╥╥╩╥╥╩╥╥╩╥цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цц╬ц╫╬╫╫╬╫╡Ё╡╡Ё╡╫╤╫╫╤╫╛╚╛╛╚╛╛╝╛╛╝╛√≤√√≤√╛╕╛╛╕╛√⌠√√⌠√}┘}}┘}mrmmrmuru▀┘▀╛╕╛нфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфннфн╡╟╥√⌡╒}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌─╖╗╖╖╗╖нфннфннфннфннфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╛╕╛▀┘▀uruuru▀┘▀▀┘▀▀┘▀▀┘▀├▀├╒╗╒╒╗╒╒╗╒°²°°²°°²°°²°╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цац╫╬╫цацхдххдхцдццдцхиххиххфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцаццаццаццац╫а╫╫а╫╫а╫╫а╫цаццаццаццац╥╩╥╥╩╥╥╩╥╥╩╥цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цц╬ц╫╬╫╫╬╫╫╬╫╫╬╫╫╤╫╫╤╫╫╤╫╫╤╫╛╝╛╛╝╛╛╝╛╛╝╛╛╕╛╛╕╛╛╕╛╛╕╛°╕°°╕°}┘}}┘}▀┘▀uruuruuru}~}√∙√╡╝╡нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфннфннфннфннфн°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀╡╟╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфн╫╬╫╫╬╫╫╬╫°²°╛╕╛zzzmnmmnm─┌──┌──┌──┌─°∙°°∙°╖ё╖╖ё╖╛╕╛╛╕╛╡╝╡╡╝╡╥╤╥╥╤╥╥╤╥╥╤╥╥╧╥╥╧╥цдццдццдццдццдццдц╫ф╫╫ф╫╫ф╫╫ф╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццицциццицциццицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдццдццдццдцхихцдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫а╫╫а╫╫а╫╫а╫цдццдццдццдц╫╬╫цдццдц╫╬╫╫╤╫╫╤╫╫╤╫╫╤╫╛╝╛╛╝╛╛╝╛╛╝╛╖╗╖╖╗╖°²°°²°°²°°²°°²°°²°─}──}─uruuru}~}°²°╫╬╫╫╬╫нннннннннннн╫ф╫╫ф╫╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхлххлххлххлхнфннфн╥╟╥▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀─┘▀─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀√⌡╒√⌡╒╡╟╥╡╟╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфн╛╕╛╫╬╫°²°}~}mnmmnmzzzzzz▒█▒√≤√√≤√√≤√√≤√╖ё╖╖ё╖╡╟╡╡╟╡╡╝╡╡╝╡╥╤╥╥╤╥ц╬цц╬цц╬цц╬ццдццдццдццдццдццдццдццдц╫а╫╫ф╫╫ф╫╫ф╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдц╫╬╫╫╬╫цдццдццдцхиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдцхиххихцдццдццдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╤╫╫╩╫╫╩╫цдццдццдццдццдццдцхих╫╬╫цаццаццаццац╥╧╥╥╧╥╥╧╥╥╧╥╡Ё╡╡Ё╡╡Ё╡╖╗╖°²°°²°°²°°²°√░√√░√√░√─}─}~}mnmmnm}~}▀┬▀╛╚╛нннннн╫ф╫╫ф╫╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфннфннфннфн╒⌡╒▀┘▀▀┘▀─┘▀─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√⌡╒╡╟╥нфн╡╟╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфн╛╕╛▀┘▀urumnmmnm}~}}~}▒█▒▒█▒▒█▒╛╕╛╛╝╛╛╝╛╛╝╛╛╝╛╡╟╡╡╟╡╡╟╡╫╬╫╥╤╥╥╤╥╥╤╥╫╬╫ц╬цц╬цц╬цц╬ццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╤╫╫╩╫╫╩╫цдццдццдццдццдццдццдццдццдццдццдццдцхихцдццдццдццдцхиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдцхихцдц╫╬╫╫╬╫╫а╫╫а╫╫а╫╫а╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫цаццаццаццаццдццдццдццдц╫╬╫╫╬╫╡Ё╡╡Ё╡╛╝╛╛╝╛╛╝╛╛╝╛╛╕╛╛╕╛√░√√░√°²°°²°}~}}~}▀┬▀uru▀┬▀╛╚╛╫ф╫╫ф╫╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфннфннфннфннфннфн╥╟╥─┘▀─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╡╟╥нфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх}z}▀┘▀uruuru▀┘▀}~}}~}°²°°²°╛╕╛╛╕╛╛╕╛╛╕╛╛╝╛╛╝╛╛╝╛╛╝╛╡╟╡╫╬╫╫╬╫╫╬╫╥╤╥╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цц╬ццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫а╫╫а╫╫╩╫╫╩╫цдццдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдцхиххиххиххиххихцдц╫а╫╫а╫╫а╫╫а╫╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╕╛╛╕╛╛╕╛╛╕╛°²°°²°°²°°²°▀┬▀▀┬▀▀┬▀▀┬▀uruuruuruuruцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфннфннфннфннфннфннфннфннфн╖╕╛─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘}╡╟╡нфннфнхиххиххиххихциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫ф╫╫ф╫╫ф╫╫ф╫нфннфннфн╖═╖mjmmjmmjm├▀├▀█▀▀█▀°⌡°°⌡°°²°°²°╖╗╖╖╗╖╛╝╛╛╝╛╛╝╛╥╤╥╛╤╛╛╤╛╥╩╥╥╩╥╫╬╫╫╬╫╫╬╫цдцнфнхдххдхцаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдцхиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццдццдццдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццдццдццдццдцхдххдххдххдхцаццац╫╬╫цац╥╤╥╥╤╥╥╤╥╛╝╛╡╝╡╡╝╡╛╕╛╛╕╛°²°°²°°²°°²°▀█▀▀█▀}~}}~}dfdz{z╒ё╒нннннннннннннннннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╟╥╒⌡╒▀┘▀▀┘▀├┘▀├┘▀├┘▀├┘▀─┌▀─┌▀─┌▀─┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀╡╟╥╡╟╡нфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫ф╫╫ф╫╫ф╫╫ф╫нфн╖═╖─}─mjmxwx├▀├├▀├°╕°°⌡°°⌡°╛╗╛╛╗╛╖╗╖╖╗╖╡Ё╡╡Ё╡╛╝╛╛╝╛╥╤╥╥╤╥╥╩╥╥╩╥╥╩╥цац╫╬╫╫╬╫╫╬╫╫╬╫хдхцац╫╬╫╫╬╫цаццац╥╩╥цац╫╬╫╫╬╫╫╬╫╫╬╫цдццдц╫╬╫╫╬╫цдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххихцдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццдццдццдццдццаццаццаццаццаццаццаццацц╬цц╬цц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╡╝╡╖╗╖╖╗╖╖╗╖╖╗╖°²°°²°°²°▀█▀z{zz{zdfdz{z▀┬▀╛╚╛ннннннннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╒⌡╒├┘▀├┘▀├┘▀├┘▀─┌▀─┌▀─┌▀─┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀√⌡╒√⌡╒╡╟╥нфннфннфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫ф╫╫ф╫╫ф╫°╕°mjmmjm─}──}─├▀├°╕°°╕°°╕°╛╗╛╛╗╛╛╗╛╫╤╫╡Ё╡╡Ё╡╡Ё╡╫╬╫╥╤╥╥╤╥ц╬цц╬ц╥╩╥цаццаццац╫╬╫цдц╫╬╫╫╬╫цац╫╬╫╫╬╫╫╬╫╥╩╥╥╩╥цаццац╫╬╫╫╬╫╫╬╫цацхихцдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫цаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццацц╬цц╬цц╬цц╬ц╫╬╫╫╬╫╥╤╥╥╤╥╡Ё╡╡Ё╡╡Ё╡╡Ё╡╛╝╛╛╝╛°²°°²°╒ё╒╒ё╒z{zz{z▀┬▀uru▀┬▀╛╚╛ннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфн├┘▀├┘▀─┌▀─┌▀─┌▀─┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀√⌡╒нфннфннфннфннфннфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциц°╕°}┘}mrmmrm─}──}─╖═╖╖═╖°╕°°╕°°╕°°╕°╛╗╛╫╤╫╫╤╫╫╤╫╡Ё╡╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цнфнцаццаццаццац╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫цацнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххихцдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цц╬ц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛╒ё╒╒ё╒╒ё╒╒ё╒▀┬▀▀┬▀▀┬▀▀┬▀uvu▀█▀╛╝╛нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфнннн─┌▀─┌▀─┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀────────хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфн╫╬╫╫╬╫°⌡°mjmuvu─┌──┌─√≤√°²°°²°╖╗╖╖╗╖╛╝╛╛╝╛╛╝╛╥╧╥╥Ё╥цаццаццаццаццаццаццац╫а╫╫а╫╫а╫╫а╫цдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдцхиххихцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццаццац╫╬╫цац╫╬╫╫╬╫╥╧╥╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛°²°°²°▀█▀─~──~─uruuru╒═╒╫╬╫╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╒ё╒├┬├├┬├├┬├├┬├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀────╖ё╖нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфн╛╕╛}{}mjm}{}}{}─┌─√≤√√≤√╛╝╛╖╗╖╖╗╖╡Ё╡╡Ё╡╡Ё╡╥╧╥╥╧╥╫╬╫цаццаццаццаццаццаццаццац╫а╫╫а╫╫а╫╫а╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╡Ё╡╡Ё╡╛╝╛╛╝╛°²°°²°√∙√√∙√√∙√─~─uruuru├┌├╒═╒нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих├┬├├┬├├┬├├┬├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀√⌡╒╖ё╖нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх▀┘▀▀┘▀uruuru}{}°⌡°°⌡°°⌡°√≤√╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╫╬╫╥╧╥╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛°²°╛╝╛╛╝╛√∙√√∙√├┌├├┌├uruuru▀┘▀╛╕╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц├┬├├┬├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀√⌡╒нфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх}z}▀┘▀▀┘▀▀┘▀▀┘▀°⌡°°⌡°°⌡°°⌡°╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдц╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╒═╒╒═╒╒═╒├┌├▀┘▀uruuru▀┘▀╡Ё╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдц▀█▀─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌├─┌├─┌├─┌├├┬├├┬├├┬├├┬├▒∙°хфнхфнхфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫╫ф╫╫ф╫°ё°zzzzzzzzzzzz▀┘▀▀┘▀°≤°°≤°╛╟╛╛╟╛╛╟╛╛╟╛╥╩╥╥╩╥╥╩╥╥╩╥цаццац╫╬╫цац╫а╫╫а╫╫а╫╫а╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццицциццицциццдццдццдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╥╧╥╥╧╥╥╧╥╥╧╥цдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫цац╥╧╥╡Ё╡╛╝╛╛╝╛╖╗╖╖╗╖°²°°²°▀█▀▀█▀}~}}~}uruuru╒═╒╫╬╫нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╥╤╥╒²╒▀┘▀─┌▀─┌▀─┌▀─┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌├─┌├─┌├─┌├├┬├├┬├├┬├цдцхфнхфнхфнхфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫°ё°}}mnm▒█▒▒█▒▒█▒▒█▒°≤°°≤°╛╚╛╛╚╛╛╟╛╛╟╛╫╩╫╫╩╫цаццаццаццаццаццаццаццац╫а╫╫а╫╫а╫╫а╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдцхихцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххихцдццдццдццдццдццдц╫╬╫╫╬╫╥╧╥╥╧╥╥╧╥╥╧╥╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццац╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╡Ё╡╡Ё╡╖╗╖°²°°²°°²°▀█▀├┌├├┌├uruuru▀▀▀╛╗╛нфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннннннннн╥╤╥─┌▀─┌▀─┌▀─┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌├─┌├─┌├─┌├├┬├цдццдццдцхфнхфнхфнхфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╗╛mnmmnm}}}}╛╕╛╛╕╛╛╕╛╛╕╛╛╚╛╛╚╛╛╚╛╫╬╫╛╟╛╫╩╫╫╩╫╫╩╫цаццаццаццаццаццаццаццац╫╩╫╫╩╫╫╩╫╫╩╫╫╬╫╫╬╫цдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххихцдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╛╝╛╛╝╛°²°°²°╒═╒╒═╒├┌├├┌├▀▀▀uvu▀▀▀╛╗╛нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннннннннннннннн╖╗╛─┌▀─┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌├─┌├─┌├─┌├цдццдццдццдцхфнхфнхфнхфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╛╗╛▀▀▀uvuuvu}}}}°ё°°ё°╛╕╛╛╕╛╛╕╛╛╕╛╛╚╛╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫╫╬╫цдцхиххихцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛╒═╒╒═╒╒═╒╒═╒▀▀▀▀▀▀▀▀▀▀▀▀mnm──╖ё╖нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннннннннннннннннннннн╖╗╛├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─├─├─├─├}┘▀}┘▀}┘▀}┘▀▀┘▀╥╟╥нфннфнцдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфццфццфццфцнфннфннфннфн╫╬╫╒═╒├┌├uruuvu─┌──┌─√≤√°²°°²°╖╗╖╖╗╖╛╝╛╡Ё╡╡Ё╡╥╧╥цдццдццдцхихцаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдццдццдццаццаццац╥╩╥╡╝╡╡╝╡╡╝╡╡╝╡°²°°²°▀█▀▀█▀─~──~─uruuru╒╕╒╫ф╫╫ф╫╫ф╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡╟╥√⌡╒}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─├─├─├─├}┘▀}┘▀}┘▀╡╟╥╥╟╥нфннфннфнцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфццфццфццфцнфннфннфн╛╕╛├┌├uruuru├┌├─┌─√≤√√≤√╛╝╛╖╗╖╖╗╖╡Ё╡╡Ё╡╡Ё╡╥╧╥╥╧╥╫╬╫цдццдццдццдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххихцдццаццаццаццац╥╤╥╥╤╥╥╤╥╥╤╥╛╝╛╛╝╛╛╝╛°²°√∙√√∙√√∙√─~─uruuru├┘├╒╕╒нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн√⌡╒▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─├─├─├─├√⌡╒╡╟╥нфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфццфццфццфц▀┘▀▀┘▀uruuru├┌├├┌├╒═╒╒═╒√≤√╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╫╬╫╥╧╥╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫хихцдццдццдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛√∙√√∙√├┘├├┘├uruuruuru╛╕╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╥╟╥╒⌡╒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─├─├╖ё╒╖ё╒нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфццфццфцuru▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├╒═╒╒═╒╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццацхиххиххихнннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцаццаццаццаццаццаццаццаццдццдццдццдццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛╒╕╒╒╕╒╒╕╒├┘├▀┘▀uruuru▀┘▀хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╥╟╥╥╟╥╥╟╥╒⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘}}┘}}┘}}┘}}~}╒ё╒хиххиххиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫╫ф╫╫ф╫╫ф╫╒╕╒uruuru─~──~─▀█▀▀█▀°²°°²°╖╗╖╖╗╖╖╗╖╡Ё╡╥╩╥╥╩╥╥╩╥цаццдццдццдцхиххдх╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдцхиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдц╫╬╫цдц╥╤╥╥╤╥╥╤╥╥╤╥╖╗╖╖╗╖°²°°²°▀█▀▀█▀}~}}~}mnmmnm°≤°╫╤╫ннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╖╕╖╖╕╖╖╕╖▀┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘}}┘}}┘}√⌡√хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫╫ф╫╒╕╒├┘├uru─~──~─√∙√√∙√°²°°²°╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╫╬╫╥╩╥╥╩╥цаццаццдццдццдццдццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццдццдццдцхиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдццдццдцц╬цц╬ц╥╤╥╥╤╥╡Ё╡╡Ё╡╡Ё╡╖╗╖°²°°²°°²°▀█▀°≤°}}}mnmmnm▀█▀╛╝╛ннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфццфццфц╖╕╖}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘}√⌡√╡╟╡нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫}~}uruuru├┘├├┘├√∙√√∙√√∙√╛╝╛╛╝╛╛╝╛╛╝╛╫╬╫╫╬╫╡Ё╡╡Ё╡╫╬╫цаццаццаццаццдццдццдццдц╫╬╫цац╫╬╫╫╬╫цаццаццаццаццдцхиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдцхдхцац╫╬╫╫╬╫цаццаццаццаццдццдццдццдцц╬цц╬цц╬цц╬ц╫╬╫╫╬╫╡Ё╡╡Ё╡╛╝╛╛╝╛°²°°²°°≤°°≤°°≤°°≤°uvuuvuuvu▀█▀хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфццфццфццфц√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─╡╟╡нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫}~}\^\}~}├┘├├┘├╒╕╒╒╕╒√∙√╛╝╛╛╝╛╛╝╛╛╝╛╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццдццдццдццдц╫╬╫цац╫╬╫цаццаццацхдххдххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххдххдххдхцаццаццаццац╥╩╥╫╬╫╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цц╬ц╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛╫╤╫°≤°°≤°°≤°▀█▀▀█▀▀█▀uvumnm▒⌠▒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфццфццфццфцнфн╡╟╥√⌡╒}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┬├├┬├цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫xyxdfduvu▀█▀╛╝╛°²°°²°╖╗╖╖╗╖╛╝╛╡Ё╡╡Ё╡╥╧╥╫╬╫╫╬╫╫╬╫цдццаццаццаццац╫ф╫╫а╫╫╩╫╫╤╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдццдцциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццацнфнцдццдццдццдц╫а╫╫╩╫╫╩╫╫╤╫╥╤╥╡╝╡╛╕╛╛╕╛╛╝╛°²°°²°▀█▀▀┘▀uruuru╛╕╛нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╖╕╛─┘▀─┘▀─┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀√²╒цдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫√≤√dfdxyx▀█▀╛╝╛╛╝╛╛╝╛╖╗╖╖╗╖╡Ё╡╡Ё╡╡Ё╡╥╧╥╥╧╥╫╬╫╫╬╫╫╬╫цдццдццаццаццаццац╫а╫╫╩╫╫╩╫╫а╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдцхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццдццдццдццдц╫а╫╫а╫╫╩╫╫╩╫╫╬╫╫╬╫╫╬╫╡╝╡╛╝╛╛╝╛°²°°²°╛╕╛▀┘▀▀┘▀dbdmnm╖ё╖нфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╖╕╛─┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√²╒╡╤╥нннцдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих▒⌠▒dfdxyxxyx√≤√╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╫╬╫╥╧╥╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдц╥╩╥╥╩╥╥╩╥╥╩╥╫╩╫╫╩╫╫а╫╫а╫цдццдццдццдцхиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцхихцдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫а╫╫а╫╫а╫╫╩╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛°²°╛╕╛╛╕╛╛╕╛▀┘▀──mnm──╖ё╖нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╡╤╥нннннннннцдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих▒⌠▒mnmmnmxyx√≤√√≤√√≤√╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдц╥╩╥╥╩╥╥╩╥╥╩╥╫╩╫╫а╫╫а╫╫ф╫цдццдцхиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫ф╫╫а╫╫а╫╫а╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╕╛╛╕╛╛╕╛╛╕╛╖ё╖────mnm}~}нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн╡╟╥√⌡╒}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀╒╗╛хлнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫╫ф╫╫ф╫╒╕╒uruuru─~──~─°²°°²°╖╗╖╖╗╖╛╝╛╡Ё╡╥╧╥╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхихцдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫╫а╫╫а╫╫а╫╫а╫╫а╫╫а╫цаццаццац╥╩╥╥╧╥╥╧╥╛╝╛╛╝╛╛╝╛°²°°²°▀█▀zzzmnm▒█▒╛╕╛╫╬╫╫╬╫╫╬╫╫╬╫циццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀√⌡╒╒╗╛хлнхлнхлнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫╒╕╒├┘├uru─~──~─√∙√√∙√╖╗╖╖╗╖╡Ё╡╡Ё╡╥╧╥╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххихцдццдццдццдц╫╬╫╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫╫а╫╫а╫╫а╫╫а╫цаццаццаццаццдц╥╧╥╥╧╥╥╧╥╛╝╛╛╝╛°²°°²°▒█▒zzzmnmmnm}{}╫╬╫╫╬╫╫╬╫циццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфцнфц▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√⌡╒╡╟╥нфнхлнхлнхлнхлнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнuruuru├┘├├┘├√∙√√∙√√∙√╛╝╛╡Ё╡╡Ё╡╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╥╧╥╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххихцдцхихцдццдццдц╫а╫╫╩╫╫╩╫╫╩╫╫╩╫╫╩╫╫╩╫╫╩╫цаццаццаццаццдццдццдц╥╧╥╛╝╛╛╝╛╛╝╛°²°╛╕╛╛╕╛▒█▒▒█▒}{}mjm}{}╫╬╫циццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфцнфцнфцнфц├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╡╟╥нфннфннфнхлнхлнхлнхлнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╕╛▀┘▀uru├┘├├┘├╒╕╒╒╕╒√∙√╛╝╛╛╝╛╛╝╛╡Ё╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнннхиххиххиххиххиххиххих╫а╫╫а╫╫а╫╫а╫╫╩╫╫╩╫╫╩╫╫╩╫цаццаццаццаццдццдццдццдц╫╬╫╛╝╛╛╝╛╛╝╛╛╕╛╛╕╛╛╕╛╛╕╛°⌡°}{}}{}mjm╖╚╖цицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфцнфцнфцнфццаццац├┌├├┌├▀┘▀▀┘▀▀┘▀╥╟╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфн╖ё╖uvuuvu├┘├├┘├°²°°²°╖╗╖╖╗╖╛╝╛╥╤╥ц╬цц╬ц╫╬╫цдццдц╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццаццаццац╥Ё╥╛╝╛╛╝╛╛╝╛╛╝╛╖ё╖╖ё╖▒░▒▒░▒uvuuvu├┬├╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╒⌡╒╥╟╥╥╟╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфн╖ё╖──mnm├┘├├┘├╒²╒╒²╒╖╗╖╖╗╖╡Ё╡╡Ё╡ц╬цц╬цц╬цц╬ццдццдцхих╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххихцдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццаццаццаццац╫╬╫╡Ё╡╛╝╛╛╝╛╖ё╖╖ё╖╖ё╖╖ё╖├┬├├┬├uvuuvu╛╕╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╥╟╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхmnmmnm────╒²╒╒²╒╒²╒╫╤╫╡Ё╡╡Ё╡╡Ё╡╫╬╫ц╬цц╬цц╬цц╬ц╫╬╫цдц╫╬╫╫╬╫╫╩╫╫╩╫╫╩╫╫╩╫цдццдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххихцдццдццдцхдхцац╫╬╫╫╬╫цаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╥╧╥╫╤╫╫╤╫╖ё╖╖ё╖╒ё╒╒ё╒├┬├├┬├uru▀┘▀╛╕╛нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхmjm────╖ё╖╖ё╖╒²╒╫╤╫╫╤╫╫╤╫╡Ё╡╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цц╬ццдц╫╬╫╫╬╫╫╬╫╫а╫╫а╫╫а╫╫а╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццдцхиххиххих╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫цдцхиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххдххдххдхцаццаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╤╫╫╤╫╫╤╫╖ё╖╒ё╒╒ё╒╒ё╒╒ё╒▀┘▀uruuruuru╡Ё╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫╬╫╫╬╫╫╬╫╫╬╫mjmxwxxwx├▀├°∙°°∙°╖ё╖╖ё╖╛╝╛╡Ё╡╡Ё╡╥╧╥цаццац╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфннфннфннфннфн╡╤╡╡╤╡╡╤╡╡╤╡╫╤╫╫╤╫╫╤╫╫╤╫╥Ё╥╥Ё╥╥Ё╥╥Ё╥╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡нфннфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннннннннннннн╫╤╫╫╤╫╫╤╫╫╤╫╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡╤╡╡╤╡╡╤╡╡╤╡╫╤╫╫╤╫╫╤╫╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╥╩╥╥╩╥╥╩╥╥╩╥╡╟╡╡╟╡╖ё╖°∙°°²°°²°▀█▀}~}uvuuvu╒╗╒╫ф╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫╬╫╫╬╫°²°mnmxwx├▀├├▀├°╕°╖ё╖╖ё╖╡╟╡╡╟╡╡Ё╡╥╧╥╥╧╥╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфнц╬ц╥╤╥╥Ё╥╥Ё╥╥Ё╥╥Ё╥╡╤╡╡╤╡╡╤╡╡╤╡╫╤╫╫╤╫╫╤╫╫╤╫╥Ё╥╥Ё╥╥Ё╥╥Ё╥╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡╟╡╡╟╡╡╟╡╡╟╡ц╬цц╬цнфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн╫╤╫╫╤╫╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥╫╤╫╫╤╫╫╤╫╫╤╫╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡╤╡╡╤╡╡╤╡╡╤╡╫╤╫╫╤╫╫╤╫╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╡╟╡╛╝╛╛╝╛╛╝╛°²°├▀├├▀├uvuuvu╖ё╖нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫╬╫}~}mnm}~}├▀├°╕°°╕°°╕°╡╟╡╡╟╡╡╟╡╫╬╫╥╧╥╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхц╬цц╬ц╥╤╥╥╤╥╥╤╥╥Ё╥╥Ё╥╥Ё╥╥Ё╥√²√√²√√²√√²√▒░▒▒░▒▒░▒▒░▒────────}~}}~}}~}}~}√≤√√≤√√≤√√≤√╡╟╡╡╟╡╡╟╡╡╟╡╥╤╥╥╤╥ц╬цц╬цц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихц╬цнфнц╬ц╥╤╥╫╤╫╫╤╫╫╤╫╛╕╛╥╤╥╥╤╥╒²╒╒²╒}~}}~}}~}}~}√≤√√≤√√≤√√≤√├┘├├┘├├┘├├┘├°∙°°∙°°∙°°∙°╒²╒╒²╒╒²╒╒²╒╫╬╫╫╬╫╫╬╫╫╬╫ц╬цц╬цц╬цц╬цц╬цхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцхихцдц╫╬╫╫╬╫╥╩╥╥╩╥╥╩╥╥╩╥цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛╒╗╒├▀├├▀├├▀├mnm──нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх▒█▒mnm}~}}~}°²°°╕°°╕°°╕°°╕°╡╟╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫хфхц╬ц╫╤╫╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥╒═╒╒═╒╒═╒╒═╒}┘}}┘}}┘}}┘}}~}}~}}~}}~}────────}~}}~}}~}}~}}~}}~}}~}}~}√⌡√√⌡√√⌡√√⌡√╥╤╥╥╤╥╥╤╥╥╤╥╛╝╛╥╤╥╥╤╥ц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╥╤╥╥╤╥╥╤╥╥╤╥╫╤╫╫╤╫╛╕╛╛╕╛▀┘▀▀┘▀▀┘▀▀┘▀}~}}~}}~}}~}}~}}~}}~}}~}├┘├├┘├├┘├├┘├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀█▀°²°╛╝╛╫╬╫╥╤╥╥╤╥╥╤╥╥╤╥╫╤╫╫╤╫ц╬цхфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╥╩╥╥╩╥╥╩╥╥╩╥цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛╒╗╒╒╗╒╒╗╒├▀├────mnm──цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфн╫╬╫╒═╒uruuru▀█▀▀█▀°²°╛╝╛╛╝╛╛╝╛╛╝╛╥╧╥╫╬╫цаццац╫╬╫цдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфннфннфннфннфн╥╧╥╥╧╥╥╧╥╥╧╥нфн╥Ё╥╥Ё╥╒═╒╛╝╛√⌠√▀┘▀▀┘▀├┬├├┬├├┬├├┬├z{zz{zz{zz{zz{zz{zz{zz{zxyxz{zxyxxyxxyxrsrrsrrsrrsrrsrrsr}~}}~}}~}}~}}~}├┌├├┌├├┌├├┌├▒⌠▒╛╝╛╛╝╛╛╝╛╥╟╥╥╟╥нфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфн▒⌠▒▒⌠▒▒⌠▒▒⌠▒}}}}}}}}}}}}}~}}~}zzzxvxuruuuuuuuuuurrrxvxxvxxvxxyxxyxxyxxyx─~──~──~──~─z}zz}zz}z──├┬├▀█▀▀█▀▀█▀°²°╛╝╛╛╝╛╛╝╛╛╗╛╫╤╫╫╤╫╫╤╫╥Ё╥╥Ё╥╥Ё╥╥Ё╥нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╖╗╖°²°▀▀▀▀▀▀}z}}z}mrm°═°╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххихцицхлххлххлххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфн╛╕╛uruuru├┌├├┌├▀█▀°²°╛╝╛╛╝╛╛╝╛╛╝╛╥╧╥╥╧╥цаццацхдх╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфннфн╫╧╫╫╧╫╫╧╫╥╧╥╥╧╥╥╧╥╥╧╥╥Ё╥╒═╒▀█▀▀█▀▀┘▀▀┘▀▀┘▀▀┘▀─┌──┌──┌──┌─z{zz{zz{zz{zz{zz{zz{zz{zxyxz{zxyxxyxrsrrsrrsrrsrrsrrsrrsrxyxxyxrsrrsrrsrxwxxwx├┌├├┌├z{z▒⌠▒▒⌠▒╛╝╛╥╟╥╥╟╥нфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн╡╝╡╡╝╡╡╝╡▒⌠▒z{zz{zz{z}}}}}}}}}}}}xvxuruuruuruuuuuuuuwuuwurrrxvxxvxxvxz{zz{zz{zxyx─~──~─zzz─~─z}zz}zz}z───┌─├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°⌡°╛╗╛╫╤╫╥Ё╥╥Ё╥╥Ё╥╥Ё╥ц╬цц╬цц╬цц╬цхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡°═°°═°°═°▀▀▀}┌}mrmmrm°═°нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххихцицхлххлххлххиххиххиххиххиххиххиххихнфннфннфнц╩цнфн╛╕╛▀┘▀uru├┌├├┌├╒═╒╒═╒°²°╛╝╛╛╝╛╫╬╫╥╧╥╥╧╥цдццдц╫╬╫цац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхц╬цц╬цц╬цц╬цц╬ц╫╧╫╫╧╫╫╧╫╛╚╛╒ё╒╒ё╒╒ё╒╒ё╒╒═╒▀█▀▀█▀▀█▀▀┘▀▀┘▀▀┘▀▀┘▀─┌──┌──┌──┌─z{zz{zz{zz{z}~}}~}}~}}~}xyxz{zxyxxyxrsrrsrrsrrsrrsrrsrrsrrsrmnmmnmmnmrsrmnmmnmxwxxwxmnmz{zz{z▒⌠▒╒⌡╒╥╟╥╥╟╥нфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнц╬ц╡╝╡╡╝╡╡╝╡√∙√z{zz{zz{zz{zusuusuusuusuuruuruuruuruuwuuwuuwuuwuxvxxvxxvxxvxz{zxyxxyxxyxzzzzzz─~──~─z}zz}zz}z──}~}─┌──┌─├┬├}~}▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°⌡°╒═╒╥Ё╥╥Ё╥╥Ё╥╥╤╥╥╤╥╥╤╥╥╤╥хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххихцдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╛╤╛╛╤╛°═°°═°°═°}┌}}┌}mrmuru╛╕╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххихнфннфннфн╛╕╛▀┘▀uruuru▀┘▀╒═╒╒═╒╒═╒╒═╒╛╝╛╛╝╛╫╬╫╫╬╫цдццдццдцнннцац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфхц╬ц╫╤╫╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥╫╧╫╫╧╫╛╚╛╛╚╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀┘▀▀┘▀▀┘▀▀┘▀─┌──┌──┌──┌─}~}}~}}~}}~}}~}}~}}~}}~}xyxz{zxyxxyxrsrrsrrsrrsrxyxrsrrsrrsrxyxxyxxyxxyxmnmmnmmnmmnmmnmmnmmnmz{z╒⌡╒╥╟╥╥╟╥нфнцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╝╛╡╝╡╡╝╡√∙√√∙√mnmmnmmnmmnmusuusuusuusuuruuruuruuruuuuuuuuuuuuuxvxrrrxvx}z}xyxxyxxyxxyx─~──~──~──~─z}zz}zz}z──}~}}~}}~}─┌─}~}}~}▀█▀}~}▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀╒═╒╥Ё╥╥╤╥╥╤╥╥╤╥╥╤╥╫╤╫╫╤╫╫╤╫╫╤╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххихнннхихцдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╛╤╛╛╤╛╛╤╛╛╤╛°═°°═°°═°}┌}▀┘▀uruuru╛╕╛хиххиххиххиххиххиххиххиххиххиххиххиххдххдххдххдххиххиххиххихнннннннннннн╫╤╫╫╤╫}}}mnm}z}▀┬▀▀┬▀°⌡°╛╕╛╡╝╡╡╝╡╥╤╥╥╩╥╥╩╥цаццац╫╬╫цдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфн╥╤╥╥╤╥╥╤╥╥╤╥╫╬╫╫╬╫╫╬╫╫╬╫╫╤╫╫╤╫╛╗╛°⌡°▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├┬├├┬├─┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├──uzu──────}~}}~}z{zz{z}~}}~}}~}}~}xvxxvxxvxxvxxvxxvxxvxzzzxvxxvxxvxrrrxyxrsrrsrrsrrrrrrrrrrrrruuu▀┬▀╛╕╛╛╕╛╡╝╡╡╝╡нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫╤╫╫╤╫╫╤╫╒²╒▀∙▀}}}}uuuonoonoonomjmrrrrrrrrrrrrrrrxvxxvxxvxxwxxwxxwxxwx}z}zyzxwxuvuz{zz{zz{zz{z}~}z{zz{zz{zz{zz{z}~}}~}─┌──┌──┌──┌──┌──┌──┌──┌─▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒°²°╛╗╛╫╤╫╫╤╫╫╤╫╫╤╫╫╤╫╫╤╫╫╤╫нфннфннфннфннфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццац╫╬╫цац╥╩╥╥╩╥╛╤╛╖╗╖╖╗╖°²°°²°─┌──┌─uvuuvu}}}╫╤╫╫╤╫╫╤╫цдццдццдццдцхлххлххлххлххдххдххдххдххиххиххиххихннннннннн╖╗╖}}}mnm}}}°≤°▀┬▀°⌡°°⌡°╛╝╛╡╝╡╥╤╥╥╤╥╫╬╫цаццаццаццаццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфнц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╫╬╫╛╟╛╛╟╛°ё°°⌡°▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌─├┌├├┌├────────────}~}}~}z{zz{z}~}}~}z{zxyxzzzxvxxvxxvxxvxxvxzzzzzzxvxxvxxvxxvxrsrrsrrsrrsrrrronoonoonouuuuuu▀┬▀╛╕╛╡╝╡╡╝╡нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнцац╫╤╫╫╤╫╫╤╫├┘├}}uuumjmmjmrrrrrrrrronorrrrrrrrrrrrrrrxvxxvxxvxxwxxwxrurxwxzyzxwxxwxzyzz{zz{zz{zz{z}~}z{zz{zz{zz{zz{z}~}}~}─┌──┌──┌──┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▒⌠▒√≤√▀█▀▀█▀°⌡°°⌡°╡╚╡╫╤╫╫╤╫╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥ц╬цц╬цнфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццацхдх╫╬╫цаццац╥╩╥╥╩╥╡Ё╡╡Ё╡╡Ё╡╖╗╖√≤√√≤√√≤√─┌─}}}mnm}}}╫╤╫цдццдццдццдцхлххлххлххлх╡╟╡хдххдххдххиххиххиххихннн╖╗╖─┌─mnm}}}}}}°≤°°≤°°⌡°╛╝╛╛╝╛╛╝╛╥╤╥╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╒╕╒╛╟╛°ё°°ё°▀∙▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┌├──────────────}~}}~}z{zz{zz{zxyxxyxxyxzzzxvxxvxxvxxvxxvxzzzzzzxvxxvxxvxxvxrsrrsrrsrrsronoonoonoonodfduuu▀┬▀▀┬▀√∙√╡╝╡╡╝╡нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╩╥╫╤╫╫╤╫╒²╒├┘├uuumjmmjmmjmrrrrrrrrrrrrrrrrrrrrrrrrxvxxvxxvxxvxrurrurxwxxwxxwxxwxzyzzyzxyxz{zz{zz{z}~}z{zxyxz{zz{z}~}}~}}~}─┌──┌──┌──┌──┌──┌──┌─├┬├├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▒⌠▒▀█▀▀█▀▀█▀▀█▀°∙°╖═╖╡╚╡╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥ц╬цц╬ццдцхиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццац╫╬╫╫╬╫╫╬╫╫╬╫цац╫╬╫╫╬╫цаццаццац╥╩╥╫╬╫╫╬╫╡Ё╡╡Ё╡╛╝╛╛╝╛√≤√√≤√°≤°}}}}}}mnm├┬├цдццдццдцхлххлххлххлх╡╟╡╡╟╡хдххдххиххиххих╫╬╫─┌─mnmmnm─┌─°≤°°≤°°≤°╫╤╫╛╝╛╛╝╛╛╝╛╛╝╛╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цацхдххдххиххиххихнннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╤╫╫╤╫╫╤╫╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╒╕╒▀∙▀▀∙▀▀∙▀▀∙▀▀∙▀▀∙▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├────────────────}~}}~}z{zz{zxyxxyxxyxxyxzzzxvxxvxxvxxvxxvxzzzzzzxvxxvxxvxxvxrsrrsrrsrrsronoonoonoonodfduuuuuu▀┬▀√∙√╡╝╡╡╝╡нфнцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнцац╛╤╛╫╤╫╫╤╫├┘├uvumjmmjmmjmmjmrrrrrrrrrrrrxvxxvxxvxxvxxvxrrrxvx}z}xwxxwxxwxxwxxwxzyzzyz}z}uvuuvuxyxz{z}~}z{zz{zz{z}~}}~}}~}}~}─┌──┌─├┬├├┬├─┌──┌──┌─▀█▀├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀╖═╖°∙°°∙°°∙°╒╕╒╒╕╒╒╕╒╒╕╒╥╤╥╥╤╥╥╤╥╥╤╥╫╬╫╫╬╫цдцхихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнхдхцац╫╬╫цац╫╬╫╫╬╫╫╬╫нфнцаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛°≤°°≤°°≤°}}}├┬├dfd├┬├цдцхлххлххлхциц├┬├╒ё╒╫╬╫╫╬╫╫ф╫╫ф╫╒╗╒uvuuvu─┌──┌─√≤√╖ё╖╖ё╖╡╟╡╫╬╫╫╤╫╫╩╫╫а╫╫а╫цаццаццаццацхдх╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╛╗╛╛╗╛╛╗╛╛╗╛°²°°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀░▀▀░▀▀▀▀▀▀▀▀█▀▀█▀▀█▀├┬├▀█▀▀█▀▀█▀▀█▀─┌──┌──┌─▀█▀─┌──┌──┌──┌──~──~─zzzzzzz{zz{zz{zz{zxyxxyxxyxz{zxyxxyxxyxxyxxvxxvxxvxxvxxwxxwxxwxrurrsrrsrrsroqorrrrrrrrrrrronoonoonorrruruuru├├╫╤╫╡╝╡╡╝╡нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхннн╛╚╛╛╚╛╛╚╛▀█▀}}}}}}usujjjonoonoonooqooqooqooqorsrrsrrsrrsrrrrxvxxvxxvxxyxxyxxyxxyxrurrurxwxxwxz{zz{zxyxxyx}~}z{zxyxxyx────────├┘├├┘├├┘├├┘├─┌─├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√╒ё╒╒ё╒╡╟╡╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╥╩╥╥╩╥╛╤╛╛╤╛╖╗╖╖╗╖°²°°²°─┌──┌─uvuuvu√∙√нфннфннфн├┬├├┬├╒ё╒╫╬╫╒╗╒├▀├├▀├├▀├─┌─√≤√√≤√╛╝╛╡╟╡╡╟╡╡╟╡╖ё╖╫а╫╫а╫╫а╫╫а╫цаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫╧╫╫╧╫╫╧╫╫╧╫╫╬╫╡╟╡╡╟╡╖ё╖╛╗╛°⌡°°⌡°°⌡°°²°°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▒░▒▒░▒├▀├▒░▒▀░▀▀░▀▀▀▀▀▀▀▀█▀▀█▀▀█▀─┌─▀█▀▀█▀▀█▀▀█▀─┌──┌──┌─├┬├─┌──┌──┌──┌──~──~─zzzzzzz{zz{zz{zz{zxyxxyxz{zz{zxyxxyxxyxxyxxvxxvxxvxxvxxwxxwxrurrurrsrrsrrsrrsrrrrrrrrrrrrronoonoonoonouruuru├├╒⌡╒╡╝╡╡╝╡нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╚╛╛╚╛╛╚╛▀┬▀}}}usumjmmjmjjjonoonoonooqooqorsrrsrrsrrsrrsrrsrrrrxvxxvxxvxxyxxyxxyxxyxxwxxwxxwxxwxz{zz{zxyxxyxz{zxyxxyxxyx────z}z──├┘├├┘├├┘├├┘├─┌─├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√°∙°╖ё╖╡╟╡╫╬╫╡Ё╡╫╬╫╫╬╫╫╬╫╫╩╫╫╩╫нфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццаццац╥╩╥╥╩╥╥╩╥╡Ё╡╡Ё╡╡Ё╡╖╗╖√≤√√≤√√≤√─┌─}~}√∙√╡╝╡нфн├┬├├┬├╒ё╒├┬├├▀├├▀├├▀├╒╗╒√≤√╛╝╛╛╝╛╛╝╛╫╬╫╡╟╡╫╬╫╫╬╫╫а╫╫а╫╫а╫╫а╫цаццаццац╥╩╥╫╬╫цац╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихц╬цц╬цц╬цц╬ц╫╧╫╫╧╫╫╧╫╫╧╫╡╟╡╖ё╖╖ё╖°∙°°⌡°°⌡°°⌡°°⌡°°²°°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▀█▀▀█▀├▀├├▀├▒░▒▒░▒▀░▀▀░▀▀▀▀▀▀▀▀█▀▀█▀▀█▀─┌─▀█▀▀█▀▀█▀▀█▀─┌──┌──┌──┌──┌──┌──┌──┌──~──~─zzzzzzxyxz{zz{zz{zz{zz{zz{zz{zxyxxyxxyxxyxxvxxvxxvxxvxxwxrurrurrurrsrrsrrsrrsrrrrrrrrrrrrronoonoonoonouruuruuru├├√∙√╡╝╡╡╝╡нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╚╛╛╚╛▀┬▀uruusumjmmjmmjmonoonoonoonooqorsrrsrrsrrsrrsrrsrrsrxvxxvxxvxxvxxyxxyxxyxxyxxwxxwxxwxxwxz{zz{zxyxxyxxyxxyxxyxxyxz}zz}z─────~──~──~──~──┌─├┬├├┬├├┬├▀█▀▀█▀├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▒⌠▒▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√°∙°°∙°°∙°╖ё╖°²°╖╗╖╡Ё╡╫╬╫╛╟╛╫╩╫╫╩╫╫╩╫ц╬цхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╥╩╥цаццаццаццаццаццац╥╩╥╫╬╫╫╬╫╡Ё╡╡Ё╡╛╝╛╛╝╛√≤√√≤√√∙√√∙√√∙√}~}├┬├├┬├├┬├uvu├▀├╒╗╒╒╗╒╒╗╒╛╝╛╛╝╛╛╝╛╛╝╛╫╬╫╫╬╫╫╬╫╫╬╫╫а╫╫а╫╫а╫╫а╫цаццац╥╩╥╥╩╥╫╬╫цац╫╬╫цацхиххиххихнннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╤╫╫╤╫╫╤╫╫╤╫╛╚╛╛╚╛╛╚╛╛╚╛°∙°°∙°°∙°°∙°°⌡°°⌡°°⌡°°⌡°°²°°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▀█▀▒⌠▒▒░▒▒░▒▒░▒▒░▒▀░▀▀░▀▀░▀▀▀▀▀█▀▀█▀▀█▀─┌─▀█▀▀█▀▀█▀▀█▀├┬├─┌──┌──┌──┌──┌──┌──┌──~──~──~─zzzxyxxyxz{zz{zz{zz{zz{zz{zz{zz{zz{zz{zxvxxvxzzzzzzrurrurrurrurrsrrsrrsrrsrrrrrrrrrronoonoonoonoonouruuruuruuru√∙√╡╝╡╡╝╡нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╫╤╫╛╚╛╛╚╛uruurumjmmjmmjmmjmonojjjonourursrrsrrsrrsrrsrrsrxyxxyxxvxrrrxvx}z}xyxxyxxyxxyxxwxxwxxwxxwxz{zz{zz{zxyxxyxxyxxyxxyx─────────~──~──~──~──┌─├┬├├┬├├┬├▀█▀▀█▀├┬├▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├▀├▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√°∙°°∙°°∙°°∙°╖╗╖°²°°²°°²°°╕°╛╟╛╫╩╫╫╩╫╫╤╫╫╤╫ц╬цхфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╥╩╥╥╩╥цаццаццаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╛╝╛╛╝╛╛╝╛√∙√√∙√√∙√}~}─┌──┌─├┬├├┬├;=D╫╤╫╫╤╫╫╤╫╫╤╫╫╤╫╫╩╫╫╩╫╫╬╫цац╫╬╫╫╬╫цдццдццдццдц╫╬╫цдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╖╗╖°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒√⌠√√⌠√▀█▀▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├─┌─├┬├├┬├├┬├──────────────uzuxyxxyxz{z}~}}~}xyxz{z}~}z{zxyxxyxuvuz{zz{zz{zz{zxvxxvxxvxxvxxyxxyxxyxmnmrrrrrrrrrrrronoonomjmmjmjjjjjjjjjjjjz{z▒⌠▒╛╝╛╛╝╛нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╡╝╡╛╝╛zyzmjmmjmjkjjkjjkjmnmonoonorrrrrrrrrrrrrrrrrrrrrxvxxvxxvxxyxxyxxyxxyxxyxxyxxyxrsruruzzzzzzzzzuvuxyxz{zz{zxyxxyxz{z}~}z{z}~}}~}}~}─┌──┌──┌──┌─├┬├├┬├├┬├─┌─├┬├├┬├▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀├▀├▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒°∙°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒°²°√≤√▒⌠▒▒⌠▒√∙√√∙√╒²╒╒²╒╫╤╫╫╤╫╫╤╫╫╤╫╫╧╫╫╧╫╫╧╫╫╧╫нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цаццаццаццац╫╬╫цдц╫╬╫╫╬╫╥╧╥╥╧╥╡Ё╡╛╝╛╫╤╫╫╤╫DBD─}──┌──┌─├┬├├┬├\\b}{─╫╤╫╫╤╫╫╩╫╫╩╫╫╩╫╫а╫цаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфннфнц╬ц╥╤╥╫╬╫╫╬╫╫╬╫╡Ё╡╖╗╖°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├─┌─├┬├├┬├├┬├├┌├────────────z}zz{zz{zz{zxyx}~}z{z}~}}~}z{zz{zxyxxyxz{zz{zxyxz{zxvxxvxxvxxvxxyxxyxxyxrsrrrrrrrrrrrrronoonoonoonojjjjjjjjjjjjmnmz{z╛╝╛╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфх╡╝╡╡╝╡▒░▒mjmmjmmjmjkjjkjjkjmnmonoonorrrrrrrrrrrrrrrrrrrrrxvxxvxxvxxyxxyxxyxz{zxyxxyxxyxxyxzzzzzzzzzzzzz{zz{zz{zz{zz{zz{zz{zxyxz{z}~}}~}}~}─┌──┌──┌──┌─├┬├├┬├─┌──┌─├┬├├┬├▀█▀▀█▀▀▀▀▀▀▀▀┬▀▀▀▀├▀├▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒√∙√√∙√╒²╒╒²╒°⌡°╛╗╛╫╤╫╫╤╫╫╧╫╫╧╫╫╧╫╫╧╫цаццацнфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╥╧╥╫╤╫─}─b_b─}──┌──┌──┌──┌─}{─;=D╫╤╫╫╤╫╫╩╫╫а╫╫а╫╫а╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхц╬цц╬ц╥╤╥╥╤╥╥╤╥╫╬╫╡Ё╡╖╗╖°²°°²°°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▀█▀▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀├┘├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┌├──────────────}~}z{z}~}}~}z{z}~}}~}}~}z{zz{zz{zxyxxyxxyxz{zz{zxvxxvxxvxxvxxyxxyxxyxxyxrrrrrrrrrrrronoonoonorrrjjjjjjjjjjjjmnmmnm▒⌠▒╛╝╛╥╤╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфх╡╝╡╡╝╡╡╝╡zyzmjmmjmmjmjkjjkjjkjmnmonoonorrrrrrrrrrrrrrrrrrrrrxvxxvxxvxxyxxyxxyxz{zxyxxyxxyxxyxzzzzzzzzzzzzz{zz{zz{zz{z}~}z{z}~}}~}z{z}~}}~}}~}─┌──┌──┌──┌─├┬├─┌──┌──┌──┌─├┬├├┬├▀█▀▀┬▀▀┬▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√∙√√∙√√∙√√∙√°⌡°▀█▀°⌡°╛╗╛╛╚╛╫╧╫╫╧╫╫╧╫╥╩╥╥╩╥цаццацхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцхихцдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╤╫DBD─}──}──┌──┌──┌──┌─}{─}{─}{─╫╤╫╫а╫╫а╫╫а╫╫а╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфхц╬ц╫╤╫╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥╖╗╖°²°°²°╖╗╖°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├─┌─├┬├─┌─├┬├▀█▀├┌├──────────────}~}}~}}~}}~}}~}}~}}~}}~}}~}z{zz{zz{zz{zz{zz{zz{zzzzzzzzzzzzzxyxxyxxyxxyx}z}rrrrrrrrronoonoonoonourujjjjjjjjjmnmmnmz{z╛╝╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡╝╡╡╝╡╡╝╡╡╝╡mjmmjmmjmmjmjkjjkjjkjmnmonorrrrrrrrrrrrrrrrrrmjmrrrxvxxvxxvxxyxxyxxyx}~}xyxxyxxyxxyxzzzzzzzzzzzzz{zz{zz{zz{z}~}}~}}~}}~}z{z}~}}~}}~}─┌──┌─├┬├├┬├─┌──┌──┌──┌──┌─├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒├▀├▒░▒°∙°√⌠√▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒√∙√√∙√√∙√√∙√°⌡°°⌡°°⌡°°⌡°°²°°²°╛╚╛╫╧╫╥╩╥╥╩╥╥╩╥╥╩╥хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннхиххиххиххиххиххиххихцаццаццаццац╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫─}──}──}──}─├┌├├┌├├┌├├┌├────DBD╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдцхихциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╧╫╫╧╫╫╧╫╫╧╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╖╕╖╒²╒╒²╒°²°°²°°²°°²°▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▒⌠▒├┬├├┬├▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├─┌─├┬├├┬├├┬├─┌──┌──┌──┌──┌─z}zz}zz}z──z{z─┌──┌──┌─z}zz}z────z}zz}zz}z──}~}}~}z{zz{zxyxxyxxyxxyxxvxxvxrrrrrrrrrrrrrrronooqooqojkjjkjjkjjkjjkjgigdfddfdooo▀┘▀╛╗╛╛╗╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхннн╖╗╖╖╗╖mnmjjjjjjjjjjjjdfdgigjkjjkjonoonorrrrrrmjmrqrrqrrqrxyxxyxxyxxyxxyxz{zz{zz{zzzzzzzzzzzzz────}~}}~}}~}z{zz{zz{zuvuxyxxyxz{z─~──~──~──~──┌──┌──┌──┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√°²°°²°°²°╛╚╛╫╤╫╫╤╫╫╤╫╡Ё╡╫╬╫╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицциццицциццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫;9;├┘├├┘├├┘├├┌├├┌├├┌├├┌├──────bab╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫цдццдццдццдцхиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╧╫╫╧╫╫╧╫╫╧╫╡Ё╡╖╗╖╖╗╖╖╗╖╖╕╖╒²╒╒²╒╒²╒°²°°²°°²°°²°▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀█▀├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌──┌─z}zz}z─────┌──┌──┌──┌─z}zz}zz}zz}zz}zz}z────}~}}~}z{z}~}z{zz{zz{zxyxxvxxvxxvxxvxrrrrrrrrrrrroqooqojkjjkjjkjjkjgiggigdfddfdooozyz╛╗╛╛╗╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╖╗╖╖╗╖─┌─mnmjjjjjjjjjjjjjkjjkjjkjjkjonoonorrrrrrrqrrqrxwxxwxxyxxyxxyxxyxxyxz{zz{zz{zzzzzzzzzzzzz────────}~}z{zz{zz{zxyxz{zz{z}~}─~──~──~─├┘├─┌──┌──┌──┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀┬▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒├▀├▒░▒√⌠√▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°═°°═°°═°°═°╖╗╖╡Ё╡╡Ё╡╫╬╫╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххихцдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫gfg├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├──────DBD╫╬╫╫╬╫╫╬╫╫╬╫цдццдцхиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдц╫╧╫╫╧╫╫╧╫╛╚╛°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▀█▀▀█▀├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌──┌──────────┌──┌──┌──┌───z}zz}zz}z────────}~}z{z}~}}~}z{zxyxxyxxyx}z}}z}xvxxvxrrrrrrrrrrrroqooqojkjjkjjkjgiggiggigdfddfddfdooo▀▀▀╛╗╛╛╗╛нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхц╬ц╖╗╖╖╗╖mnmmnmgfggfggfggfgjkjjkjjkjjkjonoonorrrrrrxwxxwxxwxxwxxyxxyxxyxxyxz{zz{zz{zz{z─~──~──~──~───────├┌├}~}z{zxyxz{zz{z}~}}~}}~}─~──~──~─├┘├─┌──┌──┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀┬▀▀▀▀▀▀▀▀▀▀├▀├├▀├▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√▒░▒√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√▒⌠▒√≤√√≤√√≤√°²°°²°√≤√√≤√▒⌠▒√≤√√≤√√≤√√≤√°²°°²°°²°▀∙▀°═°°═°°═°°²°╖╗╖╖╗╖╡Ё╡╥╤╥╛╝╛╥╤╥ц╬ццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххихцдццдццдц╫╬╫╫╬╫╫╬╫LJL├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├────────LNL╫╬╫╫╬╫╫╬╫хиххиххихнннхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╧╫╛╚╛°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒°²°°²°°²°°²°√≤√▒⌠▒√≤√°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀█▀▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌──┌──────────┌──┌──┌──┌─────────────────}~}}~}}~}}~}xyxxyxxyxxyx}z}}z}}z}xvxrrrrrrrrrrrroqooqooqojkjgiggiggiggigdfddfddfddfd▀▀▀╛╗╛╛╗╛нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфхц╬цц╬ц╖╗╖─┌─mnmmnmgfggfggfggfgjkjjkjjkjjkjonorrrrrrrrrrqrrqrrqrrqrz{zz{zz{zz{zz{zxyxz{z}~}─~──~──~──~─────────}~}z{zz{zz{z}~}}~}}~}}~}─~──~──~─▀█▀─┌──┌──┌──┌─├┬├─┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀├┬├▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√▒░▒▒░▒√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√°²°°²°°²°√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√°²°°²°°²°▀∙▀▀∙▀°═°▀∙▀°²°°²°°²°╖╗╖╥╤╥╥╤╥╥╤╥╥╤╥╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххих╫╬╫╫╬╫LJL├┘├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├_\_нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╖╗╖°²°°²°°²°°²°√∙√°²°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒▒⌠▒√≤√°²°√≤√√≤√√≤√√≤√°²°√≤√▒⌠▒▀█▀√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√∙√√∙√√∙√√∙√▀┘▀▒█▒▒█▒▒█▒▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├─┌─}~}─┌──┌──┌──┌──┌─}~}}~}──────────────├┌├────}~}}~}─────────┌──┌──┌──┌─}~}z{zz{zz{zxvxxvxxvxxvxuvuuvuuvursronoonojjjjjjmnmjkjgiggigdfddfddfddfddfduvu╛╝╛╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╡╝╡╡╝╡°²°rqrdbddbdbbbbbbgfggfgjijjijjijjijonoonoonorrruruxvxxvxxvxzzzzzzzzzzzz─~──~──~──~─────├┌├├┌├────────├┌├──────uzu───────┌─├┬├─┌──┌──┌─├┬├─┌──┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀░▀▀░▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒√≤√√≤√°²°°²°°²°°²°▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒╡Ё╡╫╬╫╫╬╫╫╬╫╫╧╫╫╧╫╫╧╫╫╧╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциц╛╤╫╛╤╫TW\uy}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├;9;нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╥╤╥╫╬╫╫╬╫╫╬╫╫╬╫╖╗╖°²°°²°°²°°²°°²°°²°°²°√∙√°²°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√∙√▒█▒▒█▒▒█▒▒█▒▒█▒√∙√√∙√▀▀▀▀▀▀▀░▀▀░▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌─├┬├├┬├─┌──┌──┌──┌─────────────├┌├├┌├──────────────├┌├─┌──┌──┌──┌─}~}z{zz{zz{zxvxxvxxvxxvxuvuuvuuvuoqoonoonojjjjjjmnmjkjgiggigdfddfddfdbcbdfduvu▀█▀╛╝╛╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╡╝╡╡╝╡──dbddbddbdgfggfggfggfgjijjijgggjijonoonorrrrrruruxvxxvxxvxzzzzzzzzzzzz─~──~──~──~──────────────────────────────────┌─├┬├─┌──┌──┌─├┬├─┌──┌─├┬├├┬├├┬├├┬├─┌─├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀░▀▀░▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°▒⌠▒▀█▀▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒°²°╖╗╖╡Ё╡╫╬╫╫╧╫╫╧╫╫╧╫╫╧╫цаццацнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╛╤╫35;uy}uy}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├_\_├├нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцц╬ц╥╤╥╥╤╥╥╤╥╛╝╛╛╝╛╛╝╛╛╝╛°²°°²°°²°°²°°²°°²°°²°°²°√∙√°²°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°°²°°²°√≤√√≤√°²°√≤√°²°°²°√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒█▒▒█▒▒█▒▒█▒√∙√√∙√√∙√√∙√▀▀▀▀░▀▀░▀▀░▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌──┌─├┬├────────────├┌├├┌├──────├┌├──────├┌├─┌──┌──┌──┌─}~}z{zxyxz{zxvxxvxxvxxvxuvuuvuuvuoqoonoonojjjjjjmnmgiggiggigdfddfddfd_a_dfddfduvu╛╝╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╡╝╡╡╝╡√∙√rqrdbddbddbdgfggfggfggfgggggggjijjijonoonorrrrrruruxvxxvxxvxxvxzzzzzzzzzzzz─~──~──~─────────├┌├├┌├├┌├├┌├─────────────────┌─├┬├─┌──┌──┌─├┬├─┌──┌─├┬├├┬├├┬├├┬├─┌─├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√°²°√≤√√≤√°²°√≤√√≤√√≤√√≤√°²°°²°°²°°²°√≤√°²°°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒°²°°²°°²°╖╗╖╛╚╛╫╧╫╫╧╫╫╧╫╥╩╥╥╩╥цаццацхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╛╤╫uy}uy}uy}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├;9;нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╥╤╥╥╤╥╥╤╥╥╤╥°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√∙√°²°°²°°²°▀█▀°²°°²°°²°√≤√°²°°²°°²°°²°°²°√≤√√≤√°²°°²°°²°°²°√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒█▒▒█▒▒█▒▒█▒▒█▒▒█▒▒█▒▒█▒▀░▀▀░▀▀░▀▀░▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├────├┌├├┌├──────────────▀┘▀▀█▀─┌──┌──┌─}~}z{zz{zz{z}~}xvxxvxxvxuvuuvuuvuoqoonoonoonojjjjkjgiggiggigdfddfdbcb\^\dfddfddfd▀█▀╛╝╛╥╤╥ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╡╝╡╡╝╡}~}dbddbddbddbdgfggfggfggfgjijjijjijjijonoonorrrrrrxvxxvxxvxxvxuruuruxvxzzzzzzzzz─~──~─────────├┌├├┌├├┌├├┌├─────────────────┌─├┬├─┌──┌──┌─├┬├─┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▀█▀▒░▒▒░▒√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒°²°°²°°²°°²°√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒√∙√°²°°²°°²°°²°°²°°²°╛╚╛╫╧╫╥╩╥╥╩╥╥╩╥╥╩╥╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх35;uy}uy}uy}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┌├}┌├}┌├}┌├нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╧╫╫╧╫╫╧╫╫╧╫╫╬╫╫╬╫╫╬╫╫╬╫╛╝╛╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°²°▒⌠▒√≤√°²°°⌡°°⌡°°⌡°°═°°²°°²°°²°°²°▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒√⌠√▒░▒▒░▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├▀█▀▀█▀├┘├├┘├─┌──┌─├┬├├┬├──────├┌├├┌├├┌├├┌├├┌├├┌├────}~}────────────├┌├├┌├├┬├─┌──┌──┌──┌──┌──┌─z{zzyz──────}~}xyxrsrrsrmnmjkjjkjgiggfggfggfggfgbcbbcbbcbbcb\^\\^\jjj▀┘▀╛╝╛╛╝╛ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╒ё╒╒ё╒z{zdfd_a__a_\^\bbbbbbgfggfgjjjjjjjjjjjjmkmmkmmkmmkmuvuuvuuvuuvu}z}}z}}z}}z}xvx}z}}z}}z}xyxz{z}~}}~}─┌──┌──┌──┌─────├┌├├┌├├┬├─┌──┌──┌───├┌├├┌├├┌├─┌──┌─├┬├├┬├─┌──┌──┌─├┬├─┌──┌─├┬├├┬├▀▀▀▀▀▀▀┬▀▀┬▀▀▀▀▀▀▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀░▀▒░▒▒░▒▒░▒√⌠√▒░▒√⌠√▒░▒▒░▒▀█▀▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╖╗╖╖╗╖╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫ф╫╫ф╫╫ф╫─┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┌├}┌├}┌├;=;нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╧╫╫╧╫╫╧╫╫╧╫╡Ё╡╖╗╖╖╗╖╖╗╖°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°═°°═°°═°°═°°²°√≤√°²°°²°°⌡°°⌡°°⌡°°═°°²°°²°°²°°²°√≤√√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒√⌠√▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├▀█▀▀█▀▀█▀├┘├├┘├├┬├├┬├├┬├├┬├────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─────────}~}xyxrsrrsrmnmjkjjkjgiggfggfggfggfgbcbbcbbcbbcb\^\\^\jjj▀┘▀╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╒ё╒╒ё╒z{zdfdbcb_a_\^\bbbbbbgfggfggfggfggfggfgmkmmkmmkmmkmoooooooooooousuusuusuusurrrrrrrrrrrruvuxyxz{zz{z─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌─├┬├├┬├─┌──┌──┌──┌──┌──┌─├┬├├┬├▀▀▀▀▀▀▀┬▀▀┬▀▀▀▀▀▀▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀░▀▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒⌠▒▒⌠▒√≤√▀█▀▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°√≤√°²°°²°°²°°═°°═°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╖╗╖╛╝╛╛╝╛╫╬╫╫╬╫╫╩╫╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫ф╫╫ф╫╫ф╫DBD├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┌├}┌├}┌├}┌├dgjнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдц╫╧╫╫╧╫╫╧╫╛╚╛°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°═°°═°°═°°═°√≤√°²°°²°°²°°⌡°°⌡°°⌡°°═°°²°°²°√≤√°²°√≤√√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒√⌠√▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀├┬├▀█▀├┬├▀█▀▀█▀▀█▀▀█▀├┘├├┘├├┬├├┬├├┬├├┬├────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├──├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─────────}~}xyxrsrrsrmnmjkjjkjdfdgfggfggfggfgbcbbcbbcb_a_\^\\^\jjj▀┘▀╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╒ё╒╒ё╒dfddfdbcb_a_\^\bbbbbbbbbbbbdbddbddbddbddeddeddeddedjijjijjijjijmmmmmmmmmmmmmnmrrrrrrrrruvuuvuxyxz{zz{z─┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌─▀▀▀▀▀▀▀┬▀▀┬▀▀▀▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀░▀▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▀█▀▒⌠▒▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√√≤√°²°°²°°²°°²°√≤√°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╛╝╛╛╝╛╛╟╛╫╩╫╫╩╫╫╩╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫ф╫╫ф╫bbb─┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┌├}┌├}┌├}┌├DJLнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╫╬╫╫╧╫╛╚╛°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√°²°°⌡°°⌡°°⌡°°═°°═°°═°°═°°²°°²°°²°°²°°⌡°°⌡°°⌡°°═°°²°°²°√≤√°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒░▒√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀°∙°▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┘├├┘├├┬├├┬├├┬├├┬├────├┌├├┌├──├┌├├┌├├┌├▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─────────}~}xyxrsrrsrmnmjkjgigdfdmnmgfggfggfgbcb_a_\^\\^\\^\\^\jjj▀┘▀╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╒ё╒z{zdfddfdbcb_a_\^\bbbbbbbbbbbbdbddbddbddbd\^\\^\\^\\^\dbddbddbddbdmmmmmmmmmmmmmnmmnmrrrmnmuvuuvuxyxz{zz{zz{z─┌──┌─├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌─▀▀▀▀▀▀▀▀▀▀┬▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀░▀▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒⌠▒▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°°∙°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°╕°╛╟╛╫╩╫╫╩╫╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциц╫ф╫╫ф╫DBD─┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┬─DFD╫ф╫╫ф╫хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххфххфххфххфхнфннфннфннфн╫╬╫╡Ё╡╡Ё╡╖╗╖°⌡°°⌡°°⌡°°⌡°°═°°═°°═°°═°°⌡°°⌡°°═°°═°°²°°²°°²°°²°°²°°²°°²°╒═╒°═°°═°°═°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√⌠√√⌠√√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀▀░▀▀▀▀▀▀▀▀┬▀▀┬▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├─┌──┌──┌──┌───├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├uvu─┌──┌──┌─}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├z{z─┌─z{zuvumnmgigdfddfdbcbbcbbcbbcbZZZZZZZZZ_^_\^\\^\rqr}z}╛╕╛╛╕╛ц╩цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫√²√√²√dfdbbbbbbbbb\Z\_^__^__^__^_bbbbbbbbbbbb\^\\^\\^\\^\dfddfddfddfdmkmmkmmkmmkmmnmmnmmnmmnmuvuuvuuvuuvuxyxxyxxyx}~}────────├┌├├┌├├┌├├┌├─┌──┌─├┬├├┬├─┌──┌──┌─├┬├├┬├─┌──┌──┌──┌──┌──┌─├┬├▀▀▀▀▀▀▀█▀▀█▀▀█▀▒░▒▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀┬▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒°²°°²°°²°°²°▀█▀▒⌠▒√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°╖╕╖╒²╒╒²╒╒²╒°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°√⌡√√⌡√╒═╒╒═╒╡Ё╡╫╬╫╫╬╫╫╬╫ннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫╬╫DFD─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┬─beb╫ф╫╫ф╫хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххфххфххфххфх╫╩╫╫╩╫╫╩╫╫╩╫╡Ё╡╖╗╖°²°°²°°═°°═°°═°°⌡°°⌡°°∙°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√⌠√√⌠√√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀▀▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀▀░▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌─√≤√√≤√├┌├├┌├▒░▒▒░▒├┌├├┌├├┌├├┌├─┌──┌──┌─uvumnmgigdfddfdbcbbcbbcbbcbZZZZZZZZZ_^_\^\\^\ggg}z}╛╕╛╥╟╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫√²√√²√dfdbbbbbbbbb_^_ZZZZZZZZZZZZ_^__^__^__^_\^\\^\\^\\^\dfddfddfddfdmkmmkmmkmmkmmnmuuuuuu}{}uvuuvuuvuuvuxyxxyxxyxz{z────────├┌├├┌├├┌├├┌├─┌──┌─├┬├├┬├─┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌─├┬├▀▀▀▀▀▀▀█▀▀█▀▒░▒▒░▒▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°╖╗╖╡Ё╡╫╬╫╫╬╫╫╬╫ннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫╬╫bcb─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┬──┬─DFD╫ф╫хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхц╬цц╬цц╬цц╬ц╫╩╫╫╩╫╛╟╛╛╟╛╖╗╖°²°°²°°²°°═°°⌡°°⌡°°⌡°°═°°═°°═°°═°°═°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°╒═╒°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√√⌠√√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√√⌠√√⌠√▒░▒▀█▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀├┬├├┬├├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├√≤√√≤√√≤√√≤√▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├─┌──┌──┌─uvumnmgigdfddfdbcbbcbbcb_a_ZZZZZZZZZ_^_\^\\^\gggrqr╛╕╛╥╟╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫√²√√²√dfdbbbbbbbbbbbbZZZZZZZZZZZZ\Z\\Z\\Z\\Z\\^\\^\├┌├├┌├├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀┘▀▀┘▀▀┘▀▀┘▀─┌─z{zuvuuvuxyxxyxxyxxyxz}z──────├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌─├┬├▀┬▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒°²°°²°°²°°²°°²°°²°°⌡°°²°°²°°²°°²°√≤√╒═╒╒═╒╒═╒╒═╒°²°°²°°²°╖╗╖╛╝╛╫╬╫╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхDFD─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┬──┬─beb─┬─цицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицц╬цц╬цц╬цц╬ц°╕°°╕°°╕°°╕°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°═°°═°°═°°═°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°╒═╒°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒√⌠√√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒▀█▀√⌠√√⌠√√⌠√√⌠√▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀▀▀▀┬▀▀┬▀▀┬▀▀┬▀▀█▀▀█▀├┬├├┬├├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌─├┬├├┬├▒░▒▒░▒▒░▒▒░▒─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌─z{zuvumnmgigdfddfdbcb_a_\^\\^\ZZZZZZZZZ_^_\^\\^\gggrqr╥╟╥ц╩цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫√²√√²√dfdbbbbbbbbbbbbZZZZZZZZZZZZ\Z\\Z\\Z\\Z\\^\├┌├├┌├├┌├├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀┘▀▀┘▀▀┘▀▀┘▀─┌──┌──┌─z{zz{zxyxxyxxyxuzuuzuz}z────├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌─├┬├▀┬▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√▒░▒▒░▒▒░▒√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒°²°°²°°²°°²°°²°°²°°⌡°°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°╛╝╛╫╬╫╫╬╫╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлх▒≤▒bcb─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─353нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╧╫╫╧╫╫╧╫╫╧╫╫╬╫╡Ё╡╡Ё╡╖╗╖°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╖╗╖°²°°²°°²°°²°╒═╒╒═╒°²°√≤√√≤√√≤√√≤√°═°°═°°═°°═°°²°°²°√≤√√≤√°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀┘▀▀┬▀▀┬▀▀┬▀▀█▀▀█▀▀█▀▀█▀├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├ooodfddfddfddfd_^__^_\Z\ZZZZZZZZZ_^_\Z\babgggmnm╒ё╒╒ё╒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛▀█▀dfdbbbbbb_^__^_ZZZZZZZZZZZZ\^\\^\\^\\^\mjm├┘├├┘├├┘├─┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─z{z─├─├}z}}z}├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌─├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒├▀├▒░▒▒░▒▒░▒√⌠√√≤√▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°⌡°°²°°²°°²°°²°°═°°═°°⌡°°⌡°°⌡°°⌡°°═°°═°╒²╒╒²╒╒²╒╖╕╖╡╝╡╫╤╫╫╤╫╫╤╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн;9;├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├├нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╧╫╫╧╫╫╧╫╫╧╫╡Ё╡╖╗╖°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒°²°°²°°²°╒═╒╒═╒╖ё╖°²°°²°°²°°²°°²°°═°°═°°⌡°°═°°²°°²°√≤√°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒√≤√√≤√√≤√√≤√°²°√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀┬▀▀┬▀▀┬▀▀▀▀▀▀▀▀█▀▀█▀├┬├─┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─zyzdfddfddfddfdbbb_^_\Z\ZZZZZZZZZ_^_\Z\babgggmnm╒ё╒╒ё╒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛▀█▀dfdbbbbbb_^__^_ZZZZZZZZZZZZ\^\\^\\^\\^\├┘├├┘├├┘├├┘├─┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──├─├─├─├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌─├┬├├┬├├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀┬▀▀▀▀▀┬▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√°²°°²°√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°═°°═°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°╒²╒╒²╒╒²╒╒²╒╖╕╖╡╝╡╡╝╡╫╤╫ц╬цц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─;9;нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╧╫╫╧╫╫╧╫╛╚╛╖╗╖°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°⌡°°⌡°°═°°═°°²°√≤√°²°°²°°²°°²°°²°√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀┬▀▀┬▀▀┬▀▀▀▀▀▀▀▀▀▀▀▀▀├┬├─┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒█▒▒█▒▒█▒▒█▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀┘▀zyzdfddfddfdbbb_^_\Z\ZZZZZZZZZ_^_\Z\babgggmnm╒ё╒╒ё╒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛▀█▀dfdbbbbbb_^__^_ZZZZZZZZZZZZ\^\\^\\^\gig├┘├├┘├├┘├├┘├─┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──├─├─├├▀▒├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─────────┌──┌──┌──┌─├┬├├┬├├┬├├┬├▀┬▀▀┬▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒°²°°²°√∙√°²°°²°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°√≤√°═°°═°°═°°═°°²°°²°°²°°⌡°°═°°═°°⌡°°⌡°°═°°⌡°°⌡°°⌡°╒²╒╒²╒╒²╒╒²╒°²°╖╕╖╖╕╖╡╝╡╥╤╥ц╬цц╬цц╬ццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн;9;├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├├_\_нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╧╫╛╚╛°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°╒ё╒°²°╒ё╒╒═╒°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°▀█▀√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒°∙°▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀┬▀▀┬▀▀┬▀▀┬▀▀┬▀▀┬▀▀┬▀▀┬▀─┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├▒░▒▒░▒▒░▒▒░▒▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀┘▀▀┘▀ooodfddfdbbb_^_\Z\ZZZZZZZZZ_^_\Z\babgggmnm╒ё╒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛▀█▀dfdbbbbbbbbb_^_ZZZZZZZZZZZZ\^\\^\gig}~}├┘├├┘├├┘├├┘├─┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──├─├─├─├├┌├├┌├▒░▒▒░▒▀█▀─┌──┌──┌─├┌├├┌├├┌├├┌├─────────┌──┌──┌──┌─├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀▀▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒°²°°²°√∙√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°═°°═°°═°°⌡°°═°°═°°═°°═°╒²╒╒²╒╒²╒╒²╒°²°°²°°²°╖╕╖╛╝╛╥╤╥ц╬цц╬ц╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн_\_├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}\^\╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°╒═╒°═°°═°°═°°═°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√▒⌠▒√≤√°²°°²°▒⌠▒▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀░▀▀░▀▀░▀▀░▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}z}├┌├├┌├├┌├▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀zyzdfdmjmbbbbbb\^\WXWWXWZ[ZZ[Z\^\_a_bcbdfd°═°╛Ё╛╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╕╛╛╕╛urudbdbbbbbb_^__^_WVWWVWWVWWVW\^\\^\gig}~}────────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒├┬├├┬├├┬├├┬├├┌├├┌├├┌├├┌├─┘├─┘├─┘├─┘├─┌──┌─├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀┬▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√▒⌠▒√≤√▒⌠▒▒⌠▒√≤√√≤√°²°°²°√≤√°²°°²°°²°√≤√√≤√√≤√√≤√°²°▒⌠▒√≤√°²°°═°°═°°═°°⌡°°²°╒═╒°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°╒═╒°²°╒ё╒╒ё╒╛╝╛╫╬╫╫╬╫╫╬╫╫╬╫ннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫╫ф╫╫╬╫DJL─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~};=;╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╩╫╫╩╫╫╩╫╡Ё╡╖╗╖╖╗╖╖╗╖╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°═°°═°°⌡°°═°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√▀█▀▒⌠▒√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀░▀▀░▀▀░▀▀░▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀dfdmjmgfgbbb\^\WXWWXWZ[ZZ[Z\^\_a_bcbdfd▀█▀╛Ё╛╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╕╛╛╕╛dbddbdbbbbbb_^__^_ZZZZZZZZZZZZ\^\\^\gig}~}────────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├├┌├├┌├├┌├├┌├─┘├─┘├─┘├─┘├─┌──┌─├┬├├┬├▀┬▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒√≤√√≤√°²°°²°√≤√°²°°²°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°═°°═°°═°°═°╒═╒╒═╒°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°⌡°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°╒ё╒╖╗╖╡Ё╡╫╬╫╫╬╫╥╧╥цдцннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫╫ф╫DJL─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}\^\╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╩╫╫╩╫╫╩╫╛╟╛°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°⌡°°⌡°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√▀█▀▀█▀▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀├┬├├┬├├┬├─┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀dfdmjmgfgbbb\^\WXWWXWZ[ZZ[Z\^\_a_bcbdfd▀█▀°═°╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╕╛╛╕╛urudbdbbbbbb_^__^_ZZZZZZZZZZZZ\^\\^\gig}~}────────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┘├─┘├─┘├─┘├─┌──┌─├┬├├┬├▀┬▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√°²°√≤√°²°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°⌡°°═°°═°°═°°²°╒═╒°²°°²°°²°°²°°²°°²°╖╗╖°²°╖╗╖╡Ё╡╥╧╥╛╝╛╥╧╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫╫ф╫bfg─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~};=;нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╩╫╫╩╫╛╟╛╛╟╛°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°═°°═°°═°°═°╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√▒⌠▒▀█▀°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√▀█▀▀█▀▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀┬▀▀┬▀▀┬▀├┬├├┬├─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀ooomjmgfgbbb\^\WXWZ[ZZ[ZZ[Z\^\_a_bcbdfd▀█▀°═°╛Ё╛╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╕╛╛╕╛urudbdbbbbbbbbb_^_\^\\^\\^\\^\\^\\^\gig}~}zyz──────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├█▒├█▒├█▒├█▒─┌─├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√°²°√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°√⌡√╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°╒═╒°²°°²°°²°°²°╖╗╖╖╗╖╖╗╖╖╗╖╥╧╥╥╧╥╥╧╥╥╧╥╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫676─┘├─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├xwx▀┘▀нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╒ё╒╒ё╒╒ё╒╒ё╒°²°╒═╒°²°°²°°²°°²°°²°╒═╒°²°╒═╒°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°╖╕╖╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°√≤√▒⌠▒▒⌠▒°²°√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒▒░▒▒░▒√⌠√√⌠√▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├xwxgggrqrggg\^\ZZZZZZZZZZZZ\^\\^\\^\bcb▀∙▀▀∙▀╥╤╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫√≤√xyxdfdbcbbcbbcb_a_bab___\^\\^\\^\dfdmnmuvuz{z─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒█▒▒█▒▒█▒▒█▒▒░▒▒░▒▒░▒▒░▒├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°∙°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°√≤√√≤√°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒√⌡√√⌡√╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°╖╕╖╖╕╖╫╤╫╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├DBDнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╩╫╫╩╫╫╩╫╫╬╫╡Ё╡╡Ё╡╖╗╖╒ё╒╒ё╒╒ё╒╒ё╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°╒═╒╒═╒°²°°²°╒═╒╒═╒°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√°²°√≤√▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▒⌠▒▒░▒▒░▒√⌠√√⌠√▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├─┌─├┬├├┬├├┬├├┬├├┬├├┘├├┘├├┘├├┘├▒░▒▒░▒▒░▒├┌├▒▀▒├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├rqrrqrrqr\^\ZZZZZZ_^__^_\^\\^\bcbbcb▀∙▀╒╕╒нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫√≤√xyxdfdbcbbcbbcbbcbbab___\^\\^\\^\dfdmnmuvuz{z─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├▒░▒▒░▒▒░▒▒░▒├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°∙°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°√≤√°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°√⌡√╒═╒╒═╒╒═╒°²°°²°°²°╖╕╖╡Ё╡╫╬╫╫╬╫╫╬╫цаццацнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн;BD├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀dbdнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╩╫╫╩╫╫╩╫╛╟╛╡Ё╡╖╗╖╖╗╖°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒°²°°²°°²°√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀├┬├├┬├├┬├├┬├─┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├├┘├├┘├├┘├├┘├▒░▒├┌├├┌├├┌├├├├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├rqrrqrrqr\^\ZZZ_^__^__^_bcbbcbgiggig▀∙▀╒╕╒нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫√≤√√≤√dfdbcbbcbbcbbcbbab___\^\\^\\^\dfdmnmuvuz{z─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°∙°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°√≤√°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒°²°°²°╒ё╒╒ё╒°²°°²°°²°°²°√⌡√╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°╖╗╖╡Ё╡╫╬╫╥╩╥╥╩╥цаццацхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн_bd├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀DBDнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╫╩╫╫╩╫╛╟╛╛╟╛°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╖╕╖╖╕╖°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀┬▀▀┬▀▀┬▀▀┬▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├├├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├rqrrqrggg\^\_^__^__^__^_giggiggigmnm╒╕╒╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫√≤√√≤√dfdbcbbcbbcbbcbbab___\^\\^\\^\dfdmnmuvuz{z─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├▒⌠▒▒⌠▒▒⌠▒▒⌠▒°²°√≤√▒⌠▒▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒°⌡°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╛╕╛╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒╒═╒°²°╒ё╒╖╗╖╖╗╖╒═╒°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°╖╗╖°²°°²°°²°╥╩╥╥╩╥╥╩╥╥╩╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн;BD├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}}}}\\\╫ф╫хиххиххиххиххиххиххиххиххфххфххфххфхнфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╛╤╛╒╕╒°²°°²°╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°╖ё╖°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°⌡°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°²°°²°√≤√√≤√°²°°²°°²°°²°°²°√≤√▒⌠▒▒⌠▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├─┌─├┬├├┬├├┬├├┬├▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}mkmmkmdbd_a__a__a_bcbdfddfddfdrrr°²°╫╧╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╖╕╖╖╕╖mjmdfddfddfddbdbcbbcb_a__a_\^\dedmkmuruz{zz{z─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├▒░▒▒░▒▒░▒▒░▒├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°⌡°°²°°²°°²°╒═╒°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°╒═╒╒ё╒╒ё╒╒ё╒°²°°²°╖╗╖╖╗╖╫╬╫╫╧╫нфннфннфннфннфннфннфнхиххиххиххиххиххиххиххихнфннфннфннфнQSW─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}}}}\\\╫ф╫хиххиххиххиххиххиххиххиххфххфххфххфхнфннфнц╬ц╥╤╥╫╬╫╡Ё╡╡Ё╡╖╗╖°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°⌡°°⌡°°═°°═°°²°°²°√≤√√≤√°²°°²°°²°°²°°²°√≤√▒⌠▒▒⌠▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}uuumkmdbd_a__a_bcbbcbdfddfddfd─~─°²°╫╧╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╖╕╖╖╕╖mjmdfddfddfddcdbcbbcb_a__a_\^\dedmkmuruz{zz{z─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├▒░▒▒░▒▒░▒▒░▒├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒√⌠√√⌠√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°≤°°²°°²°°²°°²°╒═╒╒═╒°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╖╗╖╛╚╛╫╧╫╫╧╫нфнцаццацнфннфнхиххиххиххиххиххиххиххихнфннфннфннфнQSW─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}}}}}};9;хиххиххиххиххиххиххиххиххфххфххфххфхц╬ц╥╤╥╥╤╥╥╤╥╡Ё╡╖╗╖╖╗╖°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°╒ё╒°²°╒═╒°²°°²°°²°╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°⌡°°═°°═°°═°°²°°²°√≤√√≤√°²°°²°°²°°²°°²°▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├─┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}uuumkmdbdbcbbcbbcbbcbdfddfddfd°∙°°²°╫╧╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╖╕╖╖╕╖─~─dfddfddfddedbcbbcb_a__a_\^\dedmkmuruz{zz{z─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°≤°°²°╒═╒°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒═╒╒═╒╒═╒╒═╒°²°╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╛╚╛╛╚╛╫╧╫╥╩╥╥╩╥цаццацхиххиххиххиххиххиххиххихнфннфннфнDFD─┌├─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}}}}}}\\\╡Ё╡хиххиххиххиххиххиххиххфххфххфх╫╤╫╥╤╥╥╤╥╥╤╥╥╤╥°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°╒ё╒╛╝╛°²°╒═╒°²°╒═╒°²°╒═╒╒═╒╒═╒╒ё╒°²°°²°°²°╒ё╒°²°°²°°²°°═°°═°°═°°═°√≤√√≤√√≤√√≤√°═°°═°°═°°═°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒}~}uuumkmdbdbcbbcbbcbbcbdfddfdrrr°∙°°²°нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╖╕╖╖╕╖─~─dfddfddfddfdbcbbcbbcb_a_\^\dedmkmuruz{z─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├▒⌠▒▒⌠▒▒⌠▒▒⌠▒╛╕╛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒√≤√√≤√▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°≤°°²°°²°°²°╒═╒°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒═╒╒═╒╒═╒╒═╒°²°╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╛╚╛╥╩╥╥╩╥╥╩╥╥╩╥цдцхиххиххиххиххиххиххихнфннфн▀┬▀ded─┌├─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├;9;нфннфннфннфннфннфннфн╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╖╗╖°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°╒ё╒°²°╒═╒°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╖╗╖°²°╒ё╒╒ё╒°²°╒═╒╒═╒°²°╒═╒°²°╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒├▀├▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┘├├┘├├┘├├┘├├┬├├┬├├┬├├┬├├█├─┘──┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├}z}mmmmmmdfddbddbddbddbddfddfd─┌─°²°╡Ё╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒╒═╒dfddfddfddfddeddeddcddbdgfggfgjjjmnmmnm}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├▀▒├▀▒├▀▒├▀▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀▀░▀▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√√⌠√√⌠√√⌠√▒⌠▒√≤√√≤√√≤√°∙°°≤°°≤°°≤°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╒ё╒╒ё╒╒ё╒°²°╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╖╗╖╖╗╖╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххихнфннфн;9;├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├нфннфннфнц╬цц╬цц╬ц╫╬╫╫╬╫╫╬╫╫╬╫°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒═╒╒═╒°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╖╗╖°²°╒═╒╒═╒╒═╒╒═╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├▀├├▀├▀█▀▀█▀▀█▀├┬├├┬├├┬├─┌─├┬├├┘├├┘├├┘├├┘├├┬├├┬├├┬├├┬├─┘──┘──┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├}z}usummmdfdgfggfggfggfgdfddfd─┌─°²°╡Ё╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒╒═╒giggiggiggigdfddfddfddedgfggfgjjjmnmmnm}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒▒░▒▒░▒├▀▒├▀▒├▀▒├▀▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√√⌠√√⌠√√⌠√▒⌠▒√≤√√≤√√≤√°≤°°≤°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°╒ё╒╒ё╒°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╖╗╖╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххихнфн├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├;9;нфннфнц╬цц╬цц╬ц╥╤╥╛╝╛╛╝╛╛╝╛╛╝╛°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒°²°╒ё╒°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒├▀├├▀├├▀├├┬├├┬├├┬├├┬├─┌──┌─├┬├├┬├├┘├├┘├├┘├├┘├─┌──┌──┌──┌──┘──┘──┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├}z}usummmdfdgfggfggfggfgdfddfd─┌─°²°╡Ё╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒╒═╒jkjjkjjkjjkjdfddfddfddfdgfggfgjjjmnmmnm}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒▒░▒├▀▒├▀▒├▀▒├▀▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀√⌠√√⌠√√⌠√√⌠√▒⌠▒√≤√√≤√√≤√°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°╛╝╛╫╬╫╫╬╫╫╬╫цдццдццдццдцнфн;9;├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├_\_нфнц╬цц╬ц╥╤╥╥╤╥°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├▀├├▀├├▀├├▀├▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├°∙°├┘├├┘├├┘├─┌──┌──┌──┌──┘──┘──┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├}z}usummmdfdgfggfggfggfgdfddfd─┌─°²°╡Ё╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒╒═╒jkjjkjjkjjkjdfddfddfddfdgfggfgjjjmnmmnm}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒▒░√▒░√▒░√▒░√▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒√⌠√√⌠√√⌠√▒⌠▒√≤√√≤√√≤√°≤°°≤°°≤°°≤°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°╛╝╛╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫_\_├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─~──~─DFD╫╤╫╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°╒ё╒╒ё╒╒ё╒°²°╒═╒╒═╒╒═╒°²°╒ё╒°²°°²°°²°°²°°²°╒ё╒°²°╒ё╒°²°°²°°²°╒ё╒°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√°²°√≤√√≤√▒⌠▒▀∙▀▀░▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀├┬├├┬├├┬├├┬├▒█▒▒█▒▀┘▀▒█▒▒▀▒▒▀▒▒▀▒▒▀▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒├┘├├┘├}z}usummmmmmggggggdfddfddfddfd─┌─°²°╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╧╫°²°▀█▀jijjijjijjkjjkjjkjjkjgfggfggfgjjjoqooqoz{z▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▒∙√▒∙√▒∙√▒∙√├█▒├█▒├█▒├█▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀√⌠√√⌠√√⌠√√⌠√√≤√√≤√√≤√√≤√°²°°²°°²°°²°√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°⌡°°²°╒ё╒°²°°²°╒═╒╒═╒╒═╒°²°°²°╒ё╒╒ё╒╒ё╒°²°╒═╒╒═╒°²°╒═╒╒═╒╒═╒╒═╒°²°╒═╒╒═╒╒═╒╖╗╖°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°╛╕╛╛╕╛╛╕╛╛╕╛FGF├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─~──~──~─DFD╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°╒═╒╒═╒╒═╒╒ё╒╒ё╒°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√▒⌠▒▀█▀▀█▀▀░▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀├┬├├┬├├┬├├┬├▒█▒▒█▒▒█▒▒█▒▒▀▒├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒├┘├├┘├}z}usummmmmmggggggggggggdfdrsr°²°°²°хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╧╫°²°▀█▀jijjijjijjkjjkjjkjjkjjjjjjjjjjmnmoqooqoz{z▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├█▒├█▒▒∙√▒∙√├█▒├█▒├█▒├█▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▒░▒▒░▒√⌠√√⌠√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒═╒╒═╒╖ё╖°²°╒═╒╒═╒╒═╒╒═╒°²°╒═╒╒═╒╒═╒╒ё╒°²°°²°°²°°²°°²°°²°°²°╛╕╛╛╕╛╛╕╛;=;├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─~──~──~─bbb╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°√≤√√≤√°²°°²°°²°√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀├┬├├┬├├┬├├┬├▒█▒▒█▒▒█▒▒█▒├├├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒├┘├├┘├}z}usummmmmmgggggggggjijdfdrsr°²°°²°хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╧╫°²°▀█▀jijjijjijmnmmnmmnmmnmmnmjjjjjjmnmoqooqoz{z▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀├█▒├█▒├█▒├█▒├█▒├█▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√°²°√≤√°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°╒═╒°²°°²°°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒°²°╒ё╒°²°°²°°²°°²°°²°°²°╛╕╛╛╕╛╛╕╛ZZZ├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─~──~──~──~─353╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°√≤√°²°°²°°²°√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀┬▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀┘▀▀┘▀▀┘▀▀┘▀├├├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒├┘├├┘├}z}usummmmmmggggggggggggrsr─┌─°²°°²°хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╧╫°²°▀█▀\Z\jijjijmnmmnmmnmmnmmnmmnmmnmmnmoqooqoz{z▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀}┘▀}┘▀├█▒├█▒├█▒├█▒°⌡°▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√°²°√≤√°²°°²°°²°▀█▀▒⌠▒√≤√°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒═╒°²°°²°°²°°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°╒ё╒°²°╒ё╒°²°°²°°²°°²°╛╕╛╛╕╛;=;xvx├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├jkj▀█▀▀█▀▀█▀°²°╒═╒°²°°²°╒═╒╒═╒╒═╒╒═╒╒ё╒╒ё╒╒ё╒°²°╒ё╒╒ё╒╒ё╒╖╗╖°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°▒⌠▒▒⌠▒▒⌠▒√≤√°²°°²°°²°°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√▒░▒▒░▒▒░▒▒░▒▀▀▀▀▀▀▀▀▀▀▀▀├┬├├┬├├┬├├┬├▒█▒▒█▒▒█▒▒█▒√≤√─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}z}usummmmmmdfdjkjmnmmnmmnm}~}°²°╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх°╕°°²°xyxmnmmnmjkjjkjmnmmnmmnmmnmmnmooorrrrrrxvxxvx├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒▒░▒▒░▒├█▒├█▒├█▒▒∙√├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀▀░▀▀█▀▀█▀▒⌠▒°²°√≤√√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√°²°▒⌠▒√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°╒ё╒╛╝╛╒ё╒°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒═╒╒═╒╒═╒╒═╒°²°╒═╒°²°°²°▀┘▀▀┘▀jij▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀353▀█▀▀█▀╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°√≤√√≤√√≤√°²°°²°°²°°²°√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√▒░▒▒░▒▒░▒▒░▒▀▀▀▀▀▀▀┬▀▀▀▀├┬├├┬├├┬├├┬├▒█▒▒█▒▒█▒▒█▒─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├√≤√─┌──┌──┌─}z}usummmmmmgigjkjmnmmnmmnm}~}°²°╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╡╤╡°²°xyxmnmmnmjkjjkjmnmmnmmnmmnmmnmrqrrrrrrrxvxxvx▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├█▒├█▒├█▒├█▒├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▒⌠▒√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√°²°√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╖╗╖°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒═╒╒═╒°²°°²°▀┘▀353▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀▀█▀jkj▀█▀°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒°²°╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√°⌡°°⌡°°⌡°°⌡°°²°√≤√√≤√°²°√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒▒░▒▒░▒▒░▒├▀├▀┬▀▀┬▀▀▀▀▀▀▀├┬├├┬├├┬├├┬├├┘├├┘├├┘├├┘├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├√≤√─┌──┌──┌─}z}usummmmmmjkjjkjmnmmnmmnm}~}°²°╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх°²°xyxmnmmnmjkjmnmmnmmnmmnmmnmmnmururrrrrrxvxxvx▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├█▒├█▒├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√°²°°²°°²°√≤√√≤√√≤√√≤√°²°°²°√≤√°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°╒ё╒°²°°²°╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°jij▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀▀█▀353▀█▀°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°╒ё╒°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▀█▀▀█▀▒░▒▒░▒├▀├├▀├▀▀▀▀▀▀▀▀▀▀▀▀°²°├┬├├┬├├┬├├┘├├┘├├┘├├┘├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├√≤√─┌──┌──┌─}z}usummmmmmjkjjkjmnmmnmmnm}~}°²°╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх°²°xyxmnmmnmmnmmnmmnmmnmmnmmnmoooururrrxvxxvxxvx▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀├█▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√°²°°²°°²°°²°√≤√√≤√√≤√√≤√°²°°²°√≤√°²°°²°°²°°²°╒═╒╒ё╒╒ё╒╒ё╒╒ё╒°²°°²°°²°╒ё╒°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒ё╒╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°353▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├LNL°²°°²°°²°°²°°²°°²°°²°╒ё╒°²°╒═╒╒═╒°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°⌡°°≤°°≤°°²°°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒▀░▀▀░▀▀░▀▀░▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀├┬├─┌──┌─}z}rrrmnmmnmmnmmnmmnmmnmuvu▀▀▀╛╗╛нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫°²°°²°xyxmnmooooooooooooooooooooorqruruxvxxvxxvx─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▒░▒▒░▒°∙°√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°═°°═°°═°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°╒═╒╒═╒°²°╒═╒╖╗╖°²°°²°°²°°╕╛°╕╛°╕╛LJL├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├ggg°²°°²°°²°°²°°²°°²°╒ё╒╒ё╒╒═╒╒═╒╖ё╖°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°√≤√√≤√√≤√√≤√▒⌠▒▀█▀▀█▀▀░▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀▀▀▀█▀▀█▀▀█▀▀█▀─┌──┌──┌─▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├─┌──┌──┌─}z}rrrmnmmnmmnmmnmmnmmnmuvu▀▀▀╛╗╛нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц°²°°²°mnmmnmrqrrqrrqrrqroooooorqrrqruruxvxxvxxvx─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒╖╗╖°²°°²°°²°°╕╛°╕╛°╕╛LJL├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├;;;°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒°²°╒═╒°²°°²°°²°°²°°²°°²°°═°°═°°═°°⌡°°²°°²°°²°√≤√°²°°²°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°√≤√√≤√√≤√▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀┬▀▀┬▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}z}rrrmnmmnmoooooooooooo▀▀▀╛╗╛╛╗╛нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих°²°°²°xyxmnmrqrrqrrqrrqrrqrrqrrqrrqruruxvxxvxxvx─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√°≤°°⌡°°⌡°°⌡°°²°°²°°²°°²°°═°°═°°═°°═°╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°╒═╒╒═╒╒═╒╒═╒╖╗╖°²°°²°°²°°╕╛°╕╛LJLxz}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├ded°²°°²°°²°°²°╒ё╒╒ё╒╒ё╒╒═╒°²°°²°°²°╒ё╒°²°°²°°²°°═°°═°°⌡°°⌡°°²°°²°°²°°²°√≤√√≤√√≤√√≤√°²°°²°°²°°⌡°°≤°°≤°°≤°°≤°√≤√√≤√▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀─┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒─┌──┌──┌──┌─}z}rrrmnmmnmoooooooooooo▀▀▀╛╗╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих°²°°²°xyxmnmrqrrqrrqrrqrrqrrqrrqrrqrxvxxvxxvxxvxz{z─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒°∙°°≤°°⌡°°⌡°√≤√√≤√√≤√√≤√°═°°═°°═°°═°√⌡√╒═╒╒═╒╒═╒╒═╒°²°°²°°²°°²°°²°°²°°²°╖╗╖°²°°²°°²°°╕╛xz}bbdxz}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°∙°313°∙°°∙°°²°°²°°²°°²°°²°°²°°²°╒═╒°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°√≤√√≤√√≤√√≤√°∙°√⌠√√⌠√▒░▒▀▀▀▀▀▀▀▀▀▀┬▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°────────}z}xvxrrrrrrmnmrrrrrrrrr▀█▀▀█▀╥Ё╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫├┌├├┌├ururqrrqrrqrrqrrqrrqrrqrrqrrsrrsrxyxxyx├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀▒⌠▒√≤√°²°°²°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°²°°²°°═°°═°°═°°═°°²°°²°°²°╒═╒°²°°²°°²°°²°▀█▀353▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°∙°omoomo°∙°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°⌡°°²°√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒√⌠√▒░▒▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°├┌├──────}z}xvxrrrrrrmnmrrrrrrrrr▀█▀╒═╒нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╒═╒├┌├ururqrrqrrqrrqrrqrrqrrqrrqrrsrrsrxyxxyx├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀▒⌠▒√≤√°²°°²°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°⌡°°⌡°°⌡°°²°°═°°═°°═°°═°°²°°²°°²°°²°°²°°²°°²°°²°jkjjkj▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°∙°°∙°313°∙°°²°°²°°²°°²°°²°╒═╒°²°°²°°⌡°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°²°°≤°°⌡°°⌡°°⌡°°⌡°√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°├┌├──────}z}xvxrrrrrrmnmrrrrrrrrr▀█▀╒═╒нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╒═╒├┌├ururqrrqrrqrrqrrqrrqrrqrrqrrsrrsrrsrrsr├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀▒⌠▒√≤√°²°°²°°⌡°°⌡°°⌡°°≤°°⌡°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°²°╒═╒°²°°²°°²°°²°°²°°²°353▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°∙°°∙°°∙°omo╒═╒°²°°²°°²°°²°°²°°²°╒═╒°⌡°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°°²°°²°°⌡°°∙°°≤°°⌡°°⌡°°⌡°√≤√√≤√▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀─┌├─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°├┌├──────}z}xvxrrrrrrrrrrrrrrrrrr╒═╒╥Ё╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╒═╒├┌├ururqrrqrrqrrqrrqrrqrrqrrqrrsrrsrrsrrsr├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀▀▀▀▀▀▀░▀▀░▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀░▀▒⌠▒√≤√°²°°²°°⌡°°⌡°°≤°°≤°°⌡°°²°°²°°²°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°⌡°°²°°²°°²°╒═╒°²°°²°°²°bbb▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}─}─}─;@A°∙°°∙°°∙°°∙°°²°°²°°²°°²°√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°°²°√≤√√≤√▒⌠▒▒⌠▒√⌠√√⌠√√⌠√√⌠√▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒────────xvxxvxrrrrrruruuruuru}{}°╕°╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╕╛╛╕╛urumnmrsruvuuvuusuusuusuusururrurrurrurzyzzyz────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▒░▒▒░▒▒░▒▒░▒├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀√⌠√√⌠√√⌠√√⌠√▒⌠▒√≤√√≤√√≤√°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°∙°°∙°°∙°;=;├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}─}─}─}─QOQ°∙°°∙°°∙°°²°°²°°²°°²°√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°²°°²°√≤√√≤√√≤√▒⌠▒▒⌠▒√⌠√▒░▒▒░▒▒░▒▀▀▀▀▀▀▀▀▀▀░▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒────────xvxxvxrrrrrruruuruuru▀▀▀°╕°╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╕╛╛╕╛uruoqorsruvuuvuusuusuusuusururrurxwxxwxzyzzyz────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▒░▒▒░▒▒░▒▒░▒├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀█▀√⌠√√⌠√√⌠√√⌠√▒⌠▒√≤√√≤√√≤√°²°°²°°²°°²°√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°∙°°∙°;=;°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}─}─}─}─QOQ°∙°°∙°°∙°°²°°²°°²°°⌡°√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▀▀▀▀▀▀▀▀▀▀░▀▀▀▀▀▀▀▀▀▀▀▀▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒────────xvxxvxrrrrrruruuruuru°²°°╕°╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╕╛╛╕╛▀┘▀rsrrsruvuuvuuuuuuuuuuuuururxwxxwxxwxzyzzyz────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√√≤√°²°°²°°²°°²°°²°°∙°°∙°WWW°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}─}─}─}─°∙°313°∙°°∙°°²°°²°°²°°∙°▒⌠▒√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒°²°√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀∙▀▀▀▀▀▀▀▀▀▀}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒──────z}zxvxxvxxvxrrruruuru}{}°²°°╕°нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╕╛╛╕╛▀┘▀rsrrsruvuuvuuvuuvuuvuuvuxwxxwxxwxxwxzyz──────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√√≤√▒⌠▒√≤√√≤√√≤√√≤√√≤√√≤√°²°√≤√√≤√√≤√√≤√°∙°;=;°∙°°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀jij▀┘▀▀┘▀°²°°²°°²°°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√°²°√≤√√≤√▒⌠▒▀█▀▒░▒▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒──────z}zzzzxvxuruuruuruuru├┌├╒═╒°²°нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒╒═╒mjmrrruvuuvuxyxxyxxyxz{zz{zxyxxyxxyxuvuuvu─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌▀├┌▀├┌▀├┌▀▒█▒▒█▒▒█▒▒█▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√≤√√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√°∙°°∙°°∙°°∙°}~}ded}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀353▀┘▀°²°°²°°²°°²°▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√√≤√√≤√▒⌠▒▀█▀▀█▀▒░▒▒░▒▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒────────zzzxvxuruuruuruuru├┌├╒═╒╛╚╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒╒═╒rrruvuuvuuvuxyxxyxxyxxyxxyxxyxxyxxyxuvuuvu─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌▀├┌▀├┌▀├┌▀▒█▒▒█▒▒█▒▒█▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√°∙°°∙°°∙°°∙°313}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀jij√≤√√≤√√≤√√≤√▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒⌡╒╒⌡╒╒⌡╒╒⌡╒√⌡╒√⌡╒√⌡╒√⌡╒├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├────────zzzxvxuruuruuruuru├┌├╒═╒╛╚╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒╒═╒uvuuvuuvuuvuxyxxyxxyxxyxxyxxyxxyxxyxuvuuvu─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌▀├┌▀├┌▀├┌▀├┘├├┘├├┘├├┘├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√°∙°°∙°°∙°ono}~}}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀353▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒├┘├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─╒═╒╒═╒╒═╒╒═╒нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнцаццаццаццац√≤√√≤√√≤√√≤√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├────────zzzxvxuruuruuruuru├┌├╒═╒╫╧╫нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒╒═╒uvuuvuuvuuvuxyxxyxxyxxyxxyxxyxxyxxyxuvuuvu─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌▀├┌▀├┌▀├┌▀├┘├├┘├├┘├├┘├▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√°∙°°∙°°∙°353}~}}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─_^_▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▀┘▀▀┘▀▀░√▀░√▀░√°⌡╒▀┘▀▀┘▀▀┘▀°⌡°}┘▀}┘▀}┘▀}┘▀}┘▀√⌡╒╡╟╥нфнхиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлхциццицхлххлххиххиххиххиххиххиххиххиххлххлххлххлхнфннфнц╬ц╛╝╛}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌─√≤√─┌──┌──~──~──~─zzz}z}zyzxwxxwxuvuuvu╛╕╛╛╕╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╩╫°╕°uvuuvuuvuuvuz{zxyxxyxxyxxwxxwxxwxxwxxwxxwxxwx▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├▒░▒▒░▒√∙√√∙√√∙√√∙√▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▀█▀▀█▀▀█▀_^_▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─LJL▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀█▀▒█▒▒█▒▒█▒▒█▒▀░√▀░√▀░√▀░√▀┘▀▀┘▀▀┘▀°⌡°}┘▀√⌡╒√⌡╒╡╟╥╡╟╥нфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххлххлххлххлхцдц╫╬╫цдццдццдц╫╬╫цдццдцхлххлххлххлхнфннфннфннфннфннфннфн╡╟╥▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌─√≤√─┌──┌──~──~──~──~─zyzxwxxwxxwxuvuuvu╛╕╛╛╕╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╩╫°╕°}~}uvuuvuuvuxyxxyxxyxxyxxwxxwxxwxxwxxwxxwxxwx▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├√∙√√∙√√∙√√∙√▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀LJL▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀█▀_^_▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒█▒▒█▒▒█▒√∙√}┘▀}┘▀▀░√▀░√▀┘▀▀┘▀▀┘▀°⌡°нфннфннфннфннфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфннфннфннфннфнннн╥╤╥╒²╒▀┘▀√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌─√≤√─┌──┌──~──~──~──~─xwxxwxxwxxwxuvuuvu╛╕╛╛╕╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╩╫°╕°▀█▀uvuuvuuvuxyxxyxxyxxyxzyzzyzzyzzyzxwxxwxxwx▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├▒█▒▒█▒▒█▒▒█▒▒⌠▒▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀_^_▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒█▒▒█▒▒█▒▒█▒}┘▀}┘▀}┘▀▀░√╫ф╫╫ф╫╫ф╫╫ф╫нфннфннфннфннфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфннфннфннфннфннннннннннннннфн╡╟╥√⌡╒}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌─√≤√─┌──┌──~──~──~──~─xwxxwxxwxxwxuvuuvu╛╕╛╛╕╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╩╫°╕°°²°uvuuvuuvuxyxxyxxyxxyx}z}}z}}z}}z}xwxxwxxwx▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀°²°√≤√▒⌠▒▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀┘▀▀┘▀▀┘▀▀┘▀▒█▒хфххфххфххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡╟╥√⌡╒}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├├├├├}~}}~}}~}z{zxwxxwxxwxxwxuvu├┘├╒²╒╫╤╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих√⌡√uzuuzuuzuxyxz{zz{zz{zz{zz{zz{zxyxxyxxyxz{zz{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├─┌──┌──┌──┌─├┘├├┘├▒█▒▒█▒▒░▒▒░▒▒░▒▒░▒▀▀▀▀▀▀▀▀▀▀▀▀├┬├├┬├├┬├─┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀┘▀▀┘▀▀┘▀╥╟╥хфххфххфххфххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн√⌡╒▀┘▀▀┘▀▀┘▀▀┘▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒▀▒├├├├├├}~}}~}}~}xyxxwxxwxxwxxwxuvu├┘├╒²╒╫╤╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛uzuuzuuzuxyxz{zz{zz{zz{zz{zz{zz{zxyxxyxxyxxyx▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌─├┘├├┘├├┘├├┘├▒░▒▒░▒▒░▒▒░▒▀▀▀▀▀▀▀▀▀▀▀▀├┬├├┬├─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀├┬├▀▀▀▀▀▀▀▀▀▀▀▀╒⌡╒╥╟╥нфннфнхфххфххфххфххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн╥╟╥╒⌡╒▀┘▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒▀▒├├├├├├}~}}~}z{zxyxxwxxwxxwxxwxuvu├┘├╒²╒╫╤╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛uzuuzuuzuxyxz{zz{zz{zz{zz{zz{zz{zz{zxyxxyxxyx▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┬├├┬├├┬├├┬├▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├▀▀▀▀▀▀▀▀▀▀▀▀├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀}~}▀▀▀▀▀▀╛╗╛╛╗╛нфннфннфннфнхфххфххфххфххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфн─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒▀▒├├├├├├}~}}~}xyxuvuzyzzyzzyzzyzuvu├┘├╒²╒╫╤╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛uzuuzuuzuxyxz{zz{zz{zz{zz{zz{zz{zz{zz{zz{zz{z▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┬├├┬├├┬├├┬├▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┬├├┬├├┬├├┬├╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицхлххлххлхнфннфн╡╟╡}┘}▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─√⌠√──────}~}}~}z{zz{zxyxxyxz{zz{z}~}▒∙▒╖╝╖╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╫╤╫╖╕╖╖╕╖}z}}z}z{zz{zz{z}~}}~}}~}}~}}~}}~}}~}────▀█▀├┬├─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┬├├┬├цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфн╛╕╛▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├────────}~}}~}z{zz{zxyxxyxz{zz{z}~}▒∙▒╖╝╖╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхц╬ц╖╕╖╖╕╖}z}}z}z{zz{zz{z}~}}~}}~}}~}──────├┌├├┌├├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├├┬├├┬├▀█▀▀█▀─┌─}~}─┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀▒⌡╒цдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфннфннфн▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├────────}~}}~}z{zz{zxyxxyxxyxxyx▒∙▒╖╝╖╖╝╖╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╖╕╖╖╕╖}z}}z}z{zz{zz{z}~}────────├┌├├┌├├┌├▀┘▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀▒⌡╒╫фнцдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфннфннфннфн╛╕╛├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─▀█▀────────}~}}~}z{zz{zxyxxyxxyxxyx▒∙▒╖╝╖╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╖╕╖╖╕╖}z}}z}z{zz{zz{z}~}────├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├─┌──┌──┌──┌──┌──┌──┌─├┬├├┬├├┬├├┬├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀}┘▀╡╟╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлхнфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒─────────~──~──~─zzzz{zz{zz{zz{z°∙°°∙°╫╤╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫▒⌠▒▒⌠▒}~}z{zz{z}~}}~}──────├┌├─┘─├┘├├┘├├┘├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╥╤╥╡╟╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлхнфннфннфнхфххфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒⌡╒▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├───────~──~──~──~─z{zz{zz{zz{z°∙°╛╕╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╖╗╖▒⌠▒}~}z{zz{z}~}}~}──────├┌├├┘├├┘├├┘├├┘├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╥╤╥ннннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххлххлххлххлхцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххфххфххфххфххфххфххфххфххиххиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╟╥├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├───────~──~──~──~─z{zz{zz{zz{z°∙°╛╕╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╖╗╖▒⌠▒}~}z{z}~}}~}}~}──────├┌├├┘├├┘├├┘├├┘├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╥╤╥нннннннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхлххлххлххлххлххлххлхцицциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххихцицхлххлххлххиххиххиххиххлххлххлххлхнфнхфххфххфхцфцхфххфххфххиххиххихцдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнцац├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├───────~──~──~──~─}~}}~}}~}}~}╛╕╛╫╤╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╖╗╖▒⌠▒}~}}~}}~}}~}}~}──────├┌├├┘├├┘├├┘├├┘├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀┘▀▀┘▀▀┘▀▀┘▀хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххихцфцхфххфххфххлххлххлххлхцицхлххлххлххиххиххиххиххиххиххиххих╛╤╛╛╤╛╛╤╛╛╤╛ннннннннннннннннннннннннхиххиххихцдццдццдццдццдццдццдццдццдццдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфнхфнхфн╒╕╛}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒∙▒─┌──┌──┌──┌─├┌├──────}~}}~}}~}├┬├╛╕╛ц╩цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╖╚╖╖╚╖▒░▒z{zz{zz{z}~}──────├┌├▀┘▀▀┬▀▀┘▀▀┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀┘▀▀┘▀╛╕╖нфцхлххлхцицхлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххфххфххфххфхцицхлххлххлххлххлххлххлххиххиххиххиххиххиххиххих╛╤╛╛╤╛╛╤╛╛╤╛ннннннннннннннннннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфнхфнхфнхфн}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒∙▒▒∙▒├┬├─┌──┌──┌─────────}~}}~}}~}▒⌠▒╛╕╛ц╩цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╖╚╖╖╚╖▒░▒z{zz{zz{z}~}──────├┌├▀┬▀▀┬▀▀┘▀▀┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀┘▀нфцнфцнфцциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхцдццдццдццдцхфххфххфххфхцицхлххлххлххлххлххлххлххиххиххиххиххиххиххиххих╛╤╛╛╤╛╛╤╛OROxwxнннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдцхиххиххиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфнхфнхфнхфн╡╟╥√⌡╒}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒∙▒▒∙▒├┬├─┌──┌──┌─────────}~}}~}}~}°²°╛╕╛ц╩цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╖╚╖╖╚╖}z}z{zz{zz{z}~}──────├┌├▀┘▀▀┘▀▀┘▀▀┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌─├┬├├┬├нфцнфцнфцнфцхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлхциццдццдццдццдцхфххфххфххфххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххих╛╤╛╛╤╛   xwxннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдцхиххиххиххихцдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфнхфнхфнхфн╡╟╥╡╟╥╡╟╥√⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒∙▒▒∙▒├┬├─┌──┌──┌─────────}~}}~}├┬├°²°╛╕╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╖╚╖▒░▒}z}z{zz{zz{z}~}──────├┌├▀┘▀▀┘▀▀┘▀▀┘▀├┘├├┘├▒∙▒▒∙▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдцхфххфххфххфххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххихнннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцхиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххфххфххфх╡╝╡√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒═╒╒═╒──├┌├├┌├├┌├────────}~}}~}▀█▀╛╝╛╛╝╛хфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╖╕╖╖╕╖}~}──────────├┌├├┌├}┘}▀┘▀▀┘▀▀┘▀├┬├├┬├▒⌠▒▒⌠▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}}~}}z}}z}}z}}z}─┘▀─┘▀─┘▀─┘▀─┌──┌──┌──┌──┌──┌──┌──┌─}~}}~}}~}}~}}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀─~──~──~──~─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххихнннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххфххфххфххфх╡╟╥}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒═╒╒═╒──├┌├├┌├├┌├├┌├──────}~}}~}▀█▀╛╝╛╛╝╛хфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╖╕╖╖╕╖}~}──────────├┌├├┌├─┘─▀┘▀▀┘▀▀┘▀├┬├├┬├▒⌠▒▒⌠▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}deddabdabdabdabbbdbbdbbdbbdbcbbcbbcbbcbbcbbcbbcbbcbbbbbbbbbbbbbbfgbfgbfgbfgmkmmkmmkmmkmmjmmjmmjmmjmmjmmjmmjmmjmmjmmjmmjmmjmmkmmkmmkmmkmrqrrqrrqrrqr─~──~──~──~─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххихнннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххфххфххфххфхнфн╡╟╥}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒═╒╒═╒──├┌├├┌├├┌├├┌├──────}~}}~}▀█▀╛╝╛╛╝╛хфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╖╕╖╖╕╖}~}──────────├┌├├┌├─┘─▀┘▀▀┘▀▀┘▀├┬├├┬├├┬├├┬├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}LKLLKLLGFLGFLGFLGFDBDDBDDBDDBDDFDDFDDFDDFDDFDDFDDFDDFDFFFFFFFFFFFFFJIFJIFJIFJITTTTTTTTTTTTTRTTRTTRTTRTTRTTRTTRTTRTTRTTRTTRTTRTTTTTTTTTTTTTLNLLNLLNL___jjj─~──~──~─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххихнннннннннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххфххфххфххфхнфннфн√⌡╒}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒═╒╒═╒──├┌├├┌├├┌├├┌├──────}~}}~}▀█▀╛╝╛хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╖╕╖╖╕╖──────────├┌├├┌├├┌├├┘├▀┘▀▀┘▀▀┘▀├┬├├┬├├┬├├┬├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├──dedLKL3133133-+3-+3-+3-+DBDDBDDBDDBDDFDDFDDFDDFDDFDDFDDFDDFDFFFFFFFFFFFFFJIFJIFJIFJI;=;;=;;=;;=;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;=;;=;;=;;=;LNLLNLLNLLNLjjjjjj─~──~─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛OOO         ORO╛╤╛╛╤╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡Ё╡√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├──────√⌠√╛╕╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╚╛╛╚╛├┌├├┌├├┌├├┌├──├┌├├┌├├┌├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▒⌠▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}}~}DFD676((((((#%##%#676676DB;DB;DB;DB;DFDDFDDFDDFDLJDLJDLJDLJDLNLLNLLNLLNLLNLLNLLNLLNLLJLLJLLJLLJLFHFFHFFHFFHFDBDDBDDBDDBDDFDDFDDFDDFDLNLLNLLNLLNLTVTTVTTVTTVTTRTTRTooo}~}─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛   ╛╤╛╛╤╛╛╤╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡╟╥}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├────√⌠√╛╕╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╚╛╛╚╛▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▒⌠▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}bbb676(((((((((#%#676IHIIHIDB;ONIONIZZWZZZZZZZZZZZZb__b__b__b__\^\\^\\^\\^\Z[ZZ[ZZ[ZZ[Zb_bb_bb_bb_bZ[ZZ[ZZ[ZZ[ZZZZZZZZZZZZZTVTTVTTVTTVTZ[ZZ[ZZ[ZZ[ZbcbbcbbcbbcbTRTTRTbab}~}─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛╛╝╛OOO╛╤╛╛╤╛╛╤╛╛╤╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╡╟╥}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├────√⌠√╛╕╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╚╛╛╚╛▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▒⌠▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}bbbFFF((((((((((((676IHI\Z\\Z\dfddfddfddfdonoonoonoonomjmmjmmjmmjmdfddfddfddfdgiggiggiggigmjmmjmmjmmjmmnmmnmmnmmnmoroorooroorodfddfddfddfdgiggiggiggigoqooqooqooqobabTRTbabooo─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛╛╝╛╛╝╛нннннннннннн╛╤╛╛╤╛╛╤╛╛╤╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн√⌡╒}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├────√⌠√╛╕╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╚╛╛╚╛▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├▒⌠▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}FFF+)+((((((((((((IHI\Z\\Z\\Z\dfddfddfddfdonoonoonoonomjmmjmmjmmjmdfddfddfddfdgiggiggiggigmjmmjmmjmmjmmnmmnmmnmmnmoroorooroorouvuuvuuvuuvuuvuuvuuvuuvu}~}}~}}~}}~}ooobabbabbabz{z─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀нфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхлххлххлххлххиххиххиххиххиххиххиххиххфххфххфх╡╝╡√∙√}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}▒⌠▒╖╗╖╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих°²°}~}}~}}~}──├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▀┬▀▀┬▀▀┬▀▀┬▀─┘├─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀mjmmjm+,+()(353DFDLLLLLL\Z\\^\\^\\^\\^\\^\\^\\^\\^\A@AA@AA@AA@A;BD;BD;BD;BDFFFFFFFFFFFFLJLLJLLJLLJLQRQQRQQRQQRQZXTdb\db\db\_a_mnmmnmmnmmnmmnmmnmmnmmnmmnm}z}}z}}z}rorgeg\Z\omozwz▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀нфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххфххфххфххфх╡╝╡}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}▒⌠▒╖╗╖╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛}~}}~}}~}├┌├├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▀▀▀▀┬▀▀┬▀▀┬▀─┘├─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀mjmLKL353353DFDDFDDFDLLLONLONLONLONLLNL;=;;=;;=;313313313313;BD;BD;BD;BDFFFFFFFFFFFFLJLLJLLJLLJLDBDDBDDBDDBDDFDDFDOOLZXTQSQ_a__a_mnmdfddfdmnmmnmmnmmnmrrr}z}}z}}z}geg\Z\dbdomo▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀нфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххфххфххфххфхнфн╡╝╡}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}▒⌠▒╖╗╖╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛}~}}~}}~}├┌├├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▀▀▀▀┬▀▀┬▀▀┬▀─┘├─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀rvxLKL+,+353353DFDDFDDFDDFDONLONLA=;A=;+-++-++-++-+313313A@AA@AQVWQVWQVWQVWbbbbbbbbbbbb\[\\[\\[\\[\_b_QRQQRQQRQOOLOOLDFDDFDDFDQSQQSQ_a_\^\dfddfddfdmnmmnmmnmxvx}z}}z}rorgegdbddbdzwz▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╥╟╥нфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлхцицхиххиххиххиххиххиххиххиххфххфххфххфхнфннфн√∙√}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}▒⌠▒╖╗╖╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛}~}}~}}~}├┌├├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▀▀▀▀┬▀▀┬▀▀┬▀▀∙°─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀\^\+,+()(353353DFDDFDDFDDFD3-+3-+3-+3-++-++-++-++-+A@AOOO\^\\^\}~}}~}}~}}~}}~}}~}}~}}~}}~}}~}}~}}~}mrmmrmmrm_b_ZXTZXTZXTOOLDFDDFDDFDQSQTVT\^\dfddfdrrrmnmmnmrrr}z}}z}}z}rordbddbdomo▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхлххлххлххлххиххиххиххиххиххиххихцдцнфннфннфн}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}▒∙▒╖╝╖╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╫╤╫╛╕╛▀░▀}┘}}┘}─┌──┌──┌──┌─├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀┬▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}65000+;93;93;9;;9;000000+-++-++-++-+DBDDBDDBDded\Z\gfgrrr}~}▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┬├├┬├├┬├├┬├─~──~──~──~─xvxjjj\^\\^\LNLLNLLNLLNLLNLLNLLNLLNLgeguruuruuruuuu}{}▀┘▀▀┘▀gig\^\gig}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╥╟╥хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххихнфннфннфн√⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}▒∙▒╖╝╖╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхц╬ц╛╕╛°⌡°}┘}}┘}─┌──┌──┌──┌─├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒∙▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}ZZW650%&#00+;93;93000%&%%&%%&%+-++-++-+DFDTSTdeddeduvurrr}~}}~}}~}─────────~──~──~──~──┌──┌─├┬├├┬├├┘├├┘├├┘├├┘├▀┘▀▀┘▀▀┘▀jjjrqr______LNLLNLLNLLNLLNLZWZgeguruuruuuu}{}▀┘▀▀┘▀rsr\^\\^\rsr├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╥╟╥нфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцицхлххлххлххиххиххиххиххиххиххиххихнфннфннфн╡╟╥├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒∙▒╖╝╖╖╝╖╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╕╛°⌡°}┘}}┘}─┌──┌──┌──┌─├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒∙▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}ZZW65000+00+00+%&#%&%%&%%&%+-+DFDDFD\^\deduvuuvuuvu}~}}~}}~}}~}────z}zz}zzzzzzzzzzzzz}~}}~}─┌──┌─├┘├├┘├├┘├├┘├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀rqr___Z[ZLNLLNLLNLLJLZWZgeguruuuu}{}▀┘▀▀┘▀rsrgig\^\gig├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╥╟╥нфннфнцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхциццицхлххлххиххиххиххиххиххиххиххихнфннфннфннфнцац├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒∙▒╖╝╖╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╕╛°⌡°}┘}}┘}─┌──┌──┌──┌─├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▒∙▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}ZZW650+)+00+%&#%&#%&%;9;DFD\^\uvuuvuuvuuvuuvuuvu}~}}~}}~}}~}uzuuzuuzuuzuzzzzzzzzzzzz}~}}~}}~}}~}├┘├├┘├├┘├├┘├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀uvugigZ[ZLNLLJLLJLZWZgeguuu}{}▀┘▀▀┘▀}~}rsrgig\^\xwx├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘├}┘├}┘├}┘├▒⌠▒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххдххдххдххдххлххлххлххлххиххиххиххиххиххиххиххихнфн╥╟╥╒⌡╒▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├├├°∙°├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌──┌──┌─°²°°²°╫╧╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╚╛╛╚╛▀┘▀▀┘▀─┌──┌──┌──┌─├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}}~}\Z\%$%+-+((+((++)++)+A?AWTWuso}zu}zu}zu}z}usummmdfduruuruuruzyzzyzzyzzyzzyz}~}}~}}~}}~}├┘├├┘├├┘├├┘├─────────┌──┌─├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀zzzdbddc_TRLTRLTRLbbboro}┘}}┘}▀█▀zzxonjdb\gigrsr}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘├}┘├}┘├°╕╒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххдххдххдххдхцицхлххлххлххиххиххиххиххиххиххиххихнфннфн╒⌡╒▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├├├°∙°─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌──┌──┌─°²°╛╚╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╚╛╛╚╛▀┘▀▀┘▀─┌──┌──┌──┌─├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}dfdA?A#$#((+A?AA?AWTWmjmdfddfdmmjmmjusummmmmmusuuruuruzyzzyz────────├┘─├┘─├┘─├┘─├┘├├┘├├┘├├┘├─────────┌──┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀uurdc_TRLTRLTRTbbborooro▀█▀▀█▀onjdb\\^\gig}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘├}┘├}┘├°╕╒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцацхдххдххдхцицхлххлххлххиххиххиххиххиххиххиххихнфннфн╥╟╥╒⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├├├°∙°─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌──┌──┌─°²°╛╚╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╚╛╛╚╛▀┘▀▀┘▀─┌──┌──┌──┌─├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}LNL%$%((+67;WTWmjmmjmmjmdfddfddfddfdmmmmmmusuusuzyzzyz────▀█▀▀█▀▀█▀▀█▀▒█├▒█├▒█├▒█├▒█▒▒█▒▒█▒▒█▒├▀├├▀├├▀├├▀├├┬├─┌──┌──┌──┌─}~}─┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀uurdc_TRLTRTTRTbbboro▀█▀▀█▀zzxonj\^\\^\rsr}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘├}┘├}┘├╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццаццацхдххдххлххлххлххлххиххиххиххиххиххиххиххихнфннфннфн╥╟╥├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├├├°∙°─┌──┌──┌──┌─├┌├├┌├├┌├├┌├─┌──┌─├┬├├┬├╛╚╛╫╧╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╚╛╛╚╛▀┘▀▀┘▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀▀▀▀▀▀▀▀▀▀█▀▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}dfd353#$#((+67;DFLWTWmjmmjmmjmdfddfddfddfdmmmusuusu}z}──────▀█▀▀█▀▀█▀▀█▀▀█▀°∙▀°∙▀°∙▀°∙▀°∙°°∙°°∙°°∙°▀∙▀▀∙▀▀∙▀▀∙▀├┬├├┬├├┬├├┬├─┌──┌──┌──┌─▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀uuruurTRTTRTbbboro▀█▀▀█▀▀█▀zzx\^\\^\gig}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╒⌡╒нфннфнциццицхлххлххиххиххиххиххиххиххиххиххфххфххфххфхцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╒⌡╒▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├────────├┌├├┌├├┌├├┌├╛╝╛╛╝╛ниннинхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╒═╒╒═╒▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀├┬├√∙√√∙√▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuTTT      #%#353TVTTVTZXZZXZZXZZXZ\^\\^\gggrqruvuz{zz{z─┌─▀█▀▀█▀▀█▀▀█▀√⌡√√⌡√√⌡√√⌡√╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒°∙°°∙°√∙√√∙√√∙√√∙√▒█▒▀┘▀▀┘▀▀┘▀─┌──┌──┌─▀█▀√∙▒√∙▒√∙▒√∙▒mkm\Z\\Z\\Z\jijxwx▀█▀▀█▀xvx\^\\^\xvx}┘}}┘}}┘}}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒⌡╒╥╟╥нфннфнхлххлххлххлххиххиххиххиххиххиххиххиххфххфххфххфххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╥╟╥▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├────────├┌├├┌├├┌├▒░▒╛╝╛╛╝╛ниннинхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥Ё╥╒═╒▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀─┌─√∙√√∙√▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuTTT333   353DFDTVTTVTZXZZXZZXZ___\^\gggrqrrqrz{z─┌──┌─▀█▀▀█▀▀█▀▀█▀√≤√╒═╒╒═╒╒═╒╒═╒╒²╒╒²╒╒²╒╒²╒╖╕╖╖╕╖╖╕╖╖╕╖╖╕╖╖╕╖╖╕╖╒²╒╒²╒╒²╒╒²╒╒²╒√∙√▒█▒▀┘▀▀┘▀─┌──┌──┌─├┬├√∙▒√∙▒√∙▒√∙▒}}}mkm\Z\\Z\\Z\jij▀█▀▀█▀▀┘▀jjj\^\jjjuwu}┘}}┘}}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╥╟╥нфннфннфнхлххлххлххлххиххиххиххиххиххиххиххихнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфн╥╟╥▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├────────├┌├├┌├├┌├▒░▒╛╝╛╛╝╛ниннинхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥Ё╥╒═╒▀█▀├┬├├┬├├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀─┌─√∙√√∙√▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvu333   ...DFDTVTTVTTVTZXZZXZZXZ___gggrqrrqr}z}─┌─▀█▀▀█▀▀█▀▒⌠▒√≤√°²°°²°╒═╒╒═╒╒═╒╒═╒╖╕╖╖╕╖╖╕╖╖╕╖╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╖╕╖╖╕╖╒²╒╒²╒╒²╒╒²╒°²°√∙√▒█▒▀┘▀─┌──┌──┌──┌─▒█├√∙▒√∙▒√∙▒°²°}}}mkm\Z\\Z\\Z\xwx▀█▀▀┘▀xvxjjj\^\mmm}┘}}┘}}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххихнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицнфннфн╒⌡╒▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°²°╛╝╛╛╝╛ниннинхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥Ё╥╒═╒▀█▀├┬├├┬├├┬├├┬├─┌─├┬├├┬├├┬├▀█▀▀█▀▀█▀─┌─√∙√√∙√▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├xwxTTT333   ...;=;TVTTVTTVTTVTZXZZXZZXZdfdrqrrqr}z}}z}▀█▀▀█▀▀█▀▀█▀°²°°²°°²°°²°╛╕╛╛╕╛╛╕╛╛╕╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╕╛╛╕╛╛╕╛╛╕╛°²°°²°√∙√√∙√├┬├─┌──┌──┌─▀┘}▀┘}▒█├√∙▒°²°°²°}}}}}}\Z\\Z\jij▀█▀▀┘▀▀┘▀xvx\^\dbduwu}┘}}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀╡╟╥хлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххихцдццдццдц├┬├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒─┌──┌──┌──┌──┘──┘─├┘├├┘├▀┘▀▀┘▀▀┘▀√⌠√╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╚╛╛╚╛°²°├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀├┌├°²°°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}___353(%#653DFDLNLLNLLNLQSQ\^\\^\dfdmnmuvuz{z─┌─▀█▀▀█▀▀█▀▒⌠▒▒⌠▒°²°°²°╒ё╒╖╗╖╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╖╗╖╖╗╖╒ё╒╒ё╒√≤√▀█▀▀█▀▀█▀─┌──┌─├┬├├┬├▒⌠▒▒⌠▒▒⌠▒├┬├jjj\^\\^\\^\▀┘▀▀┘▀▀┘▀jjj\Z\rrr}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀нфнхлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлхцицхлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнхфхцицхлххлххлххиххиххиххиххиххиххиххихцдццдццдц├┬├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒─┌──┌──┌─├┬├─┘──┘─├┘├├┘├▀┘▀▀┘▀▀┘▀╒═╒╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╧╫╛╚╛°²°─┌─├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀}z}°²°°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}A@A(%#653DFDDFDLNLLNLLNLWXW\^\dfdmnmmnmuvuz{z─┌─▀█▀▒⌠▒▒⌠▒√≤√√≤√°²°╒ё╒╖╗╖╖╗╖╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╥╧╥╥╧╥╥╧╥╥╧╥╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╛╝╛╛╝╛╖╗╖╖╗╖╖╗╖╖╗╖╒ё╒√≤√▀█▀▀█▀─┌──┌──┌──┌─▒⌠▒▒⌠▒▒⌠▒▒⌠▒xvx\^\\^\\^\xvx▀┘▀▀┘▀jjj\Z\gfg}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀√⌡╒нфнхлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхцицхлххлххлххиххиххиххиххиххиххиххихцдццдццдццдц─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├─┘──┘─├┘├├┘├▀┘▀▀┘▀▀┘▀╛╝╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╧╫╛╚╛°²°─┌─├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀}z}°²°°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}___#!#(%#653DFDDFDLNLLNLLNL\^\dfdmnmmnmuvuz{z─┌──┌─▀█▀√≤√√≤√√≤√°²°╒ё╒╖╗╖╖╗╖╛╝╛╡Ё╡╡Ё╡╡Ё╡╡Ё╡╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╡Ё╡╡Ё╡╡Ё╡╛╝╛╛╝╛╖╗╖╖╗╖╛╝╛╒ё╒√≤√▀█▀├┬├─┌──┌──┌─▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀┘▀xvx\^\\^\jjj▀┘▀▀┘▀xvxgfggfgrrr}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀нфннфнхлххлххлххлххиххиххиххиххиххиххиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнхфххфххфххлххлххлххлххиххиххиххиххиххиххиххихцдццдццдццдц▀█▀─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─▀█▀─┘─├┘├├┘├├┘├▀┘▀▀┘▀√⌠√╛╝╛╛╝╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╧╫╛╚╛°²°├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┌├°²°°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}___A@A#!##%#653DFDDFDDFDLNLLNLQSQ\^\mnmmnmuvuuvuz{z─┌─▀█▀▀█▀√≤√°²°°²°°²°╖╗╖╖╗╖╛╝╛╛╝╛╡Ё╡╡Ё╡╥╧╥╥╧╥╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╥╧╥╥╧╥╥╧╥╥╧╥╛╝╛╛╝╛╛╝╛╖╗╖╛╝╛╛╝╛╒ё╒╒ё╒├┬├├┬├├┬├├┬├▒⌠▒▒⌠▒▒⌠▒▒⌠▒▀┘▀▀┘▀jjj\^\\^\xvx▀┘▀▀┘▀rrrgfg\Z\rrr├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╒⌡╒нфннфнцицхлххлххлххиххиххиххиххлххлххлхциццдццдцхиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнхфххфхцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххих╒⌡╒▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├─┌──┌──┌─├┬├─┌──┌─├┬├├┬├▀┬▀▀┬▀°⌡°╛╝╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┌├▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀djmFKL(,+#!##!# " .0.;9;FDFLJLLJLLNLLNLTVT\^\mnmmnmxyx}~}─┌──┌─├┬├▀█▀°∙°╒²╒╖╕╖╛╝╛╛╝╛╛╝╛╛╝╛╡Ё╡╛╤╛╛╤╛╥╩╥╥╩╥╫╬╫╫╬╫цдццдццдццдццдццдццдццдццдццдц╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╡Ё╡╡Ё╡╡Ё╡╖╗╖╖╗╖°²°√≤√▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒°²°°²°°²°°²°\^\\Z\gfg}~}}~}▀█▀jij\Z\jij}┘}}┘}}┘}}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒⌡╒╥╟╥нфннфнхлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╟╥▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├─┌──┌─├┬├├┬├─┌──┌─├┬├├┬├▀┬▀▀┬▀°⌡°╛╝╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╝╛╛╝╛▒⌠▒├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┌├▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀FKL(,+#!##!# " .0.A?AFDFLJLLJLLNLTVT\^\\^\mnmrsr}~}}~}─┌──┌─├┬├▀█▀°∙°╒²╒╖╕╖╛╝╛╛╝╛╛╝╛╡Ё╡╡Ё╡╥╩╥╥╩╥цаццаццдццдцхиххиххиххиххиххиххиххиххиххихцдццдццдццдц╥╧╥╥╧╥╥╧╥╥╧╥╡Ё╡╡Ё╡╖╗╖╖╗╖╒ё╒√≤√▀█▀▀█▀▀█▀▀█▀▒⌠▒√≤√°²°°²°°²°mnm\Z\gfgrrr}~}▀█▀xwx\Z\\Z\rur}┘}}┘}}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╥╟╥нфннфннфнхлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцнфннфннфнц╩цц╬цц╬цц╬цц╬цнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╟╥▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├─┌──┌─├┬├├┬├─┌──┌──┌──┌─▀┬▀▀┬▀°⌡°╛╝╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛▒⌠▒├┬├├┬├├┬├─┌─▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀osuFKL#!##!##!# " .0.;=;FDFFDFLJLLJLTVT\^\\^\dfdmnmrsr}~}}~}─┌──┌─├┬├▀█▀°∙°╒²╒╖╕╖╛╝╛╡Ё╡╡Ё╡╥╧╥╥╧╥цаццаццацнфнхиххиххихнннннннннннннннхиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╡Ё╡╖╗╖╛╝╛╒ё╒√≤√▀█▀▀█▀▀█▀▀█▀▒⌠▒°²°°²°°²°}~}\Z\\Z\gfg}~}▀█▀xwxjij\Z\ggg}┘}}┘}}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфннфнхлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫ц╩ц╥╟╥╛╕╛╛╕╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцнфннфн╒⌡╒▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├─┌──┌─├┬├├┬├─┌──┌──┌──┌─▀┬▀▀┬▀°⌡°╛╝╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛▒⌠▒├┬├├┬├├┬├}~}├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒├┌├▒░▒°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀TVT(,+#!##!##!##!# " .0.;=;FDFFDFLJLLJL\^\\^\dfddfdrsrxyx}~}}~}─┌──┌─├┬├▀█▀°∙°╒²╒╖╕╖╛╝╛╥╧╥╥╧╥╥╧╥╫╬╫цацнфннфннфнхихннннннннннннннннннннннннннннннннннннннннннннн╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╡Ё╡╡Ё╡╡Ё╡╛╝╛╛╝╛╒ё╒╒ё╒▀█▀▀█▀▀█▀▀█▀°²°°²°°²°°²°\Z\\Z\\Z\rrr▀█▀▀█▀xwxjij\Z\rur}┘}}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀√⌡╒хлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххихциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнц╬цц╬цц╬цц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╫╤╫╫╤╫╫╤╫╫╤╫╥╩╥╥╩╥╥╩╥╥╩╥╛╤╛╛╤╛╛╤╛╛╤╛╛╝╛╛╝╛╛╝╛╛╝╛ц╬цнфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццицциццицхлххиххиххиххиххиххиххиххиххиххиххихцдцнфннфн√⌡√}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀°²°╛╝╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╩╫нин╫╩╫╛╝╛╛╝╛▀┬▀▀┬▀▀┬▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒°²°─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀Z^_698  +)+    #!#.-.898DFDDFDDFDLLITSO\^\\^\gigmnmuvuzzz─~─▀┘▀▀┘▀▀┘▀▒█▒√∙√°²°╒ё╒╖╗╖╛╝╛╛╤╛╥╩╥цацнфннфннфннфнснсстсстсстсстсьыььыььыььыььыььыььыььыььжьснсснснфнхиххихцдццдццац╥╩╥╥╩╥╛╤╛╡Ё╡╖╗╖╖╗╖°²°▒⌠▒▀█▀▀█▀▀█▀√≤√√≤√√≤√▀█▀onoTVTTVTono▀┘▀▀┘▀▀┘▀jgj\Z\\Z\}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀╡╟╥хлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнц╬ц╥╤╥╛╝╛╥╤╥╥╤╥ц╬цц╬цц╬цц╬цц╬цц╬цц╬цц╬ццаццаццаццац╥╩╥╥╩╥╥╩╥╥╩╥╥╧╥╥╧╥╥╧╥╥╧╥╛╝╛╛╝╛╥╤╥ц╬цц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн}┘}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├▀█▀▀█▀°²°╛╝╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннин╛╝╛╛╝╛▀┬▀▀┬▀▀┬▀▀┬▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒°²°─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀Z^_  +)+    #!#.-.898DFDDFDDFDLLITSO\^\bcbmnmmnmuvuzzz─~─▀┘▀▀┘▀▀┘▀▒█▒√∙√°²°╒ё╒╖╗╖╛╝╛╛╤╛╥╩╥цацнфннфннфнснсснсьыььыььыььыььыььыььыььыььыььыььыььыььжььжьснсснсхиххиххиххихцаццац╥╩╥╥╩╥╡Ё╡╡Ё╡╖╗╖╖╗╖√≤√▀█▀▀█▀▀█▀√≤√√≤√√≤√▒⌠▒}z}bbbTVTbbbxux▀┘▀▀┘▀xux\Z\\Z\gfg}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀нфнхлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╛╝╛ц╬цц╬цц╬цц╬цнфннфннфннфнхфххфххфххфхцаццаццаццаццаццаццаццаццдццдццдццдц╥╤╥╥╤╥╛╝╛╛╝╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн√⌡√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌─├┬├├┬├├┬├├┬├├┬├├┬├▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннин╛╝╛╛╝╛▀┬▀▀┬▀▀┬▀▀┬▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒°²°─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀Z^_698  +)++)+    .-.898898DFDDFDLLITSO\ZT\^\bcbmnmmnmuvuzzz─~─▀┘▀▀┘▀▒█▒√∙√°²°╒ё╒╖╗╖╖╗╖╛╝╛╥╩╥цаццацнфнснсснсьжььжьччччччччччччДДДДДДДДДДДДччччччччччччьжььжььжьснсннннннхиххихцаццаццац╥╩╥╡Ё╡╡Ё╡╡Ё╡╖╗╖°²°√≤√▀█▀▀█▀√≤√√≤√√≤√√≤√}z}bbbTVTTVTjgj▀┘▀▀┘▀▀┘▀\Z\\Z\\Z\rrr├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀√⌡╒нфнхлххлххлххлххиххиххиххиххлххлххлхциццдцхиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╥╤╥╛╝╛╛╝╛╥╤╥ц╬цц╬цц╬цц╬цнфннфннфннфнхфххфххфххфхнфннфннфннфнцаццаццаццаццдццдццдццдцц╬цц╬цц╬ц╥╤╥╛╝╛╛╝╛╥╤╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀─┌──┌──┌──┌─├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихниннин╫╩╫╛╝╛╛╝╛}z}▀┬▀▀┬▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒°²°─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├Z^_698  +)++)+    .-.898DFDDFDDFDLLITSO\ZTbcbgigmnmmnmuvuzzz─~─▀┘▀▀┘▀▒█▒√∙√°²°╒ё╒╖╗╖╛╝╛╛╝╛╥╩╥цацнфннфньжььжььжьчччччччччччччччДДДДДДДДДДДДчччччччччччччччьжььжььжьнннннннннхихнфнцаццаццац╫╬╫╡Ё╡╡Ё╡╡Ё╡°²°°²°▒⌠▒▀█▀√≤√√≤√√≤√√≤√}z}onoTVTTVT\Z\xux▀┘▀▀┘▀gfg\Z\\Z\gfg──├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┘▀─┘▀нфннфнхиххиххиххиххиххиххиххиххлххлххлхциццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихциццицциццицнфнц╬ц╥╤╥╛╝╛╛╤╛╛╤╛╥╩╥╥╩╥цдцхиххиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╫╬╫╥╤╥╥╤╥╛╝╛╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдцхиххих}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀╖╚╖╖╚╖╖╚╖цицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╝╛╛╝╛√⌠√▀┘▀▀┘▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀LJL +)++)++)+#!##!##!#(&(A@AFGFFGFFGFLNLLNLTVT\^\jkjoqouvuuvu}z}─~─├┘├▀█▀▀█▀▒⌠▒√≤√°²°╖╕╖╖╕╖╡╝╡╫╤╫╫╤╫цацхлхнжнчччччччччччччччДДДИИИОООИИИИИИИИИИИИИИИИИИДДДчччччччччччччччстсстсннннннхиххихцдццдц╫╬╫╥╧╥╡Ё╡╛╝╛╛╝╛╒ё╒√≤√√≤√▒⌠▒√≤√°²°°²°▀█▀uuudcdTRTLNL_a_▀█▀▀█▀▀█▀jij\Z\\Z\rrr}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┘▀─┘▀нфннфнхиххиххиххиххиххиххиххиххлххлххлххлхцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицциццицциц╥╤╥╛╝╛╛╝╛╥╤╥╥╩╥╥╩╥цаццацхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдцц╬цц╬цц╬ц╥╤╥╛╝╛╥╤╥ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀▀▀╖╚╖╖╚╖╖╚╖цицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥╛╝╛╒═╒▀┘▀▀┘▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀bfg643+)++)++)+#!##!##!#.,.A@AFGFFGFFGFLNLLNLTVT\^\jkjoqouvuuvu}z}─~─├┘├▀█▀▀█▀▒⌠▒√≤√°²°╖╕╖╖╕╖╡╝╡╫╤╫╫╤╫цацхлхнжнчччччччччИИИИИИОООООООООИИИИИИИИИИИИОООООООООИИИДДДДДДччччччьыььыььыьстсхиххиххиххих╫╬╫╫╬╫╡Ё╡╛╝╛╛╝╛╒ё╒√≤√√≤√▀█▀▒⌠▒√≤√√≤√▀█▀uuudcdTRTLNL_a_rsr▀█▀▀█▀xwxjij\Z\gfgrrr}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┘▀╖╕╛нфннфнхиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихциццицциц╥╩╥╥╤╥╥╤╥ц╬цц╬ццаццаццацнфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцнфннфнц╬цц╬ц╛╝╛╛╝╛╛╝╛╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡╟╥}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀─┌──┌──┌──┌──┌─├┬├▀█▀▀▀▀▀▀▀▀▀▀▀▀▀╖╚╖╖╚╖╖╚╖цицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнц╬ц╛╝╛╒═╒▀┘▀▀┘▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀█▀°²°─┌├rsx─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀bfgFJI +)++)++)+#!##!##!#313A@AFGFFGFFGFLNLLNLTVT\^\jkjoqouvuuvu}z}─~─├┘├▀█▀▀█▀▒⌠▒√≤√°²°╖╕╖╖╕╖╡╝╡╫╤╫╫╤╫цацхлхнжнччччччИИИОООООООООООООООТТТТТТТТТТТТООООООООООООИИИДДДДДДДДДччччччьыььыьннннннхиххих╫╬╫╫╬╫╥╧╥╡Ё╡╛╝╛╒ё╒√≤√√≤√▀█▀▀█▀▒⌠▒√≤√▀█▀▀█▀dcdTRTLNLLNLrsr▀█▀▀█▀▀█▀xwx\Z\\Z\rrr}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┘▀нфннфннфнхиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихциц╥╩╥╛╝╛╛╝╛╥╤╥╥╤╥ц╬цц╬ццацнфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннхиххиххихнфннфннфннфн╛╝╛╛╝╛╛╝╛╛╝╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├─┌──┌──┌──┌──┌─├┬├▀█▀▀█▀▀▀▀▀▀▀▀▀▀╖╚╖╖╚╖╖╚╖цицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╛╝╛╒═╒▀┘▀▀┘▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀█▀°²°─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀FJI+-+#!#+)++)++)+#!##!#(&(313A@AFGFFGFFGFLNLLNLTVT\^\jkjoqouvuuvu}z}─~─├┘├▀█▀▀█▀▒⌠▒√≤√°²°╖╕╖╖╕╖╡╝╡╫╤╫╫╤╫цацхлхнжнчччИИИООООООООООООООООООТТТТТТТТТТТТООООООООООООИИИИИИИИИИИИччччччччччччнннннннннхих╫╬╫╫╬╫╫╬╫╥╧╥╛╝╛╒ё╒√≤√√≤√▀█▀▀█▀▒⌠▒√≤√▀█▀▀█▀uuuTRTLNLLNL_a_▀█▀▀█▀▀█▀▀█▀jij\Z\gfgrrr}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххихцфццфццфццфц╛╕╛╛╕╛╛╕╛╛╕╛╛╤╛╛╤╛╛╤╛╛╤╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╝╛╛╝╛╛╝╛╥╧╥╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццаццац╥╩╥╥╩╥╥╤╥╥╤╥╥╤╥нфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫╫╤╫╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╒⌡╒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀▀▀▀┬▀▀┬▀╛╝╛╛╝╛╫╬╫нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╗╛╛╗╛▀█▀▀█▀▀┬▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─mnmmnmDCA+)++)++)++)++)+0.0646;9;FFFIJIIJIIJILNLTTT\[\dbdonorrruvuuvu}z}─~─├┘├▀█▀√≤√°²°°²°°²°°²°╖╕╖╡╝╡╫╤╫╫╬╫хфхснсчжчДДДИИИООООООТТТТТТТТТТТТТЗТТЗТТЗТТЗТЗЗЗТТТТТТООООРООЛООЛООГОИИИДДДччччччьыььыьннннннннн╥╬ц╥╬ц╛╤╫╛╝╛√≤√√≤√▀█▀▀▀├▀▀├▀▀├▀█▀▀█▀▀█▀uwuTZTLJLLJLggguvu}~}}~}}~}mnmLNLLNLmnm}~}─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒⌡╒нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххихцфццфццфццфц╛╕╛╛╕╛╛╕╛╛╕╛╛╤╛╛╤╛╛╤╛╛╤╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╝╛╛╝╛╥╧╥╥╧╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцаццаццаццац╥╤╥╥╤╥╥╤╥ц╬цхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫╫╤╫╫╬╫\^\\^\╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╟╥▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒├┌├├┌├├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀▀▀▀┬▀▀┬▀╛╝╛╛╝╛╫╬╫нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╗╛╛╗╛▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─mnmDCA
-#"#+)++)++)++)+0.0646;9;FFFIJIIJIIJILNLTTT\[\dbdonorrruvuuvu}z}─~─├┘├▀█▀√≤√°²°°²°°²°°²°╖╕╖╡╝╡╫╤╫╫╬╫хфхснсчжччччИИИООООООЗЗЗЗЗЗЗЗЗЗЗЗЗЭЗЗЭЗЗЭЗЗЭЗЗЗЗЗЗЗТТТТТТОРООРООЛООЛОИИИДДДччччччьыььыьнннннннннцфх╥╬ц╛╤╫╛╝╛╒ё╒√≤√▀█▀▀▀├▀▀├▀▀├▀█▀▀█▀▀█▀uwuTZTLJLLJLZXZuvu}~}}~}}~}uvu\^\LNL\^\mnm─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒⌡╒нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххихцфццфццфццфц╛╕╛ONOQTQ╛╤╛╛╤╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╡╝╡╥╧╥╥╧╥цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфнцаццац╥╤╥╥╤╥╥╤╥╥╤╥хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫WTWgegнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╟╥▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒├┌├├┌├├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀▀▀▀┬▀▀┬▀╛╝╛╛╝╛╫╬╫нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╗╛╛╗╛▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─mnmDCA
-+)++)++)++)+0.0646;9;FFFIJIIJIIJILNLTTT\[\dbdonorrruvuuvu}z}─~─├┘├▀█▀√≤√°²°°²°°²°╖╕╖╡╝╡╡╝╡╫╤╫╫╬╫хфхснсчжччччДДДООООООЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЗЗЗЗЗЗЗЗЗТТТОРООРООРООЛОИИИДДДччччччьыььыьнннннннннцфх╥╬ц╛╤╫╛╝╛╒ё╒√≤√▀█▀▀▀├▀▀├▀▀├▀█▀▀█▀▀█▀uwuTZTLJLLJLZXZggg}~}}~}}~}}~}\^\LNLLNL\^\─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╥╟╥нфннфннфнхиххиххиххиххиххиххиххихцдцхиххиххихцфццфццфц▀∙▀      ╛╤╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфх╡╝╡╡╝╡цдццдццдцнннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфнцацц╬ц╥╤╥╥╤╥╥╤╥хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫
-
-
-gegнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╟╥▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┘├├┘├├┘├°∙°├┌├├┌├├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀▀▀▀┬▀▀┬▀╛╝╛╛╝╛╫╬╫нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╗╛╛╗╛▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─uvuDCA
-
-#"#+)++)++)+0.0646;9;FFFIJIIJIIJILNLTTT\[\dbdonorrruvuuvu}z}─~─├┘├▀█▀√≤√°²°°²°°²°╖╕╖╡╝╡╫╤╫╫╤╫╫╬╫хфхснсчжччччДДДИИИОООЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЗЗЗЗЗЗЗЗЗОВООРООРООРОИИИДДДччччччьыььыьнннннннннцфх╥╬ц╛╤╫╛╝╛╒ё╒√≤√▀█▀▀▀├▀▀├▀▀├▀█▀▀█▀▀█▀uwuTZTLJLLJLZXZggg}~}}~}}~}}~}mnm\^\LNLLNLrsr─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀▒≤°нфннфнцаццацхиххиххиххиххиххиххиххихцфццфццфцхфхнфннфннфнOLO            %$%нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхнфнц╬ц╥╤╥╛╝╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфхц╬цц╬ц╛╝╛╛╝╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╤╛ORO        °∙°°∙°хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╡╟╥}┘▀├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒├┌├├┌├├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀╛╝╛╛╝╛ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╖╗╖▀█▀▀█▀▀┬▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀mnm>?>
-
-
-#%##%##%#+,++,+333;9;DBDIJIIJIIJILNLTVT\^\dfdmnmrrrxvx}z}z{z─┌─▀█▀▀█▀√⌠√╒═╒╒═╒╒═╒╖╕╖╡╝╡╫╤╫╫╤╫хфхснсчжччжчьыьДДДООООООТТТЗЗЗЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪОВЪОРТОРТОЛИИГИИГИИГИДчДчжччжчснсхфхнфннфнц╬ц╛╝╛╛╝╛╒ё╒╒ё╒√≤√▀█▀├┬├─┌──┌─▀█▀▀█▀uvuTVTDB;DB;TWQ\b\xux}z}}z}}z}}z}mkmLNLLNL\^_}~▀}~▀}~▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀╖╚╛нфннфнцацнфнхиххиххиххиххиххиххиххихцфццфццфцхфхнфннфннфн#!#            zzzнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхц╬ц╥╤╥╥╤╥ц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфхц╬цц╬ц╛╝╛╛╝╛╥╤╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╤╛          °∙°°∙°хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн}┘▀├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒├┌├├┌├├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╖╗╖▀█▀▀█▀▀┬▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀ruu>?>
-
-
-
-
-
-#%##%#+,++,+333;9;DBDIJIIJIIJILNLTVT\^\dfdmnmrrrxvx}z}z{z─┌─▀█▀▀█▀√⌠√╒═╒╒═╒╒═╒╖╕╖╡╝╡╫╤╫╫╤╫хфххфхснсчжчьыььыьДДДООООООТТТЗЗЗЗЗЗЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЪЗЗЗОВЪОРТОРТОЛИИГИИГИДчДДчДчжччжчснс╫╬╫нфнц╬ц╛╝╛╛╝╛╛╝╛╒ё╒╒ё╒√≤√├┬├─┌──┌──┌─▀█▀▀█▀uvuTVTDB;DB;TWQ\b\rorxux}z}}z}}z}mkm\\\LNLLNLmnrmnr}~▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀╫╬╫нфнцацнфннфнхиххиххиххиххиххиххиххихцфццфццфцхфхнфннфннфн#!#            OROнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╥╤╥╥╤╥ц╬цц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфхц╬цц╬ц╛╝╛╛╝╛╛╝╛ц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╤╛          °∙°°∙°хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн}┘▀├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒├┌├├┌├├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▒⌠▒╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╖╗╖▀█▀▀█▀▀┬▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀x{}>?>
-
-
-#%##%#+,++,+333;9;DBDIJIIJIIJILNLTVT\^\dfdmnmrrrxvx}z}z{z─┌─▀█▀▀█▀√⌠√╒═╒╒═╒╒═╒╖╕╖╡╝╡╫╤╫╫╤╫╫╬╫хфхснсснсннньыьДДДДДДООООООТТТЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗОВЪОРТОРТОГчИГИДчДДчДДчДчжчснсхфх╫╬╫ц╬ц╥╤╥╛╝╛╛╝╛╛╝╛╒ё╒╒ё╒▀█▀─┌──┌──┌──┌─▀█▀▀█▀uvuTVTDB;DB;TWQ\b\mjmxux}z}}z}}z}mkm\\\LNLLNL\^_\^_}~▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀▒≤°╫╬╫нфннфннфннфнхиххиххиххиххиххиххихцдццфццфццфцхфхнфннфннфнOLO           OROнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╫╤╫╥╤╥ц╬цц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхц╬ц╥╤╥╛╝╛╛╝╛╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╤╛        °∙°°∙°хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн√⌡╒├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒├┌├├┌├├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀█▀▒⌠▒°²°╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╖╗╖▀█▀▀█▀▀┬▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀mnm>?>
-
-
-
-
-
-#%#+,++,+333;9;DBDIJIIJIIJILNLTVT\^\dfdmnmrrrxvx}z}z{z─┌─▀█▀▀█▀√⌠√╒═╒╒═╒╒═╒╖╕╖╡╝╡╫╤╫╫╤╫╫╬╫хфххфхснсннньыььыьДДДООООООТТТЗЗЗЗЗЗЗЗЗЗЗЗЗЗЗЪЪЪЗЗЗЗЗЗЗЗЗОВЪОРТОЛИОГчДчДДчДДчДДчДснсхфх╫╬╫╫╬╫╥╤╥╛╝╛╛╝╛╛╝╛╛╝╛╒ё╒√≤√▀█▀─┌──┌──┌──┌─▀█▀▀█▀uvuTVTDB;DB;TWQ\b\mjmrorxux}z}mkm\\\\\\LNLLNLLNLLNL}~▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀хфннфн╥╤╥ц╬цнфнхиххиххиххиххиххиххихцдццдццдццдцхиххфххфххфх╒╕╒▀∙▀╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡Ё╡╛╟╛╛╟╛╫╩╫╫╩╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциц╫╬╫╫╬╫╫╬╫╡╟╡цфццфццфццфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫ZWZ        ╫╤╫╫╤╫хиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххихнфннфн╫╩╫°╕°├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀√≤√╛╝╛хфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╛╝╛╛╝╛°²°▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒√⌡√°╕°√⌡√▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru
-
-
-#"#+,+353353A?AFDFLJLLJLLNLTVT\^\dfdmnmrrrxvx}z}}z}─~─├┘├▀█▀√≤√°²°°²°°²°╖╚╖╡╟╡╫╤╫╫╤╫╥╤╥ц╬цнфннфнстсстсстсстсДДДОООООООООООООООООООООООООООООООООДДДДДДДДДДДДстсстсстсхихцдццдццдц╥╧╥╛╝╛╛╝╛╛╝╛╖╗╖°╕°√⌡√▒░▒▒░▒}~}}~}}~}─┌─}~}}~}gggQPQ313DCDTTTdfduvuuvuuvujkjdfdZZZZZZONOLJL\[\\[\}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀╒╕╛хфннфнц╬цнфннфнхиххиххиххиххиххиххиххихцдццдцхиххиххфххфххфххфхZXZOLO╥╤╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡Ё╡╡Ё╡╛╟╛╛╟╛╛╟╛╛╟╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫╬╫╫╬╫╫╬╫╖ё╖цфццфццфццфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫        ╫╤╫╫╤╫╫╤╫хиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххихнфннфннфннфн├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀╒ё╒╛╝╛хфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╫╬╫╛╝╛°²°▀┬▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√⌡√√⌡√√⌡√▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruFDF#"##"#+,+353;9;FDFLJLLJLLNLTVT\^\dfdmnmrrrxvx}z}}z}─~─├┘├▀█▀▒⌠▒√≤√°²°°²°°╕°╖╚╖╡╟╡╡╟╡╥╤╥╥╤╥ц╬цнфнстсстсстсстсьыьДДДДДДОООИИИИИИИИИИИИДДДДДДДДДДДДДДДьыььыььыьстсстсхиххихцдццдц╥╧╥╥╧╥╛╝╛╛╝╛╛╝╛╒ё╒°╕°√⌡√▒░▒▒░▒}~}}~}─┌──┌─}~}}~}ggg;9;313DCDTTTdfduvuuvuuvu_a_ZZZONODBDDBDLJL\[\mmm}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀хфнхфнц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫╤╫ZXZOLO°∙°нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡Ё╡╡Ё╡╡Ё╡╫╩╫╛╟╛╛╟╛╛╟╛╛╝╛╥╤╥ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫╬╫╫╬╫╡╟╡╖ё╖╖╝╖цфццфццфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫ZWZDFD╫╤╫╫╤╫╫╤╫╫╤╫хиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххихнфннфннфннфн├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀╛╝╛╛╝╛хфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╫╬╫╛╝╛°²°▀┬▀▀▀▀▀█▀▀█▀▀█▀▒░▒▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√⌡√√⌡√√⌡√▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruuruFDF#"#+,++,+;9;A?ALJLLJLLNLTVT\^\dfdmnmrrrxvx}z}}z}─~─├┘├▀█▀▀█▀√≤√°²°°²°°╕°°╕°╖╚╖╡╟╡╛╝╛╥╤╥ц╬цц╬цхиххиххиххихннньыььыьДДДДДДДДДДДДДДДДДДДДДДДДДДДьыььыььыььыьстсхиххиххихцдц╥╧╥╥╧╥╥╧╥╛╝╛╛╝╛╖╗╖╒ё╒°╕°▒░▒▒░▒▒░▒}~}─┌──┌──┌─}~}}~}QPQ;9;313DCDTTTdfduvuuvujkj_a_ONODBDDBDDBD\[\mmm}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀хфнхфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫╤╫╫╤╫╫╤╫╫╤╫°∙°°∙°°∙°°∙°нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡Ё╡╡Ё╡╡Ё╡╡Ё╡╫╩╫╫╩╫╫╩╫╫╩╫╥╤╥╛╝╛╛╝╛╛╝╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫╬╫╫╬╫╖ё╖°∙°╖╝╖╖╝╖цфццфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫╫╤╫▀█▀DFD▀█▀▀█▀╫╤╫╫╤╫╫╤╫╫╤╫хиххиххиххиххиххиххиххихцицхлххлххлххиххиххиххихнфннфннфннфн├┌├├┌├├┌├├┌├─┌──┌─√≤√√≤√─┌──┌─├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀√≤√╛╝╛хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╫╬╫╛╝╛°²°▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌡√√⌡√▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruuruuru#"##"#+,+;9;A?AFDFLJLLNLTVT\^\dfdmnmrrrxvx}z}}z}─~─├┘├▀█▀▀█▀▒⌠▒√≤√°²°°╕°°╕°╖╚╖╡╟╡╛╝╛╥╤╥╥╤╥ц╬цхиххиххиххихннннннннньыьччччччччччччьыььыььыььыьннннннннннннхиххиххиххих╥╧╥╥╧╥╥╧╥╥╧╥╛╝╛╛╝╛╒ё╒°²°√⌡√▒░▒▒░▒▒░▒}~}─┌──┌──┌─}~}gggQPQ;9;313DCDTTTdfduvuuvu_a_TVTDBDDBDDBDDBDmmm}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├нфннфнцдцхиххиххиххиххиххиххиххиххиххихцдццдцхиххиххиххиххиххиххиххлххлххлхциц╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцац╥╩╥╥╩╥нфнхиххиххиххих╡╤╡╡╤╡╡╤╡╡╤╡╥╤╥╥╤╥ц╬цц╬цнфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфнц╬ц╛╝╛╥╤╥ц╬цнфн╥Ё╥╥Ё╥╥Ё╥нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх}┘▀}┘▀}┘▀}┘▀├┌├▒░▒├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╛╤╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀√∙√√∙√√∙√▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├DCD#!##!#313;9;DBDDBDLJLTRQdb\db\jkjoqouvuuvuzz}─~}▀┘}▀┘}├▀├▒░▒°∙°°∙°╒²╒╖╕╖╛╝╛╛╝╛╡╝╡╡╝╡╡╝╡╡╝╡цдццдццдццдцнфннфннфннфнчжнчжнчжнчжннннннннннннннннннннннннн╫╬╫╥╧╥╥╧╥╡Ё╡╛╝╛╛╝╛╛╝╛╛╝╛╛╕°╛╕°╒²√√∙▒▀█▀─┌──┌─z{zuvuuvu─~──~─mnmZZZFFF313353IKI_a_uvumnmmnm\\\LKL;9;;9;;9;\Z\}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├нфннфнцдцхиххиххиххиххиххиххиххиххиххиххихцдцхиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╩╥╥╩╥цацнфнхиххиххиххиххфххфххфххфх╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥ц╬цнфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнц╬цнфнц╬ц╥╤╥╛╝╛ц╬цнфннфннфн╥Ё╥╥Ё╥╥Ё╥нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх▒∙°}┘▀}┘▀}┘▀├┌├▒░▒├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╥╩╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╝╛╛╝╛▒⌠▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀√∙√√∙√√∙√▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├DCD#!#+)+;9;DBDDBDLJLTRQ\ZWdb\dfdoqouvuuvuzz}zz}─~}▀┘}├▀├├▀├▒░▒°∙°╒²╒╒²╒╖╕╖╛╝╛╡╝╡╡╝╡╡╝╡╡╝╡╥╧╥╥╧╥цдццдцц╬цц╬цц╬цц╬цнлцнлцнлцнлццдццдццдццдццдццдццдццдц╥╧╥╡Ё╡╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╖╗╖╛╕°╛╕°╒²√▀█▀▀█▀─┌──┌─z{zuvuuvu─~──~─mnmZZZFFF313353IKIuvuuvumnm\\\\\\LKL;9;;9;;9;}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├нфннфнцдцхиххиххиххиххиххиххиххиххиххиххихцдцхиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╩╥╥╩╥цацнфнхиххиххиххиххфххфххфххфхц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╛╝╛╥╤╥ц╬цхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥╛╝╛╛╝╛╥╤╥╥╤╥нфннфннфннфн╥Ё╥╥Ё╥╥Ё╥нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╖╕╛}┘▀}┘▀}┘▀├┌├▒░▒├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╥╩╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛√≤√▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀√∙√√∙√√∙√√∙√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuDCD+)+313DBDDBDLJLLJLTRQdb\dfdjkjuvuuvuuv}zz}─~}─~}}┘}├▀├▒░▒▒░▒°∙°╒²╒╖╕╖╖╕╖╖╕╖╖╕╖╖╕╖╖╕╖╛╝╛╛╝╛╥╧╥╥╧╥╥╤╥╥╤╥╥╤╥╥╤╥╫а╥╫а╥╫а╥╫а╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╥╧╥╡Ё╡╛╝╛╛╝╛╛╝╛╛╝╛╖╗╖╒ё╒°²°╛╕°╒²√√∙▒▀█▀▀█▀─┌──┌─uvuuvuuvu─~──~─mnmFFF313313353_a_uvuuvu\\\\\\LKL;9;;9;;9;\Z\}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├нфннфнцдцхиххиххиххиххиххиххиххиххиххиххихцдцхиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╥╩╥╥╩╥нфннфнхиххиххиххиххфххфххфххфхц╬цц╬цц╬цц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╫╤╫ц╬цхфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╥╤╥╥╤╥ц╬цц╬цнфннфннфннфн╥Ё╥╥Ё╥╥Ё╥нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫╤╫}┘▀}┘▀}┘▀├┌├▒░▒├┌├├┌├─┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛цацнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛°²°▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀√∙√√∙√√∙√√∙√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvu+)+313;9;DBDLJLLJLLJL\ZWdfdjkjoqouvuuv}zz}zz}─~}}┘}├▀├├▀├▒░▒°∙°╒²╒╒²╒╖╕╖╖╕╖╖╕╖╖╕╖╖╕╖╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╤╛╛╤╛╛╤╛╛╤╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╒ё╒°²°°²°╒ё╒╒²√√∙▒▀█▀▀█▀▀█▀─┌─z{zuvuuvuuvu─~──~─ZZZFFF313313IKI_a_uvuuvu\\\LKLLKL;9;;9;\Z\}z}}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀╡╟╥нфннфнцицхлххлххлххиххиххиххихнфннфнхфххфхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛цдццдццдцхиххиххиххиххиххиххиххиххиххлххлххлхциц╥╤╥╥╤╥╥╤╥ц╬ц╥╤╥╥╤╥╥╤╥╥╤╥нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╛╝╛╛╝╛╛╝╛╛╝╛╫╬╫хиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╡Ё╡цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфц}┘▀}┘▀}┘▀├┌├▒░▒├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀°²°╛╝╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╒ё╒▀█▀▀█▀▀█▀√⌠√√⌠√√⌠√√⌠√▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}z}}z}WTW ! .-.;9;;9;DCDLLLTVTTVT\^\dfdmnmmnmxvxzzz}~}}~}─~─├┘├▀█▀▀█▀°²°°²°°²°°²°╒²╒╒²╒╒²╒╒²╒╖╕╖╖╕╖╖╕╖╖╕╖╖╗╖╖╗╖╖╗╖╖╗╖╛╝╛╛╝╛╛╝╛╛╝╛╖╕╖╖╕╖╖╕╖╖╕╖╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛╛╕╛°²°°²°°²°°²°▀█▀▀█▀▀█▀▀█▀}~}}~}xyxmnmuvuuvuuvuuvuTST353353DDDmnmmnmmnmbbbTTTDCD313313DJD}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀╡╟╥нфннфнхлххлххлххлххиххиххиххихнфннфнхфххфхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╝╛цдццдццдцхиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфнц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥ц╬цц╬цц╬цц╬цнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╥╤╥╛╝╛╛╝╛╛╝╛ц╬цхиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╖╗╖цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфц}┘▀}┘▀}┘▀├┌├▒░▒├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀°²°╛╝╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╝╛╛╝╛▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒√≤√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}z}}z}WTW0.0 ! .-..-.DCDDCDLLLTVTTVTdfdmnmmnmuruxvxzzzzzz}z}─~─├┘├├┘├▒⌠▒▒⌠▒°²°°²°╒²╒╒²╒╒²╒╒²╒╖╕╖╖╕╖╖╕╖╖╕╖╒ё╒╒ё╒╖╗╖╖╗╖╒╕╖╒╕╖╒╕╖╒╕╖╖╕╖╖╕╖╖╕╖╖╕╖╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒▒⌠▒▒⌠▒▒⌠▒▒⌠▒├┘├├┘├├┘├├┘├}~}xyxmnmmnmuvuuvuuvubcbDDD353353DDDmnmmnmmnmWVWTTTDCD313DCDW[W}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀╡╟╥нфннфнхлххлххлххлххиххиххиххихнфннфнхфххфхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╝╛цдццдццдцхиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфнц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥цацнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцц╬ц╥╤╥╥╤╥╥╤╥╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╖╗╖цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфц}┘▀}┘▀}┘▀├┌├▒░▒├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╝╛╛╝╛▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}z}}z}}z}WTW ! .-.;9;DCDLLLLLLTVT\^\mnmmnmuruuruxvxzzz}z}}z}─~─├┘├├┬├├┬├▒⌠▒▒⌠▒√∙√╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒°²°°²°╒ё╒╒ё╒√²╒√²╒√²╒√²╒╒²╒╒²╒╒²╒╒²╒╒²╒╒²╒√∙√√∙√√∙√√∙√√∙√√∙√├┬├├┬├├┬├├┬├├┘├├┘├─~──~─xyxrsrmnmmnmuvuuvuuvuOPO353353353TSTmnmmnmbbbWVWDCD313313TTTW[W}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀нфннфннфнхлххлххлххлххиххиххиххихнфннфнхфххфхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥цдццдццдцхиххиххиххиххиххиххиххиххиххлххлххлххлхнфннфннфннфннфн╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╛╤╛╥╩╥╥╩╥цацхиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╥╤╥╥╤╥╥╤╥╥╤╥нфннфннфннфнхиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╖╗╖цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфц}┘▀}┘▀}┘▀├┌├▒░▒├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥╛╝╛▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}z}}z}}z}}z}313 ! .-.;9;DCDDCDLLLTVT\^\dfdmnmuruuruxvxzzz}z}}z}─~─├┘├├┬├├┬├├┬├├┬├▀█▀▀█▀√∙√╒²╒°∙°°∙°°∙°°∙°°²°°²°°²°°²°▀∙°▀∙°▀∙°▀∙°°∙°°∙°°∙°°∙°▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┬├├┬├├┬├├┬├}z}}z}}z}}z}rsrmnmmnmmnmuvuuvubcb;=;353353DDDdbdmnmmnmWVWLJLDCD313DCDdfdjmj}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфнхиххиххиххиххиххиххиххихнфннфнхфххфхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╩╥╥╩╥цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╫╬╫╥╧╥╥╧╥╥╧╥╥╧╥╫╬╫хиххиххиххиххиххиххихнфннфннфннфн╥╧╥╥╧╥╥╧╥╡Ё╡╛╤╛╛╤╛╛╤╛цацхиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╛╕╛цфццфццфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╟╥▀┘▀▀┘▀▀┘▀°²°├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▀█▀▀█▀╖╗╖╖╗╖╖╗╖цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннин╛╝╛╛╝╛√≤√▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├LOQ
-
-
-
-
-
-
-	
-#!#.,.878DBDDBDLLLTWT\b\\b\jijooouvuuvuxwxxwxxwxxwx─~──~──~─├┘├├┬├├┬├├┬├├┬├▒█▒▒█▒▒█▒▒█▒▀∙▀▀∙▀▀∙▀▀∙▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀─┌──┌──┌──┌──┌──┌──┌──┌─}~}}~}}~}}~}}z}}z}}z}}z}jjjonouruurumnmmnmZZZ313313FDFZWZmjmdbddbdTRTDBD353353LNL}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфнхиххиххиххиххиххиххиххихнфннфнхфххфхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╩╥╥╩╥цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫╥╧╥╥╧╥╥╧╥╥╧╥╫╬╫хиххиххиххиххиххиххихнфннфнцац╥╩╥╥╧╥╥╧╥╥╧╥╥╧╥╥╩╥цаццацнфнхиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╛╕╛цфццфццфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн▀┘▀▀┘▀▀┘▀°²°├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒╖╗╖╖╗╖╖╗╖цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннин╫╩╫╛╝╛╒ё╒▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀LOQ
-
-
-
-	
-#!#.,..,.878DBDDBDLLL\b\\b\jijjijooouvuxwxxwxxwxxwx─~──~──~──~─├┬├─┌──┌──┌─▒█▒▒█▒▒█▒▒█▒├█├├█├├█├├█├├┘├├┘├├┘├├┘├├┘├├┘├├┘├├┘├─┌──┌──┌──┌──┌─z{zz{zz{zxwxxwxxwxxwx}z}usuusummmjjjjjjonourumnmZZZ313313313ZWZmjmmjmdbddbdTRT313353LNLdfd}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфнхиххиххиххиххиххиххиххихнфннфнхфххфхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╩╥╥╩╥цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххиххиххиххихцац╥╩╥╥╩╥╥╩╥╥╧╥╥╧╥╥╧╥╥╧╥цацнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╛╕╛цфццфццфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн▀┘▀▀┘▀▀┘▀°²°├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒√⌠√╖╗╖╖╗╖╖╗╖цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихниннинниннин╛╝╛╒ё╒▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀LOQ
-
-
-#!##!#.,.878878DBDDBDTWT\b\dbdjijoooooorurxwxxwxxwx}z}}z}─~──~──┌──┌──┌──┌─├┘├├┘├├┘├├┘├─┘──┘──┘──┘─├┘├├┘├─~──~─├┘├├┘├─~──~──┌──┌──┌─z{zz{zz{zz{zz{zxwxxwxxwxxwxusummmmmmdfddfdjjjonoonoZZZFFF313313FDFZWZmjmmjmdbdTRTDBD313353dfd}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфнхиххиххиххиххиххиххиххихнфннфнхфххфхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╩╥╥╩╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххиххиххих╫╬╫╥╩╥╥╩╥╥╩╥╥╩╥╥╧╥╥╧╥╥╧╥╥╧╥нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╛╕╛цфццфццфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн▀┘▀▀┘▀▀┘▀°²°}z}├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒╖╗╖╖╗╖╖╗╖цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихниннинниннин╛╝╛╒ё╒▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀LOQ
-	
-#!##!#.,..,.878DBDDBDLLL\b\dbdjijjijooorurrurxwxxwx}z}}z}}z}─~─}~}}~}}~}}~}}~}}~}}~}}~}}~}}~}}~}}~}}z}}z}}z}}z}}z}}z}}z}}z}─┌─z{zuvuuvuuvuuvuuvuuvurqrrqrrqrrqrdfddfddfddfddfdjjjjjjonoFFF313313313ZWZmjmmjmmjmTRTDBD313313LNL}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀нфннфннфнхиххиххиххиххиххиххиххиххлххлххлхцицхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдц╫╬╫цаццаццаццацнфнц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╛╤╛╥╩╥цацнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихц╬цхфхц╬ц╫╤╫╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн√²╒}┘▀}┘▀°∙°▒█▒├┘├├┘├─┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╚╛╫╧╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциц╛╝╛╛╝╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒▀▒▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀313				#$#+-++-+;;;DDDLNLLNLWWTba\mjdmjdoooooooooooouvuuvuuvuuvuuvuuvuuvuuvuuvuuvuuvuuvu}zu}zu}zu}zuuvuuvuuvuuvuuvuuvuuvuuvuoooooooooooomnmmnmmnmmnmmjmmjmmjmmjm_^__^__^__^_dfddfddfdQRQ313313313FFFdb_urmurmdb_IKI353353IKIjko─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀нфннфннфнхиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццаццаццаццацц╬ц╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥ц╬ццацнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╫╤╫╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╡╤╥}┘▀}┘▀°∙°▒█▒├┘├├┘├─┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╚╛╫╧╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╛╝╛╛╝╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒▀▒▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀OLO			#$#+-+;;;;;;DDDLNLWWTWWTba\mjdooojijjijjijoooooouvuuvurrrrrrrrrrrrrrrrrrrrrrrrusousousousooqooqooqooqooqooqooqooqoooojijjijjijggggggggggggmjmdcddcd\\\ZZZZZZ_^__^_dfddfdQRQ>=>313313FFFZZZurmurmdb_TRQIKI353353_a_─┌├─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀нфннфннфнхиххиххиххиххиххиххиххиххлххлххлххлхцдцхиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцаццаццац╥╩╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥ц╬цнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╫╤╫╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╡╤╥}┘▀}┘▀°∙°├┘├├┘├├┘├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒°²°╛╚╛╫╧╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╛╝╛╛╝╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒▀▒▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀jgj>=>		#$##$#313;;;DDDDDDLNLWWTba\ba\jijjijjijjijjijjijoooooorrrrrronoonoonoonoonoonommjmmjmmjmmjoqooqojkjjkjjkjjkjjkjjkjjijjijjijjijbabbabbabbabdcd\\\\\\TVTTVTTVTZZZZZZdfdQRQ>=>+)+313313ZZZmnmurmdb_TRQTRQ353353IKIuvu─┌├─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀нфннфннфнхиххиххиххиххиххиххиххиххлххлххлххлхцдццдцхиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцаццац╥╩╥╥╩╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥нфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфхц╬ц╫╤╫╛╝╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╡╤╥}┘▀}┘▀▒█▒├┘├├┘├├┘├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒°²°╛╚╛╫╧╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╛╝╛╛╝╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒▀▒▒▀▒▒▀▒├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀mjm		#$#313;;;;;;DDDLNLWWTWWTba\dbddbddbddbdjijjijjijjijmjmmjmmjmmjmmjmmjmmjmmjmdfddfddfddfddfddfddfddfddfddfddfddfddbddbddbddbd\Z\\Z\\Z\\Z\TVTTVTTVTTVTTVTTVTTVTTVTQRQ>=>+)++)+313FFFmnmmnmurmdb_DBDDBD353353uvuuvu─┌├─┌├─┌├─┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├нфннфннфнхиххиххиххиххиххиххиххиххиххиххихцдццдццдццдцхиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнцац╥╩╥╥╩╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╩╫╫╩╫╫╩╫╫╩╫╥╤╥╥╤╥╥╤╥╥╤╥╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬цц╬ц╥╤╥╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнцфццфццфццфцхиххиххиххиххиххиххиххиххиххиххиххихнфн╒⌡╒▀┘▀╒⌡╒▀█▀├┬├─┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀╛╟╛╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛╛╝╛°²°▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀%&(#!#!#!+,+333;9;;9;DCDLLLTVTTVT\XWd^\d^\d^\dfddfddfddfdmjdmjdmjdmjddfddfddfddfddfddfddfddfddfddfddfddfddbddbddbddbd\^\\^\\^\\^\WVWWVWWVWWVWTVTTVTTVTTVTTVTTVTTVTTVT+-++-++-++-+LNLmnm}~}mnm\^\\^\ACA353313LLO}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххихцдццдцхиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнцац╥╩╥╥╩╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнин╫╩╫╫╩╫╫╩╫╥╤╥╥╤╥╥╤╥ц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬цц╬ц╥╤╥╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнхфхцфццфццфццфцхиххиххиххиххиххиххиххиххиххиххиххихнфн╒⌡╒▀┘▀╒⌡╒▀█▀├┬├─┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀╛╟╛╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛╛╝╛°²°▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀QTW%&(
-
-
-#!#!+,++,+333;9;;9;DCDLLLLLLTSQ\XW\XWd^\_a__a__a__a_debdebdebdebbbbbbbbbbbbb_a__a__a__a__a__a__a__a__\__\__\__\_ZXWZXWZXWZXWWVWQRQQRQQRQTVTOPOOPOOPOTVTFGFFGF888+-++-++-+DFDmnm}~}}~}\^\OPOOPOACA353LLOdgj}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнцац╥╩╥╥╩╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнин╫╩╫╫╩╫╫╩╫╥╤╥╥╤╥╥╤╥ц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬цц╬ц╛╝╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхцфццфццфццфцхиххиххиххиххиххиххиххиххиххиххиххихнфн╒⌡╒▀┘▀╒⌡╒▀█▀─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▒⌠▒╛╟╛╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛╛╝╛▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀QTW%&(#!#!#%#+,+333333;9;;9;DCDLLLLNLTSQTSQ\XWZ[ZZ[ZZ[ZZ[Z\__\__\__\___^__^__^__^__a__a__a__a_Z[ZZ[ZZ[ZZ[ZZWZZWZZWZZWZZXWZXWWSQWSQQRQQRQQRQQRQOPOOPOOPOIKIFGF888888+)++-++-+DFD\^\}~}}~}mnm\^\OPOACA353ACAdgj}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнцац╥╩╥╥╩╥цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнин╫╩╫╫╩╫╫╩╫╥╤╥╥╤╥╥╤╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╛╝╛╛╝╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнхфххфххфххфххфххфххфхцдцхиххиххиххиххиххиххиххиххиххиххихнфн╒⌡╒▀┘▀╒⌡╒├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▒⌠▒°²°╛╟╛╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛°²°▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀%&(
-
-
-
-
-
-#!#%#+,++,+333;9;;9;DCDLLLLNLLNLLNLTSQTVTTVTTVTTVTTZ\TZ\TZ\TZ\\Z\\Z\\Z\\Z\Z[ZZ[ZZ[ZZ[ZZ[ZZ[ZZ[ZZ[ZTRTTRTTRTTRTTNLTNLTNLTNLLNLLNLLNLLNLOPOOPOIKIIKI+)++)++)++)++-+DFD\^\uvu}~}mnm\^\\^\ACA353353OPO}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╥╟╥нфннфнхиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥╥╤╥╥╤╥ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╤╥╥╤╥╛╝╛╛╤╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхиххихцдццдццдцхиххиххиххиххиххиххиххиххиххиххих╫╬╫▒⌠▒▒⌠▒▒⌠▒─┌──┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀√≤√╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╛╝╛╛╝╛°²°▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}TRT(&((&(313313353898898898FDFFDFFDFFDFTVTTVTTVTTVTTVTTVTTVTTVTTRTTRTTRTTRTTRTTRTTRTTRTONOONOONOONOLNLLNLLNLLNLLNLLNLLNLLNLLJLLJLLJLLJLDBD888888...+)++)++)++)+LJLZXZuvuuvumnm\^\\^\LNL353353353dfd├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╥╟╥нфннфнхиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥╥╤╥╥╤╥ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╛╝╛╥╩╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххихцдццдццдцхиххиххиххиххиххиххиххиххиххиххих╫╬╫▒⌠▒▒⌠▒▒⌠▒├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀╒ё╒╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╫╬╫╛╝╛°²°▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}bab8;8(&((&(313313353898898898A?AA?AFDFFDFLNLLNLLNLLNLOOOOOOOOOOOOONOONOONOONOONOONOONOONOONOIJIIJIIJIIKIIKIIKIIKILNLLNLLNLLNLLJLLJLLJL>=>888...#%##%#+)++)++)+;9;ZXZggguvuuvumnm\^\LNLLNL353353dfd}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╥╟╥нфннфнхиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥╥╤╥╥╤╥ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╛╝╛╥╩╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххихцдццдццдцхиххиххиххиххиххиххиххиххиххиххих╫╬╫▒⌠▒▒⌠▒▒⌠▒├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀╛╝╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╫╬╫╛╝╛°²°▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}ooodjd8;8(&((&(313353898898898;9;;9;A?AA?ADFDDFDDFDDFDIHIIHIIHIIHIIJIIJIIJIIJIIJIIJIIJIIJIIJIIJIIJIIJIFHFFHFFHFFHFFGFFGFFGFFGFLJL>=>010#%#...#%##%##%#+)+;9;LJL\Z\ggguvuuvuuvu\^\LNLLNL;=;353LNL}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀нфннфннфнхиххиххиххиххиххиххиххиххлххлххлхцицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцхиххиххихнфннфнц╬ц╛╝╛╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥╥╤╥╥╤╥ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╛╝╛цацнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххихцдццдцхиххиххиххиххиххиххиххиххиххиххих╫╬╫}~}▒⌠▒▒⌠▒├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀√≤√╛╝╛╛╝╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╫╬╫╛╝╛°²°▒░▒▒░▒▒░▒°∙°√⌠√√⌠√√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}}~}djd8;8(&((&(313898>=>>=>>=>;9;;9;;9;;9;;=;;=;;=;;=;DBDDBDDBDDBDDFDDFDDFDDFDDFDDFDDFDDFDDFDDFDDFDDFDDFDDFDDFDDFDA@AA@AA@AA@A010#%##%#010#%##%##%##%#LJL\Z\\Z\\Z\uvuuvuuvuuvu\^\LNL;=;;=;353LNL}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╥╩╥╥╩╥цаццацхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╥╤╥╥╤╥╥╤╥хиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццдцхиххиххиххиххиххиххиххиххиххиххих╛╤╛▀∙√▀∙√▀∙√─┌──┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀╒ё╒╛╝╛ц╬цхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√√⌠√√⌠√▒░▒▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}TVT+-+#!##!#898DFDDFDDFDDCDDCDDCD;9;8;;353353353;9;;9;;9;;9;;=;;=;;=;;=;;=;;=;;=;;=;;9;;9;;9;;9;;93;93;93;93353353353353#%##%##%##%#313313DBATRO_\_dbddbddbduruurugfgZZZQOQQOQ><>+)+DJLjmm}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╥╩╥╥╩╥цаццацхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╥╤╥╥╤╥ц╬цхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххих╛╤╛▀∙√▀∙√▀∙√├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀╒ё╒╛╝╛ц╬цхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╝╛╛╝╛▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}TVT#!#.-.898DFDDFDLLLLLLLLLDCD>@D8;;3533536560100100106860300300306760000000006460.00.00.031.+)(+)(+)(...(((((((((#%##%##%#.1.DBATROTROdb\ZWZ_\_dbddbduruurugfgLNLQOQ><>+)+><>jmm}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╩╥╥╩╥цаццацхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╥╤╥╥╤╥ц╬цхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххих╛╤╛▀∙√▀∙√▀∙√├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀╒ё╒╛╝╛ц╬цхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}+-+#!#898DFDDFDLLLLLLLLLLLLDFL>@D8;;353+-++-++-+010+-++-++-++-++)++)++)++)++)++)++)++)+#!##!##!##!##!##!##!#(((#%#.1.8=8DJDTROdb\db\db\TRT_\_dbddbdurugfgZZZLNL><>+)++)+QOQ}~}}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╩╥цаццаццацхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╥╤╥╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╥╤╥╥╤╥╥╤╥нфнхиххиххиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххих╛╤╛}┘▀▀∙√▀∙√├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀╒ё╒╛╝╛ц╬цхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛°²°▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}TVT#!#.-.898DFDLLLLLLLLLLLLDFLDFL>@D>@D656656656656+-++-++-++-++)++)++)++)++)++)++)++)+#!##!##!##!#............8=8DJDDJDDJDTROTROTROTROTRTZWZ_\_dbdgfgZZZLNLLNL><>+)+><>dbd}~}}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬цц╬цц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╤╥╥╤╥╥╤╥╛╝╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннцдццдц╥╧╥╛╝╛╛╝╛ц╬цнфнхлххлххлххлхцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих▀⌠√╛╝╛╛╝╛▀⌠√─┌──┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀╒ё╒╛╝╛цицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╩╫нин╫╩╫╛╝╛╒ё╒▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├xwx>BD
-
-
-#%##%#353353DFDDFDDJLDJLDJLDJLA?>A?>A?>A?>;9;;9;;9;;9;353353353353333333333333313313313313;=;;=;;=;;=;LJLLJLLJLLJL8;8DFDDFDDFDWVQdb\db\db\LRLLRLADA676353353WXWz{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬цц╬цц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╤╥╥╤╥╥╤╥╥╤╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннцдццдц╥╧╥╛╝╛╥╤╥нфннфнхлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих}┘▀╛╝╛╛╝╛▀⌠√├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀√≤√╛╝╛╛╝╛хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннин╛╝╛╛╝╛▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├mru>BD
-
-
-#%##%#3533533538=>8=>8=>8=>A?>A?>A?>A?>;9;;9;;9;;9;353353353353333333333333313313313313;=;;=;;=;;=;><>><>><>><>.0.8;88;8DFDIJFWVQWVQdb\LRLLRLADA+)+353WXWz{zz{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥ц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╤╥╥╤╥╥╤╥╥╤╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннцдццдц╛╝╛╛╝╛╥╤╥нфннфнхлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих}┘▀╛╝╛╛╝╛▀⌠√├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀▀█▀√≤√╛╝╛╛╝╛хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнинниннин╛╝╛╛╝╛▀█▀▀█▀▀█▀√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├mru>BD
-
-
-#%##%##%##%#.10.10.10.106406406406403333333333333533533533533333333333333133133133130100100100100.00.00.00.0#%#.0..0.8;8;=;IJFIJFWVQLRLADA676+)+353z{zz{zz{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬цц╬цц╬ццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╝╛╥╤╥╥╤╥ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннцдц╥╧╥╛╝╛╥╤╥ц╬цнфннфнхлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫▀⌠√╛╝╛╛╝╛▀⌠√├┬├─┌──┌──┌──┌─├┬├▀█▀▀█▀√≤√╒ё╒╛╝╛╛╝╛хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихниннин╫╩╫╛╝╛╛╝╛▀█▀▀█▀▀█▀√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├mrumru>BD#%##%##%##%##%#+)#+)#+)#+)##%##%##%##%#%&%%&%%&%%&%#%##%##%##%#%%%%%%%%%%%%%%%%%%%%%%%%#!##!##!##!##%##%##%#.0.;=;;=;;=;IJFADA676+)++)+WXWz{zz{zz{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфх╡╤╡ц╬цц╬цц╬цхфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡╤╡╡╤╡╡╤╡╡╤╡цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфнц╬ц╥╤╥╛╝╛цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╟╥°═°╛Ё╛°═°▀█▀─┌──┌──┌──┌─▀┘▀▀┬▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнц╬ц╛╝╛√≤√▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀─┘▀─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀;?>
-
-
-
-  %$%+)+333;<;DFDLJL313313313djm─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфхц╬цц╬цц╬цц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфх╡╤╡╡╤╡╡╤╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╛╝╛╛╝╛╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╒⌡╒╛Ё╛╛Ё╛╛Ё╛▀█▀─┌──┌──┌──┌─▀┬▀▀▀▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥╛╝╛╒ё╒▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀√∙°─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀\ab;?>
-
-  %$%+)+333;<;DFDLJL313313dbd─┘├─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫╤╫╫╤╫ц╬цц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфх╡╤╡╡╤╡╡╤╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╥╤╥╥╤╥ц╬цц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╒⌡╒╛Ё╛╛Ё╛╛Ё╛▀█▀├┬├├┬├├┬├├┬├▀▀▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥╛╝╛╒ё╒▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀√∙°─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀\ab(&(  %$%+)+333;<;;<;DFD313313313}z}─┘├─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫╤╫╫╤╫╫╤╫ц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфх╡╤╡╡╤╡╡╤╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╥╤╥╥╤╥ц╬цц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╒⌡╒╛Ё╛╛Ё╛°═°▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥╛╝╛╒ё╒▀█▀▀█▀▒⌠▒▒⌠▒▒⌠▒▒⌠▒√≤√▒⌠▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀√∙°─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀LJL(&(#!#  %$%+)+333;<;DFDDFD313313dbd}z}─┘├─┘├─┘├─┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─ницницницницхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╥╤╥╥╤╥ц╬цнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╥╤╥╥╤╥╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдц╥╧╥╡Ё╡╡Ё╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒▀█▀╛╝╛√≤√▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒°²°°²°╡╟╡хдххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╛╝╛╛╝╛√≤√▀█▀▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├bfgFJI+-++-+(&((&((&((&(+)++)++)++)++*++*++*++*+#%##%##%##%##$%#$%#$%#$%#!##!##!##!##!##!##!##!##!#!#!#!313313313313;=;QTTgkm}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─ницницницницхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╥╤╥ц╬цц╬цнфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфц╥╤╥╥╤╥╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╥╧╥╥╧╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн▀█▀▀█▀╛╝╛√≤√▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒°²°°²°╡╟╡хдххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛▀█▀▀█▀▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀bfgbfg\\\\\\\\\\\\WTWWTWWTWWTWWTWWTWWTWWTWTTTTTTTTTTTTOPOOPOOPOOPOLOQLOQLOQLOQLLOLLOLLOLLOIJIIJIIJIIJIDDFDDFDDFDDFDDADDADDADDA>@>>@>>@>>@>LKLLKLLKLLKLgkm}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─ницницницницхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнц╬ц╥╤╥ц╬цц╬цц╬цхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфц╥╤╥╥╤╥╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╥╧╥╥╧╥╥╧╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒▀█▀╛╝╛√≤√▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒°²°╡╟╡хдхчжчхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛√≤√▀█▀▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}~}}~}}~}}~}▀┘▀▀┘▀▀┘▀▀┘▀├├├├├├├├}~}}~}}~}}~}z{zz{zz{zz{zuz}uz}uz}uz}uwzuwzuwzuwzuvuuvuuvuuvudgjdgjdgjdgjdggdggdggdggbcbbcbbcbbcbdeddeddedded}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─╛╚╖ницницницхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╛╝╛╥╤╥ц╬цц╬ццицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфц╥╤╥╥╤╥╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдц╥╧╥╥╧╥╥╧╥╥╧╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╒═╒▀█▀╛╝╛√≤√▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒°²°╡╟╡хдхчжчхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛√≤√▀█▀▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}~}}~}}~}}~}▀┘▀▀┘▀▀┘▀▀┘▀├├├├├├├├}~}}~}}~}}~}z{zz{zz{zz{zuz}uz}uz}uz}uwzuwzuwzuwzuvuuvuuvuuvu▀∙°▀∙°▀∙°▀∙°▀∙°▀∙°▀∙°▀∙°▀█▀▀█▀▀█▀▀█▀}~}}~}}~}}~}}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╩╥╥╩╥╥╩╥цацнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╛╝╛╥╤╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнц╬ц╡Ё╡╡Ё╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫°⌡°▀┘▀°⌡°°²°▒⌠▒├┬├├┬├▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒▒⌠▒╛╝╛╛╝╛циццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫°²°°²°▀█▀▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├──├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнцац╥╩╥цаццацнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╛╝╛╥╤╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдцнфнц╬ц╥╤╥╛╝╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫°⌡°▀┘▀°⌡°▒⌠▒├┬├├┬├├┬├▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒√≤√╛╝╛╛╝╛циццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛°²°▀█▀▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнцац╥╩╥╥╩╥цаццаццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╛╝╛╥╤╥нфнхиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдц╛╝╛╛╝╛╥╤╥╥╤╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫°⌡°▀┘▀°⌡°├┬├├┬├├┬├├┬├▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒√≤√╛╝╛╛╝╛циццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛°²°▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√⌡╒нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╥╩╥╥╩╥╥╩╥╥╩╥╫╬╫╫╬╫цдцхиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╛╝╛╥╤╥нфнхиххиххиххиххиххиххиххиххиххиххихцдц╫╬╫╫╬╫╫╬╫╫╬╫╥╤╥╥╤╥ц╬цц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫°⌡°▀┘▀°⌡°├┬├├┬├├┬├├┬├▒░▒▒░▒▒░▒▒░▒▒⌠▒▒⌠▒▒⌠▒°²°╛╝╛╛╝╛циццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛°²°▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√⌡╒нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнцац╛╤╛ц╬цц╬цц╬цц╬цнфннфннфннфнхиххиххиххиххиххиххиххихц╬ц╥╤╥╥╤╥нфнхиххиххиххиххиххиххиххихнфннфннфннфнц╬цц╬ц╥╤╥╥╤╥╫╤╫хфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн├┌├├┌├├┌├▒░▒─┌──┌──┌─▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀√≤√╛╟╛╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╚╛╛╚╛°²°▀█▀▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√⌡╒╡╟╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╥╤╥╛╝╛╥╤╥╥╤╥цаццаццаццацхиххиххиххиххиххиххиххих╥╤╥╥╤╥ц╬цнфнхиххиххиххиххиххиххиххихнфннфнц╬ц╥╤╥╛╝╛╛╝╛╥╤╥╥╤╥хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн├┌├├┌├▒░▒▒░▒─┌──┌──┌─▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀╒ё╒╛╟╛╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╧╫╛╚╛°²°▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀√⌡╒нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнц╬цц╬цц╬цц╬ццаццаццаццаццдцхиххиххихцдцхиххиххих╥╤╥╥╤╥ц╬цнфнхиххиххиххиххиххиххихцдцц╬ц╥╤╥╥╤╥╥╤╥ц╬цнфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╟╥├┌├├┌├▒░▒▒░▒─┌──┌──┌─▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀╛╝╛╛╟╛╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╧╫╛╚╛°²°▀█▀▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀╡╟╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнц╬цц╬цц╬цц╬ц╥╩╥╥╩╥╥╩╥╥╩╥╫╬╫╫╬╫цдцхих╫╬╫╫╬╫цдцхих╥╤╥╥╤╥нфннфнхиххиххихцдцхихцдц╫╬╫╫╬╫╥╤╥╥╤╥╥╤╥╥╤╥нфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн▀┘▀├┌├├┌├▒░▒▒░▒─┌──┌──┌─▀█▀√⌠√√⌠√√⌠√√⌠√▀█▀▀█▀√≤√╛╝╛╛╟╛╫╩╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╧╫╛╚╛°²°▒░▒▒░▒▒░▒▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─╖╗╖нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╥╤╥╥╤╥╥╤╥╥╤╥╥╤╥╛╝╛ц╬цнфн╛╝╛╛╝╛╛╝╛╛╝╛цаццац╥╩╥╥╩╥╫╬╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╟╥╒⌡╒├┘├├┘├▒█▒▒█▒─┌──┌──┌─▀█▀▒░▒√⌠√√⌠√√⌠√╒═╒√⌠√√⌠√╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихДчДхфх╛╝╛╛╝╛▀█▀▀█▀▀█▀▀█▀√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√√⌠√▒█▒▒█▒▒█▒├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuuvuuvujjjjjjjjjjjjoooooooooooomnmmnmmnmmnmrqrrqrrqrrqrmrumrumrumruoruoruoruoruoooooooooooomrumrumrumrurrrrrrrrrrrruruuruuruuruoruoruoruoruruxruxruxrux}z}}z}}z}}z}}~}}~}}~}}~}─~─├┘├▀█▀▀█▀├┌├├┌├├┌├├┌├─┌──┌──┌──┌─нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихц╬цц╬цц╬цц╬цц╬ц╥╤╥╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╝╛╛╤╛╛╤╛╥╩╥╥╩╥цдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╟╥▀┘▀├┘├├┘├▒█▒▒█▒─┌──┌──┌─▀█▀▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√╒═╒╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихДчДхфх╛╝╛╛╝╛▒⌠▒▒⌠▒▒⌠▒▒⌠▒√⌠√√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuuvu>?>888888888888888888888888>;>>;>>;>>;>>BD>BD>BD>BDABDABDABDABDA@AA@AA@AA@AACFACFACFACFFFFFFFFFFFFFLHILHILHILHIIJLIJLIJLIJLOOQOOQOOQOOQWRQWRQjfgjfgoqooqo}~}}~}}z}─~─├┘├├┘├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфнц╬цц╬ц╫╬╫╫╬╫╫╬╫╫╬╫цацнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╟╥╒⌡╒▀┘▀├┘├├┘├├┘├├┘├─┌──┌──┌─▀█▀▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√╒═╒╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихДчДхфх╛╝╛╛╝╛▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvu>?>#####!##!##!##!#+)++)++)++)+D=;D=;D=;WRQTVTbcboqooqo}z}}z}─~─├┘├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннннннннннннннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╟╥╒⌡╒▀┘▀▀┘▀├┘├├┘├├┘├├┘├─┌──┌──┌─▀█▀▒░▒√⌠√√⌠√√⌠√√⌠√√⌠√╛╝╛╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихДчДхфх╛╝╛╛╝╛▒⌠▒▒⌠▒▒⌠▒▒⌠▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvu>?>#####!##!##!##!#+)++)++)++)+D=;D=;WRQWRQbcboqo}~}}~}}z}}z}─~─├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├цдццдццдцхиххиххиххиххиххиххиххиххиххиххихцдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╖╗╖─┌──┌─├┌├▒░▒├┌├├┌├─┌──┌─├┬├▀█▀▒░▒▒░▒▒░▒√⌠√▀█▀▀█▀╛╝╛╛╝╛цицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╒²╒▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▒░▒√⌠√▒░▒▒░▒▀█▀▀█▀▒⌠▒°²°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A#%##%#      %"% !  !  ! %%%+)++)++)++)++)++)++)++)+(&((&((&(.,.3533533533530.00.00.0646DCDDCDDCDDCDTNLjedjed─{}°█▀°█▀°█▀°█▀zyzzyzzyzzyz├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├цдццдцхиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдцхиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╖╗╖─┌──┌──┌─├┌├▒░▒├┌├├┌├─┌──┌─├┬├▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀╛╝╛╛╝╛хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╛╕╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒√⌠√▒░▒▒░▒▀█▀▀█▀▒⌠▒√≤√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A#%##%##!##!##!#######%"%+)++)++)+%%%+)++)++)++)++)++)++)++)++)++)++)+.,.313313313353353353353646;9;;9;;9;DCDDCDDCDDCDjedjed─{}╛╕╛╫Ё╡╫Ё╡╫Ё╡°█▀──zyzzyzzyz├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├цдццдцхиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих─┌──┌──┌──┌─├┌├▒░▒├┌├├┌├─┌──┌─├┬├▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀╛╝╛╛╝╛хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╛╕╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▒⌠▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A#%##%#%"%%"%%"%%"%%%%%%%%%%%%%%$%%$%%$%%$%+)++)++)++)+.,..,..,..,....353353353646646646646;8;DCDDCDDCDTNLjed─{}╛╕╛чыьЪЪЪчыь╫Ё╡──zyzzyzzyz├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхиххиххихцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫─┌──┌──┌──┌─├┌├▒░▒├┌├├┌├─┌──┌─├┬├▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀╛╝╛╛╝╛хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛╛╕╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒√⌠√▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A#%##%#        #!##!##!##!##!#((((((...+)++)++)++)+3-33-3;8;DCDTNLTNL─{}╛╕╛чыьЪЪЪЪЪЪ╫Ё╡──zyzzyzzyz├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√⌡╒√⌡╒нфнхфххфххфххфххиххиххиххиххиххиххиххиххлххлххлхциццдццдцхиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццдццдццдцхихциццицхлххлххиххиххиххиххиххиххиххихцаццаццац├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╝╛╛╝╛√≤√▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A
-
-
-#!##!#      %&%+-+353353LKL}v}нлнОВООВО╫╤╫▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀√⌡╒хфххфххфххфххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцдццдцхиххиххлххлххлххлххиххиххиххиххиххиххиххихцаццаццац├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥╛╝╛╒ё╒▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      %&%+-+353353LKL}v}нлнОВООВО╫╤╫▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀хфххфххфххфххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххихцаццац├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнц╬ц╛╝╛╒ё╒▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      %&%+-+353353LKL}v}нлнОВООВО╫╤╫▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀╡╝╡хфххфххфххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлхциццицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххихцаццац├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▒░▒▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╛╝╛╒ё╒▀█▀▀█▀▒░▒√⌠√√⌠√√⌠√√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      %&%+-+353353LKL}v}нлнОВООВО╫╤╫▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}√∙√нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццдцхиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫╫╤╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххиххиххиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├°∙°▒█▒├┘├├┘├▀▀▀▀▀▀▀░▀▀░▀▒░▒▒░▒▒░▒▒░▒°²°╛╝╛╫╬╫нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛√≤√▀█▀▒░▒▒░▒▒░▒√⌠√√⌠√▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-###!#(%(.).3-3;5;;5;\V\}v}╫╩╥ОВООВО╫╩╥▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}√∙√╡╝╡нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫╫╤╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххиххиххиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├▒░▒▒█▒├┘├├┘├├┘├▀▀▀▀▀▀▀░▀▀░▀▒░▒▒░▒▒░▒√⌠√°²°╛╝╛╫╬╫нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-###!#(%(.).3-3;5;;5;\V\}v}╫╩╥ОВООВО╫╩╥▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}√∙√нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫WTWWTWZ[Z╫╬╫╫╬╫хиххиххиххиххиххиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╡╟╥├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├▒░▒├┘├├┘├├┘├├┘├▀▀▀▀▀▀▀░▀▀░▀▒░▒▒░▒▒░▒√⌠√°²°╛╝╛╫╬╫нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛√≤√▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-###!#(%(.).3-3;5;;5;\V\}v}╫╩╥ОВООВО╫╩╥▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}~}}~}}~}╡╝╡хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫mnm;=;;=;IGIнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╬╫хиххиххиххиххиххиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн}┘▀├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├°²°├┘├├┘├├┘├├┘├▀▀▀▀░▀▀░▀▀░▀▒░▒▒░▒▒░▒°∙°°²°╛╝╛╫╬╫нннхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛√≤√▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-###!#(%(.).3-3;5;;5;\V\}v}╫╩╥ОВООВО╫╩╥▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╡╟╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫╫╤╫+)+			    °∙°°∙°хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫╫ф╫             ╫ф╫╫ф╫╫ф╫╫ф╫хлххлххлххлххиххиххихцдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╖╕╛─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒░▒├┬├─┌──┌─▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀√∙√╛╝╛╛╝╛ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╖╝╖╖╝╖╖╝╖╖╝╖▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░√▒░√▒░√}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA      #!#+%++%+.*.000A@>A@>_[Z}vuц╬цООООООц╬ц▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├√⌡╒╡╟╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫ZXZ        °∙°хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫\_\                mom╫ф╫╫ф╫╫ф╫хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╖╕╛─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒─┌──┌─├┬├▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀╒²╒╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфц╖╝╖╖╝╖╖╝╖▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░√▒░√▒░√├▀▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA      #!#+%++%+.*.000A@>A@>_[Z}vu╛╕╛ООООООц╬ц▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀╡╟╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫╫╤╫        LKLхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫;=;                ;<;╫ф╫╫ф╫╫ф╫хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒─┌──┌─├┬├▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀╛╕╛╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфц╖╝╖╖╝╖╖╝╖▀█▀▀█▀▀█▀▀█▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░√▒░√▒░√▒░√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA      #!#+%+.*.000353A@>A@>_[Z}vu╛╕╛ООООООц╬ц▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√⌡╒╡╟╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╤╫╫╤╫ZXZ        ц╬цхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫;=;                ;<;╫ф╫╫ф╫╫ф╫цицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╖╕╛─┘▀─┘▀─┘▀├┌├├┌├├┌├├┌├├┌├├┌├▒░▒▒░▒─┌──┌─▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀√∙√╛╕╛╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцфц╖╝╖╖╝╖╖╝╖▒⌠▒▀█▀▀█▀▀█▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░√▒░√▒░√▒░√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA      #!#+%+.*.000353A@>A@>_[Z}vuц╬цООООООц╬ц▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├цацнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫_c_	              ╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих▒⌠▒        dfd╒ё╒ннннннциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╟╥╒⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒├┘├├┘├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀╒ё╒╛╝╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA     #!#+%+0,0636;9;DFDDFD___zyzцдцООООООцдц°²°├┌}}zu├┌}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫	              ONOхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих      ╒ё╒нннннннннхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╟╥▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒├┘├├┘├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀√≤√╛╝╛╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╝╛╛╝╛√≤√▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-	
-  #!#+%+0,0636;9;DFDDFD___zyz╛╝╛ООООООцдц°²°├┌}}zu├┌}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╖╕╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫ $               ╛╕╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛    ╛╤╛ннннннннннннхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╟╥╒⌡╒▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒├┘├├┘├─┌─├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀√≤√╛╝╛╛╝╛нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛╒ё╒▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-	
-  #!#+%+0,0636;9;DFDDFD___zyz╛╝╛ООООООцдц°²°├┌}}zu├┌}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╖╕╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫╫ф╫.-.        ONO╛╕╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛╛╝╛QRQOSOOSO╛╤╛╛╤╛ннннннннннннхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╟╥╒⌡╒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒├┘├├┘├─┌─├┬├▀█▀▀█▀▒░▒▒░▒√⌠√√⌠√√≤√╒ё╒╛╝╛╛╝╛нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛╛╝╛▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-	
-  #!#+%+0,0636;9;DFDDFD___zyzцдцООООООцдц°²°├┌}}zu├┌}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├цаццац╫фц╫фц╫фц╫фцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫gkg040040LNL├┬├╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─√∙√─┘──┘──┘─├┘├▀█▀▀█▀▀█▀▒░▒▒░▒√⌠√√⌠√▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихциццицциц╛╝╛╛╝╛√≤√▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-   #%##%#+)+000676;=;LFLLFLjej▒┬▒нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├цац╫фц╫фц╫фц╫фцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫╫ф╫├┬├╫╬╫╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┘──┘──┘──┘─├┘├▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀°²°╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихциццицциц╥╩╥╛╝╛╒ё╒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-   #%##%#+)+000676;=;LFLLFLjej▒┬▒нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╫фц╫фц╫фц╫фцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫╫ф╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┘──┘──┘──┘─├┘├▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒°²°╛╝╛╛╝╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицциццицциц╛╝╛╒ё╒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-   #%##%#+)+000676;=;LFLLFLjej▒┬▒нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°╕╖╫фц╫фц╫фцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╫ф╫╫ф╫╫ф╫╫╬╫╫╬╫╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌─√≤√√≤√─┘──┘──┘──┘─├┘├▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒°²°╛╝╛╫╬╫╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицциццицциц╛╝╛╒ё╒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-   #%##%#+)+000676;=;LFLLFLjej▒┬▒нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├цаццацхфцхфцхфцхфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒─┌──┌──┌──┌─▀┘▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀╛╝╛╛╝╛ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫°²°▀█▀▀█▀▒░▒▒░▒▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒√⌠√▒░▒▒░▒▒░▒√⌠√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-
-
-      %"%+%++-+353;=;DFDTRTTRTmjm▀┘▀цфцОВООВОцфц°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├цацхфцхфцхфцхфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒─┌──┌──┌─├┬├▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛°²°▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-
-
-          %"%+%++-+353;=;DFDTRTTRTmjm▀┘▀╛╝╛ОВООВОцфц°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├хфцхфцхфцхфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒─┌──┌──┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀√∙√╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╛╝╛▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-
-
-              %"%+%++-+353;=;DFDTRTTRTmjm▀┘▀╛╝╛ОВООВОцфц°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒╕╖хфцхфцхфцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдцциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхцицхиххиххиххихцдцхиххиххихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн├├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒─┌──┌──┌─▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀√∙√╛╕╛╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╫╬╫╫╬╫°²°▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-
-
-      %"%+%++-+353;=;DFDTRTTRTmjm▀┘▀цфцОВООВОцфц°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├цаццацнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххлххлххлхциццдццдццдццдцхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнхфххфхцдццдццдццдццдццдццдцхихцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├├┬├├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀╒ё╒╛╝╛╫╤╫хфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╧╫╛╚╛°²°▀█▀▀█▀▀█▀▀█▀▀┬▀▀┬▀▀┬▀▀┬▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A      #!##!##!##!#+-++-+>?>>?>\Z\\Z\zwx╡╚╖ЪЪЪЪЪЪИЛИ╫ф╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├цацнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххихцфцхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнхфххфххиххихцдццдццдццдцхиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌▀├┌▀├┌▀├┌▀▒░▒▒░▒▒░▒├┌├├┬├├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀√≤√╛╝╛╛╝╛хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╚╛°²°√≤√▀█▀▀█▀▀█▀▀┬▀▀┬▀▀┬▀▀┬▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A              %%%%%%%%%%%%.-..-..-..-.>?>>?>>?>QPQ\Z\zwx╡╚╖ОГчЪЪЪЪЪЪИЛИ╫ф╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├нфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххихцфцхфххфххфххиххиххиххихцдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌▀├┌▀├┌▀├┌▀▒░▒├┌├├┌├├┌├├┬├▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀√≤√╛╝╛╛╝╛хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╧╫╛╚╛╒ё╒▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A      +-++-++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)+.,..,..,..,.313313313313898898898898QPQQPQdbddbdzwx╡╚╖ОГчОГчЪЪЪЪЪЪИЛИ╫ф╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├mruнфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххфххфххфххфххиххиххихцдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдцхиххиххихнфннфнхфххфххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒√≤√╒ё╒╛╝╛╛╝╛хфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╫╧╫╛╝╛▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A      +-++-++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)++)+.,..,..,..,.313313313313DFDDFDDFDDFDQPQQPQdbddbd╡╚╖ОГчОГчОГчЪЪЪЪЪЪИЛИ╫ф╫▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├цацнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицциццицциццдццдццдццдццдццдццдццдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдццдццдцхихциццицхлххлхцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒}~}}~}─┌──┌─▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀°²°╛╚╛╫╧╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфхц╬ц╛╟╛°⌡°°⌡°▀┘▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A      #%##%##%##%##%##%##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!#+)++)++)++)+000000000000A?AOLO\Z\\Z\╒ё╒чччччччччЪВЪЪВЪИДИ╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╥╟╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххихцдццдцхиххихцдццдццдццдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдццдцхиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╛╕╛▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒─┌──┌─├┬├├┬├▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀°²°╛╚╛╫╧╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╟╛╛╟╛°⌡°°⌡°▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A              %&%%&%000000313A?AOLOOLOrsr╒ё╒ччччччЪВЪЪВЪИДИ╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╥╟╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╕╛▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┬├├┬├├┬├▀█▀▀█▀▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀√≤√╛╚╛╫╧╫╫╧╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╛╟╛╛╟╛╛╟╛°⌡°▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A      %&%%&%313313A?AOLOTVTrsr╒ё╒чччЪВЪЪВЪИДИ╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒⌡╒нфнхиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих°²°▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┬├▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀√≤√╛╝╛╛╚╛╫╧╫нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххфххфххфххфх╫ф╫╛╟╛╛╟╛╛╟╛▀∙▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒√∙√√∙√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A      313313A?AOLOTVTTVTrsr╒ё╒ЪВЪЪВЪИДИ╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╥╟╥нфннфннфннфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххихцицхлххлххлхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн√⌡╒}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├▒▀▒▒▀▒▀█▀├┬├─┌─}~}▀█▀▒░▒▒░▒▒░▒√≤√▀█▀▀█▀▀█▀▀█▀▀█▀°═°╛Ё╛╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╤╥╛╝╛╛╝╛√≤√▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├}z}─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      %"%+%++-+353;=;DFDTRTTRT─zz╛²°чысЪЪЪЪЪЪнф╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╒⌡╒╥╟╥нфннфннфннфннфнхфххфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╡╟╥}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├▒▀▒▒▀▒├┬├─┌──┌─├┬├▀█▀▒░▒▒░▒▒░▒▒⌠▒▀█▀▀█▀▀█▀▀█▀°═°╛Ё╛╛Ё╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╝╛╛╝╛╒ё╒√≤√▀█▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-   %"%+%++-+353;=;DFDTRTTRT─zz╛²°чысЪЪЪЪЪЪнф╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╒⌡╒нфннфннфннфнц╬цхфххфххфххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн▀┬▀√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├▒▀▒▒▀▒─┌──┌─├┬├├┬├▀█▀▒░▒▒░▒▒░▒▀█▀▒⌠▒▀█▀▀█▀°═°╛Ё╛╛Ё╛╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╤╥╛╝╛╛╝╛╒ё╒▀█▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀▀▀▀█▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-   %"%+%++-+353;=;DFDTRTTRT─zz╛²°чысЪЪЪЪЪЪнф╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀°²°нфннфннфнц╬цц╬цхфххфххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн▀┬▀▀┬▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├▒▀▒▒▀▒▒▀▒─┌─├┬├├┬├▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▒⌠▒▀█▀▒⌠▒╛Ё╛╛Ё╛╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╛╝╛╛╝╛╛╝╛√≤√▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀▀▀▀█▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°▒░▒▒░▒▒░▒▀█▀─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-   %"%+%++-+353;=;DFDTRTTRT─zz╛²°чысЪЪЪЪЪЪнф╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒═╒╒═╒цдццдццдццдцнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфн├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┌├├┌├├┌├├┌├}~}─┌─▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╟╛°╕°°╕°▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▀┘▀▀┘▀─▀─▀─▀─▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-
- %! +%#+-+343;;;DBDTRTTRT──╛╝╛ИЛИЪЪЪИЛИ╫ф╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├цдццдццдцнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╡╟╥√⌡╒√⌡╒√⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▒░▒├┌├├┌├├┌├─┌─├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╫╩╫╛╟╛°╕°°²°▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒─▀─▀─▀─▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-
- %! +%#+-+343;;;DBDTRTTRT──╛╝╛ИЛИИЛИИЛИ╫ф╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├цдцнфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▒░▒├┌├├┌├├┌├├┬├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀█▀°²°╛╝╛╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╩╫°╕°°²°▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒√∙√─▀─▀─▀─▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-
- %! +%#+-+343;;;DBDTRTTRT──╛╝╛ИЛИИЛИИЛИ╫ф╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├▀┘▀нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╛╕╛▀┘▀uru}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°²°╛╝╛╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╛╟╛°²°▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒▒█▒√⌠°√⌠°√⌠°√⌠°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-
- %! +%#+-+343;;;DBDTRTTRT──╛╝╛сысИЛИИЛИ╫ф╫▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─╖╗╖╡╟╥нфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфнцаццаццац├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├}~}}~}▒█▒▒█▒▒█▒▒█▒─┌──┌──┌──┌─▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀╛╝╛╛╝╛ц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╥Ё╥╥Ё╥╥Ё╥▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒█▒▒█▒√∙√√∙√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   	  #!##%#+,+333;9;DBDDBDdbd▀┘▀нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀√⌡╒╡╟╥нфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфн╡╟╥цац├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├▒█▒├┘├├┘├├┘├─┌──┌──┌─├┬├▀▀▀▀▀▀▀░▀▀░▀▀█▀▀█▀▀█▀╒ё╒╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥Ё╥╥Ё╥╥Ё╥╒═╒▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒█▒▒█▒√∙√√∙√├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   	  #!##%#+,+333;9;DBDDBDdbd▀┘▀нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀}┘▀√⌡╒нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфн╡╟╥√⌡╒}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒├┘├├┘├├┘├├┘├─┌──┌──┌─├┬├▀▀▀▀░▀▀░▀▀░▀▀█▀▀█▀╒ё╒╛╝╛╛╝╛╥╤╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥Ё╥╥Ё╥╥Ё╥╥Ё╥▀█▀▀█▀▀█▀▀█▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▒█▒▒█▒▒█▒▒█▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A     #!##%#+,+333;9;DBDDBDdbd▀┘▀нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀╛╝╛нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╟╥╒⌡╒▀┘▀√⌡╒}┘▀}┘▀√⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┘├├┘├├┘├├┘├─┌──┌──┌─▀█▀▀░▀▀░▀▀░▀▀░▀▀█▀╒ё╒╛╝╛╛╝╛╥╤╥ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥Ё╥╥Ё╥╥Ё╥╥Ё╥╛╚╛▀█▀▀█▀▀█▀▀▀▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒√⌠√√⌠√▒█▒▒█▒▒█▒▒█▒▒░▒▒░▒▒░▒▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A     #!##%#+,+333;9;DBDDBDdbd▀┘▀нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─╡╟╥нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнхфнхфнхфнхфнцфццфццфццфцнфннфннфннфннфннфннфннфн╫ф╫╫ф╫╖╟╛▒⌡°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├√≤√─┌──┌──┌──┌──┌──┌──┌─▀┬▀▀┬▀▀┬▀▀┬▀▀█▀▀█▀▀█▀▀█▀°╕°°╕°╛╟╛╛╟╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфнц╬ц╛╝╛°═°°═°▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀°²°▒█▒▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA        #!##%#+,+333;9;DBDDBD\Z\uruцдцООООООцдц▀█▀─}─}─}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀√⌡╒√⌡╒нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнхфнхфнхфнхфнцфццфццфццфцнфннфннфннфннфннфн╖ё╛─▀▒⌡°}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒─┌──┌──┌──┌──┌──┌─├┬├├┬├▀┬▀▀┬▀▀┬▀▀┬▀▀█▀▀█▀▀█▀√≤√╛╟╛╛╟╛╫╩╫╫╩╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╛Ё╛╛Ё╛╛Ё╛°═°▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA        #!##%#+,+333;9;DBDDBD\Z\uru╛╝╛ООООООцдц▀█▀─}─}─}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀нфннфннфннфннфннфннфннфннфннфннфннфнхфнхфнхфнхфн╖╕╖╖╕╖╖╕╖╖╕╖├┌├├┌├├┌├├┌├╖ё╛─▀─▀─▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒▒█▒▒█▒─┌──┌──┌──┌──┌─├┬├├┬├├┬├▀┬▀▀┬▀▀┬▀▀┬▀▀█▀√≤√╒ё╒╛╝╛╫╩╫╫╩╫╫╩╫нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫╫ф╫╛Ё╛╛Ё╛√≤√▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA        #!##%#+,+333;9;DBDDBD\Z\uru╛╝╛ООООООцдц▀█▀─}zyu─}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├├├├├├├├}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├─▀─▀─▀─▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▒█▒▒█▒▒█▒▒█▒─┌──┌──┌──┌─├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀▀▀▀╒ё╒╛╝╛╛╝╛╛╝╛╫╩╫нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫╛╝╛╒ё╒√≤√▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒▒░▒▒░▒▒░▒▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA        #!##%#+,+333;9;DBDDBD\Z\uruцдцООООООцдц▀█▀─}─}─}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─├┘├├┘├├┘├├┘├─┌──┌──┌──┌──┌──┌──┌──┌─▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀°²°╛╝╛╛╝╛╛╝╛╛╝╛ц╬цхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцдц╡╟╡╡╟╡°²°°²°√≤√▀█▀▀█▀▀█▀▀┬▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒▒█▒├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA     #!#+%+0,0636;9;FFFFFFbbb}~}нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├▒█▒▒█▒▒█▒├┘├─┌──┌──┌──┌─├┬├├┬├├┬├├┬├▀▀▀▀▀▀▀▀▀°≤°▀█▀°²°╛╝╛╛╝╛╥╤╥ц╬цц╬цнфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххдх╡╟╡╡╟╡╡╟╡╒ё╒√≤√▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▒█▒▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-
-
-  #!#+%+0,0636;9;FFFFFFbbb}~}нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├▒█▒├┘├├┘├├┘├─┌──┌──┌──┌─▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀°≤°°²°╛╝╛╛╝╛╫╬╫ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххдххдххдх╡╟╡╛╝╛╒ё╒√≤√▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▒⌠▒▒⌠▒▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-
-
-  #!#+%+0,0636;9;FFFFFFbbb}~}нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─▀█▀├┘├├┘├├┘├├┘├├┬├├┬├├┬├├┬├▀█▀▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀╛╕╛╛╝╛╛╝╛╫╬╫╫╬╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххдххдххдххдх╛╝╛╛╝╛╒ё╒╒ё╒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▒⌠▒√≤√√≤√├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-
-
-  #!#+%+0,0636;9;FFFFFFbbb}~}нянОВООВО╫╬╫°²°├┌├}z}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀▀█▀°═°╛Ё╛╛╝╛ц╬цнфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╟╛╛╟╛╛╟╛╫╩╫°²°▀█▀▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-
-
-      %"%+%++-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▀█▀°═°╛Ё╛╛Ё╛ц╬цнфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╫╩╫╛╟╛╛╝╛°²°▀█▀▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-
-
-      %"%+%++-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├▒█▒▒█▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀√≤√°═°╛Ё╛╛Ё╛╫ф╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╫╩╫╫╬╫╛╝╛°²°▀█▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-
-
-      %"%+%++-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├▒█▒▒█▒▒█▒▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█▀▀█▀√≤√╛╝╛╛Ё╛╛Ё╛╫ф╫╫ф╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╫╬╫╫╬╫╛╝╛╛╝╛▀▀▀▀▀▀▀▀▀▀▀▀▒⌠▒▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-
-
-##      %"%+%++-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒█▒▒█▒▒█▒▒█▒▒█▒╒═╒╒═╒╒═╒╒═╒╛╕╛╛╕╛╡╟╡╡╟╡╫╬╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцаццац╥╩╥╛╤╛°²°╛╝╛°²°▀█▀▀█▀▀█▀▀█▀▀█▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      
-#!##!##!##!#    %$%%$%+-+343;;;DBDTRTTRTmjm▀┘▀цфцОВООВОцфц°²°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┘├├┘├├┘├├┘├√⌠√√⌠√╒═╒╒═╒╡╟╡╡╟╡╥╩╥╥╩╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфнцац╛╝╛╛╝╛╛╝╛▀█▀▀█▀▀█▀├┬├─┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      
-      %$%%$%+-+343;;;DBDTRTTRTmjm▀┘▀╛╝╛ОВООВОцфц°²°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┘├├┘├├┘├├┘├▀┘▀▀┘▀√⌠√√⌠√╥╩╥╥╩╥╥╩╥╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╛╝╛╛╝╛╛╝╛▀█▀├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      
-    %$%%$%+-+343;;;DBDTRTTRTmjm▀┘▀╛╝╛ОВООВОцфц°²°├┘├xvx├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├├┘├├┘├├┘├├┘├▀┘▀▀┘▀▀┘▀▀┘▀╥╩╥╫ф╫╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн╛╝╛╛╝╛°²°▀█▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      
-          %$%%$%%$%+-+343;;;DBDTRTmjm▀┘▀╫╤╫цфцОВООВОцфц°²°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╒⌡╒╥╟╥нфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫°⌡°▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvu>@>         +-++-+#!##!##!##!##!##!##!##!##!##!##!##!#(&((&((&(.,.()(()(()(.-.+-+343343343DBDDBDQOQ_\_uru√⌠√цацОООЪЪЪЪЪЪИИИ╫╬╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╒⌡╒нфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╟╛▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvu>@>         +-++-++)++)++)+%$%%$%+)+%$%%$%%"%+%+%"%%"%(&(+)+(&((&((&(+)+(&((&((&(+)+(&((&(.,.313313313.-.313313313343343;;;;;;QOQQOQ_\_mjm√⌠√цацООООООЪЪЪЪЪЪИИИ╫╬╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╥╟╥нфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих°⌡°▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvu>@>      +-++-++)++)++)++)++)++)++)++)++%++%++%++%++)++)++)++)++)++)++)++)++)++)++)++)+.,..,..,..,..-..-..-..-.;;;;;;;;;;;;QOQQOQ_\_mjm√⌠√ОООООООООЪЪЪЪЪЪИИИ╫╬╫°∙°├┌├xwx├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒⌡╒нфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvu>@>         +-++)++)++)++)+                    %$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%#!##!##!##!##%##%##%##%#343343343343DBDDBDQOQ_\_√⌠√цацООООООЪЪЪЪЪЪИИИ╫╬╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀▒∙°▒∙°╫╤╫нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннннн╥╤╥╒²╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>          %$%+)++-+656A=ALFLmjm▀┘▀╫╤╫╫╤╫ИДИЪВЪИДИ╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀▒∙°нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнннннн╥╤╥▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>          %$%+)++-+656A=ALFLTRTTRT▀┘▀╫╤╫ИДИИДИИДИ╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихннн╥╤╥╒²╒▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>          %$%+)++-+656A=ALFLTRTTRT▀┘▀╫╤╫ИДИИДИИДИ╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀▀█▀нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╤╥╒²╒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>          %$%+)++-+656A=ALFLTRTTRTmjm▀┘▀сясИДИИДИ╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╒²╒ннннннхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫ф╫▒⌡°}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A       %!%+%++-+353;=;DFDTVTTVT─~─╛╕╛чысЪЪЪЪЪЪнф╫°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╒²╒╥╤╥нннхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╖╟╛}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A       %!%+%++-+353;=;DFDTVTTVT─~─╛╕╛чысЪЪЪЪЪЪнф╫°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒²╒нннхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих▒⌡°}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-    %!%+%++-+353;=;DFDTVTTVT─~─╛╕╛чысЪЪЪЪЪЪнф╫°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╥╤╥хлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциццицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╫╬╫╛╝╛╥╤╥ц╬цнфнцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╛╝╛}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-    %!%+%++-+353;=;DFDTVTTVT─~─╛╕╛чысЪЪЪЪЪЪнф╫°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├▒∙▒нфннфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфн╫ф╫╫ф╫╫ф╫╫ф╫°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀▒≤°▒≤°╫╬╫хфцхфцхфцхфцнфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╟╥╒⌡╒├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-
- ! %%%+-3358;=>DFD\VT\VT├┌─╛╝╛ЪЪЪЪЪЪИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├╥Ё╥нфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхциц╫ф╫циццицнфннфннфннфннфннфннфннфннфннфннфннфн╡╟╥√⌡╒√⌡╒√⌡╒├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀▒≤°}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀нфннфннфннфннфннфннфннфннфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╥╟╥▀┘▀├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
- ! %%%+-3358;=>DFD\VT\VT├┌─╛╝╛ЪЪЪЪЪЪИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├╒═╒нфннфннфнхлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлххлххлххлххлхнфннфннфн╡╟╥╒⌡╒╒⌡╒╒⌡╒╒⌡╒├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├├├├├├├├╥╟╥╥╟╥╥╟╥╥╟╥нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╥╟╥╒⌡╒▀┘▀├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
- ! %%%+)++-3358;=>DFD\VT\VT├┌─╛╝╛ЪЪЪЪЪЪИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├▀█▀╥Ё╥нфннфнцицхлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихцицхлххлххлххлххлххлххлх╡╟╥√⌡╒}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├├├├├├├├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀╛╕╛нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╟╥╒⌡╒▀┘▀▀┘▀├┌▀├┌▀├┌▀├┌▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-
- ! %%%+)++-3358;=>DFD\VT\VT├┌─╛╝╛ЪЪЪЪЪЪИИИ╫╬╫°∙°}~}├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╫ф╫╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфннфннфннфннфн╫ф╫╒╕╒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀╒⌡╒╒⌡╒нфннфннфннфннфннфннфннфннфнхиххиххиххиххлххлххлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфн╒⌡╒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-	
-
-  %$%+)+3-3858>=>DFD\V\\V\}y}°∙°нннОООООО╫╬╫°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀°⌡°╫ф╫хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфн╡╟╥╥╟╥╒⌡╒╒⌡╒╒⌡╒╒╕╒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╒⌡╒нфннфннфннфннфннфннфннфнхиххиххиххиххлххлхцицхлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╟╥▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-	
-
-  %$%+)+3-3858>=>DFD\V\\V\}y}°∙°нннОООООО╫╬╫°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╛╟╛хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╟╥нфн╡╟╥√⌡╒}┘▀▀┘▀▀┘▀▀┘▀▀┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀нфннфннфннфнхиххиххиххихциццицхлххлххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╒⌡╒▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-	
-
-
-  %$%+)+3-3858>=>DFD\V\\V\}y}°∙°нннОООООО╫╬╫°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├°⌡°▀┘▀▀┘▀°⌡°хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн▀┘▀√⌡╒}┘▀}┘▀√⌡╒▀┘▀▀┘▀▀┘▀▀┘▀├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀}~}}~}}~}}~}цдцхиххиххиххлххлххлххлхцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╡Ё╡▀┘▀▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-	
-
-  %$%+)+3-3858>=>DFD\V\\V\}y}°∙°нннОООООО╫╬╫°²°▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├╥╟╥нфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфннфн╫╬╫╫╬╫╖╚╛▒≤°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌▀─┌▀─┌▀╖╗╛╥╟╥нфннфннфнхфнхфнхфнхфнциццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлхциц╫ф╫╫ф╫╛╟╛°⌡°├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      
-	
-    %$%+)+3-+853>=;DFDTVTTVTzyz°∙°ц╬╫ООчООчц╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─╒⌡╒╥╟╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфннфннфннфн╛╕╛▒≤°}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌▀─┌▀─┌▀─┌▀▀┘▀▀┘▀╒⌡╒╒⌡╒хфнхфнхфнхфнциццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫ф╫╫ф╫╛╟╛▀┘▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      
-	
-    %$%+)+3-+853>=;DFDTVTTVTggg°∙°╛╕╛ООчООчц╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀┘▀╥╟╥нфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╥╟╥▀┘▀▀┘▀uruuru}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌▀─┌▀─┌▀─┌▀▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀╒╕╛хфнциццицциццицхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╫ф╫╛╟╛°⌡°▀┘▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      ##    %$%+)+3-+853>=;DFDTVTTVTgggzyz╛╕╛ООчООчц╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀┘▀╒⌡╒╥╟╥нфнцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххих╥╟╥╒⌡╒▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌▀─┌▀─┌▀─┌▀▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀╖╚╖цицциццицхиххиххихцдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлх╛╟╛°⌡°▀┘▀▀┘▀─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      ##    %$%+)+3-+853>=;DFDTVTTVTgggzyzц╬╫ООчООчц╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒⌡╒нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцфццфццфццфц╫ф╫╖╝╖╖╝╖▒∙▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├╡╤╡нфннфннфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфннфн°╕╛▒∙°├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      
-
-   #!##!#%%%()(3-3858>=>DFDTRTTRTgcdzuu╫╬╫чччччч╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀╒⌡╒╥╟╥хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцфццфццфццфц╖╝╖▒∙▒}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├─┘▀╖╕╛нфннфннфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн╡╟╥▒∙°├┘▀├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      
-
-      #!##!#%%%()(3-3858>=>DFDTRTTRTgcd°█▀╛╝╛чччччч╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀╒⌡╒хиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцфццфццфц╖╕╖▒∙▒}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├─┘▀mru─┘▀╖╕╛нфннфннфннфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфннфн√⌡╒├┘▀├┘▀├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      
-
-      #!##!#%%%()(3-3858>=>DFDTRTTRTzuu°█▀╛╝╛чччччч╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀цдцхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххлххлххлххлхцфц╖╕╖▀┘▀▀┘▀}~}}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┘├├┘├─┘▀─┘▀─┘▀─┘▀}┘▀√⌡╒╡╟╥нфнхиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххиххихнфннфн╡╟╥}┘▀├┘▀├┘▀├┘▀├┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A    
-
-      #!##!#%%%()(3-3858>=>DFDTRTTRTzuu°█▀╫╬╫чччччч╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─▀█▀╥Ё╥нфннфннфнхлххлххлххлххиххиххиххиххлххлххлххлхнфннфннфннфннфннфн╡╟╥√⌡╒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌▀─┌▀─┌▀─┌▀цдццдццдццдцннннннннннннхиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╒╕╒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA      #!##!##!#+*+313313313A=>\VT\VTzsr╡ё╒слсИАИслс╫╤╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌─├┬├╒═╒╥Ё╥нфннфнцицхлххлххлххиххиххиххиххлххлххлххлхнфннфннфннфн√⌡╒}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌▀─┌▀─┌▀─┌▀├┬├├┬├цдццдцннннннннннннхиххиххиххиххиххиххиххиххиххиххиххих╫ф╫╒╕╒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA      #!##!##!##!##!##!#+*++*+313313A=>A=>\VTzsr╡ё╒╡ё╒ИАИИАИИАИ╫╤╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌─▀█▀╥Ё╥нфннфнцицхлххлххлххиххиххиххиххлххлххлххлх╖ё╖нфн╖ё╖──}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌▀─┌▀─┌▀─┌▀├┬├├┬├├┬├├┬├ннннннннннннхиххиххиххиххиххиххиххиххиххиххиххих╫ф╫├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA      #$##$##$##$#+)++)++)++)++*++*+343343A=>A=>OJIOJI\VTzsr╡ё╒ОччИАИИАИИАИ╫╤╫°∙°├┌├xwx├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├─┌──┌──┌─▀█▀╒═╒╥Ё╥нфнхлххлххлххлххиххиххиххиххлххлххлхциц────────}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌▀─┌▀─┌▀─┌▀├┬├├┬├├┬├├┬├▀┘▀╒²╒╥╤╥нннхиххиххиххиххиххиххиххиххиххиххиххих╒╕╒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA      ###!##!##!##!##!##!##!##!##!##%##%##%##%#+-++-++-++-+313313313313343343343;=;OJIOJIOJI\VTzsr╡ё╒ОччОччИАИИАИслс╫╤╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀°⌡╒╫фннфннфннфннфннфннфннфннфн╫ф╫╫ф╫╖╝╖▒∙▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├╡╟╥нфннфннфннфннфннфннфннфннфннфннфн├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A+)++)++)+#%##%##%##%##%##%##%##%#+)++)++)++)++-++-++-++-++)++)++)++)+313313313313353353353353;9;;9;;9;;9;DBDDBDDBDDBDZSTmbdmbdmbd─}─╥╟╥ОГООГОЪЪЪЪЪЪИГИ╫╤╫°∙▀├┘─├┘─├┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀°⌡╒╛╟╥нфннфннфннфннфннфннфн╥╟╥▒∙▒}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀√⌡╒╡╟╥нфннфннфннфннфннфннфннфн╡╝╡─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A+)++)+#%##%##%##%##%##%##%##%#+)++)++)++)++-++-++-++-++)++)++)++)+313313313313353353353353;9;;9;;9;;9;DBDDBDDBDDBDFDDZSTZSTmbd─}─╥╟╥ОГООГОЪЪЪЪЪЪИГИ╫╤╫°∙▀├┘─├┘─├┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀°⌡╒нфннфннфннфннфн╥╟╥╒⌡╒▀┘▀}~}}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀√⌡╒╥╟╥нфннфннфннфн╡╝╡√∙√}~}─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A#"##"##"##"#%&%%&%%&%%&%............353FDDFDDZSTdbd─}─╥╟╥ОГОЪЪЪЪЪЪИГИ╫╤╫°∙▀├┘─xzz├┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀°²°╛╚╛╫╧╫нфн╒⌡╒▀┘▀▀┘▀╒⌡╒}~}}~}}~}}~}├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀▀┘▀╒⌡╒╒⌡╒╥╟╥√∙√}~}}~}√∙√─┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A#%##%##%##%#353353353FDDdbddbd─}─ОГОЪЪЪЪЪЪИГИ╫╤╫°∙▀├┘─├┘─├┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┬├├┬├├┬├├┬├├┬├─┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A                ! %%%+)++)+333;<;DFDDFDLJLgfg├┘├╫╬╫ИИИЪЪЪИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A                !  ! %%%+)++)+333;<;;<;LJLLJL├┘├╫╬╫ИИИИИИИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A             ! %%%%%%+)++)+333;<;LJLLJLgfg├┘├ИИИИИИИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┌──┌──┌──┌──┌──┌──┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A       !  ! %%%+)++)+333;<;LJLLJLgfg├┘├стсИИИИИИ╫╬╫°∙°}~}├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-	
-  #!##!#((((((...353D=;D=;b__─┌├цацОВООВОцац°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-	
-  #!##!#((((((...353D=;D=;b__─┌├╛╕╛ОВООВОцац°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-	
-#!##!#((((((...353D=;D=;b__─┌├╛╕╛ОВООВОцац°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA   
-	
-  #!#((((((...353D=;D=;b__─┌├цацОВООВОцац°∙°}~}├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      
-
-
-
-
-
-  #!##%#()(.-.313;<;;<;\[\}z}ц╩цОВООВОц╩ц°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      
-
-
-
-
-
-  #!##%#()(.-.313;<;;<;\[\}z}╛²╛ОВООВОц╩ц°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      
-
-
-
-
-
-  #!##%#()(.-.313;<;;<;\[\}z}╛²╛ОВООВОц╩ц°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A    
-
-
-
-
-
-  #!##%#()(.-.313;<;;<;\[\}z}ц╩цОВООВОц╩ц°∙°}~}├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A   
-	
-
-  #!##%#+*+303;5;DBDDBD\Z\uruцдцООООООцдц°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A   
-	
-
-
-  #!##%#+*+303;5;DBDDBD\Z\uru╛╝╛ООООООцдц°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A   
-	
-
-  #!##%#+*+303;5;DBDDBD\Z\uru╛╝╛ООООООцдц°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A   
-	
-
-  #!##%#+*+303;5;DBDDBD\Z\uruцдцООООООцдц°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-  #!#+)++)+646;9;FFFFFFbbb}~}цфцОВООВОцфц°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-  #!#+)++)+646;9;FFFFFFbbb}~}╛╝╛ОВООВОцфц°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-    #!#+)++)+646;9;FFFFFFbbb}~}╛╝╛ОВООВОцфц°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-	
-
-  #!##!#+)++)+646;9;FFFFFFbbb}~}цфцОВООВОцфц°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      
-
-
-
-
-
-        %$%+-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°²°▒█▒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├LNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNL├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      
-
-
-
-
-
-      %$%%$%+-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°²°▒█▒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├LNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNL├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      
-
-
-  #!#    %$%%$%+-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°²°▒█▒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├LNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNL├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      
-
-
-  #!#    %$%%$%+-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°²°▒█▒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├IKILNLLNLLNLONOONOONOONOLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLLNLIKIIKI─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA       #!##!#%$%(&(+-+343;;;DBDTRTTRTono√∙√ЪЪЪЪЪЪИИИ╫╬╫°²°▒█▒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├FHFIKILNLLNLIJIIJIIJIIJIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKILJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLLJLIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKIIKI─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA       #!##!#%$%(&(+-+343;;;DBDTRTTRTono√∙√ЪЪЪЪЪЪИИИ╫╬╫°²°▒█▒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├DFDIKILNLLNLIJIIJIIJIIJIIKIIKIIKIIKIFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFIKIIKI─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA       #!##!#%$%(&(+-+343;;;DBDTRTono√∙√нннЪЪЪЪЪЪИИИ╫╬╫°²°▒█▒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├DFDFHFIKILNLIJIIJIIJIIJIFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFIHIIHIIHIIHIFGFFGFFGFFGFFGFFGFFGFFGFIHIIHIIHIIHIFGFFGFFGFFGFIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIIHIFGFFGFFGFFGFIHIIHIIHIIHIIHIIHIIHIIHIFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFFHFIKIIKI─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuABA         #!##!#%$%(&(+-+343;;;DBDTRTono√∙√нннЪЪЪЪЪЪИИИ╫╬╫°²°▒█▒▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├FFFFFFFFFFFFFFFFFFDBDFFFFFFFFFFFFFFFIGIIGIIGIIGIIGIIGIIGIIGIFFFFFFDBDFFFIGIIGIIGIIGIFFFFFFFFFFFFDFDDFDDFDDFDIGIIGIIGIIGIFFFFFFFFFFFFFFFFFFFFFFFFIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIFFFFFFDBDFFFIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIDFDDFD─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      
-	
-#########%##%##%##%#3-+3-+FBAFBAmjmmjm╫╩╫ОООЪЪЪЪЪЪИИИ╫╬╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIGIIGIIGIIGIIGIFDFFDFFDFFFFFFFFFFFFFFDFFDFIGIIGIFFFFFFFFFFFFDFDDFDDFDDFDIGIIGIIGIIGIFFFFFFFFFFFFFFFFFFFFFFFFIGIIGIIGIIGIIGIFDFFDFFDFIGIFDFFDFFDFFFFFFFFFFFFFIGIIGIIGIIGIIGIFDFFDFFDFIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIIGIDFDDFD─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      %"%%"%%"%%"%# ## ## ## #(%((%((%((%(.(..(..(..(.010010010010FBAFBAFBAZVWmjm▀┬▀╫╩╫ОООЪЪЪЪЪЪИИИ╫╬╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDFFDFFDFFDFFDFFDFFDFFDFFFFFFFFFFFFFDBDDBDFDFFDFFFFFFFFFFFFFDDDDDDDDDDDDFDFFDFFDFFDFABAABAABAABAFFFFFFFFFABAFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFFFFFFFFFFFFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFFDFDFDDFD─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A      +)++)++)++(++(++(++(+()(()(()(()(3-33-33-33-30-00-00-00-0+-++-++-++-+313313313313656656656656D=DD=DD=DD=DLJLLJLLJLLJLZVWZVWmjmmjm▀┬▀╫╩╫ООООООЪЪЪЪЪЪИИИ╫╬╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├FFFFFFFFFDBDDBDDBDDBDDBDFFFFFFFFFDBDFDFFDFFDFFDFDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDABAFFFFFFFFFDCDDCDDCDDCDDBDDBDDBDDBDABAABAABAABAFFFFFFABAABADBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDDBDFDFFDFFDFFDFFDFFDFFDFFDFDFDDFD─┌──┌─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A    +)++)++)++(++(++(++(+()(()(()(()(3-33-33-33-30-00-00-00-0+-++-++-++-+313313313313656656656656D=DD=DD=DD=DLJLLJLLJLLJLZVWZVWmjmmjm▀┬▀╫╩╫ООООООЪЪЪЪЪЪИИИ╫╬╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├A@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@A>?>A@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@ADBDDBDDBDDBDA@AA@AA@AA@AA@AA@AA@AA@ADBDDBDDBDDBDDBDDBDDBDDBDA@AA@AA@AA@AA@AA@A────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A      #!##!##!##!##!##!##!#  +%++%++%+%&%+-++-++-+3..;53;53;53>;;IDDTNLTNLror╒⌡╒чжччжчИДИЪВЪИДИ╫╬╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├A@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@A>?>>?>>?>A@A>?>>?>>?>A@AA@A>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>A@A>?>>?>>?>>?>>?>>?>>?>A@A>?>>?>>?>A@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@ADBDA@AA@AA@AA@AA@AA@A────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A          +%+            #!##!#+((+((313>;;IDDIDDTRTror╒⌡╒чжчИДИИДИИДИ╫╬╫°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├>?>A@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@A>?>>?>>?>>?>>?>>?>>?>>?>A@A>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>A@AA@AA@AA@A>?>>?>>?>>?>A@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@AA@A────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A                 #!##!##!##!#313313>;;IDDTRTror╒⌡╒╒⌡╒ИДИИДИИДИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                                                                                                                                                                                                                                                           }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├>?>>?>A@AA@AA@AA@AA@AA@AA@AA@AA@A>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>>?>A@AA@AA@A>?>>?>>?>>?>A@AA@AA@AA@A>?>A@AA@AA@AA@AA@A────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A         #!##!##!##!#313313>;;IDDTRTTRTror╒⌡╒сясИДИИДИ╫╬╫▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├;=;;=;;=;;=;;=;;=;;=;;=;;9;;9;;9;;9;;=;;=;;=;;=;;9;;9;;9;;9;888888888888;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;898898>=>>=>;;;;;;;;;;<;;;;;;;;;;;;;;=;;;;;9;;9;;;;;;;;;;;<;;<;;=;;=;;=;;9;;9;├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      #%##%##!##!#%%%()(313313><>DBDTRTTRTuuu▀█▀╫╧╫чччччч╫╧╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├8;88;8;=;;=;898898898;=;;9;;9;;9;8888;88;88;88;8;9;;9;;9;;9;888888888888;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;888888888888;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;898898898898;;;;;;;;;;;;;;;;;;;;;;;;;9;;9;;9;;9;;;;;;;;;;;;;;;;;;;;;;;;;;9;;9;├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      #%##!##!#%%%()(313313><>DBDTRTTRTdcd▀█▀╛╕╛чччччч╫╧╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├6868;88;88;88988988988988888888888888;88;88;88;8888;9;;9;;9;888888888888888888888888888888888888;9;;9;;9;;9;888888888888888888888888888;9;;9;;9;888888888888;9;;9;;9;;9;;9;;9;;9;;9;898898898898;9;;9;;;;;;;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;;;;;;;9;;;;;;;;;;;9;;9;├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>         #!##!#%%%()(313313><>DBDTRTTRTdcduuu╛╕╛чччччч╫╧╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├3536868;88;8898898898898;9;888888888686686686686353676676888676888888888676676676676676676676676888888888888676676676676676676676676353676676888676676676676888888888888888888888888898898898898;9;;9;;9;;;;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;9;;;;;9;;9;;;;;9;;9;;9;├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      #!##!#%%%()(313313><>DBDTRTTRTdcduuu╫╧╫чччччч╫╧╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├656898656656676676676676676676676676878878878878646646646878353353353353878878878878878878878878353353353353656656313656353353353353878878878878878878878878878878878878656656656898878878878878878878878878878878878878888888888888888888888888888888888888678678}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>   ##    %$%+)+3-+853>=;DFDTVTTVTzvu°█▀╛╕╛ьжььжьц╬ц°²°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├656898656656676676676676676676676676878878878878646646646646343343343343646646646646646646646646353353353353656656656656343353353353646646646646646646646646878878878878656656656656878878878878878878878878878878878878676676676676888676676676888676676676678678}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>   ##    %$%+)+3-+853>=;DFDTVTTVTzvu°█▀╛╕╛ьжььжьц╬ц°²°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├656898656656353353353353353353353353646646646646646646646646343343343343646646646646313313313313343343343343656656656656333313333333313313313313313313313313646646646646313313656656646646646646646646646646646646646646353353353353676676676676676676676676678678}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>   
-	
-    %$%+)+3-+853>=;DFDTVTTVTzvu°█▀ц╬цООООООц╬ц°²°├┘├xvx├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├656898656656353353353353353353353353646646646646646646646646333333333333646646646646313313313313333333333333313313313313343343333333313313313313313313313313646646646646313313313656646646646646313313313313646646646646353353353353353353353353676676676676678678}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>   
-	
-    %$%+)+3-+853>=;DFDTVTTVTzvu°█▀ьжьООООООц╬ц°²°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├...000313313000000000000000000000000313313313313313313313313313313313313010010010010000000000000000000000000010010010010313313313313000000000000000000000000000000000000010010010010000000000000313313313313313313313313313313313313353353353353353353353353313313────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-
-
-  %$%+)++-+353;=;DFD\V\\V\}y}°∙°нннОООООО╫╬╫°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├......000313000000000000000.........000000000000000000000000000000000000010010010010..................000000010010010010000000000000......000000000000000000............010010010010000000000000000000000000000000000000000313313313010010010010030030030030313313────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-
-
-
-
-  %$%+)++-+353;=;DFD\V\\V\}y}°∙°нннОООООО╫╬╫°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├+-+...000000.............................................................-..-..-..-.+-++-++-++-++-++-+.......-..-..-..-.............+-++-+...............................-..-..-..-........................................+-+......010010010010.0..0..0..0.313313────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-
-
-
-  %$%+)++-+353;=;DFD\V\\V\}y}°∙°нннОООООО╫╬╫°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(&(                                                                                                                                   }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├+-+......000....................................+-++-++-++-++-++-++-++-+.-..-..-..-.+-++-++-++-++-++-++-++-+.-..-..-..-.............+-++-++-++-+.........................-..-..-..-.....................................000000.......-..-..-..-..0..0..0..0.313313────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uvuuvuA@A   
-
-
-
-
-  %$%+)++-+353;=;DFD\V\\V\}y}°∙°нннОООООО╫╬╫°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#&#               }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├+-++-++-++-++-++-++-++-++-++-++-++-++,++,++,++,+.-..-..-..-.+,++-++-++-++,++,++,++,++,++-++-++-++-++-++-++-++-++-++-++-+.-..-..-..-.+-++-++-++-+.-..-..-..-.+,++-++-++-++,++-++-++-++-++-++-++-+.,..,..,.0.0+-++-++-++-+0.00.00.00.0.,..,..,.0.00.00.00.00.0+-++-+├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-	
-  %!%+%++-3358;=>DFDTVTTVT▀┌─╫╝╛ЪЪЪЪЪЪИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#&#               }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├+,++,++-++-++,++,++,++,++,++,++,++,++,++*++*++*+.-..-..-..-.+*++*++*++*++,++,++,++,++*++*++*++*++,++,++,++,++,++,++,++,+.-..-..-..-.+,++*++*++*+.-..-..-..-.+*++*++*++*++*++,++,++-++,++,++,++,+.,..,..,..,.+,++,++-++-+0.0.,..,..,..,..,..,..,.0.00.00.00.0+-++-+├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-	
-  %!%+%++-3358;=>DFDTVTTVT▀┌─╫╝╛ЪЪЪЪЪЪИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#&#               }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├+*++,++,++,++*++*++*++*++*++*++*++*++*++*++*++*++)++)++)++)++)++*++*++*++*++*++*++*++)++*++*++*++*++*++*++*++*++*++*++*+()(()(()(()(+)++)++)++)+()(()(()(()(+)++*++*++*++)++*++*++,++*++*++*++*++)++)+.,..,.+*++*++,++,+.,..,..,..,..,..,..,..,..,..,..,..,.+-++-+├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-	
-  %!%+%++-3358;=>DFDTVTTVT▀┌─╫╝╛ЪЪЪЪЪЪИИИ╫╬╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#&#               }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├+)++*++,++,++*++*++*++*++*++*++*++*++)++)++)++)++)++)++)++)++)++)++*++)++)++)++)++)++)++)++*++)++)++)++)++)++*++*++*++*+()(()(()(()(+)++)++)++)+()(()(()(()(+)++)++*++)++)++)++)++*++)++)++)++)++)++)++)+.,.+*++*++*++*++)++)++)++)+.,..,..,..,.+)++)++)++)++-++-+├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=A   
-	
-  %!%+%++-3358;=>DFDTVTTVT▀┌─╫╝╛ЪЪЪЪЪЪИИИ╫╬╫°∙°}~}├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#                                                                                                                                                                                                                                                                                                                                                                    }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├()(()(()(()(((((((((((((()(()(()(()((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&((&(+)++)++)++)++)++)++)++)+((((((((((((()(()(()(()(((((((((((((()(()(()(()(((((((((((((+)++)+├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=>   
-	
-
-	
-    %!%+%++-+353;=;DFDTVTTVT─{z╛²°чысЪЪЪЪЪЪнф╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#                                                                                                                                                                                                                                                  }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├()(()(()(()((((%&%%&%%&%%%%%%%%%%%%%(&((&((&((&((&((&((&((&((&((&((&((&((&(%$%%$%%$%%$%%$%%$%%$%(&((&((&((&((&(%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%(&((&((&((&((&((&((&((&((&((&((&((&(%&%%&%%&%%&%%%%%%%%%%%%%%&%%&%((((((()(()(()(()(((((((((((((+)++)+├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=>   
-	
-    %!%+%++-+353;=;DFDTVTTVT─{z╛²°чысЪЪЪЪЪЪнф╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#                                                                                                                                                                                                                                                  }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%%%%%%%%%%%%%&%%&%%&%%&%%%%%%%%%%%%%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%#!##!##!##!#%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%#%##%##%##%#%%%%%%%%%%%%#%##%#%&%%&%%%%%%%%%%%%%%&%%&%%&%%&%+)++)+├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=>   
-	
-    %!%+%++-+353;=;DFDTVTTVT─{z╛²°чысЪЪЪЪЪЪнф╫°∙°├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#                                                                                                                                                                                                                                                  }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%%%%%%%%%%%%#%##%##%##%#%%%%%%%%%%%%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%#!##!##!##!#%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%%$%#%##%##%##%#%%%%%%%%%%%%#%##%##%##%#%%%%%%%%%%%%%&%%&%%&%%&%+)++)+├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=>       %!%+%++-+353;=;DFDTVTTVT─{z╛²°чысЪЪЪЪЪЪнф╫°∙°}~}├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#                                                                                                                                                                                                                                          }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!#                             !  !  !  ! #!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##!##%##%##%##%##%##%##%##%##!##!#────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>          %$%%$%+-+676A@ALJLTRTTRTomo√░√ЪВОЪВОИДч╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#          }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├    #!##!##!##!##!##!#                                                                 !  !  !  !                                 #!##!##!##!##!##!##!##!##!#         #!##!##!##!##!##!##!##!##"##"##"##"##"##"##%##%##!##!#────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>          %$%%$%+-+676A@ALJLTRTTRT√░√нфнЪВОЪВОИДч╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#          }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├                                                                                                                     #!##!##!##!##"##"##"##"## ##"##"##"##!##!#────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>          %$%%$%+-+676A@ALJLTRTomo√░√нфнЪВОЪВОИДч╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#          }┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├             #!## ## ## ## #### ##"##"##!##!#────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      ########  %$%%$%%$%+-+676A@ALJLomo√░√нфннфнЪВОЪВОИДч╫╬╫°∙°├┘├}~}├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├        ├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      # %3-33-3+-++-++-++-++)++)++)++)++)++)++)++)++-++-++-++-++-++-++-++-++-++-++-++-+313313313313+*(+*(+*(30.333333333;<;LJLLJL\Z\mjm°²°нннЪЪЪЪЪЪЪЪЪЪЪЪИИИ╫╬╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      # %3-33-3+-++-++-++-++)++)++)++)++)++)++)++)++-++-++-++-++-++-++-++-++-++-++-++-+31331331331330.;53;53;53;<;DFDDFDDFDLJL\Z\mjmmjm°²°нннЪЪЪЪЪЪЪЪЪЪЪЪИИИ╫╬╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      # %# %#"##"##"##"## ## ## ## ##!##!##!##!#%&%%&%%&%%&%%%%%%%%%%%%%%%%%%%%%%%%%+(++(++(++(+30.30.30.30.;<;;<;;<;;<;LJLLJL\Z\\Z\uvu°²°нннЪЪЪЪЪЪЪЪЪИИИ╫╬╫°∙°├┌├xwx├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      #########%##%##%##%#+)++)++)++)+;9;;9;LJLLJLuvuuvu°²°нннЪЪЪЪЪЪИИИ╫╬╫°∙°├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>          #!##!# !  !  ! %%%+)+313;9;DBDTRTjgj─}─╛╕╛нлцОВООВОнлц°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      
-
-
- !  !  ! %%%+)+313;9;DBDTRTTRTjgj─}─╫╤╛ОВООВОнлц°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      
-
-
-     !  !  ! %%%+)+313;9;DBDTRTTRTjgj─}─╫╤╛ОВООВОнлц°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├─┘──┘─├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>      
-
-
-     !  !  ! %%%+)+313;9;DBDTRTTRTjgj─}─нлцОВООВОнлц°∙°▒▀▒├├├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%%%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>   
-	
-      %$%%$%+-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°∙°├├}z}├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%%%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>   
-	
-    %$%%$%+-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°∙°├├}z}├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%%%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>   
-	
-    %$%%$%+-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°∙°├├}z}├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%%%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuru>=>   
-	
-  %$%%$%%$%+-++-+676A@ALJLLJLjij▒░▒нянОВООВО╫╬╫°∙°├├}z}├├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(%(}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A   
-	
-  #!##!#+)++)+333;<;FGFFGFbab}z}цацОВООВОцац▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(%(}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A   
-	
-#!##!#+)++)+333;<;FGFFGFbab}z}╛╕╛ОВООВОцац▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(%(}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A   
-	
-  #!#+)++)+333;<;FGFFGFbab}z}╛╕╛ОВООВОцац▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├(%(}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├────├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A   
-	
-#!#+)++)+333;<;FGFFGFbab}z}цацОВООВОцац▀█▀─{z}vu─{z├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      #!##%#+,+333;9;DBDDBD_Z_zrzц╬цООООООц╬ц├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      #!##%#+,+333;9;DBDDBD_Z_zrz╛╕╛ООООООц╬ц▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-						
-
-
-																					
-	
-
-	
-
-	
-
-	
-																																																																																				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      #!##%#+,+333;9;DBDDBD_Z_zrz╛╕╛ООООООц╬ц▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├																																																																																																																
-	
-
-	
-
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      #!##%#+,+333;9;DBDDBD_Z_zrzц╬цООООООц╬ц▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├																								
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=>   
- ###!#(&(.,.313;9;;9;\Z\}z}ц╩╥ОВООВОц╩╥├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├																						
-	
-
-	
-
-
-
-
-	
-
-	
-
-	
-
-	
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=>   
- ###!#(&(.,.313;9;;9;\Z\}z}╛²°ОВООВОц╩╥▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├						
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=>   
- ###!#(&(.,.313;9;;9;\Z\}z}╛²°ОВООВОц╩╥▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├															
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA=>   
- ###!#(&(.,.313;9;;9;\Z\}z}ц╩╥ОВООВОц╩╥▒░▒├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      
-
-
-  #!##!#(&(.,.643643ZST}ruнлнОВООВО╫╤╫├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A        #!##!#(&(.,.643643ZST}ruнлнОВООВО╫╤╫▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A        #!##!#(&(.,.643643ZST}ruнлнОВООВО╫╤╫▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├%&%}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A      #!##!#(&(.,.643643ZST}ruнлнОВООВО╫╤╫▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#
-	
-
-	
-
-	
-
-	
-
-	
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A    #%##%##%##%#;53;53WSQrqo╫╩╥ЪВОЪВО╫╩╥°∙°▒█▒├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A            %$%%$%%$%%$%%$%%$%%$%%$%#%#343343343;53WSQrqo°²°чысЪВОЪВО╫╩╥▒█▒├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#
-	
-
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-	
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A    +)++)++)++)+#!##!##!##!##!##!##!##!#+)++)++)++)++-++-++-++-++-++-++-++-++-++-++-++-+313313313313878878878878;9;;9;;9;;9;DCDDCDTRTTRTWSQrqo°²°°²°ЪВОЪВОЪВО╫╩╥├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├#%#
-	
-
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-	
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA?A    +)++)++)++)+#!##!##!##!##!##!##!##!#+)++)++)++)++-++-++-++-++-++-++-++-++-++-++-++-+313313313313878878878878;9;;9;;9;;9;DCDDCDTRTTRTrqorqo°²°°²°чысчыс╫╩╥°²°├┘├├┘├├┘├├┘├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA@A
-	
-#######!##!##!##!##########!##!##!##!#%$%%$%%$%%$%+)++)++)+.,..,..,.#!#+,+333;9;;9;ONOONObbbuvu▀┘▀▀┘▀▀┘▀▀┘▀├┌├▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA@A
-	
-#!##!#        #!##!##!##!##%#+,+333333;9;;9;ONOONOd^dd^dojozvz──▀┘▀▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA@A
-	
-      #!##!##!##!##%##%#+,+333;9;;9;ONOONOd^dd^dojozvz──├┌├▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├▀┘▀▀┘▀▀┘▀▀┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀}┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├uruuruA@A
-	
-  #!##!##!##!##%##%#+,+333;9;;9;ONOONOd^dd^dojozvz├┌├├┌├▀┘▀▀┘▀├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├├┌├

@@ -1,0 +1,9 @@
+newmtl object_0
+Ka 0.000000 0.000000 0.000000
+Kd 0.698039 0.698039 0.698039
+Ks 0.000000 0.000000 0.000000
+d 1.000000
+illum 2
+Ns 9.84916
+map_Kd RGB_4896ad59ff3149eda959866dd11f1b76_defaultMat_Base_Color.ppm
+map_Bump N_0f94a8d3f7384229b3957e839b7fdcbf_defaultMat_Normal_OpenGL.ppm
