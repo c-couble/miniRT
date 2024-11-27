@@ -160,7 +160,7 @@ The `.rt` file is used to define a 3D scene for rendering. It includes descripti
 | `pl`           | Plane             | `pl <point_x,y,z> <normal_x,y,z> <R,G,B>`                                                             |
 | `cy`           | Cylinder          | `cy <center_x,y,z> <axis_vector_x,y,z> <diameter> <height> <R,G,B>`			             |
 | `pa`           | Paraboloid        | `pa <center_x,y,z> <axis_vector_x,y,z> <radius> <height> <disk> <R,G,B>`|
-| `mesh`           | Mesh        | `mesh <object_path.obj> <center_x,y,z> <axis_vector_front_x,y,z> <axis_vector_up_x,y,z> <scale>`|
+| `mesh`           | Mesh        | `mesh <object_path.obj> <center_x,y,z> <axis_vector_front_x,y,z> <axis_vector_up_x,y,z> <scale> <gouraud>`|
 
 ### Optional specification can be added at the end of any geometry:
 
