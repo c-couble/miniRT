@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 02:53:41 by ccouble           #+#    #+#             */
-/*   Updated: 2024/08/27 05:34:41 by ccouble          ###   ########.fr       */
+/*   Updated: 2025/01/30 15:43:03 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 #include "color.h"
 #include "engine.h"
 
-void	color_pixels(t_engine *engine, size_t i, size_t j, uint32_t c)
+void	color_pixels(t_engine *engine, int i, int j, uint32_t c)
 {
-	size_t	i2;
-	size_t	j2;
-	size_t	square;
+	int	i2;
+	int	j2;
+	int	square;
 
 	i2 = 0;
 	square = engine->scene.camera.pixel_square_size;

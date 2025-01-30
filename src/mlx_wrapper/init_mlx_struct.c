@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/20 04:56:28 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 12:58:58 by lespenel         ###   ########.fr       */
+/*   Updated: 2025/01/30 15:45:46 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include <X11/X.h>
 #include "color.h"
 #include "defines.h"
-#include "ft_math.h"
 #include "mlx.h"
 #include "mlx_wrapper.h"
 
@@ -23,10 +22,10 @@ static void	init_intern_hooks(t_mlx *mlx);
 
 int	init_mlx_struct(t_mlx *mlx)
 {
-	init_values(mlx);
 	mlx->mlx = mlx_init();
 	if (mlx->mlx == NULL)
 		return (-1);
+	init_values(mlx);
 	mlx->mlx_window = mlx_new_window(mlx->mlx, mlx->width,
 			mlx->height, WINDOW_NAME);
 	if (mlx->mlx_window == NULL)
@@ -51,8 +50,7 @@ int	init_mlx_struct(t_mlx *mlx)
 
 static void	init_values(t_mlx *mlx)
 {
-	mlx->width = ft_max(SCREEN_WIDTH, 1);
-	mlx->height = ft_max(SCREEN_HEIGHT, 1);
+	mlx_get_screen_size(mlx->mlx, &mlx->width, &mlx->height);
 	mlx->aspect = (double)mlx->width / (double)mlx->height;
 	mlx->focused = 1;
 }

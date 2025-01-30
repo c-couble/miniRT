@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 03:03:58 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:32:33 by lespenel         ###   ########.fr       */
+/*   Updated: 2025/01/30 17:37:09 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@
 #include "vec3.h"
 #include "vec4.h"
 
-static int	set_line(t_engine *engine, size_t *i);
-static void	handle_single_ray(t_engine *engine, size_t i, size_t j, int t_id);
+static int	set_line(t_engine *engine, int *i);
+static void	handle_single_ray(t_engine *engine, int i, int j, int t_id);
 static void	setup_camera_ray(t_engine *engine, t_ray *ray, int x, int y);
 
 void	*routine(void *arg)
 {
 	t_engine	*engine;
-	size_t		i;
-	size_t		j;
+	int			i;
+	int			j;
 	int			thread_id;
 
 	engine = arg;
@@ -48,7 +48,7 @@ void	*routine(void *arg)
 	return (NULL);
 }
 
-static int	set_line(t_engine *engine, size_t *i)
+static int	set_line(t_engine *engine, int *i)
 {
 	while (1)
 	{
@@ -69,7 +69,7 @@ static int	set_line(t_engine *engine, size_t *i)
 	}
 }
 
-static void	handle_single_ray(t_engine *engine, size_t i, size_t j, int t_id)
+static void	handle_single_ray(t_engine *engine, int i, int j, int t_id)
 {
 	t_ray	c_ray;
 	t_color	color;

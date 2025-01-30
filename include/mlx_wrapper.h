@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:20:33 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/15 12:48:13 by lespenel         ###   ########.fr       */
+/*   Updated: 2025/01/30 15:08:28 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ typedef struct s_mlx
 	int			bits_per_pixel;
 	int			line_length;
 	int			endian;
-	size_t		height;
-	size_t		width;
+	int			height;
+	int			width;
 	double		aspect;
 	t_vector	hooks;
 	int			x;

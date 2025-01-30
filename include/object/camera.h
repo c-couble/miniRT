@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2024/11/04 01:57:03 by lespenel         ###   ########.fr       */
+/*   Updated: 2025/01/30 17:36:44 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ typedef struct s_camera
 	t_mat4	inverse_view;
 	t_mat4	final;
 	size_t	pixel_square_size;
-	size_t	frame_width;
-	size_t	frame_height;
+	int		frame_width;
+	int		frame_height;
 	double	fov;
 	double	sensitivity;
 	double	speed;
@@ -59,7 +59,7 @@ struct	s_engine;
 int		parse_camera(struct s_engine *engine, union u_object_data *data);
 void	setup_camera(struct s_engine *engine);
 void	create_camera_vectors(t_camera *cam);
-void	color_pixels(struct s_engine *engine, size_t i, size_t j, uint32_t c);
+void	color_pixels(struct s_engine *engine, int i, int j, uint32_t c);
 
 int		init_camera_hooks(struct s_engine *engine);
 void	camera_mouse_hook(struct s_engine *engine);
