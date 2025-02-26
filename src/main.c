@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 16:26:04 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/14 16:43:40 by ccouble          ###   ########.fr       */
+/*   Updated: 2025/02/26 09:11:56 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int	main(int argc, char *argv[])
 	if (init_engine(&engine, argv[1]) == -1)
 		return (1);
 	printf("finish init : obj count is %ld\n", engine.scene.objects.size);
+	engine.scene.camera.should_render = 1;
 	mlx_loop(engine.mlx.mlx);
 	clear_engine(&engine);
 	return (0);
