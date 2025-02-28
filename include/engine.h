@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:01 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 15:40:19 by ccouble          ###   ########.fr       */
+/*   Updated: 2025/01/30 15:44:59 by ccouble          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ typedef struct s_engine
 	pthread_t		*threads;
 	size_t			thread_count;
 	pthread_mutex_t	line_mutex;
-	size_t			current_line;
-	size_t			finished_lines;
+	int				current_line;
+	int				finished_lines;
 	int				stop;
 	t_material_data	default_material;
 	atomic_int		thread_run;
