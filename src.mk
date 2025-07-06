@@ -21,6 +21,7 @@ SRC = \
 	  bvh/bounding_box/get_caustic_aabb.c \
 	  bvh/bounding_box/get_aabb_center.c \
 	  bvh/bounding_box/get_cylinder_aabb.c \
+	  bvh/bounding_box/get_disk_aabb.c \
 	  bvh/bounding_box/get_objects_aabb.c \
 	  bvh/bounding_box/get_paraboloid_aabb.c \
 	  bvh/bounding_box/get_sphere_aabb.c \
@@ -177,6 +178,7 @@ SRC = \
 	  object/intersect.c \
 	  object/intersect_cached_triangle.c \
 	  object/intersect_cylinder.c \
+	  object/intersect_disk.c \
 	  object/intersect_mesh.c \
 	  object/intersect_paraboloid.c \
 	  object/intersect_plane.c \
@@ -220,6 +222,7 @@ SRC = \
 	  parsing/parse_checkerboard.c \
 	  parsing/parse_color.c \
 	  parsing/parse_cylinder.c \
+	  parsing/parse_disk.c \
 	  parsing/parse_double.c \
 	  parsing/parse_int.c \
 	  parsing/parse_light.c \

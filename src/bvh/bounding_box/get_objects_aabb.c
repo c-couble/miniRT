@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 17:56:08 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/28 01:43:20 by lespenel         ###   ########.fr       */
+/*   Updated: 2025/07/06 22:55:15 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	get_objects_aabb(t_object *object)
 {
 	if (object->type == SPHERE)
 		get_sphere_aabb(&object->data.sphere, &object->aabb);
+	if (object->type == DISK)
+		get_disk_aabb(&object->data.disk, &object->aabb);
 	if (object->type == PARABOLOID)
 		get_paraboloid_aabb(&object->data.paraboloid, &object->aabb);
 	if (object->type == CYLINDER)

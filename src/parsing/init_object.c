@@ -59,6 +59,7 @@ static t_object_type	get_object_type(char *type)
 	[CYLINDER] = "cy",
 	[PARABOLOID] = "pa",
 	[TRIANGLE] = "tr",
+	[DISK] = "disk",
 	[MESH] = "mesh",
 	};
 	size_t		i;
@@ -86,6 +87,7 @@ static int	parse_object(t_engine *engine, t_object *object)
 	[CYLINDER] = parse_cylinder,
 	[PARABOLOID] = parse_paraboloid,
 	[TRIANGLE] = parse_triangle,
+	[DISK] = parse_disk,
 	[MESH] = parse_mesh,
 	};
 

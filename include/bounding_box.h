@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 01:38:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 20:38:12 by ccouble          ###   ########.fr       */
+/*   Updated: 2025/07/06 22:53:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct s_aabb
 
 struct	s_cylinder;
 struct	s_mesh;
+struct	s_disk;
 struct	s_object;
 struct	s_paraboloid;
 struct	s_ray;
@@ -52,6 +53,7 @@ void		update_caustic_aabb(struct s_scene *scene);
 void		get_cached_triangle_aabb(struct s_cached_triangle *t, t_aabb *aabb);
 void		get_cylinder_aabb(struct s_cylinder *cyl, t_aabb *aabb);
 void		get_caustic_aabb(t_vector *photons, t_aabb *aabb);
+void	    get_disk_aabb(struct s_disk *disk, t_aabb *aabb);
 void		get_mesh_aabb(struct s_mesh *mesh, t_aabb *aabb);
 void		get_objects_aabb(struct s_object *object);
 void		get_paraboloid_aabb(struct s_paraboloid *para, t_aabb *aabb);

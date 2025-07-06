@@ -6,12 +6,11 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 03:53:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/01 04:58:29 by ccouble          ###   ########.fr       */
+/*   Updated: 2025/07/06 23:04:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include <stdio.h>
 #include "util.h"
 #include "vec3.h"
 

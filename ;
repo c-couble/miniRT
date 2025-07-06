@@ -1,0 +1,58 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_disk_aabb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/06 22:52:03 by lespenel          #+#    #+#             */
+/*   Updated: 2025/07/06 23:25:00 by lespenel         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "bounding_box.h"
+#include "object/disk.h"
+#include "util.h"
+
+static void	get_radial_vec(t_vec3 *ra, t_vec3 *rb, t_vec3 *axis, double radius);
+static void	get_face(t_vec3 face[4], t_vec3 *mid, t_vec3 *ra, t_vec3 *rb);
+
+void	get_disk_aabb(t_disk *disk, t_aabb *aabb)
+{
+	t_vec3	radial_a;
+	t_vec3	radial_b;
+    t_vec3  corners[4];
+
+	get_radial_vec(&radial_a, &radial_b, &disk->normal, disk->radius);
+	get_face(b_box.top, &top_mid, &radial_a, &radial_b);
+	get_face(b_box.bottom, &bottom_mid, &radial_a, &radial_b);
+	get_aabb_from_bbox(&b_box, aabb);
+	aabb->center = disk->center;
+}
+
+static void	get_radial_vec(t_vec3 *ra, t_vec3 *rb, t_vec3 *axis, double radius)
+{
+	t_vec3	u;
+
+	vec3_create(0, 0, 1, &u);
+	if (double_equals(axis->z, 1) || double_equals(axis->z, -1))
+		vec3_create(1, 0, 0, ra);
+	else
+		vec3_normalize(vec3_cross(axis, &u, ra));
+	vec3_normalize(vec3_cross(ra, axis, rb));
+	vec3_scale(ra, radius);
+	vec3_scale(rb, radius);
+}
+
+static void	get_face(t_vec3 face[4], t_vec3 *mid, t_vec3 *ra, t_vec3 *rb)
+{
+	t_vec3	plus;
+	t_vec3	minus;
+
+	vec3_add(ra, rb, &plus);
+	vec3_subtract(ra, rb, &minus);
+	vec3_subtract(mid, &minus, &face[0]);
+	vec3_subtract(mid, &plus, &face[1]);
+	vec3_add(mid, &minus, &face[2]);
+	vec3_add(mid, &plus, &face[3]);
+}
