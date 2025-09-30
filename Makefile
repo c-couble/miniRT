@@ -24,7 +24,7 @@ CFLAGS = -Wall -Wextra -Werror -std=gnu11 \
 
 LDFLAGS = -lX11 -lm -lz -lXext
 
-OPTIMIZE_FLAGS = -Ofast -funroll-loops
+OPTIMIZE_FLAGS = -O3 -ffast-math -funroll-loops
 
 DEBUG_FLAGS = -g3
 
