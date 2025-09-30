@@ -16,7 +16,7 @@ MLX_DIR = $(LIBS_DIR)/minilibx-linux
 
 MLX = libmlx.a
 
-CFLAGS = -Wall -Wextra -Werror \
+CFLAGS = -Wall -Wextra -Werror -std=gnu11 \
 		 -MD -MP \
 		 -I $(INCLUDES_DIR) \
 		 -I $(LIBFT_DIR)/$(INCLUDES_DIR) \
