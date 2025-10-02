@@ -16,7 +16,7 @@ MLX_DIR = $(LIBS_DIR)/minilibx-linux
 
 MLX = libmlx.a
 
-CFLAGS = -Wall -Wextra -Werror \
+CFLAGS = -Wall -Wextra -Werror -std=gnu11 \
 		 -MD -MP \
 		 -I $(INCLUDES_DIR) \
 		 -I $(LIBFT_DIR)/$(INCLUDES_DIR) \
@@ -24,7 +24,7 @@ CFLAGS = -Wall -Wextra -Werror \
 
 LDFLAGS = -lX11 -lm -lz -lXext
 
-OPTIMIZE_FLAGS = -Ofast -funroll-loops
+OPTIMIZE_FLAGS = -O3 -ffast-math -funroll-loops
 
 DEBUG_FLAGS = -g3
 
