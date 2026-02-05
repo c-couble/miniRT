@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_math.h                                          :+:      :+:    :+:   */
+/*   ft_min.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
+/*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/16 06:34:19 by ccouble           #+#    #+#             */
-/*   Updated: 2026/02/04 22:59:54 by lespenel         ###   ########.fr       */
+/*   Created: 2026/02/04 22:59:13 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/04 23:00:32 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_MATH_H
-# define FT_MATH_H
-
-int		ft_abs(int a);
-double	ft_dabs(double a);
-double	ft_dmax(double a, double b);
-double	ft_dmin(double a, double b);
-int		ft_min(int a, int b);
-int		ft_max(int a, int b);
-
-#endif
+int	ft_min(int a, int b)
+{
+	if (a < b)
+		return (a);
+	return (b);
+}

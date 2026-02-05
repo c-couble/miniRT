@@ -34,6 +34,7 @@ SRC = \
 	  math/ft_dmin.c \
 	  math/ft_dmax.c \
 	  math/ft_max.c \
+	  math/ft_min.c \
 	  \
 	  mem/ft_calloc.c \
 	  mem/ft_memchr.c \
