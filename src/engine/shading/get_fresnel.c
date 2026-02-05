@@ -18,20 +18,27 @@
 static void		compute_fresnel(t_ray *ray, double n1, double *kr);
 static double	compute_kr(double cosi, double etai, double etat, double sint);
 
-void	get_fresnel(t_scene *scene, t_ray *c_ray, t_color *color, int depth)
+//TODO clean
+t_colorf	get_fresnel(t_scene *scene, t_ray *c_ray, t_colorf color, int depth)
 {
-	double	kr;
-	t_color	refract;
-	t_color	reflect;
+	double		kr;
+	t_colorf	refract;
+	t_colorf	reflect;
 
 	compute_fresnel(c_ray, c_ray->data.materials->refract_index, &kr);
-	refract.color = 0;
+	refract.r = 0;
+	refract.g = 0;
+	refract.b = 0;
 	if (kr < 1)
-		refract.color = get_refract(scene, c_ray, *color, depth - 1);
-	reflect.color = get_reflect(scene, c_ray, *color, depth - 1);
-	reflect.color = scale_color(&reflect, kr);
-	refract.color = scale_color(&refract, 1 - kr);
-	color->color = add_color(&refract, &reflect);
+		refract = get_refract(scene, c_ray, color, depth - 1);
+		// refract.color = get_refract(scene, c_ray, *color, depth - 1);
+	reflect = get_reflect(scene, c_ray, color, depth - 1);
+	// reflect.color = scale_color(&reflect, kr);
+	reflect = color_scale(reflect, kr);
+	// refract.color = scale_color(&refract, 1 - kr);
+	refract = color_scale(refract, 1 - kr);
+	// color->color = add_color(&refract, &reflect);
+	return (color_add(refract, reflect));
 }
 
 static void	compute_fresnel(t_ray *ray, double n1, double *kr)

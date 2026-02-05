@@ -84,6 +84,7 @@ SRC = \
 	  caustic/hooks/nearest_neighbour_incr.c \
 	  caustic/hooks/nearest_neighbour_decr.c \
 	  \
+	  color/color_normalize.c \
 	  color/add_color.c \
 	  color/add_scale_color.c \
 	  color/get_normal_color.c \

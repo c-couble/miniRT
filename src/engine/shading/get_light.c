@@ -6,23 +6,25 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/15 10:08:05 by ccouble          ###   ########.fr       */
+/*   Updated: 2026/02/05 00:58:54 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "color.h"
 #include "shading.h"
+#include "vec3.h"
 
 static int	trace_light(t_scene *scene, t_ray *l_ray, t_ray *c_ray, t_light *l);
 
-uint32_t	get_light(t_scene *scene, t_ray *ray)
+t_colorf	get_light(t_scene *scene, t_ray *ray)
 {
-	t_color		light;
+	t_colorf	light;
 	t_light		*lights;
 	t_ray		light_ray;
 	size_t		i;
 
 	i = 0;
-	light.color = get_ambiant_light(scene);
+	light = get_ambiant_light(scene);
 	lights = scene->lights.array;
 	while (i < scene->lights.size)
 	{
@@ -31,8 +33,12 @@ uint32_t	get_light(t_scene *scene, t_ray *ray)
 			phong_model(lights + i, &light, ray, &light_ray);
 		++i;
 	}
-	get_caustics(&scene->caustic, ray, &light);
-	return (multiply_color(&light, &ray->data.color));
+	// get_caustics(&scene->caustic, ray, &light);
+	t_colorf d = color_normalize(ray->data.color);
+	d = color_multiply(light, d);
+	return (d);
+
+	// return (multiply_color(&old_light, &ray->data.color));
 }
 
 static int	trace_light(t_scene *scene, t_ray *l_ray, t_ray *c_ray, t_light *l)

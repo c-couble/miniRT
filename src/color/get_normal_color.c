@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
 #include "ray.h"
+#include "vec3.h"
 
-uint32_t	get_normal_color(t_ray *camera_ray)
+t_colorf	get_normal_color(t_ray *camera_ray)
 {
-	t_color	color;
+	t_colorf	color;
 
-	color.rgb.r = (camera_ray->data.normal.x + 1) * 0.5 * 255;
-	color.rgb.g = (camera_ray->data.normal.y + 1) * 0.5 * 255;
-	color.rgb.b = (camera_ray->data.normal.z + 1) * 0.5 * 255;
-	return (color.color);
+	color.r = (camera_ray->data.normal.x + 1) * 0.5;
+	color.g = (camera_ray->data.normal.y + 1) * 0.5;
+	color.b = (camera_ray->data.normal.z + 1) * 0.5;
+	return (color);
 }

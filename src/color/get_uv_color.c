@@ -10,17 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
-#include "color.h"
-#include "object.h"
 #include "ray.h"
 
-uint32_t	get_uv_color(t_ray *camera_ray)
+t_colorf	get_uv_color(t_ray *camera_ray)
 {
-	t_color	color;
+	t_colorf	color;
 
-	color.rgb.r = camera_ray->data.u * 255;
-	color.rgb.g = camera_ray->data.v * 255;
-	color.rgb.b = 0;
-	return (color.color);
+	color.r = camera_ray->data.u;
+	color.g = camera_ray->data.v;
+	color.b = 0;
+	return (color);
 }
