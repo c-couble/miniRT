@@ -12,6 +12,7 @@
 
 #include "caustic.h"
 #include "engine.h"
+#include "ft_mem.h"
 #include "ft_string.h"
 #include "normal_map.h"
 #include "object.h"
@@ -49,8 +50,8 @@ static void	init_optional_data(t_option *data)
 	data->down_normal_map = NULL;
 	data->checker.x_size = 0;
 	data->checker.y_size = 0;
-	data->checker.x_color.color = 0;
-	data->checker.y_color.color = 0;
+	ft_memset(&data->checker.x_color, 0, sizeof(t_colorf));
+	ft_memset(&data->checker.y_color, 0, sizeof(t_colorf));
 	data->photon_nb = 0;
 	data->has_shadow = 1;
 }

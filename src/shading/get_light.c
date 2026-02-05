@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 02:12:48 by ccouble           #+#    #+#             */
-/*   Updated: 2026/02/05 00:58:54 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/05 23:15:02 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_colorf	get_light(t_scene *scene, t_ray *ray)
 	size_t		i;
 
 	i = 0;
-	light = get_ambiant_light(scene);
+	light = color_scale(scene->ambient_light.color, scene->ambient_light.ratio);
 	lights = scene->lights.array;
 	while (i < scene->lights.size)
 	{
@@ -33,12 +33,8 @@ t_colorf	get_light(t_scene *scene, t_ray *ray)
 			phong_model(lights + i, &light, ray, &light_ray);
 		++i;
 	}
-	// get_caustics(&scene->caustic, ray, &light);
-	t_colorf d = color_normalize(ray->data.color);
-	d = color_multiply(light, d);
-	return (d);
-
-	// return (multiply_color(&old_light, &ray->data.color));
+	get_caustics(&scene->caustic, ray, &light);
+	return (color_multiply(light, ray->data.color));
 }
 
 static int	trace_light(t_scene *scene, t_ray *l_ray, t_ray *c_ray, t_light *l)

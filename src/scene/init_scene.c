@@ -6,16 +6,17 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 21:35:32 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 16:33:30 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/05 23:41:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <fcntl.h>
 #include <unistd.h>
+
 #include "defines.h"
 #include "engine.h"
 #include "ft_mem.h"
 #include "ft_string.h"
-#include "scene.h"
 #include "util.h"
 
 static int	get_file(char *file);
@@ -53,7 +54,7 @@ static void	set_scene(t_scene *scene, char *file)
 	scene->camera.fov = -1;
 	scene->ambient_light.ratio = -1;
 	scene->scene_name = file;
-	scene->background.color = DEFAULT_BACKGROUND;
+	scene->background = color_normalize((t_color)(uint32_t)DEFAULT_BACKGROUND);
 }
 
 static int	fill_objects(t_engine *engine, t_scene *scene, char *file)

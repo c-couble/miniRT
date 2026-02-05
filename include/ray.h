@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/01 03:58:48 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 10:15:19 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/05 23:22:11 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ typedef struct s_hit_data
 	t_vec3				hitpos;
 	t_vec3				normal;
 	t_vec3				raw_normal;
-	t_color				color;
+	t_colorf			color;
 	double				u;
 	double				v;
 	struct s_object		*obj;
@@ -49,5 +49,7 @@ struct	s_scene;
 
 int		trace_ray(struct s_scene *scene, t_ray *ray);
 void	get_inv_dir(t_ray *ray);
+void	get_reflection_ray(t_ray *to_ref, t_ray *camera_ray, t_vec3 *out);
+void	get_refraction_ray(t_ray *to_ref, t_vec3 *out_ref, double n1);
 
 #endif

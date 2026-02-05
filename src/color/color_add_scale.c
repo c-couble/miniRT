@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   add_scale_color.c                                  :+:      :+:    :+:   */
+/*   color_add_scale.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/03 05:19:54 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/03 05:21:01 by lespenel         ###   ########.fr       */
+/*   Created: 2026/02/05 23:31:06 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/05 23:31:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 #include "ft_math.h"
 
-uint32_t	add_scale_color(t_color *c1, t_color *c2, double ratio)
+t_colorf	color_add_scale(t_colorf a, t_colorf b, double ratio)
 {
-	t_color	result;
+	t_colorf	result;
 
 	if (ratio < 0)
-		return (0);
-	result.rgb.r = ft_dmin(255, c1->rgb.r + c2->rgb.r * ratio);
-	result.rgb.g = ft_dmin(255, c1->rgb.g + c2->rgb.g * ratio);
-	result.rgb.b = ft_dmin(255, c1->rgb.b + c2->rgb.b * ratio);
-	return (result.color);
+		return ((t_colorf){0, 0, 0});
+	result.r = ft_dmin(1, a.r + b.r * ratio);
+	result.g = ft_dmin(1, a.g + b.g * ratio);
+	result.b = ft_dmin(1, a.b + b.b * ratio);
+	return (result);
 }

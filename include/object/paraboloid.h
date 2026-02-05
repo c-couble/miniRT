@@ -28,7 +28,7 @@ typedef struct s_paraboloid
 	double			radius_coef;
 	double			height;
 	int				disk;
-	t_color			color;
+	t_colorf		color;
 }	t_paraboloid;
 
 union	u_object_data;

@@ -22,7 +22,7 @@ typedef struct s_sphere
 	double			diameter;
 	double			radius;
 	double			radiussq;
-	t_color			color;
+	t_colorf		color;
 }	t_sphere;
 
 struct	s_engine;

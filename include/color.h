@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 08:19:59 by ccouble           #+#    #+#             */
-/*   Updated: 2026/02/05 00:48:40 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/05 20:15:20 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
 # define ORANGE	0xFFFFA500
 # define CYAN	0xFF00FFFF
 # define PURPLE	0xFF800080
-# define NO_TEXTURE 7434869
 
 struct	s_ray;
 
@@ -46,25 +45,17 @@ typedef struct s_colorf
 	float	b;
 }	t_colorf;
 
-// TODO: clean
-uint32_t	color_denormalize(t_colorf in);
-
 t_colorf	color_normalize(t_color in);
+uint32_t	color_denormalize(t_colorf in);
 t_colorf	color_scale(t_colorf to_scale, double ratio);
 t_colorf	color_add(t_colorf a, t_colorf b);
 t_colorf	color_multiply(t_colorf a, t_colorf b);
 t_colorf	color_add_scale(t_colorf a, t_colorf b, double ratio);
 
-int			parse_color(t_color *color);
+int			parse_color(t_colorf *color);
 
 t_colorf	get_normal_color(struct s_ray *camera_ray);
 t_colorf	get_uv_color(struct s_ray *camera_ray);
-
-uint32_t	add_color(t_color *c1, t_color *c2);
-uint32_t	multiply_color(t_color *c1, t_color *c2);
-uint32_t	add_scale_color(t_color *c1, t_color *c2, double ratio);
-uint32_t	scale_color(t_color *c1, double ratio);
-
 uint32_t	interpolate_color(uint32_t a, uint32_t b, int curr, int max);
 uint32_t	get_depth_color(int value, int max_value);
 

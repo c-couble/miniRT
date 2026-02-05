@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/05 03:16:34 by ccouble           #+#    #+#             */
-/*   Updated: 2024/10/14 12:08:28 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/05 20:15:23 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,8 +66,8 @@ static void	set_data(t_cached_triangle *t, t_ray *ray, double u, double v)
 		ray->data.normal = t->normal;
 	ray->data.materials = t->material;
 	if (t->material == NULL)
-		ray->data.color.color = NO_TEXTURE;
-	ray->data.color.color = t->material->color.color;
+		ray->data.color = (t_colorf){0.4471, 0.1176, 0.2078};
+	ray->data.color = t->material->color;
 	if (t->material && t->point_tx[0] && t->point_tx[1] && t->point_tx[2])
 	{
 		get_uv(t, ray, u, v);

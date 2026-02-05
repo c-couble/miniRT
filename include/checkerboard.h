@@ -18,10 +18,10 @@
 
 typedef struct s_checkerboard
 {
-	int		x_size;
-	int		y_size;
-	t_color	x_color;
-	t_color	y_color;
+	int			x_size;
+	int			y_size;
+	t_colorf	x_color;
+	t_colorf	y_color;
 }	t_checkerboard;
 
 struct	s_engine;

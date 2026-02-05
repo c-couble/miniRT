@@ -6,16 +6,17 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:06:37 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 19:51:46 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/05 23:20:17 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "color.h"
 #include "shading.h"
 
-static uint32_t	get_mean_color(t_knn *knn);
-static void		get_caustic(t_caustic *c, t_ray *r, t_kdtree *tree, t_color *l);
+static t_colorf	get_mean_color(t_knn *knn);
+static void		get_caustic(t_caustic *c, t_ray *r, t_kdtree *tr, t_colorf *l);
 
-void	get_caustics(t_caustic *caustic, t_ray *ray, t_color *light)
+void	get_caustics(t_caustic *caustic, t_ray *ray, t_colorf *light)
 {
 	size_t			i;
 	t_caustic_map	*map;
@@ -30,30 +31,30 @@ void	get_caustics(t_caustic *caustic, t_ray *ray, t_color *light)
 	}
 }
 
-static void	get_caustic(t_caustic *c, t_ray *r, t_kdtree *tree, t_color *light)
+static void	get_caustic(t_caustic *c, t_ray *r, t_kdtree *tree, t_colorf *light)
 {
 	double		estimate;
-	t_color		caustic;
+	t_colorf	caustic;
 
 	set_knn_size(&c->knn[r->t_id], c->nn_nb);
 	get_knearest_neighbour(&c->knn[r->t_id], tree, &r->data.hitpos);
 	if (c->knn[r->t_id].nn_count == 0)
 		return ;
-	caustic.color = get_mean_color(&c->knn[r->t_id]);
+	caustic = get_mean_color(&c->knn[r->t_id]);
 	estimate = density_estimation(&c->knn[r->t_id], c->bandwidth);
 	estimate *= c->intensity_scalar;
-	caustic.color = scale_color(&caustic, estimate);
-	light->color = add_color(light, &caustic);
+	caustic = color_scale(caustic, estimate);
+	*light = color_add(*light, caustic);
 	empty_knn(&c->knn[r->t_id]);
 }
 
-static uint32_t	get_mean_color(t_knn *knn)
+static t_colorf	get_mean_color(t_knn *knn)
 {
-	size_t	i;
-	size_t	r;
-	size_t	g;
-	size_t	b;
-	t_color	ret;
+	size_t		i;
+	float		r;
+	float		g;
+	float		b;
+	t_colorf	ret;
 
 	i = 0;
 	r = 0;
@@ -61,13 +62,13 @@ static uint32_t	get_mean_color(t_knn *knn)
 	b = 0;
 	while (i < knn->nn_count)
 	{
-		r += knn->querys[i].node->photon.color.rgb.r;
-		g += knn->querys[i].node->photon.color.rgb.g;
-		b += knn->querys[i].node->photon.color.rgb.b;
+		r += knn->querys[i].node->photon.color.r;
+		g += knn->querys[i].node->photon.color.g;
+		b += knn->querys[i].node->photon.color.b;
 		++i;
 	}
-	ret.rgb.r = r / i;
-	ret.rgb.g = g / i;
-	ret.rgb.b = b / i;
-	return (ret.color);
+	ret.r = r / i;
+	ret.g = g / i;
+	ret.b = b / i;
+	return (ret);
 }

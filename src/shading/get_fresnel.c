@@ -6,19 +6,18 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 00:31:00 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 20:40:35 by ccouble          ###   ########.fr       */
+/*   Updated: 2026/02/05 23:16:21 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
-#include "color.h"
+
 #include "defines.h"
 #include "shading.h"
 
 static void		compute_fresnel(t_ray *ray, double n1, double *kr);
 static double	compute_kr(double cosi, double etai, double etat, double sint);
 
-//TODO clean
 t_colorf	get_fresnel(t_scene *scene, t_ray *c_ray, t_colorf color, int depth)
 {
 	double		kr;
@@ -31,13 +30,9 @@ t_colorf	get_fresnel(t_scene *scene, t_ray *c_ray, t_colorf color, int depth)
 	refract.b = 0;
 	if (kr < 1)
 		refract = get_refract(scene, c_ray, color, depth - 1);
-		// refract.color = get_refract(scene, c_ray, *color, depth - 1);
 	reflect = get_reflect(scene, c_ray, color, depth - 1);
-	// reflect.color = scale_color(&reflect, kr);
 	reflect = color_scale(reflect, kr);
-	// refract.color = scale_color(&refract, 1 - kr);
 	refract = color_scale(refract, 1 - kr);
-	// color->color = add_color(&refract, &reflect);
 	return (color_add(refract, reflect));
 }
 

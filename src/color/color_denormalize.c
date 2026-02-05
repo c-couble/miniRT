@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   add_color.c                                        :+:      :+:    :+:   */
+/*   color_denormalize.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/03 02:30:04 by lespenel          #+#    #+#             */
-/*   Updated: 2024/07/03 04:42:03 by lespenel         ###   ########.fr       */
+/*   Created: 2026/02/05 23:31:52 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/05 23:32:22 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
 #include "ft_math.h"
 
-uint32_t	add_color(t_color *c1, t_color *c2)
+uint32_t	color_denormalize(t_colorf in)
 {
-	t_color	result;
+	t_color	tmp;
 
-	result.rgb.r = ft_dmin(255, c1->rgb.r + c2->rgb.r);
-	result.rgb.g = ft_dmin(255, c1->rgb.g + c2->rgb.g);
-	result.rgb.b = ft_dmin(255, c1->rgb.b + c2->rgb.b);
-	return (result.color);
+	tmp.rgb.r = ft_min(in.r * 255.0, 255);
+	tmp.rgb.g = ft_min(in.g * 255.0, 255);
+	tmp.rgb.b = ft_min(in.b * 255.0, 255);
+	return (tmp.color);
 }

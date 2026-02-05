@@ -25,8 +25,8 @@ void	apply_checkerboard(t_ray *ray, t_object *obj)
 		x = floor(ray->data.u * checker.x_size);
 		y = floor(ray->data.v * checker.y_size);
 		if (fmod(x + y, 2) == 0)
-			ray->data.color.color = checker.x_color.color;
+			ray->data.color = checker.x_color;
 		else
-			ray->data.color.color = checker.y_color.color;
+			ray->data.color = checker.y_color;
 	}
 }

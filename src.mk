@@ -85,14 +85,15 @@ SRC = \
 	  caustic/hooks/nearest_neighbour_decr.c \
 	  \
 	  color/color_normalize.c \
-	  color/add_color.c \
-	  color/add_scale_color.c \
+	  color/color_add.c \
+	  color/color_add_scale.c \
+	  color/color_denormalize.c \
+	  color/color_multiply.c \
+	  color/color_scale.c \
 	  color/get_normal_color.c \
 	  color/get_depth_color.c \
-	  color/interpolate_color.c \
 	  color/get_uv_color.c \
-	  color/multiply_color.c \
-	  color/scale_color.c \
+	  color/interpolate_color.c \
 	  \
 	  engine/clear_engine.c \
 	  engine/clear_threads.c \
@@ -104,17 +105,6 @@ SRC = \
 	  engine/render_frame.c \
 	  engine/routine.c \
 	  engine/save_render_file.c \
-	  \
-	  engine/shading/get_ambiant_light.c \
-	  engine/shading/get_caustics.c \
-	  engine/shading/get_fresnel.c \
-	  engine/shading/get_light.c \
-	  engine/shading/get_pixel_color.c \
-	  engine/shading/get_reflect.c \
-	  engine/shading/get_reflection_ray.c \
-	  engine/shading/get_refraction_ray.c \
-	  engine/shading/get_refract.c \
-	  engine/shading/phong_model.c \
 	  \
 	  kdtree/create_kdnode.c \
 	  kdtree/init_kdtree.c \
@@ -253,7 +243,17 @@ SRC = \
 	  texture/parse_texture_if_needed.c \
 	  \
 	  ray/get_inv_dir.c \
+	  ray/get_reflection_ray.c \
+	  ray/get_refraction_ray.c \
 	  ray/trace_ray.c \
+	  \
+	  shading/get_caustics.c \
+	  shading/get_fresnel.c \
+	  shading/get_light.c \
+	  shading/get_pixel_color.c \
+	  shading/get_reflect.c \
+	  shading/get_refract.c \
+	  shading/phong_model.c \
 	  \
 	  util/double_equals.c \
 	  util/find_max.c \

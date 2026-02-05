@@ -18,9 +18,9 @@
 
 typedef struct s_photon
 {
-	t_vec3	pos;
-	t_color	color;
-	double	ratio;
+	t_vec3		pos;
+	t_colorf	color;
+	double		ratio;
 }	t_photon;
 
 #endif

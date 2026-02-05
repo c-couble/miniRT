@@ -19,11 +19,11 @@
 
 typedef struct s_texture
 {
-	char	*file_name;
-	t_color	*texture;
-	size_t	width;
-	size_t	height;
-	int		maxval;
+	char		*file_name;
+	t_colorf	*texture;
+	size_t		width;
+	size_t		height;
+	int			maxval;
 }	t_texture;
 
 struct	s_engine;
@@ -31,7 +31,7 @@ struct	s_option;
 
 void		clear_texture(t_texture *texture);
 void		clear_textures(t_vector *textures);
-t_color		get_texture_color(t_texture *texture, double u, double v);
+t_colorf	get_texture_color(t_texture *texture, double u, double v);
 t_texture	*parse_texture_if_needed(struct s_engine *engine, char *file);
 int			parse_texture(struct s_engine *engine, struct s_option *data,
 				char *arg);

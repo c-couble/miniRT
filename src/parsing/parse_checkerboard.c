@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <limits.h>
+#include <stdint.h>
 #include "engine.h"
 #include "ft_string.h"
 #include "object/optional_data.h"

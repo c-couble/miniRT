@@ -20,7 +20,7 @@ typedef struct s_plane
 {
 	t_vec3			pos;
 	t_vec3			normal;
-	t_color			color;
+	t_colorf		color;
 	t_vec3			rot_axis;
 	double			theta;
 }	t_plane;

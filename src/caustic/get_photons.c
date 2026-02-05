@@ -33,7 +33,7 @@ int	get_photons(t_scene *scene, t_vector *p, t_object *obj, t_light *light)
 	{
 		generate_spherical_ray(&p_ray);
 		p_ray.startpos = light->pos;
-		photon.color.color = light->color.color;
+		photon.color = light->color;
 		photon.ratio = light->ratio;
 		if (intersect(obj, &p_ray) > INACCURATE_ZERO)
 		{

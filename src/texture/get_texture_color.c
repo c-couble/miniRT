@@ -14,13 +14,15 @@
 #include "color.h"
 #include "texture.h"
 
-t_color	get_texture_color(t_texture *texture, double u, double v)
+t_colorf	get_texture_color(t_texture *texture, double u, double v)
 {
-	t_color	color;
-	int		col;
-	int		line;
+	t_colorf	color;
+	int			col;
+	int			line;
 
-	color.color = 0xffffff;
+	color.r = 1;
+	color.g = 1;
+	color.b = 1;
 	if (u < 0 || u > 1 || v < 0 || v > 1)
 		return (color);
 	col = u * texture->width;

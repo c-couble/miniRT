@@ -27,7 +27,7 @@ typedef struct s_material_data
 	t_texture	*texture;
 	t_texture	*normal_map;
 	char		*name;
-	t_color		color;
+	t_colorf	color;
 }	t_material_data;
 
 struct	s_engine;

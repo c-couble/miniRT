@@ -31,17 +31,17 @@ int	parse_kd(t_engine *engine, t_obj_mtl *mtl, char *line)
 		return (-1);
 	if (parse_double(&g, ft_strtok_r(NULL, " \t", &save), 0, 1) == -1)
 	{
-		material->color.rgb.r = 255 * r;
-		material->color.rgb.g = 255 * r;
-		material->color.rgb.b = 255 * r;
+		material->color.r = r;
+		material->color.g = r;
+		material->color.b = r;
 		material->diffuse_ratio = MESH_DIFFUSE_RATIO;
 		return (0);
 	}
 	if (parse_double(&b, ft_strtok_r(NULL, " \t", &save), 0, 1) == -1)
 		return (-1);
-	material->color.rgb.r = 255 * r;
-	material->color.rgb.g = 255 * g;
-	material->color.rgb.b = 255 * b;
+	material->color.r = r;
+	material->color.g = g;
+	material->color.b = b;
 	material->diffuse_ratio = MESH_DIFFUSE_RATIO;
 	return (0);
 }

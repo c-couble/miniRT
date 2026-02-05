@@ -32,7 +32,7 @@ typedef struct s_scene
 	t_vector			planes;
 	t_bvh				bvh;
 	char				*scene_name;
-	t_color				background;
+	t_colorf			background;
 }	t_scene;
 
 struct	s_engine;

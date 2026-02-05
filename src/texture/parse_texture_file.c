@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/29 02:01:29 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/13 04:10:56 by ccouble          ###   ########.fr       */
+/*   Updated: 2026/02/05 20:08:35 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+
 #include "color.h"
 #include "ft_io.h"
 #include "ft_mem.h"
@@ -128,28 +129,29 @@ static int	set_value(t_texture *texture, char *word)
 	return (1);
 }
 
-static int	read_data(t_texture *texture, t_file *file, ssize_t offset)
+static int	read_data(t_texture *tx, t_file *file, ssize_t offset)
 {
-	size_t	i;
-	t_color	*color;
-	char	*current;
+	size_t		i;
+	char		*current;
+	t_color		tmp;
 
-	if (offset + 3 * texture->width * texture->height != file->length)
+	if (offset + 3 * tx->width * tx->height != file->length)
 		return (-1);
-	color = malloc((texture->width * texture->height) * sizeof(t_color));
-	if (color == NULL)
+	tx->texture = malloc((tx->width * tx->height) * sizeof(t_colorf));
+	if (tx->texture == NULL)
 		return (-1);
-	texture->texture = color;
+	tmp.color = 0;
 	i = 0;
-	while (i < texture->width * texture->height)
+	while (i < tx->width * tx->height)
 	{
 		current = file->content + offset + i * 3;
-		ft_memcpy(&color[i].rgb.r, current, sizeof(uint8_t));
-		ft_memcpy(&color[i].rgb.g, current + 1, sizeof(uint8_t));
-		ft_memcpy(&color[i].rgb.b, current + 2, sizeof(uint8_t));
-		color[i].rgb.r *= 255 / texture->maxval;
-		color[i].rgb.g *= 255 / texture->maxval;
-		color[i].rgb.b *= 255 / texture->maxval;
+		ft_memcpy(&tmp.rgb.r, current, sizeof(uint8_t));
+		ft_memcpy(&tmp.rgb.g, current + 1, sizeof(uint8_t));
+		ft_memcpy(&tmp.rgb.b, current + 2, sizeof(uint8_t));
+		tmp.rgb.r *= 255 / tx->maxval;
+		tmp.rgb.g *= 255 / tx->maxval;
+		tmp.rgb.b *= 255 / tx->maxval;
+		tx->texture[i] = color_normalize(tmp);
 		++i;
 	}
 	return (0);

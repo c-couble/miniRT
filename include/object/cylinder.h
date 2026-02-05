@@ -18,16 +18,16 @@
 
 typedef struct s_cylinder
 {
-	t_vec3	pos;
-	t_vec3	center;
-	t_vec3	axis;
-	t_vec3	rot_axis;
-	double	theta;
-	double	diameter;
-	double	radius;
-	double	radiussq;
-	double	height;
-	t_color	color;
+	t_vec3		pos;
+	t_vec3		center;
+	t_vec3		axis;
+	t_vec3		rot_axis;
+	double		theta;
+	double		diameter;
+	double		radius;
+	double		radiussq;
+	double		height;
+	t_colorf	color;
 }	t_cylinder;
 
 union	u_object_data;

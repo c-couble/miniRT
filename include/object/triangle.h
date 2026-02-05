@@ -30,7 +30,7 @@ typedef struct s_cached_triangle
 	t_vec3			e2;
 	t_vec3			normal;
 	t_material_data	*material;
-	t_color			color;
+	t_colorf		color;
 }	t_cached_triangle;
 
 typedef struct s_triangle
@@ -42,7 +42,7 @@ typedef struct s_triangle
 	t_vec3				p1t;
 	t_vec3				p2t;
 	t_texture			*texture;
-	t_color				color;
+	t_colorf			color;
 	t_cached_triangle	cached;
 }	t_triangle;
 

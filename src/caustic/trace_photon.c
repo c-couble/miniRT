@@ -40,13 +40,13 @@ int	trace_photon(t_scene *scene, t_ray *ph_ray, int depth, t_photon *ph)
 
 static void	set_refract_photon(t_ray *ph_ray, t_ray *refr, t_photon *ph)
 {
-	t_color	refract;
+	t_colorf	refract;
 
 	if (ph_ray->data.materials->refract_blend != 1)
 	{
-		refract.color = scale_color(&ph_ray->data.color,
+		refract = color_scale(ph_ray->data.color,
 				ph_ray->data.materials->refract_blend);
-		ph->color.color = multiply_color(&refract, &ph->color);
+		ph->color = color_multiply(refract, ph->color);
 	}
 	get_refraction_ray(ph_ray, &refr->ray,
 		ph_ray->data.materials->refract_index);

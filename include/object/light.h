@@ -18,9 +18,9 @@
 
 typedef struct s_light
 {
-	t_vec3	pos;
-	double	ratio;
-	t_color	color;
+	t_vec3		pos;
+	double		ratio;
+	t_colorf	color;
 }	t_light;
 
 struct	s_engine;
