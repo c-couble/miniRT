@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:21:31 by lespenel          #+#    #+#             */
-/*   Updated: 2026/02/05 23:20:59 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/11 02:33:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 # define DEFINES_H
 
 # define SCREEN_AUTOSIZE	0
-# define SCREEN_WIDTH		1920
-# define SCREEN_HEIGHT		1080
+# define SCREEN_WIDTH		500
+# define SCREEN_HEIGHT		500
 
 # define DEPTH				16
 # define LOW_RENDER_DEPTH   8

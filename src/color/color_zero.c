@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_objects_vectors.c                             :+:      :+:    :+:   */
+/*   color_zero.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 14:49:42 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 14:53:26 by lespenel         ###   ########.fr       */
+/*   Created: 2026/02/10 19:08:49 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/10 19:10:42 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "scene.h"
-#include "vector.h"
+#include "color.h"
 
-void	init_object_vectors(t_scene *scene)
+void	color_zero(t_colorf *color)
 {
-	init_vector(&scene->objects, sizeof(t_object));
-	init_vector(&scene->lights, sizeof(t_light));
-	init_vector(&scene->planes, sizeof(t_object));
-	init_vector(&scene->area_lights, sizeof(t_area_light));
+	color->r = 0;
+	color->g = 0;
+	color->b = 0;
 }

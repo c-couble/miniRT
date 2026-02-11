@@ -67,6 +67,7 @@ SRC = \
 	  camera/hooks/save_render.c \
 	  camera/hooks/speed_down.c \
 	  camera/hooks/speed_up.c \
+	  camera/hooks/toggle_sampling.c \
 	  \
 	  caustic/init_caustic.c \
 	  caustic/clear_caustic.c \
@@ -90,6 +91,7 @@ SRC = \
 	  color/color_denormalize.c \
 	  color/color_multiply.c \
 	  color/color_scale.c \
+	  color/color_zero.c \
 	  color/get_normal_color.c \
 	  color/get_depth_color.c \
 	  color/get_uv_color.c \
@@ -100,9 +102,11 @@ SRC = \
 	  engine/engine_focus_in.c \
 	  engine/engine_loop_hook.c \
 	  engine/init_engine.c \
+	  engine/init_samples.c \
 	  engine/init_threads.c \
 	  engine/quit_engine.c \
 	  engine/render_frame.c \
+	  engine/render_pixel.c \
 	  engine/routine.c \
 	  engine/save_render_file.c \
 	  \
@@ -205,6 +209,7 @@ SRC = \
 	  \
 	  parsing/init_object.c \
 	  parsing/parse_ambient_light.c \
+	  parsing/parse_area_light.c \
 	  parsing/parse_background_color.c \
 	  parsing/parse_camera.c \
 	  parsing/parse_caustic.c \
@@ -229,12 +234,6 @@ SRC = \
 	  parsing/parse_uint8t.c \
 	  parsing/parse_vector3d.c \
 	  \
-	  scene/clear_objects_vectors.c \
-	  scene/clear_scene.c \
-	  scene/init_scene.c \
-	  scene/init_objects_vectors.c \
-	  scene/read_file.c \
-	  \
 	  texture/apply_checkerboard.c \
 	  texture/clear_texture.c \
 	  texture/clear_textures.c \
@@ -247,13 +246,23 @@ SRC = \
 	  ray/get_refraction_ray.c \
 	  ray/trace_ray.c \
 	  \
+	  scene/clear_objects_vectors.c \
+	  scene/clear_scene.c \
+	  scene/init_scene.c \
+	  scene/init_objects_vectors.c \
+	  scene/read_file.c \
+	  \
+	  shading/create_shadow_ray.c \
 	  shading/get_caustics.c \
 	  shading/get_fresnel.c \
-	  shading/get_light.c \
-	  shading/get_pixel_color.c \
+	  shading/get_direct_lighting.c \
+	  shading/get_area_lights.c \
+	  shading/get_point_lights.c \
 	  shading/get_reflect.c \
 	  shading/get_refract.c \
+	  shading/is_in_shadow.c \
 	  shading/phong_model.c \
+	  shading/shade_ray.c \
 	  \
 	  util/double_equals.c \
 	  util/find_max.c \

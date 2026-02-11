@@ -6,12 +6,13 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 04:33:41 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 16:34:45 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/11 03:49:16 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include <stdlib.h>
+#include "color.h"
 #include "defines.h"
 #include "engine.h"
 #include "caustic.h"
@@ -60,8 +61,15 @@ static int	prepare_engine(t_engine *engine, char *scene)
 		clear_scene(&engine->scene);
 		return (-1);
 	}
+	if (init_samples(engine) == -1)
+	{
+		clear_scene(&engine->scene);
+		clear_mlx_struct(&engine->mlx);
+		return (-1);
+	}
 	if (init_hooks(engine) == -1 || init_threads(engine) == -1)
 	{
+		free(engine->samples);
 		clear_scene(&engine->scene);
 		clear_mlx_struct(&engine->mlx);
 		return (-1);

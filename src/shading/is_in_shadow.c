@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_objects_vectors.c                             :+:      :+:    :+:   */
+/*   is_in_shadow.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 14:49:42 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 14:53:26 by lespenel         ###   ########.fr       */
+/*   Created: 2026/02/10 19:28:36 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/10 19:29:26 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ray.h"
 #include "scene.h"
-#include "vector.h"
 
-void	init_object_vectors(t_scene *scene)
+int	is_in_shadow(t_scene *scene, t_ray *l_ray, double dist)
 {
-	init_vector(&scene->objects, sizeof(t_object));
-	init_vector(&scene->lights, sizeof(t_light));
-	init_vector(&scene->planes, sizeof(t_object));
-	init_vector(&scene->area_lights, sizeof(t_area_light));
+	const double	d = trace_ray(scene, l_ray);
+
+	if (d == -1)
+		return (0);
+	return (d < dist);
 }

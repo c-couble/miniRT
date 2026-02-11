@@ -1,30 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_engine.c                                     :+:      :+:    :+:   */
+/*   toggle_sampling.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/21 04:47:22 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 15:42:31 by ccouble          ###   ########.fr       */
+/*   Created: 2026/02/11 03:40:50 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/11 03:41:25 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include "engine.h"
-#include "obj_3d.h"
-#include "scene.h"
-#include "texture.h"
+#include <stdio.h>
 
-void	clear_engine(t_engine *engine)
+#include "engine.h"
+
+void	toggle_sampling(t_engine *engine)
 {
-	clear_threads(engine, engine->thread_count);
-	clear_scene(&engine->scene);
-	clear_mlx_struct(&engine->mlx);
-	clear_textures(&engine->textures);
-	clear_objs_3d(&engine->objs_3d);
-	clear_mtls(&engine->obj_mtls);
-	free(engine->samples);
-	if (engine->render_size != 0)
-		free(engine->render_data);
+	if (engine->sampling)
+	{
+		printf("sampling off\n");
+		if (engine->scene.camera.locked)
+		{
+			engine->scene.camera.should_render = 0;
+			return ;
+		}
+		engine->sampling = 0;
+		engine->sample_nb = 1;
+	}
+	else
+	{
+		printf("sampling on\n");
+		if (engine->scene.camera.locked)
+			engine->scene.camera.should_render = 1;
+		engine->sampling = 1;
+		engine->sample_nb = 1;
+	}
 }

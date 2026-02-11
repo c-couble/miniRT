@@ -6,15 +6,13 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 03:03:58 by ccouble           #+#    #+#             */
-/*   Updated: 2026/02/04 23:53:35 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/11 00:39:40 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "color.h"
-#include "defines.h"
 #include "engine.h"
 #include "ray.h"
-#include "shading.h"
 #include "vec3.h"
 #include "vec4.h"
 
@@ -77,9 +75,9 @@ static void	handle_single_ray(t_engine *engine, int i, int j, int t_id)
 	setup_camera_ray(engine, &c_ray, j, i);
 	c_ray.t_id = t_id;
 	if (engine->scene.camera.locked)
-		color.color = get_color(&engine->scene, &c_ray, DEPTH);
+		color.color = render_pixel(engine, &c_ray, j, i);
 	else
-		color.color = get_color(&engine->scene, &c_ray, LOW_RENDER_DEPTH);
+		color.color = render_low_quality_pixel(engine, &c_ray);
 	if (engine->scene.camera.save)
 		engine->render_data[(i * engine->render_width) + j].color = color.color;
 	else

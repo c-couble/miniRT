@@ -6,11 +6,10 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 22:22:30 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/30 13:37:48 by ccouble          ###   ########.fr       */
+/*   Updated: 2026/02/11 01:46:38 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "engine.h"
 #include "ft_string.h"
 #include "object.h"
@@ -40,7 +39,7 @@ int	init_object(t_engine *engine, t_object *object, char *line)
 		object->data.triangle.cached.material = &object->optional_data.material;
 	if (parse_optional_data(engine, object) == -1)
 		return (-1);
-	if (object->type != LIGHT
+	if (object->type != LIGHT && object->type != AREA_LIGHT
 		&& object->type != AMBIENT_LIGHT && object->type != CAMERA)
 	{
 		get_objects_aabb(object);
@@ -52,6 +51,7 @@ static t_object_type	get_object_type(char *type)
 {
 	static char	*values[] = {
 	[AMBIENT_LIGHT] = "A",
+	[AREA_LIGHT] = "AL",
 	[CAMERA] = "C",
 	[LIGHT] = "L",
 	[SPHERE] = "sp",
@@ -79,6 +79,7 @@ static int	parse_object(t_engine *engine, t_object *object)
 {
 	static int	(*values[])(t_engine *engine, t_object_data *data) = {
 	[AMBIENT_LIGHT] = parse_ambient_light,
+	[AREA_LIGHT] = parse_area_light,
 	[CAMERA] = parse_camera,
 	[LIGHT] = parse_light,
 	[SPHERE] = parse_sphere,

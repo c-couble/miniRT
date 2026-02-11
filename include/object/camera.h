@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/14 07:56:42 by ccouble           #+#    #+#             */
-/*   Updated: 2025/01/30 17:36:44 by ccouble          ###   ########.fr       */
+/*   Updated: 2026/02/11 03:41:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,6 @@ void	save_render(struct s_engine *engine);
 void	speed_down(struct s_engine *engine);
 void	speed_up(struct s_engine *engine);
 void	change_render_mode(struct s_engine *engine);
+void	toggle_sampling(struct s_engine *engine);
 
 #endif

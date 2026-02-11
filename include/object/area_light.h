@@ -1,22 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_objects_vectors.c                             :+:      :+:    :+:   */
+/*   area_light.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 14:49:42 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 14:53:26 by lespenel         ###   ########.fr       */
+/*   Created: 2026/02/06 00:35:30 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/06 00:40:14 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "scene.h"
-#include "vector.h"
+#ifndef AREA_LIGHT_H
+# define AREA_LIGHT_H
 
-void	init_object_vectors(t_scene *scene)
+# include "color.h"
+# include "vec3.h"
+
+typedef struct s_area_light
 {
-	init_vector(&scene->objects, sizeof(t_object));
-	init_vector(&scene->lights, sizeof(t_light));
-	init_vector(&scene->planes, sizeof(t_object));
-	init_vector(&scene->area_lights, sizeof(t_area_light));
-}
+	t_vec3		pos;
+	t_vec3		normal;
+	t_vec3		axis_u;
+	t_vec3		axis_v;
+	double		size_u;
+	double		size_v;
+	double		area;
+	double		power;
+	t_colorf	color;
+}	t_area_light;
+
+struct	s_engine;
+union	u_object_data;
+
+int	parse_area_light(struct s_engine *engine, union u_object_data *object);
+
+#endif

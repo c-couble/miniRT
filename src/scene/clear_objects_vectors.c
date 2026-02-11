@@ -12,6 +12,7 @@
 
 #include <stdlib.h>
 #include "scene.h"
+#include "vector.h"
 
 static void	clear_object(t_object *obj);
 
@@ -28,6 +29,7 @@ void	clear_objects_vectors(t_scene *scene)
 		++i;
 	}
 	clear_vector(&scene->objects);
+	clear_vector(&scene->area_lights);
 	clear_vector(&scene->lights);
 	clear_vector(&scene->planes);
 }

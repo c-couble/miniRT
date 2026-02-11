@@ -45,6 +45,7 @@ typedef struct s_colorf
 	float	b;
 }	t_colorf;
 
+void		color_zero(t_colorf *color);
 t_colorf	color_normalize(t_color in);
 uint32_t	color_denormalize(t_colorf in);
 t_colorf	color_scale(t_colorf to_scale, double ratio);

@@ -6,21 +6,24 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 17:27:20 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 20:37:05 by ccouble          ###   ########.fr       */
+/*   Updated: 2026/02/11 01:45:18 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <errno.h>
 #include <stdlib.h>
 #include <unistd.h>
+
 #include "engine.h"
 #include "ft_io.h"
 #include "object.h"
+#include "scene.h"
 #include "util.h"
 
 static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i);
 static int	add_created_object(t_scene *scene, t_object *obj);
 static int	add_plane_and_object(t_scene *scene, t_object *obj);
+static int	add_lights(t_object *obj, t_scene *scene);
 
 int	read_file(t_engine *engine, t_scene *scene, int fd)
 {
@@ -57,15 +60,9 @@ static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i)
 		ft_dprintf(STDERR_FILENO, "Error\nParsing error on line %d\n", (int) i);
 		return (-1);
 	}
-	if (obj.type == LIGHT)
-	{
-		if (add_vector(&scene->lights, &obj.data.light, 1) == -1)
-		{
-			print_error("Memory allocation failure");
-			return (-1);
-		}
-	}
-	else if (obj.type != COMMENT)
+	if (add_lights(&obj, scene) == -1)
+		return (-1);
+	if (obj.type != COMMENT && obj.type != AREA_LIGHT && obj.type != LIGHT)
 	{
 		if (add_created_object(scene, &obj) == -1)
 			return (-1);
@@ -73,6 +70,27 @@ static int	add_object(t_engine *engine, t_scene *scene, char *line, size_t i)
 			scene->has_camera = 1;
 		else if (obj.type == AMBIENT_LIGHT)
 			scene->has_ambient_light = 1;
+	}
+	return (0);
+}
+
+static int	add_lights(t_object *obj, t_scene *scene)
+{
+	if (obj->type == AREA_LIGHT)
+	{
+		if (add_vector(&scene->area_lights, &obj->data.area_light, 1) == -1)
+		{
+			print_error("Memory allocation failure");
+			return (-1);
+		}
+	}
+	else if (obj->type == LIGHT)
+	{
+		if (add_vector(&scene->lights, &obj->data.light, 1) == -1)
+		{
+			print_error("Memory allocation failure");
+			return (-1);
+		}
 	}
 	return (0);
 }

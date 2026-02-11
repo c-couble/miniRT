@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_objects_vectors.c                             :+:      :+:    :+:   */
+/*   init_samples.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 14:49:42 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 14:53:26 by lespenel         ###   ########.fr       */
+/*   Created: 2026/02/11 03:48:51 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/11 03:49:28 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "scene.h"
-#include "vector.h"
+#include <stdlib.h>
 
-void	init_object_vectors(t_scene *scene)
+#include "engine.h"
+
+int	init_samples(t_engine *engine)
 {
-	init_vector(&scene->objects, sizeof(t_object));
-	init_vector(&scene->lights, sizeof(t_light));
-	init_vector(&scene->planes, sizeof(t_object));
-	init_vector(&scene->area_lights, sizeof(t_area_light));
+	engine->sampling = 0;
+	engine->sample_nb = 1;
+	engine->samples_size = (engine->mlx.height + 1) * (engine->mlx.width + 1)
+		* sizeof(t_colorf);
+	engine->samples = malloc(engine->samples_size);
+	if (engine->samples == NULL)
+		return (-1);
+	return (0);
 }

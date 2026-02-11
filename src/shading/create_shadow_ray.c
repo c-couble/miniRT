@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init_objects_vectors.c                             :+:      :+:    :+:   */
+/*   create_shadow_ray.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 14:49:42 by lespenel          #+#    #+#             */
-/*   Updated: 2024/09/30 14:53:26 by lespenel         ###   ########.fr       */
+/*   Created: 2026/02/10 19:27:50 by lespenel          #+#    #+#             */
+/*   Updated: 2026/02/10 19:28:10 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "scene.h"
-#include "vector.h"
+#include "ray.h"
 
-void	init_object_vectors(t_scene *scene)
+double	create_shadow_ray(t_ray *ray, t_vec3 *light_pos, t_ray *shadow_ray)
 {
-	init_vector(&scene->objects, sizeof(t_object));
-	init_vector(&scene->lights, sizeof(t_light));
-	init_vector(&scene->planes, sizeof(t_object));
-	init_vector(&scene->area_lights, sizeof(t_area_light));
+	double	dist;
+
+	shadow_ray->startpos = ray->data.hitpos;
+	vec3_subtract(light_pos, &shadow_ray->startpos, &shadow_ray->ray);
+	dist = vec3_normalize(&shadow_ray->ray);
+	get_inv_dir(shadow_ray);
+	return (dist);
 }

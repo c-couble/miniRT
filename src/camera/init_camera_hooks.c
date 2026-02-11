@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 05:59:02 by ccouble           #+#    #+#             */
-/*   Updated: 2024/11/04 01:57:38 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/11 03:41:05 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 static int	init_movement_hooks(t_engine *engine);
 static int	init_rotation_hooks(t_engine *engine);
+static int	init_render_hooks(t_engine *engine);
 
 int	init_camera_hooks(t_engine *engine)
 {
@@ -26,19 +27,12 @@ int	init_camera_hooks(t_engine *engine)
 		return (-1);
 	if (init_rotation_hooks(engine) == -1)
 		return (-1);
-	hook = create_mlx_hook(lock_camera, engine, KEY_ENTER, PRESS);
-	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
-		return (-1);
-	hook = create_mlx_hook(save_render, engine, KEY_P, PRESS);
-	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+	if (init_render_hooks(engine) == -1)
 		return (-1);
 	hook = create_mlx_hook(speed_down, engine, MOUSE_WHEELDOWN, MOUSE);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	hook = create_mlx_hook(speed_up, engine, MOUSE_WHEELUP, MOUSE);
-	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
-		return (-1);
-	hook = create_mlx_hook(change_render_mode, engine, KEY_M, PRESS);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	hook = create_mlx_hook(print_camera_pos, engine, KEY_C, PRESS);
@@ -89,6 +83,25 @@ static int	init_rotation_hooks(t_engine *engine)
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	hook = create_mlx_hook(camera_mouse_hook, engine, 0, MOUSE_MOTION);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	return (0);
+}
+
+static int	init_render_hooks(t_engine *engine)
+{
+	t_hook	hook;
+
+	hook = create_mlx_hook(toggle_sampling, engine, KEY_N, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(lock_camera, engine, KEY_ENTER, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(save_render, engine, KEY_P, PRESS);
+	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
+		return (-1);
+	hook = create_mlx_hook(change_render_mode, engine, KEY_M, PRESS);
 	if (add_vector(&engine->mlx.hooks, &hook, 1) == -1)
 		return (-1);
 	return (0);

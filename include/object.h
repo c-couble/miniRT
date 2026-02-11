@@ -6,7 +6,7 @@
 /*   By: ccouble <ccouble@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/12 19:52:03 by ccouble           #+#    #+#             */
-/*   Updated: 2024/09/27 07:14:31 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/11 01:45:43 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "bounding_box.h"
 # include "object/ambient_light.h"
+# include "object/area_light.h"
 # include "object/camera.h"
 # include "object/cylinder.h"
 # include "object/light.h"
@@ -29,6 +30,7 @@
 typedef enum e_object_type
 {
 	AMBIENT_LIGHT,
+	AREA_LIGHT,
 	CAMERA,
 	LIGHT,
 	SPHERE,
@@ -44,6 +46,7 @@ typedef enum e_object_type
 typedef union u_object_data
 {
 	t_ambient_light	ambient_light;
+	t_area_light	area_light;
 	t_camera		camera;
 	t_cylinder		cylinder;
 	t_light			light;

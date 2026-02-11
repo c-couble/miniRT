@@ -50,7 +50,13 @@ int	init_mlx_struct(t_mlx *mlx)
 
 static void	init_values(t_mlx *mlx)
 {
-	mlx_get_screen_size(mlx->mlx, &mlx->width, &mlx->height);
+	if (SCREEN_AUTOSIZE)
+		mlx_get_screen_size(mlx->mlx, &mlx->width, &mlx->height);
+	else
+	{
+		mlx->width = SCREEN_WIDTH;
+		mlx->height = SCREEN_HEIGHT;
+	}
 	mlx->aspect = (double)mlx->width / (double)mlx->height;
 	mlx->focused = 1;
 }

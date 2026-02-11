@@ -19,6 +19,7 @@ typedef struct s_ambient_light
 {
 	double		ratio;
 	t_colorf	color;
+	t_colorf	color_times_ratio;
 }	t_ambient_light;
 
 union	u_object_data;

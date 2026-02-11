@@ -6,7 +6,7 @@
 /*   By: lespenel <lespenel@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 00:05:00 by lespenel          #+#    #+#             */
-/*   Updated: 2026/02/05 23:16:46 by lespenel         ###   ########.fr       */
+/*   Updated: 2026/02/09 20:09:26 by lespenel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ t_colorf	get_reflect(t_scene *scene, t_ray *c_ray, t_colorf color, int depth)
 	get_inv_dir(&reflection_ray);
 	reflection_ray.startpos = c_ray->data.hitpos;
 	reflection_ray.t_id = c_ray->t_id;
-	ref = get_pixel_color(scene, &reflection_ray, depth);
+	ref = shade_ray(scene, &reflection_ray, depth);
 	ref = color_scale(ref, c_ray->data.materials->reflect_ratio);
 	color = color_scale(color, 1 - c_ray->data.materials->reflect_ratio);
 	color = color_add(color, ref);
