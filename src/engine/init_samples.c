@@ -13,6 +13,7 @@
 #include <stdlib.h>
 
 #include "engine.h"
+#include "ft_mem.h"
 
 int	init_samples(t_engine *engine)
 {
@@ -23,5 +24,6 @@ int	init_samples(t_engine *engine)
 	engine->samples = malloc(engine->samples_size);
 	if (engine->samples == NULL)
 		return (-1);
+	// ft_memset(engine->samples, 0, engine->samples_size);
 	return (0);
 }

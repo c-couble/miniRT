@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "color.h"
 #include "defines.h"
 #include "engine.h"
 #include "mlx.h"
@@ -24,11 +23,11 @@ void	lock_camera(t_engine *engine)
 		engine->scene.camera.locked = 0;
 		engine->scene.camera.pixel_square_size = DEFAULT_RAY_SIZE;
 		engine->scene.camera.last_frame_time = 0;
-		ft_memset(engine->samples, 0, engine->samples_size);
-		engine->sample_nb = 1;
 	}
 	else
 	{
+		if (engine->sampling)
+			ft_memset(engine->samples, 0, engine->samples_size);
 		mlx_mouse_show(engine->mlx.mlx, engine->mlx.mlx_window);
 		engine->scene.camera.locked = 1;
 		engine->scene.camera.should_render = 1;
