@@ -19,7 +19,7 @@ uint32_t	render_pixel(t_engine *engine, t_ray *c_ray, int w, int h)
 	t_colorf	n_color;
 	t_colorf	*sample;
 
-	n_color = shade_ray(&engine->scene, c_ray, LOW_RENDER_DEPTH);
+	n_color = shade_ray(&engine->scene, c_ray, DEPTH);
 	if (engine->sampling == 0)
 		return (color_denormalize(n_color));
 	sample = &engine->samples[(h * (engine->mlx.width + 1)) + w];

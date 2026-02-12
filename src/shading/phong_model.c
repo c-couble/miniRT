@@ -34,16 +34,15 @@ void	phong_model(t_light *in, t_colorf *out, t_ray *c_ray, t_ray *l_ray)
 
 static void	specular_reflect(t_colorf *light, t_ray *light_r, t_ray *camera_r)
 {
-	double	specular_ratio;
+	double	spec_ratio;
 	t_vec3	reflection_ray;
 
 	get_reflection_ray(light_r, camera_r, &reflection_ray);
-	specular_ratio = ft_dmax(vec3_dot(&reflection_ray, &camera_r->ray), 0);
-	specular_ratio = pow(specular_ratio,
-			camera_r->data.materials->specular_shine);
-	if (specular_ratio < 0)
+	spec_ratio = ft_dmax(vec3_dot(&reflection_ray, &camera_r->ray), 0);
+	spec_ratio = pow(spec_ratio, camera_r->data.materials->specular_shine);
+	if (spec_ratio < 0)
 		return ;
-	*light = color_scale(*light, specular_ratio);
+	*light = color_scale(*light, spec_ratio);
 }
 
 static void	difuse_reflect(t_colorf *light, t_vec3 *light_n, t_ray *camera_r)
@@ -53,5 +52,5 @@ static void	difuse_reflect(t_colorf *light, t_vec3 *light_n, t_ray *camera_r)
 
 	object_n = camera_r->data.normal;
 	ratio = vec3_dot(light_n, &object_n);
-	*light = color_scale(*light, -ratio);
+	*light = color_scale(*light, ratio);
 }

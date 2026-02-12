@@ -13,7 +13,7 @@
 #ifndef DEFINES_H
 # define DEFINES_H
 
-# define SCREEN_AUTOSIZE	0
+# define SCREEN_AUTOSIZE	1
 # define SCREEN_WIDTH		500
 # define SCREEN_HEIGHT		500
 
